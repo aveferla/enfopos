@@ -1,0 +1,17 @@
+[
+  {
+    "id": "t1_01",
+    "temaId": "t1",
+    "temaNombre": "Tema 1: Constitución y Ley General de Sanidad",
+    "enunciado": "Según el artículo 43 de la Constitución Española de 1978, respecto a la protección de la salud, ¿cuál de las siguientes afirmaciones es correcta?",
+    "opciones": [
+      "A) Reconoce el derecho a la protección de la salud como un derecho fundamental de los comprendidos en la Sección 1ª del Capítulo II.",
+      "B) Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios.",
+      "C) La ley regulará los deberes de los ciudadanos en materia de salud con carácter exclusivo y sancionador.",
+      "D) Se garantiza la gratuidad absoluta de todas las prestaciones farmacéuticas y asistenciales."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El Art. 43.2 CE establece que compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios.",
+    "fuente": "Constitución Española de 1978, Título I, Cap. III, Art. 43."
+  }
+]

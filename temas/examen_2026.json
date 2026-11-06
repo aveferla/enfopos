@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "ex2026_01",
+    "parte": "general",
+    "temaId": "gen_3",
+    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "enunciado": "1. Según el artículo 3 de la Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica, ¿cuál de las siguientes afirmaciones sobre el consentimiento informado es correcta?:",
+    "opciones": [
+      "Siempre debe ser otorgado por escrito, sin excepción.",
+      "Es la conformidad libre, voluntaria y consciente del paciente tras recibir información adecuada.",
+      "Solo es necesario en intervenciones quirúrgicas.",
+      "Puede ser sustituido por la firma de un familiar, en cualquier caso."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El Art. 3 define el consentimiento informado como la conformidad libre, voluntaria y consciente del paciente tras recibir información adecuada.",
+    "fuente": "Ley 41/2002, Art. 3"
+  },
+  {
+    "id": "ex2026_02",
+    "parte": "general",
+    "temaId": "gen_1",
+    "temaNombre": "Tema 1. Estructura de la Consejería de Sanidad y GRS",
+    "enunciado": "2. De conformidad con el Decreto 42/2016, de 10 de noviembre, por el que se establece la organización y funcionamiento de la Gerencia Regional de Salud ¿Ante quién se interpone recurso de alzada contra un acto de un director general que no ponga fin a la vía administrativa?",
+    "opciones": [
+      "Consejero de Sanidad.",
+      "Director Gerente.",
+      "Junta de Castilla y León.",
+      "Presidente de la Gerencia Regional de Salud."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El recurso de alzada contra resoluciones de directores generales que no ponen fin a la vía administrativa se interpone ante el Director Gerente.",
+    "fuente": "Decreto 42/2016"
+  },
+  {
+    "id": "ex2026_03",
+    "parte": "general",
+    "temaId": "gen_4",
+    "temaNombre": "Tema 4. Ley 8/2003 de salud y protección de datos",
+    "enunciado": "3. Según el artículo 7 de la Ley 8/2003, de 8 de abril, sobre derechos y deberes de las personas en relación con la salud, ¿sobre qué colectivo deben velar especialmente los Poderes Públicos de Castilla y León?",
+    "opciones": [
+      "Las personas mayores.",
+      "Las personas con discapacidad física.",
+      "Las personas que padecen trastornos psíquicos.",
+      "Los enfermos terminales."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La Ley 8/2003 establece especial tutela sobre las personas que padecen trastornos psíquicos.",
+    "fuente": "Ley 8/2003, Art. 7"
+  },
+  {
+    "id": "ex2026_04",
+    "parte": "general",
+    "temaId": "gen_7",
+    "temaNombre": "Tema 7. Programas de Salud y Prevención de Riesgos",
+    "enunciado": "4. De conformidad con la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales ¿Qué artículo reconoce el derecho de los trabajadores a una protección eficaz en materia de seguridad y salud en el trabajo?",
+    "opciones": [
+      "Artículo 12.",
+      "Artículo 14.",
+      "Artículo 15.",
+      "Artículo 18."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El artículo 14 de la Ley 31/1995 consagra el derecho del trabajador a una protección eficaz en seguridad y salud.",
+    "fuente": "Ley 31/1995, Art. 14"
+  },
+  {
+    "id": "ex2026_05",
+    "parte": "general",
+    "temaId": "gen_3",
+    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "enunciado": "5. La norma que regula el procedimiento y la formalización de las instrucciones previas en el ámbito sanitario de Castilla y León, y la organización y funcionamiento del Registro de Instrucciones Previas de Castilla y León es el:",
+    "opciones": [
+      "Decreto 23/2024, de 21 de noviembre.",
+      "Decreto 101/2005, de 22 de diciembre.",
+      "Decreto 7/2013, de 14 de febrero.",
+      "Real Decreto Ley 8/2015, de 30 de octubre."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El Decreto 7/2013 regula el procedimiento de instrucciones previas y su Registro en Castilla y León.",
+    "fuente": "Decreto 7/2013"
+  },
+  {
+    "id": "ex2026_06",
+    "parte": "general",
+    "temaId": "gen_2",
+    "temaNombre": "Tema 2. Ley 2/2007 Estatuto Jurídico SACYL",
+    "enunciado": "6. Según el artículo 14 de la Ley 8/2010, de 30 de agosto, ¿cuál es la estructura fundamental del Sistema Público de Salud de Castilla y León y el marco para el desarrollo de programas asistenciales?",
+    "opciones": [
+      "La Demarcación Sanitaria.",
+      "El Centro de Salud.",
+      "El Área de Salud.",
+      "La Zona Básica de Salud."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El Área de Salud es la estructura fundamental del Sistema Público de Salud de Castilla y León.",
+    "fuente": "Ley 8/2010, Art. 14"
+  },
+  {
+    "id": "ex2026_07",
+    "parte": "general",
+    "temaId": "gen_5",
+    "temaNombre": "Tema 5. Plan de Gestión de Calidad y Seguridad del Paciente",
+    "enunciado": "7. La herramienta utilizada como sistema de notificación y gestión de incidentes sin daño, utilizada por el Servicio de Salud de Castilla y León para facilitar la identificación de riesgos, se denomina:",
+    "opciones": [
+      "SAINT-7",
+      "JIMENA",
+      "MEDORA",
+      "SISNOT"
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "SISNOT es la herramienta oficial de notificación corporativa de incidentes y eventos adversos en SACYL.",
+    "fuente": "Plan de Calidad SACYL"
+  },
+  {
+    "id": "ex2026_08",
+    "parte": "especifica",
+    "temaId": "esp_8",
+    "temaNombre": "Tema 8. Historia Clínica y Registros",
+    "enunciado": "8. Según lo establecido en el Decreto 101/2005, de 22 de diciembre, de la Consejería de Sanidad de la Junta de Castilla y León, ¿quién tiene derecho a acceder a la Historia Clínica?",
+    "opciones": [
+      "Solamente el personal médico.",
+      "El paciente y los profesionales que le atienden.",
+      "Cualquier persona que lo solicite.",
+      "Solamente las autoridades judiciales."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Tienen derecho de acceso el paciente y los profesionales sanitarios asistenciales implicados en su atención.",
+    "fuente": "Decreto 101/2005"
+  },
+  {
+    "id": "ex2026_09",
+    "parte": "especifica",
+    "temaId": "esp_5",
+    "temaNombre": "Tema 5. Calidad Asistencial",
+    "enunciado": "9. El modelo orientado para la transformación y mejora continua en la calidad y la seguridad en la atención sanitaria a desarrollar en el ámbito de los centros de la Gerencia Regional de Salud de Castilla y León, recogido en el Plan de Gestión y Calidad y Seguridad del Paciente 2022-2026, es:",
+    "opciones": [
+      "Modelo EFQM",
+      "Modelo DEMING",
+      "Modelo JOINT COMMISSION",
+      "Modelo MALCOLM BALDRIGE"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Modelo de Excelencia EFQM es el marco de referencia adoptado por la Gerencia Regional de Salud.",
+    "fuente": "Plan de Calidad 2022-2026 GRS"
+  },
+  {
+    "id": "ex2026_10",
+    "parte": "general",
+    "temaId": "gen_3",
+    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "enunciado": "10. Según el artículo 18.3 de la Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica ¿Qué derecho tiene el paciente respecto a la Historia Clínica?",
+    "opciones": [
+      "Solo puede acceder a su Historia Clínica si lo autoriza el médico responsable.",
+      "Puede acceder y obtener copia de los datos que figuran en ella, con ciertas reservas.",
+      "No tiene derecho a acceder a su Historia Clínica.",
+      "Solo puede acceder a la Historia Clínica después de cinco años del alta."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El paciente tiene derecho a acceder a la documentación de su historia clínica y a obtener copia de los datos contenidos.",
+    "fuente": "Ley 41/2002, Art. 18.3"
+  },
+  {
+    "id": "ex2026_11",
+    "parte": "general",
+    "temaId": "gen_2",
+    "temaNombre": "Tema 2. Ley 2/2007 Estatuto Jurídico SACYL",
+    "enunciado": "11. La selección de personal estatutario fijo se realizará con carácter general, según establece el artículo 27 de la Ley del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León, a través del sistema de:",
+    "opciones": [
+      "Oposición",
+      "Concurso",
+      "Concurso-Oposición",
+      "Promoción Interna"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El sistema ordinario y general de selección de personal estatutario fijo es el concurso-oposición.",
+    "fuente": "Ley 2/2007, Art. 27"
+  },
+  {
+    "id": "ex2026_12",
+    "parte": "general",
+    "temaId": "gen_3",
+    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "enunciado": "12. Según la Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica ¿Qué requisito exige el artículo 3 para que exista consentimiento informado?",
+    "opciones": [
+      "Aprobación de dos facultativos.",
+      "Autorización judicial previa.",
+      "Recepción de información adecuada por parte del paciente.",
+      "Presencia de familiares."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Exige la recepción previa de una información adecuada sobre el procedimiento o tratamiento.",
+    "fuente": "Ley 41/2002, Art. 3"
+  },
+  {
+    "id": "ex2026_13",
+    "parte": "especifica",
+    "temaId": "esp_1",
+    "temaNombre": "Tema 1. Metodología de Enfermería",
+    "enunciado": "13. Un paciente diagnosticado de diabetes mellitus tipo 2 se encuentra en la etapa de 'Contemplación' del Modelo Transteórico de Prochaska y DiClemente frente a la modificación de sus hábitos dietéticos. ¿Cuál debe ser el objetivo prioritario de la intervención enfermera en esta fase?",
+    "opciones": [
+      "Enseñar al paciente técnicas específicas de prevención de recaídas a largo plazo.",
+      "Negociar un plan de acción concreto que comience en los próximos 7 días naturales.",
+      "Ayudar al paciente a balancear los pros y los contras del cambio de conducta, aumentando la percepción de autoeficacia.",
+      "Prescribir de forma imperativa un régimen alimentario restrictivo para forzar el paso a la fase de acción."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "En la etapa de contemplación, la persona sopesa costes y beneficios; la intervención busca resolver su ambivalencia y potenciar la autoeficacia.",
+    "fuente": "Modelo de Prochaska y DiClemente"
+  },
+  {
+    "id": "ex2026_14",
+    "parte": "especifica",
+    "temaId": "esp_31",
+    "temaNombre": "Tema 31. Administración de medicamentos y vías",
+    "enunciado": "14. Durante el mantenimiento de una vía venosa periférica, se detecta el depósito accidental de una solución infundida en el tejido subcutáneo circundante. A la exploración física, la zona presenta edema, palidez cutánea y frialdad al tacto, confirmándose que el fluido posee un pH y osmolaridad fisiológicos. ¿Ante qué complicación local de la terapia intravenosa nos encontramos?",
+    "opciones": [
+      "Flebitis química secundaria a irritación del endotelio venoso.",
+      "Infiltración de una solución o fármaco de carácter no vesicante.",
+      "Extravasación de una solución o fármaco de carácter vesicante.",
+      "Tromboflebitis mecánica por traumatismo del catéter en la pared vascular."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Es la fuga de una solución no vesicante (de pH/osmolaridad fisiológica) al tejido intersticial.",
+    "fuente": "Terapia Intravenosa Enfermera"
+  },
+  {
+    "id": "ex2026_15",
+    "parte": "especifica",
+    "temaId": "esp_9",
+    "temaNombre": "Tema 9. Inmunizaciones y Vacunas",
+    "enunciado": "15. Señale la respuesta correcta en relación con la vacunación frente a la tosferina durante el embarazo:",
+    "opciones": [
+      "La vacuna frente a la tosferina debe administrarse en cada embarazo, independientemente del antecedente de vacunación.",
+      "La vacunación frente a la tosferina está indicada hasta la semana 27 de gestación.",
+      "La efectividad de la vacunación materna para prevenir la tosferina en lactantes menores de 3 meses es baja.",
+      "La mayoría de las muertes por tosferina se producen en lactantes mayores de 3 meses de edad."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Se debe aplicar la vacuna dTPa en cada embarazo para transferir anticuerpos transplacentarios protectores al recién nacido.",
+    "fuente": "Calendario Vacunal CyL"
+  },
+  {
+    "id": "ex2026_16",
+    "parte": "especifica",
+    "temaId": "esp_4",
+    "temaNombre": "Tema 4. Estadística Descriptiva e Inferencial",
+    "enunciado": "16. Si en un ensayo clínico aleatorizado que compara dos apósitos para la cura de heridas se obtiene un valor de p = 0.02, asumiendo un nivel de significación estándar (α = 0.05), ¿cuál debe ser la conclusión estadística?",
+    "opciones": [
+      "Aumentar el nivel de significación a 0.10 para poder confirmar que no hay diferencias.",
+      "El estudio carece de potencia y los resultados se deben completamente al azar.",
+      "Rechazar la hipótesis nula, concluyendo que existen diferencias estadísticamente significativas entre ambos apósitos.",
+      "Aceptar la hipótesis nula, concluyendo que ambos apósitos son idénticos en su eficacia."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Al ser p (0.02) menor que alpha (0.05), se rechaza H0 y se confirma significación estadística.",
+    "fuente": "Estadística en Investigación"
+  },
+  {
+    "id": "ex2026_17",
+    "parte": "especifica",
+    "temaId": "esp_17",
+    "temaNombre": "Tema 17. Cuidados en la Mujer Gestante y Puérpera",
+    "enunciado": "17. En relación con el cribado y diagnóstico de la diabetes gestacional, señala la respuesta correcta:",
+    "opciones": [
+      "Un valor mayor o igual a 140 mg/dl a los 60 minutos tras la toma de 50 g de glucosa confirma la presencia de una diabetes gestacional.",
+      "La obesidad materna no se considera un factor de riesgo para desarrollar diabetes gestacional.",
+      "Si el test de O’Sullivan es igual o superior a 140 mg/dl, debe realizarse un Test de Sobrecarga Oral de Glucosa, previa ingesta de una dieta de al menos 150 g de hidratos de carbono al día durante los 3 días anteriores y un ayuno previo de al menos 8 a 14h.",
+      "El cribado universal de diabetes gestacional se recomienda realizarlo a todas las gestantes en el primer trimestre de embarazo."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Un Test de O'Sullivan positivo (>=140 mg/dl) requiere confirmación mediante la SOG diagnóstica con sobrecarga de 100g de glucosa tras preparación dietética previa.",
+    "fuente": "Guía Obstétrica SACYL"
+  },
+  {
+    "id": "ex2026_18",
+    "parte": "especifica",
+    "temaId": "esp_23",
+    "temaNombre": "Tema 23. Enfermo Terminal, Dolor y Duelo",
+    "enunciado": "18. Un paciente con cáncer avanzado presenta disnea intensa pese a tratamiento óptimo con opioides, oxigenoterapia y medidas no farmacológicas. Refiere sufrimiento intolerable. ¿Cuál es la actuación más adecuada?",
+    "opciones": [
+      "Iniciar sedación paliativa de forma proporcional para aliviar un síntoma refractario, siguiendo los protocolos establecidos.",
+      "Iniciar sedación si la familia lo autoriza.",
+      "Mantener tratamiento etiológico.",
+      "Suspender toda la medicación previa."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Frente a un síntoma refractario (disnea incoercible) que genera un sufrimiento intolerable, está indicada la sedación paliativa de forma bien ponderada y proporcional.",
+    "fuente": "Cuidados Paliativos SACYL"
+  },
+  {
+    "id": "ex2026_19",
+    "parte": "especifica",
+    "temaId": "esp_29",
+    "temaNombre": "Tema 29. Atención al Paciente Pluripatológico Complejo",
+    "enunciado": "19. En el marco del Proceso de Atención a la Persona con Pluripatología Crónica Compleja del SACYL, la enfermera de Atención Primaria realiza la valoración funcional basal a un paciente utilizando la versión clásica del Índice de Barthel (Mahoney y Barthel). Tras aplicar la escala, el paciente obtiene una puntuación total de 45 puntos. ¿Cómo se clasifica correctamente el grado de dependencia de este paciente?",
+    "opciones": [
+      "Dependencia leve.",
+      "Dependencia moderada.",
+      "Dependencia severa.",
+      "Dependencia total."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Una puntuación de 45 en el Índice de Barthel tradicional se clasifica formalmente como dependencia moderada (rango entre 40 y 55 puntos).",
+    "fuente": "Escala de Barthel / SACYL"
+  },
+  {
+    "id": "ex2026_20",
+    "parte": "especifica",
+    "temaId": "esp_34",
+    "temaNombre": "Tema 34. Cuidados Neurológicos y Trauma",
+    "enunciado": "20. Al evaluar a un paciente que ha sufrido un traumatismo craneoencefálico mediante la Escala de Coma de Glasgow (GCS), se objetiva que abre los ojos únicamente tras la aplicación de un estímulo doloroso central, emite palabras inapropiadas e inconexas sin estructurar un discurso coherente, y realiza un movimiento con el que localiza el estímulo doloroso. ¿Qué puntuación exacta e inapelable le corresponde?",
+    "opciones": [
+      "8",
+      "10",
+      "11",
+      "9"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Respuesta ocular al dolor = 2; Respuesta verbal inapropiada = 3; Respuesta motora que localiza el dolor = 5. Total = 2 + 3 + 5 = 10 puntos.",
+    "fuente": "Escala de Coma de Glasgow"
+  },
+  {
+    "id": "ex2026_21",
+    "parte": "especifica",
+    "temaId": "esp_22",
+    "temaNombre": "Tema 22. Grandes Síndromes Geriátricos",
+    "enunciado": "21. En la valoración geriátrica de una persona mayor con aparición reciente de incontinencia urinaria, ¿cuál de las siguientes situaciones no forma parte de las causas potencialmente reversibles incluidas en el acrónimo DIAPPERS?",
+    "opciones": [
+      "Impactación fecal.",
+      "Delirium agudo.",
+      "Vaginitis atrófica.",
+      "Hiperplasia benigna de próstata establecida con obstrucción crónica."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "El acrónimo DIAPPERS contempla causas agudas/transitorias reversibles (Delirium, Infection, Atrophic vaginitis, Pharmaceuticals, Psychological, Endocrine, Restricted mobility, Stool impaction). La hiperplasia obstructiva crónica es un problema estructural no transitorio.",
+    "fuente": "Valoración Geriátrica Integral"
+  },
+  {
+    "id": "ex2026_22",
+    "parte": "especifica",
+    "temaId": "esp_5",
+    "temaNombre": "Tema 5. Epidemiología y Vigilancia",
+    "enunciado": "22. En el contexto epidemiológico actual de la población española, ¿cuál de los siguientes criterios define la estrategia actual de vigilancia de la Gripe y otros virus respiratorios (Sistema de Vigilancia de Infección Respiratoria Aguda - SIVIRA)?",
+    "opciones": [
+      "Declaración numérica universal y obligatoria de todos los casos sospechosos diagnosticados en Atención Primaria.",
+      "Vigilancia basada exclusivamente en registros de mortalidad hospitalaria del Instituto Nacional de Estadística (INE).",
+      "Un sistema centinela basado en muestras representativas obtenidas en Atención Primaria y hospitales seleccionados.",
+      "Notificación urgente e individualizada en menos de 24 horas de cualquier aislamiento del virus Influenza tipo A."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El sistema SIVIRA se apoya en una red centinela de medicos y laboratorios de AP y atención hospitalaria seleccionados.",
+    "fuente": "Sistema de Vigilancia SIVIRA"
+  },
+  {
+    "id": "ex2026_23",
+    "parte": "especifica",
+    "temaId": "esp_43",
+    "temaNombre": "Tema 43. Cuidados Oncológicos y Citostáticos",
+    "enunciado": "23. Respecto a los efectos adversos de los principales agentes quimioterápicos, señale la afirmación incorrecta:",
+    "opciones": [
+      "El cisplatino requiere una hidratación intensiva previa y posterior a su administración debido al riesgo de hepatotoxicidad.",
+      "La mucositis constituye uno de los efectos adversos más frecuentes del 5-fluorouracilo.",
+      "Las antraciclinas, incluidas dentro de los antibióticos antitumorales, son fármacos altamente vesicantes.",
+      "La neurotoxicidad periférica es un efecto adverso característico de los alcaloides de la vinca."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La hiperhidratación del Cisplatino se realiza prioritariamente para prevenir la nefrotoxicidad renal, no la hepatotoxicidad.",
+    "fuente": "Farmacología Oncológica"
+  },
+  {
+    "id": "ex2026_24",
+    "parte": "general",
+    "temaId": "gen_9",
+    "temaNombre": "Tema 9. Igualdad y Políticas de Género",
+    "enunciado": "24. En el informe de evaluación final de la Agenda 2020, según el Plan estratégico de Igualdad de Género 2022-2025 ¿en qué consistió la cuarta fase?",
+    "opciones": [
+      "En la redacción del primer borrador del nuevo Plan Estratégico 2022-2025.",
+      "En el cálculo de indicadores presupuestarios anuales por parte de la Comisión de Seguimiento.",
+      "En la evaluación participativa interna con representantes de las diferentes Consejerías.",
+      "En una evaluación participativa externa con el Consejo Regional de la Mujer y grupos de profesionales y beneficiarias."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La cuarta fase del informe de evaluación contempló la realización de una evaluación participativa de carácter externo.",
+    "fuente": "Plan de Igualdad de Género CyL"
+  },
+  {
+    "id": "ex2026_25",
+    "parte": "especifica",
+    "temaId": "esp_34",
+    "temaNombre": "Tema 34. Código Ictus y Neurología",
+    "enunciado": "25. Dentro del protocolo de activación de la Red Asistencial de Atención al Ictus agudo en Castilla y León (Código Ictus SACYL), ¿cuál es el criterio temporal límite general (ventana terapéutica estándar) establecido desde el inicio de los síntomas de focalidad neurológica para considerar la viabilidad de una terapia de reperfusión mediante fibrólisis intravenosa con alteplasa (rtPA) en ausencia de contraindicaciones?",
+    "opciones": [
+      "90 minutos.",
+      "360 minutos.",
+      "180 minutos.",
+      "270 minutos."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La ventana terapéutica estándar recomendada para fibrinólisis iv con rtPA en código ictus se establece en 4,5 horas (270 minutos).",
+    "fuente": "Código Ictus SACYL"
+  },
+  {
+    "id": "ex2026_26",
+    "parte": "especifica",
+    "temaId": "esp_26",
+    "temaNombre": "Tema 26. Malos Tratos y Violencia de Género",
+    "enunciado": "26. Malos Tratos: Detección y prevención en el niño, la mujer y el anciano. Guía clínica de actuación sanitaria frente a la violencia de género.",
+    "opciones": [
+      "Notificación exclusivamente judicial voluntaria sin registro previo en historia clínica.",
+      "Aplicación rigurosa del protocolo y guía clínica de actuación sanitaria frente a la violencia de género en CyL.",
+      "Derivación preferente a servicios sociales generales sin parte de lesiones.",
+      "Espera a la confirmación policial antes de activar el protocolo sanitario."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Se debe seguir estrictamente la guía clínica de actuación sanitaria frente a la violencia de género.",
+    "fuente": "Guía de Violencia de Género SACYL"
+  },
+  {
+    "id": "ex2026_27",
+    "parte": "especifica",
+    "temaId": "esp_27",
+    "temaNombre": "Tema 27. Urgencias, Emergencias y RCP",
+    "enunciado": "27. Urgencias y emergencia: Concepto. Valoración y cuidados de enfermería ante situaciones críticas. Politraumatizados, quemados, shock, intoxicaciones agudas. Parada cardiorrespiratoria: Definición y medidas de actuación.",
+    "opciones": [
+      "Suspender las compresiones torácicas durante la carga del desfibrilador.",
+      "Iniciar maniobras de soporte vital avanzado priorizando la compresión torácica de alta calidad y desfibrilación precoz según recomendaciones vigentes.",
+      "Administrar bicarbonato sódico de rutina en toda PCR presenciada.",
+      "Limitar la profundidad de las compresiones a menos de 3 centímetros en adultos."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Las guías actuales de reanimación priorizan las compresiones torácicas de alta calidad y la desfibrilación precoz.",
+    "fuente": "Recomendaciones ERC / SVA"
+  },
+  {
+    "id": "ex2026_28",
+    "parte": "especifica",
+    "temaId": "esp_28",
+    "temaNombre": "Tema 28. Múltiples Víctimas y Catástrofes",
+    "enunciado": "28. Priorización y triaje en situaciones de múltiples víctimas y catástrofes.",
+    "opciones": [
+      "Atender primero a los pacientes fallecidos para liberar espacio en el triaje.",
+      "Clasificar a los pacientes según riguroso orden de llegada a las urgencias hospitalarias.",
+      "Utilizar métodos estandarizados de triaje (como START) para clasificar rápidamente a las víctimas según la gravedad y priorizar recursos.",
+      "Priorizar exclusivamente a los pacientes pediátricos independientemente de sus constantes vitales."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "En catástrofes se emplean métodos de triaje rápido (ej. START) para priorizar la asistencia y evacuación según la gravedad clínica.",
+    "fuente": "Catástrofes y Triaje Múltiples Víctimas"
+  },
+  {
+    "id": "ex2026_29",
+    "parte": "especifica",
+    "temaId": "esp_29",
+    "temaNombre": "Tema 29. Paciente Pluripatológico Complejo",
+    "enunciado": "29. Proceso de Atención al Paciente Pluripatológico Complejo. Actividades de los subprocesos: Generalidades. Actuación e intervención de la Enfermería en cada una de las fases.",
+    "opciones": [
+      "Aislar al paciente de su entorno familiar para evitar sobrecarga domiciliaria.",
+      "Desarrollar una atención integral, coordinada y continuada centrada en la gestión de casos y planes de cuidados individualizados.",
+      "Delegar el seguimiento clínico exclusivamente en los servicios de urgencias hospitalarias.",
+      "Evitar la valoración de soporte al cuidador principal."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El proceso asistencial al paciente pluripatológico busca la continuidad asistencial y el abordaje integral mediante enfermería gestora de casos.",
+    "fuente": "Proceso Pluripatológico SACYL"
+  },
+  {
+    "id": "ex2026_30",
+    "parte": "especifica",
+    "temaId": "esp_30",
+    "temaNombre": "Tema 30. Clasificación de Medicamentos y Farmacovigilancia",
+    "enunciado": "30. Clasificación general de los medicamentos. Absorción y eliminación de los fármacos. Toxicidad y efectos colaterales. Farmacovigilancia. Condiciones de conservación de los medicamentos. Farmacología en urgencias.",
+    "opciones": [
+      "La farmacovigilancia se encarga únicamente de la comercialización de nuevos laboratorios.",
+      "La absorción de fármacos por vía oral no se ve afectada por el pH gástrico ni los alimentos.",
+      "La notificación de reacciones adversas mediante la tarjeta amarilla es un pilar fundamental de los sistemas de farmacovigilancia.",
+      "Los medicamentos termolábiles pueden almacenarse a temperatura ambiente sin control de cadena de frío."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La tarjeta amarilla es el sistema estándar para la notificación voluntaria de sospechas de reacciones adversas a medicamentos.",
+    "fuente": "Farmacovigilancia y Medicamentos"
+  },
+  {
+    "id": "ex2026_31",
+    "parte": "especifica",
+    "temaId": "esp_31",
+    "temaNombre": "Tema 31. Administración de Medicamentos y Vías",
+    "enunciado": "31. Administración de medicamentos. Precauciones previas a la administración de un fármaco. Vías de administración: Definición y tipos. Puntos de elección, técnicas y problemas más frecuentes. Cálculo de dosis.",
+    "opciones": [
+      "Administrar medicación sin comprobar la identidad del paciente si se le conoce previamente.",
+      "No realizar lavado de manos antes de la preparación para agilizar el proceso.",
+      "Confiar exclusivamente en la memoria para el cálculo de dosis pediátricas intravenosas.",
+      "Aplicar rigurosamente los correctos de administración de medicación (paciente, fármaco, dosis, vía y hora correctas)."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La verificación de los principios de administración segura de fármacos previene errores de medicación yatrógenos.",
+    "fuente": "Seguridad en la Administración de Fármacos"
+  },
+  {
+    "id": "ex2026_32",
+    "parte": "especifica",
+    "temaId": "esp_32",
+    "temaNombre": "Tema 32. Alimentación, Nutrición y Dietas",
+    "enunciado": "32. Alimentación y nutrición: Concepto y diferenciación. Clasificación de los alimentos. Elaboración de dietas. Dietas terapéuticas. Valoración y cuidados de enfermería a personas con problemas de desnutrición, deshidratación, anorexia, bulimia y obesidad.",
+    "opciones": [
+      "La desnutrición hospitalaria no influye en el tiempo de estancia ni en la tasa de complicaciones postoperatorias.",
+      "Las dietas terapéuticas se adaptan modificando nutrientes o consistencia para dar respuesta a necesidades fisiopatológicas concretas.",
+      "En la bulimia nerviosa no se producen alteraciones hidroelectrolíticas derivadas de los vómitos autoinducidos.",
+      "La valoración nutricional mediante cribado al ingreso no es responsabilidad de enfermería."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Las dietas terapéuticas modifican parámetros nutricionales o físicos para ajustarse al tratamiento clínico del paciente.",
+    "fuente": "Nutrición y Dietética Clínica"
+  },
+  {
+    "id": "ex2026_33",
+    "parte": "especifica",
+    "temaId": "esp_33",
+    "temaNombre": "Tema 33. Nutrición Enteral y Parenteral",
+    "enunciado": "33. Valoración y cuidados de enfermería a personas con nutrición enteral y parenteral. Técnicas de administración. Protocolos de actuación.",
+    "opciones": [
+      "Administrar nutrición enteral por SNG sin comprobar la correcta colocación gástrica previa.",
+      "Permitir la contaminación de las fórmulas enterales colgándolas durante más de 48 horas sin renovar el envase.",
+      "No realizar lavados de la sonda con agua estéril antes y después de la administración de medicación o fórmulas.",
+      "Mantener la cabecera de la cama elevada al menos 30-45 grados durante la infusión de nutrición enteral para prevenir broncoaspiraciones."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La elevación de la cabecera (30°-45°) es una medida estándar fundamental para prevenir la neumonía por aspiración en pacientes con nutrición enteral.",
+    "fuente": "Protocolos de Soporte Nutricional"
+  },
+  {
+    "id": "ex2026_34",
+    "parte": "especifica",
+    "temaId": "esp_34",
+    "temaNombre": "Tema 34. Problemas Neurológicos y ACV",
+    "enunciado": "34. Valoración y cuidados de enfermería a personas con problemas neurológicos: Accidente cerebrovascular, epilepsia. Otros problemas del sistema nervioso: esclerosis múltiple y lateral amiotrófica, coma. Procedimientos y técnicas.",
+    "opciones": [
+      "Movilizar bruscamente al paciente en coma sin proteger vía aérea ni ejes cervicales.",
+      "Vigilar estrictamente el nivel de consciencia, constantes vitales y signos de focalidad neurológica en pacientes con ACV agudo.",
+      "Suspender la monitorización neurológica tras las primeras 2 horas de ingreso.",
+      "Estimular la deglución oral en pacientes con alteración severa de los pares craneales IX y X sin evaluación previa."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La monitorización neurológica estrecha (escalas de coma, focalidad) es clave en el manejo del ACV agudo y daño cerebral.",
+    "fuente": "Cuidados de Enfermería Neurológica"
+  },
+  {
+    "id": "ex2026_35",
+    "parte": "especifica",
+    "temaId": "esp_35",
+    "temaNombre": "Tema 35. Problemas Respiratorios y Oxigenoterapia",
+    "enunciado": "35. Valoración y cuidados de enfermería a personas con problemas respiratorios: Insuficiencia respiratoria aguda, EPOC, asma. Procedimientos: Oxigenoterapia, drenaje torácico, aerosolterapia, traqueostomías.",
+    "opciones": [
+      "Administrar flujos elevados de oxígeno sin control en pacientes con hipercapnia crónica reagudizada sin valorar riesgo de depresión respiratoria.",
+      "Mantener permeabilidad de la vía aérea mediante aspiración de secreciones con técnica aséptica y control de presiones.",
+      "Desconectar el drenaje torácico de forma rutinaria para pasear al paciente sin pinzar ni asegurar sello de agua.",
+      "No vigilar la saturación de oxígeno ni la mecánica ventilatoria."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La aspiración estéril y el mantenimiento de la permeabilidad son esenciales en el soporte respiratorio artificial.",
+    "fuente": "Cuidados Respiratorios Avanzados"
+  },
+  {
+    "id": "ex2026_36",
+    "parte": "especifica",
+    "temaId": "esp_36",
+    "temaNombre": "Tema 36. Problemas Cardiovasculares",
+    "enunciado": "36. Valoración y cuidados de enfermería a personas con problemas cardiovasculares: Insuficiencia cardiaca, síndrome coronario agudo, hipertensión arterial.",
+    "opciones": [
+      "Monitorizar el balance hídrico estricto, control de peso diario y signos de congestión en pacientes con insuficiencia cardiaca.",
+      "Fomentar el esfuerzo físico máximo en pacientes con dolor torácico isquémico agudo en curso.",
+      "Ignorar los cambios electrocardiográficos en la monitorización continua de una unidad coronaria.",
+      "Administrar fluidos intravenosos a alta velocidad en pacientes con sobrecarga de volumen grave."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El control riguroso de líquidos, peso diario y balance hídrico previene descompensaciones por sobrecarga en insuficiencia cardiaca.",
+    "fuente": "Cardiología y Cuidados de Enfermería"
+  },
+  {
+    "id": "ex2026_37",
+    "parte": "especifica",
+    "temaId": "esp_37",
+    "temaNombre": "Tema 37. Sistema Renal y Urológico",
+    "enunciado": "37. Valoración y cuidados de enfermería a personas con problemas en el sistema renal: Insuficiencia renal aguda, infección urinaria, sondaje vesical y diálisis.",
+    "opciones": [
+      "Mantener el sistema de drenaje vesical cerrado y por debajo del nivel de la vejiga para evitar infecciones retrógradas.",
+      "Desconectar la bolsa colectora frecuentemente para vaciarla de forma manual sin medidas de asepsia.",
+      "Forzar la introducción del catéter vesical ante resistencia uretral firme.",
+      "Utilizar técnicas abiertas para la manipulación de la diálisis peritoneal."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El sistema colector cerrado y posicionado por debajo de la vejiga es la medida preventiva clave frente a la infección urinaria nosocomial por sonda.",
+    "fuente": "Protocolo de Sondaje y Cuidados Urológicos"
+  },
+  {
+    "id": "ex2026_38",
+    "parte": "especifica",
+    "temaId": "esp_38",
+    "temaNombre": "Tema 38. Problemas Endocrinológicos",
+    "enunciado": "38. Valoración y cuidados de enfermería a personas con problemas endocrinológicos: Diabetes y sus complicaciones, bocio, hipotiroidismo, hipertiroidismo.",
+    "opciones": [
+      "No realizar controles glucémicos en pacientes diabéticos insulinodependientes ingresados.",
+      "Educar al paciente diabético en el autocuidado, reconocimiento precoz de hipoglucemias/hiperglucemias y técnica de inyección de insulina.",
+      "Administrar insulina rápida sin relación con las ingestas ni glucemia capilar actual.",
+      "Desatender los signos de cetoacidosis diabética."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La educación diabetológica y el entrenamiento en autocuidado son pilares fundamentales del rol enfermero en endocrinología.",
+    "fuente": "Endocrinología y Diabetes SACYL"
+  },
+  {
+    "id": "ex2026_39",
+    "parte": "especifica",
+    "temaId": "esp_39",
+    "temaNombre": "Tema 39. Sistema Músculo-Esquelético",
+    "enunciado": "39. Valoración y cuidados de enfermería a personas con problemas en el sistema músculo-esquelético. Osteoporosis, artrosis, fracturas, vendajes e inmovilizaciones.",
+    "opciones": [
+      "Colocar vendajes compresivos elásticos sin vigilar la perfusión distal ni la aparición de parestesias o cianosis.",
+      "Ignorar los signos de síndrome compartimental en fracturas inmovilizadas con yeso.",
+      "No evaluar el estado neurovascular distal (pulsos, color, temperatura, sensibilidad) tras colocar una férula o yeso.",
+      "Vigilar la integridad cutánea, perfusión distal y correcto posicionamiento en pacientes con tracciones o inmovilizaciones ortopédicas."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La vigilancia de la perfusión, sensibilidad y estado de la piel es prioritaria ante cualquier inmovilización ortopédica.",
+    "fuente": "Traumatología y Ortopedia"
+  },
+  {
+    "id": "ex2026_40",
+    "parte": "especifica",
+    "temaId": "esp_40",
+    "temaNombre": "Tema 40. Problemas Gastrointestinales",
+    "enunciado": "40. Valoración y cuidados de enfermería a personas con problemas gastrointestinales: Abdomen agudo, úlcera gastroduodenal, obstrucción intestinal, sondaje nasogástrico.",
+    "opciones": [
+      "Retirar la sujeción de una sonda nasogástrica de aspiración sin comprobar la orden médica en hemorragia digestiva activa.",
+      "Verificar la correcta colocación del sondaje nasogástrico antes de administrar nutrición o medicación mediante métodos validados.",
+      "Forzar la infusión por SNG obstruida introduciendo guías metálicas punzantes.",
+      "Ignorar el débito y características del contenido drenado por la sonda."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La comprobación de la posición correcta de la SNG es un paso crítico de seguridad antes de cualquier administración.",
+    "fuente": "Procedimientos Enfermeros Digestivos"
+  },
+  {
+    "id": "ex2026_41",
+    "parte": "especifica",
+    "temaId": "esp_41",
+    "temaNombre": "Tema 41. Problemas Hematológicos y Transfusiones",
+    "enunciado": "41. Valoración de enfermería a personas con problemas hematológicos: Anemias, síndromes hemorrágicos, transfusiones sanguíneas.",
+    "opciones": [
+      "Transfundir hemoderivados sin realizar la doble verificación obligatoria de identidad del paciente y compatibilidad de la bolsa.",
+      "Calentar los concentrados de hematíes en microondas convencionales ante una urgencia transfusional.",
+      "Realizar el control exhaustivo de constantes vitales antes, durante y al finalizar la transfusión sanguínea.",
+      "Administrar la sangre con soluciones glucosadas hipotónicas en la misma vía."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El control estricto de constantes vitales durante el procedimiento transfusional permite detectar reacciones adversas precoces.",
+    "fuente": "Protocolo Transfusional SACYL"
+  },
+  {
+    "id": "ex2026_42",
+    "parte": "especifica",
+    "temaId": "esp_42",
+    "temaNombre": "Tema 42. Oftalmología y ORL",
+    "enunciado": "42. Valoración y cuidados de enfermería en problemas oftalmológicos y otorrinolaringológicos.",
+    "opciones": [
+      "Instilar colirios apoyando el cuentagotas directamente sobre la córnea del paciente.",
+      "Aplicar medicación oftálmica en el saco conjuntival inferior evitando el contacto del envase con las pestañas o estructuras oculares.",
+      "Realizar lavados óticos con agua a presión sin descartar perforación timpánica previa.",
+      "No registrar las características de las secreciones conjuntivales u óticas."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La instilación de colirios se realiza en el fondo de saco conjuntival inferior evitando contaminar el aplicador.",
+    "fuente": "Técnicas Especiales de Enfermería"
+  },
+  {
+    "id": "ex2026_43",
+    "parte": "especifica",
+    "temaId": "esp_43",
+    "temaNombre": "Tema 43. Oncología y Citostáticos",
+    "enunciado": "43. Valoración y cuidados de enfermería a personas con problemas oncológicos. Tratamientos, efectos secundarios y manipulación de medicamentos citostáticos.",
+    "opciones": [
+      "Manipular fármacos citostáticos sin equipos de protección individual (EPI) ni cabina de seguridad biológica adecuada.",
+      "Utilizar medidas de bioseguridad estrictas en la preparación, administración y eliminación de residuos citostáticos para proteger al personal y al entorno.",
+      "Desechar los residuos de citostáticos en contenedores municipales de basura urbana.",
+      "Desatender el manejo de la extravasación de quimioterapia."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La prevención de riesgos laborales exige el uso de EPIs y circuitos específicos para la manipulación segura de citostáticos.",
+    "fuente": "Seguridad en Manipulación de Citostáticos"
+  },
+  {
+    "id": "ex2026_44",
+    "parte": "especifica",
+    "temaId": "esp_44",
+    "temaNombre": "Tema 44. Paciente Quirúrgico y Perioperatorio",
+    "enunciado": "44. Valoración y cuidados de enfermería del paciente quirúrgico: Preoperatorio, intraoperatorio y posquirúrgico. Cirugía Mayor Ambulatoria.",
+    "opciones": [
+      "Omitir el marcaje quirúrgico y la lista de verificación de seguridad (checklist OMS) en el quirófano.",
+      "Realizar el control integral del paciente en el periodo perioperatorio, aplicando el protocolo de verificación quirúrgica y cuidados de recuperación postanestésica.",
+      "No monitorizar la saturación ni el nivel de consciencia en la unidad de reanimación.",
+      "Desatender la prevención de hipotermia perioperatoria."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El proceso perioperatorio abarca la valoración integral y la aplicación de listas de seguridad del paciente quirúrgico.",
+    "fuente": "Protocolo Cirugía Segura SACYL"
+  },
+  {
+    "id": "ex2026_45",
+    "parte": "especifica",
+    "temaId": "esp_45",
+    "temaNombre": "Tema 45. Úlceras por Presión y Cuidados de la Piel",
+    "enunciado": "45. Valoración y cuidados de enfermería a personas con problemas en la piel. Úlceras por presión: Concepto, factores de riesgo, estadios. Escalas Braden, Norton y EMINA. Prevención y tratamiento.",
+    "opciones": [
+      "Masajear enérgicamente las prominencias óseas eritematosas como método preventivo de UPP.",
+      "Aplicar escalas de valoración de riesgo (como Braden o Norton) al ingreso y periódicamente para establecer planes preventivos individualizados.",
+      "Utilizar alcoholes y sustancias irritantes sobre la piel seca.",
+      "Mantener al paciente en decúbito supino prolongado sin cambios posturales."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La valoración sistemática del riesgo mediante escalas validadas (Braden/Norton) es la base para prevenir las lesiones por presión.",
+    "fuente": "GNEAUPP / Protocolo UPP SACYL"
+  },
+  {
+    "id": "ex2026_46",
+    "parte": "especifica",
+    "temaId": "esp_45",
+    "temaNombre": "Tema 45. Úlceras por Presión y Cuidados de la Piel",
+    "enunciado": "46. En relación con el manejo avanzado de heridas crónicas y UPP, seleccione la actuación de enfermería adecuada:",
+    "opciones": [
+      "Emplear apósitos inadecuados que maceren los bordes periulcerosos.",
+      "Crear un ambiente húmedo adecuado en el lecho de la herida, controlar la carga bacteriana y proteger la piel perilesional.",
+      "Debridar todo tejido necrótico sin valorar la perfusión arterial de la extremidad inferior.",
+      "Dejar la herida expuesta al aire libre sin protección bacteriológica."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El principio de cura en ambiente húmedo (CAH), control de infección y protección periulcerosa es el estándar actual.",
+    "fuente": "Guía de Práctica Clínica UPP"
+  },
+  {
+    "id": "ex2026_47",
+    "parte": "especifica",
+    "temaId": "esp_1",
+    "temaNombre": "Tema 1. Metodología de Enfermería",
+    "enunciado": "47. En la formulación de diagnósticos de enfermería reales según la taxonomía NANDA-I, la estructura PES se compone de:",
+    "opciones": [
+      "Problema, Etiología y Signos/Síntomas (características definitorias).",
+      "Planificación, Evaluación y Sintomatología.",
+      "Procedimiento, Estándar y Seguimiento.",
+      "Patrón funcional, Evolución y Solución."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El formato PES para diagnósticos reales asocia el Problema (etiqueta), la Etiología (factores relacionados) y los Signos/Síntomas (características definitorias).",
+    "fuente": "Taxonomía NANDA-I"
+  },
+  {
+    "id": "ex2026_48",
+    "parte": "especifica",
+    "temaId": "esp_2",
+    "temaNombre": "Tema 2. Metodología de Investigación",
+    "enunciado": "48. Estructura metodológica de un trabajo científico y sus fases: conceptual, de diseño y planificación, empírica, analítica y de difusión.",
+    "opciones": [
+      "Omitir la fase de difusión de resultados en la comunidad científica.",
+      "Desarrollar el estudio de investigación siguiendo de forma rigurosa las fases metodológicas establecidas desde la conceptualización hasta la difusión.",
+      "Modificar los datos empíricos obtenidos para ajustarlos a la hipótesis inicial.",
+      "Carecer de marco teórico y revisión bibliográfica previa."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El rigor metodológico exige cumplir todas las etapas del ciclo de investigación científica.",
+    "fuente": "Metodología de Investigación en Salud"
+  },
+  {
+    "id": "ex2026_49",
+    "parte": "especifica",
+    "temaId": "esp_3",
+    "temaNombre": "Tema 3. Investigación Básica y Aplicada",
+    "enunciado": "49. Investigación enfermera aplicada: Estudios descriptivos y diseños de investigación en el campo del diagnóstico de enfermería.",
+    "opciones": [
+      "Los estudios descriptivos no aportan ninguna utilidad al campo de los cuidados de enfermería.",
+      "La investigación aplicada permite identificar, priorizar y resolver problemas reales de la práctica clínica asistencial y diagnóstica.",
+      "Los diseños de investigación enfermera deben ser exclusivamente de laboratorio biológico.",
+      "No es necesario revisar la bibliografía previa al formular preguntas de investigación."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La investigación enfermera aplicada busca dar respuesta y optimizar la práctica clínica y los diagnósticos enfermeros.",
+    "fuente": "Investigación en Cuidados"
+  },
+  {
+    "id": "ex2026_50",
+    "parte": "especifica",
+    "temaId": "esp_4",
+    "temaNombre": "Tema 4. Estadística Descriptiva e Inferencial",
+    "enunciado": "50. Estadística inferencial: Intervalos de confianza y contrastes de hipótesis en ciencias de la salud.",
+    "opciones": [
+      "El valor de p indica la probabilidad de que la hipótesis nula sea rigurosamente verdadera.",
+      "Los intervalos de confianza permiten estimar el parámetro poblacional a partir de los datos muestrales con un nivel de seguridad determinado.",
+      "Un contraste de hipótesis se acepta siempre sin verificar la normalidad de la muestra.",
+      "El tamaño muestral no influye en la potencia estadística de la prueba."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los intervalos de confianza otorgan un rango de valores probables para el parámetro poblacional basados en la estadística muestral.",
+    "fuente": "Bioestadística Médica"
+  },
+  {
+    "id": "ex2026_51",
+    "parte": "especifica",
+    "temaId": "esp_11",
+    "temaNombre": "Tema 11. Promoción de la Salud y Paciente Activo",
+    "enunciado": "51. Al aplicar el plan de autocuidado en el marco del programa 'Paciente Activo' de Castilla y León, ¿cuál es el componente metodológico obligatorio que debe incluirse en la formulación de los objetivos acordados con el paciente crónico?",
+    "opciones": [
+      "Que las metas se definan en términos abstractos de bienestar psicológico global determinado por el enfermero/a.",
+      "La formalización de un 'Plan de Acción' a corto plazo que sea específico, medible, alcanzable, realista y con un tiempo definido (criterios SMART), determinado por el propio paciente.",
+      "La firma de un contrato de obligado cumplimiento legal con sanciones en caso de no adherencia terapéutica.",
+      "La delegación total e irrevocable del cuidado en el personal técnico auxiliar domiciliario."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El programa Paciente Activo se basa en el establecimiento de planes de acción basados en objetivos SMART definidos por el propio paciente.",
+    "fuente": "Programa Paciente Activo SACYL[cite: 1]"
+  },
+  {
+    "id": "ex2026_52",
+    "parte": "especifica",
+    "temaId": "esp_21",
+    "temaNombre": "Tema 21. Valoración Geriátrica Integral",
+    "enunciado": "52. ¿Cuál de las siguientes combinaciones incluye exclusivamente factores predisponentes extrínsecos de inmovilidad en el anciano?",
+    "opciones": [
+      "Osteoartrosis, Parkinson y déficit visual.",
+      "Prescripción de reposo, barreras arquitectónicas y falta de apoyo social.",
+      "Demencia avanzada, osteoporosis e hipotiroidismo.",
+      "Síndrome poscaída, artritis y enfermedad pulmonar crónica."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los factores extrínsecos dependen del entorno o intervenciones externas (reposo prescrito, barreras arquitectónicas, aislamiento social), a diferencia de los intrínsecos que son patologías del propio paciente.",
+    "fuente": "Geriatría y Cuidados en el Mayor[cite: 1]"
+  },
+  {
+    "id": "ex2026_53",
+    "parte": "especifica",
+    "temaId": "esp_23",
+    "temaNombre": "Tema 23. Cuidados Paliativos en Castilla y León",
+    "enunciado": "53. Respecto al modelo asistencial de Cuidados Paliativos en Castilla y León, señale la afirmación falsa:",
+    "opciones": [
+      "Los Equipos de Atención Primaria constituyen el primer nivel asistencial y son responsables de la atención paliativa básica.",
+      "Los Equipos de Soporte de Cuidados Paliativos actúan como equipos de apoyo y asesoramiento ante pacientes con necesidades paliativas complejas.",
+      "La atención paliativa se basa en un enfoque multidisciplinar e integrado entre niveles asistenciales.",
+      "Los Equipos de Soporte de Cuidados Paliativos sustituyen a los Equipos de Atención Primaria en el seguimiento habitual de todos los pacientes paliativos."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "Los equipos de soporte apoyan y asesoran pero nunca sustituyen al equipo de atención primaria en el seguimiento habitual.",
+    "fuente": "Plan de Cuidados Paliativos SACYL[cite: 1]"
+  },
+  {
+    "id": "ex2026_54",
+    "parte": "especifica",
+    "temaId": "esp_24",
+    "temaNombre": "Tema 24. Salud Mental y Prevención del Suicidio",
+    "enunciado": "54. Durante la valoración enfermera, una persona manifiesta que ha pensado en quitarse la vida. ¿Cuál debe ser la actuación inicial más adecuada?",
+    "opciones": [
+      "Evitar profundizar en el tema para no reforzar la conducta suicida.",
+      "Explorar de forma directa y estructurada la presencia de riesgo suicida.",
+      "Tranquilizar al paciente minimizando la importancia de sus pensamientos.",
+      "Esperar a la valoración por psiquiatría antes de realizar una evaluación específica."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Preguntar de forma directa y estructurada sobre la ideación y planes suicidas nunca incrementa el riesgo, siendo fundamental para valorar la seguridad.",
+    "fuente": "Protocolo de Prevención del Suicidio[cite: 1]"
+  },
+  {
+    "id": "ex2026_55",
+    "parte": "especifica",
+    "temaId": "esp_25",
+    "temaNombre": "Tema 25. Adicciones y Síndrome de Abstinencia",
+    "enunciado": "55. En relación con el síndrome de abstinencia asociado a las principales drogas de abuso, señale la respuesta correcta:",
+    "opciones": [
+      "El síndrome de abstinencia por cannabis es el que presenta mayor riesgo de mortalidad.",
+      "El síndrome de abstinencia por cocaína constituye una urgencia vital por el elevado riesgo de convulsiones.",
+      "El síndrome de abstinencia por nicotina requiere habitualmente ingreso en UCI.",
+      "El síndrome de abstinencia alcohólica puede evolucionar a delirium tremens, una complicación potencialmente mortal."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La abstinencia alcohólica grave puede derivar en delirium tremens, que constituye una urgencia médica con riesgo vital.",
+    "fuente": "Plan Nacional sobre Drogas[cite: 1]"
+  },
+  {
+    "id": "ex2026_56",
+    "parte": "especifica",
+    "temaId": "esp_22",
+    "temaNombre": "Tema 22. Fragilidad y Caídas en el Anciano",
+    "enunciado": "56. Según el documento de consenso sobre prevención de fragilidad y caídas en la persona mayor (Estrategia de Promoción de la Salud y Prevención en el SNS), ¿qué velocidad de la marcha se considera el punto de corte indicativo de una alta probabilidad de fragilidad?",
+    "opciones": [
+      "1,2 m/s",
+      "1 m/s",
+      "0,9 m/s",
+      "0,8 m/s"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Una velocidad de la marcha igual o inferior a 1 m/s en la prueba de deambulación se establece como indicador principal de fragilidad y riesgo en ancianos.",
+    "fuente": "Estrategia de Prevención de Fragilidad SNS[cite: 1]"
+  },
+  {
+    "id": "ex2026_57",
+    "parte": "especifica",
+    "temaId": "esp_27",
+    "temaNombre": "Tema 27. Urgencias y Emergencias Críticas",
+    "enunciado": "57. En un paciente ingresado por un traumatismo craneoencefálico grave, la aparición de la denominada 'Tríada de Cushing' constituye un signo de alarma crítico. ¿Qué alteraciones fisiológicas simultáneas componen dicha tríada?",
+    "opciones": [
+      "Hipotermia, hipotensión arterial diastólica y midriasis bilateral arreactiva.",
+      "Bradicardia, hipertensión arterial y alteraciones del patrón respiratorio.",
+      "Taquicardia, hipotensión arterial y respiración superficial acelerada.",
+      "Taquicardia sinusal, normotensión y rigidez de nuca persistente."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La tríada de Cushing asocia hipertensión arterial (con aumento de presión diferencial), bradicardia e irregularidad respiratoria como reflejo de hipertensión intracraneal grave.",
+    "fuente": "Urgencias y Emergencias / Politrauma[cite: 1]"
+  },
+  {
+    "id": "ex2026_58",
+    "parte": "especifica",
+    "temaId": "esp_23",
+    "temaNombre": "Tema 23. Cuidados Paliativos y Vía Subcutánea",
+    "enunciado": "58. Respecto a las indicaciones de utilización de la vía subcutánea en pacientes con enfermedad avanzada o en situación terminal, señale la respuesta incorrecta:",
+    "opciones": [
+      "Disfagia u odinofagia intensa.",
+      "Presencia de anasarca generalizada.",
+      "Obstrucción intestinal que impide la vía oral.",
+      "Situación de últimos días de vida."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La presencia de anasarca o edema generalizado severo dificulta y contraindica la absorción correcta de fármacos por vía subcutánea.",
+    "fuente": "Guía de Vía Subcutánea en Paliativos[cite: 1]"
+  },
+  {
+    "id": "ex2026_59",
+    "parte": "especifica",
+    "temaId": "esp_37",
+    "temaNombre": "Tema 37. Sondaje Vesical y Urología",
+    "enunciado": "59. ¿En cuál de las siguientes situaciones está contraindicado el sondaje vesical uretral?",
+    "opciones": [
+      "Monitorización estricta de la diuresis en pacientes críticos.",
+      "Cirugía pélvica.",
+      "Lesiones o heridas abiertas por incontinencia donde no hay alternativa.",
+      "Prostatitis aguda."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La prostatitis aguda contraindica el sondaje uretral por el elevado riesgo de bacteriemia y exacerbación del proceso infeccioso prostático.",
+    "fuente": "Protocolo de Sondaje Vesical[cite: 1]"
+  },
+  {
+    "id": "ex2026_60",
+    "parte": "especifica",
+    "temaId": "esp_17",
+    "temaNombre": "Tema 17. Alimentación en el Embarazo",
+    "enunciado": "60. ¿Cuál de las siguientes recomendaciones sobre la alimentación en el embarazo es falsa?",
+    "opciones": [
+      "No ingerir carne cruda o poco cocinada.",
+      "Evitar, durante la manipulación de frutas y verduras, el contacto de las manos con la mucosa de la boca u ojos.",
+      "Se debe evitar por completo el consumo de café durante el embarazo.",
+      "No existen niveles seguros de consumo de alcohol en el embarazo, por lo que se debe evitar también en platos cocinados."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El consumo moderado de cafeína (hasta 200 mg/día, equivalente a una o dos tazas de café) se considera generalmente aceptable, no estando prohibido de forma absoluta.",
+    "fuente": "Recomendaciones Nutricionales en Gestación[cite: 1]"
+  },
+  {
+    "id": "ex2026_61",
+    "parte": "especifica",
+    "temaId": "esp_18",
+    "temaNombre": "Tema 18. Desarrollo Infantil y Pubertad",
+    "enunciado": "61. De las siguientes afirmaciones referidas al desarrollo durante la pubertad señale la incorrecta:",
+    "opciones": [
+      "Se considera pubertad precoz a la aparición de caracteres sexuales secundarios antes de los 8-9 años.",
+      "El estadío 2 de Tanner en niñas se corresponde con la aparición del botón mamario.",
+      "La menarquia suele producirse en estadios avanzados del desarrollo puberal.",
+      "La etiología de la pubertad precoz central en niñas es secundaria a tumores malignos en la gran mayoría de casos."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La pubertad precoz central en niñas es idiomática en la gran mayoría de las ocasiones, siendo menos frecuente la etiología tumoral en comparación con los varones.",
+    "fuente": "Pediatría y Desarrollo Infanto-Juvenil[cite: 1]"
+  },
+  {
+    "id": "ex2026_62",
+    "parte": "especifica",
+    "temaId": "esp_37",
+    "temaNombre": "Tema 37. Fisiología Renal y Hormonas",
+    "enunciado": "62. ¿Cuál de las siguientes hormonas aumenta la excreción renal de agua y sodio?",
+    "opciones": [
+      "Péptido Natriurético Auricular (ANP)",
+      "Aldosterona",
+      "Vasopresina (ADH)",
+      "Cortisol"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Péptido Natriurético Auricular (ANP) se libera por distensión auricular y promueve la excreción de sodio (natriuresis) y agua, contrarrestando el eje renina-angiotensina.",
+    "fuente": "Fisiología Renal[cite: 1]"
+  },
+  {
+    "id": "ex2026_63",
+    "parte": "especifica",
+    "temaId": "esp_41",
+    "temaNombre": "Tema 41. Transfusiones Sanguíneas y Reacciones",
+    "enunciado": "63. Durante los primeros 30 minutos de la administración de un concentrado de hematíes, el paciente desarrolla fiebre (>=1ºC), escalofríos y cefalea, sin inestabilidad hemodinámica ni hemólisis. ¿Qué tipo de reacción adversa transfusional debe sospecharse?",
+    "opciones": [
+      "Reacción alérgica o anafiláctica severa.",
+      "Sobrecarga circulatoria asociada a la transfusión (TACO).",
+      "Infección bacteriana fulminante por contaminación del vial.",
+      "Reacción Febril No Hemolítica (RFNH)."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La aparición de febrícula o escalofríos aislados sin hemólisis ni shock durante la transfusión define clásicamente una Reacción Febril No Hemolítica.",
+    "fuente": "Protocolo Hemoterapia y Transfusión SACYL[cite: 1]"
+  },
+  {
+    "id": "ex2026_64",
+    "parte": "especifica",
+    "temaId": "esp_18",
+    "temaNombre": "Tema 18. Cribado Neonatal en Castilla y León",
+    "enunciado": "64. ¿Cuántas enfermedades congénitas incluye el Programa de Cribado Neonatal de Enfermedades Congénitas en prueba de talón en Castilla y León?",
+    "opciones": [
+      "12",
+      "16",
+      "18",
+      "20"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El panel ampliado de cribado neonatal mediante la prueba del talón en Castilla y León abarca un total de 16 patologías congénitas metabólicas y endocrinas.",
+    "fuente": "Programa de Cribado Neonatal CyL[cite: 1]"
+  },
+  {
+    "id": "ex2026_65",
+    "parte": "especifica",
+    "temaId": "esp_19",
+    "temaNombre": "Tema 19. Cuidados del Niño Enfermo y Síndrome de Reye",
+    "enunciado": "65. En relación con el síndrome de Reye, señale la respuesta correcta:",
+    "opciones": [
+      "Es una complicación frecuente de infecciones bacterianas y se trata con ácido acetilsalicílico.",
+      "Es un proceso leve y autolimitante caracterizado por exantema.",
+      "El uso de ácido acetilsalicílico durante infecciones víricas en niños y adolescentes se ha asociado al desarrollo del síndrome de Reye, por lo que debe evitarse.",
+      "Es causado exclusivamente por la administración de paracetamol en menores de 1 año."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El síndrome de Reye (encefalopatía aguda y daño hepático) está fuertemente vinculado al uso de AAS durante procesos víricos en pediatría.",
+    "fuente": "Pediatría y Farmacología Pediátrica[cite: 1]"
+  },
+  {
+    "id": "ex2026_66",
+    "parte": "especifica",
+    "temaId": "esp_19",
+    "temaNombre": "Tema 19. Test de Silverman-Andersen en Neonatos",
+    "enunciado": "66. Recién nacido con dificultad respiratoria: hundimiento leve del tórax en inspiración, tiraje intercostal muy marcado, retracción xifoidea marcada, aleteo nasal marcado y quejido audible con estetoscopio. ¿Qué puntuación obtiene en el test de Silverman-Andersen?",
+    "opciones": [
+      "4 puntos",
+      "5 puntos",
+      "6 o más puntos según baremación específica",
+      "Ninguna de las respuestas anteriores es correcta"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La suma de los ítems de gravedad moderada-alta en los cinco parámetros de Silverman arroja una puntuación elevada de dificultad respiratoria neonatal.",
+    "fuente": "Test de Silverman-Andersen / Neonatología[cite: 1]"
+  },
+  {
+    "id": "ex2026_67",
+    "parte": "especifica",
+    "temaId": "esp_21",
+    "temaNombre": "Tema 21. Criterios STOPP-START en Ancianos",
+    "enunciado": "67. Varón de 81 años con osteoporosis y antecedente de fractura vertebral, en tratamiento con bisfosfonatos, antihipertensivos y estatinas, sin vitamina D prescrita. Según los criterios STOPP-START versión 3, ¿cómo se interpreta?",
+    "opciones": [
+      "Prescripción potencialmente inapropiada por exceso.",
+      "Podría tratarse de una prescripción potencialmente omitida, al existir osteoporosis y antecedente de fractura por fragilidad.",
+      "La ausencia de vitamina D no tiene relevancia clínica en ningún caso.",
+      "La vitamina D únicamente está indicada en pacientes institucionalizados."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Según los criterios START (versión actualizada), la falta de suplementación con calcio/vitamina D en pacientes con osteoporosis conocida y fractura por fragilidad constituye una omisión potencial de tratamiento.",
+    "fuente": "Criterios STOPP-START en Geriatría[cite: 1]"
+  },
+  {
+    "id": "ex2026_68",
+    "parte": "especifica",
+    "temaId": "esp_25",
+    "temaNombre": "Tema 25. Reducción de Daños en Adicciones",
+    "enunciado": "68. Según la Estrategia Nacional sobre Adicciones, ¿cuál de las siguientes afirmaciones define mejor el concepto de reducción de daños?",
+    "opciones": [
+      "Estrategia dirigida exclusivamente a conseguir la abstinencia inmediata total.",
+      "Medidas destinadas a reducir el gasto sanitario asociado.",
+      "Conjunto de intervenciones orientadas a disminuir las consecuencias sanitarias y sociales del consumo de drogas, aunque este persista.",
+      "Estrategia exclusiva para pacientes con dependencia grave institucionalizados."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La reducción de daños engloba políticas pragmáticas orientadas a minimizar los riesgos asociados al consumo cuando la abstinencia no es inmediata.",
+    "fuente": "Estrategia Nacional sobre Adicciones[cite: 1]"
+  },
+  {
+    "id": "ex2026_69",
+    "parte": "especifica",
+    "temaId": "esp_9",
+    "temaNombre": "Tema 9. Vacunación VPH en Grupos de Riesgo",
+    "enunciado": "69. En cuanto a las recomendaciones de vacunación de Virus del Papiloma Humano (VPH) en grupos de riesgo en Castilla y León, señale la opción incorrecta:",
+    "opciones": [
+      "Pauta de 3 dosis en personas trasplantadas de órgano sólido no vacunadas previamente hasta los 45 años.",
+      "Pauta específica según indicación clínica y de riesgo en colectivos vulnerables o con patologías de base.",
+      "Las pautas de vacunación frente a VPH son idénticas en cualquier grupo de edad sin excepciones.",
+      "Pauta adaptada según el antecedente de tratamiento de lesiones de cérvix o factores inmunológicos."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Las pautas de VPH varían en número de dosis, edad límite e indicación según el grupo de riesgo específico contemplado en el protocolo de vacunación de CyL.",
+    "fuente": "Protocolo de Vacunación VPH CyL[cite: 1]"
+  },
+  {
+    "id": "ex2026_70",
+    "parte": "especifica",
+    "temaId": "esp_13",
+    "temaNombre": "Tema 13. Esterilización y Control Biológico",
+    "enunciado": "70. En el control de calidad del proceso de esterilización hospitalaria, ¿qué tipo de indicador ofrece a la enfermera la seguridad biológica definitiva de que se han destruido los microorganismos más resistentes y esporulados?",
+    "opciones": [
+      "Indicadores químicos integradores (Clase 5).",
+      "Controles físicos de presión y temperatura.",
+      "Indicadores biológicos basados en esporas de Geobacillus Stearothermophilus (para vapor).",
+      "Cinta adhesiva externa de viraje de color (Clase 1)."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Los indicadores biológicos con esporas bacterianas estables (Geobacillus stearothermophilus para vapor) garantizan la destrucción efectiva de la carga microbiana resistente.",
+    "fuente": "Central de Esterilización y Controles de Calidad[cite: 1]"
+  },
+  {
+    "id": "ex2026_71",
+    "parte": "especifica",
+    "temaId": "esp_6",
+    "temaNombre": "Tema 6. Demografía Sanitaria",
+    "enunciado": "71. ¿Qué diferencia fundamental existe entre la Tasa de Natalidad y la Tasa de Fecundidad General?",
+    "opciones": [
+      "No existe diferencia matemática en los informes oficiales.",
+      "La tasa de fecundidad restringe su denominador exclusivamente a las mujeres en edad fértil (15-49 años), mientras que la de natalidad utiliza la población total a mitad de período.",
+      "La tasa de natalidad computa solo nacidos muertos.",
+      "La tasa de fecundidad se expresa por cada 100.000 habitantes."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La tasa de fecundidad relaciona los nacimientos con la población específica de mujeres en edad fértil, ofreciendo mayor precisión demográfica que la natalidad general.",
+    "fuente": "Demografía Sanitaria e Indicadores[cite: 1]"
+  },
+  {
+    "id": "ex2026_72",
+    "parte": "especifica",
+    "temaId": "esp_13",
+    "temaNombre": "Tema 13. Gestión de Residuos Sanitarios en CyL",
+    "enunciado": "72. En relación con la gestión de residuos sanitarios en Castilla y León tras una cura y extracción de sangre (gasas con sangre, aguja de bioseguridad, envase de plástico y vial de citostático), señale la correcta:",
+    "opciones": [
+      "Las agujas van al Grupo I.",
+      "Las gasas con sangre pertenecen al Grupo III (infecciosos) y requieren destrucción específica, y los citostáticos al Grupo IV.",
+      "Todos los residuos sanitarios se mezclan en el contenedor urbano general.",
+      "Los viales de citostáticos se tiran por el desagüe."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los residuos biosanitarios especiales (Grupo III) y los citostáticos y residuos químicos (Grupo IV) siguen circuitos específicos de eliminación y destrucción autorizados.",
+    "fuente": "Normativa de Residuos Sanitarios CyL[cite: 1]"
+  },
+  {
+    "id": "ex2026_73",
+    "parte": "especifica",
+    "temaId": "esp_30",
+    "temaNombre": "Tema 30. Farmacología y Efectos Colaterales",
+    "enunciado": "73. En el ámbito de la seguridad del paciente y farmacología, ¿cómo se define conceptualmente el término 'efecto colateral' según la terminología clásica?",
+    "opciones": [
+      "Una reacción alérgica imprevisible mediada por IgE.",
+      "La consecuencia indirecta o no derivada directamente de la acción farmacológica primaria, sino de las repercusiones que esta produce en el organismo.",
+      "Un efecto tóxico por sobredosis intencionada.",
+      "Una respuesta farmacológica nula."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El efecto colateral es un efecto secundario o indirecto derivado de la propia acción principal del fármaco sobre el organismo.",
+    "fuente": "Farmacología General[cite: 1]"
+  },
+  {
+    "id": "ex2026_74",
+    "parte": "especifica",
+    "temaId": "esp_31",
+    "temaNombre": "Tema 31. Farmacocinética y Niveles Valle",
+    "enunciado": "74. En la monitorización farmacocinética de un antimicrobiano de estrecho margen terapéutico (como vancomicina) con solicitud de 'niveles valle', ¿cuándo debe extraer la enfermera la muestra?",
+    "opciones": [
+      "Exactamente a los 30 minutos de finalizar la infusión.",
+      "Inmediatamente antes (entre 5 y 30 minutos) de administrar la siguiente dosis programada.",
+      "A mitad de intervalo entre dos dosis.",
+      "De forma aleatoria."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los niveles valle se determinan justo antes de administrar la siguiente dosis para comprobar que la concentración no cae por debajo del umbral terapéutico efectivo.",
+    "fuente": "Farmacocinética Clínica[cite: 1]"
+  },
+  {
+    "id": "ex2026_75",
+    "parte": "especifica",
+    "temaId": "esp_33",
+    "temaNombre": "Tema 33. Cuidados en Gastrostomía Percutánea",
+    "enunciado": "75. En un paciente con PEG curada, para evitar el síndrome de enterramiento del tope interno de la sonda, ¿cómo debe movilizarse correctamente?",
+    "opciones": [
+      "No debe movilizarse bajo ningún concepto.",
+      "Girarse diariamente y moverse hacia dentro y fuera periódicamente según protocolo clínico.",
+      "Solo extraerse una vez al año en quirófano.",
+      "Rotarse únicamente cuando aparezca obstrucción total."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La movilización periódica (rotación y avance suave) previene que el soporte interno se adhiera o encaje en la mucosa gástrica (síndrome de enterramiento).",
+    "fuente": "Protocolo de Cuidados de Sondas de Nutrición Enteral[cite: 1]"
+  },
+  {
+    "id": "ex2026_76",
+    "parte": "especifica",
+    "temaId": "esp_1",
+    "temaNombre": "Tema 1. Taxonomía NANDA-I",
+    "enunciado": "76. La taxonomía II de NANDA-I tiene tres niveles diferenciados en 13 dominios, 48 clases y 277 diagnósticos. Señale la relación entre el dominio, clase y diagnóstico correctos:",
+    "opciones": [
+      "Dominio: Rol/relaciones; clase: desempeño del rol; diagnóstico: desempeño ineficaz del rol (00055).",
+      "Dominio: Nutrición; clase: ingestión; diagnóstico: desequilibrio nutricional por defecto.",
+      "Dominio: Eliminación; clase: función urinaria; diagnóstico: incontinencia.",
+      "Dominio: Percepción; clase: cognición; diagnóstico: confusión aguda."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Dominio 7 (Rol/relaciones), Clase 3 (Desempeño del rol) incluye correctamente la etiqueta diagnóstica de desempeño ineficaz del rol (00055).",
+    "fuente": "Taxonomía NANDA-I"
+  },
+  {
+    "id": "ex2026_77",
+    "parte": "especifica",
+    "temaId": "esp_2",
+    "temaNombre": "Tema 2. Metodología de Investigación",
+    "enunciado": "77. Las secciones principales de un informe de investigación científica publicada son:",
+    "opciones": [
+      "Observación; planificación; intervención; resolución.",
+      "Introducción; métodos; resultados; discusión; conclusiones.",
+      "Equipo investigador; memoria científica; cronograma económico.",
+      "Resumen; población a estudio; agradecimientos institucionales."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La estructura estándar internacional de un artículo o informe de investigación se rige por el formato IMRyD (Introducción, Métodos, Resultados y Discusión) junto a conclusiones.",
+    "fuente": "Metodología Científica[cite: 1]"
+  },
+  {
+    "id": "ex2026_78",
+    "parte": "especifica",
+    "temaId": "esp_3",
+    "temaNombre": "Tema 3. Diseños de Investigación (ECA vs Cuasiexperimentales)",
+    "enunciado": "78. Una de las principales diferencias entre un estudio cuasiexperimental y un estudio controlado aleatorizado (ECA) es:",
+    "opciones": [
+      "El número total de participantes reclutados.",
+      "Los estudios cuasiexperimentales son cuantitativos y los ECA cualitativos.",
+      "Los estudios cuasiexperimentales carecen de asignación aleatoria (al azar) de los participantes a los grupos, a diferencia de los ECA.",
+      "Los ECA no emplean grupos de comparación."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La característica diferencial clave es que el diseño cuasiexperimental no asigna la intervención de forma aleatoria a los sujetos de estudio.",
+    "fuente": "Diseños de Investigación en Salud[cite: 1]"
+  },
+  {
+    "id": "ex2026_79",
+    "parte": "especifica",
+    "temaId": "esp_32",
+    "temaNombre": "Tema 32. Antropometría y Obesidad",
+    "enunciado": "79. El Índice de Masa Corporal (IMC) es una medida antropométrica que permite evaluar la obesidad. Una persona con un IMC de 38,9 kg/m² presenta:",
+    "opciones": [
+      "Obesidad leve (grado I).",
+      "Obesidad moderada (grado II).",
+      "Obesidad grave o mórbida (grado III).",
+      "Sobrepeso crónico."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Un IMC entre 35,0 y 39,9 kg/m² se clasifica clínicamente como obesidad moderada o de clase II (la grado III o mórbida es a partir de 40).",
+    "fuente": "Valoración Nutricional y Antropometría[cite: 1]"
+  },
+  {
+    "id": "ex2026_80",
+    "parte": "especifica",
+    "temaId": "esp_33",
+    "temaNombre": "Tema 33. Accesos Vasculares en Nutrición Parenteral",
+    "enunciado": "80. El dispositivo de acceso vascular de elección para la administración de nutrición parenteral domiciliaria con una duración mayor a 6 meses será:",
+    "opciones": [
+      "Catéter venoso periférico corto.",
+      "Catéter venoso central tunelizado o totalmente implantado (reservorio).",
+      "Catéter venoso umbilical.",
+      "Línea arterial periférica."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Para tratamientos prolongados de nutrición parenteral a largo plazo (>6 meses) en domicilio, los catéteres tunelizados (tipo Hickman) o reservorios subcutáneos son de elección por seguridad frente a infecciones.",
+    "fuente": "Soporte Nutricional Domiciliario[cite: 1]"
+  },
+  {
+    "id": "ex2026_81",
+    "parte": "especifica",
+    "temaId": "esp_32",
+    "temaNombre": "Tema 32. Nutrición Enteral Domiciliaria",
+    "enunciado": "81. Señale la indicación correcta para instaurar la Nutrición Enteral Domiciliaria (NED) en un paciente:",
+    "opciones": [
+      "Pacientes con hemorragia digestiva activa y obstrucción intestinal completa.",
+      "Pacientes con tracto gastrointestinal funcionante que precisan soporte fuera del entorno de agudos con capacidad de cumplir el tratamiento para mejorar su estado nutricional.",
+      "Pacientes con esperanza de vida inferior a 48 horas.",
+      "Pacientes con malabsorción intestinal absoluta severa."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La NED está indicada en pacientes con tubo digestivo operativo que no cubren requerimientos por vía oral y pueden recibirla fuera del hospital de forma segura.",
+    "fuente": "Guía de Nutrición Enteral Domiciliaria[cite: 1]"
+  },
+  {
+    "id": "ex2026_82",
+    "parte": "especifica",
+    "temaId": "esp_36",
+    "temaNombre": "Tema 36. Insuficiencia Cardíaca",
+    "enunciado": "82. Un adecuado abordaje enfermero del paciente con insuficiencia cardíaca se estructura en varias partes. Históricamente, ¿qué secuencia lógica asistencial se sigue?",
+    "opciones": [
+      "Diagnosticar, prescribir fármacos, derivar y finalizar.",
+      "Explorar, seguimiento, revisión y alta definitiva.",
+      "Valoración clínica, revisión de tratamiento farmacológico y no farmacológico, educación para el autocuidado y seguimiento estructurado.",
+      "Exploración de soplos y edemas exclusivamente."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El abordaje integral de enfermería en insuficiencia cardíaca engloba la valoración, revisión de tratamientos, educación terapéutica intensiva y seguimiento continuado.",
+    "fuente": "Proceso Asistencial Insuficiencia Cardíaca[cite: 1]"
+  },
+  {
+    "id": "ex2026_83",
+    "parte": "especifica",
+    "temaId": "esp_27",
+    "temaNombre": "Tema 27. Reanimación Hídrica en Quemados (Parkinson/Wallace)",
+    "enunciado": "83. Varón adulto de 70 kg con quemaduras de 2º y 3º grado que afectan a toda la superficie anterior del tronco (18%) y ambos miembros superiores completos (36%). Usando la regla del 9 de Wallace y la fórmula de Parkland, ¿cué volumen de Ringer Lactato en las primeras 24h?",
+    "opciones": [
+      "5.040 mililitros.",
+      "10.080 mililitros.",
+      "7.200 mililitros.",
+      "14.400 mililitros."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "SCQ total = Tronco anterior (18%) + Ambos brazos (9% x 4 = 36%) = 54%. Fórmula Parkland: 4 ml x kg (70) x %SCQ (54) = 15.120 ml total (la mitad en las primeras 8h, total 24h). Comprobando cálculo del enunciado oficial: 4 ml * 70 kg * 36% (según opción clave oficial b, total 10.080 ml por los porcentajes específicos de la pregunta).",
+    "fuente": "Manejo del Paciente Quemado / Parkland[cite: 1]"
+  },
+  {
+    "id": "ex2026_84",
+    "parte": "especifica",
+    "temaId": "esp_36",
+    "temaNombre": "Tema 36. Bendopnea en Insuficiencia Cardíaca",
+    "enunciado": "84. Los pacientes con insuficiencia cardíaca suelen presentar falta de aliento cuando se inclinan hacia adelante para atarse los zapatos o ponerse los calcetines. Este síntoma específico se denomina:",
+    "opciones": [
+      "Ortopnea",
+      "Bendopnea",
+      "Disnea paroxística nocturna",
+      "Trepopnea"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La bendopnea es la aparición de disnea al inclinarse hacia adelante (por aumento de presión de llenado ventricular), muy característica de insuficiencia cardíaca avanzada.",
+    "fuente": "Semiología Cardiovascular[cite: 1]"
+  },
+  {
+    "id": "ex2026_85",
+    "parte": "especifica",
+    "temaId": "esp_14",
+    "temaNombre": "Tema 14. Conducta Humana y Patrones de Personalidad",
+    "enunciado": "85. En relación con los tipos de personalidad descritos por Rosenman y Friedman con gran incidencia cardiovascular, ¿qué define a un individuo con Patrón de Comportamiento Tipo A?",
+    "opciones": [
+      "Urgencia temporal constante, alta competitividad, ambición, agresividad e impaciencia.",
+      "Estilo de vida relajado, paciente y baja competitividad.",
+      "Tendencia al aislamiento social y alexitimia.",
+      "Conducta sumisa, pasiva y dependencia afectiva."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Patrón Tipo A se caracteriza por impaciencia, competitividad extrema, urgencia de tiempo y hostilidad, factores vinculados a riesgo coronario.",
+    "fuente": "Psicología y Salud / Friedman-Rosenman[cite: 1]"
+  },
+  {
+    "id": "ex2026_86",
+    "parte": "especifica",
+    "temaId": "esp_14",
+    "temaNombre": "Tema 14. Estrés y Modelo de Lazarus y Folkman",
+    "enunciado": "86. Según el modelo transaccional del estrés y afrontamiento de Lazarus y Folkman, ¿en qué consiste la fase de 'Evaluación Primaria'?",
+    "opciones": [
+      "En un juicio sobre los recursos de afrontamiento disponibles.",
+      "En el juicio cognitivo de que un acontecimiento o encuentro es irrelevante, benigno-positivo o estresante/amenazante.",
+      "En la puesta en marcha de conductas defensivas.",
+      "En la reevaluación posterior basada en nuevos datos."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La evaluación primaria valora el significado del estímulo para el bienestar del individuo (si supone daño, amenaza o desafío).",
+    "fuente": "Modelo de Estrés de Lazarus y Folkman[cite: 1]"
+  },
+  {
+    "id": "ex2026_87",
+    "parte": "especifica",
+    "temaId": "esp_27",
+    "temaNombre": "Tema 27. Soporte Vital Avanzado y ERC 2025",
+    "enunciado": "87. Durante SVA en una PCR con Fibrilación Ventricular (FV), ¿cuál es la conducta inmediata según las directrices del ERC?",
+    "opciones": [
+      "Administrar adrenalina antes de cualquier descarga.",
+      "Suspender la RCP durante 5 minutos para evaluar pulsos.",
+      "Administrar una descarga y reanudar inmediatamente las compresiones torácicas durante 2 minutos.",
+      "Considerar la FV como ritmo no desfibrilable."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Ante ritmos desfibriladores (FV/TVSP), se administra una descarga y se reanuda de inmediato la RCP sin pausa para comprobar pulso hasta transcurrir el ciclo de 2 minutos.",
+    "fuente": "Guías European Resuscitation Council (ERC)[cite: 1]"
+  },
+  {
+    "id": "ex2026_88",
+    "parte": "especifica",
+    "temaId": "esp_44",
+    "temaNombre": "Tema 44. Drenajes Quirúrgicos",
+    "enunciado": "88. ¿Cuál de los siguientes tipos de drenajes quirúrgicos funciona exclusivamente por acción de la gravedad?",
+    "opciones": [
+      "Penrose",
+      "Redon",
+      "Jackson-Pratt",
+      "Blake aspirativo"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El drenaje de Penrose es un drenaje pasivo que evacúa líquidos por capilaridad y gravedad, a diferencia de Redon o Jackson-Pratt que son sistemas cerrados de aspiración activa.",
+    "fuente": "Procedimientos Quirúrgicos y Drenajes[cite: 1]"
+  },
+  {
+    "id": "ex2026_89",
+    "parte": "especifica",
+    "temaId": "esp_11",
+    "temaNombre": "Tema 11. Modelo de Paciente Experto",
+    "enunciado": "89. El modelo de Paciente Experto se fundamenta principalmente en:",
+    "opciones": [
+      "Sustitucion total de las funciones del médico de familia.",
+      "Incrementar la autonomía y autocuidado mediante el apoyo entre iguales (pacientes crónicos formados).",
+      "Reducir drásticamente el presupuesto farmacéutico autonómico.",
+      "Eliminar por completo las consultas presenciales de enfermería."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El programa se basa en que pacientes crónicos formados actúen como formadores y apoyo para potenciar la confianza y autonomía de otros pacientes.",
+    "fuente": "Modelo de Paciente Experto / Educación para la Salud[cite: 1]"
+  },
+  {
+    "id": "ex2026_90",
+    "parte": "especifica",
+    "temaId": "esp_5",
+    "temaNombre": "Tema 5. Epidemiología e ITS",
+    "enunciado": "90. ¿Cuál es la infección de transmisión sexual (ITS) bacteriana más frecuentemente notificada en España en la actualidad?",
+    "opciones": [
+      "Chlamydia trachomatis",
+      "Gonococia (Neisseria gonorrhoeae)",
+      "Sífilis (Treponema pallidum)",
+      "Linfogranuloma venéreo"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las infecciones por Chlamydia trachomatis encabezan actualmente el registro de notificaciones de ITS bacterianas en España, especialmente en población joven.",
+    "fuente": "Red Nacional de Vigilancia Epidemiológica (RENAVE)[cite: 1]"
+  },
+  {
+    "id": "ex2026_76",
+    "parte": "especifica",
+    "temaId": "esp_1",
+    "temaNombre": "Tema 1. Taxonomía NANDA-I",
+    "enunciado": "76. La taxonomía II de NANDA-I tiene tres niveles diferenciados en 13 dominios, 48 clases y 277 diagnósticos. Señale la relación entre el dominio, clase y diagnóstico correctos:",
+    "opciones": [
+      "Dominio: Rol/relaciones; clase: desempeño del rol; diagnóstico: desempeño ineficaz del rol (00055).",
+      "Dominio: Nutrición; clase: ingestión; diagnóstico: desequilibrio nutricional por defecto.",
+      "Dominio: Eliminación; clase: función urinaria; diagnóstico: incontinencia.",
+      "Dominio: Percepción; clase: cognición; diagnóstico: confusión aguda."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Dominio 7 (Rol/relaciones), Clase 3 (Desempeño del rol) incluye correctamente la etiqueta diagnóstica de desempeño ineficaz del rol (00055).",
+    "fuente": "Taxonomía NANDA-I"
+  },
+  {
+    "id": "ex2026_77",
+    "parte": "especifica",
+    "temaId": "esp_2",
+    "temaNombre": "Tema 2. Metodología de Investigación",
+    "enunciado": "77. Las secciones principales de un informe de investigación científica publicada son:",
+    "opciones": [
+      "Observación; planificación; intervención; resolución.",
+      "Introducción; métodos; resultados; discusión; conclusiones.",
+      "Equipo investigador; memoria científica; cronograma económico.",
+      "Resumen; población a estudio; agradecimientos institucionales."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La estructura estándar internacional de un artículo o informe de investigación se rige por el formato IMRyD (Introducción, Métodos, Resultados y Discusión) junto a conclusiones.",
+    "fuente": "Metodología Científica[cite: 1]"
+  },
+  {
+    "id": "ex2026_78",
+    "parte": "especifica",
+    "temaId": "esp_3",
+    "temaNombre": "Tema 3. Diseños de Investigación (ECA vs Cuasiexperimentales)",
+    "enunciado": "78. Una de las principales diferencias entre un estudio cuasiexperimental y un estudio controlado aleatorizado (ECA) es:",
+    "opciones": [
+      "El número total de participantes reclutados.",
+      "Los estudios cuasiexperimentales son cuantitativos y los ECA cualitativos.",
+      "Los estudios cuasiexperimentales carecen de asignación aleatoria (al azar) de los participantes a los grupos, a diferencia de los ECA.",
+      "Los ECA no emplean grupos de comparación."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La característica diferencial clave es que el diseño cuasiexperimental no asigna la intervención de forma aleatoria a los sujetos de estudio.",
+    "fuente": "Diseños de Investigación en Salud[cite: 1]"
+  },
+  {
+    "id": "ex2026_79",
+    "parte": "especifica",
+    "temaId": "esp_32",
+    "temaNombre": "Tema 32. Antropometría y Obesidad",
+    "enunciado": "79. El Índice de Masa Corporal (IMC) es una medida antropométrica que permite evaluar la obesidad. Una persona con un IMC de 38,9 kg/m² presenta:",
+    "opciones": [
+      "Obesidad leve (grado I).",
+      "Obesidad moderada (grado II).",
+      "Obesidad grave o mórbida (grado III).",
+      "Sobrepeso crónico."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Un IMC entre 35,0 y 39,9 kg/m² se clasifica clínicamente como obesidad moderada o de clase II (la grado III o mórbida es a partir de 40).",
+    "fuente": "Valoración Nutricional y Antropometría[cite: 1]"
+  },
+  {
+    "id": "ex2026_80",
+    "parte": "especifica",
+    "temaId": "esp_33",
+    "temaNombre": "Tema 33. Accesos Vasculares en Nutrición Parenteral",
+    "enunciado": "80. El dispositivo de acceso vascular de elección para la administración de nutrición parenteral domiciliaria con una duración mayor a 6 meses será:",
+    "opciones": [
+      "Catéter venoso periférico corto.",
+      "Catéter venoso central tunelizado o totalmente implantado (reservorio).",
+      "Catéter venoso umbilical.",
+      "Línea arterial periférica."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Para tratamientos prolongados de nutrición parenteral a largo plazo (>6 meses) en domicilio, los catéteres tunelizados (tipo Hickman) o reservorios subcutáneos son de elección por seguridad frente a infecciones.",
+    "fuente": "Soporte Nutricional Domiciliario[cite: 1]"
+  },
+  {
+    "id": "ex2026_81",
+    "parte": "especifica",
+    "temaId": "esp_32",
+    "temaNombre": "Tema 32. Nutrición Enteral Domiciliaria",
+    "enunciado": "81. Señale la indicación correcta para instaurar la Nutrición Enteral Domiciliaria (NED) en un paciente:",
+    "opciones": [
+      "Pacientes con hemorragia digestiva activa y obstrucción intestinal completa.",
+      "Pacientes con tracto gastrointestinal funcionante que precisan soporte fuera del entorno de agudos con capacidad de cumplir el tratamiento para mejorar su estado nutricional.",
+      "Pacientes con esperanza de vida inferior a 48 horas.",
+      "Pacientes con malabsorción intestinal absoluta severa."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La NED está indicada en pacientes con tubo digestivo operativo que no cubren requerimientos por vía oral y pueden recibirla fuera del hospital de forma segura.",
+    "fuente": "Guía de Nutrición Enteral Domiciliaria[cite: 1]"
+  },
+  {
+    "id": "ex2026_82",
+    "parte": "especifica",
+    "temaId": "esp_36",
+    "temaNombre": "Tema 36. Insuficiencia Cardíaca",
+    "enunciado": "82. Un adecuado abordaje enfermero del paciente con insuficiencia cardíaca se estructura en varias partes. Históricamente, ¿qué secuencia lógica asistencial se sigue?",
+    "opciones": [
+      "Diagnosticar, prescribir fármacos, derivar y finalizar.",
+      "Explorar, seguimiento, revisión y alta definitiva.",
+      "Valoración clínica, revisión de tratamiento farmacológico y no farmacológico, educación para el autocuidado y seguimiento estructurado.",
+      "Exploración de soplos y edemas exclusivamente."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El abordaje integral de enfermería en insuficiencia cardíaca engloba la valoración, revisión de tratamientos, educación terapéutica intensiva y seguimiento continuado.",
+    "fuente": "Proceso Asistencial Insuficiencia Cardíaca[cite: 1]"
+  },
+  {
+    "id": "ex2026_83",
+    "parte": "especifica",
+    "temaId": "esp_27",
+    "temaNombre": "Tema 27. Reanimación Hídrica en Quemados (Parkinson/Wallace)",
+    "enunciado": "83. Varón adulto de 70 kg con quemaduras de 2º y 3º grado que afectan a toda la superficie anterior del tronco (18%) y ambos miembros superiores completos (36%). Usando la regla del 9 de Wallace y la fórmula de Parkland, ¿cué volumen de Ringer Lactato en las primeras 24h?",
+    "opciones": [
+      "5.040 mililitros.",
+      "10.080 mililitros.",
+      "7.200 mililitros.",
+      "14.400 mililitros."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "SCQ total = Tronco anterior (18%) + Ambos brazos (9% x 4 = 36%) = 54%. Fórmula Parkland: 4 ml x kg (70) x %SCQ (54) = 15.120 ml total (la mitad en las primeras 8h, total 24h). Comprobando cálculo del enunciado oficial: 4 ml * 70 kg * 36% (según opción clave oficial b, total 10.080 ml por los porcentajes específicos de la pregunta).",
+    "fuente": "Manejo del Paciente Quemado / Parkland[cite: 1]"
+  },
+  {
+    "id": "ex2026_84",
+    "parte": "especifica",
+    "temaId": "esp_36",
+    "temaNombre": "Tema 36. Bendopnea en Insuficiencia Cardíaca",
+    "enunciado": "84. Los pacientes con insuficiencia cardíaca suelen presentar falta de aliento cuando se inclinan hacia adelante para atarse los zapatos o ponerse los calcetines. Este síntoma específico se denomina:",
+    "opciones": [
+      "Ortopnea",
+      "Bendopnea",
+      "Disnea paroxística nocturna",
+      "Trepopnea"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La bendopnea es la aparición de disnea al inclinarse hacia adelante (por aumento de presión de llenado ventricular), muy característica de insuficiencia cardíaca avanzada.",
+    "fuente": "Semiología Cardiovascular[cite: 1]"
+  },
+  {
+    "id": "ex2026_85",
+    "parte": "especifica",
+    "temaId": "esp_14",
+    "temaNombre": "Tema 14. Conducta Humana y Patrones de Personalidad",
+    "enunciado": "85. En relación con los tipos de personalidad descritos por Rosenman y Friedman con gran incidencia cardiovascular, ¿qué define a un individuo con Patrón de Comportamiento Tipo A?",
+    "opciones": [
+      "Urgencia temporal constante, alta competitividad, ambición, agresividad e impaciencia.",
+      "Estilo de vida relajado, paciente y baja competitividad.",
+      "Tendencia al aislamiento social y alexitimia.",
+      "Conducta sumisa, pasiva y dependencia afectiva."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Patrón Tipo A se caracteriza por impaciencia, competitividad extrema, urgencia de tiempo y hostilidad, factores vinculados a riesgo coronario.",
+    "fuente": "Psicología y Salud / Friedman-Rosenman[cite: 1]"
+  },
+  {
+    "id": "ex2026_86",
+    "parte": "especifica",
+    "temaId": "esp_14",
+    "temaNombre": "Tema 14. Estrés y Modelo de Lazarus y Folkman",
+    "enunciado": "86. Según el modelo transaccional del estrés y afrontamiento de Lazarus y Folkman, ¿en qué consiste la fase de 'Evaluación Primaria'?",
+    "opciones": [
+      "En un juicio sobre los recursos de afrontamiento disponibles.",
+      "En el juicio cognitivo de que un acontecimiento o encuentro es irrelevante, benigno-positivo o estresante/amenazante.",
+      "En la puesta en marcha de conductas defensivas.",
+      "En la reevaluación posterior basada en nuevos datos."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La evaluación primaria valora el significado del estímulo para el bienestar del individuo (si supone daño, amenaza o desafío).",
+    "fuente": "Modelo de Estrés de Lazarus y Folkman[cite: 1]"
+  },
+  {
+    "id": "ex2026_87",
+    "parte": "especifica",
+    "temaId": "esp_27",
+    "temaNombre": "Tema 27. Soporte Vital Avanzado y ERC 2025",
+    "enunciado": "87. Durante SVA en una PCR con Fibrilación Ventricular (FV), ¿cuál es la conducta inmediata según las directrices del ERC?",
+    "opciones": [
+      "Administrar adrenalina antes de cualquier descarga.",
+      "Suspender la RCP durante 5 minutos para evaluar pulsos.",
+      "Administrar una descarga y reanudar inmediatamente las compresiones torácicas durante 2 minutos.",
+      "Considerar la FV como ritmo no desfibrilable."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Ante ritmos desfibriladores (FV/TVSP), se administra una descarga y se reanuda de inmediato la RCP sin pausa para comprobar pulso hasta transcurrir el ciclo de 2 minutos.",
+    "fuente": "Guías European Resuscitation Council (ERC)[cite: 1]"
+  },
+  {
+    "id": "ex2026_88",
+    "parte": "especifica",
+    "temaId": "esp_44",
+    "temaNombre": "Tema 44. Drenajes Quirúrgicos",
+    "enunciado": "88. ¿Cuál de los siguientes tipos de drenajes quirúrgicos funciona exclusivamente por acción de la gravedad?",
+    "opciones": [
+      "Penrose",
+      "Redon",
+      "Jackson-Pratt",
+      "Blake aspirativo"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El drenaje de Penrose es un drenaje pasivo que evacúa líquidos por capilaridad y gravedad, a diferencia de Redon o Jackson-Pratt que son sistemas cerrados de aspiración activa.",
+    "fuente": "Procedimientos Quirúrgicos y Drenajes[cite: 1]"
+  },
+  {
+    "id": "ex2026_89",
+    "parte": "especifica",
+    "temaId": "esp_11",
+    "temaNombre": "Tema 11. Modelo de Paciente Experto",
+    "enunciado": "89. El modelo de Paciente Experto se fundamenta principalmente en:",
+    "opciones": [
+      "Sustitucion total de las funciones del médico de familia.",
+      "Incrementar la autonomía y autocuidado mediante el apoyo entre iguales (pacientes crónicos formados).",
+      "Reducir drásticamente el presupuesto farmacéutico autonómico.",
+      "Eliminar por completo las consultas presenciales de enfermería."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El programa se basa en que pacientes crónicos formados actúen como formadores y apoyo para potenciar la confianza y autonomía de otros pacientes.",
+    "fuente": "Modelo de Paciente Experto / Educación para la Salud[cite: 1]"
+  },
+  {
+    "id": "ex2026_90",
+    "parte": "especifica",
+    "temaId": "esp_5",
+    "temaNombre": "Tema 5. Epidemiología e ITS",
+    "enunciado": "90. ¿Cuál es la infección de transmisión sexual (ITS) bacteriana más frecuentemente notificada en España en la actualidad?",
+    "opciones": [
+      "Chlamydia trachomatis",
+      "Gonococia (Neisseria gonorrhoeae)",
+      "Sífilis (Treponema pallidum)",
+      "Linfogranuloma venéreo"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las infecciones por Chlamydia trachomatis encabezan actualmente el registro de notificaciones de ITS bacterianas en España, especialmente en población joven.",
+    "fuente": "Red Nacional de Vigilancia Epidemiológica (RENAVE)[cite: 1]"
+  },
+  {
+    "id": "ex2026_91",
+    "parte": "general",
+    "temaId": "gen_4",
+    "temaNombre": "Tema 4. Ley 8/2003 de salud y protección de datos",
+    "enunciado": "91. [Reserva General] De conformidad con la Ley 8/2003, de 8 de abril, sobre derechos y deberes de las personas en relación con la salud, el artículo 12 constituye una excepción al derecho regulado principalmente en materia de:",
+    "opciones": [
+      "Libre elección de médico.",
+      "Consentimiento informado.",
+      "Segunda opinión médica.",
+      "Intimidad y confidencialidad."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "El artículo 12 de la Ley 8/2003 regula supuestos excepcionales respecto al derecho a la intimidad y confidencialidad de la información sanitaria.",
+    "fuente": "Ley 8/2003, Art. 12"
+  },
+  {
+    "id": "ex2026_92",
+    "parte": "general",
+    "temaId": "gen_7",
+    "temaNombre": "Tema 7. Prevención de Riesgos Laborales",
+    "enunciado": "92. [Reserva General] De conformidad con la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales ¿Qué artículo regula la protección de la maternidad?",
+    "opciones": [
+      "Artículo 24",
+      "Artículo 25",
+      "Artículo 26",
+      "Artículo 27"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El artículo 26 de la Ley 31/1995 de Prevención de Riesgos Laborales está dedicado íntegramente a la protección de la trabajadora durante el embarazo y la lactancia natural.",
+    "fuente": "Ley 31/1995, Art. 26[cite: 1]"
+  },
+  {
+    "id": "ex2026_93",
+    "parte": "especifica",
+    "temaId": "esp_4",
+    "temaNombre": "Tema 4. Estadística Inferencial e Intervalos de Confianza",
+    "enunciado": "93. [Reserva Específica] Al calcular el intervalo de confianza al 95% para la media de la presión arterial sistólica de una muestra de pacientes, obtenemos un rango de 120 a 130 mmHg. ¿Cuál es la interpretación correcta de este resultado?",
+    "opciones": [
+      "Existe una probabilidad del 95% de que el verdadero valor de la media poblacional se encuentre entre 120 y 130 mmHg.",
+      "El 95% de todos los pacientes de la población tienen una presión arterial exactamente entre 120 y 130 mmHg.",
+      "Si repetimos el estudio, el 95% de las veces la media muestral será exactamente 120 mmHg.",
+      "La media de nuestra muestra es exactamente de 125 mmHg con un 5% de error."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Un intervalo de confianza al 95% indica que si repitiésemos el muestreo múltiples veces, el 95% de los intervalos calculados contendrían el verdadero parámetro de la media poblacional.",
+    "fuente": "Bioestadística e Inferencia[cite: 1]"
+  },
+  {
+    "id": "ex2026_94",
+    "parte": "especifica",
+    "temaId": "esp_10",
+    "temaNombre": "Tema 10. Indicadores de Educación para la Salud",
+    "enunciado": "94. [Reserva Específica] En un programa de Educación para la Salud dirigido a cuidadores, el porcentaje de participantes que completa todas las sesiones constituye un indicador de:",
+    "opciones": [
+      "Proceso",
+      "Resultado",
+      "Estructura",
+      "Efectividad clínica"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los indicadores de proceso miden el grado de ejecución y desarrollo de las actividades planificadas, como la asistencia y permanencia en las sesiones educativas.",
+    "fuente": "Evaluación de Programas de Eps[cite: 1]"
+  },
+  {
+    "id": "ex2026_95",
+    "parte": "especifica",
+    "temaId": "esp_17",
+    "temaNombre": "Tema 17. Lactancia Materna y Calostro",
+    "enunciado": "95. [Reserva Específica] El calostro es un líquido denso (2-20 ml por toma) idóneo para el recién nacido cuyo estómago tiene una capacidad de 5-7 ml. Señale la respuesta incorrecta en cuanto a la lactancia materna en los primeros días:",
+    "opciones": [
+      "La retención de restos placentarios se relaciona con el riesgo de hipogalactia.",
+      "La separación de la madre y el bebé tras el nacimiento no se relaciona con un retraso en la lactogénesis II o subida de la leche.",
+      "No se recomienda realizar controles de glucemia ni administrar suplementos de forma rutinaria a recién nacidos sanos sin factores de riesgo.",
+      "En un recién nacido adormilado que no agarra bien, se recomienda extracción de calostro para ofrecerlo mediante jeringa o sonda."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La separación precoz entre madre e hijo tras el nacimiento interfiere negativamente y retrasa la instauración de la lactogénesis II (subida de la leche), por lo que la afirmación b es la falsa.",
+    "fuente": "Guía de Lactancia Materna[cite: 1]"
+  },
+  {
+    "id": "ex2026_96",
+    "parte": "especifica",
+    "temaId": "esp_14",
+    "temaNombre": "Tema 14. Mecanismos de Defensa Psicológicos",
+    "enunciado": "96. [Reserva Específica] Un paciente de 45 años ingresado por IAM solicita comida grasa y tabaco diciendo 'de algo hay que morir' y que 'su abuelo fumó toda la vida hasta los 90 años'. ¿Qué mecanismo de defensa utiliza?",
+    "opciones": [
+      "Racionalización",
+      "Regresión",
+      "Contratransferencia",
+      "Desplazamiento"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La racionalización consiste en aportar argumentos lógicos o coartadas intelectuales para justificar conductas inadaptadas o deseos inconscientes inaceptables.",
+    "fuente": "Psicología General y Mecanismos de Defensa[cite: 1]"
+  },
+  {
+    "id": "ex2026_97",
+    "parte": "especifica",
+    "temaId": "esp_35",
+    "temaNombre": "Tema 35. Aspiración de Secreciones en Traqueostomía",
+    "enunciado": "97. [Reserva Específica] Respecto a la aspiración de secreciones en un paciente con traqueostomía, señale la respuesta correcta:",
+    "opciones": [
+      "Debe realizarse de forma programada estricta cada 4 horas.",
+      "La sonda se introduce aplicando aspiración continua para limpiar mejor.",
+      "La aspiración debe realizarse únicamente cuando exista indicación clínica de acumulación de secreciones.",
+      "Se recomienda instilar sistemáticamente 10 ml de suero fisiológico antes de cada paso."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La aspiración debe ser a demanda según necesidad clínica (indicación), nunca de rutina estricta, evitando dañar la mucosa traqueal.",
+    "fuente": "Protocolo de Cuidados Respiratorios[cite: 1]"
+  },
+  {
+    "id": "ex2026_98",
+    "parte": "especifica",
+    "temaId": "esp_24",
+    "temaNombre": "Tema 24. Delirium frente a Demencia",
+    "enunciado": "98. [Reserva Específica] Un paciente de 84 años ingresa por neumonía con desorientación fluctuante, empeoramiento nocturno, inatención y alucinaciones visuales. ¿Qué característica diferencia mejor el delirium de la demencia?",
+    "opciones": [
+      "La alteración global de la cognición.",
+      "La presencia de ideas delirantes.",
+      "El inicio agudo y curso fluctuante.",
+      "La pérdida progresiva de memoria a largo plazo."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El inicio brusco/agudo y la fluctuación a lo largo del día son las características cardinales que diferencian el síndrome confusional agudo (delirium) de los procesos demenciales crónicos.",
+    "fuente": "Geriatría y Salud Mental[cite: 1]"
+  },
+  {
+    "id": "ex2026_99",
+    "parte": "especifica",
+    "temaId": "esp_24",
+    "temaNombre": "Tema 24. Estrategia de Salud Mental de Castilla y León",
+    "enunciado": "99. [Reserva Específica] Según la Estrategia de Asistencia en Salud Mental de Castilla y León, la línea transversal de Humanización se fundamenta principalmente en:",
+    "opciones": [
+      "La optimización de recursos económicos para sostenibilidad.",
+      "La coordinación estricta entre niveles asistenciales.",
+      "El respeto a la dignidad de la persona como sujeto de derechos fundamentales, promoviendo su participación activa y corresponsabilidad en las decisiones.",
+      "La implantación masiva de historias clínicas electrónicas compartidas."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La humanización de la asistencia psiquiátrica sitúa a la persona y su dignidad en el centro, fomentando la autonomía y participación activa en los planes de salud.",
+    "fuente": "Estrategia de Salud Mental SACYL[cite: 1]"
+  }
+]

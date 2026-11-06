@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENFOPOS — Oposición Enfermería SACYL</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; transition: background-color 0.4s ease; }
+    </style>
+</head>
+<body id="body-app" class="bg-[#EAECE9] min-h-screen text-[#2C2D2C] p-4 md:p-12 flex flex-col justify-between">
+
+    <div class="max-w-4xl mx-auto w-full bg-[#F4F5F2] rounded-3xl shadow-sm border border-[#DCDFD9] p-6 md:p-10 space-y-8 transition-all">
+        
+        <!-- CABECERA MINIMALISTA -->
+        <header class="border-b border-[#DCDFD9] pb-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-base font-bold tracking-tight text-[#1E1F1E]">ENFOPOS</h1>
+                <p class="text-[11px] text-[#636563] font-medium">Enfermería · Oposición · SACYL</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="abrirModalCrear()" class="text-[11px] bg-[#E5E8E2] hover:bg-[#D5D9D1] text-[#3A3B3A] px-3 py-1.5 rounded-xl font-medium transition">
+                    + Añadir Pregunta
+                </button>
+                <button id="btn-menu-principal" onclick="mostrarMenu()" class="hidden text-[11px] bg-[#E5E8E2] hover:bg-[#D5D9D1] text-[#3A3B3A] px-3 py-1.5 rounded-xl font-medium transition">
+                    ← Menú Principal
+                </button>
+            </div>
+        </header>
+
+        <!-- PANTALLA 1: MENÚ PRINCIPAL -->
+        <div id="pantalla-menu" class="space-y-6">
+            
+            <!-- PANEL SUPERIOR: SIMULACROS Y EXÁMENES REALES -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-[#EAECE9] p-4 rounded-2xl border border-[#DCDFD9] flex flex-col justify-between space-y-3">
+                    <div>
+                        <h2 class="text-sm font-bold text-[#1E1F1E]">Simulacro Oficial SACYL</h2>
+                        <p class="text-[11px] text-[#636563] mt-0.5">90 preguntas + 9 reserva (130 min, penalización 0,25).</p>
+                    </div>
+                    <button onclick="iniciarExamenOficial()" class="w-full text-xs bg-[#D4E2D6] hover:bg-[#C2D4C5] text-[#1E3B21] border border-[#B3C8B6] py-2 rounded-xl font-bold transition shadow-xs">
+                        Iniciar Simulacro Oficial
+                    </button>
+                </div>
+
+                <div class="bg-[#EAECE9] p-4 rounded-2xl border border-[#DCDFD9] flex flex-col justify-between space-y-3">
+                    <div>
+                        <h2 class="text-sm font-bold text-[#1E1F1E]">Exámenes Reales Integrados</h2>
+                        <p class="text-[11px] text-[#636563] mt-0.5">Realiza exámenes oficiales anteriores con opciones barajadas.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button onclick="iniciarExamenRealUltimo()" class="flex-1 text-xs bg-[#D8E2E8] hover:bg-[#C5D4DD] text-[#1E333D] border border-[#B8C8D2] py-2 rounded-xl font-bold transition shadow-xs">
+                            Examen Oficial SACYL (Oct 2026)
+                        </button>
+                        <button onclick="iniciarTest('falladas')" class="text-xs bg-[#E8D4D2] hover:bg-[#D8C0BE] text-[#4F201E] border border-[#D5B5B2] px-3 py-2 rounded-xl font-semibold transition shadow-xs flex items-center gap-1">
+                            Errores <span id="badge-falladas" class="bg-white/80 px-1.5 py-0.2 rounded-md text-[10px]">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DOS BLOQUES: PARTE GENERAL Y PARTE ESPECÍFICA -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                <!-- Columna General -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center border-b border-[#DCDFD9] pb-2">
+                        <h3 class="text-xs font-bold text-[#4A4B4A] uppercase tracking-wider">Parte General (9 Temas)</h3>
+                        <button onclick="iniciarTestBloque('general')" class="text-[10px] bg-[#D8E2E8] hover:bg-[#C5D4DD] text-[#1E333D] px-2.5 py-1 rounded-lg font-semibold transition">
+                            Examen General
+                        </button>
+                    </div>
+                    <div id="lista-general" class="space-y-2 max-h-96 overflow-y-auto pr-1">
+                        <p class="text-xs text-[#636563] italic">Cargando temario general...</p>
+                    </div>
+                </div>
+
+                <!-- Columna Específica -->
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center border-b border-[#DCDFD9] pb-2">
+                        <h3 class="text-xs font-bold text-[#4A4B4A] uppercase tracking-wider">Parte Específica (45 Temas)</h3>
+                        <button onclick="iniciarTestBloque('especifica')" class="text-[10px] bg-[#E4D8CE] hover:bg-[#D6C7BC] text-[#3D3027] px-2.5 py-1 rounded-lg font-semibold transition">
+                            Examen Específico
+                        </button>
+                    </div>
+                    <div id="lista-especifica" class="space-y-2 max-h-96 overflow-y-auto pr-1">
+                        <p class="text-xs text-[#636563] italic">Cargando temario específico...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANTALLA 2: MOTOR DE TEST -->
+        <div id="pantalla-test" class="hidden space-y-6">
+            <div class="flex justify-between items-center text-xs font-medium text-[#636563]">
+                <span id="info-tema" class="bg-[#EAECE9] px-3 py-1 rounded-lg border border-[#DCDFD9]">Tema</span>
+                <div class="flex items-center gap-3">
+                    <span id="cronometro" class="hidden bg-[#EAECE9] px-2.5 py-1 rounded-lg font-mono text-[11px] text-[#4A4B4A] border border-[#DCDFD9]">⏱️ 130:00</span>
+                    <span id="contador-pregunta">Pregunta 1 de 90</span>
+                </div>
+            </div>
+
+            <!-- ENUNCIADO -->
+            <div id="enunciado" class="text-sm md:text-base font-medium text-[#1E1F1E] leading-relaxed bg-[#EAECE9]/70 p-4 rounded-2xl border border-[#DCDFD9]">
+                Cargando pregunta...
+            </div>
+
+            <!-- OPCIONES DE RESPUESTA -->
+            <div id="opciones" class="space-y-2">
+                <!-- Las 4 opciones se cargan aquí -->
+            </div>
+
+            <!-- FEEDBACK Y EXPLICACIÓN -->
+            <div id="bloque-explicacion" class="hidden p-4 rounded-2xl border transition-all">
+                <div id="resultado-resultado" class="font-semibold text-xs mb-1.5"></div>
+                <div class="text-xs space-y-1.5">
+                    <p id="texto-explicacion" class="text-[#3A3B3A] leading-relaxed"></p>
+                    <p id="fuente-explicacion" class="font-medium text-[#636563] italic pt-2 border-t border-black/5"></p>
+                </div>
+            </div>
+
+            <!-- BOTONES DE NAVEGACIÓN -->
+            <div class="flex justify-between items-center pt-4 border-t border-[#DCDFD9]">
+                <button id="btn-anterior" onclick="preguntaAnterior()" class="text-xs bg-[#EAECE9] hover:bg-[#D5D9D1] text-[#3A3B3A] border border-[#DCDFD9] font-medium py-2 px-3.5 rounded-xl disabled:opacity-30 transition">
+                    ← Anterior
+                </button>
+                <div class="flex gap-2">
+                    <button onclick="finalizarExamen()" class="text-xs bg-[#636563] hover:bg-[#4A4B4A] text-white font-medium py-2 px-3.5 rounded-xl transition">
+                        Finalizar Examen
+                    </button>
+                    <button id="btn-siguiente" onclick="preguntaSiguiente()" class="text-xs bg-[#2C2D2C] hover:bg-[#1E1F1E] text-white font-medium py-2 px-4 rounded-xl transition">
+                        Siguiente →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- VENTANA MODAL PARA AÑADIR PREGUNTAS -->
+    <div id="modal-crear" class="hidden fixed inset-0 bg-black/30 backdrop-blur-xs flex items-center justify-center p-4 z-50">
+        <div class="bg-[#F4F5F2] rounded-3xl max-w-lg w-full p-6 md:p-8 space-y-4 shadow-lg border border-[#DCDFD9] max-h-[90vh] overflow-y-auto">
+            <h3 class="text-sm font-bold text-[#1E1F1E] border-b border-[#DCDFD9] pb-3">Añadir Pregunta al Banco</h3>
+            
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Parte:</label>
+                    <select id="nueva-parte" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]">
+                        <option value="general">Parte General</option>
+                        <option value="especifica">Parte Específica</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">ID del Tema (ej: gen_1 o esp_1):</label>
+                    <input type="text" id="nuevo-tema-id" placeholder="gen_1" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]">
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Nombre del Tema:</label>
+                    <input type="text" id="nuevo-tema-nombre" placeholder="Tema 1: Estructura..." class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]">
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Enunciado:</label>
+                    <textarea id="nuevo-enunciado" rows="3" placeholder="Escribe aquí la pregunta..." class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]"></textarea>
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Opción A:</label>
+                    <input type="text" id="nuevo-opc0" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2 focus:outline-none focus:border-[#636563]">
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Opción B:</label>
+                    <input type="text" id="nuevo-opc1" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2 focus:outline-none focus:border-[#636563]">
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Opción C:</label>
+                    <input type="text" id="nuevo-opc2" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2 focus:outline-none focus:border-[#636563]">
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Opción D:</label>
+                    <input type="text" id="nuevo-opc3" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2 focus:outline-none focus:border-[#636563]">
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Correcta:</label>
+                    <select id="nueva-correcta" class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]">
+                        <option value="0">Opción A</option>
+                        <option value="1">Opción B</option>
+                        <option value="2">Opción C</option>
+                        <option value="3">Opción D</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Explicación:</label>
+                    <textarea id="nuevo-explicacion" rows="2" placeholder="Por qué es verdadera..." class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]"></textarea>
+                </div>
+                <div>
+                    <label class="block font-medium text-[#636563] mb-1">Fuente / Referencia:</label>
+                    <input type="text" id="nuevo-fuente" placeholder="Ley 2/2007..." class="w-full border border-[#DCDFD9] bg-[#EAECE9] rounded-xl p-2.5 focus:outline-none focus:border-[#636563]">
+                </div>
+            </div>
+
+            <div class="flex justify-end gap-2 pt-3 border-t border-[#DCDFD9]">
+                <button onclick="cerrarModalCrear()" class="text-xs bg-[#E5E8E2] hover:bg-[#D5D9D1] text-[#3A3B3A] font-medium py-2 px-4 rounded-xl transition">Cancelar</button>
+                <button onclick="guardarNuevaPregunta()" class="text-xs bg-[#2C2D2C] hover:bg-[#1E1F1E] text-white font-medium py-2 px-4 rounded-xl transition">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIE LEGAL -->
+    <footer class="text-center text-[10px] text-[#636563] px-4 max-w-md mx-auto pt-6 leading-relaxed">
+        No es una app oficial de SACYL. Es de LAAF y si hay errores no hay responsabilidad, porque la he creado en mis ratitos para estudiar. Si alguien la quiere, pídesela a LAAF.
+    </footer>
+
+    <!-- SCRIPT DE LOGICA (JAVASCRIPT) -->
+    <script>
+        let bancoPreguntas = [];
+        let preguntasActuales = [];
+        let indiceActual = 0;
+        let respuestasUsuario = {}; 
+        let preguntasFalladas = new Set(); 
+        let opcionesBarajadasActuales = [];
+        let estadisticasTemas = {}; 
+        let temporizadorInterval = null;
+        let segundosTranscurridos = 130 * 60;
+        let tipoSesionActual = '';
+        let esExamenOficial = false;
+
+        const paletaPastelesTemas = [
+            { bg: '#D8E2E8', border: '#B8C8D2', text: '#1E333D' },
+            { bg: '#E4D8CE', border: '#CBC0B4', text: '#3D3027' },
+            { bg: '#D4E2D6', border: '#B5CABA', text: '#233E26' },
+            { bg: '#E2D4E0', border: '#C8B6C5', text: '#3B2939' },
+            { bg: '#E5E2D0', border: '#CCC7B2', text: '#3E3A24' },
+            { bg: '#D4DDD9', border: '#B3C3BD', text: '#223832' },
+            { bg: '#E2D8D4', border: '#C5B9B5', text: '#3D2C28' }
+        ];
+
+        const temarioEstructura = {
+            general: [
+                { id: 'gen_1', nombre: 'Tema 1. Estructura de la Consejería de Sanidad y GRS.' },
+                { id: 'gen_2', nombre: 'Tema 2. Ley 2/2007 del Estatuto Jurídico de personal estatutario.' },
+                { id: 'gen_3', nombre: 'Tema 3. Ley 41/2002 Autonomía del Paciente y documentación.' },
+                { id: 'gen_4', nombre: 'Tema 4. Ley 8/2003 de salud y protección de datos (LOPD/RGPD).' },
+                { id: 'gen_5', nombre: 'Tema 5. Plan de gestión de calidad y seguridad del paciente en GRS.' },
+                { id: 'gen_6', nombre: 'Tema 6. Responsabilidad profesional, Código deontológico y Bioética.' },
+                { id: 'gen_7', nombre: 'Tema 7. Programas de Salud, Guías clínicas y Prevención de Riesgos.' },
+                { id: 'gen_8', nombre: 'Tema 8. Sistemas de información en AP y AE (CIAP-2, CIE-11, NANDA).' },
+                { id: 'gen_9', nombre: 'Tema 9. No discriminación, políticas de igualdad, género y dependencia.' }
+            ],
+            especifica: Array.from({ length: 45 }, (_, i) => ({
+                id: `esp_${i + 1}`,
+                nombre: `Tema ${i + 1}. Contenido específico enfermería SACYL`
+            }))
+        };
+
+        async function cargarTemasDesdeCarpeta() {
+            bancoPreguntas = [];
+
+            // Cargamos automáticamente el archivo examen_2026.json de la carpeta temas
+            try {
+                const respExamen = await fetch('temas/examen_2026.json');
+                if (respExamen.ok) {
+                    const datosExamen = await respExamen.json();
+                    bancoPreguntas.push(...datosExamen);
+                }
+            } catch (e) {
+                console.log("No se pudo cargar examen_2026.json automáticamente:", e);
+            }
+
+            const guardadasLocal = localStorage.getItem('enfopos_preguntas_extras');
+            if (guardadasLocal) {
+                bancoPreguntas.push(...JSON.parse(guardadasLocal));
+            }
+
+            const statsLocal = localStorage.getItem('enfopos_stats');
+            if (statsLocal) estadisticasTemas = JSON.parse(statsLocal);
+
+            const falladasLocal = localStorage.getItem('enfopos_falladas');
+            if (falladasLocal) preguntasFalladas = new Set(JSON.parse(falladasLocal));
+
+            renderizarMenusTemas();
+            actualizarContadorFalladas();
+        }
+
+        function guardarProgresoLocal() {
+            localStorage.setItem('enfopos_stats', JSON.stringify(estadisticasTemas));
+            localStorage.setItem('enfopos_falladas', JSON.stringify([...preguntasFalladas]));
+        }
+
+        function actualizarContadorFalladas() {
+            document.getElementById('badge-falladas').innerText = preguntasFalladas.size;
+        }
+
+        function renderizarMenusTemas() {
+            const contGeneral = document.getElementById('lista-general');
+            const contEspecifica = document.getElementById('lista-especifica');
+            contGeneral.innerHTML = '';
+            contEspecifica.innerHTML = '';
+
+            document.getElementById('body-app').className = "bg-[#EAECE9] min-h-screen text-[#2C2D2C] p-4 md:p-12 flex flex-col justify-between";
+
+            temarioEstructura.general.forEach((tema, idx) => {
+                const stats = estadisticasTemas[tema.id] || { aciertos: 0, fallos: 0 };
+                const colorEstilo = paletaPastelesTemas[idx % paletaPastelesTemas.length];
+
+                const btn = document.createElement('button');
+                btn.style.backgroundColor = colorEstilo.bg;
+                btn.style.borderColor = colorEstilo.border;
+                btn.className = "w-full text-left border font-medium py-2.5 px-3.5 rounded-xl transition text-xs flex items-center justify-between group shadow-xs";
+                btn.innerHTML = `
+                    <span class="font-bold truncate pr-2" style="color: ${colorEstilo.text}">${tema.nombre}</span>
+                    <div class="flex items-center gap-1.5 text-[10px] shrink-0">
+                        <span class="bg-white/70 px-1.5 py-0.5 rounded text-emerald-800 font-semibold">✓ ${stats.aciertos}</span>
+                        <span class="bg-white/70 px-1.5 py-0.5 rounded text-rose-800 font-semibold">✕ ${stats.fallos}</span>
+                        <span class="text-[#4A4B4A]">→</span>
+                    </div>
+                `;
+                btn.onclick = () => iniciarTestTema(tema.id, colorEstilo.bg);
+                contGeneral.appendChild(btn);
+            });
+
+            temarioEstructura.especifica.forEach((tema, idx) => {
+                const stats = estadisticasTemas[tema.id] || { aciertos: 0, fallos: 0 };
+                const colorEstilo = paletaPastelesTemas[(idx + 2) % paletaPastelesTemas.length];
+
+                const btn = document.createElement('button');
+                btn.style.backgroundColor = colorEstilo.bg;
+                btn.style.borderColor = colorEstilo.border;
+                btn.className = "w-full text-left border font-medium py-2.5 px-3.5 rounded-xl transition text-xs flex items-center justify-between group shadow-xs";
+                btn.innerHTML = `
+                    <span class="font-bold truncate pr-2" style="color: ${colorEstilo.text}">${tema.nombre}</span>
+                    <div class="flex items-center gap-1.5 text-[10px] shrink-0">
+                        <span class="bg-white/70 px-1.5 py-0.5 rounded text-emerald-800 font-semibold">✓ ${stats.aciertos}</span>
+                        <span class="bg-white/70 px-1.5 py-0.5 rounded text-rose-800 font-semibold">✕ ${stats.fallos}</span>
+                        <span class="text-[#4A4B4A]">→</span>
+                    </div>
+                `;
+                btn.onclick = () => iniciarTestTema(tema.id, colorEstilo.bg);
+                contEspecifica.appendChild(btn);
+            });
+
+            actualizarContadorFalladas();
+        }
+
+        function iniciarExamenRealUltimo() {
+            esExamenOficial = false;
+            tipoSesionActual = 'examen_real_2026';
+            document.getElementById('body-app').style.backgroundColor = '#D8E2E8';
+
+            // Filtramos las preguntas cargadas del archivo examen_2026.json
+            preguntasActuales = bancoPreguntas.filter(p => p.id && p.id.startsWith('ex2026'));
+            if (preguntasActuales.length === 0) {
+                // Si por lo que sea el archivo externo no cargó en local, cogemos el banco entero
+                preguntasActuales = [...bancoPreguntas];
+            }
+            preguntasActuales.sort(() => Math.random() - 0.5); // Barajar orden de preguntas
+
+            comprobarSesionGuardada(tipoSesionActual, ocultarTemporizador);
+        }
+
+        function iniciarExamenOficial() {
+            esExamenOficial = true;
+            tipoSesionActual = 'oposicion_oficial';
+            document.getElementById('body-app').style.backgroundColor = '#EAECE9';
+
+            let pool = [...bancoPreguntas];
+            pool.sort(() => Math.random() - 0.5);
+            preguntasActuales = pool.slice(0, 99);
+
+            comprobarSesionGuardada('oposicion_oficial', () => {
+                segundosTranscurridos = 130 * 60;
+                iniciarTemporizadorRegresivo();
+            });
+        }
+
+        function iniciarTestBloque(bloque) {
+            esExamenOficial = false;
+            tipoSesionActual = 'bloque_' + bloque;
+            document.getElementById('body-app').style.backgroundColor = bloque === 'general' ? '#D8E2E8' : '#E4D8CE';
+
+            preguntasActuales = bancoPreguntas.filter(p => {
+                if (bloque === 'general') return p.parte === 'general' || (p.temaId && p.temaId.startsWith('gen'));
+                return p.parte === 'especifica' || (p.temaId && p.temaId.startsWith('esp'));
+            });
+
+            if (preguntasActuales.length === 0) {
+                alert(`No hay preguntas registradas para la parte ${bloque}.`);
+                document.getElementById('body-app').style.backgroundColor = '#EAECE9';
+                return;
+            }
+
+            preguntasActuales.sort(() => Math.random() - 0.5);
+            comprobarSesionGuardada(tipoSesionActual, ocultarTemporizador);
+        }
+
+        function iniciarTestTema(temaId, colorFondo) {
+            esExamenOficial = false;
+            tipoSesionActual = 'tema_' + temaId;
+            document.getElementById('body-app').style.backgroundColor = colorFondo;
+
+            preguntasActuales = bancoPreguntas.filter(p => p.temaId === temaId);
+            if (preguntasActuales.length === 0) {
+                alert("No hay preguntas registradas todavía para este tema. Puedes añadirlas con el botón '+ Añadir Pregunta'.");
+                document.getElementById('body-app').style.backgroundColor = '#EAECE9';
+                return;
+            }
+
+            comprobarSesionGuardada(tipoSesionActual, ocultarTemporizador);
+        }
+
+        function iniciarTest(filtro) {
+            if (filtro === 'falladas') {
+                esExamenOficial = false;
+                tipoSesionActual = 'falladas';
+                document.getElementById('body-app').style.backgroundColor = '#EAECE9';
+                preguntasActuales = bancoPreguntas.filter(p => preguntasFalladas.has(p.id));
+                if (preguntasActuales.length === 0) {
+                    alert("No tienes errores registrados todavía.");
+                    return;
+                }
+                comprobarSesionGuardada('falladas', ocultarTemporizador);
+            }
+        }
+
+        function comprobarSesionGuardada(clave, callbackConfig) {
+            const guardadoPrevio = localStorage.getItem('enfopos_progreso_activo_' + clave);
+            if (guardadoPrevio) {
+                const datos = JSON.parse(guardadoPrevio);
+                if (confirm("Tienes una sesión guardada de este examen. ¿Quieres continuar por donde ibas?")) {
+                    indiceActual = datos.indiceActual;
+                    respuestasUsuario = datos.respuestasUsuario || {};
+                    opcionesBarajadasActuales = datos.opcionesBarajadasActuales;
+                    segundosTranscurridos = datos.segundosTranscurridos || (130 * 60);
+                } else {
+                    prepararNuevaSesion();
+                    callbackConfig();
+                }
+            } else {
+                prepararNuevaSesion();
+                callbackConfig();
+            }
+
+            document.getElementById('pantalla-menu').classList.add('hidden');
+            document.getElementById('pantalla-test').classList.remove('hidden');
+            document.getElementById('btn-menu-principal').classList.remove('hidden');
+            renderizarPregunta();
+        }
+
+        function prepararNuevaSesion() {
+            indiceActual = 0;
+            respuestasUsuario = {};
+
+            opcionesBarajadasActuales = preguntasActuales.map(p => {
+                let arrOpciones = p.opciones.map((texto, idx) => ({
+                    texto: texto,
+                    esCorrecta: (idx === p.correctaOriginal)
+                }));
+
+                // BARAJADO ALEATORIO DE LAS RESPUESTAS
+                for (let i = arrOpciones.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arrOpciones[i], arrOpciones[j]] = [arrOpciones[j], arrOpciones[i]];
+                }
+
+                const nuevoIndiceCorrecta = arrOpciones.findIndex(item => item.esCorrecta);
+
+                return {
+                    opcionesMezcladas: arrOpciones.map(item => item.texto),
+                    indiceCorrectoMezclado: nuevoIndiceCorrecta
+                };
+            });
+        }
+
+        function ocultarTemporizador() {
+            if (temporizadorInterval) clearInterval(temporizadorInterval);
+            document.getElementById('cronometro').classList.add('hidden');
+        }
+
+        function iniciarTemporizadorRegresivo() {
+            if (temporizadorInterval) clearInterval(temporizadorInterval);
+            document.getElementById('cronometro').classList.remove('hidden');
+            
+            temporizadorInterval = setInterval(() => {
+                if (segundosTranscurridos > 0) {
+                    segundosTranscurridos--;
+                    const hrs = Math.floor(segundosTranscurridos / 3600);
+                    const mins = Math.floor((segundosTranscurridos % 3600) / 60).toString().padStart(2, '0');
+                    const secs = (segundosTranscurridos % 60).toString().padStart(2, '0');
+                    document.getElementById('cronometro').innerText = `⏱️ ${hrs > 0 ? hrs + ':' : ''}${mins}:${secs}`;
+                } else {
+                    clearInterval(temporizadorInterval);
+                    alert("¡Tiempo finalizado!");
+                    finalizarExamen();
+                }
+            }, 1000);
+        }
+
+        function guardarProgresoActivo() {
+            if (!tipoSesionActual) return;
+            const datosActivos = {
+                indiceActual,
+                respuestasUsuario,
+                opcionesBarajadasActuales,
+                segundosTranscurridos
+            };
+            localStorage.setItem('enfopos_progreso_activo_' + tipoSesionActual, JSON.stringify(datosActivos));
+        }
+
+        function mostrarMenu() {
+            if (temporizadorInterval) clearInterval(temporizadorInterval);
+            guardarProgresoActivo();
+
+            document.getElementById('pantalla-menu').classList.remove('hidden');
+            document.getElementById('pantalla-test').classList.add('hidden');
+            document.getElementById('btn-menu-principal').classList.add('hidden');
+            renderizarMenusTemas();
+        }
+
+        function renderizarPregunta() {
+            const p = preguntasActuales[indiceActual];
+            const datosBarajados = opcionesBarajadasActuales[indiceActual];
+
+            let etiquetaTema = p.temaNombre || `Tema (${p.temaId || 'General'})`;
+            document.getElementById('info-tema').innerText = etiquetaTema;
+            document.getElementById('contador-pregunta').innerText = `Pregunta ${indiceActual + 1} de ${preguntasActuales.length}`;
+            document.getElementById('enunciado').innerText = p.enunciado;
+
+            const contOpciones = document.getElementById('opciones');
+            contOpciones.innerHTML = '';
+
+            const respuestaDada = respuestasUsuario[indiceActual];
+
+            datosBarajados.opcionesMezcladas.forEach((opcTexto, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-3.5 rounded-xl border transition-all text-xs md:text-sm flex items-start gap-3 ";
+                
+                const letraAsignada = ["A", "B", "C", "D"][idx];
+                const textoLimpio = opcTexto.replace(/^[A-D]\)\s*/, '');
+
+                if (respuestaDada !== undefined && !esExamenOficial) {
+                    btn.disabled = true;
+                    if (idx === datosBarajados.indiceCorrectoMezclado) {
+                        btn.className += "bg-[#D4E2D6] border-[#B3C8B6] text-[#1E3B21] font-medium";
+                    } else if (idx === respuestaDada) {
+                        btn.className += "bg-[#E8D4D2] border-[#D5B5B2] text-[#4F201E]";
+                    } else {
+                        btn.className += "bg-white/40 border-[#DCDFD9] text-[#737573] opacity-60";
+                    }
+                } else if (respuestaDada !== undefined && esExamenOficial) {
+                    if (idx === respuestaDada) {
+                        btn.className += "bg-[#D8E2E8] border-[#B8C8D2] text-[#1E333D] font-medium";
+                    } else {
+                        btn.className += "bg-[#EAECE9]/80 hover:bg-[#EAECE9] border-[#DCDFD9] text-[#2C2D2C]";
+                    }
+                    btn.onclick = () => responder(idx);
+                } else {
+                    btn.className += "bg-[#EAECE9]/80 hover:bg-[#EAECE9] border-[#DCDFD9] text-[#2C2D2C]";
+                    btn.onclick = () => responder(idx);
+                }
+
+                btn.innerHTML = `<span class="inline-flex items-center justify-center w-5 h-5 rounded-md bg-[#DCDFD9] text-[#4A4B4A] text-[11px] font-semibold shrink-0 mt-0.5">${letraAsignada}</span> <span class="leading-relaxed">${textoLimpio}</span>`;
+                contOpciones.appendChild(btn);
+            });
+
+            const bloqExp = document.getElementById('bloque-explicacion');
+            if (respuestaDada !== undefined && !esExamenOficial) {
+                bloqExp.classList.remove('hidden');
+                const esCorrecta = respuestaDada === datosBarajados.indiceCorrectoMezclado;
+                
+                const resDiv = document.getElementById('resultado-resultado');
+                if (esCorrecta) {
+                    bloqExp.className = "p-4 rounded-2xl border bg-[#D4E2D6] border-[#B3C8B6]";
+                    resDiv.className = "font-semibold text-xs md:text-sm text-[#1E3B21]";
+                    resDiv.innerText = "Correcto";
+                } else {
+                    bloqExp.className = "p-4 rounded-2xl border bg-[#E8D4D2] border-[#D5B5B2]";
+                    resDiv.className = "font-semibold text-xs md:text-sm text-[#4F201E]";
+                    resDiv.innerText = "Incorrecto";
+                }
+
+                document.getElementById('texto-explicacion').innerText = p.explicacion;
+                document.getElementById('fuente-explicacion').innerText = "Fuente: " + (p.fuente || "SACYL");
+            } else {
+                bloqExp.classList.add('hidden');
+            }
+
+            document.getElementById('btn-anterior').disabled = (indiceActual === 0);
+            document.getElementById('btn-siguiente').disabled = (indiceActual === preguntasActuales.length - 1);
+            guardarProgresoActivo();
+        }
+
+        function responder(opcionIndex) {
+            const datosBarajados = opcionesBarajadasActuales[indiceActual];
+            const p = preguntasActuales[indiceActual];
+            respuestasUsuario[indiceActual] = opcionIndex;
+
+            const temaKey = p.temaId || 'general';
+            if (!estadisticasTemas[temaKey]) {
+                estadisticasTemas[temaKey] = { aciertos: 0, fallos: 0 };
+            }
+
+            if (!esExamenOficial) {
+                if (opcionIndex !== datosBarajados.indiceCorrectoMezclado) {
+                    preguntasFalladas.add(p.id);
+                    estadisticasTemas[temaKey].fallos++;
+                } else {
+                    preguntasFalladas.delete(p.id);
+                    estadisticasTemas[temaKey].aciertos++;
+                }
+                guardarProgresoLocal();
+            }
+
+            renderizarPregunta();
+        }
+
+        function finalizarExamen() {
+            if (temporizadorInterval) clearInterval(temporizadorInterval);
+            
+            let aciertos = 0;
+            let fallos = 0;
+            let noContestadas = 0;
+
+            const limiteCalificacion = preguntasActuales.length;
+
+            for (let i = 0; i < limiteCalificacion; i++) {
+                const resp = respuestasUsuario[i];
+                if (resp === undefined) {
+                    noContestadas++;
+                } else if (resp === opcionesBarajadasActuales[i].indiceCorrectoMezclado) {
+                    aciertos++;
+                    const p = preguntasActuales[i];
+                    const tKey = p.temaId || 'general';
+                    if (!estadisticasTemas[tKey]) estadisticasTemas[tKey] = { aciertos: 0, fallos: 0 };
+                    estadisticasTemas[tKey].aciertos++;
+                    preguntasFalladas.delete(p.id);
+                } else {
+                    fallos++;
+                    const p = preguntasActuales[i];
+                    const tKey = p.temaId || 'general';
+                    if (!estadisticasTemas[tKey]) estadisticasTemas[tKey] = { aciertos: 0, fallos: 0 };
+                    estadisticasTemas[tKey].fallos++;
+                    preguntasFalladas.add(p.id);
+                }
+            }
+
+            guardarProgresoLocal();
+            localStorage.removeItem('enfopos_progreso_activo_' + tipoSesionActual);
+
+            const notaFinal = Math.max(0, aciertos - (fallos * 0.25)).toFixed(2);
+
+            alert(`📊 RESULTADOS DEL EXAMEN:\n\n- Aciertos: ${aciertos}\n- Errores: ${fallos} (Penalización: -${(fallos * 0.25).toFixed(2)})\n- Sin contestar: ${noContestadas}\n\n⭐ PUNTUACIÓN FINAL: ${notaFinal} puntos`);
+            mostrarMenu();
+        }
+
+        function preguntaAnterior() {
+            if (indiceActual > 0) {
+                indiceActual--;
+                renderizarPregunta();
+            }
+        }
+
+        function preguntaSiguiente() {
+            if (indiceActual < preguntasActuales.length - 1) {
+                indiceActual++;
+                renderizarPregunta();
+            }
+        }
+
+        function abrirModalCrear() {
+            document.getElementById('modal-crear').classList.remove('hidden');
+        }
+
+        function cerrarModalCrear() {
+            document.getElementById('modal-crear').classList.add('hidden');
+        }
+
+        function guardarNuevaPregunta() {
+            const parte = document.getElementById('nueva-parte').value;
+            const temaId = document.getElementById('nuevo-tema-id').value.trim() || (parte === 'general' ? 'gen_1' : 'esp_1');
+            const temaNombre = document.getElementById('nuevo-tema-nombre').value.trim() || 'Tema personalizado';
+            const enunciado = document.getElementById('nuevo-enunciado').value.trim();
+            const opc0 = document.getElementById('nuevo-opc0').value.trim();
+            const opc1 = document.getElementById('nuevo-opc1').value.trim();
+            const opc2 = document.getElementById('nuevo-opc2').value.trim();
+            const opc3 = document.getElementById('nuevo-opc3').value.trim();
+            const correcta = parseInt(document.getElementById('nueva-correcta').value);
+            const explicacion = document.getElementById('nuevo-explicacion').value.trim();
+            const fuente = document.getElementById('nuevo-fuente').value.trim();
+
+            if (!enunciado || !opc0 || !opc1 || !opc2 || !opc3) {
+                alert("Por favor, rellena el enunciado y las 4 opciones.");
+                return;
+            }
+
+            const nuevaP = {
+                id: "extra_" + Date.now(),
+                parte: parte,
+                temaId: temaId,
+                temaNombre: temaNombre,
+                enunciado: enunciado,
+                opciones: [opc0, opc1, opc2, opc3],
+                correctaOriginal: correcta,
+                explicacion: explicacion || "Sin explicación detallada.",
+                fuente: fuente || "Aportación propia LAAF"
+            };
+
+            let extras = JSON.parse(localStorage.getItem('enfopos_preguntas_extras') || '[]');
+            extras.push(nuevaP);
+            localStorage.setItem('enfopos_preguntas_extras', JSON.stringify(extras));
+
+            alert("Pregunta guardada con éxito.");
+            cerrarModalCrear();
+            cargarTemasDesdeCarpeta();
+        }
+
+        cargarTemasDesdeCarpeta();
+    </script>
+</body>
+</html>
