@@ -3,128 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENFOPOS - Estudio SACYL</title>
-    <!-- Tailwind CSS para un diseño limpio y moderno -->
+    <title>ENFOPOS - Oposición SACYL</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+<body class="bg-slate-100 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- CABECERA -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
-            <h1 class="text-base sm:text-xl font-bold text-slate-900 flex items-center gap-2">
-                <span class="bg-indigo-600 text-white px-2 py-0.5 rounded-lg text-xs sm:text-sm">ENFOPOS</span>
-                Estudio SACYL
-            </h1>
-            <div id="header-stats" class="text-xs sm:text-sm font-medium text-slate-600 hidden">
-                Pregunta <span id="current-q-num">1</span> de <span id="total-q-num">0</span>
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div>
+                <h1 class="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
+                    <span class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-xs sm:text-sm shadow-xs">ENFOPOS</span>
+                    <span class="leading-snug">Preparación NO OFICIAL para la oposición de ENFERMERIA en SACYL</span>
+                </h1>
+                <p class="text-xs sm:text-sm text-indigo-700 font-semibold mt-1">Aplicación no oficial de estudio independiente creado por LAAF</p>
+            </div>
+            <div id="header-stats" class="text-xs sm:text-base font-bold text-slate-800 hidden flex items-center gap-3">
+                <span id="quiz-timer" class="font-mono text-indigo-800 bg-indigo-50 border border-indigo-200 px-3 py-1.5 rounded-xl shadow-2xs">⏱️ 130:00</span>
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl">Pregunta <span id="current-q-num">1</span> de <span id="total-q-num">0</span></span>
             </div>
         </div>
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="max-w-4xl mx-auto px-3 sm:px-4 py-4 flex-grow w-full">
+    <main class="max-w-4xl mx-auto px-3 sm:px-4 py-6 flex-grow w-full space-y-6">
 
         <!-- VISTA 1: MENÚ PRINCIPAL -->
-        <div id="view-menu" class="space-y-4">
-            <div class="bg-indigo-50 border border-indigo-100 p-4 sm:p-6 rounded-2xl">
-                <h2 class="text-base sm:text-lg font-semibold text-indigo-900 mb-1">Plataforma de Preparación</h2>
-                <p class="text-xs sm:text-sm text-indigo-700">Selecciona el modo de estudio o filtra por bloques temáticos específicos.</p>
-            </div>
-
-            <!-- BOTONES PRINCIPALES (Diseño compacto de 2 columnas en móvil) -->
-            <div class="grid grid-cols-2 gap-3">
-                <!-- Tarjeta Exámenes Reales -->
-                <div class="bg-white p-3.5 sm:p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div id="view-menu" class="space-y-6">
+            
+            <!-- ACCESOS RÁPIDOS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- EXAMEN DE OPOSICIÓN -->
+                <div class="bg-gradient-to-br from-indigo-900 to-indigo-950 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between border border-indigo-800">
                     <div>
-                        <h3 class="text-xs sm:text-base font-bold text-slate-900 mb-1">Examen Oficial</h3>
-                        <p class="text-[11px] sm:text-sm text-slate-500 mb-3 hidden sm:block">Simulacro oficial con cronómetro y plantilla de examen.</p>
-                        
-                        <div class="space-y-1.5 mb-3">
-                            <label class="block text-[10px] sm:text-xs font-semibold text-slate-600 uppercase tracking-wider">Convocatoria:</label>
-                            <select id="select-examen-real" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-2 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                                <!-- Se carga dinámicamente -->
-                            </select>
-                        </div>
+                        <span class="text-xs bg-indigo-700 text-indigo-100 font-bold px-3 py-1 rounded-full tracking-wide uppercase">Simulacro Oficial</span>
+                        <h3 class="text-xl font-bold mt-2.5 mb-2 text-white">Examen de Oposición</h3>
+                        <p class="text-sm sm:text-base text-indigo-200 mb-5 leading-relaxed">90 preguntas (15 General + 75 Específica) + 10 de reserva. 130 min. Penalización 0.25 por fallo.</p>
                     </div>
-                    <button onclick="iniciarExamenReal()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-3 rounded-xl transition text-xs sm:text-sm shadow-sm">
-                        Comenzar
+                    <button onclick="comprobarExamenGuardado()" class="w-full bg-white hover:bg-indigo-50 text-indigo-950 font-bold py-3 px-4 rounded-xl transition text-sm sm:text-base shadow-sm">
+                        Iniciar Examen de Oposición
                     </button>
                 </div>
 
-                <!-- Tarjeta Modo Práctica Global -->
-                <div class="bg-white p-3.5 sm:p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                <!-- PRÁCTICA GLOBAL -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-400 transition">
                     <div>
-                        <h3 class="text-xs sm:text-base font-bold text-slate-900 mb-1">Práctica Global</h3>
-                        <p class="text-[11px] sm:text-sm text-slate-500 mb-3 hidden sm:block">Mezcla aleatoria de todas las preguntas del repositorio.</p>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full tracking-wide uppercase">Repaso Libre</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2.5 mb-2">Práctica Global</h3>
+                        <p class="text-sm sm:text-base text-slate-700 mb-5 leading-relaxed">Mezcla aleatoria de todas las preguntas disponibles en el repositorio con respuestas barajadas.</p>
                     </div>
-                    <button onclick="iniciarModoPractica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-3 rounded-xl transition text-xs sm:text-sm shadow-sm">
-                        Iniciar Práctica
+                    <button onclick="iniciarModoPráctica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-sm sm:text-base shadow-sm">
+                        Iniciar Práctica Total
                     </button>
                 </div>
             </div>
 
-            <!-- BLOQUE DE FILTRADO POR TEMAS ESPECÍFICOS -->
-            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-                <h3 class="text-sm sm:text-base font-bold text-slate-900">Estudio por Bloques y Temas Específicos</h3>
-                <p class="text-xs text-slate-500">Selecciona un bloque temático o un tema concreto para repasar de forma dirigida:</p>
-                
-                <div class="grid sm:grid-cols-2 gap-3">
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-600 mb-1">Filtrar por Tema Concreto:</label>
-                        <select id="select-tema-especifico" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                            <option value="todos">-- Todos los temas disponibles --</option>
-                        </select>
-                    </div>
-                    <div class="flex items-end">
-                        <button onclick="iniciarEstudioPorTemas()" class="w-full bg-slate-800 hover:bg-slate-900 text-white font-medium py-2 px-4 rounded-xl transition text-xs sm:text-sm shadow-sm">
-                            Repasar Tema Seleccionado
-                        </button>
-                    </div>
+            <!-- BOTÓN DE ESTADÍSTICAS -->
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Panel de Estadísticas y Fallos</h3>
+                    <p class="text-sm text-slate-600">Consulta tus aciertos, fallos y detecta qué temas necesitas reforzar.</p>
                 </div>
+                <button onclick="mostrarPantallaEstadisticas()" class="bg-slate-800 hover:bg-slate-900 text-white text-sm font-bold px-5 py-3 rounded-xl transition shadow-2xs">
+                    Ver Estadísticas 📊
+                </button>
+            </div>
+
+            <!-- SECCIÓN: PARTE GENERAL (Temas 1 a 9) -->
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-sm sm:text-base font-extrabold text-indigo-900 uppercase tracking-wider">Parte General (Temas 1 a 9)</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Selecciona un tema para practicar específicamente:</p>
+                </div>
+                <div id="grid-temas-generales" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5"></div>
+            </div>
+
+            <!-- SECCIÓN: PARTE ESPECÍFICA (Temas 1 a 45) -->
+            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                <div class="border-b border-slate-100 pb-3">
+                    <h3 class="text-sm sm:text-base font-extrabold text-indigo-900 uppercase tracking-wider">Parte Específica (Temas 1 a 45)</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Selecciona un tema clínico o técnico:</p>
+                </div>
+                <div id="grid-temas-especificos" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5"></div>
+            </div>
+
+        </div>
+
+        <!-- VISTA ESTADÍSTICAS -->
+        <div id="view-estadisticas" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Estadísticas por Tema y Refuerzo de Fallos</h2>
+                    <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
+                </div>
+                <div id="lista-estadisticas" class="space-y-3.5 max-h-[65vh] overflow-y-auto pr-2"></div>
             </div>
         </div>
 
         <!-- VISTA 2: QUIZ / EXAMEN -->
-        <div id="view-quiz" class="hidden space-y-4">
-            <div class="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-sm">
-                <div class="flex justify-between items-center mb-3">
-                    <span id="quiz-badge" class="bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-semibold px-2.5 py-1 rounded-full">Tema</span>
-                    <span id="quiz-timer" class="text-xs font-mono font-medium text-slate-500 bg-slate-100 px-2 py-1 rounded">⏱️ 00:00</span>
+        <div id="view-quiz" class="hidden space-y-5">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                <div class="flex justify-between items-center pb-3 border-b border-slate-100">
+                    <span id="quiz-badge" class="bg-indigo-50 text-indigo-800 border border-indigo-200 text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full">Tema</span>
+                    <span id="quiz-tipo-pregunta" class="text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50 px-3.5 py-1.5 rounded-full">Oficial</span>
                 </div>
                 
-                <h2 id="quiz-enunciado" class="text-sm sm:text-base font-medium text-slate-900 mb-5 leading-relaxed"></h2>
+                <h2 id="quiz-enunciado" class="text-base sm:text-xl font-semibold text-slate-900 leading-relaxed pt-2"></h2>
 
-                <div id="quiz-opciones" class="space-y-2.5">
-                    <!-- Opciones inyectadas por JS -->
-                </div>
+                <div id="quiz-opciones" class="space-y-3.5 pt-2"></div>
             </div>
 
             <!-- Explicación al responder -->
-            <div id="quiz-explicacion-box" class="hidden bg-amber-50 border border-amber-200 p-3.5 sm:p-4 rounded-2xl text-xs sm:text-sm text-amber-900 space-y-1">
-                <p class="font-semibold">Explicación / Fuente:</p>
-                <p id="quiz-explicacion-texto"></p>
+            <div id="quiz-explicacion-box" class="hidden bg-amber-50 border border-amber-200 p-4.5 sm:p-5 rounded-2xl text-sm sm:text-base text-amber-950 space-y-1.5 shadow-2xs">
+                <p class="font-bold flex items-center gap-2">💡 Explicación / Fuente:</p>
+                <p id="quiz-explicacion-texto" class="leading-relaxed"></p>
             </div>
 
             <!-- Botonera inferior -->
-            <div class="flex justify-between items-center pt-1">
-                <button onclick="volverMenu()" class="text-xs sm:text-sm text-slate-500 hover:text-slate-800 font-medium">← Abandonar</button>
-                <button id="btn-siguiente" onclick="siguientePregunta()" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-xl transition shadow-sm">
+            <div class="flex justify-between items-center pt-3">
+                <button onclick="abandonarExamen()" class="text-xs sm:text-sm text-rose-700 hover:text-rose-900 font-bold bg-white border border-rose-200 px-5 py-3 rounded-xl shadow-2xs transition">
+                    💾 Guardar y Abandonar
+                </button>
+                <button id="btn-siguiente" onclick="siguientePregunta()" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white text-sm sm:text-base font-bold px-7 py-3 rounded-xl transition shadow-sm">
                     Siguiente →
                 </button>
             </div>
         </div>
 
         <!-- VISTA 3: RESULTADOS -->
-        <div id="view-resultados" class="hidden space-y-4 text-center">
-            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                <h2 class="text-lg sm:text-xl font-bold text-slate-900">¡Sesión Finalizada!</h2>
-                <div class="inline-flex justify-center items-center bg-indigo-50 w-20 h-20 sm:w-24 sm:h-24 rounded-full text-indigo-600 text-xl sm:text-2xl font-bold mx-auto" id="score-circle">
-                    0%
+        <div id="view-resultados" class="hidden space-y-6 text-center">
+            <div class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm space-y-6 max-w-lg mx-auto">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">¡Examen Finalizado!</h2>
+                <div class="inline-flex justify-center items-center bg-indigo-50 border-2 border-indigo-200 w-32 h-32 rounded-full text-indigo-700 text-3xl sm:text-4xl font-extrabold mx-auto shadow-inner" id="score-circle">
+                    0 pts
                 </div>
-                <p id="score-details" class="text-xs sm:text-sm text-slate-600"></p>
+                <p id="score-details" class="text-sm sm:text-base text-slate-800 leading-relaxed bg-slate-50 p-5 rounded-2xl border border-slate-200"></p>
                 <div>
-                    <button onclick="volverMenu()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 px-5 rounded-xl text-xs sm:text-sm transition">
+                    <button onclick="volverMenu()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-8 rounded-xl text-sm sm:text-base transition shadow-sm">
                         Volver al Menú Principal
                     </button>
                 </div>
@@ -133,7 +149,7 @@
 
     </main>
 
-    <!-- SCRIPT DE GESTIÓN DEL QUIZ -->
+    <!-- SCRIPT DE GESTIÓN -->
     <script>
         const LISTA_EXAMENES_OFICIALES = [
             { id: "examen_2026", nombre: "Examen Oficial SACYL (Oct 2026)", archivo: "temas/examen_2026.json" }
@@ -144,67 +160,141 @@
         let indiceActual = 0;
         let aciertos = 0;
         let fallos = 0;
+        let noContestadas = 0;
         let respuestaSeleccionada = false;
+        let timerInterval = null;
+        let tiempoRestanteSegundos = 130 * 60;
 
-        // Cargar los JSON al iniciar la página y poblar selectores
+        let estadisticasTemas = JSON.parse(localStorage.getItem('enfopos_stats') || '{}');
+
+        // Paleta de colores suaves y variados para los temas (para que no sea aburrido)
+        const COLORES_PASTEL = [
+            "bg-sky-50/70 border-sky-200 hover:border-sky-400",
+            "bg-emerald-50/70 border-emerald-200 hover:border-emerald-400",
+            "bg-amber-50/70 border-amber-200 hover:border-amber-400",
+            "bg-violet-50/70 border-violet-200 hover:border-violet-400",
+            "bg-rose-50/70 border-rose-200 hover:border-rose-400",
+            "bg-teal-50/70 border-teal-200 hover:border-teal-400",
+            "bg-indigo-50/70 border-indigo-200 hover:border-indigo-400",
+            "bg-orange-50/70 border-orange-200 hover:border-orange-400",
+            "bg-cyan-50/70 border-cyan-200 hover:border-cyan-400"
+        ];
+
+        const CATALOGO_TEMAS = {
+            "gen_1": { parte: "general", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y GRS. Servicios Centrales y Periféricos." },
+            "gen_2": { parte: "general", label: "Tema 2", desc: "Estatuto del personal estatutario de SACYL: Clasificación, provisión, derechos y deberes." },
+            "gen_3": { parte: "general", label: "Tema 3", desc: "Ley 41/2002: Autonomía del paciente, intimidad, confidencialidad y documentación clínica." },
+            "gen_4": { parte: "general", label: "Tema 4", desc: "Ley 8/2003 de salud y LOPD 3/2018. Decreto de Historia Clínica en Castilla y León." },
+            "gen_5": { parte: "general", label: "Tema 5", desc: "Plan de calidad y seguridad del paciente en GRS. Eventos adversos y prácticas seguras." },
+            "gen_6": { parte: "general", label: "Tema 6", desc: "Responsabilidad profesional, bioética, instrucciones previas y comités de ética." },
+            "gen_7": { parte: "general", label: "Tema 7", desc: "Programas de Salud, Guías de Práctica Clínica y Ley de Prevención de Riesgos Laborales." },
+            "gen_8": { parte: "general", label: "Tema 8", desc: "Sistemas de información en AE y AP. Registros de enfermería y clasificaciones (CIAP-2, CIE-11, NANDA)." },
+            "gen_9": { parte: "general", label: "Tema 9", desc: "No discriminación por orientación sexual e identidad de género. Igualdad, discapacidad y dependencia." },
+
+            "esp_1": { parte: "especifica", label: "Tema 1", desc: "Metodología de Enfermería: PAE, Patrones de Gordon, taxonomías NANDA, NIC y NOC." },
+            "esp_2": { parte: "especifica", label: "Tema 2", desc: "Metodología de Investigación: Diseños, recogida, análisis y fases del trabajo científico." },
+            "esp_3": { parte: "especifica", label: "Tema 3", desc: "Investigación básica y aplicada en enfermería. Estudios descriptivos y diagnósticos." },
+            "esp_4": { parte: "especifica", label: "Tema 4", desc: "Estadística descriptiva e inferencial: Intervalos de confianza y contrastes de hipótesis." },
+            "esp_5": { parte: "especifica", label: "Tema 5", desc: "Epidemiología, métodos, vigilancia epidemiológica y enfermedades de declaración obligatoria." },
+            "esp_6": { parte: "especifica", label: "Tema 6", desc: "Demografía sanitaria: Indicadores de natalidad, mortalidad, migraciones y crecimiento." },
+            "esp_7": { parte: "especifica", label: "Tema 7", desc: "Salud pública, determinantes, indicadores e impacto de tabaquismo, obesidad y alcohol." },
+            "esp_8": { parte: "especifica", label: "Tema 8", desc: "Prevención y promoción de salud. Detección precoz y factores de riesgo por etapas vitales." },
+            "esp_9": { parte: "especifica", label: "Tema 9", desc: "Inmunizaciones: Tipos de vacunas, conservación, administración y calendario en CyL." },
+            "esp_10": { parte: "especifica", label: "Tema 10", desc: "Educación para la Salud individual, grupal y comunitaria: Metodología y técnicas." },
+            "esp_11": { parte: "especifica", label: "Tema 11", desc: "Estrategia de promoción y prevención en SNS. Grupos de autoayuda y agentes de salud." },
+            "esp_12": { parte: "especifica", label: "Tema 12", desc: "Habilidades de comunicación, trabajo en equipo y entrevista clínica de apoyo emocional." },
+            "esp_13": { parte: "especifica", label: "Tema 13", desc: "Higiene hospitalaria, antisepsia, esterilización, aislamiento y gestión de residuos." },
+            "esp_14": { parte: "especifica", label: "Tema 14", desc: "Desarrollo de la conducta humana, tipos de personalidad, motivación y factores socioculturales." },
+            "esp_15": { parte: "especifica", label: "Tema 15", desc: "Cuidados de enfermería en problemas psicosociales y de adaptación del paciente." },
+            "esp_16": { parte: "especifica", label: "Tema 16", desc: "Sexualidad, reproducción, métodos anticonceptivos y prevención de ITS." },
+            "esp_17": { parte: "especifica", label: "Tema 17", desc: "Valoración y cuidados en gestación, parto, puerperio, lactancia y urgencias obstétricas." },
+            "esp_18": { parte: "especifica", label: "Tema 18", desc: "Cuidados del niño sano (0-14 años), desarrollo, pruebas metabólicas, vacunas y RCP pediátrica." },
+            "esp_19": { parte: "especifica", label: "Tema 19", desc: "Cuidados del niño enfermo: Prematuridad, convulsiones, insuficiencia respiratoria y GEA." },
+            "esp_20": { parte: "especifica", label: "Tema 20", desc: "Cuidados en procesos infectocontagiosos: Hepatitis, tuberculosis, SIDA y meningitis." },
+            "esp_21": { parte: "especifica", label: "Tema 21", desc: "Cuidados en el anciano, cambios fisiológicos, valoración geriátrica integral y Plan Gerontológico." },
+            "esp_22": { parte: "especifica", label: "Tema 22", desc: "Grandes síndromes geriátricos: Caídas, inmovilismo, incontinencia y apoyo al cuidador." },
+            "esp_23": { parte: "especifica", label: "Tema 23", desc: "Cuidados en el enfermo terminal, control del dolor, escalas y manejo del duelo." },
+            "esp_24": { parte: "especifica", label: "Tema 24", desc: "Salud mental: Alzheimer, ansiedad, depresión, riesgo suicida y urgencias psiquiátricas." },
+            "esp_25": { parte: "especifica", label: "Tema 25", desc: "Plan Nacional de Drogas y manejo de urgencias por drogodependencias." },
+            "esp_26": { parte: "especifica", label: "Tema 26", desc: "Detección y prevención de malos tratos en infancia, mujer y ancianos. Violencia de género." },
+            "esp_27": { parte: "especifica", label: "Tema 27", desc: "Urgencias y emergencias: Politraumatizados, quemados, shock, intoxicaciones y RCP avanzada." },
+            "esp_28": { parte: "especifica", label: "Tema 28", desc: "Triaje y priorización en situaciones de múltiples víctimas y catástrofes." },
+            "esp_29": { parte: "especifica", label: "Tema 29", desc: "Proceso de Atención al Paciente Pluripatológico Complejo." },
+            "esp_30": { parte: "especifica", label: "Tema 30", desc: "Farmacología general, absorción, eliminación, farmacovigilancia y medicamentos de urgencia." },
+            "esp_31": { parte: "especifica", label: "Tema 31", desc: "Administración de medicamentos, vías, precauciones y cálculo de dosis." },
+            "esp_32": { parte: "especifica", label: "Tema 32", desc: "Alimentación, dietas terapéuticas y nutrición en desnutrición, obesidad y trastornos alimentarios." },
+            "esp_33": { parte: "especifica", label: "Tema 33", desc: "Nutrición enteral y parenteral: Técnicas de administración y protocolos." },
+            "esp_34": { parte: "especifica", label: "Tema 34", desc: "Cuidados en problemas neurológicos: ACV, epilepsia, esclerosis, coma y urgencias neurológicas." },
+            "esp_35": { parte: "especifica", label: "Tema 35", desc: "Cuidados respiratorios: EPOC, asma, oxigenoterapia, traqueostomías y urgencias broncopulmonares." },
+            "esp_36": { parte: "especifica", label: "Tema 36", desc: "Cuidados cardiovasculares: Insuficiencia cardíaca, IAM, HTA y urgencias cardiovasculares." },
+            "esp_37": { parte: "especifica", label: "Tema 37", desc: "Cuidados nefrourológicos: Insuficiencia renal, litiasis, sondaje y terapias de sustitución renal." },
+            "esp_38": { parte: "especifica", label: "Tema 38", desc: "Cuidados endocrinológicos: Diabetes, bocio, trastornos tiroideos y técnicas." },
+            "esp_39": { parte: "especifica", label: "Tema 39", desc: "Cuidados musculoesqueléticos: Osteoporosis, artrosis, fracturas, vendajes e inmovilizaciones." },
+            "esp_40": { parte: "especifica", label: "Tema 40", desc: "Cuidados gastrointestinales: Abdomen agudo, úlcera, obstrucción, SNG y urgencias digestivas." },
+            "esp_41": { parte: "especifica", label: "Tema 41", desc: "Cuidados hematológicos: Anemias, coagulopatías y transfusiones sanguíneas." },
+            "esp_42": { parte: "especifica", label: "Tema 42", desc: "Cuidados oftalmológicos y otorrinolaringológicos y técnicas diagnósticas." },
+            "esp_43": { parte: "especifica", label: "Tema 43", desc: "Cuidados en oncología, tratamientos, efectos secundarios y manipulación de citostáticos." },
+            "esp_44": { parte: "especifica", label: "Tema 44", desc: "Cuidados perioperatorios, CMA, drenajes, curas y suturas quirúrgicas." },
+            "esp_45": { parte: "especifica", label: "Tema 45", desc: "Cuidados de la piel y prevención/tratamiento de Úlceras por Presión (Escalas Braden, Norton, EMINA)." }
+        };
+
         window.addEventListener('DOMContentLoaded', async () => {
-            const selectEl = document.getElementById('select-examen-real');
-            const selectTemaEl = document.getElementById('select-tema-especifico');
-            selectEl.innerHTML = '';
-            
-            // Mapeo amigable y descriptivo para limpiar títulos genéricos
-            const diccionarioTemas = {
-                "gen_4": "Tema 4: Ley 8/2003 de salud y protección de datos",
-                "gen_7": "Tema 7: Prevención de Riesgos Laborales",
-                "esp_4": "Tema 4: Estadística Inferencial e Intervalos de Confianza",
-                "esp_10": "Tema 10: Indicadores de Educación para la Salud",
-                "esp_14": "Tema 14: Mecanismos de Defensa Psicológicos",
-                "esp_17": "Tema 17: Lactancia Materna y Calostro",
-                "esp_24": "Tema 24: Delirium, Demencia y Salud Mental",
-                "esp_35": "Tema 35: Aspiración de Secreciones y Cuidados Respiratorios"
-            };
-
-            let temasUnicosSet = new Map();
-
             for (const exam of LISTA_EXAMENES_OFICIALES) {
                 try {
                     const response = await fetch(exam.archivo);
                     if (response.ok) {
                         const data = await response.json();
-                        data.forEach(q => {
-                            q.origenExamen = exam.nombre;
-                            // Limpiar y enriquecer el nombre del tema descriptivamente
-                            if (q.temaId && diccionarioTemas[q.temaId]) {
-                                q.temaNombre = diccionarioTemas[q.temaId];
-                            } else if (!q.temaNombre || q.temaNombre.includes("Contenido específico")) {
-                                q.temaNombre = `Tema Específico (${q.temaId || 'General'})`;
-                            }
-                            temasUnicosSet.set(q.temaId || q.temaNombre, q.temaNombre);
-                        });
                         bancoPreguntasGlobal.push(...data);
-
-                        const option = document.createElement('option');
-                        option.value = exam.id;
-                        option.textContent = `${exam.nombre} (${data.length} p.)`;
-                        selectEl.appendChild(option);
                     }
                 } catch (error) {
                     console.error(`Error cargando ${exam.archivo}:`, error);
                 }
             }
-
-            if (bancoPreguntasGlobal.length === 0) {
-                selectEl.innerHTML = '<option>No hay exámenes en /temas</option>';
-            }
-
-            // Poblar el selector de temas descriptivos
-            temasUnicosSet.forEach((nombreTema, idTema) => {
-                const opt = document.createElement('option');
-                opt.value = idTema;
-                opt.textContent = nombreTema;
-                selectTemaEl.appendChild(opt);
-            });
+            renderizarCuadrosTemas();
         });
+
+        function renderizarCuadrosTemas() {
+            const contenedorGen = document.getElementById('grid-temas-generales');
+            const contenedorEsp = document.getElementById('grid-temas-especificos');
+            contenedorGen.innerHTML = '';
+            contenedorEsp.innerHTML = '';
+
+            let indexColor = 0;
+
+            Object.keys(CATALOGO_TEMAS).forEach(temaId => {
+                const info = CATALOGO_TEMAS[temaId];
+                const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
+                const totalTema = bancoPreguntasGlobal.filter(q => q.temaId === temaId).length;
+
+                // Asignar un color pastel rotativo para que cada tema tenga su propio tono suave
+                const colorClase = COLORES_PASTEL[indexColor % COLORES_PASTEL.length];
+                indexColor++;
+
+                const card = document.createElement('div');
+                card.className = `p-4 rounded-2xl border transition shadow-2xs flex flex-col justify-between cursor-pointer ${colorClase}`;
+                card.onclick = () => iniciarEstudioTema(temaId);
+
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs sm:text-sm font-extrabold text-slate-900 bg-white/80 px-2.5 py-0.5 rounded-lg shadow-2xs">${info.label}</span>
+                            <span class="text-xs font-mono font-bold bg-white/80 text-slate-700 px-2.5 py-0.5 rounded-lg shadow-2xs">${totalTema} pgs</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed mb-3.5">${info.desc}</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-slate-200/60 text-xs sm:text-sm font-bold">
+                        <span class="text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded-lg">✓ ${stats.aciertos} aciertos</span>
+                        <span class="text-rose-800 bg-rose-100/80 px-2.5 py-1 rounded-lg">✕ ${stats.fallos} fallos</span>
+                    </div>
+                `;
+
+                if (info.parte === "general") {
+                    contenedorGen.appendChild(card);
+                } else {
+                    contenedorEsp.appendChild(card);
+                }
+            });
+        }
 
         function barajarArray(array) {
             let currentIndex = array.length, randomIndex;
@@ -216,63 +306,150 @@
             return array;
         }
 
-        function iniciarExamenReal() {
-            preguntasActivas = JSON.parse(JSON.stringify(bancoPreguntasGlobal));
-            barajarPreguntasYRespuestas(true);
-            arrancarQuiz();
+        function comprobarExamenGuardado() {
+            const guardado = localStorage.getItem('enfopos_examen_activo');
+            if (guardado) {
+                if (confirm("Tienes un Examen de Oposición guardado a medias. ¿Deseas continuar por donde ibas? (Cancelar para empezar uno nuevo)")) {
+                    cargarExamenGuardado(JSON.parse(guardado));
+                    return;
+                }
+            }
+            iniciarNuevoExamenOposicion();
+        }
+
+        function iniciarNuevoExamenOposicion() {
+            if (bancoPreguntasGlobal.length < 10) {
+                alert("Se necesitan al menos 10 preguntas en el repositorio para simular el examen oficial.");
+                return;
+            }
+
+            let genPool = bancoPreguntasGlobal.filter(q => q.temaId && q.temaId.startsWith('gen'));
+            let espPool = bancoPreguntasGlobal.filter(q => q.temaId && q.temaId.startsWith('esp'));
+
+            barajarArray(genPool);
+            barajarArray(espPool);
+
+            let preguntasGen = genPool.slice(0, Math.min(15, genPool.length));
+            let preguntasEsp = espPool.slice(0, Math.min(75, espPool.length));
+            
+            let principal = [...preguntasGen, ...preguntasEsp];
+            barajarArray(principal);
+            principal = principal.slice(0, 90);
+
+            let restoGen = genPool.slice(preguntasGen.length);
+            let restoEsp = espPool.slice(preguntasEsp.length);
+            let reservaPool = [...restoGen, ...restoEsp];
+            barajarArray(reservaPool);
+            let reserva = reservaPool.slice(0, 10);
+
+            reserva.forEach(q => q.esReserva = true);
+
+            preguntasActivas = JSON.parse(JSON.stringify([...principal, ...reserva]));
+            prepararPreguntasYRespuestas();
+
+            indiceActual = 0;
+            aciertos = 0;
+            fallos = 0;
+            noContestadas = 0;
+            tiempoRestanteSegundos = 130 * 60;
+
+            guardarProgresoExamen();
+            arrancarQuizUI("Examen de Oposición Oficial (90p + 10r)");
+            iniciarCronometro();
+        }
+
+        function cargarExamenGuardado(estado) {
+            preguntasActivas = estado.preguntasActivas;
+            indiceActual = estado.indiceActual;
+            aciertos = estado.aciertos;
+            fallos = estado.fallos;
+            tiempoRestanteSegundos = estado.tiempoRestanteSegundos;
+
+            arrancarQuizUI("Examen de Oposición (Continuación)");
+            iniciarCronometro();
+        }
+
+        function guardarProgresoExamen() {
+            const estado = {
+                preguntasActivas,
+                indiceActual,
+                aciertos,
+                fallos,
+                tiempoRestanteSegundos
+            };
+            localStorage.setItem('enfopos_examen_activo', JSON.stringify(estado));
+        }
+
+        function abandonarExamen() {
+            guardarProgresoExamen();
+            detenerCronometro();
+            alert("Progreso guardado correctamente. Puedes retomarlo cuando quieras.");
+            volverMenu();
+        }
+
+        function iniciarCronometro() {
+            detenerCronometro();
+            timerInterval = setInterval(() => {
+                tiempoRestanteSegundos--;
+                let m = Math.floor(tiempoRestanteSegundos / 60);
+                let s = tiempoRestanteSegundos % 60;
+                document.getElementById('quiz-timer').textContent = `⏱️ ${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+                
+                if (tiempoRestanteSegundos <= 0) {
+                    detenerCronometro();
+                    alert("¡Tiempo finalizado!");
+                    finalizarExamenOposicion();
+                }
+            }, 1000);
+        }
+
+        function detenerCronometro() {
+            if (timerInterval) clearInterval(timerInterval);
         }
 
         function iniciarModoPráctica() {
             if (bancoPreguntasGlobal.length === 0) return alert("No hay preguntas cargadas.");
             preguntasActivas = JSON.parse(JSON.stringify(bancoPreguntasGlobal));
-            barajarPreguntasYRespuestas(true);
-            arrancarQuiz();
+            prepararPreguntasYRespuestas();
+            arrancarQuizUI("Práctica Global");
+            document.getElementById('quiz-timer').parentElement.classList.add('hidden');
         }
 
-        function iniciarEstudioPorTemas() {
-            const temaSeleccionado = document.getElementById('select-tema-especifico').value;
-            if (temaSeleccionado === "todos") {
-                iniciarModoPráctica();
-                return;
-            }
-
-            const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaSeleccionado || q.temaNombre.includes(temaSeleccionado));
+        function iniciarEstudioTema(temaId) {
+            const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId);
             if (filtradas.length === 0) {
-                alert("No hay preguntas disponibles para este tema específico.");
+                alert("No hay preguntas registradas todavía para este tema específico.");
                 return;
             }
-
+            window.currentTemaIdContext = temaId;
             preguntasActivas = JSON.parse(JSON.stringify(filtradas));
-            barajarPreguntasYRespuestas(true);
-            arrancarQuiz();
+            prepararPreguntasYRespuestas();
+            arrancarQuizUI(CATALOGO_TEMAS[temaId].label + ": " + CATALOGO_TEMAS[temaId].desc);
+            document.getElementById('quiz-timer').parentElement.classList.add('hidden');
         }
 
-        function barajarPreguntasYRespuestas(barajarOpc) {
+        function prepararPreguntasYRespuestas() {
             barajarArray(preguntasActivas);
-            if (barajarOpc) {
-                preguntasActivas.forEach(q => {
-                    let opcionesMapeadas = q.opciones.map((textoOp, idxOriginal) => ({
-                        texto: textoOp,
-                        esCorrecta: (idxOriginal === q.correctaOriginal)
-                    }));
-                    barajarArray(opcionesMapeadas);
-                    q.opciones = opcionesMapeadas.map(o => o.texto);
-                    q.correctaOriginal = opcionesMapeadas.findIndex(o => o.esCorrecta);
-                });
-            }
+            preguntasActivas.forEach(q => {
+                let opcionesMapeadas = q.opciones.map((textoOp, idxOriginal) => ({
+                    texto: textoOp,
+                    esCorrecta: (idxOriginal === q.correctaOriginal)
+                }));
+                barajarArray(opcionesMapeadas);
+                q.opciones = opcionesMapeadas.map(o => o.texto);
+                q.correctaOriginal = opcionesMapeadas.findIndex(o => o.esCorrecta);
+            });
         }
 
-        function arrancarQuiz() {
-            indiceActual = 0;
-            aciertos = 0;
-            fallos = 0;
+        function arrancarQuizUI(badgeTexto) {
             respuestaSeleccionada = false;
-
             document.getElementById('view-menu').classList.add('hidden');
+            document.getElementById('view-estadisticas').classList.add('hidden');
             document.getElementById('view-resultados').classList.add('hidden');
             document.getElementById('view-quiz').classList.remove('hidden');
             document.getElementById('header-stats').classList.remove('hidden');
 
+            document.getElementById('quiz-badge').textContent = badgeTexto;
             document.getElementById('total-q-num').textContent = preguntasActivas.length;
             mostrarPregunta();
         }
@@ -284,16 +461,24 @@
             document.getElementById('current-q-num').textContent = indiceActual + 1;
 
             const q = preguntasActivas[indiceActual];
-            document.getElementById('quiz-badge').textContent = q.temaNombre || "Pregunta Oficial SACYL";
             document.getElementById('quiz-enunciado').textContent = q.enunciado;
+
+            const tipoBadge = document.getElementById('quiz-tipo-pregunta');
+            if (q.esReserva) {
+                tipoBadge.textContent = "Pregunta de Reserva";
+                tipoBadge.className = "text-xs sm:text-sm font-bold text-amber-900 bg-amber-50 border border-amber-200 px-3.5 py-1.5 rounded-full";
+            } else {
+                tipoBadge.textContent = `Pregunta ${indiceActual + 1}`;
+                tipoBadge.className = "text-xs sm:text-sm font-bold text-indigo-800 bg-indigo-50 border border-indigo-200 px-3.5 py-1.5 rounded-full";
+            }
 
             const contenedorOpciones = document.getElementById('quiz-opciones');
             contenedorOpciones.innerHTML = '';
 
             q.opciones.forEach((opcionTexto, index) => {
                 const btn = document.createElement('button');
-                btn.className = "w-full text-left p-3 sm:p-3.5 rounded-xl border border-slate-200 hover:bg-slate-50 transition text-xs sm:text-sm font-medium text-slate-700 flex items-start gap-2.5";
-                btn.innerHTML = `<span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded text-[11px] font-mono">${String.fromCharCode(65 + index)}</span> <span class="flex-grow">${opcionTexto}</span>`;
+                btn.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-slate-200 hover:bg-slate-50 transition text-sm sm:text-base font-semibold text-slate-900 flex items-start gap-3.5 shadow-2xs";
+                btn.innerHTML = `<span class="bg-slate-100 text-slate-800 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-mono font-bold">${String.fromCharCode(65 + index)}</span> <span class="flex-grow leading-relaxed">${opcionTexto}</span>`;
                 btn.onclick = () => seleccionarRespuesta(index, btn);
                 contenedorOpciones.appendChild(btn);
             });
@@ -304,52 +489,21 @@
             respuestaSeleccionada = true;
 
             const q = preguntasActivas[indiceActual];
+            q.usuarioRespondio = indexElegido;
             const botones = document.getElementById('quiz-opciones').children;
+
+            if (q.temaId) {
+                if (!estadisticasTemas[q.temaId]) estadisticasTemas[q.temaId] = { aciertos: 0, fallos: 0 };
+            }
 
             if (indexElegido === q.correctaOriginal) {
                 aciertos++;
-                botonElemento.className = "w-full text-left p-3 sm:p-3.5 rounded-xl border border-emerald-300 bg-emerald-50 text-emerald-900 transition text-xs sm:text-sm font-medium flex items-start gap-2.5";
+                q.esAcertada = true;
+                botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
+                if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
             } else {
                 fallos++;
-                botonElemento.className = "w-full text-left p-3 sm:p-3.5 rounded-xl border border-rose-300 bg-rose-50 text-rose-900 transition text-xs sm:text-sm font-medium flex items-start gap-2.5";
-                botones[q.correctaOriginal].className = "w-full text-left p-3 sm:p-3.5 rounded-xl border border-emerald-300 bg-emerald-50 text-emerald-900 transition text-xs sm:text-sm font-medium flex items-start gap-2.5";
-            }
-
-            if (q.explicacion || q.fuente) {
-                document.getElementById('quiz-explicacion-texto').textContent = `${q.explicacion || ''} (Fuente: ${q.fuente || 'Oficial'})`;
-                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
-            }
-
-            document.getElementById('btn-siguiente').classList.remove('hidden');
-        }
-
-        function siguientePregunta() {
-            indiceActual++;
-            if (indiceActual < preguntasActivas.length) {
-                mostrarPregunta();
-            } else {
-                mostrarResultados();
-            }
-        }
-
-        function mostrarResultados() {
-            document.getElementById('view-quiz').classList.add('hidden');
-            document.getElementById('header-stats').classList.add('hidden');
-            document.getElementById('view-resultados').classList.remove('hidden');
-
-            const total = preguntasActivas.length;
-            const porcentaje = Math.round((aciertos / total) * 100);
-
-            document.getElementById('score-circle').textContent = `${porcentaje}%`;
-            document.getElementById('score-details').innerHTML = `Aciertos: <strong>${aciertos}</strong> | Fallos: <strong>${fallos}</strong> de ${total} preguntas.`;
-        }
-
-        function volverMenu() {
-            document.getElementById('view-quiz').classList.add('hidden');
-            document.getElementById('view-resultados').classList.add('hidden');
-            document.getElementById('header-stats').classList.add('hidden');
-            document.getElementById('view-menu').classList.remove('hidden');
-        }
-    </script>
-</body>
-</html>
+                q.esAcertada = false;
+                botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-rose-400 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
+                botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
+                if (q.temaId
