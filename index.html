@@ -506,4 +506,89 @@
                 q.esAcertada = false;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-rose-400 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
                 botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
-                if (q.temaId
+                if (q.temaId) estadisticasTemas[q.temaId].fallos++;
+            }
+
+            localStorage.setItem('enfopos_stats', JSON.stringify(estadisticasTemas));
+
+            if (q.explicacion || q.fuente) {
+                document.getElementById('quiz-explicacion-texto').textContent = `${q.explicacion || ''} (Fuente: ${q.fuente || 'Oficial'})`;
+                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
+            }
+
+            document.getElementById('btn-siguiente').classList.remove('hidden');
+            guardarProgresoExamen();
+        }
+
+        function siguientePregunta() {
+            indiceActual++;
+            if (indiceActual < preguntasActivas.length) {
+                mostrarPregunta();
+            } else {
+                finalizarExamenOposicion();
+            }
+        }
+
+        function finalizarExamenOposicion() {
+            detenerCronometro();
+            localStorage.removeItem('enfopos_examen_activo');
+
+            document.getElementById('view-quiz').classList.add('hidden');
+            document.getElementById('header-stats').classList.add('hidden');
+            document.getElementById('view-resultados').classList.remove('hidden');
+
+            let puntuacionFinal = aciertos - (fallos * 0.25);
+            if (puntuacionFinal < 0) puntuacionFinal = 0;
+
+            document.getElementById('score-circle').textContent = `${puntuacionFinal.toFixed(2)} pts`;
+            document.getElementById('score-details').innerHTML = `
+                Aciertos: <strong class="text-emerald-800">${aciertos}</strong> (+${aciertos} pts)<br>
+                Fallos: <strong class="text-rose-800">${fallos}</strong> (-${(fallos * 0.25).toFixed(2)} pts por penalización)<br>
+                No contestadas: <strong>${preguntasActivas.length - (aciertos + fallos)}</strong><br>
+                <span class="text-xs sm:text-sm text-slate-600 mt-2 block font-medium">Puntuación neta calculada según bases de la convocatoria.</span>
+            `;
+            renderizarCuadrosTemas();
+            window.currentTemaIdContext = null;
+        }
+
+        function mostrarPantallaEstadisticas() {
+            document.getElementById('view-menu').classList.add('hidden');
+            document.getElementById('view-estadisticas').classList.remove('hidden');
+
+            const listaEl = document.getElementById('lista-estadisticas');
+            listaEl.innerHTML = '';
+
+            Object.keys(CATALOGO_TEMAS).forEach(temaId => {
+                const info = CATALOGO_TEMAS[temaId];
+                const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
+                const totalIntentos = stats.aciertos + stats.fallos;
+                const porcentaje = totalIntentos > 0 ? Math.round((stats.aciertos / totalIntentos) * 100) : 0;
+
+                const item = document.createElement('div');
+                item.className = "p-4.5 sm:p-5 rounded-2xl border border-slate-200 bg-white shadow-2xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4";
+                item.innerHTML = `
+                    <div>
+                        <h4 class="text-sm sm:text-base font-bold text-slate-900">${info.label}: ${info.desc}</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1">Aciertos: <strong class="text-emerald-800">${stats.aciertos}</strong> | Fallos: <strong class="text-rose-800">${stats.fallos}</strong> <span class="text-slate-400 font-medium">(${porcentaje}% efectividad)</span></p>
+                    </div>
+                    <button onclick="iniciarEstudioTema('${temaId}')" class="bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs sm:text-sm font-bold px-4.5 py-2.5 rounded-xl transition shadow-2xs">
+                        Repasar Tema 🎯
+                    </button>
+                `;
+                listaEl.appendChild(item);
+            });
+        }
+
+        function volverMenu() {
+            window.currentTemaIdContext = null;
+            detenerCronometro();
+            document.getElementById('view-quiz').classList.add('hidden');
+            document.getElementById('view-resultados').classList.add('hidden');
+            document.getElementById('view-estadisticas').classList.add('hidden');
+            document.getElementById('header-stats').classList.add('hidden');
+            document.getElementById('view-menu').classList.remove('hidden');
+            renderizarCuadrosTemas();
+        }
+    </script>
+</body>
+</html>
