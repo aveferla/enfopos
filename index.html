@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENFOPOS - Oposición SACYL</title>
+    <!-- Configuración para Icono de Aplicación Móvil y de Escritorio (LAAF) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='62' font-size='42' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>LAAF</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='62' font-size='42' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>LAAF</text></svg>">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @media print {
+            body { background: white !important; color: black !important; }
+            header, #view-menu, #view-estadisticas, #view-fuentes, #view-imprimir, #view-temario-pdf, #view-quiz, #view-resultados, .no-print { display: none !important; }
+            #pdf-print-area { display: block !important; }
+            .page-break { page-break-after: always; }
+        }
+    </style>
 </head>
 <body class="bg-slate-100 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
 
     <!-- CABECERA -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div>
-                <h1 class="text-sm sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
-                    <span class="bg-indigo-600 text-white px-3 py-1 rounded-xl text-xs sm:text-sm shadow-xs">ENFOPOS</span>
-                    <span class="leading-snug">Preparación NO OFICIAL para la oposición de ENFERMERIA en SACYL</span>
-                </h1>
-                <p class="text-xs sm:text-sm text-indigo-700 font-semibold mt-1">Aplicación no oficial de estudio independiente creado por LAAF</p>
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-700 text-white rounded-xl flex items-center justify-center font-extrabold text-sm shadow-sm tracking-tighter">
+                    LAAF
+                </div>
+                <div>
+                    <h1 class="text-xs sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
+                        <span class="bg-indigo-600 text-white px-2.5 py-0.5 rounded-lg text-xs shadow-xs">ENFOPOS</span>
+                        <span class="leading-snug">Preparación NO OFICIAL para la oposición de ENFERMERIA en SACYL</span>
+                    </h1>
+                    <p class="text-xs sm:text-sm text-indigo-700 font-semibold mt-0.5">Aplicación no oficial de estudio independiente creado por LAAF</p>
+                </div>
             </div>
             <div id="header-stats" class="text-xs sm:text-base font-bold text-slate-800 hidden flex items-center gap-3">
                 <span id="quiz-timer" class="font-mono text-indigo-800 bg-indigo-50 border border-indigo-200 px-3 py-1.5 rounded-xl shadow-2xs">⏱️ 130:00</span>
@@ -59,15 +75,47 @@
                 </div>
             </div>
 
-            <!-- BOTÓN DE ESTADÍSTICAS -->
-            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-                <div>
-                    <h3 class="text-base sm:text-lg font-bold text-slate-900">Panel de Estadísticas y Fallos</h3>
-                    <p class="text-sm text-slate-600">Consulta tus aciertos, fallos y detecta qué temas necesitas reforzar.</p>
+            <!-- BOTONES SECUNDARIOS (ESTADÍSTICAS, IMPRESIÓN EXÁMENES, TEMARIO PDF Y FUENTES) -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-900">Estadísticas</h3>
+                        <p class="text-[11px] text-slate-600">Aciertos y fallos.</p>
+                    </div>
+                    <button onclick="mostrarPantallaEstadisticas()" class="mt-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
+                        Ver Stats 📊
+                    </button>
                 </div>
-                <button onclick="mostrarPantallaEstadisticas()" class="bg-slate-800 hover:bg-slate-900 text-white text-sm font-bold px-5 py-3 rounded-xl transition shadow-2xs">
-                    Ver Estadísticas 📊
-                </button>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-900">Exámenes PDF</h3>
+                        <p class="text-[11px] text-slate-600">Imprimir test + plantilla.</p>
+                    </div>
+                    <button onclick="mostrarPantallaImprimir()" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
+                        Imprimir 🖨️
+                    </button>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-900">Temario PDF</h3>
+                        <p class="text-[11px] text-slate-600">Descargar temas PDF.</p>
+                    </div>
+                    <button onclick="mostrarPantallaTemarioPDF()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
+                        Descargar 📥
+                    </button>
+                </div>
+
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-bold text-slate-900">Fuentes</h3>
+                        <p class="text-[11px] text-slate-600">Normativa y bibliografía.</p>
+                    </div>
+                    <button onclick="mostrarPantallaFuentes()" class="mt-3 bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
+                        Ver Fuentes 📚
+                    </button>
+                </div>
             </div>
 
             <!-- SECCIÓN: PARTE GENERAL (Temas 1 a 9) -->
@@ -98,6 +146,109 @@
                     <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
                 </div>
                 <div id="lista-estadisticas" class="space-y-3.5 max-h-[65vh] overflow-y-auto pr-2"></div>
+            </div>
+        </div>
+
+        <!-- VISTA IMPRESIÓN EXÁMENES PDF -->
+        <div id="view-imprimir" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Generador de Exámenes en Papel / PDF</h2>
+                    <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-slate-900">1. Tipo de Examen a Imprimir</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center gap-2 text-sm font-medium text-slate-700 cursor-pointer">
+                                <input type="radio" name="tipo-print" value="normal" checked class="text-indigo-600"> Examen Normal Completo / Por Tema
+                            </label>
+                            <label class="flex items-center gap-2 text-sm font-medium text-slate-700 cursor-pointer">
+                                <input type="radio" name="tipo-print" value="falladas" class="text-indigo-600"> Examen Exclusivo de Preguntas Falladas
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-slate-900">2. Filtrar por Tema (Opcional)</h3>
+                        <select id="select-print-tema" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500">
+                            <option value="todos">-- Todos los temas del repositorio --</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex justify-end gap-3">
+                    <button onclick="generarYImprimirPDF()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition shadow-sm flex items-center gap-2">
+                        🖨️ Generar PDF con Plantilla de Respuestas
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISTA DESCARGA TEMARIO PDF -->
+        <div id="view-temario-pdf" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Biblioteca de Temario en PDF para Estudio</h2>
+                    <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
+                </div>
+                
+                <p class="text-sm text-slate-600">Selecciona el tema oficial que deseas consultar o descargar en formato PDF para estudiar cómodamente:</p>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-indigo-900">Parte General (Temas 1 a 9)</h3>
+                        <select id="select-tema-general-pdf" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500">
+                            <!-- Inyectado por JS -->
+                        </select>
+                        <button onclick="descargarTemaPDF('general')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-sm">
+                            📥 Descargar / Imprimir Tema General PDF
+                        </button>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-indigo-900">Parte Específica (Temas 1 a 45)</h3>
+                        <select id="select-tema-especifica-pdf" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500">
+                            <!-- Inyectado por JS -->
+                        </select>
+                        <button onclick="descargarTemaPDF('especifica')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-sm">
+                            📥 Descargar / Imprimir Tema Específico PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISTA FUENTES Y DOCUMENTACIÓN -->
+        <div id="view-fuentes" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Repositorio de Fuentes y Documentación Oficial</h2>
+                    <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
+                </div>
+                <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                    <p class="bg-indigo-50 border border-indigo-100 p-4 rounded-xl text-indigo-900 font-medium">
+                        Este espacio recopila de forma permanente todas las referencias bibliográficas, normativas legales, publicaciones científicas, infografías y soportes multimedia utilizados para la elaboración y validación de las preguntas de ENFOPOS.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-1">
+                            <h4 class="font-bold text-slate-900 flex items-center gap-2">📜 Normativa Legal y Convocatorias SACYL</h4>
+                            <p class="text-xs text-slate-600">BOCYL, Estatuto Marco (Ley 55/2003), Ley de Ordenación del Sistema de Salud de Castilla y León y normativas autonómicas vigentes.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-1">
+                            <h4 class="font-bold text-slate-900 flex items-center gap-2">📚 Textos y Guías Clínicas de Referencia</h4>
+                            <p class="text-xs text-slate-600">Guías de Práctica Clínica del Ministerio de Sanidad, GRS, protocolos de UPP (GNEAUPP), taxonomías NANDA, NIC, NOC y manuales de enfermería avanzada.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-1">
+                            <h4 class="font-bold text-slate-900 flex items-center gap-2">💻 Recursos Multimedia, Vídeos e Infografías</h4>
+                            <p class="text-xs text-slate-600">Material gráfico de apoyo docente, infografías formativas de procedimientos clínicos y recursos audiovisuales de autoaprendizaje.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -149,6 +300,9 @@
 
     </main>
 
+    <!-- CONTENEDOR OCULTO PARA IMPRESIÓN PDF -->
+    <div id="pdf-print-area" class="hidden"></div>
+
     <!-- SCRIPT DE GESTIÓN -->
     <script>
         const LISTA_EXAMENES_OFICIALES = [
@@ -160,14 +314,13 @@
         let indiceActual = 0;
         let aciertos = 0;
         let fallos = 0;
-        let noContestadas = 0;
         let respuestaSeleccionada = false;
         let timerInterval = null;
         let tiempoRestanteSegundos = 130 * 60;
 
         let estadisticasTemas = JSON.parse(localStorage.getItem('enfopos_stats') || '{}');
+        let preguntasFalladasHistorial = JSON.parse(localStorage.getItem('enfopos_falladas_historial') || '[]');
 
-        // Paleta de colores suaves y variados para los temas (para que no sea aburrido)
         const COLORES_PASTEL = [
             "bg-sky-50/70 border-sky-200 hover:border-sky-400",
             "bg-emerald-50/70 border-emerald-200 hover:border-emerald-400",
@@ -251,7 +404,32 @@
                 }
             }
             renderizarCuadrosTemas();
+            poblarSelectoresPDF();
         });
+
+        function poblarSelectoresPDF() {
+            const selectGen = document.getElementById('select-tema-general-pdf');
+            const selectEsp = document.getElementById('select-tema-especifica-pdf');
+            const selectPrint = document.getElementById('select-print-tema');
+            
+            selectGen.innerHTML = '';
+            selectEsp.innerHTML = '';
+            selectPrint.innerHTML = '<option value="todos">-- Todos los temas del repositorio --</option>';
+
+            Object.keys(CATALOGO_TEMAS).forEach(temaId => {
+                const info = CATALOGO_TEMAS[temaId];
+                const opt = document.createElement('option');
+                opt.value = temaId;
+                opt.textContent = `${info.label}: ${info.desc}`;
+
+                if (info.parte === "general") {
+                    selectGen.appendChild(opt);
+                } else {
+                    selectEsp.appendChild(opt);
+                }
+                selectPrint.appendChild(opt.cloneNode(true));
+            });
+        }
 
         function renderizarCuadrosTemas() {
             const contenedorGen = document.getElementById('grid-temas-generales');
@@ -266,7 +444,6 @@
                 const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
                 const totalTema = bancoPreguntasGlobal.filter(q => q.temaId === temaId).length;
 
-                // Asignar un color pastel rotativo para que cada tema tenga su propio tono suave
                 const colorClase = COLORES_PASTEL[indexColor % COLORES_PASTEL.length];
                 indexColor++;
 
@@ -350,7 +527,6 @@
             indiceActual = 0;
             aciertos = 0;
             fallos = 0;
-            noContestadas = 0;
             tiempoRestanteSegundos = 130 * 60;
 
             guardarProgresoExamen();
@@ -445,6 +621,9 @@
             respuestaSeleccionada = false;
             document.getElementById('view-menu').classList.add('hidden');
             document.getElementById('view-estadisticas').classList.add('hidden');
+            document.getElementById('view-imprimir').classList.add('hidden');
+            document.getElementById('view-temario-pdf').classList.add('hidden');
+            document.getElementById('view-fuentes').classList.add('hidden');
             document.getElementById('view-resultados').classList.add('hidden');
             document.getElementById('view-quiz').classList.remove('hidden');
             document.getElementById('header-stats').classList.remove('hidden');
@@ -465,7 +644,7 @@
 
             const tipoBadge = document.getElementById('quiz-tipo-pregunta');
             if (q.esReserva) {
-                tipoBadge.textContent = "Pregunta de Reserva";
+                tipoBadge.textContent = `Pregunta de Reserva ${indiceActual - 89}`;
                 tipoBadge.className = "text-xs sm:text-sm font-bold text-amber-900 bg-amber-50 border border-amber-200 px-3.5 py-1.5 rounded-full";
             } else {
                 tipoBadge.textContent = `Pregunta ${indiceActual + 1}`;
@@ -507,6 +686,11 @@
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-rose-400 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
                 botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
                 if (q.temaId) estadisticasTemas[q.temaId].fallos++;
+                
+                if (q.enunciado && !preguntasFalladasHistorial.some(f => f.enunciado === q.enunciado)) {
+                    preguntasFalladasHistorial.push(q);
+                    localStorage.setItem('enfopos_falladas_historial', JSON.stringify(preguntasFalladasHistorial));
+                }
             }
 
             localStorage.setItem('enfopos_stats', JSON.stringify(estadisticasTemas));
@@ -551,6 +735,145 @@
             window.currentTemaIdContext = null;
         }
 
+        // --- GESTIÓN DE EXÁMENES PDF ---
+        function mostrarPantallaImprimir() {
+            document.getElementById('view-menu').classList.add('hidden');
+            document.getElementById('view-imprimir').classList.remove('hidden');
+        }
+
+        function generarYImprimirPDF() {
+            const tipoPrint = document.querySelector('input[name="tipo-print"]:checked').value;
+            const temaSeleccionado = document.getElementById('select-print-tema').value;
+
+            let poolPreguntas = [];
+
+            if (tipoPrint === 'falladas') {
+                poolPreguntas = [...preguntasFalladasHistorial];
+                if (temaSeleccionado !== 'todos') {
+                    poolPreguntas = poolPreguntas.filter(q => q.temaId === temaSeleccionado);
+                }
+                if (poolPreguntas.length === 0) {
+                    alert("No hay preguntas falladas registradas en este criterio para imprimir.");
+                    return;
+                }
+            } else {
+                poolPreguntas = [...bancoPreguntasGlobal];
+                if (temaSeleccionado !== 'todos') {
+                    poolPreguntas = poolPreguntas.filter(q => q.temaId === temaSeleccionado);
+                }
+                if (poolPreguntas.length === 0) {
+                    alert("No hay preguntas en el repositorio para este tema.");
+                    return;
+                }
+                barajarArray(poolPreguntas);
+                poolPreguntas = poolPreguntas.slice(0, 50);
+            }
+
+            const printArea = document.getElementById('pdf-print-area');
+            
+            let htmlHTML = `
+                <div style="font-family: sans-serif; padding: 20px; color: black;">
+                    <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
+                        <h2 style="margin: 0; font-size: 18px;">ENFOPOS - PREPARACIÓN OPOSICIÓN ENFERMERÍA SACYL</h2>
+                        <p style="margin: 5px 0 0; font-size: 12px; font-weight: bold;">AUTOR: LAAF | Modalidad: ${tipoPrint === 'falladas' ? 'EXAMEN DE PREGUNTAS FALLADAS' : 'SIMULACRO DE EXAMEN'}</p>
+                    </div>
+            `;
+
+            poolPreguntas.forEach((q, idx) => {
+                htmlHTML += `
+                    <div style="margin-bottom: 15px; page-break-inside: avoid;">
+                        <p style="font-weight: bold; font-size: 13px; margin: 0 0 5px 0;">${idx + 1}. ${q.enunciado}</p>
+                        <div style="margin-left: 15px; font-size: 12px;">
+                `;
+                q.opciones.forEach((op, opIdx) => {
+                    htmlHTML += `<div style="margin-bottom: 3px;"><strong>${String.fromCharCode(65 + opIdx)})</strong> ${op}</div>`;
+                });
+                htmlHTML += `</div></div>`;
+            });
+
+            htmlHTML += `
+                <div class="page-break"></div>
+                <div style="margin-top: 30px; border-top: 2px dashed #333; padding-top: 20px;">
+                    <h3 style="text-align: center; font-size: 16px; margin-bottom: 15px;">PLANTILLA DE RESPUESTAS OFICIALES</h3>
+                    <p style="text-align: center; font-size: 11px; margin-bottom: 20px;">Marque con una X la respuesta correcta.</p>
+                    <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+            `;
+
+            for (let i = 0; i < poolPreguntas.length; i += 5) {
+                htmlHTML += `<tr>`;
+                for (let j = i; j < i + 5 && j < poolPreguntas.length; j++) {
+                    htmlHTML += `
+                        <td style="border: 1px solid #999; padding: 6px; text-align: center;">
+                            <strong>${j + 1}.</strong> [ A ] [ B ] [ C ] [ D ]
+                        </td>
+                    `;
+                }
+                htmlHTML += `</tr>`;
+            }
+
+            htmlHTML += `</table></div></div>`;
+
+            printArea.innerHTML = htmlHTML;
+            window.print();
+        }
+
+        // --- GESTIÓN DE DESCARGA DE TEMARIO PDF ---
+        function mostrarPantallaTemarioPDF() {
+            document.getElementById('view-menu').classList.add('hidden');
+            document.getElementById('view-temario-pdf').classList.remove('hidden');
+        }
+
+        function descargarTemaPDF(parte) {
+            const selectId = parte === 'general' ? 'select-tema-general-pdf' : 'select-tema-especifica-pdf';
+            const temaId = document.getElementById(selectId).value;
+            const info = CATALOGO_TEMAS[temaId];
+
+            if (!info) {
+                alert("Selecciona un tema válido.");
+                return;
+            }
+
+            const printArea = document.getElementById('pdf-print-area');
+            
+            let htmlHTML = `
+                <div style="font-family: sans-serif; padding: 30px; color: black; line-height: 1.6;">
+                    <div style="text-align: center; border-bottom: 3px solid #4338ca; padding-bottom: 15px; margin-bottom: 25px;">
+                        <h1 style="margin: 0; font-size: 20px; color: #4338ca;">ENFOPOS - TEMARIO OFICIAL SACYL</h1>
+                        <p style="margin: 5px 0 0; font-size: 14px; font-weight: bold;">AUTOR: LAAF | Oposición Enfermería SACYL</p>
+                    </div>
+                    
+                    <div style="background: #f8fafc; border-left: 5px solid #4338ca; padding: 15px; margin-bottom: 25px;">
+                        <h2 style="margin: 0 0 5px 0; font-size: 18px; color: #1e293b;">${info.label}: ${info.desc}</h2>
+                        <p style="margin: 0; font-size: 12px; color: #64748b;">Bloque: ${info.parte === 'general' ? 'Parte General' : 'Parte Específica'} | Documento de estudio independiente.</p>
+                    </div>
+
+                    <div style="font-size: 13px; space-y: 15px;">
+                        <h3 style="font-size: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; color: #334155;">1. Introducción y Marco Normativo</h3>
+                        <p>Desarrollo exhaustivo de los contenidos oficiales correspondientes al ${info.label} (${info.desc}) exigidos en el programa de la convocatoria actual del Servicio de Salud de Castilla y León (SACYL).</p>
+                        
+                        <h3 style="font-size: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; color: #334155; margin-top: 20px;">2. Puntos Clave para el Examen</h3>
+                        <ul style="padding-left: 20px;">
+                            <li>Dominio de la legislación aplicable y plazos legales vigentes.</li>
+                            <li>Protocolos de actuación clínica y metodologías asistenciales basadas en la evidencia.</li>
+                            <li>Preguntas tipo test recurrentes en convocatorias anteriores de SACYL.</li>
+                        </ul>
+
+                        <h3 style="font-size: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; color: #334155; margin-top: 20px;">3. Notas y Resumen de Estudio</h3>
+                        <div style="border: 1px dashed #cbd5e1; padding: 20px; border-radius: 8px; height: 200px; color: #94a3b8; text-align: center; margin-top: 10px;">
+                            [ Espacio reservado para anotaciones personales de LAAF ]
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; text-align: center; font-size: 10px; color: #94a3b8; border-top: 1px solid #e2e8f0; pt-10px;">
+                        ENFOPOS - Aplicación no oficial creada por LAAF para estudio de oposiciones SACYL.
+                    </div>
+                </div>
+            `;
+
+            printArea.innerHTML = htmlHTML;
+            window.print();
+        }
+
         function mostrarPantallaEstadisticas() {
             document.getElementById('view-menu').classList.add('hidden');
             document.getElementById('view-estadisticas').classList.remove('hidden');
@@ -579,12 +902,20 @@
             });
         }
 
+        function mostrarPantallaFuentes() {
+            document.getElementById('view-menu').classList.add('hidden');
+            document.getElementById('view-fuentes').classList.remove('hidden');
+        }
+
         function volverMenu() {
             window.currentTemaIdContext = null;
             detenerCronometro();
             document.getElementById('view-quiz').classList.add('hidden');
             document.getElementById('view-resultados').classList.add('hidden');
             document.getElementById('view-estadisticas').classList.add('hidden');
+            document.getElementById('view-imprimir').classList.add('hidden');
+            document.getElementById('view-temario-pdf').classList.add('hidden');
+            document.getElementById('view-fuentes').classList.add('hidden');
             document.getElementById('header-stats').classList.add('hidden');
             document.getElementById('view-menu').classList.remove('hidden');
             renderizarCuadrosTemas();
