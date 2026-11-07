@@ -452,15 +452,15 @@
             contenedorEsp.innerHTML = '';
 
             let indexColor = 0;
-            let totalPreguntasGlobalAcumuladas = 0; // Para sumar el total exacto
+            let totalPreguntasTemasAcumuladas = 0; // Suma exclusiva de los temas
 
             Object.keys(CATALOGO_TEMAS).forEach(temaId => {
                 const info = CATALOGO_TEMAS[temaId];
                 const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
                 
-                // Cuenta exacta filtrando por el temaId correspondiente
+                // Cuenta exacta filtrando únicamente por el temaId correspondiente
                 const totalTema = bancoPreguntasGlobal.filter(q => q.temaId === temaId).length;
-                totalPreguntasGlobalAcumuladas += totalTema;
+                totalPreguntasTemasAcumuladas += totalTema;
 
                 const colorClase = COLORES_PASTEL[indexColor % COLORES_PASTEL.length];
                 indexColor++;
@@ -490,10 +490,10 @@
                 }
             });
 
-            // Actualiza el contador global en la pantalla si existe el elemento
+            // Actualiza el contador global mostrando exclusivamente las preguntas de los temas de estudio
             const elContador = document.getElementById('contador-total-global');
             if (elContador) {
-                elContador.textContent = bancoPreguntasGlobal.length;
+                elContador.textContent = totalPreguntasTemasAcumuladas;
             }
         }
 
