@@ -1,6 +1,137 @@
 [
   {
     "temaId": "gen_2",
+    "enunciado": "Conforme al Estatuto Jurídico del personal estatutario del Servicio de Salud de Castilla y León (Ley 2/2007, de 7 de marzo), respecto a la clasificación del personal estatutario por la función desarrollada, señale la afirmación CORRECTA:",
+    "opciones": [
+      "El personal estatutario se clasifica atendiendo al nivel académico del título exigido para el ingreso en personal estatutario sanitario y personal estatutario de gestión y servicios.",
+      "El personal sanitario se subdivide únicamente en diplomados universitarios sin contemplar el título de grado ni la formación especializada.",
+      "El personal estatutario de gestión y servicios comprende exclusivamente al personal celador y de limpieza sin incluir grupos técnicos o administrativos.",
+      "No existe clasificación por nivel académico, organizándose únicamente por antigüedad en el servicio asistencial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Estatuto Jurídico de SACYL (Ley 2/2007) clasifica al personal estatutario por la función desarrollada en personal estatutario sanitario y personal estatutario de gestión y servicios, atendiendo al nivel académico del título exigido para el ingreso (Formación Universitaria y Formación Profesional).",
+    "fuente": "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del personal estatutario de SACYL - Art. 5-7"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el procedimiento de adquisición de la condición de personal estatutario fijo en el Servicio de Salud de Castilla y León, ¿cuál de los siguientes requisitos NO es imprescindible exigir formalmente?",
+    "opciones": [
+      "Haber superado el correspondiente proceso selectivo de ingreso.",
+      "Acreditar la posesión del título universitario o técnico exigido en la convocatoria.",
+      "Estar empadronado obligatoriamente en un municipio de la Comunidad de Castilla y León con una antigüedad mínima de tres años.",
+      "Obtener el nombramiento expedido por el órgano competente y tomar posesión de la plaza en el plazo establecido."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "El empadronamiento en un municipio castellano y leonés no constituye un requisito constitucional ni legal para el acceso a la condición de personal estatutario fijo en SACYL, debiendo respetarse los principios de igualdad, mérito y capacidad.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Adquisición de la condición de fijo"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Respecto a la pérdida de la condición de personal estatutario fijo en el Servicio de Salud de Castilla y León, indique cuál de las siguientes causas extingue legalmente dicha relación de servicios:",
+    "opciones": [
+      "La sanción disciplinaria firme de separación del servicio.",
+      "El disfrute de una licencia sin sueldo por un periodo superior a 15 días laborables.",
+      "La solicitud verbal de traslado involuntario a un hospital comarcal.",
+      "El cambio voluntario de turno de trabajo asistencial previa conformidad del supervisor."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Son causas de pérdida de la condición de personal estatutario fijo: la renuncia, la pérdida de la nacionalidad, la jubilación, la incapacidad permanente absoluta o gran invalidez, la pena principal o accesoria de inhabilitación absoluta o especial y la sanción disciplinaria firme de separación del servicio.",
+    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 del Estatuto Marco"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con los derechos individuales reconocidos al personal estatutario del Servicio de Salud de Castilla y León por la Ley 2/2007, señale la opción CORRECTA:",
+    "opciones": [
+      "Tienen derecho a la percepción puntual de las remuneraciones íntegras derivadas de su puesto de trabajo según la normativa retributiva vigente.",
+      "Tienen derecho a rechazar la prestación asistencial en situaciones de emergencia o catástrofe sin justificación médica.",
+      "Tienen derecho a fijar unilateralmente los cuadros de turnos asistenciales del servicio sin supervisión de la Jefatura.",
+      "Carecen del derecho a la formación continuada durante la jornada de trabajo."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El derecho a la percepción puntual de las retribuciones asignadas a su categoría y puesto, así como el derecho a la estabilidad en el empleo y a la formación continuada, constituyen derechos individuales fundamentales reconocidos en el Estatuto de SACYL.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico del Personal Estatutario de SACYL - Derechos Individuales"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a los sistemas de provisión de plazas y movilidad voluntaria del personal estatutario fijo en SACYL, la convocatoria de concurso de traslados se rige bajo los principios de:",
+    "opciones": [
+      "Igualdad, mérito, capacidad y publicidad, celebrándose con la periodicidad que reglamentariamente se determine.",
+      "Asignación por sorteo numérico realizado ante el Colegio de Escribanos.",
+      "Designación libre y discrecional por parte de la Dirección de Enfermería del centro.",
+      "Subasta económica pública al mejor postor entre los aspirantes."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El concurso de traslados es el sistema ordinario de provisión de plazas vacantes y movilidad voluntaria del personal estatutario fijo, garantizando los principios constitucionales de igualdad, mérito, capacidad y libre concurrencia en el ámbito de la red asistencial.",
+    "fuente": "Ley 2/2007 de SACYL - Provisión y Selección de Plazas"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En el marco de la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, el conjunto de actuaciones orientadas a la garantía del libre acceso de los ciudadanos a las prestaciones en condiciones de equidad e igualdad efectiva se fundamenta en:",
+    "opciones": [
+      "El principio de universalización de la atención sanitaria y la concepción integral de la salud.",
+      "El cobro directo por cada consulta recibida en el centro de salud público.",
+      "La restricción del uso del servicio sanitario a los ciudadanos con rentas superiores a la media nacional.",
+      "La preferencia de atención basada exclusivamente en la titularidad de seguros privados complementarios."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Ley 8/2010 consagra el principio rector de la universalidad en el acceso a la atención sanitaria pública, la equidad socio-territorial y la atención integral orientada a la protección de la salud comunitaria.",
+    "fuente": "Ley 8/2010, de 30 de agosto, de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Señale cuál de los siguientes deberes es de obligado cumplimiento para todo el personal estatutario de la Gerencia Regional de Salud según la Ley 2/2007:",
+    "opciones": [
+      "Mantener la debida reserva y secreto profesional sobre los datos e informaciones relativos a la salud de los pacientes.",
+      "Divulgar en redes personales el historial clínico de pacientes con patologías raras.",
+      "Ignorar las normas sobre prevención de riesgos laborales si interfieren con la velocidad del servicio.",
+      "Aceptar gratificaciones dinerarias de los familiares de los pacientes ingresados como muestra de gratitud."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El deber de secreto profesional, la salvaguarda de la intimidad y confidencialidad de la información clínica y el estricto cumplimiento de las normas de prevención de riesgos constituyen deberes esenciales del personal estatutario recogidos en la Ley 2/2007.",
+    "fuente": "Ley 2/2007 de SACYL - Deberes del Personal Estatutario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con las modalidades de nombramiento del personal estatutario temporal en SACYL, la contratación para la prestación de servicios puntuales derivados de sustituciones de personal por licencias, vacaciones o bajas temporales corresponde a la figura de:",
+    "opciones": [
+      "Personal estatutario interino o de sustitución.",
+      "Personal laboral indefinido no fijo con contrato mercantil.",
+      "Funcionario de carrera de la Administración General del Estado.",
+      "Personal directivo de libre designación gubernamental."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario temporal puede expedirse como interino (para plazas vacantes) o de sustitución (para suplir ausencias con derecho a reserva de puesto, licencias, incapacidad temporal o permisos del titular).",
+    "fuente": "Ley 2/2007 de SACYL y modificación conforme al RDL 12/2022"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "La promoción interna temporal del personal estatutario fijo de SACYL permite el desempeño temporal de funciones de otra categoría con la siguiente condición normativa:",
+    "opciones": [
+      "Tener la titulación requerida y pertenecer a una categoría de igual o inferior nivel de titulación dentro del servicio de salud.",
+      "No requerir en ningún caso la titulación académica oficial exigida para el nuevo grupo profesional.",
+      "Estar exento del cumplimiento del horario ordinario de trabajo en la plaza de origen.",
+      "Perder de forma definitiva e irreversible la plaza de origen al momento de aceptar la promoción."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La promoción interna temporal permite al personal estatutario fijo desempeñar vacantes o funciones de superior categoría u otro grupo técnico siempre que se posea la titulación académica exigida y se cuente con la antigüedad y requisitos contemplados en la convocatoria.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico del Personal Estatutario de SACYL"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la formulación de alegaciones y la tramitación de reclamaciones y sugerencias relativas al funcionamiento de los servicios asistenciales se garantiza mediante:",
+    "opciones": [
+      "El Registro de Reclamaciones y Sugerencias del Sistema de Salud de Castilla y León.",
+      "La entrega manuscrita de quejas directamente en el domicilio particular del Consejero.",
+      "Su tramitación previa y obligatoria ante los Juzgados de lo Mercantil de la capital provincial.",
+      "Su archivo inmediato sin acuse de recibo salvo consentimiento judicial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Sistema de Salud de CyL garantiza el derecho de los usuarios a presentar sugerencias y reclamaciones respecto a la asistencia prestada, estableciendo un procedimiento reglado de atención al usuario y respuesta obligatoria por la administración sanitaria.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  
+  {
+    "temaId": "gen_2",
     "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a las situaciones administrativas en las que puede hallarse el personal estatutario fijo, señale la afirmación CORRECTA:",
     "opciones": [
       "El personal estatutario fijo podrá encontrarse, entre otras situaciones, en servicio activo, servicios especiales, excedencia por cuidado de familiares o suspensión de funciones.",
@@ -129,4 +260,395 @@
     "explicacion": "La comisión de faltas muy graves debidamente sancionada en expediente disciplinario firme conlleva la sanción de separación del servicio, lo que extingue de forma definitiva la condición de personal estatutario fijo del SACYL.",
     "fuente": "Ley 2/2007 de SACYL - Sanciones y Faltas Disciplinarias"
   },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a las licencias por asuntos particulares (días de libre disposición), señale la opción CORRECTA:",
+    "opciones": [
+      "Su concesión está subordinada a las necesidades del servicio y su disfrute no genera derecho a indemnización económica en caso de no disfrutarse dentro del periodo establecido.",
+      "Pueden acumularse de forma indefinida a lo largo de cinco años consecutivos para disfrutarse de forma continuada.",
+      "Es un derecho absoluto e incondicionado que el profesional puede ejercer sin previo aviso ni autorización de la jefatura.",
+      "Solo pueden disfrutarse durante los fines de semana y festivos autonómicos."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El disfrute de los permisos por asuntos particulares queda supeditado a las necesidades del servicio organizativo de los centros y unidades, debiendo disfrutarse dentro del año natural o periodo de prórroga fijado reglamentariamente, sin que su no disfrute dé lugar a compensación económica.",
+    "fuente": "Ley 2/2007 de SACYL - Permisos y Licencias del Personal Estatutario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En el régimen retributivo del personal estatutario de la Gerencia Regional de Salud regulado por la Ley 2/2007, las retribuciones básicas comprenden exclusivamente:",
+    "opciones": [
+      "El sueldo, los trienios y las pagas extraordinarias correspondientes.",
+      "El complemento de destino y el complemento específico de atención continuada.",
+      "La productividad variable anual derivada del cumplimiento de objetivos del contrato de gestión.",
+      "Las horas extraordinarias y el complemento de penosidad y nocturnidad."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las retribuciones del personal estatutario se dividen en básicas y complementarias. Las retribuciones básicas son el sueldo asignado a cada subgrupo o grupo de clasificación, los trienios (antigüedad) y las dos pagas extraordinarias al año.",
+    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 del Estatuto Marco - Retribuciones Básicas"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la acreditación, homologación e inspección de centros, servicios y establecimientos sanitarios públicos y privados en la Comunidad Autónoma es competencia de:",
+    "opciones": [
+      "La Consejería competente en materia de sanidad de la Junta de Castilla y León.",
+      "El Ministerio de Industria y Turismo del Gobierno de España.",
+      "Los Colegios Profesionales de Farmacéuticos de ámbito provincial.",
+      "La Comisión de Arbitraje Mercantil de Castilla y León."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Corresponde a la Consejería de Sanidad la autorización, acreditación, homologación, registro y control o inspección sanitaria de todos los centros, servicios y establecimientos sanitarios de Castilla y León para velar por la seguridad de los pacientes.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Respecto a la reclasificación o integración del personal estatutario sanitario de los centros asistenciales de SACYL motivada por la implantación del Espacio Europeo de Educación Superior (Plan Bolonia), señale la correspondencia correcta de los títulos de Grado en Enfermería:",
+    "opciones": [
+      "Se adscriben al Subgrupo A2 dentro del Grupo A de clasificación profesional del personal estatutario.",
+      "Se encuadran en el Subgrupo A1 al equipararse de forma directa con los especialistas en Medicina.",
+      "Pasan a formar parte del Grupo C1 de técnicos de gestión no universitaria.",
+      "Se clasifican en el Grupo B de técnicos superiores de formación profesional."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los Diplomados y Graduados Universitarios en Enfermería se clasifican en el Subgrupo A2 del Grupo A de empleo público y del personal estatutario sanitario conforme a la estructura de titulación universitaria de grado.",
+    "fuente": "Ley 2/2007 de SACYL y Real Decreto Legislativo 5/2015 (EBEP)"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En la Ley 2/2007 de SACYL, la situación administrativa de Excedencia por Cuidado de Familiares garantiza al personal estatutario fijo durante el primer año de disfrute:",
+    "opciones": [
+      "La reserva del puesto de trabajo de origen y el cómputo del tiempo a efectos de trienios, carrera profesional y derechos pasivos.",
+      "La pérdida definitiva del puesto de trabajo sin opción a reingreso temporal.",
+      "La percepción del 100% del complemento específico por nocturnidad y turnos festivos.",
+      "La obligación de prestar servicios mínimos de retén los fines de semana."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Durante el primer año de excedencia por cuidado de hijos o familiares a cargo, el personal estatutario fijo tiene derecho a la reserva de su plaza de origen. Todo el periodo transcurrido en esta excedencia computa a efectos de trienios, carrera profesional y antigüedad.",
+    "fuente": "Ley 2/2007 de SACYL - Situación de Excedencia"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el procedimiento disciplinario regulado en el marco del personal estatutario de SACYL, la adopción de medidas provisionales como la suspensión provisional de funciones durante la tramitación de un expediente disciplinario por falta muy grave:",
+    "opciones": [
+      "No podrá exceder de seis meses de duración salvo paralización del procedimiento imputable al propio interesado.",
+      "Puede extenderse de forma indefinida durante 10 años sin motivación justificada.",
+      "Supone la pérdida definitiva de los derechos de colegiación profesional en toda España.",
+      "Debe ser aprobada mediante Real Decreto del Consejo de Ministros."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La suspensión provisional de funciones ordenada cautelarmente durante un procedimiento disciplinario no podrá exceder de 6 meses, salvo que el retraso del expediente sea causado por causas imputables al expedientado.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Procedimiento Disciplinario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Señale la afirmación CORRECTA sobre el concepto de 'Movilidad Funcional' del personal estatutario en el ámbito del Servicio de Salud de Castilla y León:",
+    "opciones": [
+      "Permite la asignación justificada de funciones distintas a las de la categoría de origen dentro de un mismo centro por necesidades del servicio, respetando la titulación requerida y las retribuciones.",
+      "Implica el traslado forzoso de residencia familiar a otra provincia sin indemnización previa.",
+      "Supone el cambio automático de categoría profesional sin pasar por proceso selectivo alguno.",
+      "Obliga al profesional a realizar labores de mantenimiento técnico de edificios sin formación previa."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La movilidad funcional motivada por necesidades asistenciales organizativas autoriza a encomendar funciones correspondientes a la categoría del profesional respetando las retribuciones de origen o asignadas al puesto y la titulación oficial ostentada.",
+    "fuente": "Ley 2/2007 de SACYL - Movilidad del Personal Estatutario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la garantía de la continuidad asistencial entre los distintos niveles de atención se concreta mediante:",
+    "opciones": [
+      "La integración funcional y operativa de los protocolos clínicos, la historia clínica compartida y la coordinación entre Atención Primaria y Especializada.",
+      "La derivación sistemática de todos los pacientes a centros privados de otras comunidades autónomas.",
+      "El cobro de tasas por cada informe de alta hospitalaria emitido por enfermería.",
+      "La prohibición de compartir datos clínicos entre médicos de familia y enfermeras comunitarias."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La continuidad asistencial es un principio vertebrador que exige la coordinación clínica eficaz entre profesionales de primaria y hospitalaria, la unificación de registros e historias clínicas digitales y el trabajo en equipo multidisciplinar.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con los complementos retributivos de carácter variable del personal estatutario de SACYL, el complemento que retribuye el especial rendimiento, la actividad extraordinaria y el interés en el desempeño de las funciones recibe la denominación de:",
+    "opciones": [
+      "Complemento de Productividad.",
+      "Sueldo Base del Grupo de Clasificación.",
+      "Paga de Antigüedad Trienal.",
+      "Complemento de Residencia o Insularidad."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El complemento de productividad (variable o fija según el concepto) está destinado a retribuir el especial rendimiento, el grado de interés o iniciativa con que el profesional desempeña su trabajo y la consecución de los objetivos fijados en el contrato de gestión.",
+    "fuente": "Ley 2/2007 de SACYL - Conceptos Retributivos Complementarios"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 2/2007, el régimen de jornada ordinaria de trabajo del personal estatutario de los centros asistenciales del Servicio de Salud de Castilla y León se establece:",
+    "opciones": [
+      "De forma anualizada, distribuyéndose reglamentariamente en turnos diurnos, nocturnos o rotatorios respetando los descansos semanales y entre jornadas.",
+      "En 20 horas semanales fijas e inamovibles para todo el personal sanitario.",
+      "Sin límite de horas diarias ni descanso mínimo obligatorio entre turnos.",
+      "A decisión libre del paciente al inicio de la jornada."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La jornada de trabajo del personal estatutario se computa anualmente y se organiza a través de las correspondientes planificaciones de turnos asistenciales, garantizando los descansos mínimos obligatorios establecidos por el Estatuto Marco y las directivas comunitarias.",
+    "fuente": "Ley 2/2007 de SACYL - Jornada de Trabajo y Descansos"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a la carrera profesional del personal estatutario fijo, señale la opción CORRECTA:",
+    "opciones": [
+      "Consiste en el derecho a progresar de forma individualizada como reconocimiento al desarrollo profesional en cuanto a conocimientos, experiencia y calidad de trabajo.",
+      "Es un sistema automático basado exclusivamente en los años de edad del profesional sin necesidad de evaluación alguna.",
+      "Se otorga de forma vitalicia únicamente al personal directivo de los servicios centrales sin participación del personal asistencial.",
+      "Implica el cambio obligatorio de categoría profesional cada tres años por imposición ministerial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La carrera profesional es el derecho y conjunto de oportunidades de progreso profesional en los distintos grados establecidos, reconociendo la experiencia, el conocimiento, la formación continuada, la investigación y la calidad asistencial prestada.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Carrera Profesional"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con los derechos en materia de prevención de riesgos laborales reconocidos al personal estatutario de SACYL, la normativa de empleo público establece que:",
+    "opciones": [
+      "Los profesionales tienen derecho a una protección eficaz en materia de seguridad y salud en el trabajo, así como a la formación e información preventiva adecuada.",
+      "La protección frente a riesgos biológicos y ergonómicos queda al criterio exclusivo y voluntario del trabajador sin implicación de la empresa.",
+      "El servicio de prevención de riesgos no tiene competencias en los centros hospitalarios de atención especializada.",
+      "Los equipos de protección individual (EPI) deben ser adquiridos privadamente por cada empleado de su propio sueldo."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario tiene derecho a una protección eficaz en materia de seguridad y salud laboral, obligando a la administración sanitaria a dotar de medios de protección adecuados, evaluaciones de riesgos y formación continuada en prevención.",
+    "fuente": "Ley de Prevención de Riesgos Laborales y Estatuto Marco / Ley 2/2007"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, ¿cómo se denominan los documentos sanitarios básicos de carácter clínico y administrativo donde se integran los datos de salud del paciente atendido?",
+    "opciones": [
+      "Historia Clínica electrónica de Castilla y León y sistemas de información corporativos autorizados.",
+      "Registros privados de papel archivados en los domicilios particulares de los profesionales.",
+      "Ficheros de notas informales sin validez legal ni custodia institucional.",
+      "Bases de datos mercantiles de libre acceso comercial en internet."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La historia clínica electrónica de Castilla y León constituye el soporte documental e informático oficial que integra la información relativa a la salud y procesos asistenciales de cada paciente en la red pública.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, en los supuestos de adscripción provisional por reingreso al servicio activo desde situaciones administrativas sin reserva de plaza:",
+    "opciones": [
+      "El profesional quedará obligado a participar en los sucesivos concursos de traslados que se convoquen para obtener destino definitivo.",
+      "Adquiere la propiedad vitalicia inmediata del primer puesto vacante que elija sin concurrencia pública.",
+      "Pierde de manera irrevocable la condición de personal estatutario fijo en el primer mes.",
+      "No se le permite volver a ejercer funciones asistenciales en el ámbito de la Comunidad Autónoma."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El reingreso provisional al servicio activo conlleva la adjudicación temporal de un puesto vacante, quedando el profesional obligado a concursar en las convocatorias de provisión definitiva que se realicen para obtener una plaza en propiedad.",
+    "fuente": "Ley 2/2007 de SACYL - Reingreso al Servicio Activo"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En el régimen de incompatibilidades del personal estatutario del Servicio de Salud de Castilla y León, el ejercicio de actividades privadas:",
+    "opciones": [
+      "Requiere la previa y expresa compatibilidad concedida por el órgano competente, quedando prohibida si menoscaba el estricto cumplimiento de los deberes públicos.",
+      "Es totalmente libre y no requiere ningún trámite de comunicación ni autorización si se realiza fuera del horario de guardia.",
+      "Está prohibido con carácter absoluto y perpetuo, incluso tras la jubilación voluntaria.",
+      "Solo está permitido si la empresa privada pertenece a familiares directos del trabajador."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Cualquier actividad privada que pretenda compatibilizarse con un puesto público en SACYL exige la tramitación y resolución expresa de compatibilidad, quedando denegada si compite con el servicio público o genera conflicto de intereses.",
+    "fuente": "Ley 53/1984 de Incompatibilidades y Ley 2/2007 de SACYL"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Jurídico del personal estatutario de SACYL, señale cuál de las siguientes faltas disciplinarias está tipificada como FALTA MUY GRAVE:",
+    "opciones": [
+      "El abandono del servicio o la inasistencia injustificada reiterada que produzca alteraciones graves en el funcionamiento de la asistencia sanitaria.",
+      "El retraso leve e involuntario de cinco minutos en la llegada al turno de mañana por retenciones de tráfico.",
+      "El uso correcto de los equipos de protección individual facilitados por el centro.",
+      "La participación voluntaria en cursos formativos de reciclaje profesional autorizados."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El abandono del servicio o la inasistencia injustificada continuada que afecte gravemente a la organización asistencial y a la seguridad de los pacientes constituye una infracción disciplinaria tipificada expresamente como muy grave.",
+    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 - Tipificación de Faltas Disciplinarias"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, las prestaciones sanitarias del catálogo público se garantizan bajo los criterios de:",
+    "opciones": [
+      "Equidad, suficiencia financiera, calidad, seguridad y homogeneidad en toda la red asistencial de la Comunidad.",
+      "Discrecionalidad absoluta del coordinador médico de cada centro de salud.",
+      "Exclusión sistemática de los tratamientos crónicos de larga duración.",
+      "Financiación mixta obligatoria mediante copago directo en farmacia hospitalaria."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las prestaciones asistenciales de la cartera pública en Castilla y León se rigen por principios de equidad territorial, suficiencia de medios, calidad técnica, seguridad clínica y homogeneidad de acceso para todos los ciudadanos.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León - Prestaciones Sanitarias"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con la extinción de la relación de empleo del personal estatutario temporal en SACYL, indique la causa correcta:",
+    "opciones": [
+      "Por la cobertura reglamentaria de la plaza vacante por personal fijo, por la finalización del motivo que dio lugar al nombramiento o por su supresión.",
+      "Por el simple paso de un año natural sin necesidad de que concurra causa administrativa alguna.",
+      "Por decisión unilateral del paciente atendido en urgencias.",
+      "Por el traslado voluntario del director gerente del hospital."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los nombramientos del personal temporal finalizan por la desaparición de la causa que motivó su nombramiento (reincorporación del titular, cobertura definitiva de la plaza por funcionario o estatutario fijo, vencimiento del plazo o amortización de la plaza).",
+    "fuente": "Ley 2/2007 de SACYL y Estatuto Marco del Personal Estatutario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 2/2007, respecto al régimen de incompatibilidades y percepciones por el desempeño de más de un puesto en el sector público:",
+    "opciones": [
+      "Salvo los supuestos legalmente contemplados en normas de excepción, no se podrá percibir más de una retribución con cargo a los presupuestos de las administraciones públicas.",
+      "Se permite acumular de forma simultánea hasta cuatro sueldos íntegros de diferentes gerencias sanitarias autonómicas.",
+      "El personal de enfermería puede cobrar doble sueldo si realiza funciones de administración municipal en horario de mañana.",
+      "Las incompatibilidades públicas no afectan al personal estatutario fijo en ningún caso."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El principio general de incompatibilidad pública prohíbe la percepción de más de una retribución con cargo a los fondos públicos, salvo las excepciones tasadas de puestos docentes universitarios u otras autorizaciones especiales de compatibilidad.",
+    "fuente": "Ley 53/1984 de Incompatibilidades y Ley 2/2007 de SACYL"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 8/2010, la participación de los profesionales sanitarios en los órganos de dirección, asesoramiento y gestión clínica de las Áreas de Salud de Castilla y León se canaliza fundamentalmente a través de:",
+    "opciones": [
+      "Las Juntas Técnico-Asistenciales, comisiones clínicas y órganos colegiados de participación y gestión asignados.",
+      "Sindicatos internacionales sin implantación en el territorio nacional.",
+      "Asambleas vecinales sin representación colegiada.",
+      "Tribunales militares de disciplina de la región."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Ley de Ordenación del Sistema de Salud de Castilla y León promueve la participación activa de los profesionales sanitarios en la gestión y organización a través de órganos colegiados técnicos, comisiones y juntas asistenciales.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto al régimen de provisión de plazas mediante el procedimiento de concurso abierto y permanente:",
+    "opciones": [
+      "Permite la presentación de solicitudes de traslado de forma continuada y su resolución periódica conforme a los criterios y baremos establecidos en la normativa autonómica.",
+      "Se realiza exclusivamente mediante sorteo anual ante notario sin baremo de méritos ni antigüedad.",
+      "Impide la participación del personal fijo que ostente la condición de interino en expectativa de destino.",
+      "Obliga al profesional a permanecer un mínimo de veinte años en la misma plaza antes de solicitar el primer traslado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El concurso abierto y permanente se configura como un sistema ágil de provisión de plazas que agiliza la movilidad voluntaria mediante la valoración continua de méritos y la resolución periódica de destinos vacantes.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Concurso Abierto y Permanente"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con los derechos de los pacientes y usuarios reconocidos en la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, señale cuál de los siguientes derechos asistenciales NO se encuentra amparado normativamente:",
+    "opciones": [
+      "El derecho a elegir libremente el diagnóstico clínico que prefiera recibir con independencia de la evidencia científica y los protocolos asistenciales.",
+      "El derecho al respeto a su dignidad, intimidad personal y a la confidencialidad de su información clínica.",
+      "El derecho a una segunda opinión médica en los supuestos y condiciones regulados en la normativa autonómica.",
+      "El derecho a la información sobre los servicios sanitarios disponibles y los cauces para formular reclamaciones y sugerencias."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los pacientes tienen derecho a recibir asistencia de calidad y a conocer las opciones clínicas basadas en la evidencia, pero la elección de un diagnóstico arbitrario o contrario a los protocolos científicos no constituye un derecho asistencial exigible.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León - Derechos de los Ciudadanos"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Jurídico del personal estatutario de SACYL, el tiempo permanecido en la situación administrativa de servicios especiales:",
+    "opciones": [
+      "Se computará a efectos de antigüedad, trienios y derechos en el régimen de Seguridad Social que corresponda, reservándose la plaza de origen.",
+      "No computa a ningún efecto ni laboral ni económico, extinguiendo la relación funcionarial de forma automática.",
+      "Exige el cese inmediato en el puesto de origen sin derecho a reserva de destino ni reingreso.",
+      "Solo es aplicable al personal laboral temporal con contrato mercantil de relevo."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario fijo en situación de servicios especiales (por ejemplo, al ser nombrado alto cargo o desempeñar funciones de representación pública) tiene derecho a la reserva de su plaza de origen y al cómputo del tiempo a efectos de antigüedad y trienios.",
+    "fuente": "Ley 2/2007 de SACYL - Situación de Servicios Especiales"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, en el supuesto de pérdida de la condición de personal estatutario fijo como consecuencia de condena firme a pena principal o accesoria de inhabilitación absoluta o especial:",
+    "opciones": [
+      "La pérdida de la condición es firme y definitiva desde el momento en que la sentencia judicial condenatoria adquiere firmeza.",
+      "Se convalida automáticamente mediante la realización de un curso de formación ética de cien horas.",
+      "Se suspende temporalmente el empleo y sueldo durante tres meses sin pérdida de la plaza.",
+      "El profesional puede elegir continuar trabajando en turnos de noche de forma indefinida."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La condena penal firme que lleve aparejada la pena de inhabilitación absoluta o especial para cargo u oficio público extingue de forma definitiva la condición de personal estatutario fijo al quedar legalmente incapacitado para su desempeño.",
+    "fuente": "Ley 2/2007 de SACYL - Causas de Extinción y Pérdida de Condición"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con el régimen de jornada y descansos del personal estatutario en el SACYL, las guardias o atención continuada realizadas fuera de la jornada ordinaria de trabajo:",
+    "opciones": [
+      "Se retribuyen mediante el complemento específico correspondiente y están sujetas a los límites máximos de tiempo de trabajo efectivo y descansos obligatorios previstos por la normativa comunitaria y estatal.",
+      "Tienen carácter estrictamente voluntario e incondicionado en todos los casos sin que la administración pueda exigir servicios mínimos.",
+      "No computan nunca a efectos de descansos mínimos entre jornadas sucesivas.",
+      "Se compensan exclusivamente mediante días libres acumulables sin retribución económica salarial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La atención continuada (guardias) retribuye el tiempo de presencia física o localización fuera de la jornada ordinaria, debiendo respetar rigurosamente los límites de jornada máxima semanal y los descansos mínimos ininterrumpidos entre jornadas exigidos legalmente.",
+    "fuente": "Ley 2/2007 de SACYL y Directrices de Tiempo de Trabajo"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, el marco territorial elemental para la adscripción de los ciudadanos a los profesionales de medicina de familia y enfermería de atención primaria es:",
+    "opciones": [
+      "La Zona Básica de Salud.",
+      "La Comarca Agraria Provincial.",
+      "La capital de la Comunidad Autónoma.",
+      "El distrito judicial de primera instancia."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Zona Básica de Salud constituye la demarcación territorial fundamental de adscripción de los ciudadanos para la prestación coordinada de los servicios sanitarios de atención primaria y la asignación de su equipo médico y de enfermería de referencia.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, respecto al procedimiento para la exigencia de responsabilidad disciplinaria al personal estatutario del SACYL:",
+    "opciones": [
+      "Se iniciará siempre de oficio o por orden superior, mediante acuerdo del órgano competente, garantizando en todo caso la audiencia al interesado y la presunción de inocencia.",
+      "Se resuelve de forma verbal e inapelable por el compañero de turno de mayor edad.",
+      "No requiere la instrucción previa de expediente contradictorio ni la designación formal de instructor.",
+      "Excluye la intervención de la representación sindical del trabajador expedientado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El procedimiento disciplinario exige la instrucción de un expediente contradictorio con nombramiento de instructor, pliego de cargos, audiencia formal al interesado y salvaguarda plena de las garantías constitucionales del expedientado.",
+    "fuente": "Ley 2/2007 de SACYL - Procedimiento Disciplinario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En el marco de la movilidad del personal estatutario, el traslado voluntario a plazas de otra categoría profesional distinta mediante concurso de traslados abierto:",
+    "opciones": [
+      "Requiere el cumplimiento de los requisitos de titulación y superación de los criterios específicos exigidos para la categoría de destino a la que se opta.",
+      "Puede efectuarse de forma libre sin poseer la titulación oficial exigida para la nueva categoría sanitaria.",
+      "Está prohibido para todo el personal fijo con más de cinco trienios reconocidos.",
+      "Se concede automáticamente por orden de antigüedad en el empadronamiento municipal."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El traslado o provisión de plazas exige siempre ostentar la titulación académica oficial y cumplir los requisitos específicos fijados para la categoría y especialidad a la que se concursa.",
+    "fuente": "Ley 2/2007 de SACYL - Requisitos de Provisión"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la Alta Inspección Sanitaria sobre las actividades, centros y servicios sanitarios en el territorio de la Comunidad corresponde ejercerla a:",
+    "opciones": [
+      "La Administración de la Comunidad de Castilla y León a través de la Consejería competente en materia de sanidad.",
+      "Las empresas constructoras de infraestructuras hospitalarias privadas.",
+      "Los comités de empresa de las mutuas de accidentes de trabajo.",
+      "La Tesorería General de la Seguridad Social central."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La función de alta inspección, control y garantía del cumplimiento de la normativa sanitaria general y autonómica en los centros de Castilla y León se atribuye a la Consejería de Sanidad de la Junta.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Indique la afirmación CORRECTA sobre los efectos jurídicos del reingreso definitivo del personal estatutario desde situaciones administrativas con derecho a reserva de plaza:",
+    "opciones": [
+      "El profesional se reincorporará de forma inmediata al puesto de trabajo del que es titular definitivo, reanudando plenamente sus derechos y obligaciones profesionales.",
+      "Pierde el derecho a los trienios acumulados con anterioridad a la excedencia.",
+      "Debe superar obligatoriamente una oposición de ingreso de nuevo acceso como si fuera personal de nuevo empleo.",
+      "Queda adscrito con carácter vitalicio a un centro de guardia sin derecho a vacaciones anuales."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El reingreso desde una situación administrativa con reserva de plaza da derecho a la reincorporación automática al puesto de destino definitivo que ostentaba el profesional, recuperando la plenitud de sus derechos retributivos, asistenciales y de carrera.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico del Personal Estatutario de SACYL"
+  }
+  
 ]
