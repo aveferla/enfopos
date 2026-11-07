@@ -1,14 +1,12 @@
 [
   {
-    "id": "t1_01",
-    "temaId": "t1",
-    "temaNombre": "Tema 1: Constitución y Ley General de Sanidad",
+    "temaId": "gen_1",
     "enunciado": "Según el artículo 43 de la Constitución Española de 1978, respecto a la protección de la salud, ¿cuál de las siguientes afirmaciones es correcta?",
     "opciones": [
-      "A) Reconoce el derecho a la protección de la salud como un derecho fundamental de los comprendidos en la Sección 1ª del Capítulo II.",
-      "B) Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios.",
-      "C) La ley regulará los deberes de los ciudadanos en materia de salud con carácter exclusivo y sancionador.",
-      "D) Se garantiza la gratuidad absoluta de todas las prestaciones farmacéuticas y asistenciales."
+      "Reconoce el derecho a la protección de la salud como un derecho fundamental de los comprendidos en la Sección 1ª del Capítulo II.",
+      "Compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios.",
+      "La ley regulará los deberes de los ciudadanos en materia de salud con carácter exclusivo y sancionador.",
+      "Se garantiza la gratuidad absoluta de todas las prestaciones farmacéuticas y asistenciales."
     ],
     "correctaOriginal": 1,
     "explicacion": "El Art. 43.2 CE establece que compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios.",
@@ -274,7 +272,8 @@
     "explicacion": "La Gerencia de Emergencias Sanitarias constituye una estructura de gestión centralizada y especializada de la GRS encargada de prestar la atención sanitaria urgente y emergente extrahospitalaria en todo el ámbito de la Comunidad Autónoma de Castilla y León.",
     "fuente": "Estructura de la Gerencia de Emergencias Sanitarias de SACYL"
   },
-  "temaId": "gen_1",
+  {
+    "temaId": "gen_1",
     "enunciado": "De acuerdo con el Reglamento de la Gerencia Regional de Salud de Castilla y León, respecto a las competencias del Consejo de Administración en materia económica y presupuestaria, señale la opción CORRECTA:",
     "opciones": [
       "Le corresponde aprobar el anteproyecto de presupuesto anual del organismo autónomo antes de su elevación a la Consejería competente en materia de hacienda.",
