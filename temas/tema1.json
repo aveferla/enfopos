@@ -13,5 +13,654 @@
     "correctaOriginal": 1,
     "explicacion": "El Art. 43.2 CE establece que compete a los poderes públicos organizar y tutelar la salud pública a través de medidas preventivas y de las prestaciones y servicios necesarios.",
     "fuente": "Constitución Española de 1978, Título I, Cap. III, Art. 43."
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme al Reglamento de la Gerencia Regional de Salud de Castilla y León, respecto a la naturaleza jurídica y adscripción de la Gerencia Regional de Salud, señale la afirmación CORRECTA:",
+    "opciones": [
+      "Es un organismo autónomo dotado de personalidad jurídica propia y plena capacidad de obrar, adscrito a la Consejería de Sanidad.",
+      "Es un ente público de derecho privado adscrito a la Consejería de Presidencia con autonomía financiera pero sin personalidad jurídica propia.",
+      "Es un órgano directivo central sin personalidad jurídica independiente, adscrito al Ministerio de Sanidad.",
+      "Es una empresa pública regional adscrita a la Consejería de Economía y Hacienda encargada de la gestión asistencial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Gerencia Regional de Salud de Castilla y León es un organismo autónomo de los previstos en la Ley del Patrimonio y de la Administración de la Comunidad, dotado de personalidad jurídica propia, patrimonio independiente y plena capacidad de obrar para el cumplimiento de sus fines, adscrito a la Consejería competente en materia de sanidad.",
+    "fuente": "Decreto 42/2016, por el que se establece la estructura orgánica de la Consejería de Sanidad y el Reglamento de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Dentro de la estructura orgánica de los Servicios Centrales de la Gerencia Regional de Salud de Castilla y León, ¿cuál de las siguientes Direcciones Generales NO forma parte del nivel directivo central del organismo autónomo?",
+    "opciones": [
+      "Dirección General de Asistencia Sanitaria y Humanización.",
+      "Dirección General de Salud Pública e Inspección Sanitaria.",
+      "Dirección General de Personal y Desarrollo Profesional.",
+      "Dirección General de Infraestructuras y Tecnologías de la Información."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La Dirección General de Salud Pública es un órgano directivo central que depende directamente de la Consejería de Sanidad, mientras que la Asistencia Sanitaria, el Personal/Desarrollo Profesional y las Infraestructuras/Tecnologías de la Información se incardinan en la estructura propia de la Gerencia Regional de Salud.",
+    "fuente": "Estructura Orgánica de la Consejería de Sanidad y GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la estructura periférica de la Gerencia Regional de Salud de Castilla y León, la gestión unitaria de los recursos sanitarios de atención primaria y especializada en el ámbito territorial de cada Área de Salud corresponde a:",
+    "opciones": [
+      "Las Direcciones de Enfermería de los Hospitales Comarcales.",
+      "Las Gerencias de Atención Especializada de cada Complejo Asistencial.",
+      "Las Gerencias de Área de Salud.",
+      "Las Comisiones de Docencia e Investigación de los centros asistenciales."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Las Gerencias de Área de Salud constituyen el órgano periférico de gestión unitaria encargado de la dirección, administración y gestión de las prestaciones y servicios de atención primaria y especializada en su demarcación territorial.",
+    "fuente": "Reglamento de la Gerencia Regional de Salud de Castilla y León - Estructura Periférica"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Corresponde al Presidente de la Gerencia Regional de Salud de Castilla y León la competencia expresa para una de las siguientes atribuciones directas. Señale la CORRECTA:",
+    "opciones": [
+      "La aprobación definitiva de la plantilla orgánica del personal estatutario en sustitución de la Consejería de Hacienda.",
+      "La ostentación de la representación legal del organismo autónomo y la presidencia de su Consejo de Administración.",
+      "La concesión de licencias por incapacidad temporal de todo el personal sanitario de Atención Primaria.",
+      "La adjudicación directa de contratos menores sin necesidad de fiscalización previa ni publicidad en el Portal de Transparencia."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El Presidente de la Gerencia Regional de Salud ostenta la máxima representación legal del organismo y preside el Consejo de Administración de la GRS, correspondiendo la gestión ejecutiva continua al Director General de la Gerencia Regional de Salud.",
+    "fuente": "Reglamento de la Gerencia Regional de Salud de CyL - Órganos de Gobierno"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En el marco de la organización de la Consejería de Sanidad de la Junta de Castilla y León, los órganos colegiados de carácter consultivo encargados del asesoramiento y la participación comunitaria en el ámbito del Área de Salud se denominan:",
+    "opciones": [
+      "Consejos de Salud de Área.",
+      "Comités de Gestión Integral de Cuidados.",
+      "Juntas Técnicas Asistenciales de Zona de Salud.",
+      "Comisiones de Evaluación de la Eficiencia Sanitaria."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los Consejos de Salud de Área son los órganos colegiados de participación comunitaria en el ámbito territorial del Área de Salud, cuya función primordial es el asesoramiento y cauce de participación ciudadana y de las corporaciones locales.",
+    "fuente": "Ley de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Señale cuál es la dependencia jerárquica y funcional directa de los Servicios Sanitarios de las Gerencias de Atención Primaria en cada una de las Áreas de Salud de SACYL:",
+    "opciones": [
+      "Dependen funcionalmente del Ministerio de Sanidad y jerárquicamente de la Alcaldía de la Zona Básica de Salud.",
+      "Dependen de la Gerencia de Área de Salud correspondiente, que coordina la atención primaria con la especializada.",
+      "Dependen únicamente de los Comités Éticos de Investigación Clínica del hospital de referencia.",
+      "Dependen en exclusiva de la Consejería de Presidencia de la Junta de Castilla y León."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Las Gerencias de Atención Primaria integran la estructura periférica y se someten a las directrices de la Gerencia de Área de Salud, la cual ostenta el mando unificado para garantizar la continuidad asistencial entre niveles.",
+    "fuente": "Estructura Orgánica y Periférica de SACYL"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Respecto al régimen de los acuerdos dictados por el Director Gerente de la Gerencia Regional de Salud de Castilla y León en el ejercicio de sus competencias administrativas propias, señale la respuesta CORRECTA:",
+    "opciones": [
+      "Ponen fin a la vía administrativa y solo son recurribles ante la Sala de lo Contencioso-Administrativo del Tribunal Supremo.",
+      "No ponen fin a la vía administrativa, siendo susceptibles de recurso de alzada ante el titular de la Consejería de Sanidad.",
+      "Son resoluciones definitivas inimpugnables ante cualquier vía jurisdiccional.",
+      "Requieren la convalidación preceptiva previa del Ministerio de Hacienda para surtir efectos legales."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los actos y resoluciones dictados por el Director Gerente de la Gerencia Regional de Salud no agotan la vía administrativa, salvo norma legal expresa en contrario, pudiendo interponerse frente a ellos recurso de alzada ante el Consejero de Sanidad.",
+    "fuente": "Ley 39/2015 del Procedimiento Administrativo Común y Reglamento de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Dentro de la estructura directiva de una Gerencia de Asistencia Sanitaria (GAS) en SACYL, la supervisión funcional de los procesos de continuidad de cuidados entre Atención Primaria y Especializada corresponde específicamente a:",
+    "opciones": [
+      "La Dirección de Enfermería, coordinada con la Dirección Médica y de Gestión.",
+      "El Servicio de Mantenimiento y Suministros Hospitalarios.",
+      "El Gabinete de Prensa y Comunicación de la Consejería de Sanidad.",
+      "La Sección de Contabilidad Analítica de los Servicios Centrales."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Dirección de Enfermería dentro de las Gerencias de Asistencia Sanitaria tiene atribuidas las competencias directas de planificación, organización, dirección y evaluación de los cuidados de enfermería y la garantía de continuidad asistencial del paciente.",
+    "fuente": "Estructura Funcional de las Gerencias de Asistencia Sanitaria de SACYL"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Indique cuál de las siguientes funciones NO es competencia atribuida a la Dirección General de Personal y Desarrollo Profesional de la Gerencia Regional de Salud:",
+    "opciones": [
+      "La planificación, ordenación y gestión del personal estatutario del servicio de salud.",
+      "La gestión del sistema de carrera profesional y evaluación del desempeño.",
+      "La negociación colectiva con las organizaciones sindicales presentes en la Mesa Sectorial de Sanidad.",
+      "La aprobación definitiva del texto de los Decretos reguladores de los derechos de la infancia en Castilla y León."
+    ],
+    "correctaOriginal": 3,
+    "explicacion": "La elaboración y aprobación de normativas relativas a derechos generales de la infancia o políticas sociales generales no compete a la Dirección General de Personal de la GRS, correspondiendo a las Consejerías con competencias en materia de servicios sociales e infancia.",
+    "fuente": "Reglamento de la Gerencia Regional de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "La delimitación territorial básica para la prestación de la Atención Primaria de Salud en Castilla y León, sobre la cual se organizan los Equipos de Atención Primaria, recibe la denominación normativa de:",
+    "opciones": [
+      "Zona Básica de Salud.",
+      "Distrito Sanitario Especializado.",
+      "Mancomunidad de Servicios Médicos.",
+      "Área de Concurrencia Sanitaria."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Zona Básica de Salud constituye la demarcación territorial elemental para la delimitación del marco de actuación del Equipo de Atención Primaria y la prestación de la asistencia sanitaria inicial en la Comunidad.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En relación con el Consejo de Administración de la Gerencia Regional de Salud de Castilla y León como máximo órgano colegiado de gobierno del organismo autónomo, señale la respuesta CORRECTA respecto a su composición y funciones:",
+    "opciones": [
+      "Está presidido por el Consejero de Sanidad y entre sus funciones se encuentra la aprobación del anteproyecto de presupuesto del organismo autónomo.",
+      "Está integrado exclusivamente por personal estatutario fijo de enfermería elegido por votación popular entre la plantilla.",
+      "Es presidido directamente por el Presidente de las Cortes de Castilla y León y actúa como tribunal sancionador de faltas graves.",
+      "Carece de representación de las organizaciones sindicales y corporaciones locales al ser un órgano de gestión puramente interna."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejo de Administración es el órgano superior colegiado de gobierno de la GRS. Su Presidencia la ostenta el titular de la Consejería competente en materia de sanidad (o persona en quien delegue) y entre sus atribuciones esenciales se encuentra conocer y aprobar el anteproyecto de presupuesto anual de la Gerencia Regional.",
+    "fuente": "Decreto 42/2016 - Reglamento de la Gerencia Regional de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Dentro de la estructura orgánica de la Consejería de Sanidad de la Junta de Castilla y León, señale cuál de las siguientes funciones corresponde específicamente a la Secretaría General:",
+    "opciones": [
+      "La gestión técnica directa de los quirófanos y agendas de Cirugía Mayor Ambulatoria de los Complejos Asistenciales.",
+      "La gestión de la nómina del personal sanitario estatutario de Atención Especializada.",
+      "La dirección de los Servicios Comunes de la Consejería, la gestión presupuestaria, la asistencia jurídica y la contratación administrativa institucional.",
+      "La supervisión directa de las Comisiones de Lactancia Materna en los centros de salud."
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La Secretaría General de la Consejería de Sanidad es el órgano directivo central a quien corresponde la jefatura de los Servicios Comunes, la coordinación de las actuaciones administrativas de la Consejería, la elaboración del anteproyecto de presupuesto del departamento, la tramitación de disposiciones de carácter general y la contratación administrativa global.",
+    "fuente": "Estructura Orgánica de la Consejería de Sanidad de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Según lo establecido en la normativa autonómica de ordenación del sistema de salud de Castilla y León, las Áreas de Salud se subdividen territorialmente para la organización operativa de la asistencia primaria en:",
+    "opciones": [
+      "Zonas Básicas de Salud.",
+      "Demarcaciones Hospitalarias de Urgencia.",
+      "Sectores Sanitarios Comarcales.",
+      "Distritos Sanitarios de Alta Resolución."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La delimitación territorial del Sistema de Salud de Castilla y León se estructura en Áreas de Salud, las cuales se subdividen a su vez en Zonas Básicas de Salud para garantizar una atención primaria cercana, accesible y continuada.",
+    "fuente": "Ley 8/2010, de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme a la estructura central de la Gerencia Regional de Salud, ¿qué órgano directivo tiene atribuida la competencia sobre la planificación de las necesidades de equipamiento asistencial, la gestión de infraestructuras sanitarias y las tecnologías de la información de SACYL?",
+    "opciones": [
+      "La Dirección General de Infraestructuras y Tecnologías de la Información.",
+      "La Secretaría Técnica del Consejo de Salud de Área.",
+      "La Dirección General de Salud Pública e Inspección Sanitaria.",
+      "La Gerencia de Atención Primaria de la zona correspondiente."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Dirección General de Infraestructuras y Tecnologías de la Información de la GRS asume la planificación, ejecución y mantenimiento de las obras de infraestructuras sanitarias, el equipamiento socio-sanitario asistencial y la transformación digital/tecnologías de la información de todo el sistema sanitario regional.",
+    "fuente": "Estructura Orgánica de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Señale la afirmación CORRECTA sobre la figura del Director Gerente de la Gerencia Regional de Salud de Castilla y León:",
+    "opciones": [
+      "Es un cargo electo mediante sufragio universal directo de los profesionales sanitarios del SACYL por un periodo inamovible de 6 años.",
+      "Es el órgano ejecutivo superior de la Gerencia Regional de Salud, ostentando la dirección, gestión ordinaria y representación ejecutiva del organismo autónomo.",
+      "Depende directamente del Ministerio de Hacienda y Administraciones Públicas y no de la Junta de Castilla y León.",
+      "Solo tiene competencias sobre el personal laboral no sanitario de los servicios periféricos."
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El Director Gerente de la GRS de Castilla y León es nombrado y separado libremente por la Junta de Castilla y León a propuesta del Consejero de Sanidad, y ostenta la representación ejecutiva ordinaria, la gestión de las prestaciones y servicios y la dirección superior del personal y recursos del organismo autónomo.",
+    "fuente": "Reglamento de la Gerencia Regional de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la organización periférica del Servicio de Salud de Castilla y León, las Gerencias de Asistencia Sanitaria (GAS) se caracterizan por una de las siguientes peculiaridades normativas:",
+    "opciones": [
+      "Integrar bajo una única dirección y estructura de gestión la Atención Primaria y la Atención Especializada del Área de Salud correspondiente.",
+      "Gestión exclusiva del transporte sanitario urgente interprovincial sin contacto con la atención hospitalaria.",
+      "Gestionar únicamente las mutualidades privadas de funcionarios públicos estatales (MUFACE/ISFAS).",
+      "Sustituir con carácter permanente a las corporaciones municipales en materia de urbanismo y medio ambiente."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Gerencias de Asistencia Sanitaria (GAS) constituyen el modelo unificado de gestión periférica en Castilla y León que integra funcional y orgánicamente los recursos y prestaciones de Atención Primaria y Especializada dentro de su ámbito territorial para maximizar la continuidad de cuidados.",
+    "fuente": "Modelos de Gestión Periférica de la Gerencia Regional de Salud de CyL"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Indique cuál de las siguientes comisiones o comités asistenciales forma parte obligatoria de la estructura organizativa y de asesoramiento técnico en los centros hospitalarios dependientes de la Gerencia Regional de Salud:",
+    "opciones": [
+      "Comisión de Historias Clínicas y Calidad Asistencial.",
+      "Junta General de Contratación Industrial Externa.",
+      "Comité Técnico de Obras Púbicas Sanitarias.",
+      "Consejo Superior de Política Fiscal Autonómica."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "En las estructuras asistenciales hospitalarias y de área existen comisiones técnico-asistenciales obligatorias (como la Comisión de Historias Clínicas, Calidad, Infecciones o Farmacia y Terapéutica) que actúan como órganos de asesoramiento clínico y técnico a la Dirección Asistencial y de Enfermería.",
+    "fuente": "Reglamento de Estructura y Funcionamiento de los Centros Asistenciales de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En relación con los derechos de participación de los ciudadanos en el sistema de salud de Castilla y León, los Consejos de Salud de Zona se definen normativamente como:",
+    "opciones": [
+      "Órganos colegiados de participación comunitaria en el ámbito territorial de la Zona Básica de Salud.",
+      "Órganos de gobierno unipersonales con capacidad punitiva sobre los médicos de familia.",
+      "Agrupaciones empresariales sin relación alguna con el servicio público de salud.",
+      "Comités científicos internacionales para la aprobación de ensayos clínicos con medicamentos en fase I."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejo de Salud de Zona es el órgano colegiado de participación de los ciudadanos, asociaciones y entidades locales dentro de la demarcación de la Zona Básica de Salud, asesorando al Equipo de Atención Primaria en la priorización de necesidades comunitarias.",
+    "fuente": "Ley de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Dentro de la Gerencia Regional de Salud, ¿a qué órgano directivo central le corresponde la instrucción y tramitación de los expedientes de responsabilidad patrimonial y disciplinarios del personal de la GRS?",
+    "opciones": [
+      "A la Dirección General de Personal y Desarrollo Profesional, en coordinación con los servicios jurídicos del organismo.",
+      "Al Consejo Escolar de la Comunidad de Castilla y León.",
+      "A la Gerencia de Emergencias Sanitarias directamente sin informe previo.",
+      "Al Ministerio de Trabajo y Economía Social."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Dirección General de Personal y Desarrollo Profesional tiene atribuidas las competencias en materia de régimen disciplinario, relaciones laborales y tramitación jurídica del estatuto del personal de la Gerencia Regional de Salud.",
+    "fuente": "Decreto de Estructura Orgánica de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "La estructura centralizada que asume en exclusiva la gestión del transporte sanitario aéreo, la red de coordinación 112 sanitaria y las Unidades de Soporte Vital Avanzado y Básico en Castilla y León se denomina:",
+    "opciones": [
+      "Gerencia de Emergencias Sanitarias de Castilla y León.",
+      "Dirección General de Inspección Marítima.",
+      "Comisión Provincial de Protección Civil Urbano.",
+      "Gerencia de Atención Especializada Distrital."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Gerencia de Emergencias Sanitarias constituye una estructura de gestión centralizada y especializada de la GRS encargada de prestar la atención sanitaria urgente y emergente extrahospitalaria en todo el ámbito de la Comunidad Autónoma de Castilla y León.",
+    "fuente": "Estructura de la Gerencia de Emergencias Sanitarias de SACYL"
+  },
+  "temaId": "gen_1",
+    "enunciado": "De acuerdo con el Reglamento de la Gerencia Regional de Salud de Castilla y León, respecto a las competencias del Consejo de Administración en materia económica y presupuestaria, señale la opción CORRECTA:",
+    "opciones": [
+      "Le corresponde aprobar el anteproyecto de presupuesto anual del organismo autónomo antes de su elevación a la Consejería competente en materia de hacienda.",
+      "Tiene la facultad de emitir deuda pública autonómica en los mercados internacionales sin autorización de las Cortes.",
+      "Es el único órgano competente para fijar el precio de los medicamentos dispensados en oficinas de farmacia privada.",
+      "Carece de competencias en materia económica, siendo esta una función exclusiva de la Intervención General del Estado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejo de Administración, como órgano colegiado superior de gobierno de la GRS, tiene entre sus atribuciones estatutarias conocer y aprobar el anteproyecto de presupuesto anual de la Gerencia Regional antes de su integración en los presupuestos generales de la Comunidad.",
+    "fuente": "Decreto 42/2016 - Reglamento de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Dentro de la estructura periférica del sistema sanitario de Castilla y León, ¿cómo se denominan los órganos de participación y consulta de los profesionales sanitarios y no sanitarios en el ámbito de los centros hospitalarios?",
+    "opciones": [
+      "Juntas Técnico-Asistenciales y Comisiones Clínicas de Centro.",
+      "Comités de Empresa Sindical Únicos Provinciales.",
+      "Consejos Municipales de Urbanismo y Sanidad Local.",
+      "Asambleas Generales de Pacientes Crónicos del Área."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Juntas Técnico-Asistenciales y los órganos colegiados asesores y clínicos de centro estructuran la participación de los profesionales en la gestión y mejora de la calidad asistencial en el ámbito de la atención especializada.",
+    "fuente": "Reglamento de Centros Asistenciales de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme a la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la creación, modificación o supresión de un Área de Salud se efectúa mediante:",
+    "opciones": [
+      "Decreto de la Junta de Castilla y León, a propuesta del titular de la Consejería competente en materia de sanidad.",
+      "Orden ministerial del Ministerio de Sanidad publicada en el Boletín Oficial del Estado.",
+      "Resolución simple del Director Gerente de la GRS sin publicación oficial previa.",
+      "Acuerdo plenario de los Ayuntamientos afectados por mayoría absoluta."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La delimitación, creación, modificación y supresión de las Áreas de Salud en la Comunidad de Castilla y León se establece formalmente mediante Decreto aprobado por la Junta de Castilla y León a iniciativa de la Consejería de Sanidad.",
+    "fuente": "Ley 8/2010, de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la estructura directiva de los Servicios Centrales de la Consejería de Sanidad, ¿a qué órgano le corresponde la dirección y coordinación de las políticas farmacéuticas, la ordenación farmacéutica y la inspección de servicios sanitarios?",
+    "opciones": [
+      "A la Dirección General de Salud Pública e Inspección Sanitaria (en coordinación con las competencias de asistencia).",
+      "A la Dirección General de Presupuestos de la Consejería de Hacienda.",
+      "A la Gerencia de Asistencia Sanitaria de cada provincia.",
+      "A la Secretaría General de la Consejería de Educación."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Dirección General de Salud Pública e Inspección Sanitaria asume las funciones relativas a la salud pública, la inspección de servicios sanitarios, la ordenación farmacéutica y las prestaciones farmacéuticas y complementarias.",
+    "fuente": "Decreto de Estructura Orgánica de la Consejería de Sanidad"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Señale cuál de las siguientes afirmaciones define correctamente la naturaleza de los Equipos de Atención Primaria en el sistema de salud de Castilla y León:",
+    "opciones": [
+      "Son los conjuntos de profesionales sanitarios y no sanitarios organizados para prestar atención integral de salud en una Zona Básica de Salud.",
+      "Son empresas mercantiles subcontratadas para la gestión de laboratorios de análisis clínicos comarcales.",
+      "Son órganos unipersonales de inspección fiscal adscritos a la Tesorería General de la Seguridad Social.",
+      "Son comités temporales que únicamente actúan durante las campañas de vacunación estacional contra la gripe."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los Equipos de Atención Primaria son los equipos multiprofesionales organizados en las Zonas Básicas de Salud integrados por médicos de familia, enfermeras, pediatras, personal de administración y otros profesionales sanitarios autorizados.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Con respecto a la Gerencia de Emergencias Sanitarias de Castilla y León, señale la respuesta CORRECTA sobre su dependencia y ámbito de actuación:",
+    "opciones": [
+      "Es un órgano de gestión especializada de la GRS con despliegue y competencias en todo el territorio de la Comunidad Autónoma.",
+      "Tiene competencias limitadas exclusivamente al municipio de Valladolid, careciendo de operatividad en el medio rural.",
+      "Depende funcionalmente del Ministerio del Interior y jerárquicamente de la Dirección General de la Policía.",
+      "Es una entidad privada sin ánimo de lucro ajena a la estructura orgánica del SACYL."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Gerencia de Emergencias Sanitarias es un órgano especializado y centralizado de la GRS que opera con carácter autonómico coordinando y prestando la asistencia sanitaria urgente y emergente extrahospitalaria en toda Castilla y León.",
+    "fuente": "Estructura Orgánica de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la organización de los Servicios Centrales de la Gerencia Regional de Salud, ¿qué órgano asume las funciones relativas a la selección, provisión, movilidad, carrera profesional, nóminas y régimen jurídico del personal estatutario?",
+    "opciones": [
+      "La Dirección General de Personal y Desarrollo Profesional.",
+      "La Dirección General de Infraestructuras y Tecnologías de la Información.",
+      "El Consejo Consultivo de Castilla y León.",
+      "La Inspección General de Servicios del Estado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Dirección General de Personal y Desarrollo Profesional es el órgano directivo central competente en la gestión integral de los recursos humanos, empleo público estatutario, retribuciones, negociaciones colectivas y planes de desarrollo profesional del SACYL.",
+    "fuente": "Decreto 42/2016 de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "De conformidad con la normativa de ordenación sanitaria de Castilla y León, ¿qué órgano colegiado asesora y coordina la asistencia sanitaria y la docencia e investigación en el ámbito de una Gerencia de Asistencia Sanitaria o Complejo Asistencial?",
+    "opciones": [
+      "La Junta Técnico-Asistencial del centro.",
+      "El Consejo de Administración de la Unión Europea.",
+      "La Comisión Mixta de Hacienda y Autonomías.",
+      "El Pleno del Ayuntamiento de la capital de provincia."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Junta Técnico-Asistencial es el órgano colegiado consultivo y asesor de la dirección del centro asistencial para la coordinación de la actividad asistencial, la docencia y la investigación clínica.",
+    "fuente": "Reglamento de Centros Asistenciales de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En relación con los Consejos de Salud de Área en Castilla y León, señale la afirmación INCORRECTA:",
+    "opciones": [
+      "Tienen carácter vinculante absoluto para vetar cualquier presupuesto aprobado por las Cortes de Castilla y León.",
+      "Son órganos de participación comunitaria en el ámbito del Área de Salud.",
+      "Emiten informes y propuestas sobre el Plan de Salud de Área y su memoria anual.",
+      "Están integrados por representantes de corporaciones locales, organizaciones sindicales, empresariales y asociaciones de pacientes."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los Consejos de Salud de Área tienen funciones de asesoramiento, participación y control social democrático, pero sus informes no suponen un veto presupuestario vinculante sobre las decisiones económico-financieras de la Junta o las Cortes.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Indique cuál es el órgano superior de la Consejería de Sanidad al que se adscribe formalmente la Gerencia Regional de Salud de Castilla y León:",
+    "opciones": [
+      "La Consejería competente en materia de sanidad (Consejería de Sanidad de la Junta de Castilla y León).",
+      "La Consejería de Economía y Hacienda exclusivamente.",
+      "El Ministerio de Sanidad, Consumo y Bienestar Social.",
+      "La Presidencia de la Junta de Castilla y León de forma directa sin intermediación de consejero."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Gerencia Regional de Salud (SACYL) se configura como un organismo autónomo adscrito orgánicamente a la Consejería de Sanidad de la Junta de Castilla y León.",
+    "fuente": "Decreto 42/2016 y Ley de Ordenación del Sistema de Salud de CyL"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "De acuerdo con el Reglamento de la Gerencia Regional de Salud de Castilla y León, ¿a qué órgano corresponde la aprobación de las directrices generales de actuación del organismo autónomo y la fijación de los criterios de asignación de recursos entre las distintas Áreas de Salud?",
+    "opciones": [
+      "Al Consejo de Administración de la Gerencia Regional de Salud.",
+      "A la Junta de Personal de Servicios Periféricos exclusivamente.",
+      "A los Colegios Oficiales de Médicos y Enfermería de Castilla y León en sesión plenaria.",
+      "A la Tesorería General de la Seguridad Social."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejo de Administración de la GRS, como órgano superior colegiado de gobierno, tiene encomendada la aprobación de las directrices generales de actuación, los planes generales de actividad del organismo y los criterios estratégicos de asignación de recursos presupuestarios y materiales a las Áreas de Salud.",
+    "fuente": "Decreto 42/2016, por el que se establece el Reglamento de la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En el modelo organizativo del Sistema de Salud de Castilla y León, cuando un Área de Salud abarca una población extensa o dispone de varios hospitales de referencia comarcal, la estructura periférica puede articularse mediante:",
+    "opciones": [
+      "Gerencias de Asistencia Sanitaria o Gerencias de Atención Especializada diferenciadas bajo la coordinación de la Gerencia de Área.",
+      "Comisiones parlamentarias de investigación permanente.",
+      "Consorcios mercantiles mixtos con empresas privadas de capital extranjero.",
+      "Delegaciones directas del Ministerio de Defensa."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Áreas de Salud se organizan territorialmente bajo la dirección de la Gerencia de Área, pudiendo desconcentrar su gestión operativa mediante Gerencias de Asistencia Sanitaria (unificadas) o Gerencias de Atención Especializada y Primaria específicas según las peculiaridades geográficas y asistenciales.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme a la estructura orgánica de los Servicios Centrales de la Gerencia Regional de Salud de Castilla y León, ¿qué unidad o dirección asume la gestión de los recursos económicos, la contabilidad analítica, la elaboración de la cuenta de gestión y el control de costes asistenciales?",
+    "opciones": [
+      "La Dirección General de Administración y Presupuestos (o unidad con competencias económico-financieras de la GRS).",
+      "La Dirección General de Salud Pública.",
+      "La Gerencia de Emergencias Sanitarias.",
+      "El Consejo Consultivo de Castilla y León."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La gestión económica, el control presupuestario, la contabilidad analítica de costes de los centros y la tramitación económico-financiera de la GRS se estructuran en los órganos directivos centrales de carácter económico y presupuestario del organismo autónomo.",
+    "fuente": "Estructura Orgánica de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En relación con los Equipos de Atención Primaria en Castilla y León, señale cuál de las siguientes afirmaciones es jurídicamente FALSA:",
+    "opciones": [
+      "Tienen personalidad jurídica propia e independiente de la Gerencia Regional de Salud para contratar obras y suministros de gran envergadura.",
+      "Constituyen la estructura organizativa básica de la atención primaria en la Zona Básica de Salud.",
+      "Están formados por profesionales sanitarios y no sanitarios que trabajan en equipo bajo una dirección común de zona.",
+      "Garantizan la atención continuada y urgente en el ámbito de su competencia asistencial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los Equipos de Atención Primaria carecen de personalidad jurídica propia e independiente; forman parte de la organización instrumental y periférica de la Gerencia Regional de Salud, la cual ostenta la personalidad jurídica única como organismo autónomo.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "De acuerdo con el marco competencial de la Consejería de Sanidad de Castilla y León, ¿quién ostenta la potestad reglamentaria superior para aprobar normas de organización y funcionamiento interno mediante Órdenes de la Consejería?",
+    "opciones": [
+      "El titular de la Consejería de Sanidad (Consejero).",
+      "El Supervisor Provincial de Sanidad.",
+      "El Director de Enfermería de cada centro de salud.",
+      "El Presidente del Colegio Oficial de Enfermería."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejero de Sanidad, como miembro de la Junta de Castilla y León y titular del departamento, ostenta la potestad reglamentaria propia de su rango mediante la emisión de Órdenes para regular aspectos organizativos y de gestión de su Consejería.",
+    "fuente": "Ley del Gobierno y de la Administración de la Comunidad de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la estructura de los hospitales públicos de SACYL, ¿qué órgano colegiado tiene como función específica analizar las infecciones nosocomiales y proponer medidas de prevención y control de la contaminación hospitalaria?",
+    "opciones": [
+      "La Comisión de Infecciones, Profilaxis y Política Antibiótica.",
+      "La Comisión de Obras y Urbanismo Municipal.",
+      "El Consejo de Administración de la Comunidad Autónoma.",
+      "La Junta de Contratación Centralizada del Estado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Comisión de Infecciones es el órgano clínico asesor encargado de la vigilancia epidemiológica intrahospitalaria, el control de la infección nosocomial y la optimización del uso de antimicrobianos en el centro asistencial.",
+    "fuente": "Reglamento de Funcionamiento de las Comisiones Clínicas Hospitalarias"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Señale la respuesta CORRECTA sobre la naturaleza de las Gerencias de Atención Primaria en el ámbito provincial o de área de la GRS:",
+    "opciones": [
+      "Son órganos periféricos encargados de la gestión y dirección de los recursos y centros de atención primaria en su demarcación.",
+      "Son fundaciones privadas sin ánimo de lucro regidas por patronatos independientes.",
+      "Son órganos estatales dependientes directamente del Ministerio de Sanidad.",
+      "Tienen competencias legislativas para aprobar leyes autonómicas sanitarias."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Gerencias de Atención Primaria se configuran como estructuras de gestión periférica dentro de la GRS para la dirección, coordinación y administración de los recursos humanos, materiales y asistenciales de la atención primaria en su ámbito territorial.",
+    "fuente": "Estructura Orgánica y Periférica de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En el diseño de la organización territorial sanitaria de Castilla y León, ¿qué criterio fundamental se prioriza para la fijación y delimitación de las Zonas Básicas de Salud?",
+    "opciones": [
+      "Factores geográficos, demográficos, sociales, epidemiológicos, de accesibilidad y de eficiencia en la utilización de los recursos.",
+      "Criterios exclusivamente partidistas de los ayuntamientos de más de 100.000 habitantes.",
+      "La cercanía a los puertos de mar y fronteras internacionales.",
+      "El número de licencias de taxi disponibles en la localidad."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La delimitación de la Zona Básica de Salud se rige por criterios de proximidad al ciudadano, dispersión poblacional, características geográficas, demográficas, epidemiológicas y de optimización de los recursos asistenciales disponibles.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme a las funciones de la Dirección General de Personal y Desarrollo Profesional de la GRS, ¿cómo se denominan los ámbitos formales de negociación colectiva y participación de los representantes sindicales con la administración sanitaria de Castilla y León?",
+    "opciones": [
+      "Mesa Sectorial de Sanidad y Mesas de Negociación correspondientes.",
+      "Asambleas de Vecinos y Concejos Abiertos Provinciales.",
+      "Comités de Empresa Europeos de Sanidad.",
+      "Tribunales de Arbitraje Mercantil Privado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La negociación colectiva de las condiciones de trabajo del personal estatutario del SACYL se articula a través de la Mesa Sectorial de Sanidad y los órganos de representación legal previstos en la normativa de empleo público.",
+    "fuente": "Ley del Estatuto Marco del Personal Estatutario y normativa GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Indique cuál de las siguientes afirmaciones describe con precisión la relación entre la Consejería de Sanidad y la Gerencia Regional de Salud de Castilla y León:",
+    "opciones": [
+      "La Consejería diseña las directrices políticas, la alta inspección y la planificación sanitaria general, mientras que la GRS ejecuta la gestión y prestación de los servicios sanitarios.",
+      "Son entidades totalmente independientes sin ningún vínculo orgánico ni funcional entre ellas.",
+      "La GRS controla políticamente a la Consejería de Sanidad a través de mociones de censura.",
+      "La Consejería se encarga exclusivamente de la limpieza de los centros de salud y la GRS de la política exterior."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Consejería de Sanidad asume la titularidad de las competencias de dirección política, propuesta normativa, planificación general y alta inspección, correspondiendo al organismo autónomo Gerencia Regional de Salud (SACYL) la ejecución, gestión y administración instrumental de la asistencia sanitaria.",
+    "fuente": "Decreto 42/2016 y Ley de Ordenación del Sistema de Salud de CyL"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme al Reglamento de la Gerencia Regional de Salud de Castilla y León y su normativa de desarrollo, respecto al régimen jurídico de los actos dictados por los órganos periféricos de gestión, señale la afirmación CORRECTA:",
+    "opciones": [
+      "Las resoluciones dictadas por los Gerentes de Área o de Asistencia Sanitaria en el ámbito de sus competencias delegadas o propias agotan o no la vía administrativa según lo previsto reglamentariamente, siendo recurribles ante la Dirección Gerencia de la GRS.",
+      "Sus resoluciones tienen rango de ley autonómica y solo pueden ser anuladas por el Tribunal Constitucional.",
+      "Carecen de cualquier tipo de eficacia jurídica frente a los ciudadanos al no tener personalidad jurídica los centros periféricos.",
+      "Deben ser ratificadas obligatoriamente por el pleno del Ayuntamiento del municipio donde se ubique el centro de salud."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los actos dictados por los órganos periféricos de la Gerencia Regional de Salud se integran en la cadena jerárquica del organismo autónomo, siendo recurribles ante la Dirección Gerencia de la GRS según los cauces y plazos establecidos en la legislación de procedimiento administrativo común.",
+    "fuente": "Decreto 42/2016 - Reglamento de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la estructura directiva central de la Consejería de Sanidad, ¿qué órgano tiene encomendada la coordinación de las relaciones con las corporaciones locales, asociaciones de pacientes y la alta inspección sanitaria?",
+    "opciones": [
+      "La Consejería de Sanidad a través de sus órganos directivos centrales y de la Secretaría General en el ámbito de sus atribuciones de coordinación.",
+      "El Colegio Oficial de Ingenieros Técnicos de Castilla y León.",
+      "La Tesorería General de la Seguridad Social de forma exclusiva.",
+      "La Junta Arbitral de Consumo de la provincia de Valladolid."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La coordinación institucional, las relaciones con colectivos sociales y ciudadanos, así como la alta inspección y planificación general, corresponden a la Consejería de Sanidad en su condición de órgano de dirección política y de gobierno del sistema de salud.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En el marco de la organización y funcionamiento de los centros asistenciales de la Gerencia Regional de Salud, ¿cómo se denomina el documento estratégico que plasma los objetivos asistenciales, de calidad, docentes y presupuestarios de un hospital o área para un periodo determinado?",
+    "opciones": [
+      "Contrato de Gestión (o Acuerdo de Gestión Anual).",
+      "Contrato mercantil de franquicia internacional.",
+      "Póliza de seguros de responsabilidad civil obligatoria corporativa.",
+      "Convenio colectivo de ámbito estatal para funcionarios del Estado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Contrato de Gestión es el instrumento operativo y presupuestario mediante el cual la Gerencia Regional de Salud fija los objetivos anuales asistenciales, de calidad, eficiencia y financieros que deben cumplir los centros y gerencias periféricas.",
+    "fuente": "Modelos de Gestión y Contrato de Gestión en la GRS"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "De acuerdo con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, el Plan de Salud de Castilla y León se define formalmente como:",
+    "opciones": [
+      "El instrumento estratégico superior de planificación y dirección de las actuaciones sanitarias de la Comunidad Autónoma para la mejora de la salud de la población.",
+      "Un folleto publicitario de distribución gratuita en las farmacias comunitarias sin valor jurídico.",
+      "El presupuesto anual de gastos de material de oficina de los centros de salud rurales.",
+      "Un reglamento interno exclusivo para el personal no sanitario de los servicios centrales."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Plan de Salud de Castilla y León es el instrumento básico y estratégico de planificación sanitaria de la Comunidad, que establece las directrices, prioridades y objetivos de salud orientados a las necesidades de la población.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En la estructura de los Equipos de Atención Primaria, ¿quién asume formalmente la coordinación médica o de equipo de la Zona Básica de Salud según la normativa de organización de atención primaria en Castilla y León?",
+    "opciones": [
+      "Un profesional sanitario del propio equipo designado conforme a los procedimientos de provisión y nombramiento específicos de la GRS.",
+      "El Alcalde del municipio de mayor tamaño de la comarca.",
+      "Un Inspector de Trabajo nombrado por el Ministerio de Hacienda.",
+      "Cualquier ciudadano mayor de edad elegido por sorteo público anual."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La coordinación del Equipo de Atención Primaria se encomienda a un profesional sanitario miembro del equipo, designado por la gerencia correspondiente de acuerdo con los criterios de idoneidad y procedimiento regulados en la normativa autonómica.",
+    "fuente": "Normativa de Ordenación de Atención Primaria en Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Dentro de la estructura orgánica de la Gerencia Regional de Salud, ¿qué órgano es el encargado de velar por la seguridad de los pacientes, la implantación de prácticas clínicas seguras y el fomento de la calidad asistencial en los centros sanitarios?",
+    "opciones": [
+      "La Dirección General de Asistencia Sanitaria y Humanización (en coordinación con las gerencias de área y comisiones de calidad).",
+      "La Dirección General de Carreteras y Obras Públicas de la Junta.",
+      "El Servicio de Recaudación Tributaria de la Comunidad.",
+      "La Comandancia de la Guardia Civil de Tráfico."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Dirección General de Asistencia Sanitaria y Humanización impulsa las estrategias de calidad asistencial, seguridad del paciente, humanización de la atención y buenas prácticas clínicas en todos los niveles asistenciales de la GRS.",
+    "fuente": "Estructura Orgánica de la GRS de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En relación con los órganos de participación social y control democrático del sistema sanitario en Castilla y León, los Consejos de Salud se estructuran jerárquica o territorialmente en:",
+    "opciones": [
+      "Consejos de Salud de Castilla y León (Consejo Regional), Consejos de Salud de Área y Consejos de Salud de Zona.",
+      "Comités exclusivamente provinciales sin representación local ni regional.",
+      "Asambleas de trabajadores hospitalarios de carácter privado.",
+      "Tribunales de arbitraje de consumo industrial."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El sistema de participación comunitaria en la salud en Castilla y León se articula en tres niveles territoriales: el Consejo de Salud de Castilla y León a nivel autonómico, los Consejos de Salud de Área en cada demarcación provincial/comarcal y los Consejos de Salud de Zona en cada Zona Básica.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Conforme a la estructura periférica de la GRS, cuando se constituye una Gerencia de Asistencia Sanitaria (GAS), ¿qué órganos directivos específicos suelen integrarse bajo su mando unificado?",
+    "opciones": [
+      "La Dirección Médica de Atención Primaria, la Dirección Médica de Especializada, la Dirección de Enfermería de Área y la Dirección de Gestión y Servicios Generales.",
+      "La Dirección de Obras Públicas y el Tribunal de Cuentas.",
+      "La Comandancia de Policía Local y los Servicios de Bomberos.",
+      "La Delegación de Hacienda y Aduanas del Estado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Gerencias de Asistencia Sanitaria integran bajo una dirección única un equipo directivo multidisciplinar que agrupa la atención primaria y especializada, con direcciones médicas específicas, de enfermería y de gestión económica general del área.",
+    "fuente": "Estructura Orgánica de las Gerencias de Asistencia Sanitaria de SACYL"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "En caso de ausencia, vacante o enfermedad del Director Gerente de la Gerencia Regional de Salud de Castilla y León, ¿cómo se prevé normativamente la suplencia en el ejercicio de sus funciones ejecutivas?",
+    "opciones": [
+      "Mediante el régimen de suplencia o delegación establecido en las normas de organización interna de la GRS o mediante designación expresa del Consejero de Sanidad.",
+      "Mediante votación urgente de los pacientes ingresados en los hospitales del SACYL.",
+      "Asumiendo el cargo de forma automática el alcalde de la capital autonómica.",
+      "Queda acéfala la institución sin posibilidad de tomar decisiones hasta que se convoquen elecciones autonómicas."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las vacancias o ausencias del Director Gerente de la GRS se suplen conforme a las reglas generales de suplencia de órganos administrativos de la Comunidad de Castilla y León, mediante los órganos directivos dependientes o designación del titular de la Consejería de Sanidad.",
+    "fuente": "Ley de Régimen Jurídico de la Administración de la Comunidad de Castilla y León"
+  },
+  {
+    "temaId": "gen_1",
+    "enunciado": "Señale cuál de las siguientes afirmaciones resume adecuadamente el fin último de la Gerencia Regional de Salud de Castilla y León como organismo autónomo gestor del sistema sanitario público:",
+    "opciones": [
+      "Garantizar el derecho a la protección de la salud, la prestación de una asistencia sanitaria integral, eficaz, eficiente y de calidad a los ciudadanos, bajo los principios de universalidad y equidad.",
+      "Obtener beneficios mercantiles distribuidos en dividendos trimestrales entre los profesionales del servicio de salud.",
+      "Gestionar exclusivamente los seguros privados de los altos cargos de la administración regional.",
+      "Regular el tráfico rodado y las infraestructuras de transporte pesadero en las carreteras autonómicas."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El fin esencial del organismo autónomo Gerencia Regional de Salud (SACYL) es la efectividad del derecho a la protección de la salud de los ciudadanos mediante la gestión óptima, equitativa y eficiente de los recursos y prestaciones sanitarias públicas en Castilla y León.",
+    "fuente": "Ley de Ordenación del Sistema de Salud de Castilla y León y Decreto de la GRS"
   }
 ]

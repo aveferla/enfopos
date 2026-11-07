@@ -1,0 +1,132 @@
+[
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a las situaciones administrativas en las que puede hallarse el personal estatutario fijo, señale la afirmación CORRECTA:",
+    "opciones": [
+      "El personal estatutario fijo podrá encontrarse, entre otras situaciones, en servicio activo, servicios especiales, excedencia por cuidado de familiares o suspensión de funciones.",
+      "La situación de servicios especiales no computa a efectos de trienios ni de carrera profesional en ningún supuesto.",
+      "La excedencia voluntaria por interés particular requiere una prestación mínima de servicio activo de veinte años ininterrumpidos.",
+      "La situación de suspensión de funciones firme conlleva siempre la pérdida automática de la nacionalidad española."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario fijo se halla en alguna de las situaciones administrativas previstas en la normativa (servicio activo, servicios especiales, excedencia por razón de violencia de género, cuidado de familiares, interés particular y suspensión de funciones), computando el servicio activo y los servicios especiales a efectos de trienios y derechos pasivos.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Situaciones Administrativas"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con el régimen disciplinario del personal estatutario regulado en la normativa de SACYL y el Estatuto Marco, las faltas cometidas por los profesionales se califican graduándose en:",
+    "opciones": [
+      "Muy graves, graves y leves.",
+      "Penales, civiles y mercantiles.",
+      "Administrativas de primer y segundo grado.",
+      "Críticas, moderadas y leves."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El régimen disciplinario tipifica las infracciones cometidas por el personal estatutario en faltas muy graves, graves y leves, asociando a cada una de ellas el catálogo correspondiente de sanciones disciplinarias (separación del servicio, suspensión firme, apercibimiento, etc.).",
+    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 del Estatuto Marco - Régimen Disciplinario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, ¿cuál de los siguientes órganos directivos de la Comunidad tiene atribuida la aprobación del Plan de Salud de Castilla y León?",
+    "opciones": [
+      "La Junta de Castilla y León, mediante Decreto, a propuesta del Consejero de Sanidad y previa audiencia de los órganos de participación.",
+      "El pleno de los Colegios Profesionales Sanitarios de forma autónoma.",
+      "El Defensor del Pueblo de Castilla y León mediante resolución vinculante.",
+      "La Dirección General de Tesorería de la Administración del Estado."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Plan de Salud de Castilla y León, como instrumento estratégico superior de planificación de la política sanitaria regional, es aprobado por la Junta de Castilla y León a iniciativa de la Consejería de Sanidad tras los trámites de participación preceptivos.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la Ley 2/2007, el derecho a la jubilación forzosa del personal estatutario del Servicio de Salud de Castilla y León se produce:",
+    "opciones": [
+      "Al cumplir la edad legalmente establecida con carácter general para los empleados públicos, sin perjuicio de la prolongación de la permanencia en servicio activo autorizada reglamentariamente.",
+      "Exactamente a los 60 años de edad en todos los casos y sin excepciones asistenciales.",
+      "Al alcanzar los 75 años obligatoriamente para todo el personal sanitario de atención primaria y especializada.",
+      "Al cumplir los 30 años de servicios efectivos prestados a la administración pública."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La jubilación forzosa se declara al cumplir la edad legal establecida para el personal funcionario y estatutario del sector público, existiendo procedimientos reglados de prolongación de la permanencia en servicio activo previa solicitud y autorización del servicio de salud.",
+    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Jubilación"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En el marco de la provisión de plazas de carácter directivo y de jefaturas de unidad o servicio en SACYL, la designación se efectúa mediante el sistema de:",
+    "opciones": [
+      "Libre designación con convocatoria pública y sujeción a criterios de idoneidad, mérito, capacidad y publicidad.",
+      "Sorteo informático entre todos los profesionales del hospital.",
+      "Votación obligatoria de los pacientes ingresados en las plantas de hospitalización.",
+      "Adjudicación vitalicia inamovible sin posibilidad de cese ni evaluación de resultados."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La provisión de puestos directivos, jefaturas de servicio y sección y puestos de carácter específico se realiza por el sistema de libre designación o concurso específico, previa convocatoria pública en los boletines oficiales y evaluación de la competencia profesional.",
+    "fuente": "Ley 2/2007 de SACYL - Provisión de Puestos Directivos y Jefaturas"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, los principios rectores que inspiran las actuaciones del sistema de salud regional incluyen:",
+    "opciones": [
+      "La universalidad, la equidad, la calidad asistencial, la continuidad de cuidados, la integración funcional y la participación ciudadana.",
+      "La privatización absoluta de todos los niveles asistenciales de atención especializada.",
+      "La restricción de la asistencia sanitaria pública exclusivamente a los ciudadanos nacionales.",
+      "La supresión de la atención primaria en el medio rural por motivos de eficiencia contable."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Ley 8/2010 consagra los principios cardinales del sistema sanitario público en la Comunidad: universalidad, equidad en el acceso, calidad, eficacia, eficiencia, continuidad asistencial e integración de recursos bajo una dirección pública.",
+    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León - Principios Rectores"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Respecto a los derechos colectivos del personal estatutario del Servicio de Salud de Castilla y León, la Ley 2/2007 reconoce expresamente:",
+    "opciones": [
+      "El derecho a la libre sindicación, a la huelga, a la negociación colectiva y a la participación en la determinación de condiciones de trabajo a través de la Mesa Sectorial.",
+      "El derecho a dictar decretos legislativos de obligado cumplimiento para el Parlamento autonómico.",
+      "El derecho a la gestión y recaudación de los tributos de la Comunidad Autónoma.",
+      "El derecho a la propiedad de las instalaciones hospitalarias donde presten sus servicios."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los derechos colectivos del personal estatutario contemplan la libertad sindical, el ejercicio del derecho de huelga con garantía de servicios mínimos esenciales, la participación colectiva y la negociación de condiciones laborales en la Mesa Sectorial de Sanidad.",
+    "fuente": "Ley 2/2007 de SACYL - Derechos Colectivos del Personal Estatutario"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "En relación con la superación de los procesos selectivos de promoción interna en el personal estatutario de SACYL, señale la condición exigida habitualmente:",
+    "opciones": [
+      "Estar en posesión de la titulación requerida para la nueva categoría, ostentar la condición de personal estatutario fijo y superar las pruebas y fases de la convocatoria.",
+      "Haber trabajado como interino durante al menos veinticinco años sin necesidad de examen.",
+      "Aprobar un examen teórico ante el Ministerio de Defensa exclusivamente.",
+      "Renunciar por escrito a la antigüedad acumulada y a los trienios reconocidos."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La promoción interna permite el acceso a categorías superiores del personal estatutario fijo exigiendo la titulación oficial correspondiente, la superación del proceso selectivo y el cumplimiento de los periodos mínimos de permanencia en la categoría de origen.",
+    "fuente": "Ley 2/2007 de SACYL - Promoción Interna"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "Conforme a la normativa de incompatibilidades del personal al servicio de las Administraciones Públicas aplicable al personal estatutario de SACYL:",
+    "opciones": [
+      "El desempeño de un puesto en el servicio de salud es incompatible con el ejercicio de cualquier otra actividad pública o privada, salvo las excepciones legalmente autorizadas.",
+      "Se permite el pluriempleo simultáneo e ilimitado en centros sanitarios privados concertados sin comunicación previa.",
+      "Los profesionales sanitarios pueden ejercer simultáneamente como jueces de primera instancia sin restricciones.",
+      "La incompatibilidad decae de forma automática a los diez años de servicio activo."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario está sujeto al régimen general de incompatibilidades del personal al servicio de las administraciones públicas, prohibiendo el desempeño de un segundo puesto o actividad pública o privada salvo autorización expresa de compatibilidad en los supuestos tasados por ley.",
+    "fuente": "Ley 53/1984 de Incompatibilidades del Personal al Servicio de las Administraciones Públicas y Ley 2/2007"
+  },
+  {
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Jurídico del personal estatutario de SACYL, ¿qué consecuencia jurídica conlleva la imposición de una sanción disciplinaria firme por falta muy grave?",
+    "opciones": [
+      "La separación del servicio del profesional afectado, con la consiguiente pérdida de la condición de personal estatutario fijo.",
+      "Una amonestación privada por escrito sin anotación en el expediente personal.",
+      "El traslado forzoso voluntario a un destino preferente elegido por el interesado.",
+      "Una reducción temporal del 1% del complemento de destino durante una semana."
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La comisión de faltas muy graves debidamente sancionada en expediente disciplinario firme conlleva la sanción de separación del servicio, lo que extingue de forma definitiva la condición de personal estatutario fijo del SACYL.",
+    "fuente": "Ley 2/2007 de SACYL - Sanciones y Faltas Disciplinarias"
+  },
+]
