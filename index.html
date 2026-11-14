@@ -982,10 +982,10 @@
             
             pool.forEach((q, idx) => {
                 htmlHTML += `<div style="margin-bottom: 2.5em; page-break-inside: avoid;">
-                    <p style="margin-bottom: 10px; font-weight: bold;"><b>${idx + 1}.</b> ${q.enunciado}</p>
-                    <div style="padding-left: 25px; display: flex; flex-direction: column; gap: 6px;">`;
+                    <p style="margin-bottom: 10px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5;"><b>${idx + 1}.</b> ${q.enunciado}</p>
+                    <div style="padding-left: 1cm; display: flex; flex-direction: column; gap: 6px;">`;
                 q.opciones.forEach((op, opIdx) => { 
-                    htmlHTML += `<div><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`; 
+                    htmlHTML += `<div style="font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.0; text-indent: -1cm; padding-left: 1cm; margin-bottom: 4px;"><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`; 
                 });
                 htmlHTML += `</div></div>`;
             });
