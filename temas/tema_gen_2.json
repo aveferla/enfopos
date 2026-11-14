@@ -1,654 +1,783 @@
-[
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme al Estatuto Jurídico del personal estatutario del Servicio de Salud de Castilla y León (Ley 2/2007, de 7 de marzo), respecto a la clasificación del personal estatutario por la función desarrollada, señale la afirmación CORRECTA:",
-    "opciones": [
-      "El personal estatutario se clasifica atendiendo al nivel académico del título exigido para el ingreso en personal estatutario sanitario y personal estatutario de gestión y servicios.",
-      "El personal sanitario se subdivide únicamente en diplomados universitarios sin contemplar el título de grado ni la formación especializada.",
-      "El personal estatutario de gestión y servicios comprende exclusivamente al personal celador y de limpieza sin incluir grupos técnicos o administrativos.",
-      "No existe clasificación por nivel académico, organizándose únicamente por antigüedad en el servicio asistencial."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El Estatuto Jurídico de SACYL (Ley 2/2007) clasifica al personal estatutario por la función desarrollada en personal estatutario sanitario y personal estatutario de gestión y servicios, atendiendo al nivel académico del título exigido para el ingreso (Formación Universitaria y Formación Profesional).",
-    "fuente": "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del personal estatutario de SACYL - Art. 5-7"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con el procedimiento de adquisición de la condición de personal estatutario fijo en el Servicio de Salud de Castilla y León, ¿cuál de los siguientes requisitos NO es imprescindible exigir formalmente?",
-    "opciones": [
-      "Haber superado el correspondiente proceso selectivo de ingreso.",
-      "Acreditar la posesión del título universitario o técnico exigido en la convocatoria.",
-      "Estar empadronado obligatoriamente en un municipio de la Comunidad de Castilla y León con una antigüedad mínima de tres años.",
-      "Obtener el nombramiento expedido por el órgano competente y tomar posesión de la plaza en el plazo establecido."
-    ],
-    "correctaOriginal": 2,
-    "explicacion": "El empadronamiento en un municipio castellano y leonés no constituye un requisito constitucional ni legal para el acceso a la condición de personal estatutario fijo en SACYL, debiendo respetarse los principios de igualdad, mérito y capacidad.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Adquisición de la condición de fijo"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Respecto a la pérdida de la condición de personal estatutario fijo en el Servicio de Salud de Castilla y León, indique cuál de las siguientes causas extingue legalmente dicha relación de servicios:",
-    "opciones": [
-      "La sanción disciplinaria firme de separación del servicio.",
-      "El disfrute de una licencia sin sueldo por un periodo superior a 15 días laborables.",
-      "La solicitud verbal de traslado involuntario a un hospital comarcal.",
-      "El cambio voluntario de turno de trabajo asistencial previa conformidad del supervisor."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Son causas de pérdida de la condición de personal estatutario fijo: la renuncia, la pérdida de la nacionalidad, la jubilación, la incapacidad permanente absoluta o gran invalidez, la pena principal o accesoria de inhabilitación absoluta o especial y la sanción disciplinaria firme de separación del servicio.",
-    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 del Estatuto Marco"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con los derechos individuales reconocidos al personal estatutario del Servicio de Salud de Castilla y León por la Ley 2/2007, señale la opción CORRECTA:",
-    "opciones": [
-      "Tienen derecho a la percepción puntual de las remuneraciones íntegras derivadas de su puesto de trabajo según la normativa retributiva vigente.",
-      "Tienen derecho a rechazar la prestación asistencial en situaciones de emergencia o catástrofe sin justificación médica.",
-      "Tienen derecho a fijar unilateralmente los cuadros de turnos asistenciales del servicio sin supervisión de la Jefatura.",
-      "Carecen del derecho a la formación continuada durante la jornada de trabajo."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El derecho a la percepción puntual de las retribuciones asignadas a su categoría y puesto, así como el derecho a la estabilidad en el empleo y a la formación continuada, constituyen derechos individuales fundamentales reconocidos en el Estatuto de SACYL.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico del Personal Estatutario de SACYL - Derechos Individuales"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a los sistemas de provisión de plazas y movilidad voluntaria del personal estatutario fijo en SACYL, la convocatoria de concurso de traslados se rige bajo los principios de:",
-    "opciones": [
-      "Igualdad, mérito, capacidad y publicidad, celebrándose con la periodicidad que reglamentariamente se determine.",
-      "Asignación por sorteo numérico realizado ante el Colegio de Escribanos.",
-      "Designación libre y discrecional por parte de la Dirección de Enfermería del centro.",
-      "Subasta económica pública al mejor postor entre los aspirantes."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El concurso de traslados es el sistema ordinario de provisión de plazas vacantes y movilidad voluntaria del personal estatutario fijo, garantizando los principios constitucionales de igualdad, mérito, capacidad y libre concurrencia en el ámbito de la red asistencial.",
-    "fuente": "Ley 2/2007 de SACYL - Provisión y Selección de Plazas"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En el marco de la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, el conjunto de actuaciones orientadas a la garantía del libre acceso de los ciudadanos a las prestaciones en condiciones de equidad e igualdad efectiva se fundamenta en:",
-    "opciones": [
-      "El principio de universalización de la atención sanitaria y la concepción integral de la salud.",
-      "El cobro directo por cada consulta recibida en el centro de salud público.",
-      "La restricción del uso del servicio sanitario a los ciudadanos con rentas superiores a la media nacional.",
-      "La preferencia de atención basada exclusivamente en la titularidad de seguros privados complementarios."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La Ley 8/2010 consagra el principio rector de la universalidad en el acceso a la atención sanitaria pública, la equidad socio-territorial y la atención integral orientada a la protección de la salud comunitaria.",
-    "fuente": "Ley 8/2010, de 30 de agosto, de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Señale cuál de los siguientes deberes es de obligado cumplimiento para todo el personal estatutario de la Gerencia Regional de Salud según la Ley 2/2007:",
-    "opciones": [
-      "Mantener la debida reserva y secreto profesional sobre los datos e informaciones relativos a la salud de los pacientes.",
-      "Divulgar en redes personales el historial clínico de pacientes con patologías raras.",
-      "Ignorar las normas sobre prevención de riesgos laborales si interfieren con la velocidad del servicio.",
-      "Aceptar gratificaciones dinerarias de los familiares de los pacientes ingresados como muestra de gratitud."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El deber de secreto profesional, la salvaguarda de la intimidad y confidencialidad de la información clínica y el estricto cumplimiento de las normas de prevención de riesgos constituyen deberes esenciales del personal estatutario recogidos en la Ley 2/2007.",
-    "fuente": "Ley 2/2007 de SACYL - Deberes del Personal Estatutario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con las modalidades de nombramiento del personal estatutario temporal en SACYL, la contratación para la prestación de servicios puntuales derivados de sustituciones de personal por licencias, vacaciones o bajas temporales corresponde a la figura de:",
-    "opciones": [
-      "Personal estatutario interino o de sustitución.",
-      "Personal laboral indefinido no fijo con contrato mercantil.",
-      "Funcionario de carrera de la Administración General del Estado.",
-      "Personal directivo de libre designación gubernamental."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El personal estatutario temporal puede expedirse como interino (para plazas vacantes) o de sustitución (para suplir ausencias con derecho a reserva de puesto, licencias, incapacidad temporal o permisos del titular).",
-    "fuente": "Ley 2/2007 de SACYL y modificación conforme al RDL 12/2022"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "La promoción interna temporal del personal estatutario fijo de SACYL permite el desempeño temporal de funciones de otra categoría con la siguiente condición normativa:",
-    "opciones": [
-      "Tener la titulación requerida y pertenecer a una categoría de igual o inferior nivel de titulación dentro del servicio de salud.",
-      "No requerir en ningún caso la titulación académica oficial exigida para el nuevo grupo profesional.",
-      "Estar exento del cumplimiento del horario ordinario de trabajo en la plaza de origen.",
-      "Perder de forma definitiva e irreversible la plaza de origen al momento de aceptar la promoción."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La promoción interna temporal permite al personal estatutario fijo desempeñar vacantes o funciones de superior categoría u otro grupo técnico siempre que se posea la titulación académica exigida y se cuente con la antigüedad y requisitos contemplados en la convocatoria.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico del Personal Estatutario de SACYL"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Según la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la formulación de alegaciones y la tramitación de reclamaciones y sugerencias relativas al funcionamiento de los servicios asistenciales se garantiza mediante:",
-    "opciones": [
-      "El Registro de Reclamaciones y Sugerencias del Sistema de Salud de Castilla y León.",
-      "La entrega manuscrita de quejas directamente en el domicilio particular del Consejero.",
-      "Su tramitación previa y obligatoria ante los Juzgados de lo Mercantil de la capital provincial.",
-      "Su archivo inmediato sin acuse de recibo salvo consentimiento judicial."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El Sistema de Salud de CyL garantiza el derecho de los usuarios a presentar sugerencias y reclamaciones respecto a la asistencia prestada, estableciendo un procedimiento reglado de atención al usuario y respuesta obligatoria por la administración sanitaria.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a las situaciones administrativas en las que puede hallarse el personal estatutario fijo, señale la afirmación CORRECTA:",
-    "opciones": [
-      "El personal estatutario fijo podrá encontrarse, entre otras situaciones, en servicio activo, servicios especiales, excedencia por cuidado de familiares o suspensión de funciones.",
-      "La situación de servicios especiales no computa a efectos de trienios ni de carrera profesional en ningún supuesto.",
-      "La excedencia voluntaria por interés particular requiere una prestación mínima de servicio activo de veinte años ininterrumpidos.",
-      "La situación de suspensión de funciones firme conlleva siempre la pérdida automática de la nacionalidad española."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El personal estatutario fijo se halla en alguna de las situaciones administrativas previstas en la normativa (servicio activo, servicios especiales, excedencia por razón de violencia de género, cuidado de familiares, interés particular y suspensión de funciones), computando el servicio activo y los servicios especiales a efectos de trienios y derechos pasivos.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Situaciones Administrativas"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con el régimen disciplinario del personal estatutario regulado en la normativa de SACYL y el Estatuto Marco, las faltas cometidas por los profesionales se califican graduándose en:",
-    "opciones": [
-      "Muy graves, graves y leves.",
-      "Penales, civiles y mercantiles.",
-      "Administrativas de primer y segundo grado.",
-      "Críticas, moderadas y leves."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El régimen disciplinario tipifica las infracciones cometidas por el personal estatutario en faltas muy graves, graves y leves, asociando a cada una de ellas el catálogo correspondiente de sanciones disciplinarias (separación del servicio, suspensión firme, apercibimiento, etc.).",
-    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 del Estatuto Marco - Régimen Disciplinario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, ¿cuál de los siguientes órganos directivos de la Comunidad tiene atribuida la aprobación del Plan de Salud de Castilla y León?",
-    "opciones": [
-      "La Junta de Castilla y León, mediante Decreto, a propuesta del Consejero de Sanidad y previa audiencia de los órganos de participación.",
-      "El pleno de los Colegios Profesionales Sanitarios de forma autónoma.",
-      "El Defensor del Pueblo de Castilla y León mediante resolución vinculante.",
-      "La Dirección General de Tesorería de la Administración del Estado."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El Plan de Salud de Castilla y León, como instrumento estratégico superior de planificación de la política sanitaria regional, es aprobado por la Junta de Castilla y León a iniciativa de la Consejería de Sanidad tras los trámites de participación preceptivos.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, el derecho a la jubilación forzosa del personal estatutario del Servicio de Salud de Castilla y León se produce:",
-    "opciones": [
-      "Al cumplir la edad legalmente establecida con carácter general para los empleados públicos, sin perjuicio de la prolongación de la permanencia en servicio activo autorizada reglamentariamente.",
-      "Exactamente a los 60 años de edad en todos los casos y sin excepciones asistenciales.",
-      "Al alcanzar los 75 años obligatoriamente para todo el personal sanitario de atención primaria y especializada.",
-      "Al cumplir los 30 años de servicios efectivos prestados a la administración pública."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La jubilación forzosa se declara al cumplir la edad legal establecida para el personal funcionario y estatutario del sector público, existiendo procedimientos reglados de prolongación de la permanencia en servicio activo previa solicitud y autorización del servicio de salud.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Jubilación"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En el marco de la provisión de plazas de carácter directivo y de jefaturas de unidad o servicio en SACYL, la designación se efectúa mediante el sistema de:",
-    "opciones": [
-      "Libre designación con convocatoria pública y sujeción a criterios de idoneidad, mérito, capacidad y publicidad.",
-      "Sorteo informático entre todos los profesionales del hospital.",
-      "Votación obligatoria de los pacientes ingresados en las plantas de hospitalización.",
-      "Adjudicación vitalicia inamovible sin posibilidad de cese ni evaluación de resultados."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La provisión de puestos directivos, jefaturas de servicio y sección y puestos de carácter específico se realiza por el sistema de libre designación o concurso específico, previa convocatoria pública en los boletines oficiales y evaluación de la competencia profesional.",
-    "fuente": "Ley 2/2007 de SACYL - Provisión de Puestos Directivos y Jefaturas"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, los principios rectores que inspiran las actuaciones del sistema de salud regional incluyen:",
-    "opciones": [
-      "La universalidad, la equidad, la calidad asistencial, la continuidad de cuidados, la integración funcional y la participación ciudadana.",
-      "La privatización absoluta de todos los niveles asistenciales de atención especializada.",
-      "La restricción de la asistencia sanitaria pública exclusivamente a los ciudadanos nacionales.",
-      "La supresión de la atención primaria en el medio rural por motivos de eficiencia contable."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La Ley 8/2010 consagra los principios cardinales del sistema sanitario público en la Comunidad: universalidad, equidad en el acceso, calidad, eficacia, eficiencia, continuidad asistencial e integración de recursos bajo una dirección pública.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León - Principios Rectores"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Respecto a los derechos colectivos del personal estatutario del Servicio de Salud de Castilla y León, la Ley 2/2007 reconoce expresamente:",
-    "opciones": [
-      "El derecho a la libre sindicación, a la huelga, a la negociación colectiva y a la participación en la determinación de condiciones de trabajo a través de la Mesa Sectorial.",
-      "El derecho a dictar decretos legislativos de obligado cumplimiento para el Parlamento autonómico.",
-      "El derecho a la gestión y recaudación de los tributos de la Comunidad Autónoma.",
-      "El derecho a la propiedad de las instalaciones hospitalarias donde presten sus servicios."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Los derechos colectivos del personal estatutario contemplan la libertad sindical, el ejercicio del derecho de huelga con garantía de servicios mínimos esenciales, la participación colectiva y la negociación de condiciones laborales en la Mesa Sectorial de Sanidad.",
-    "fuente": "Ley 2/2007 de SACYL - Derechos Colectivos del Personal Estatutario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con la superación de los procesos selectivos de promoción interna en el personal estatutario de SACYL, señale la condición exigida habitualmente:",
-    "opciones": [
-      "Estar en posesión de la titulación requerida para la nueva categoría, ostentar la condición de personal estatutario fijo y superar las pruebas y fases de la convocatoria.",
-      "Haber trabajado como interino durante al menos veinticinco años sin necesidad de examen.",
-      "Aprobar un examen teórico ante el Ministerio de Defensa exclusivamente.",
-      "Renunciar por escrito a la antigüedad acumulada y a los trienios reconocidos."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La promoción interna permite el acceso a categorías superiores del personal estatutario fijo exigiendo la titulación oficial correspondiente, la superación del proceso selectivo y el cumplimiento de los periodos mínimos de permanencia en la categoría de origen.",
-    "fuente": "Ley 2/2007 de SACYL - Promoción Interna"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la normativa de incompatibilidades del personal al servicio de las Administraciones Públicas aplicable al personal estatutario de SACYL:",
-    "opciones": [
-      "El desempeño de un puesto en el servicio de salud es incompatible con el ejercicio de cualquier otra actividad pública o privada, salvo las excepciones legalmente autorizadas.",
-      "Se permite el pluriempleo simultáneo e ilimitado en centros sanitarios privados concertados sin comunicación previa.",
-      "Los profesionales sanitarios pueden ejercer simultáneamente como jueces de primera instancia sin restricciones.",
-      "La incompatibilidad decae de forma automática a los diez años de servicio activo."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El personal estatutario está sujeto al régimen general de incompatibilidades del personal al servicio de las administraciones públicas, prohibiendo el desempeño de un segundo puesto o actividad pública o privada salvo autorización expresa de compatibilidad en los supuestos tasados por ley.",
-    "fuente": "Ley 53/1984 de Incompatibilidades del Personal al Servicio de las Administraciones Públicas y Ley 2/2007"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con el Estatuto Jurídico del personal estatutario de SACYL, ¿qué consecuencia jurídica conlleva la imposición de una sanción disciplinaria firme por falta muy grave?",
-    "opciones": [
-      "La separación del servicio del profesional afectado, con la consiguiente pérdida de la condición de personal estatutario fijo.",
-      "Una amonestación privada por escrito sin anotación en el expediente personal.",
-      "El traslado forzoso voluntario a un destino preferente elegido por el interesado.",
-      "Una reducción temporal del 1% del complemento de destino durante una semana."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La comisión de faltas muy graves debidamente sancionada en expediente disciplinario firme conlleva la sanción de separación del servicio, lo que extingue de forma definitiva la condición de personal estatutario fijo del SACYL.",
-    "fuente": "Ley 2/2007 de SACYL - Sanciones y Faltas Disciplinarias"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a las licencias por asuntos particulares (días de libre disposición), señale la opción CORRECTA:",
-    "opciones": [
-      "Su concesión está subordinada a las necesidades del servicio y su disfrute no genera derecho a indemnización económica en caso de no disfrutarse dentro del periodo establecido.",
-      "Pueden acumularse de forma indefinida a lo largo de cinco años consecutivos para disfrutarse de forma continuada.",
-      "Es un derecho absoluto e incondicionado que el profesional puede ejercer sin previo aviso ni autorización de la jefatura.",
-      "Solo pueden disfrutarse durante los fines de semana y festivos autonómicos."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El disfrute de los permisos por asuntos particulares queda supeditado a las necesidades del servicio organizativo de los centros y unidades, debiendo disfrutarse dentro del año natural o periodo de prórroga fijado reglamentariamente, sin que su no disfrute dé lugar a compensación económica.",
-    "fuente": "Ley 2/2007 de SACYL - Permisos y Licencias del Personal Estatutario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En el régimen retributivo del personal estatutario de la Gerencia Regional de Salud regulado por la Ley 2/2007, las retribuciones básicas comprenden exclusivamente:",
-    "opciones": [
-      "El sueldo, los trienios y las pagas extraordinarias correspondientes.",
-      "El complemento de destino y el complemento específico de atención continuada.",
-      "La productividad variable anual derivada del cumplimiento de objetivos del contrato de gestión.",
-      "Las horas extraordinarias y el complemento de penosidad y nocturnidad."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Las retribuciones del personal estatutario se dividen en básicas y complementarias. Las retribuciones básicas son el sueldo asignado a cada subgrupo o grupo de clasificación, los trienios (antigüedad) y las dos pagas extraordinarias al año.",
-    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 del Estatuto Marco - Retribuciones Básicas"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la acreditación, homologación e inspección de centros, servicios y establecimientos sanitarios públicos y privados en la Comunidad Autónoma es competencia de:",
-    "opciones": [
-      "La Consejería competente en materia de sanidad de la Junta de Castilla y León.",
-      "El Ministerio de Industria y Turismo del Gobierno de España.",
-      "Los Colegios Profesionales de Farmacéuticos de ámbito provincial.",
-      "La Comisión de Arbitraje Mercantil de Castilla y León."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Corresponde a la Consejería de Sanidad la autorización, acreditación, homologación, registro y control o inspección sanitaria de todos los centros, servicios y establecimientos sanitarios de Castilla y León para velar por la seguridad de los pacientes.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Respecto a la reclasificación o integración del personal estatutario sanitario de los centros asistenciales de SACYL motivada por la implantación del Espacio Europeo de Educación Superior (Plan Bolonia), señale la correspondencia correcta de los títulos de Grado en Enfermería:",
-    "opciones": [
-      "Se adscriben al Subgrupo A2 dentro del Grupo A de clasificación profesional del personal estatutario.",
-      "Se encuadran en el Subgrupo A1 al equipararse de forma directa con los especialistas en Medicina.",
-      "Pasan a formar parte del Grupo C1 de técnicos de gestión no universitaria.",
-      "Se clasifican en el Grupo B de técnicos superiores de formación profesional."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Los Diplomados y Graduados Universitarios en Enfermería se clasifican en el Subgrupo A2 del Grupo A de empleo público y del personal estatutario sanitario conforme a la estructura de titulación universitaria de grado.",
-    "fuente": "Ley 2/2007 de SACYL y Real Decreto Legislativo 5/2015 (EBEP)"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En la Ley 2/2007 de SACYL, la situación administrativa de Excedencia por Cuidado de Familiares garantiza al personal estatutario fijo durante el primer año de disfrute:",
-    "opciones": [
-      "La reserva del puesto de trabajo de origen y el cómputo del tiempo a efectos de trienios, carrera profesional y derechos pasivos.",
-      "La pérdida definitiva del puesto de trabajo sin opción a reingreso temporal.",
-      "La percepción del 100% del complemento específico por nocturnidad y turnos festivos.",
-      "La obligación de prestar servicios mínimos de retén los fines de semana."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Durante el primer año de excedencia por cuidado de hijos o familiares a cargo, el personal estatutario fijo tiene derecho a la reserva de su plaza de origen. Todo el periodo transcurrido en esta excedencia computa a efectos de trienios, carrera profesional y antigüedad.",
-    "fuente": "Ley 2/2007 de SACYL - Situación de Excedencia"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con el procedimiento disciplinario regulado en el marco del personal estatutario de SACYL, la adopción de medidas provisionales como la suspensión provisional de funciones durante la tramitación de un expediente disciplinario por falta muy grave:",
-    "opciones": [
-      "No podrá exceder de seis meses de duración salvo paralización del procedimiento imputable al propio interesado.",
-      "Puede extenderse de forma indefinida durante 10 años sin motivación justificada.",
-      "Supone la pérdida definitiva de los derechos de colegiación profesional en toda España.",
-      "Debe ser aprobada mediante Real Decreto del Consejo de Ministros."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La suspensión provisional de funciones ordenada cautelarmente durante un procedimiento disciplinario no podrá exceder de 6 meses, salvo que el retraso del expediente sea causado por causas imputables al expedientado.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Procedimiento Disciplinario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Señale la afirmación CORRECTA sobre el concepto de 'Movilidad Funcional' del personal estatutario en el ámbito del Servicio de Salud de Castilla y León:",
-    "opciones": [
-      "Permite la asignación justificada de funciones distintas a las de la categoría de origen dentro de un mismo centro por necesidades del servicio, respetando la titulación requerida y las retribuciones.",
-      "Implica el traslado forzoso de residencia familiar a otra provincia sin indemnización previa.",
-      "Supone el cambio automático de categoría profesional sin pasar por proceso selectivo alguno.",
-      "Obliga al profesional a realizar labores de mantenimiento técnico de edificios sin formación previa."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La movilidad funcional motivada por necesidades asistenciales organizativas autoriza a encomendar funciones correspondientes a la categoría del profesional respetando las retribuciones de origen o asignadas al puesto y la titulación oficial ostentada.",
-    "fuente": "Ley 2/2007 de SACYL - Movilidad del Personal Estatutario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la garantía de la continuidad asistencial entre los distintos niveles de atención se concreta mediante:",
-    "opciones": [
-      "La integración funcional y operativa de los protocolos clínicos, la historia clínica compartida y la coordinación entre Atención Primaria y Especializada.",
-      "La derivación sistemática de todos los pacientes a centros privados de otras comunidades autónomas.",
-      "El cobro de tasas por cada informe de alta hospitalaria emitido por enfermería.",
-      "La prohibición de compartir datos clínicos entre médicos de familia y enfermeras comunitarias."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La continuidad asistencial es un principio vertebrador que exige la coordinación clínica eficaz entre profesionales de primaria y hospitalaria, la unificación de registros e historias clínicas digitales y el trabajo en equipo multidisciplinar.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con los complementos retributivos de carácter variable del personal estatutario de SACYL, el complemento que retribuye el especial rendimiento, la actividad extraordinaria y el interés en el desempeño de las funciones recibe la denominación de:",
-    "opciones": [
-      "Complemento de Productividad.",
-      "Sueldo Base del Grupo de Clasificación.",
-      "Paga de Antigüedad Trienal.",
-      "Complemento de Residencia o Insularidad."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El complemento de productividad (variable o fija según el concepto) está destinado a retribuir el especial rendimiento, el grado de interés o iniciativa con que el profesional desempeña su trabajo y la consecución de los objetivos fijados en el contrato de gestión.",
-    "fuente": "Ley 2/2007 de SACYL - Conceptos Retributivos Complementarios"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Según la Ley 2/2007, el régimen de jornada ordinaria de trabajo del personal estatutario de los centros asistenciales del Servicio de Salud de Castilla y León se establece:",
-    "opciones": [
-      "De forma anualizada, distribuyéndose reglamentariamente en turnos diurnos, nocturnos o rotatorios respetando los descansos semanales y entre jornadas.",
-      "En 20 horas semanales fijas e inamovibles para todo el personal sanitario.",
-      "Sin límite de horas diarias ni descanso mínimo obligatorio entre turnos.",
-      "A decisión libre del paciente al inicio de la jornada."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La jornada de trabajo del personal estatutario se computa anualmente y se organiza a través de las correspondientes planificaciones de turnos asistenciales, garantizando los descansos mínimos obligatorios establecidos por el Estatuto Marco y las directivas comunitarias.",
-    "fuente": "Ley 2/2007 de SACYL - Jornada de Trabajo y Descansos"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto a la carrera profesional del personal estatutario fijo, señale la opción CORRECTA:",
-    "opciones": [
-      "Consiste en el derecho a progresar de forma individualizada como reconocimiento al desarrollo profesional en cuanto a conocimientos, experiencia y calidad de trabajo.",
-      "Es un sistema automático basado exclusivamente en los años de edad del profesional sin necesidad de evaluación alguna.",
-      "Se otorga de forma vitalicia únicamente al personal directivo de los servicios centrales sin participación del personal asistencial.",
-      "Implica el cambio obligatorio de categoría profesional cada tres años por imposición ministerial."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La carrera profesional es el derecho y conjunto de oportunidades de progreso profesional en los distintos grados establecidos, reconociendo la experiencia, el conocimiento, la formación continuada, la investigación y la calidad asistencial prestada.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Carrera Profesional"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con los derechos en materia de prevención de riesgos laborales reconocidos al personal estatutario de SACYL, la normativa de empleo público establece que:",
-    "opciones": [
-      "Los profesionales tienen derecho a una protección eficaz en materia de seguridad y salud en el trabajo, así como a la formación e información preventiva adecuada.",
-      "La protección frente a riesgos biológicos y ergonómicos queda al criterio exclusivo y voluntario del trabajador sin implicación de la empresa.",
-      "El servicio de prevención de riesgos no tiene competencias en los centros hospitalarios de atención especializada.",
-      "Los equipos de protección individual (EPI) deben ser adquiridos privadamente por cada empleado de su propio sueldo."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El personal estatutario tiene derecho a una protección eficaz en materia de seguridad y salud laboral, obligando a la administración sanitaria a dotar de medios de protección adecuados, evaluaciones de riesgos y formación continuada en prevención.",
-    "fuente": "Ley de Prevención de Riesgos Laborales y Estatuto Marco / Ley 2/2007"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, ¿cómo se denominan los documentos sanitarios básicos de carácter clínico y administrativo donde se integran los datos de salud del paciente atendido?",
-    "opciones": [
-      "Historia Clínica electrónica de Castilla y León y sistemas de información corporativos autorizados.",
-      "Registros privados de papel archivados en los domicilios particulares de los profesionales.",
-      "Ficheros de notas informales sin validez legal ni custodia institucional.",
-      "Bases de datos mercantiles de libre acceso comercial en internet."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La historia clínica electrónica de Castilla y León constituye el soporte documental e informático oficial que integra la información relativa a la salud y procesos asistenciales de cada paciente en la red pública.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, en los supuestos de adscripción provisional por reingreso al servicio activo desde situaciones administrativas sin reserva de plaza:",
-    "opciones": [
-      "El profesional quedará obligado a participar en los sucesivos concursos de traslados que se convoquen para obtener destino definitivo.",
-      "Adquiere la propiedad vitalicia inmediata del primer puesto vacante que elija sin concurrencia pública.",
-      "Pierde de manera irrevocable la condición de personal estatutario fijo en el primer mes.",
-      "No se le permite volver a ejercer funciones asistenciales en el ámbito de la Comunidad Autónoma."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El reingreso provisional al servicio activo conlleva la adjudicación temporal de un puesto vacante, quedando el profesional obligado a concursar en las convocatorias de provisión definitiva que se realicen para obtener una plaza en propiedad.",
-    "fuente": "Ley 2/2007 de SACYL - Reingreso al Servicio Activo"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En el régimen de incompatibilidades del personal estatutario del Servicio de Salud de Castilla y León, el ejercicio de actividades privadas:",
-    "opciones": [
-      "Requiere la previa y expresa compatibilidad concedida por el órgano competente, quedando prohibida si menoscaba el estricto cumplimiento de los deberes públicos.",
-      "Es totalmente libre y no requiere ningún trámite de comunicación ni autorización si se realiza fuera del horario de guardia.",
-      "Está prohibido con carácter absoluto y perpetuo, incluso tras la jubilación voluntaria.",
-      "Solo está permitido si la empresa privada pertenece a familiares directos del trabajador."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Cualquier actividad privada que pretenda compatibilizarse con un puesto público en SACYL exige la tramitación y resolución expresa de compatibilidad, quedando denegada si compite con el servicio público o genera conflicto de intereses.",
-    "fuente": "Ley 53/1984 de Incompatibilidades y Ley 2/2007 de SACYL"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con el Estatuto Jurídico del personal estatutario de SACYL, señale cuál de las siguientes faltas disciplinarias está tipificada como FALTA MUY GRAVE:",
-    "opciones": [
-      "El abandono del servicio o la inasistencia injustificada reiterada que produzca alteraciones graves en el funcionamiento de la asistencia sanitaria.",
-      "El retraso leve e involuntario de cinco minutos en la llegada al turno de mañana por retenciones de tráfico.",
-      "El uso correcto de los equipos de protección individual facilitados por el centro.",
-      "La participación voluntaria en cursos formativos de reciclaje profesional autorizados."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El abandono del servicio o la inasistencia injustificada continuada que afecte gravemente a la organización asistencial y a la seguridad de los pacientes constituye una infracción disciplinaria tipificada expresamente como muy grave.",
-    "fuente": "Ley 2/2007 de SACYL y Ley 55/2003 - Tipificación de Faltas Disciplinarias"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, las prestaciones sanitarias del catálogo público se garantizan bajo los criterios de:",
-    "opciones": [
-      "Equidad, suficiencia financiera, calidad, seguridad y homogeneidad en toda la red asistencial de la Comunidad.",
-      "Discrecionalidad absoluta del coordinador médico de cada centro de salud.",
-      "Exclusión sistemática de los tratamientos crónicos de larga duración.",
-      "Financiación mixta obligatoria mediante copago directo en farmacia hospitalaria."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Las prestaciones asistenciales de la cartera pública en Castilla y León se rigen por principios de equidad territorial, suficiencia de medios, calidad técnica, seguridad clínica y homogeneidad de acceso para todos los ciudadanos.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León - Prestaciones Sanitarias"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con la extinción de la relación de empleo del personal estatutario temporal en SACYL, indique la causa correcta:",
-    "opciones": [
-      "Por la cobertura reglamentaria de la plaza vacante por personal fijo, por la finalización del motivo que dio lugar al nombramiento o por su supresión.",
-      "Por el simple paso de un año natural sin necesidad de que concurra causa administrativa alguna.",
-      "Por decisión unilateral del paciente atendido en urgencias.",
-      "Por el traslado voluntario del director gerente del hospital."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Los nombramientos del personal temporal finalizan por la desaparición de la causa que motivó su nombramiento (reincorporación del titular, cobertura definitiva de la plaza por funcionario o estatutario fijo, vencimiento del plazo o amortización de la plaza).",
-    "fuente": "Ley 2/2007 de SACYL y Estatuto Marco del Personal Estatutario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Según la Ley 2/2007, respecto al régimen de incompatibilidades y percepciones por el desempeño de más de un puesto en el sector público:",
-    "opciones": [
-      "Salvo los supuestos legalmente contemplados en normas de excepción, no se podrá percibir más de una retribución con cargo a los presupuestos de las administraciones públicas.",
-      "Se permite acumular de forma simultánea hasta cuatro sueldos íntegros de diferentes gerencias sanitarias autonómicas.",
-      "El personal de enfermería puede cobrar doble sueldo si realiza funciones de administración municipal en horario de mañana.",
-      "Las incompatibilidades públicas no afectan al personal estatutario fijo en ningún caso."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El principio general de incompatibilidad pública prohíbe la percepción de más de una retribución con cargo a los fondos públicos, salvo las excepciones tasadas de puestos docentes universitarios u otras autorizaciones especiales de compatibilidad.",
-    "fuente": "Ley 53/1984 de Incompatibilidades y Ley 2/2007 de SACYL"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De conformidad con la Ley 8/2010, la participación de los profesionales sanitarios en los órganos de dirección, asesoramiento y gestión clínica de las Áreas de Salud de Castilla y León se canaliza fundamentalmente a través de:",
-    "opciones": [
-      "Las Juntas Técnico-Asistenciales, comisiones clínicas y órganos colegiados de participación y gestión asignados.",
-      "Sindicatos internacionales sin implantación en el territorio nacional.",
-      "Asambleas vecinales sin representación colegiada.",
-      "Tribunales militares de disciplina de la región."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La Ley de Ordenación del Sistema de Salud de Castilla y León promueve la participación activa de los profesionales sanitarios en la gestión y organización a través de órganos colegiados técnicos, comisiones y juntas asistenciales.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, del Estatuto Jurídico del personal estatutario de SACYL, respecto al régimen de provisión de plazas mediante el procedimiento de concurso abierto y permanente:",
-    "opciones": [
-      "Permite la presentación de solicitudes de traslado de forma continuada y su resolución periódica conforme a los criterios y baremos establecidos en la normativa autonómica.",
-      "Se realiza exclusivamente mediante sorteo anual ante notario sin baremo de méritos ni antigüedad.",
-      "Impide la participación del personal fijo que ostente la condición de interino en expectativa de destino.",
-      "Obliga al profesional a permanecer un mínimo de veinte años en la misma plaza antes de solicitar el primer traslado."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El concurso abierto y permanente se configura como un sistema ágil de provisión de plazas que agiliza la movilidad voluntaria mediante la valoración continua de méritos y la resolución periódica de destinos vacantes.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico de SACYL - Concurso Abierto y Permanente"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con los derechos de los pacientes y usuarios reconocidos en la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, señale cuál de los siguientes derechos asistenciales NO se encuentra amparado normativamente:",
-    "opciones": [
-      "El derecho a elegir libremente el diagnóstico clínico que prefiera recibir con independencia de la evidencia científica y los protocolos asistenciales.",
-      "El derecho al respeto a su dignidad, intimidad personal y a la confidencialidad de su información clínica.",
-      "El derecho a una segunda opinión médica en los supuestos y condiciones regulados en la normativa autonómica.",
-      "El derecho a la información sobre los servicios sanitarios disponibles y los cauces para formular reclamaciones y sugerencias."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "Los pacientes tienen derecho a recibir asistencia de calidad y a conocer las opciones clínicas basadas en la evidencia, pero la elección de un diagnóstico arbitrario o contrario a los protocolos científicos no constituye un derecho asistencial exigible.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León - Derechos de los Ciudadanos"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De acuerdo con el Estatuto Jurídico del personal estatutario de SACYL, el tiempo permanecido en la situación administrativa de servicios especiales:",
-    "opciones": [
-      "Se computará a efectos de antigüedad, trienios y derechos en el régimen de Seguridad Social que corresponda, reservándose la plaza de origen.",
-      "No computa a ningún efecto ni laboral ni económico, extinguiendo la relación funcionarial de forma automática.",
-      "Exige el cese inmediato en el puesto de origen sin derecho a reserva de destino ni reingreso.",
-      "Solo es aplicable al personal laboral temporal con contrato mercantil de relevo."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El personal estatutario fijo en situación de servicios especiales (por ejemplo, al ser nombrado alto cargo o desempeñar funciones de representación pública) tiene derecho a la reserva de su plaza de origen y al cómputo del tiempo a efectos de antigüedad y trienios.",
-    "fuente": "Ley 2/2007 de SACYL - Situación de Servicios Especiales"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, en el supuesto de pérdida de la condición de personal estatutario fijo como consecuencia de condena firme a pena principal o accesoria de inhabilitación absoluta o especial:",
-    "opciones": [
-      "La pérdida de la condición es firme y definitiva desde el momento en que la sentencia judicial condenatoria adquiere firmeza.",
-      "Se convalida automáticamente mediante la realización de un curso de formación ética de cien horas.",
-      "Se suspende temporalmente el empleo y sueldo durante tres meses sin pérdida de la plaza.",
-      "El profesional puede elegir continuar trabajando en turnos de noche de forma indefinida."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La condena penal firme que lleve aparejada la pena de inhabilitación absoluta o especial para cargo u oficio público extingue de forma definitiva la condición de personal estatutario fijo al quedar legalmente incapacitado para su desempeño.",
-    "fuente": "Ley 2/2007 de SACYL - Causas de Extinción y Pérdida de Condición"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En relación con el régimen de jornada y descansos del personal estatutario en el SACYL, las guardias o atención continuada realizadas fuera de la jornada ordinaria de trabajo:",
-    "opciones": [
-      "Se retribuyen mediante el complemento específico correspondiente y están sujetas a los límites máximos de tiempo de trabajo efectivo y descansos obligatorios previstos por la normativa comunitaria y estatal.",
-      "Tienen carácter estrictamente voluntario e incondicionado en todos los casos sin que la administración pueda exigir servicios mínimos.",
-      "No computan nunca a efectos de descansos mínimos entre jornadas sucesivas.",
-      "Se compensan exclusivamente mediante días libres acumulables sin retribución económica salarial."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La atención continuada (guardias) retribuye el tiempo de presencia física o localización fuera de la jornada ordinaria, debiendo respetar rigurosamente los límites de jornada máxima semanal y los descansos mínimos ininterrumpidos entre jornadas exigidos legalmente.",
-    "fuente": "Ley 2/2007 de SACYL y Directrices de Tiempo de Trabajo"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "De conformidad con la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, el marco territorial elemental para la adscripción de los ciudadanos a los profesionales de medicina de familia y enfermería de atención primaria es:",
-    "opciones": [
-      "La Zona Básica de Salud.",
-      "La Comarca Agraria Provincial.",
-      "La capital de la Comunidad Autónoma.",
-      "El distrito judicial de primera instancia."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La Zona Básica de Salud constituye la demarcación territorial fundamental de adscripción de los ciudadanos para la prestación coordinada de los servicios sanitarios de atención primaria y la asignación de su equipo médico y de enfermería de referencia.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Conforme a la Ley 2/2007, respecto al procedimiento para la exigencia de responsabilidad disciplinaria al personal estatutario del SACYL:",
-    "opciones": [
-      "Se iniciará siempre de oficio o por orden superior, mediante acuerdo del órgano competente, garantizando en todo caso la audiencia al interesado y la presunción de inocencia.",
-      "Se resuelve de forma verbal e inapelable por el compañero de turno de mayor edad.",
-      "No requiere la instrucción previa de expediente contradictorio ni la designación formal de instructor.",
-      "Excluye la intervención de la representación sindical del trabajador expedientado."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El procedimiento disciplinario exige la instrucción de un expediente contradictorio con nombramiento de instructor, pliego de cargos, audiencia formal al interesado y salvaguarda plena de las garantías constitucionales del expedientado.",
-    "fuente": "Ley 2/2007 de SACYL - Procedimiento Disciplinario"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "En el marco de la movilidad del personal estatutario, el traslado voluntario a plazas de otra categoría profesional distinta mediante concurso de traslados abierto:",
-    "opciones": [
-      "Requiere el cumplimiento de los requisitos de titulación y superación de los criterios específicos exigidos para la categoría de destino a la que se opta.",
-      "Puede efectuarse de forma libre sin poseer la titulación oficial exigida para la nueva categoría sanitaria.",
-      "Está prohibido para todo el personal fijo con más de cinco trienios reconocidos.",
-      "Se concede automáticamente por orden de antigüedad en el empadronamiento municipal."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El traslado o provisión de plazas exige siempre ostentar la titulación académica oficial y cumplir los requisitos específicos fijados para la categoría y especialidad a la que se concursa.",
-    "fuente": "Ley 2/2007 de SACYL - Requisitos de Provisión"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Según la Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León, la Alta Inspección Sanitaria sobre las actividades, centros y servicios sanitarios en el territorio de la Comunidad corresponde ejercerla a:",
-    "opciones": [
-      "La Administración de la Comunidad de Castilla y León a través de la Consejería competente en materia de sanidad.",
-      "Las empresas constructoras de infraestructuras hospitalarias privadas.",
-      "Los comités de empresa de las mutuas de accidentes de trabajo.",
-      "La Tesorería General de la Seguridad Social central."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "La función de alta inspección, control y garantía del cumplimiento de la normativa sanitaria general y autonómica en los centros de Castilla y León se atribuye a la Consejería de Sanidad de la Junta.",
-    "fuente": "Ley 8/2010 de Ordenación del Sistema de Salud de Castilla y León"
-  },
-  {
-    "temaId": "gen_2",
-    "enunciado": "Indique la afirmación CORRECTA sobre los efectos jurídicos del reingreso definitivo del personal estatutario desde situaciones administrativas con derecho a reserva de plaza:",
-    "opciones": [
-      "El profesional se reincorporará de forma inmediata al puesto de trabajo del que es titular definitivo, reanudando plenamente sus derechos y obligaciones profesionales.",
-      "Pierde el derecho a los trienios acumulados con anterioridad a la excedencia.",
-      "Debe superar obligatoriamente una oposición de ingreso de nuevo acceso como si fuera personal de nuevo empleo.",
-      "Queda adscrito con carácter vitalicio a un centro de guardia sin derecho a vacaciones anuales."
-    ],
-    "correctaOriginal": 0,
-    "explicacion": "El reingreso desde una situación administrativa con reserva de plaza da derecho a la reincorporación automática al puesto de destino definitivo que ostentaba el profesional, recuperando la plenitud de sus derechos retributivos, asistenciales y de carrera.",
-    "fuente": "Ley 2/2007 del Estatuto Jurídico del Personal Estatutario de SACYL"
-  }
-  
-]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENFOPOS - Oposición SACYL</title>
+    <!-- Icono de Aplicación -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='62' font-size='42' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>LAAF</text></svg>">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes popUp {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .anim-motivacion { animation: popUp 0.5s ease-out forwards; }
+        @media print {
+            body { background: white !important; color: black !important; }
+            header, #view-menu, #view-estadisticas, #view-fuentes, #view-imprimir, #view-temario-pdf, #view-quiz, #view-resultados, .no-print { display: none !important; }
+            #pdf-print-area { display: block !important; }
+            .page-break { page-break-after: always; }
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-900 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- CABECERA -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-start">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-indigo-700 text-white rounded-xl flex items-center justify-center font-extrabold text-sm shadow-sm tracking-tighter">LAAF</div>
+                    <div>
+                        <h1 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center gap-2">
+                            <span class="bg-indigo-600 text-white px-2 py-0.5 rounded-lg text-xs">ENFOPOS</span>
+                            <span>Oposición ENFERMERÍA SACYL</span>
+                        </h1>
+                        <p class="text-[11px] text-indigo-700 font-semibold">Plataforma independiente creada por LAAF</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold">
+                    <button onclick="cambiarGenero('el')" id="btn-genero-el" class="px-2.5 py-1 rounded-lg transition">Opor</button>
+                    <button onclick="cambiarGenero('ella')" id="btn-genero-ella" class="px-2.5 py-1 rounded-lg transition">Opora</button>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                <select id="select-modalidad" onchange="cambiarModalidadOposicion()" class="bg-indigo-50 border border-indigo-200 text-indigo-950 font-bold text-xs sm:text-sm rounded-xl px-3 py-1.5 focus:ring-2 focus:ring-indigo-500 shadow-2xs cursor-pointer">
+                    <option value="libre">🟢 Turno Libre</option>
+                    <option value="interna">🔵 Promoción Interna</option>
+                </select>
+
+                <div id="header-stats" class="text-xs sm:text-sm font-bold text-slate-800 hidden flex items-center gap-2">
+                    <span id="quiz-timer" class="font-mono text-indigo-800 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-xl">⏱️ 130:00</span>
+                    <span class="bg-white border border-slate-200 px-2.5 py-1 rounded-xl">Pregunta <span id="current-q-num">1</span> de <span id="total-q-num">0</span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER META DIARIA -->
+    <div id="banner-meta-diaria" class="hidden bg-amber-500 text-slate-950 px-4 py-2.5 text-center text-xs sm:text-sm font-bold shadow-xs flex justify-center items-center gap-2">
+        <span>🔔 ¡Aviso de LAAF! Hoy aún no has completado tus 50 preguntas obligatorias. ¡A por ellas!</span>
+        <button onclick="solicitarPermisoNotificaciones()" class="bg-slate-950 text-white text-[11px] px-2.5 py-1 rounded-lg hover:bg-slate-800 transition">Activar Avisos 📱</button>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-4xl mx-auto px-3 sm:px-4 py-6 flex-grow w-full space-y-6">
+
+        <div id="view-menu" class="space-y-6">
+            
+            <div class="bg-indigo-900 text-white p-4 rounded-2xl shadow-sm flex flex-col sm:flex-row justify-between items-center gap-3">
+                <div>
+                    <h3 id="titulo-modalidad-label" class="text-sm font-bold uppercase tracking-wider text-indigo-200">Estado del Repositorio LAAF</h3>
+                    <p class="text-xs text-indigo-300 mt-0.5">Progreso de hoy: <strong id="contador-hoy-resumen" class="text-white">0</strong> / 50 preguntas realizadas</p>
+                </div>
+                <div class="bg-indigo-800 border border-indigo-700 px-4 py-2 rounded-xl text-center">
+                    <span id="contador-total-global" class="text-lg font-extrabold font-mono">0</span>
+                    <span class="text-[10px] block text-indigo-300 uppercase">Preguntas Totales Únicas</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-gradient-to-br from-indigo-900 to-indigo-950 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between border border-indigo-800">
+                    <div>
+                        <span class="text-xs bg-indigo-700 text-indigo-100 font-bold px-3 py-1 rounded-full uppercase">Simulacro Oficial</span>
+                        <h3 class="text-xl font-bold mt-2.5 mb-2 text-white">Examen de Oposición</h3>
+                        <p class="text-sm text-indigo-200 mb-5 leading-relaxed">90 preguntas (15 General + 75 Específica) + 10 reserva. 130 min. Penalización 0.25.</p>
+                    </div>
+                    <button onclick="comprobarExamenGuardado()" class="w-full bg-white hover:bg-indigo-50 text-indigo-950 font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">Iniciar Examen de Oposición</button>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-400 transition">
+                    <div>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full uppercase">Repaso Libre</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2.5 mb-2">Práctica Global</h3>
+                        <p class="text-sm text-slate-700 mb-5 leading-relaxed">Simulacro aleatorio con normativa oficial, barajado automático y registro de falladas.</p>
+                    </div>
+                    <button onclick="iniciarModoPráctica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">Iniciar Práctica Total</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-sm font-bold text-slate-900">Estadísticas</h3><p class="text-[11px] text-slate-600">Aciertos y fallos.</p></div>
+                    <button onclick="mostrarPantallaEstadisticas()" class="mt-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold py-2 px-3 rounded-xl transition">Ver Stats 📊</button>
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-sm font-bold text-slate-900">Exámenes PDF</h3><p class="text-[11px] text-slate-600">Imprimir test + plantilla.</p></div>
+                    <button onclick="mostrarPantallaImprimir()" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition">Imprimir 🖨️</button>
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-sm font-bold text-slate-900">Temario PDF</h3><p class="text-[11px] text-slate-600">Descargar temas PDF.</p></div>
+                    <button onclick="mostrarPantallaTemarioPDF()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition">Descargar 📥</button>
+                </div>
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div><h3 class="text-sm font-bold text-slate-900">Fuentes</h3><p class="text-[11px] text-slate-600">Normativa y bibliografía.</p></div>
+                    <button onclick="mostrarPantallaFuentes()" class="mt-3 bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs font-bold py-2 px-3 rounded-xl transition">Ver Fuentes 📚</button>
+                </div>
+            </div>
+
+            <!-- BLOQUES / ACORDEONES -->
+            <div class="space-y-4">
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-gen')" class="w-full p-5 flex justify-between items-center bg-indigo-50/50 hover:bg-indigo-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-indigo-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 1</span>
+                            <h3 class="text-base font-extrabold text-indigo-950 mt-1">Parte General (Temas 1 a 9)</h3>
+                            <p class="text-xs text-slate-600">Estructura sanitaria, estatuto jurídico, autonomía del paciente y legislación.</p>
+                        </div>
+                        <span id="icon-bloque-gen" class="text-xl font-bold text-indigo-800 transition transform rotate-180">▼</span>
+                    </button>
+                    <div id="content-bloque-gen" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5"></div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-esp-1')" class="w-full p-5 flex justify-between items-center bg-emerald-50/50 hover:bg-emerald-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-emerald-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 2</span>
+                            <h3 class="text-base font-extrabold text-emerald-950 mt-1">Parte Específica - Bloque I (Temas 1 a 15)</h3>
+                        </div>
+                        <span id="icon-bloque-esp-1" class="text-xl font-bold text-emerald-800 transition">▼</span>
+                    </button>
+                    <div id="content-bloque-esp-1" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5 hidden"></div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-esp-2')" class="w-full p-5 flex justify-between items-center bg-amber-50/50 hover:bg-amber-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-amber-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 3</span>
+                            <h3 class="text-base font-extrabold text-amber-950 mt-1">Parte Específica - Bloque II (Temas 16 a 29)</h3>
+                        </div>
+                        <span id="icon-bloque-esp-2" class="text-xl font-bold text-amber-800 transition">▼</span>
+                    </button>
+                    <div id="content-bloque-esp-2" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5 hidden"></div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-esp-3')" class="w-full p-5 flex justify-between items-center bg-violet-50/50 hover:bg-violet-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-violet-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 4</span>
+                            <h3 class="text-base font-extrabold text-violet-950 mt-1">Parte Específica - Bloque III (Temas 30 a 45)</h3>
+                        </div>
+                        <span id="icon-bloque-esp-3" class="text-xl font-bold text-violet-800 transition">▼</span>
+                    </button>
+                    <div id="content-bloque-esp-3" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5 hidden"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OTRAS VISTAS (ESTADÍSTICAS, IMPRESIÓN, TEMARIO, FUENTES, QUIZ, RESULTADOS) -->
+        <div id="view-estadisticas" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Estadísticas por Tema y Refuerzo de Fallos</h2>
+                    <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
+                </div>
+                <div id="lista-estadisticas" class="space-y-3.5 max-h-[65vh] overflow-y-auto pr-2"></div>
+            </div>
+        </div>
+
+        <div id="view-imprimir" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="flex justify-between items-center border-b pb-4">
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Generador de Exámenes en Papel / PDF</h2>
+                    <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-slate-900">1. Tipo de Examen</h3>
+                        <label class="flex items-center gap-2 text-sm font-medium text-slate-700 cursor-pointer"><input type="radio" name="tipo-print" value="normal" checked> Examen Normal / Por Tema</label>
+                        <label class="flex items-center gap-2 text-sm font-medium text-slate-700 cursor-pointer"><input type="radio" name="tipo-print" value="falladas"> Examen Exclusivo de Falladas</label>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
+                        <h3 class="font-bold text-slate-900">2. Filtrar por Tema</h3>
+                        <select id="select-print-tema" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm"><option value="todos">-- Todos --</option></select>
+                    </div>
+                </div>
+                <div class="pt-4 flex justify-end"><button onclick="generarYImprimirPDF()" class="bg-emerald-600 text-white font-bold py-3 px-6 rounded-xl text-sm">🖨️ Generar PDF</button></div>
+            </div>
+        </div>
+
+        <div id="view-temario-pdf" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                <div class="flex justify-between items-center border-b pb-4"><h2 class="text-lg sm:text-xl font-bold text-slate-900">Temario PDF</h2><button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver</button></div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="bg-slate-50 p-4 rounded-xl border space-y-3"><h3 class="font-bold">General</h3><select id="select-tema-general-pdf" class="w-full border rounded-xl px-3 py-2 text-sm"></select><button onclick="descargarTemaPDF('general')" class="w-full bg-indigo-600 text-white font-bold py-2.5 rounded-xl text-xs">📥 Descargar PDF</button></div>
+                    <div class="bg-slate-50 p-4 rounded-xl border space-y-3"><h3 class="font-bold">Específica</h3><select id="select-tema-especifica-pdf" class="w-full border rounded-xl px-3 py-2 text-sm"></select><button onclick="descargarTemaPDF('especifica')" class="w-full bg-indigo-600 text-white font-bold py-2.5 rounded-xl text-xs">📥 Descargar PDF</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-fuentes" class="hidden space-y-4">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border shadow-sm space-y-5">
+                <div class="flex justify-between items-center border-b pb-4"><h2 class="text-lg font-bold">Fuentes</h2><button onclick="volverMenu()" class="text-sm text-indigo-600 font-bold">← Volver</button></div>
+                <p class="text-sm text-slate-700">Referencias normativas y guías clínicas.</p>
+            </div>
+        </div>
+
+        <div id="view-quiz" class="hidden space-y-5">
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                <div class="grid grid-cols-2 gap-3 bg-slate-50 border border-slate-200 p-3 rounded-xl text-xs sm:text-sm font-bold text-center">
+                    <div class="text-indigo-900">⏱️ Tiempo Acumulado: <span id="cronometro-acumulado" class="font-mono text-indigo-700">00:00</span></div>
+                    <div class="text-amber-900">⏳ Pregunta Actual: <span id="cronometro-pregunta" class="font-mono text-amber-700">00:00</span></div>
+                </div>
+                <div class="flex justify-between items-center pb-3 border-b border-slate-100">
+                    <span id="quiz-badge" class="bg-indigo-50 text-indigo-800 border text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full">Tema</span>
+                    <span id="quiz-tipo-pregunta" class="text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50 px-3.5 py-1.5 rounded-full">Oficial</span>
+                </div>
+                <div class="flex justify-between items-center bg-slate-50 border px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold">
+                    <span class="text-emerald-700">✓ Aciertos: <strong id="live-aciertos">0</strong></span>
+                    <span class="text-rose-700">✕ Fallos: <strong id="live-fallos">0</strong></span>
+                    <span class="text-indigo-700">Restantes: <strong id="live-restantes">0</strong></span>
+                </div>
+                <div id="live-motivacion-banner" class="hidden bg-gradient-to-r from-amber-500 to-indigo-600 text-white p-3.5 rounded-2xl text-center font-bold text-xs sm:text-sm shadow-md anim-motivacion"></div>
+                <h2 id="quiz-enunciado" class="text-base sm:text-xl font-semibold text-slate-900 leading-relaxed pt-2"></h2>
+                <div id="quiz-opciones" class="space-y-3.5 pt-2"></div>
+            </div>
+            <div id="quiz-explicacion-box" class="hidden bg-amber-50 border border-amber-200 p-4 rounded-2xl text-sm text-amber-950 space-y-1.5">
+                <p class="font-bold">💡 Explicación / Fuente:</p>
+                <p id="quiz-explicacion-texto" class="leading-relaxed"></p>
+            </div>
+            <div class="flex justify-between items-center pt-3">
+                <button onclick="abandonarExamen()" class="text-xs sm:text-sm text-rose-700 font-bold bg-white border border-rose-200 px-5 py-3 rounded-xl">💾 Guardar y Abandonar</button>
+                <button id="btn-siguiente" onclick="siguientePregunta()" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-7 py-3 rounded-xl shadow-sm">Siguiente →</button>
+            </div>
+        </div>
+
+        <div id="view-resultados" class="hidden space-y-6 text-center">
+            <div class="bg-white p-8 sm:p-10 rounded-2xl border shadow-sm space-y-6 max-w-lg mx-auto">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">¡Examen Finalizado!</h2>
+                <div class="inline-flex justify-center items-center bg-indigo-50 border-2 border-indigo-200 w-32 h-32 rounded-full text-indigo-700 text-3xl sm:text-4xl font-extrabold mx-auto shadow-inner" id="score-circle">0 pts</div>
+                <div id="resultado-motivacion-box" class="p-4 rounded-2xl text-xs sm:text-sm font-bold shadow-2xs leading-relaxed"></div>
+                <p id="score-details" class="text-sm sm:text-base text-slate-800 leading-relaxed bg-slate-50 p-5 rounded-2xl border"></p>
+                <div><button onclick="volverMenu()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-8 rounded-xl">Volver al Menú Principal</button></div>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="pdf-print-area" class="hidden"></div>
+
+    <script>
+        let modalidadActual = localStorage.getItem('enfopos_modalidad') || 'libre';
+        let generoActual = localStorage.getItem('enfopos_genero') || 'el';
+
+        const LISTA_EXAMENES_OFICIALES = [
+            { id: "examen_2026", nombre: "Examen Oficial SACYL (Oct 2026)", archivo: "temas/examen_2026.json" },
+            { id: "tema_gen_1", nombre: "Tema 1: Estructura de la Consejería y GRS", archivo: "temas/tema_gen_1.json" },
+            { id: "tema_gen_2", nombre: "Tema 2: Estatuto Jurídico y Ley de Salud", archivo: "temas/tema_gen_2.json" }
+        ];
+
+        let bancoPreguntasGlobal = [];
+        let preguntasActivas = [];
+        let indiceActual = 0;
+        let aciertos = 0;
+        let fallos = 0;
+        let respuestaSeleccionada = false;
+        let timerInterval = null;
+        let tiempoRestanteSegundos = 130 * 60;
+        let segundosAcumuladosTest = 0;
+        let segundosPreguntaActual = 0;
+        let cronometrosQuizInterval = null;
+
+        let estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
+        let preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
+
+        let hoyFechaStr = new Date().toISOString().slice(0, 10);
+        let registroDiario = JSON.parse(localStorage.getItem(`enfopos_diario_${modalidadActual}`) || `{"fecha": "${hoyFechaStr}", "total": 0}`);
+        if (registroDiario.fecha !== hoyFechaStr) {
+            registroDiario = { fecha: hoyFechaStr, total: 0 };
+            localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
+        }
+
+        const COLORES_PASTEL = [
+            "bg-sky-50/70 border-sky-200 hover:border-sky-400",
+            "bg-emerald-50/70 border-emerald-200 hover:border-emerald-400",
+            "bg-amber-50/70 border-amber-200 hover:border-amber-400",
+            "bg-violet-50/70 border-violet-200 hover:border-violet-400",
+            "bg-rose-50/70 border-rose-200 hover:border-rose-400",
+            "bg-teal-50/70 border-teal-200 hover:border-teal-400"
+        ];
+
+        const CATALOGO_TEMAS = {
+            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura Consejería de Sanidad y GRS (Actualizado Nov 2026)." },
+            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto del personal estatutario de SACYL y Ley de Salud." },
+            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Ley 41/2002: Autonomía del paciente, intimidad y documentación." },
+            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Ley 8/2003 de salud y protección de datos en Castilla y León." },
+            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Plan de calidad y seguridad del paciente en GRS." },
+            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Responsabilidad profesional, bioética e instrucciones previas." },
+            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Programas de Salud, Guías Clínicas y PRL." },
+            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Sistemas de información en AE y AP." },
+            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Igualdad de género, no discriminación y dependencia." },
+            // Parte específica resumida del catálogo
+            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Metodología de Enfermería: PAE y Taxonomías." },
+            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Metodología de Investigación." },
+            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Investigación básica y aplicada." },
+            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Estadística descriptiva e inferencial." },
+            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Epidemiología y vigilancia." },
+            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Demografía sanitaria." },
+            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Salud pública." },
+            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Prevención y detección precoz." },
+            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Inmunizaciones y vacunas." },
+            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Educación para la Salud." },
+            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Paciente Activo." },
+            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Comunicación y entrevista clínica." },
+            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Higiene y esterilización." },
+            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Conducta humana y estrés." },
+            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Problemas psicosociales." },
+            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Sexualidad y reproducción." },
+            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Gestación, parto y lactancia." },
+            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Cuidados del niño sano." },
+            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Cuidados del niño enfermo." },
+            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Procesos infectocontagiosos." },
+            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Valoración geriátrica integral." },
+            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Síndromes geriátricos." },
+            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Enfermo terminal y paliativos." },
+            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental." },
+            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Adicciones y drogas." },
+            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Violencia de género." },
+            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Urgencias y RCP." },
+            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Catástrofes y triaje." },
+            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Paciente pluripatológico." },
+            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Farmacología general." },
+            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Administración de medicamentos." },
+            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Nutrición y dietas." },
+            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Nutrición enteral y parenteral." },
+            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Problemas neurológicos y ACV." },
+            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Problemas respiratorios." },
+            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Problemas cardiovasculares." },
+            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Sistema renal y urológico." },
+            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Problemas endocrinológicos." },
+            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Sistema músculo-esquelético." },
+            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Problemas gastrointestinales." },
+            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Hematología y transfusiones." },
+            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Oftalmología y ORL." },
+            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Oncología y citostáticos." },
+            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Paciente quirúrgico." },
+            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Úlceras por presión (UPP)." }
+        };
+
+        window.addEventListener('DOMContentLoaded', async () => {
+            document.getElementById('select-modalidad').value = modalidadActual;
+            actualizarUIModalidad();
+            actualizarUIGenero();
+            verificarMetaDiariaUI();
+
+            let rawBanco = [];
+            for (const exam of LISTA_EXAMENES_OFICIALES) {
+                try {
+                    const response = await fetch(exam.archivo);
+                    if (response.ok) {
+                        const data = await response.json();
+                        rawBanco.push(...data);
+                    }
+                } catch (error) {
+                    console.error(`Error cargando ${exam.archivo}:`, error);
+                }
+            }
+
+            // CONTROL DE DUPLICADOS EXACTOS POR ENUNCIADO
+            const enunciadosVistos = new Set();
+            bancoPreguntasGlobal = [];
+            rawBanco.forEach(q => {
+                const enunciadoLimpio = q.enunciado ? q.enunciado.trim() : "";
+                if (enunciadoLimpio && !enunciadosVistos.has(enunciadoLimpio)) {
+                    enunciadosVistos.add(enunciadoLimpio);
+                    bancoPreguntasGlobal.push(q);
+                }
+            });
+
+            renderizarAcordeonesTemas();
+            poblarSelectoresPDF();
+        });
+
+        function solicitarPermisoNotificaciones() {
+            if ("Notification" in window) {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") new Notification("ENFOPOS - LAAF", { body: "Notificaciones activadas con éxito." });
+                });
+            }
+        }
+
+        function verificarMetaDiariaUI() {
+            const banner = document.getElementById('banner-meta-diaria');
+            const contadorResumen = document.getElementById('contador-hoy-resumen');
+            if (contadorResumen) contadorResumen.textContent = registroDiario.total;
+            if (registroDiario.total < 50) banner.classList.remove('hidden');
+            else banner.classList.add('hidden');
+        }
+
+        function registrarPreguntaRespondidaDiaria() {
+            registroDiario.total++;
+            localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
+            verificarMetaDiariaUI();
+        }
+
+        function cambiarModalidadOposicion() {
+            modalidadActual = document.getElementById('select-modalidad').value;
+            localStorage.setItem('enfopos_modalidad', modalidadActual);
+            estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
+            preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
+            
+            let hoyStr = new Date().toISOString().slice(0, 10);
+            registroDiario = JSON.parse(localStorage.getItem(`enfopos_diario_${modalidadActual}`) || `{"fecha": "${hoyStr}", "total": 0}`);
+            if (registroDiario.fecha !== hoyStr) {
+                registroDiario = { fecha: hoyStr, total: 0 };
+                localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
+            }
+
+            actualizarUIModalidad();
+            renderizarAcordeonesTemas();
+            verificarMetaDiariaUI();
+        }
+
+        function actualizarUIModalidad() {
+            document.getElementById('titulo-modalidad-label').textContent = modalidadActual === 'libre' ? "Estado del Repositorio LAAF (Turno Libre)" : "Estado del Repositorio LAAF (Promoción Interna)";
+        }
+
+        function cambiarGenero(nuevoGenero) {
+            generoActual = nuevoGenero;
+            localStorage.setItem('enfopos_genero', generoActual);
+            actualizarUIGenero();
+        }
+
+        function actualizarUIGenero() {
+            const btnEl = document.getElementById('btn-genero-el');
+            const btnElla = document.getElementById('btn-genero-ella');
+            if (generoActual === 'el') {
+                btnEl.className = "px-2.5 py-1 rounded-lg bg-indigo-700 text-white shadow-xs transition";
+                btnElla.className = "px-2.5 py-1 rounded-lg text-slate-600 hover:bg-slate-200 transition";
+            } else {
+                btnElla.className = "px-2.5 py-1 rounded-lg bg-indigo-700 text-white shadow-xs transition";
+                btnEl.className = "px-2.5 py-1 rounded-lg text-slate-600 hover:bg-slate-200 transition";
+            }
+        }
+
+        function toggleAcordeon(bloqueId) {
+            document.getElementById(`content-${bloqueId}`).classList.toggle('hidden');
+            document.getElementById(`icon-${bloqueId}`).classList.toggle('rotate-180');
+        }
+
+        function poblarSelectoresPDF() {
+            const selectGen = document.getElementById('select-tema-general-pdf');
+            const selectEsp = document.getElementById('select-tema-especifica-pdf');
+            const selectPrint = document.getElementById('select-print-tema');
+            selectGen.innerHTML = ''; selectEsp.innerHTML = '';
+            selectPrint.innerHTML = '<option value="todos">-- Todos los temas --</option>';
+
+            Object.keys(CATALOGO_TEMAS).forEach(temaId => {
+                const info = CATALOGO_TEMAS[temaId];
+                const opt = document.createElement('option');
+                opt.value = temaId; opt.textContent = `${info.label}: ${info.desc}`;
+                if (info.bloque === "bloque-gen") selectGen.appendChild(opt);
+                else selectEsp.appendChild(opt);
+                selectPrint.appendChild(opt.cloneNode(true));
+            });
+        }
+
+        function renderizarAcordeonesTemas() {
+            const contenedores = {
+                "bloque-gen": document.getElementById('content-bloque-gen'),
+                "bloque-esp-1": document.getElementById('content-bloque-esp-1'),
+                "bloque-esp-2": document.getElementById('content-bloque-esp-2'),
+                "bloque-esp-3": document.getElementById('content-bloque-esp-3')
+            };
+            Object.values(contenedores).forEach(c => c.innerHTML = '');
+            let indexColor = 0, totalPreguntasTemasAcumuladas = 0;
+
+            Object.keys(CATALOGO_TEMAS).forEach(temaId => {
+                const info = CATALOGO_TEMAS[temaId];
+                const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
+                const totalTema = bancoPreguntasGlobal.filter(q => q.temaId === temaId).length;
+                totalPreguntasTemasAcumuladas += totalTema;
+
+                const card = document.createElement('div');
+                card.className = `p-4 rounded-2xl border transition shadow-2xs flex flex-col justify-between cursor-pointer ${COLORES_PASTEL[indexColor++ % COLORES_PASTEL.length]}`;
+                card.onclick = () => iniciarEstudioTema(temaId);
+                card.innerHTML = `
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-xs font-extrabold text-slate-900 bg-white/80 px-2.5 py-0.5 rounded-lg shadow-2xs">${info.label}</span>
+                            <span class="text-xs font-mono font-bold bg-white/80 text-slate-700 px-2.5 py-0.5 rounded-lg shadow-2xs">${totalTema} pgs</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed mb-3.5">${info.desc}</p>
+                    </div>
+                    <div class="flex items-center justify-between pt-3 border-t border-slate-200/60 text-xs font-bold">
+                        <span class="text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded-lg">✓ ${stats.aciertos}</span>
+                        <span class="text-rose-800 bg-rose-100/80 px-2.5 py-1 rounded-lg">✕ ${stats.fallos}</span>
+                    </div>
+                `;
+                if (contenedores[info.bloque]) contenedores[info.bloque].appendChild(card);
+            });
+            document.getElementById('contador-total-global').textContent = totalPreguntasTemasAcumuladas;
+        }
+
+        function barajarArray(array) {
+            let currentIndex = array.length, randomIndex;
+            while (currentIndex !== 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+            }
+            return array;
+        }
+
+        function comprobarExamenGuardado() {
+            const guardado = localStorage.getItem(`enfopos_examen_activo_${modalidadActual}`);
+            if (guardado) {
+                if (confirm("Tienes un Examen a medias. ¿Deseas continuar?")) {
+                    cargarExamenGuardado(JSON.parse(guardado));
+                    return;
+                }
+            }
+            iniciarNuevoExamenOposicion();
+        }
+
+        function iniciarNuevoExamenOposicion() {
+            if (bancoPreguntasGlobal.length < 10) return alert("Se necesitan preguntas en el repositorio.");
+            let genPool = bancoPreguntasGlobal.filter(q => q.temaId && q.temaId.startsWith('gen'));
+            let espPool = bancoPreguntasGlobal.filter(q => q.temaId && q.temaId.startsWith('esp'));
+            barajarArray(genPool); barajarArray(espPool);
+
+            let principal = [...genPool.slice(0, 15), ...espPool.slice(0, 75)];
+            barajarArray(principal); principal = principal.slice(0, 90);
+            let reserva = [...genPool.slice(15), ...espPool.slice(75)];
+            barajarArray(reserva); reserva = reserva.slice(0, 10);
+            reserva.forEach(q => q.esReserva = true);
+
+            preguntasActivas = JSON.parse(JSON.stringify([...principal, ...reserva]));
+            prepararPreguntasYRespuestas();
+            indiceActual = 0; aciertos = 0; fallos = 0; tiempoRestanteSegundos = 130 * 60;
+            segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
+
+            guardarProgresoExamen();
+            arrancarQuizUI("Examen de Oposición Oficial");
+            iniciarCronometrosQuiz();
+        }
+
+        function cargarExamenGuardado(estado) {
+            preguntasActivas = estado.preguntasActivas;
+            indiceActual = estado.indiceActual;
+            aciertos = estado.aciertos;
+            fallos = estado.fallos;
+            tiempoRestanteSegundos = estado.tiempoRestanteSegundos;
+            segundosAcumuladosTest = estado.segundosAcumuladosTest || 0;
+            segundosPreguntaActual = 0;
+
+            arrancarQuizUI("Examen de Oposición (Continuación)");
+            iniciarCronometrosQuiz();
+        }
+
+        function guardarProgresoExamen() {
+            localStorage.setItem(`enfopos_examen_activo_${modalidadActual}`, JSON.stringify({ preguntasActivas, indiceActual, aciertos, fallos, tiempoRestanteSegundos, segundosAcumuladosTest }));
+        }
+
+        function abandonarExamen() {
+            guardarProgresoExamen();
+            detenerCronometrosQuiz();
+            alert("Progreso guardado.");
+            volverMenu();
+        }
+
+        function iniciarCronometrosQuiz() {
+            detenerCronometrosQuiz();
+            cronometrosQuizInterval = setInterval(() => {
+                tiempoRestanteSegundos--;
+                segundosAcumuladosTest++;
+                segundosPreguntaActual++;
+
+                let m = Math.floor(tiempoRestanteSegundos / 60), s = tiempoRestanteSegundos % 60;
+                document.getElementById('quiz-timer').textContent = `⏱️ ${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
+
+                let minAcum = Math.floor(segundosAcumuladosTest / 60), secAcum = segundosAcumuladosTest % 60;
+                document.getElementById('cronometro-acumulado').textContent = `${minAcum.toString().padStart(2,'0')}:${secAcum.toString().padStart(2,'0')}`;
+
+                let minP = Math.floor(segundosPreguntaActual / 60), secP = segundosPreguntaActual % 60;
+                document.getElementById('cronometro-pregunta').textContent = `${minP.toString().padStart(2,'0')}:${secP.toString().padStart(2,'0')}`;
+
+                if (tiempoRestanteSegundos <= 0) {
+                    detenerCronometrosQuiz();
+                    alert("¡Tiempo finalizado!");
+                    finalizarExamenOposicion();
+                }
+            }, 1000);
+        }
+
+        function detenerCronometrosQuiz() { if (cronometrosQuizInterval) clearInterval(cronometrosQuizInterval); }
+
+        function iniciarModoPráctica() {
+            if (bancoPreguntasGlobal.length === 0) return alert("No hay preguntas.");
+            preguntasActivas = JSON.parse(JSON.stringify(bancoPreguntasGlobal));
+            barajarArray(preguntasActivas);
+            prepararPreguntasYRespuestas();
+            arrancarQuizUI("Práctica Global Aleatoria");
+            document.getElementById('quiz-timer').parentElement.classList.add('hidden');
+            segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
+            iniciarCronometrosQuiz();
+        }
+
+        function iniciarEstudioTema(temaId) {
+            const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId);
+            if (filtradas.length === 0) return alert("No hay preguntas registradas todavía para este tema específico.");
+            preguntasActivas = JSON.parse(JSON.stringify(filtradas));
+            barajarArray(preguntasActivas);
+            prepararPreguntasYRespuestas();
+            arrancarQuizUI(CATALOGO_TEMAS[temaId].label + ": " + CATALOGO_TEMAS[temaId].desc);
+            document.getElementById('quiz-timer').parentElement.classList.add('hidden');
+            segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
+            iniciarCronometrosQuiz();
+        }
+
+        function prepararPreguntasYRespuestas() {
+            preguntasActivas.forEach(q => {
+                let opcionesMapeadas = q.opciones.map((textoOp, idxOriginal) => ({ texto: textoOp, esCorrecta: (idxOriginal === q.correctaOriginal) }));
+                barajarArray(opcionesMapeadas);
+                q.opciones = opcionesMapeadas.map(o => o.texto);
+                q.correctaOriginal = opcionesMapeadas.findIndex(o => o.esCorrecta);
+            });
+        }
+
+        function arrancarQuizUI(badgeTexto) {
+            respuestaSeleccionada = false;
+            aciertos = 0; fallos = 0; indiceActual = 0; segundosPreguntaActual = 0;
+            document.getElementById('view-menu').classList.add('hidden');
+            document.getElementById('view-estadisticas').classList.add('hidden');
+            document.getElementById('view-imprimir').classList.add('hidden');
+            document.getElementById('view-temario-pdf').classList.add('hidden');
+            document.getElementById('view-fuentes').classList.add('hidden');
+            document.getElementById('view-resultados').classList.add('hidden');
+            document.getElementById('view-quiz').classList.remove('hidden');
+            document.getElementById('header-stats').classList.remove('hidden');
+            document.getElementById('quiz-badge').textContent = badgeTexto;
+            document.getElementById('total-q-num').textContent = preguntasActivas.length;
+            actualizarContadorEnVivo();
+            mostrarPregunta();
+        }
+
+        function actualizarContadorEnVivo() {
+            document.getElementById('live-aciertos').textContent = aciertos;
+            document.getElementById('live-fallos').textContent = fallos;
+            document.getElementById('live-restantes').textContent = preguntasActivas.length - indiceActual;
+        }
+
+        function mostrarPregunta() {
+            respuestaSeleccionada = false;
+            segundosPreguntaActual = 0;
+            document.getElementById('btn-siguiente').classList.add('hidden');
+            document.getElementById('quiz-explicacion-box').classList.add('hidden');
+            document.getElementById('current-q-num').textContent = indiceActual + 1;
+
+            const q = preguntasActivas[indiceActual];
+            document.getElementById('quiz-enunciado').textContent = q.enunciado;
+            const tipoBadge = document.getElementById('quiz-tipo-pregunta');
+            tipoBadge.textContent = q.esReserva ? "Pregunta de Reserva" : `Pregunta ${indiceActual + 1} de ${preguntasActivas.length}`;
+
+            const contenedorOpciones = document.getElementById('quiz-opciones');
+            contenedorOpciones.innerHTML = '';
+            q.opciones.forEach((opcionTexto, index) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-slate-200 hover:bg-slate-50 transition text-sm sm:text-base font-semibold text-slate-900 flex items-start gap-3.5 shadow-2xs";
+                btn.innerHTML = `<span class="bg-slate-100 text-slate-800 px-3 py-1.5 rounded-xl text-xs sm:text-sm font-mono font-bold">${String.fromCharCode(65 + index)}</span> <span class="flex-grow leading-relaxed">${opcionTexto}</span>`;
+                btn.onclick = () => seleccionarRespuesta(index, btn);
+                contenedorOpciones.appendChild(btn);
+            });
+        }
+
+        function seleccionarRespuesta(indexElegido, botonElemento) {
+            if (respuestaSeleccionada) return;
+            respuestaSeleccionada = true;
+
+            const q = preguntasActivas[indiceActual];
+            const botones = document.getElementById('quiz-opciones').children;
+            if (q.temaId && !estadisticasTemas[q.temaId]) estadisticasTemas[q.temaId] = { aciertos: 0, fallos: 0 };
+
+            registrarPreguntaRespondidaDiaria();
+
+            if (indexElegido === q.correctaOriginal) {
+                aciertos++; q.esAcertada = true;
+                botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
+                if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
+                verificarFraseMotivadoraAciertos();
+            } else {
+                fallos++; q.esAcertada = false;
+                botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-rose-400 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
+                botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
+                if (q.temaId) estadisticasTemas[q.temaId].fallos++;
+                if (q.enunciado && !preguntasFalladasHistorial.some(f => f.enunciado === q.enunciado)) {
+                    preguntasFalladasHistorial.push(q);
+                    localStorage.setItem(`enfopos_falladas_${modalidadActual}`, JSON.stringify(preguntasFalladasHistorial));
+                }
+            }
+
+            localStorage.setItem(`enfopos_stats_${modalidadActual}`, JSON.stringify(estadisticasTemas));
+            actualizarContadorEnVivo();
+
+            if (q.explicacion || q.fuente) {
+                document.getElementById('quiz-explicacion-texto').textContent = `${q.explicacion || ''} (Fuente: ${q.fuente || 'Oficial'})`;
+                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
+            }
+            document.getElementById('btn-siguiente').classList.remove('hidden');
+            guardarProgresoExamen();
+        }
+
+        function verificarFraseMotivadoraAciertos() {
+            const banner = document.getElementById('live-motivacion-banner');
+            if (aciertos === 50) {
+                banner.textContent = generoActual === 'el' ? "🔥 ¡IMPARABLE! Llevas 50 aciertos. ¡Campeón!" : "🔥 ¡IMPARABLE! Llevas 50 aciertos. ¡Campeona!";
+                banner.classList.remove('hidden');
+            } else if (aciertos > 0 && aciertos % 10 === 0) {
+                banner.textContent = `⚡ ¡Genial! ¡Ya acumulas ${aciertos} aciertos! Sigue así.`;
+                banner.classList.remove('hidden');
+                setTimeout(() => { banner.classList.add('hidden'); }, 4000);
+            }
+        }
+
+        function siguientePregunta() {
+            indiceActual++;
+            if (indiceActual < preguntasActivas.length) mostrarPregunta();
+            else finalizarExamenOposicion();
+        }
+
+        function finalizarExamenOposicion() {
+            detenerCronometrosQuiz();
+            localStorage.removeItem(`enfopos_examen_activo_${modalidadActual}`);
+            document.getElementById('view-quiz').classList.add('hidden');
+            document.getElementById('header-stats').classList.add('hidden');
+            document.getElementById('view-resultados').classList.remove('hidden');
+
+            let puntuacionFinal = Math.max(0, aciertos - (fallos * 0.25));
+            let notaSobre10 = Math.min(10, (puntuacionFinal / (preguntasActivas.length || 90)) * 10);
+
+            document.getElementById('score-circle').textContent = `${puntuacionFinal.toFixed(2)} pts`;
+            generarMensajeResultadosFinales(notaSobre10);
+
+            document.getElementById('score-details').innerHTML = `Aciertos: <strong class="text-emerald-800">${aciertos}</strong><br>Fallos: <strong class="text-rose-800">${fallos}</strong><br>Nota sobre 10: <strong class="text-indigo-800">${notaSobre10.toFixed(2)} / 10</strong>`;
+            renderizarAcordeonesTemas();
+        }
+
+        function generarMensajeResultadosFinales(nota) {
+            const box = document.getElementById('resultado-motivacion-box');
+            let msg = nota >= 10 ? "👑 ¡Eres el mejor/la mejor del mundo mundial!" : nota >= 8 ? "🚀 ¡Esa plaza es tuya!" : nota >= 7 ? "💪 ¡Excelente trabajo!" : nota >= 5 ? "🎯 ¡Aprobado conseguido!" : "📚 ¡Sigue practicando!";
+            box.innerHTML = `<div class="bg-indigo-50 border border-indigo-200 text-indigo-950 p-4 rounded-2xl">${msg}</div>`;
+        }
+
+        function volverMenu() {
+            detenerCronometrosQuiz();
+            document.getElementById('view-quiz').classList.add('hidden');
+            document.getElementById('view-resultados').classList.add('hidden');
+            document.getElementById('view-estadisticas').classList.add('hidden');
+            document.getElementById('view-imprimir').classList.add('hidden');
+            document.getElementById('view-temario-pdf').classList.add('hidden');
+            document.getElementById('view-fuentes').classList.add('hidden');
+            document.getElementById('header-stats').classList.add('hidden');
+            document.getElementById('view-menu').classList.remove('hidden');
+            renderizarAcordeonesTemas();
+            verificarMetaDiariaUI();
+        }
+    </script>
+</body>
+</html>
