@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENFOPOS - Oposición SACYL</title>
-    <!-- Configuración para Icono de Aplicación Móvil y de Escritorio (LAAF) -->
+    <!-- Icono de Aplicación -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='62' font-size='42' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>LAAF</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%234338ca'/><text x='50' y='62' font-size='42' font-weight='bold' fill='white' text-anchor='middle' font-family='sans-serif'>LAAF</text></svg>">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @keyframes popUp {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .anim-motivacion {
+            animation: popUp 0.5s ease-out forwards;
+        }
         @media print {
             body { background: white !important; color: black !important; }
             header, #view-menu, #view-estadisticas, #view-fuentes, #view-imprimir, #view-temario-pdf, #view-quiz, #view-resultados, .no-print { display: none !important; }
@@ -22,25 +29,48 @@
 
     <!-- CABECERA -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
-        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-indigo-700 text-white rounded-xl flex items-center justify-center font-extrabold text-sm shadow-sm tracking-tighter">
-                    LAAF
+        <div class="max-w-4xl mx-auto px-4 py-3 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-start">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-indigo-700 text-white rounded-xl flex items-center justify-center font-extrabold text-sm shadow-sm tracking-tighter">
+                        LAAF
+                    </div>
+                    <div>
+                        <h1 class="text-xs sm:text-sm font-extrabold text-slate-900 flex items-center gap-2">
+                            <span class="bg-indigo-600 text-white px-2 py-0.5 rounded-lg text-xs">ENFOPOS</span>
+                            <span>Oposición ENFERMERÍA SACYL</span>
+                        </h1>
+                        <p class="text-[11px] text-indigo-700 font-semibold">Plataforma independiente creada por LAAF</p>
+                    </div>
                 </div>
-                <div>
-                    <h1 class="text-xs sm:text-base font-extrabold text-slate-900 flex items-center gap-2">
-                        <span class="bg-indigo-600 text-white px-2.5 py-0.5 rounded-lg text-xs shadow-xs">ENFOPOS</span>
-                        <span class="leading-snug">Preparación NO OFICIAL para la oposición de ENFERMERIA en SACYL</span>
-                    </h1>
-                    <p class="text-xs sm:text-sm text-indigo-700 font-semibold mt-0.5">Aplicación no oficial de estudio independiente creado por LAAF</p>
+                
+                <!-- SELECTOR DE GÉNERO RÁPIDO -->
+                <div class="flex items-center bg-slate-100 p-1 rounded-xl border border-slate-200 text-xs font-bold">
+                    <button onclick="cambiarGenero('el')" id="btn-genero-el" class="px-2.5 py-1 rounded-lg transition">Opor</button>
+                    <button onclick="cambiarGenero('ella')" id="btn-genero-ella" class="px-2.5 py-1 rounded-lg transition">Opora</button>
                 </div>
             </div>
-            <div id="header-stats" class="text-xs sm:text-base font-bold text-slate-800 hidden flex items-center gap-3">
-                <span id="quiz-timer" class="font-mono text-indigo-800 bg-indigo-50 border border-indigo-200 px-3 py-1.5 rounded-xl shadow-2xs">⏱️ 130:00</span>
-                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl">Pregunta <span id="current-q-num">1</span> de <span id="total-q-num">0</span></span>
+
+            <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+                <!-- SELECTOR DE MODALIDAD -->
+                <select id="select-modalidad" onchange="cambiarModalidadOposicion()" class="bg-indigo-50 border border-indigo-200 text-indigo-950 font-bold text-xs sm:text-sm rounded-xl px-3 py-1.5 focus:ring-2 focus:ring-indigo-500 shadow-2xs cursor-pointer">
+                    <option value="libre">🟢 Turno Libre</option>
+                    <option value="interna">🔵 Promoción Interna</option>
+                </select>
+
+                <div id="header-stats" class="text-xs sm:text-sm font-bold text-slate-800 hidden flex items-center gap-2">
+                    <span id="quiz-timer" class="font-mono text-indigo-800 bg-indigo-50 border border-indigo-200 px-2.5 py-1 rounded-xl">⏱️ 130:00</span>
+                    <span class="bg-white border border-slate-200 px-2.5 py-1 rounded-xl">Pregunta <span id="current-q-num">1</span> de <span id="total-q-num">0</span></span>
+                </div>
             </div>
         </div>
     </header>
+
+    <!-- BANNER DE AVISO DIARIO (OBJETIVO 50 PREGUNTAS) -->
+    <div id="banner-meta-diaria" class="hidden bg-amber-500 text-slate-950 px-4 py-2.5 text-center text-xs sm:text-sm font-bold shadow-xs flex justify-center items-center gap-2">
+        <span>🔔 ¡Aviso de LAAF! Hoy aún no has completado tus 50 preguntas obligatorias. ¡A por ellas!</span>
+        <button onclick="solicitarPermisoNotificaciones()" class="bg-slate-950 text-white text-[11px] px-2.5 py-1 rounded-lg hover:bg-slate-800 transition">Activar Avisos 📱</button>
+    </div>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="max-w-4xl mx-auto px-3 sm:px-4 py-6 flex-grow w-full space-y-6">
@@ -48,104 +78,120 @@
         <!-- VISTA 1: MENÚ PRINCIPAL -->
         <div id="view-menu" class="space-y-6">
             
-            <!-- 📌 CONTADOR GLOBAL DE PREGUNTAS (PÉGALO AQUÍ) -->
-            <div class="bg-indigo-900 text-white p-4 rounded-2xl shadow-sm flex justify-between items-center">
+            <!-- CONTADOR GLOBAL Y PROGRESO DIARIO -->
+            <div class="bg-indigo-900 text-white p-4 rounded-2xl shadow-sm flex flex-col sm:flex-row justify-between items-center gap-3">
                 <div>
-                    <h3 class="text-sm font-bold uppercase tracking-wider text-indigo-200">Estado del Repositorio LAAF</h3>
-                    <p class="text-xs text-indigo-300">Preguntas cargadas y listas para estudiar</p>
+                    <h3 id="titulo-modalidad-label" class="text-sm font-bold uppercase tracking-wider text-indigo-200">Estado del Repositorio LAAF (Turno Libre)</h3>
+                    <p class="text-xs text-indigo-300 mt-0.5">Progreso de hoy: <strong id="contador-hoy-resumen" class="text-white">0</strong> / 50 preguntas realizadas</p>
                 </div>
-                <div class="bg-indigo-800 border border-indigo-700 px-4 py-2 rounded-xl text-center">
-                    <span id="contador-total-global" class="text-lg font-extrabold font-mono">0</span>
-                    <span class="text-[10px] block text-indigo-300 uppercase">Preguntas Totales</span>
+                <div class="flex gap-2">
+                    <div class="bg-indigo-800 border border-indigo-700 px-4 py-2 rounded-xl text-center">
+                        <span id="contador-total-global" class="text-lg font-extrabold font-mono">0</span>
+                        <span class="text-[10px] block text-indigo-300 uppercase">Preguntas Totales</span>
+                    </div>
                 </div>
             </div>
             
             <!-- ACCESOS RÁPIDOS -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <!-- EXAMEN DE OPOSICIÓN -->
                 <div class="bg-gradient-to-br from-indigo-900 to-indigo-950 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between border border-indigo-800">
                     <div>
-                        <span class="text-xs bg-indigo-700 text-indigo-100 font-bold px-3 py-1 rounded-full tracking-wide uppercase">Simulacro Oficial</span>
+                        <span class="text-xs bg-indigo-700 text-indigo-100 font-bold px-3 py-1 rounded-full uppercase">Simulacro Oficial</span>
                         <h3 class="text-xl font-bold mt-2.5 mb-2 text-white">Examen de Oposición</h3>
-                        <p class="text-sm sm:text-base text-indigo-200 mb-5 leading-relaxed">90 preguntas (15 General + 75 Específica) + 10 de reserva. 130 min. Penalización 0.25 por fallo.</p>
+                        <p class="text-sm text-indigo-200 mb-5 leading-relaxed">90 preguntas (15 General + 75 Específica) + 10 reserva. 130 min. Penalización 0.25.</p>
                     </div>
-                    <button onclick="comprobarExamenGuardado()" class="w-full bg-white hover:bg-indigo-50 text-indigo-950 font-bold py-3 px-4 rounded-xl transition text-sm sm:text-base shadow-sm">
+                    <button onclick="comprobarExamenGuardado()" class="w-full bg-white hover:bg-indigo-50 text-indigo-950 font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">
                         Iniciar Examen de Oposición
                     </button>
                 </div>
 
-                <!-- PRÁCTICA GLOBAL -->
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-400 transition">
                     <div>
-                        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full tracking-wide uppercase">Repaso Libre</span>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full uppercase">Repaso Libre</span>
                         <h3 class="text-xl font-bold text-slate-900 mt-2.5 mb-2">Práctica Global</h3>
-                        <p class="text-sm sm:text-base text-slate-700 mb-5 leading-relaxed">Mezcla aleatoria de todas las preguntas disponibles en el repositorio con respuestas barajadas.</p>
+                        <p class="text-sm text-slate-700 mb-5 leading-relaxed">Simulacro aleatorio con normativa oficial, barajado automático y registro de falladas.</p>
                     </div>
-                    <button onclick="iniciarModoPráctica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-sm sm:text-base shadow-sm">
+                    <button onclick="iniciarModoPráctica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">
                         Iniciar Práctica Total
                     </button>
                 </div>
             </div>
 
-            <!-- BOTONES SECUNDARIOS (ESTADÍSTICAS, IMPRESIÓN EXÁMENES, TEMARIO PDF Y FUENTES) -->
+            <!-- BOTONES SECUNDARIOS -->
             <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-sm font-bold text-slate-900">Estadísticas</h3>
-                        <p class="text-[11px] text-slate-600">Aciertos y fallos.</p>
-                    </div>
-                    <button onclick="mostrarPantallaEstadisticas()" class="mt-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
-                        Ver Stats 📊
-                    </button>
+                    <div><h3 class="text-sm font-bold text-slate-900">Estadísticas</h3><p class="text-[11px] text-slate-600">Aciertos y fallos.</p></div>
+                    <button onclick="mostrarPantallaEstadisticas()" class="mt-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold py-2 px-3 rounded-xl transition">Ver Stats 📊</button>
                 </div>
-
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-sm font-bold text-slate-900">Exámenes PDF</h3>
-                        <p class="text-[11px] text-slate-600">Imprimir test + plantilla.</p>
-                    </div>
-                    <button onclick="mostrarPantallaImprimir()" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
-                        Imprimir 🖨️
-                    </button>
+                    <div><h3 class="text-sm font-bold text-slate-900">Exámenes PDF</h3><p class="text-[11px] text-slate-600">Imprimir test + plantilla.</p></div>
+                    <button onclick="mostrarPantallaImprimir()" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition">Imprimir 🖨️</button>
                 </div>
-
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-sm font-bold text-slate-900">Temario PDF</h3>
-                        <p class="text-[11px] text-slate-600">Descargar temas PDF.</p>
-                    </div>
-                    <button onclick="mostrarPantallaTemarioPDF()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
-                        Descargar 📥
-                    </button>
+                    <div><h3 class="text-sm font-bold text-slate-900">Temario PDF</h3><p class="text-[11px] text-slate-600">Descargar temas PDF.</p></div>
+                    <button onclick="mostrarPantallaTemarioPDF()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2 px-3 rounded-xl transition">Descargar 📥</button>
                 </div>
-
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-sm font-bold text-slate-900">Fuentes</h3>
-                        <p class="text-[11px] text-slate-600">Normativa y bibliografía.</p>
-                    </div>
-                    <button onclick="mostrarPantallaFuentes()" class="mt-3 bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs font-bold py-2 px-3 rounded-xl transition shadow-2xs">
-                        Ver Fuentes 📚
-                    </button>
+                    <div><h3 class="text-sm font-bold text-slate-900">Fuentes</h3><p class="text-[11px] text-slate-600">Normativa y bibliografía.</p></div>
+                    <button onclick="mostrarPantallaFuentes()" class="mt-3 bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs font-bold py-2 px-3 rounded-xl transition">Ver Fuentes 📚</button>
                 </div>
             </div>
 
-            <!-- SECCIÓN: PARTE GENERAL (Temas 1 a 9) -->
-            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                <div class="border-b border-slate-100 pb-3">
-                    <h3 class="text-sm sm:text-base font-extrabold text-indigo-900 uppercase tracking-wider">Parte General (Temas 1 a 9)</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Selecciona un tema para practicar específicamente:</p>
+            <!-- ACORDEONES / BLOQUES DESPLEGABLES -->
+            <div class="space-y-4">
+                
+                <!-- BLOQUE 1: PARTE GENERAL -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-gen')" class="w-full p-5 flex justify-between items-center bg-indigo-50/50 hover:bg-indigo-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-indigo-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 1</span>
+                            <h3 class="text-base font-extrabold text-indigo-950 mt-1">Parte General (Temas 1 a 9)</h3>
+                            <p class="text-xs text-slate-600">Estructura sanitaria, estatuto jurídico, autonomía del paciente y legislación de SACYL.</p>
+                        </div>
+                        <span id="icon-bloque-gen" class="text-xl font-bold text-indigo-800 transition transform rotate-180">▼</span>
+                    </button>
+                    <div id="content-bloque-gen" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5"></div>
                 </div>
-                <div id="grid-temas-generales" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5"></div>
-            </div>
 
-            <!-- SECCIÓN: PARTE ESPECÍFICA (Temas 1 a 45) -->
-            <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                <div class="border-b border-slate-100 pb-3">
-                    <h3 class="text-sm sm:text-base font-extrabold text-indigo-900 uppercase tracking-wider">Parte Específica (Temas 1 a 45)</h3>
-                    <p class="text-xs sm:text-sm text-slate-600 mt-0.5">Selecciona un tema clínico o técnico:</p>
+                <!-- BLOQUE 2: ESPECÍFICA I -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-esp-1')" class="w-full p-5 flex justify-between items-center bg-emerald-50/50 hover:bg-emerald-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-emerald-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 2</span>
+                            <h3 class="text-base font-extrabold text-emerald-950 mt-1">Parte Específica - Bloque Asistencial I (Temas 1 a 15)</h3>
+                            <p class="text-xs text-slate-600">Metodología PAE, investigación, epidemiología, salud pública y cuidados psicosociales.</p>
+                        </div>
+                        <span id="icon-bloque-esp-1" class="text-xl font-bold text-emerald-800 transition">▼</span>
+                    </button>
+                    <div id="content-bloque-esp-1" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5 hidden"></div>
                 </div>
-                <div id="grid-temas-especificos" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5"></div>
+
+                <!-- BLOQUE 3: ESPECÍFICA II -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-esp-2')" class="w-full p-5 flex justify-between items-center bg-amber-50/50 hover:bg-amber-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-amber-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 3</span>
+                            <h3 class="text-base font-extrabold text-amber-950 mt-1">Parte Específica - Bloque Asistencial II (Temas 16 a 29)</h3>
+                            <p class="text-xs text-slate-600">Mujer, pediatría, geriatría, terminales, salud mental, urgencias y catástrofes.</p>
+                        </div>
+                        <span id="icon-bloque-esp-2" class="text-xl font-bold text-amber-800 transition">▼</span>
+                    </button>
+                    <div id="content-bloque-esp-2" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5 hidden"></div>
+                </div>
+
+                <!-- BLOQUE 4: ESPECÍFICA III -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <button onclick="toggleAcordeon('bloque-esp-3')" class="w-full p-5 flex justify-between items-center bg-violet-50/50 hover:bg-violet-50 transition text-left">
+                        <div>
+                            <span class="text-xs font-extrabold bg-violet-700 text-white px-2.5 py-0.5 rounded-lg uppercase">Bloque 4</span>
+                            <h3 class="text-base font-extrabold text-violet-950 mt-1">Parte Específica - Bloque Clínico por Sistemas (Temas 30 a 45)</h3>
+                            <p class="text-xs text-slate-600">Farmacología, nutrición, neurología, respiratorio, cardiología, oncología y UPP.</p>
+                        </div>
+                        <span id="icon-bloque-esp-3" class="text-xl font-bold text-violet-800 transition">▼</span>
+                    </button>
+                    <div id="content-bloque-esp-3" class="p-5 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-3.5 hidden"></div>
+                </div>
+
             </div>
 
         </div>
@@ -181,7 +227,6 @@
                             </label>
                         </div>
                     </div>
-
                     <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
                         <h3 class="font-bold text-slate-900">2. Filtrar por Tema (Opcional)</h3>
                         <select id="select-print-tema" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500">
@@ -189,9 +234,8 @@
                         </select>
                     </div>
                 </div>
-
-                <div class="pt-4 flex justify-end gap-3">
-                    <button onclick="generarYImprimirPDF()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition shadow-sm flex items-center gap-2">
+                <div class="pt-4 flex justify-end">
+                    <button onclick="generarYImprimirPDF()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-xl text-sm transition shadow-sm">
                         🖨️ Generar PDF con Plantilla de Respuestas
                     </button>
                 </div>
@@ -205,28 +249,17 @@
                     <h2 class="text-lg sm:text-xl font-bold text-slate-900">Biblioteca de Temario en PDF para Estudio</h2>
                     <button onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
                 </div>
-                
-                <p class="text-sm text-slate-600">Selecciona el tema oficial que deseas consultar o descargar en formato PDF para estudiar cómodamente:</p>
-
+                <p class="text-sm text-slate-600">Selecciona el tema oficial (actualizado con la normativa de noviembre de 2026) que deseas consultar o descargar para estudiar:</p>
                 <div class="grid sm:grid-cols-2 gap-4">
                     <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
                         <h3 class="font-bold text-indigo-900">Parte General (Temas 1 a 9)</h3>
-                        <select id="select-tema-general-pdf" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500">
-                            <!-- Inyectado por JS -->
-                        </select>
-                        <button onclick="descargarTemaPDF('general')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-sm">
-                            📥 Descargar / Imprimir Tema General PDF
-                        </button>
+                        <select id="select-tema-general-pdf" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm"></select>
+                        <button onclick="descargarTemaPDF('general')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">📥 Descargar Tema General PDF</button>
                     </div>
-
                     <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
                         <h3 class="font-bold text-indigo-900">Parte Específica (Temas 1 a 45)</h3>
-                        <select id="select-tema-especifica-pdf" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm focus:ring-2 focus:ring-indigo-500">
-                            <!-- Inyectado por JS -->
-                        </select>
-                        <button onclick="descargarTemaPDF('especifica')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition shadow-sm">
-                            📥 Descargar / Imprimir Tema Específico PDF
-                        </button>
+                        <select id="select-tema-especifica-pdf" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-sm"></select>
+                        <button onclick="descargarTemaPDF('especifica')" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-xl text-xs transition">📥 Descargar Tema Específico PDF</button>
                     </div>
                 </div>
             </div>
@@ -241,25 +274,8 @@
                 </div>
                 <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
                     <p class="bg-indigo-50 border border-indigo-100 p-4 rounded-xl text-indigo-900 font-medium">
-                        Este espacio recopila de forma permanente todas las referencias bibliográficas, normativas legales, publicaciones científicas, infografías y soportes multimedia utilizados para la elaboración y validación de las preguntas de ENFOPOS.
+                        Espacio de validación permanente de referencias legales (BOCYL, Ley 55/2003, Ley 8/2010), guías GNEAUPP y protocolos GRS.
                     </p>
-                    
-                    <div class="space-y-3">
-                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-1">
-                            <h4 class="font-bold text-slate-900 flex items-center gap-2">📜 Normativa Legal y Convocatorias SACYL</h4>
-                            <p class="text-xs text-slate-600">BOCYL, Estatuto Marco (Ley 55/2003), Ley de Ordenación del Sistema de Salud de Castilla y León y normativas autonómicas vigentes.</p>
-                        </div>
-
-                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-1">
-                            <h4 class="font-bold text-slate-900 flex items-center gap-2">📚 Textos y Guías Clínicas de Referencia</h4>
-                            <p class="text-xs text-slate-600">Guías de Práctica Clínica del Ministerio de Sanidad, GRS, protocolos de UPP (GNEAUPP), taxonomías NANDA, NIC, NOC y manuales de enfermería avanzada.</p>
-                        </div>
-
-                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 space-y-1">
-                            <h4 class="font-bold text-slate-900 flex items-center gap-2">💻 Recursos Multimedia, Vídeos e Infografías</h4>
-                            <p class="text-xs text-slate-600">Material gráfico de apoyo docente, infografías formativas de procedimientos clínicos y recursos audiovisuales de autoaprendizaje.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -267,25 +283,42 @@
         <!-- VISTA 2: QUIZ / EXAMEN -->
         <div id="view-quiz" class="hidden space-y-5">
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-5">
+                
+                <!-- BARRA DE CRONÓMETROS FIJOS (ACUMULADO Y PREGUNTA ACTUAL) -->
+                <div class="grid grid-cols-2 gap-3 bg-slate-50 border border-slate-200 p-3 rounded-xl text-xs sm:text-sm font-bold text-center">
+                    <div class="text-indigo-900">⏱️ Tiempo Acumulado: <span id="cronometro-acumulado" class="font-mono text-indigo-700">00:00</span></div>
+                    <div class="text-amber-900">⏳ Tiempo en esta pregunta: <span id="cronometro-pregunta" class="font-mono text-amber-700">00:00</span></div>
+                </div>
+
                 <div class="flex justify-between items-center pb-3 border-b border-slate-100">
                     <span id="quiz-badge" class="bg-indigo-50 text-indigo-800 border border-indigo-200 text-xs sm:text-sm font-bold px-3.5 py-1.5 rounded-full">Tema</span>
                     <span id="quiz-tipo-pregunta" class="text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50 px-3.5 py-1.5 rounded-full">Oficial</span>
                 </div>
                 
+                <!-- CONTADOR DE PROGRESO EN VIVO -->
+                <div class="flex justify-between items-center bg-slate-50 border border-slate-200 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold">
+                    <span class="text-emerald-700">✓ Aciertos: <strong id="live-aciertos">0</strong></span>
+                    <span class="text-rose-700">✕ Fallos: <strong id="live-fallos">0</strong></span>
+                    <span class="text-indigo-700">Restantes: <strong id="live-restantes">0</strong></span>
+                </div>
+
+                <!-- BANNER DE MOTIVACIÓN CADA 10 Y 50 ACIERTOS -->
+                <div id="live-motivacion-banner" class="hidden bg-gradient-to-r from-amber-500 to-indigo-600 text-white p-3.5 rounded-2xl text-center font-bold text-xs sm:text-sm shadow-md anim-motivacion"></div>
+
                 <h2 id="quiz-enunciado" class="text-base sm:text-xl font-semibold text-slate-900 leading-relaxed pt-2"></h2>
 
                 <div id="quiz-opciones" class="space-y-3.5 pt-2"></div>
             </div>
 
             <!-- Explicación al responder -->
-            <div id="quiz-explicacion-box" class="hidden bg-amber-50 border border-amber-200 p-4.5 sm:p-5 rounded-2xl text-sm sm:text-base text-amber-950 space-y-1.5 shadow-2xs">
+            <div id="quiz-explicacion-box" class="hidden bg-amber-50 border border-amber-200 p-4.5 sm:p-5 rounded-2xl text-sm text-amber-950 space-y-1.5 shadow-2xs">
                 <p class="font-bold flex items-center gap-2">💡 Explicación / Fuente:</p>
                 <p id="quiz-explicacion-texto" class="leading-relaxed"></p>
             </div>
 
             <!-- Botonera inferior -->
             <div class="flex justify-between items-center pt-3">
-                <button onclick="abandonarExamen()" class="text-xs sm:text-sm text-rose-700 hover:text-rose-900 font-bold bg-white border border-rose-200 px-5 py-3 rounded-xl shadow-2xs transition">
+                <button onclick="abandonarExamen()" class="text-xs sm:text-sm text-rose-700 hover:text-rose-900 font-bold bg-white border border-rose-200 px-5 py-3 rounded-xl transition">
                     💾 Guardar y Abandonar
                 </button>
                 <button id="btn-siguiente" onclick="siguientePregunta()" class="hidden bg-indigo-600 hover:bg-indigo-700 text-white text-sm sm:text-base font-bold px-7 py-3 rounded-xl transition shadow-sm">
@@ -301,6 +334,9 @@
                 <div class="inline-flex justify-center items-center bg-indigo-50 border-2 border-indigo-200 w-32 h-32 rounded-full text-indigo-700 text-3xl sm:text-4xl font-extrabold mx-auto shadow-inner" id="score-circle">
                     0 pts
                 </div>
+                
+                <div id="resultado-motivacion-box" class="p-4 rounded-2xl text-xs sm:text-sm font-bold shadow-2xs leading-relaxed"></div>
+
                 <p id="score-details" class="text-sm sm:text-base text-slate-800 leading-relaxed bg-slate-50 p-5 rounded-2xl border border-slate-200"></p>
                 <div>
                     <button onclick="volverMenu()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3.5 px-8 rounded-xl text-sm sm:text-base transition shadow-sm">
@@ -315,8 +351,11 @@
     <!-- CONTENEDOR OCULTO PARA IMPRESIÓN PDF -->
     <div id="pdf-print-area" class="hidden"></div>
 
-    <!-- SCRIPT DE GESTIÓN -->
+    <!-- SCRIPT DE GESTIÓN Y LÓGICA -->
     <script>
+        let modalidadActual = localStorage.getItem('enfopos_modalidad') || 'libre';
+        let generoActual = localStorage.getItem('enfopos_genero') || 'el';
+
         const LISTA_EXAMENES_OFICIALES = [
             { id: "examen_2026", nombre: "Examen Oficial SACYL (Oct 2026)", archivo: "temas/examen_2026.json" },
             { id: "tema_gen_1", nombre: "Tema 1: Estructura de la Consejería y GRS", archivo: "temas/tema_gen_1.json" },
@@ -332,8 +371,21 @@
         let timerInterval = null;
         let tiempoRestanteSegundos = 130 * 60;
 
-        let estadisticasTemas = JSON.parse(localStorage.getItem('enfopos_stats') || '{}');
-        let preguntasFalladasHistorial = JSON.parse(localStorage.getItem('enfopos_falladas_historial') || '[]');
+        // CRONÓMETROS NUEVOS
+        let segundosAcumuladosTest = 0;
+        let segundosPreguntaActual = 0;
+        let cronometrosQuizInterval = null;
+
+        let estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
+        let preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
+
+        // CONTROL DIARIO DE PREGUNTAS (META 50)
+        let hoyFechaStr = new Date().toISOString().slice(0, 10);
+        let registroDiario = JSON.parse(localStorage.getItem(`enfopos_diario_${modalidadActual}`) || `{"fecha": "${hoyFechaStr}", "total": 0}`);
+        if (registroDiario.fecha !== hoyFechaStr) {
+            registroDiario = { fecha: hoyFechaStr, total: 0 };
+            localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
+        }
 
         const COLORES_PASTEL = [
             "bg-sky-50/70 border-sky-200 hover:border-sky-400",
@@ -341,71 +393,75 @@
             "bg-amber-50/70 border-amber-200 hover:border-amber-400",
             "bg-violet-50/70 border-violet-200 hover:border-violet-400",
             "bg-rose-50/70 border-rose-200 hover:border-rose-400",
-            "bg-teal-50/70 border-teal-200 hover:border-teal-400",
-            "bg-indigo-50/70 border-indigo-200 hover:border-indigo-400",
-            "bg-orange-50/70 border-orange-200 hover:border-orange-400",
-            "bg-cyan-50/70 border-cyan-200 hover:border-cyan-400"
+            "bg-teal-50/70 border-teal-200 hover:border-teal-400"
         ];
 
         const CATALOGO_TEMAS = {
-            "gen_1": { parte: "general", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y GRS. Servicios Centrales y Periféricos." },
-            "gen_2": { parte: "general", label: "Tema 2", desc: "Estatuto del personal estatutario de SACYL: Clasificación, provisión, derechos y deberes." },
-            "gen_3": { parte: "general", label: "Tema 3", desc: "Ley 41/2002: Autonomía del paciente, intimidad, confidencialidad y documentación clínica." },
-            "gen_4": { parte: "general", label: "Tema 4", desc: "Ley 8/2003 de salud y LOPD 3/2018. Decreto de Historia Clínica en Castilla y León." },
-            "gen_5": { parte: "general", label: "Tema 5", desc: "Plan de calidad y seguridad del paciente en GRS. Eventos adversos y prácticas seguras." },
-            "gen_6": { parte: "general", label: "Tema 6", desc: "Responsabilidad profesional, bioética, instrucciones previas y comités de ética." },
-            "gen_7": { parte: "general", label: "Tema 7", desc: "Programas de Salud, Guías de Práctica Clínica y Ley de Prevención de Riesgos Laborales." },
-            "gen_8": { parte: "general", label: "Tema 8", desc: "Sistemas de información en AE y AP. Registros de enfermería y clasificaciones (CIAP-2, CIE-11, NANDA)." },
-            "gen_9": { parte: "general", label: "Tema 9", desc: "No discriminación por orientación sexual e identidad de género. Igualdad, discapacidad y dependencia." },
+            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura Consejería de Sanidad y GRS (Actualizado Nov 2026)." },
+            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto del personal estatutario de SACYL y Ley de Salud." },
+            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Ley 41/2002: Autonomía del paciente, intimidad y documentación." },
+            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Ley 8/2003 de salud y protección de datos en Castilla y León." },
+            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Plan de calidad y seguridad del paciente en GRS. Eventos adversos." },
+            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Responsabilidad profesional, bioética e instrucciones previas." },
+            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Programas de Salud, Guías Clínicas y Prevención de Riesgos Laborales." },
+            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Sistemas de información en AE y AP. Registros y taxonomías." },
+            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Igualdad de género, no discriminación, discapacidad y dependencia." },
 
-            "esp_1": { parte: "especifica", label: "Tema 1", desc: "Metodología de Enfermería: PAE, Patrones de Gordon, taxonomías NANDA, NIC y NOC." },
-            "esp_2": { parte: "especifica", label: "Tema 2", desc: "Metodología de Investigación: Diseños, recogida, análisis y fases del trabajo científico." },
-            "esp_3": { parte: "especifica", label: "Tema 3", desc: "Investigación básica y aplicada en enfermería. Estudios descriptivos y diagnósticos." },
-            "esp_4": { parte: "especifica", label: "Tema 4", desc: "Estadística descriptiva e inferencial: Intervalos de confianza y contrastes de hipótesis." },
-            "esp_5": { parte: "especifica", label: "Tema 5", desc: "Epidemiología, métodos, vigilancia epidemiológica y enfermedades de declaración obligatoria." },
-            "esp_6": { parte: "especifica", label: "Tema 6", desc: "Demografía sanitaria: Indicadores de natalidad, mortalidad, migraciones y crecimiento." },
-            "esp_7": { parte: "especifica", label: "Tema 7", desc: "Salud pública, determinantes, indicadores e impacto de tabaquismo, obesidad y alcohol." },
-            "esp_8": { parte: "especifica", label: "Tema 8", desc: "Prevención y promoción de salud. Detección precoz y factores de riesgo por etapas vitales." },
-            "esp_9": { parte: "especifica", label: "Tema 9", desc: "Inmunizaciones: Tipos de vacunas, conservación, administración y calendario en CyL." },
-            "esp_10": { parte: "especifica", label: "Tema 10", desc: "Educación para la Salud individual, grupal y comunitaria: Metodología y técnicas." },
-            "esp_11": { parte: "especifica", label: "Tema 11", desc: "Estrategia de promoción y prevención en SNS. Grupos de autoayuda y agentes de salud." },
-            "esp_12": { parte: "especifica", label: "Tema 12", desc: "Habilidades de comunicación, trabajo en equipo y entrevista clínica de apoyo emocional." },
-            "esp_13": { parte: "especifica", label: "Tema 13", desc: "Higiene hospitalaria, antisepsia, esterilización, aislamiento y gestión de residuos." },
-            "esp_14": { parte: "especifica", label: "Tema 14", desc: "Desarrollo de la conducta humana, tipos de personalidad, motivación y factores socioculturales." },
-            "esp_15": { parte: "especifica", label: "Tema 15", desc: "Cuidados de enfermería en problemas psicosociales y de adaptación del paciente." },
-            "esp_16": { parte: "especifica", label: "Tema 16", desc: "Sexualidad, reproducción, métodos anticonceptivos y prevención de ITS." },
-            "esp_17": { parte: "especifica", label: "Tema 17", desc: "Valoración y cuidados en gestación, parto, puerperio, lactancia y urgencias obstétricas." },
-            "esp_18": { parte: "especifica", label: "Tema 18", desc: "Cuidados del niño sano (0-14 años), desarrollo, pruebas metabólicas, vacunas y RCP pediátrica." },
-            "esp_19": { parte: "especifica", label: "Tema 19", desc: "Cuidados del niño enfermo: Prematuridad, convulsiones, insuficiencia respiratoria y GEA." },
-            "esp_20": { parte: "especifica", label: "Tema 20", desc: "Cuidados en procesos infectocontagiosos: Hepatitis, tuberculosis, SIDA y meningitis." },
-            "esp_21": { parte: "especifica", label: "Tema 21", desc: "Cuidados en el anciano, cambios fisiológicos, valoración geriátrica integral y Plan Gerontológico." },
-            "esp_22": { parte: "especifica", label: "Tema 22", desc: "Grandes síndromes geriátricos: Caídas, inmovilismo, incontinencia y apoyo al cuidador." },
-            "esp_23": { parte: "especifica", label: "Tema 23", desc: "Cuidados en el enfermo terminal, control del dolor, escalas y manejo del duelo." },
-            "esp_24": { parte: "especifica", label: "Tema 24", desc: "Salud mental: Alzheimer, ansiedad, depresión, riesgo suicida y urgencias psiquiátricas." },
-            "esp_25": { parte: "especifica", label: "Tema 25", desc: "Plan Nacional de Drogas y manejo de urgencias por drogodependencias." },
-            "esp_26": { parte: "especifica", label: "Tema 26", desc: "Detección y prevención de malos tratos en infancia, mujer y ancianos. Violencia de género." },
-            "esp_27": { parte: "especifica", label: "Tema 27", desc: "Urgencias y emergencias: Politraumatizados, quemados, shock, intoxicaciones y RCP avanzada." },
-            "esp_28": { parte: "especifica", label: "Tema 28", desc: "Triaje y priorización en situaciones de múltiples víctimas y catástrofes." },
-            "esp_29": { parte: "especifica", label: "Tema 29", desc: "Proceso de Atención al Paciente Pluripatológico Complejo." },
-            "esp_30": { parte: "especifica", label: "Tema 30", desc: "Farmacología general, absorción, eliminación, farmacovigilancia y medicamentos de urgencia." },
-            "esp_31": { parte: "especifica", label: "Tema 31", desc: "Administración de medicamentos, vías, precauciones y cálculo de dosis." },
-            "esp_32": { parte: "especifica", label: "Tema 32", desc: "Alimentación, dietas terapéuticas y nutrición en desnutrición, obesidad y trastornos alimentarios." },
-            "esp_33": { parte: "especifica", label: "Tema 33", desc: "Nutrición enteral y parenteral: Técnicas de administración y protocolos." },
-            "esp_34": { parte: "especifica", label: "Tema 34", desc: "Cuidados en problemas neurológicos: ACV, epilepsia, esclerosis, coma y urgencias neurológicas." },
-            "esp_35": { parte: "especifica", label: "Tema 35", desc: "Cuidados respiratorios: EPOC, asma, oxigenoterapia, traqueostomías y urgencias broncopulmonares." },
-            "esp_36": { parte: "especifica", label: "Tema 36", desc: "Cuidados cardiovasculares: Insuficiencia cardíaca, IAM, HTA y urgencias cardiovasculares." },
-            "esp_37": { parte: "especifica", label: "Tema 37", desc: "Cuidados nefrourológicos: Insuficiencia renal, litiasis, sondaje y terapias de sustitución renal." },
-            "esp_38": { parte: "especifica", label: "Tema 38", desc: "Cuidados endocrinológicos: Diabetes, bocio, trastornos tiroideos y técnicas." },
-            "esp_39": { parte: "especifica", label: "Tema 39", desc: "Cuidados musculoesqueléticos: Osteoporosis, artrosis, fracturas, vendajes e inmovilizaciones." },
-            "esp_40": { parte: "especifica", label: "Tema 40", desc: "Cuidados gastrointestinales: Abdomen agudo, úlcera, obstrucción, SNG y urgencias digestivas." },
-            "esp_41": { parte: "especifica", label: "Tema 41", desc: "Cuidados hematológicos: Anemias, coagulopatías y transfusiones sanguíneas." },
-            "esp_42": { parte: "especifica", label: "Tema 42", desc: "Cuidados oftalmológicos y otorrinolaringológicos y técnicas diagnósticas." },
-            "esp_43": { parte: "especifica", label: "Tema 43", desc: "Cuidados en oncología, tratamientos, efectos secundarios y manipulación de citostáticos." },
-            "esp_44": { parte: "especifica", label: "Tema 44", desc: "Cuidados perioperatorios, CMA, drenajes, curas y suturas quirúrgicas." },
-            "esp_45": { parte: "especifica", label: "Tema 45", desc: "Cuidados de la piel y prevención/tratamiento de Úlceras por Presión (Escalas Braden, Norton, EMINA)." }
+            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Metodología de Enfermería: PAE, Patrones de Gordon y Taxonomías." },
+            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Metodología de Investigación: Diseños y fases del trabajo científico." },
+            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Investigación básica y aplicada en enfermería." },
+            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Estadística descriptiva e inferencial en ciencias de la salud." },
+            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Epidemiología, vigilancia y enfermedades de declaración obligatoria." },
+            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Demografía sanitaria e indicadores de natalidad y mortalidad." },
+            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Salud pública, determinantes e impacto de tabaquismo y obesidad." },
+            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Prevención, promoción y detección precoz por etapas vitales." },
+            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Inmunizaciones: Vacunas, conservación y calendario en CyL." },
+            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Educación para la Salud individual, grupal y comunitaria." },
+            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Estrategia de promoción y prevención en SNS. Paciente Activo." },
+            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Habilidades de comunicación y entrevista clínica de apoyo emocional." },
+            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Higiene hospitalaria, antisepsia, esterilización y residuos sanitarios." },
+            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Conducta humana, tipos de personalidad, motivación y estrés." },
+            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Cuidados de enfermería en problemas psicosociales." },
+
+            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Sexualidad, reproducción y prevención de ITS." },
+            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Gestación, parto, puerperio, lactancia y urgencias obstétricas." },
+            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Cuidados del niño sano (0-14 años), cribados y RCP pediátrica." },
+            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Cuidados del niño enfermo: Prematuridad, convulsiones y GEA." },
+            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Procesos infectocontagiosos: SIDA, hepatitis, TBC y meningitis." },
+            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Valoración geriátrica integral y cambios en el envejecimiento." },
+            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Grandes síndromes geriátricos: Caídas, inmovilismo y demencias." },
+            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Enfermo terminal, control del dolor, cuidados paliativos y duelo." },
+            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental: Depresión, ansiedad, riesgo suicida y psicosis." },
+            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Plan Nacional sobre Drogas y urgencias por adicciones." },
+            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Malos tratos y protocolo sanitario de violencia de género." },
+            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Urgencias, politraumatizados, shock, quemados y RCP avanzada." },
+            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Triaje y priorización en múltiples víctimas y catástrofes (START)." },
+            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Proceso de Atención al Paciente Pluripatológico Complejo." },
+
+            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Farmacología general, farmacovigilancia y medicamentos de urgencia." },
+            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Administración segura de medicamentos, vías y cálculo de dosis." },
+            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Alimentación, dietas terapéuticas, obesidad y trastornos alimentarios." },
+            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Nutrición enteral y parenteral domiciliaria y hospitalaria." },
+            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Problemas neurológicos: ACV, código ictus, epilepsia y coma." },
+            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Cuidados respiratorios: EPOC, asma, oxigenoterapia y traqueostomías." },
+            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Problemas cardiovasculares: Insuficiencia cardíaca, IAM e HTA." },
+            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Sistema renal y urológico: Sondaje vesical, IR y diálisis." },
+            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Problemas endocrinológicos: Diabetes mellitus y tiroides." },
+            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Sistema músculo-esquelético: Fracturas, artrosis e inmovilizaciones." },
+            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Problemas gastrointestinales: Abdomen agudo, SNG y obstrucción." },
+            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Problemas hematológicos y protocolo de transfusiones sanguíneas." },
+            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Cuidados oftalmológicos y otorrinolaringológicos." },
+            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Oncología: Tratamientos, efectos secundarios y citostáticos." },
+            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Cuidados perioperatorios, CMA y cirugía segura (checklist OMS)." },
+            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Cuidados de la piel y prevención/tratamiento de UPP (Braden/Norton)." }
         };
 
         window.addEventListener('DOMContentLoaded', async () => {
+            document.getElementById('select-modalidad').value = modalidadActual;
+            actualizarUIModalidad();
+            actualizarUIGenero();
+            verificarMetaDiariaUI();
+
             for (const exam of LISTA_EXAMENES_OFICIALES) {
                 try {
                     const response = await fetch(exam.archivo);
@@ -417,84 +473,143 @@
                     console.error(`Error cargando ${exam.archivo}:`, error);
                 }
             }
-            renderizarCuadrosTemas();
+            renderizarAcordeonesTemas();
             poblarSelectoresPDF();
         });
+
+        function solicitarPermisoNotificaciones() {
+            if ("Notification" in window) {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        new Notification("ENFOPOS - LAAF", { body: "¡Notificaciones activadas! Te recordaremos hacer tus 50 preguntas diarias." });
+                    }
+                });
+            } else {
+                alert("Tu navegador no soporta notificaciones de escritorio.");
+            }
+        }
+
+        function verificarMetaDiariaUI() {
+            const banner = document.getElementById('banner-meta-diaria');
+            const contadorResumen = document.getElementById('contador-hoy-resumen');
+            if (contadorResumen) contadorResumen.textContent = registroDiario.total;
+
+            if (registroDiario.total < 50) {
+                banner.classList.remove('hidden');
+                if ("Notification" in window && Notification.permission === "granted") {
+                    if (!sessionStorage.getItem('notif_enviada')) {
+                        new Notification("ENFOPOS SACYL", { body: `Llevas ${registroDiario.total}/50 preguntas hoy. ¡Aún te faltan para cumplir tu meta diaria!` });
+                        sessionStorage.setItem('notif_enviada', 'true');
+                    }
+                }
+            } else {
+                banner.classList.add('hidden');
+            }
+        }
+
+        function registrarPreguntaRespondidaDiaria() {
+            registroDiario.total++;
+            localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
+            verificarMetaDiariaUI();
+        }
+
+        function cambiarModalidadOposicion() {
+            modalidadActual = document.getElementById('select-modalidad').value;
+            localStorage.setItem('enfopos_modalidad', modalidadActual);
+            estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
+            preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
+            
+            let hoyStr = new Date().toISOString().slice(0, 10);
+            registroDiario = JSON.parse(localStorage.getItem(`enfopos_diario_${modalidadActual}`) || `{"fecha": "${hoyStr}", "total": 0}`);
+            if (registroDiario.fecha !== hoyStr) {
+                registroDiario = { fecha: hoyStr, total: 0 };
+                localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
+            }
+
+            actualizarUIModalidad();
+            renderizarAcordeonesTemas();
+            verificarMetaDiariaUI();
+        }
+
+        function actualizarUIModalidad() {
+            document.getElementById('titulo-modalidad-label').textContent = modalidadActual === 'libre' ? "Estado del Repositorio LAAF (Turno Libre)" : "Estado del Repositorio LAAF (Promoción Interna)";
+        }
+
+        function cambiarGenero(nuevoGenero) {
+            generoActual = nuevoGenero;
+            localStorage.setItem('enfopos_genero', generoActual);
+            actualizarUIGenero();
+        }
+
+        function actualizarUIGenero() {
+            const btnEl = document.getElementById('btn-genero-el');
+            const btnElla = document.getElementById('btn-genero-ella');
+            if (generoActual === 'el') {
+                btnEl.className = "px-2.5 py-1 rounded-lg bg-indigo-700 text-white shadow-xs transition";
+                btnElla.className = "px-2.5 py-1 rounded-lg text-slate-600 hover:bg-slate-200 transition";
+            } else {
+                btnElla.className = "px-2.5 py-1 rounded-lg bg-indigo-700 text-white shadow-xs transition";
+                btnEl.className = "px-2.5 py-1 rounded-lg text-slate-600 hover:bg-slate-200 transition";
+            }
+        }
+
+        function toggleAcordeon(bloqueId) {
+            document.getElementById(`content-${bloqueId}`).classList.toggle('hidden');
+            document.getElementById(`icon-${bloqueId}`).classList.toggle('rotate-180');
+        }
 
         function poblarSelectoresPDF() {
             const selectGen = document.getElementById('select-tema-general-pdf');
             const selectEsp = document.getElementById('select-tema-especifica-pdf');
             const selectPrint = document.getElementById('select-print-tema');
-            
-            selectGen.innerHTML = '';
-            selectEsp.innerHTML = '';
+            selectGen.innerHTML = ''; selectEsp.innerHTML = '';
             selectPrint.innerHTML = '<option value="todos">-- Todos los temas del repositorio --</option>';
 
             Object.keys(CATALOGO_TEMAS).forEach(temaId => {
                 const info = CATALOGO_TEMAS[temaId];
                 const opt = document.createElement('option');
-                opt.value = temaId;
-                opt.textContent = `${info.label}: ${info.desc}`;
-
-                if (info.parte === "general") {
-                    selectGen.appendChild(opt);
-                } else {
-                    selectEsp.appendChild(opt);
-                }
+                opt.value = temaId; opt.textContent = `${info.label}: ${info.desc}`;
+                if (info.bloque === "bloque-gen") selectGen.appendChild(opt);
+                else selectEsp.appendChild(opt);
                 selectPrint.appendChild(opt.cloneNode(true));
             });
         }
 
-        function renderizarCuadrosTemas() {
-            const contenedorGen = document.getElementById('grid-temas-generales');
-            const contenedorEsp = document.getElementById('grid-temas-especificos');
-            contenedorGen.innerHTML = '';
-            contenedorEsp.innerHTML = '';
-
-            let indexColor = 0;
-            let totalPreguntasTemasAcumuladas = 0; // Suma exclusiva de los temas
+        function renderizarAcordeonesTemas() {
+            const contenedores = {
+                "bloque-gen": document.getElementById('content-bloque-gen'),
+                "bloque-esp-1": document.getElementById('content-bloque-esp-1'),
+                "bloque-esp-2": document.getElementById('content-bloque-esp-2'),
+                "bloque-esp-3": document.getElementById('content-bloque-esp-3')
+            };
+            Object.values(contenedores).forEach(c => c.innerHTML = '');
+            let indexColor = 0, totalPreguntasTemasAcumuladas = 0;
 
             Object.keys(CATALOGO_TEMAS).forEach(temaId => {
                 const info = CATALOGO_TEMAS[temaId];
                 const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
-                
-                // Cuenta exacta filtrando únicamente por el temaId correspondiente
                 const totalTema = bancoPreguntasGlobal.filter(q => q.temaId === temaId).length;
                 totalPreguntasTemasAcumuladas += totalTema;
 
-                const colorClase = COLORES_PASTEL[indexColor % COLORES_PASTEL.length];
-                indexColor++;
-
                 const card = document.createElement('div');
-                card.className = `p-4 rounded-2xl border transition shadow-2xs flex flex-col justify-between cursor-pointer ${colorClase}`;
+                card.className = `p-4 rounded-2xl border transition shadow-2xs flex flex-col justify-between cursor-pointer ${COLORES_PASTEL[indexColor++ % COLORES_PASTEL.length]}`;
                 card.onclick = () => iniciarEstudioTema(temaId);
-
                 card.innerHTML = `
                     <div>
                         <div class="flex justify-between items-center mb-2">
-                            <span class="text-xs sm:text-sm font-extrabold text-slate-900 bg-white/80 px-2.5 py-0.5 rounded-lg shadow-2xs">${info.label}</span>
+                            <span class="text-xs font-extrabold text-slate-900 bg-white/80 px-2.5 py-0.5 rounded-lg shadow-2xs">${info.label}</span>
                             <span class="text-xs font-mono font-bold bg-white/80 text-slate-700 px-2.5 py-0.5 rounded-lg shadow-2xs">${totalTema} pgs</span>
                         </div>
                         <p class="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed mb-3.5">${info.desc}</p>
                     </div>
-                    <div class="flex items-center justify-between pt-3 border-t border-slate-200/60 text-xs sm:text-sm font-bold">
-                        <span class="text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded-lg">✓ ${stats.aciertos} aciertos</span>
-                        <span class="text-rose-800 bg-rose-100/80 px-2.5 py-1 rounded-lg">✕ ${stats.fallos} fallos</span>
+                    <div class="flex items-center justify-between pt-3 border-t border-slate-200/60 text-xs font-bold">
+                        <span class="text-emerald-800 bg-emerald-100/80 px-2.5 py-1 rounded-lg">✓ ${stats.aciertos}</span>
+                        <span class="text-rose-800 bg-rose-100/80 px-2.5 py-1 rounded-lg">✕ ${stats.fallos}</span>
                     </div>
                 `;
-
-                if (info.parte === "general") {
-                    contenedorGen.appendChild(card);
-                } else {
-                    contenedorEsp.appendChild(card);
-                }
+                if (contenedores[info.bloque]) contenedores[info.bloque].appendChild(card);
             });
-
-            // Actualiza el contador global mostrando exclusivamente las preguntas de los temas de estudio
-            const elContador = document.getElementById('contador-total-global');
-            if (elContador) {
-                elContador.textContent = totalPreguntasTemasAcumuladas;
-            }
+            document.getElementById('contador-total-global').textContent = totalPreguntasTemasAcumuladas;
         }
 
         function barajarArray(array) {
@@ -508,9 +623,9 @@
         }
 
         function comprobarExamenGuardado() {
-            const guardado = localStorage.getItem('enfopos_examen_activo');
+            const guardado = localStorage.getItem(`enfopos_examen_activo_${modalidadActual}`);
             if (guardado) {
-                if (confirm("Tienes un Examen de Oposición guardado a medias. ¿Deseas continuar por donde ibas? (Cancelar para empezar uno nuevo)")) {
+                if (confirm("Tienes un Examen de Oposición guardado a medias. ¿Deseas continuar?")) {
                     cargarExamenGuardado(JSON.parse(guardado));
                     return;
                 }
@@ -519,43 +634,25 @@
         }
 
         function iniciarNuevoExamenOposicion() {
-            if (bancoPreguntasGlobal.length < 10) {
-                alert("Se necesitan al menos 10 preguntas en el repositorio para simular el examen oficial.");
-                return;
-            }
-
+            if (bancoPreguntasGlobal.length < 10) return alert("Se necesitan preguntas en el repositorio.");
             let genPool = bancoPreguntasGlobal.filter(q => q.temaId && q.temaId.startsWith('gen'));
             let espPool = bancoPreguntasGlobal.filter(q => q.temaId && q.temaId.startsWith('esp'));
+            barajarArray(genPool); barajarArray(espPool);
 
-            barajarArray(genPool);
-            barajarArray(espPool);
-
-            let preguntasGen = genPool.slice(0, Math.min(15, genPool.length));
-            let preguntasEsp = espPool.slice(0, Math.min(75, espPool.length));
-            
-            let principal = [...preguntasGen, ...preguntasEsp];
-            barajarArray(principal);
-            principal = principal.slice(0, 90);
-
-            let restoGen = genPool.slice(preguntasGen.length);
-            let restoEsp = espPool.slice(preguntasEsp.length);
-            let reservaPool = [...restoGen, ...restoEsp];
-            barajarArray(reservaPool);
-            let reserva = reservaPool.slice(0, 10);
-
+            let principal = [...genPool.slice(0, 15), ...espPool.slice(0, 75)];
+            barajarArray(principal); principal = principal.slice(0, 90);
+            let reserva = [...genPool.slice(15), ...espPool.slice(75)];
+            barajarArray(reserva); reserva = reserva.slice(0, 10);
             reserva.forEach(q => q.esReserva = true);
 
             preguntasActivas = JSON.parse(JSON.stringify([...principal, ...reserva]));
             prepararPreguntasYRespuestas();
-
-            indiceActual = 0;
-            aciertos = 0;
-            fallos = 0;
-            tiempoRestanteSegundos = 130 * 60;
+            indiceActual = 0; aciertos = 0; fallos = 0; tiempoRestanteSegundos = 130 * 60;
+            segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
 
             guardarProgresoExamen();
-            arrancarQuizUI("Examen de Oposición Oficial (90p + 10r)");
-            iniciarCronometro();
+            arrancarQuizUI("Examen de Oposición Oficial");
+            iniciarCronometrosQuiz();
         }
 
         function cargarExamenGuardado(estado) {
@@ -564,77 +661,82 @@
             aciertos = estado.aciertos;
             fallos = estado.fallos;
             tiempoRestanteSegundos = estado.tiempoRestanteSegundos;
+            segundosAcumuladosTest = estado.segundosAcumuladosTest || 0;
+            segundosPreguntaActual = 0;
 
             arrancarQuizUI("Examen de Oposición (Continuación)");
-            iniciarCronometro();
+            iniciarCronometrosQuiz();
         }
 
         function guardarProgresoExamen() {
-            const estado = {
-                preguntasActivas,
-                indiceActual,
-                aciertos,
-                fallos,
-                tiempoRestanteSegundos
-            };
-            localStorage.setItem('enfopos_examen_activo', JSON.stringify(estado));
+            localStorage.setItem(`enfopos_examen_activo_${modalidadActual}`, JSON.stringify({ preguntasActivas, indiceActual, aciertos, fallos, tiempoRestanteSegundos, segundosAcumuladosTest }));
         }
 
         function abandonarExamen() {
             guardarProgresoExamen();
-            detenerCronometro();
-            alert("Progreso guardado correctamente. Puedes retomarlo cuando quieras.");
+            detenerCronometrosQuiz();
+            alert("Progreso guardado correctamente.");
             volverMenu();
         }
 
-        function iniciarCronometro() {
-            detenerCronometro();
-            timerInterval = setInterval(() => {
+        function iniciarCronometrosQuiz() {
+            detenerCronometrosQuiz();
+            cronometrosQuizInterval = setInterval(() => {
                 tiempoRestanteSegundos--;
+                segundosAcumuladosTest++;
+                segundosPreguntaActual++;
+
+                // Formatear Tiempo Total / Restante
                 let m = Math.floor(tiempoRestanteSegundos / 60);
                 let s = tiempoRestanteSegundos % 60;
                 document.getElementById('quiz-timer').textContent = `⏱️ ${m.toString().padStart(2,'0')}:${s.toString().padStart(2,'0')}`;
-                
+
+                let minAcum = Math.floor(segundosAcumuladosTest / 60);
+                let secAcum = segundosAcumuladosTest % 60;
+                document.getElementById('cronometro-acumulado').textContent = `${minAcum.toString().padStart(2,'0')}:${secAcum.toString().padStart(2,'0')}`;
+
+                let minP = Math.floor(segundosPreguntaActual / 60);
+                let secP = segundosPreguntaActual % 60;
+                document.getElementById('cronometro-pregunta').textContent = `${minP.toString().padStart(2,'0')}:${secP.toString().padStart(2,'0')}`;
+
                 if (tiempoRestanteSegundos <= 0) {
-                    detenerCronometro();
+                    detenerCronometrosQuiz();
                     alert("¡Tiempo finalizado!");
                     finalizarExamenOposicion();
                 }
             }, 1000);
         }
 
-        function detenerCronometro() {
-            if (timerInterval) clearInterval(timerInterval);
+        function detenerCronometrosQuiz() {
+            if (cronometrosQuizInterval) clearInterval(cronometrosQuizInterval);
         }
 
         function iniciarModoPráctica() {
             if (bancoPreguntasGlobal.length === 0) return alert("No hay preguntas cargadas.");
             preguntasActivas = JSON.parse(JSON.stringify(bancoPreguntasGlobal));
+            barajarArray(preguntasActivas);
             prepararPreguntasYRespuestas();
-            arrancarQuizUI("Práctica Global");
+            arrancarQuizUI("Práctica Global Aleatoria");
             document.getElementById('quiz-timer').parentElement.classList.add('hidden');
+            segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
+            iniciarCronometrosQuiz();
         }
 
         function iniciarEstudioTema(temaId) {
             const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId);
-            if (filtradas.length === 0) {
-                alert("No hay preguntas registradas todavía para este tema específico.");
-                return;
-            }
-            window.currentTemaIdContext = temaId;
+            if (filtradas.length === 0) return alert("No hay preguntas para este tema.");
             preguntasActivas = JSON.parse(JSON.stringify(filtradas));
+            barajarArray(preguntasActivas);
             prepararPreguntasYRespuestas();
             arrancarQuizUI(CATALOGO_TEMAS[temaId].label + ": " + CATALOGO_TEMAS[temaId].desc);
             document.getElementById('quiz-timer').parentElement.classList.add('hidden');
+            segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
+            iniciarCronometrosQuiz();
         }
 
         function prepararPreguntasYRespuestas() {
-            barajarArray(preguntasActivas);
             preguntasActivas.forEach(q => {
-                let opcionesMapeadas = q.opciones.map((textoOp, idxOriginal) => ({
-                    texto: textoOp,
-                    esCorrecta: (idxOriginal === q.correctaOriginal)
-                }));
+                let opcionesMapeadas = q.opciones.map((textoOp, idxOriginal) => ({ texto: textoOp, esCorrecta: (idxOriginal === q.correctaOriginal) }));
                 barajarArray(opcionesMapeadas);
                 q.opciones = opcionesMapeadas.map(o => o.texto);
                 q.correctaOriginal = opcionesMapeadas.findIndex(o => o.esCorrecta);
@@ -643,6 +745,9 @@
 
         function arrancarQuizUI(badgeTexto) {
             respuestaSeleccionada = false;
+            aciertos = 0; fallos = 0; indiceActual = 0;
+            segundosPreguntaActual = 0;
+            
             document.getElementById('view-menu').classList.add('hidden');
             document.getElementById('view-estadisticas').classList.add('hidden');
             document.getElementById('view-imprimir').classList.add('hidden');
@@ -654,11 +759,19 @@
 
             document.getElementById('quiz-badge').textContent = badgeTexto;
             document.getElementById('total-q-num').textContent = preguntasActivas.length;
+            actualizarContadorEnVivo();
             mostrarPregunta();
+        }
+
+        function actualizarContadorEnVivo() {
+            document.getElementById('live-aciertos').textContent = aciertos;
+            document.getElementById('live-fallos').textContent = fallos;
+            document.getElementById('live-restantes').textContent = preguntasActivas.length - indiceActual;
         }
 
         function mostrarPregunta() {
             respuestaSeleccionada = false;
+            segundosPreguntaActual = 0; // Reinicia el contador de tiempo de esta pregunta
             document.getElementById('btn-siguiente').classList.add('hidden');
             document.getElementById('quiz-explicacion-box').classList.add('hidden');
             document.getElementById('current-q-num').textContent = indiceActual + 1;
@@ -668,11 +781,11 @@
 
             const tipoBadge = document.getElementById('quiz-tipo-pregunta');
             if (q.esReserva) {
-                tipoBadge.textContent = `Pregunta de Reserva ${indiceActual - 89}`;
-                tipoBadge.className = "text-xs sm:text-sm font-bold text-amber-900 bg-amber-50 border border-amber-200 px-3.5 py-1.5 rounded-full";
+                tipoBadge.textContent = `Pregunta de Reserva`;
+                tipoBadge.className = "text-xs font-bold text-amber-900 bg-amber-50 border border-amber-200 px-3.5 py-1.5 rounded-full";
             } else {
-                tipoBadge.textContent = `Pregunta ${indiceActual + 1}`;
-                tipoBadge.className = "text-xs sm:text-sm font-bold text-indigo-800 bg-indigo-50 border border-indigo-200 px-3.5 py-1.5 rounded-full";
+                tipoBadge.textContent = `Pregunta ${indiceActual + 1} de ${preguntasActivas.length}`;
+                tipoBadge.className = "text-xs font-bold text-indigo-800 bg-indigo-50 border border-indigo-200 px-3.5 py-1.5 rounded-full";
             }
 
             const contenedorOpciones = document.getElementById('quiz-opciones');
@@ -692,18 +805,19 @@
             respuestaSeleccionada = true;
 
             const q = preguntasActivas[indiceActual];
-            q.usuarioRespondio = indexElegido;
             const botones = document.getElementById('quiz-opciones').children;
 
-            if (q.temaId) {
-                if (!estadisticasTemas[q.temaId]) estadisticasTemas[q.temaId] = { aciertos: 0, fallos: 0 };
-            }
+            if (q.temaId && !estadisticasTemas[q.temaId]) estadisticasTemas[q.temaId] = { aciertos: 0, fallos: 0 };
+
+            // REGISTRAR CADA RESPUESTA PARA LA META DIARIA DE 50
+            registrarPreguntaRespondidaDiaria();
 
             if (indexElegido === q.correctaOriginal) {
                 aciertos++;
                 q.esAcertada = true;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-emerald-400 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-2xs";
                 if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
+                verificarFraseMotivadoraAciertos();
             } else {
                 fallos++;
                 q.esAcertada = false;
@@ -713,11 +827,12 @@
                 
                 if (q.enunciado && !preguntasFalladasHistorial.some(f => f.enunciado === q.enunciado)) {
                     preguntasFalladasHistorial.push(q);
-                    localStorage.setItem('enfopos_falladas_historial', JSON.stringify(preguntasFalladasHistorial));
+                    localStorage.setItem(`enfopos_falladas_${modalidadActual}`, JSON.stringify(preguntasFalladasHistorial));
                 }
             }
 
-            localStorage.setItem('enfopos_stats', JSON.stringify(estadisticasTemas));
+            localStorage.setItem(`enfopos_stats_${modalidadActual}`, JSON.stringify(estadisticasTemas));
+            actualizarContadorEnVivo();
 
             if (q.explicacion || q.fuente) {
                 document.getElementById('quiz-explicacion-texto').textContent = `${q.explicacion || ''} (Fuente: ${q.fuente || 'Oficial'})`;
@@ -726,6 +841,22 @@
 
             document.getElementById('btn-siguiente').classList.remove('hidden');
             guardarProgresoExamen();
+        }
+
+        function verificarFraseMotivadoraAciertos() {
+            const banner = document.getElementById('live-motivacion-banner');
+            let textoMotivacion = "";
+
+            if (aciertos === 50) {
+                textoMotivacion = generoActual === 'el' ? "🔥 ¡IMPARABLE! Llevas 50 aciertos. ¡Estás demostrando una dedicación titánica, campeón!" : "🔥 ¡IMPARABLE! Llevas 50 aciertos. ¡Estás demostrando una dedicación titánica, campeona!";
+                banner.className = "bg-gradient-to-r from-purple-600 to-indigo-700 text-white p-3.5 rounded-2xl text-center font-bold text-xs sm:text-sm shadow-md anim-motivacion";
+                banner.textContent = textoMotivacion; banner.classList.remove('hidden');
+            } else if (aciertos > 0 && aciertos % 10 === 0) {
+                textoMotivacion = `⚡ ¡Genial! ¡Ya acumulas ${aciertos} aciertos! Sigue así que la plaza es tuya.`;
+                banner.className = "bg-gradient-to-r from-amber-500 to-emerald-600 text-white p-3.5 rounded-2xl text-center font-bold text-xs sm:text-sm shadow-md anim-motivacion";
+                banner.textContent = textoMotivacion; banner.classList.remove('hidden');
+                setTimeout(() => { banner.classList.add('hidden'); }, 4000);
+            }
         }
 
         function siguientePregunta() {
@@ -738,8 +869,8 @@
         }
 
         function finalizarExamenOposicion() {
-            detenerCronometro();
-            localStorage.removeItem('enfopos_examen_activo');
+            detenerCronometrosQuiz();
+            localStorage.removeItem(`enfopos_examen_activo_${modalidadActual}`);
 
             document.getElementById('view-quiz').classList.add('hidden');
             document.getElementById('header-stats').classList.add('hidden');
@@ -747,193 +878,87 @@
 
             let puntuacionFinal = aciertos - (fallos * 0.25);
             if (puntuacionFinal < 0) puntuacionFinal = 0;
+            let notaSobre10 = (puntuacionFinal / (preguntasActivas.length || 90)) * 10;
+            if(notaSobre10 > 10) notaSobre10 = 10;
 
             document.getElementById('score-circle').textContent = `${puntuacionFinal.toFixed(2)} pts`;
+            generarMensajeResultadosFinales(notaSobre10);
+
             document.getElementById('score-details').innerHTML = `
-                Aciertos: <strong class="text-emerald-800">${aciertos}</strong> (+${aciertos} pts)<br>
-                Fallos: <strong class="text-rose-800">${fallos}</strong> (-${(fallos * 0.25).toFixed(2)} pts por penalización)<br>
-                No contestadas: <strong>${preguntasActivas.length - (aciertos + fallos)}</strong><br>
-                <span class="text-xs sm:text-sm text-slate-600 mt-2 block font-medium">Puntuación neta calculada según bases de la convocatoria.</span>
+                Aciertos: <strong class="text-emerald-800">${aciertos}</strong><br>
+                Fallos: <strong class="text-rose-800">${fallos}</strong><br>
+                Nota estimada sobre 10: <strong class="text-indigo-800">${notaSobre10.toFixed(2)} / 10</strong><br>
+                <span class="text-xs text-slate-600 mt-2 block font-medium">Baremos calculados según bases de SACYL.</span>
             `;
-            renderizarCuadrosTemas();
-            window.currentTemaIdContext = null;
+            renderizarAcordeonesTemas();
         }
 
-        // --- GESTIÓN DE EXÁMENES PDF ---
-        function mostrarPantallaImprimir() {
-            document.getElementById('view-menu').classList.add('hidden');
-            document.getElementById('view-imprimir').classList.remove('hidden');
+        function generarMensajeResultadosFinales(nota) {
+            const box = document.getElementById('resultado-motivacion-box');
+            let htmlMsg = "";
+            if (nota >= 10) {
+                htmlMsg = generoActual === 'el' ? `<div class="bg-emerald-100 border border-emerald-300 text-emerald-950 p-4 rounded-2xl font-extrabold text-base">👑 ¡Impresionante! ¡Eres el mejor del mundo mundial en esta oposición!</div>` : `<div class="bg-emerald-100 border border-emerald-300 text-emerald-950 p-4 rounded-2xl font-extrabold text-base">👑 ¡Impresionante! ¡Eres la mejor del mundo mundial en esta oposición!</div>`;
+            } else if (nota >= 8) {
+                htmlMsg = generoActual === 'el' ? `<div class="bg-indigo-100 border border-indigo-300 text-indigo-950 p-4 rounded-2xl font-extrabold text-sm">🚀 ¡Brutal! ¡Esa plaza de enfermero en SACYL ya tiene tu nombre escrito!</div>` : `<div class="bg-indigo-100 border border-indigo-300 text-indigo-950 p-4 rounded-2xl font-extrabold text-sm">🚀 ¡Brutal! ¡Esa plaza de enfermera en SACYL ya tiene tu nombre escrito!</div>`;
+            } else if (nota >= 7) {
+                htmlMsg = `<div class="bg-sky-100 border border-sky-300 text-sky-950 p-4 rounded-2xl font-bold text-sm">💪 ¡Excelente trabajo! Tu esfuerzo diario está dando frutos extraordinarios.</div>`;
+            } else if (nota >= 5) {
+                htmlMsg = `<div class="bg-emerald-50 border border-emerald-200 text-emerald-900 p-4 rounded-2xl font-medium text-sm">🎯 ¡Aprobado conseguido! Has superado el listón con éxito.</div>`;
+            } else {
+                htmlMsg = `<div class="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-2xl font-medium text-sm">📚 ¡Cada fallo es un aprendizaje directo para el examen real!</div>`;
+            }
+            box.innerHTML = htmlMsg;
         }
 
+        // OTROS MÓDULOS (PDF, ESTADÍSTICAS, FUENTES)
+        function mostrarPantallaImprimir() { document.getElementById('view-menu').classList.add('hidden'); document.getElementById('view-imprimir').classList.remove('hidden'); }
         function generarYImprimirPDF() {
             const tipoPrint = document.querySelector('input[name="tipo-print"]:checked').value;
             const temaSeleccionado = document.getElementById('select-print-tema').value;
-
-            let poolPreguntas = [];
-
-            if (tipoPrint === 'falladas') {
-                poolPreguntas = [...preguntasFalladasHistorial];
-                if (temaSeleccionado !== 'todos') {
-                    poolPreguntas = poolPreguntas.filter(q => q.temaId === temaSeleccionado);
-                }
-                if (poolPreguntas.length === 0) {
-                    alert("No hay preguntas falladas registradas en este criterio para imprimir.");
-                    return;
-                }
-            } else {
-                poolPreguntas = [...bancoPreguntasGlobal];
-                if (temaSeleccionado !== 'todos') {
-                    poolPreguntas = poolPreguntas.filter(q => q.temaId === temaSeleccionado);
-                }
-                if (poolPreguntas.length === 0) {
-                    alert("No hay preguntas en el repositorio para este tema.");
-                    return;
-                }
-                barajarArray(poolPreguntas);
-                poolPreguntas = poolPreguntas.slice(0, 50);
-            }
-
-            const printArea = document.getElementById('pdf-print-area');
-            
-            let htmlHTML = `
-                <div style="font-family: sans-serif; padding: 20px; color: black;">
-                    <div style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px;">
-                        <h2 style="margin: 0; font-size: 18px;">ENFOPOS - PREPARACIÓN OPOSICIÓN ENFERMERÍA SACYL</h2>
-                        <p style="margin: 5px 0 0; font-size: 12px; font-weight: bold;">AUTOR: LAAF | Modalidad: ${tipoPrint === 'falladas' ? 'EXAMEN DE PREGUNTAS FALLADAS' : 'SIMULACRO DE EXAMEN'}</p>
-                    </div>
-            `;
-
-            poolPreguntas.forEach((q, idx) => {
-                htmlHTML += `
-                    <div style="margin-bottom: 15px; page-break-inside: avoid;">
-                        <p style="font-weight: bold; font-size: 13px; margin: 0 0 5px 0;">${idx + 1}. ${q.enunciado}</p>
-                        <div style="margin-left: 15px; font-size: 12px;">
-                `;
-                q.opciones.forEach((op, opIdx) => {
-                    htmlHTML += `<div style="margin-bottom: 3px;"><strong>${String.fromCharCode(65 + opIdx)})</strong> ${op}</div>`;
-                });
+            let pool = tipoPrint === 'falladas' ? [...preguntasFalladasHistorial] : [...bancoPreguntasGlobal];
+            if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
+            if (pool.length === 0) return alert("No hay preguntas disponibles.");
+            let printArea = document.getElementById('pdf-print-area');
+            let htmlHTML = `<div style="font-family: sans-serif; padding: 20px; color: black;"><h2 style="text-align:center;">ENFOPOS - EXAMEN SACYL (${modalidadActual.toUpperCase()})</h2>`;
+            pool.forEach((q, idx) => {
+                htmlHTML += `<div style="margin-bottom: 15px; page-break-inside: avoid;"><p><b>${idx + 1}.</b> ${q.enunciado}</p><div>`;
+                q.opciones.forEach((op, opIdx) => { htmlHTML += `<div><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`; });
                 htmlHTML += `</div></div>`;
             });
-
-            htmlHTML += `
-                <div class="page-break"></div>
-                <div style="margin-top: 30px; border-top: 2px dashed #333; padding-top: 20px;">
-                    <h3 style="text-align: center; font-size: 16px; margin-bottom: 15px;">PLANTILLA DE RESPUESTAS OFICIALES</h3>
-                    <p style="text-align: center; font-size: 11px; margin-bottom: 20px;">Marque con una X la respuesta correcta.</p>
-                    <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
-            `;
-
-            for (let i = 0; i < poolPreguntas.length; i += 5) {
-                htmlHTML += `<tr>`;
-                for (let j = i; j < i + 5 && j < poolPreguntas.length; j++) {
-                    htmlHTML += `
-                        <td style="border: 1px solid #999; padding: 6px; text-align: center;">
-                            <strong>${j + 1}.</strong> [ A ] [ B ] [ C ] [ D ]
-                        </td>
-                    `;
-                }
-                htmlHTML += `</tr>`;
-            }
-
-            htmlHTML += `</table></div></div>`;
-
-            printArea.innerHTML = htmlHTML;
-            window.print();
+            printArea.innerHTML = htmlHTML; window.print();
         }
-
-        // --- GESTIÓN DE DESCARGA DE TEMARIO PDF ---
-        function mostrarPantallaTemarioPDF() {
-            document.getElementById('view-menu').classList.add('hidden');
-            document.getElementById('view-temario-pdf').classList.remove('hidden');
-        }
-
+        function mostrarPantallaTemarioPDF() { document.getElementById('view-menu').classList.add('hidden'); document.getElementById('view-temario-pdf').classList.remove('hidden'); }
         function descargarTemaPDF(parte) {
-            const selectId = parte === 'general' ? 'select-tema-general-pdf' : 'select-tema-especifica-pdf';
-            const temaId = document.getElementById(selectId).value;
+            const temaId = document.getElementById(parte === 'general' ? 'select-tema-general-pdf' : 'select-tema-especifica-pdf').value;
             const info = CATALOGO_TEMAS[temaId];
-
-            if (!info) {
-                alert("Selecciona un tema válido.");
-                return;
-            }
-
-            const printArea = document.getElementById('pdf-print-area');
-            
-            let htmlHTML = `
+            if (!info) return alert("Selecciona un tema.");
+            document.getElementById('pdf-print-area').innerHTML = `
                 <div style="font-family: sans-serif; padding: 30px; color: black; line-height: 1.6;">
-                    <div style="text-align: center; border-bottom: 3px solid #4338ca; padding-bottom: 15px; margin-bottom: 25px;">
-                        <h1 style="margin: 0; font-size: 20px; color: #4338ca;">ENFOPOS - TEMARIO OFICIAL SACYL</h1>
-                        <p style="margin: 5px 0 0; font-size: 14px; font-weight: bold;">AUTOR: LAAF | Oposición Enfermería SACYL</p>
-                    </div>
-                    
-                    <div style="background: #f8fafc; border-left: 5px solid #4338ca; padding: 15px; margin-bottom: 25px;">
-                        <h2 style="margin: 0 0 5px 0; font-size: 18px; color: #1e293b;">${info.label}: ${info.desc}</h2>
-                        <p style="margin: 0; font-size: 12px; color: #64748b;">Bloque: ${info.parte === 'general' ? 'Parte General' : 'Parte Específica'} | Documento de estudio independiente.</p>
-                    </div>
-
-                    <div style="font-size: 13px; space-y: 15px;">
-                        <h3 style="font-size: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; color: #334155;">1. Introducción y Marco Normativo</h3>
-                        <p>Desarrollo exhaustivo de los contenidos oficiales correspondientes al ${info.label} (${info.desc}) exigidos en el programa de la convocatoria actual del Servicio de Salud de Castilla y León (SACYL).</p>
-                        
-                        <h3 style="font-size: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; color: #334155; margin-top: 20px;">2. Puntos Clave para el Examen</h3>
-                        <ul style="padding-left: 20px;">
-                            <li>Dominio de la legislación aplicable y plazos legales vigentes.</li>
-                            <li>Protocolos de actuación clínica y metodologías asistenciales basadas en la evidencia.</li>
-                            <li>Preguntas tipo test recurrentes en convocatorias anteriores de SACYL.</li>
-                        </ul>
-
-                        <h3 style="font-size: 15px; border-bottom: 1px solid #cbd5e1; padding-bottom: 5px; color: #334155; margin-top: 20px;">3. Notas y Resumen de Estudio</h3>
-                        <div style="border: 1px dashed #cbd5e1; padding: 20px; border-radius: 8px; height: 200px; color: #94a3b8; text-align: center; margin-top: 10px;">
-                            [ Espacio reservado para anotaciones personales de LAAF ]
-                        </div>
-                    </div>
-
-                    <div style="margin-top: 40px; text-align: center; font-size: 10px; color: #94a3b8; border-top: 1px solid #e2e8f0; pt-10px;">
-                        ENFOPOS - Aplicación no oficial creada por LAAF para estudio de oposiciones SACYL.
-                    </div>
-                </div>
-            `;
-
-            printArea.innerHTML = htmlHTML;
+                    <h1 style="color: #4338ca;">ENFOPOS - TEMARIO OFICIAL SACYL (NOV 2026)</h1>
+                    <h2>${info.label}: ${info.desc}</h2>
+                    <p>Contenido actualizado y desarrollado para estudio independiente de oposiciones.</p>
+                </div>`;
             window.print();
         }
-
         function mostrarPantallaEstadisticas() {
             document.getElementById('view-menu').classList.add('hidden');
             document.getElementById('view-estadisticas').classList.remove('hidden');
-
-            const listaEl = document.getElementById('lista-estadisticas');
-            listaEl.innerHTML = '';
-
+            const listaEl = document.getElementById('lista-estadisticas'); listaEl.innerHTML = '';
             Object.keys(CATALOGO_TEMAS).forEach(temaId => {
                 const info = CATALOGO_TEMAS[temaId];
                 const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
-                const totalIntentos = stats.aciertos + stats.fallos;
-                const porcentaje = totalIntentos > 0 ? Math.round((stats.aciertos / totalIntentos) * 100) : 0;
-
-                const item = document.createElement('div');
-                item.className = "p-4.5 sm:p-5 rounded-2xl border border-slate-200 bg-white shadow-2xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4";
-                item.innerHTML = `
-                    <div>
-                        <h4 class="text-sm sm:text-base font-bold text-slate-900">${info.label}: ${info.desc}</h4>
-                        <p class="text-xs sm:text-sm text-slate-600 mt-1">Aciertos: <strong class="text-emerald-800">${stats.aciertos}</strong> | Fallos: <strong class="text-rose-800">${stats.fallos}</strong> <span class="text-slate-400 font-medium">(${porcentaje}% efectividad)</span></p>
-                    </div>
-                    <button onclick="iniciarEstudioTema('${temaId}')" class="bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs sm:text-sm font-bold px-4.5 py-2.5 rounded-xl transition shadow-2xs">
-                        Repasar Tema 🎯
-                    </button>
-                `;
-                listaEl.appendChild(item);
+                const total = stats.aciertos + stats.fallos;
+                const porc = total > 0 ? Math.round((stats.aciertos / total) * 100) : 0;
+                listaEl.innerHTML += `
+                    <div class="p-4.5 rounded-2xl border border-slate-200 bg-white shadow-2xs flex justify-between items-center">
+                        <div><h4 class="text-sm font-bold">${info.label}: ${info.desc}</h4><p class="text-xs text-slate-600">Aciertos: <strong class="text-emerald-800">${stats.aciertos}</strong> | Fallos: <strong class="text-rose-800">${stats.fallos}</strong> (${porc}%)</p></div>
+                        <button onclick="iniciarEstudioTema('${temaId}')" class="bg-indigo-50 text-indigo-800 text-xs font-bold px-4.5 py-2.5 rounded-xl border">Repasar 🎯</button>
+                    </div>`;
             });
         }
-
-        function mostrarPantallaFuentes() {
-            document.getElementById('view-menu').classList.add('hidden');
-            document.getElementById('view-fuentes').classList.remove('hidden');
-        }
-
+        function mostrarPantallaFuentes() { document.getElementById('view-menu').classList.add('hidden'); document.getElementById('view-fuentes').classList.remove('hidden'); }
         function volverMenu() {
-            window.currentTemaIdContext = null;
-            detenerCronometro();
+            detenerCronometrosQuiz();
             document.getElementById('view-quiz').classList.add('hidden');
             document.getElementById('view-resultados').classList.add('hidden');
             document.getElementById('view-estadisticas').classList.add('hidden');
@@ -942,7 +967,8 @@
             document.getElementById('view-fuentes').classList.add('hidden');
             document.getElementById('header-stats').classList.add('hidden');
             document.getElementById('view-menu').classList.remove('hidden');
-            renderizarCuadrosTemas();
+            renderizarAcordeonesTemas();
+            verificarMetaDiariaUI();
         }
     </script>
 </body>
