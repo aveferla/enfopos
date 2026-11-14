@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <!-- BOTONES SECUNDARIOS -->
+            <!-- BOTONES SECUNDARIOS (SIN APARTADO FUENTES SEPARADO) -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div><h3 class="text-sm font-bold text-slate-900">Estadísticas</h3><p class="text-[11px] text-slate-600">Aciertos, fallos y repaso.</p></div>
@@ -113,7 +113,7 @@
                 </div>
             </div>
 
-            <!-- ACORDEONES DE TEMAS -->
+            <!-- ACORDEONES -->
             <div class="space-y-4">
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
                     <button onclick="toggleAcordeon('bloque-gen')" class="w-full p-5 flex justify-between items-center bg-indigo-50/50 hover:bg-indigo-50 transition text-left">
@@ -194,7 +194,7 @@
             </div>
         </div>
 
-        <!-- VISTA APUNTES Y TEMARIO DESARROLLADO -->
+        <!-- VISTA APUNTES Y TEMARIO DESARROLLADO (CON BIBLIOGRAFÍA AL FINAL DE CADA TEMA) -->
         <div id="view-temario-pdf" class="hidden space-y-4">
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                 <div class="flex justify-between items-center border-b pb-4">
@@ -277,7 +277,7 @@
 
     </main>
 
-    <!-- BOTONERA INFERIOR FIJA / FLOTANTE EN EXAMEN -->
+    <!-- BOTONERA INFERIOR FIJA / FLOTANTE EN EXAMEN (CON CANCELAR, GUARDAR Y SIGUIENTE) -->
     <div id="quiz-footer-bar" class="hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-slate-200 p-3 z-40 shadow-lg">
         <div class="max-w-4xl mx-auto flex justify-between items-center px-2 sm:px-4 gap-2">
             <div class="flex gap-2">
@@ -294,7 +294,7 @@
         </div>
     </div>
 
-    <!-- MODAL DE CONFIRMACIÓN -->
+    <!-- MODAL DE CONFIRMACIÓN DE GUARDAR O CANCELAR -->
     <div id="modal-abandonar" class="hidden fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-50 flex items-center justify-center p-4">
         <div class="bg-white p-6 sm:p-8 rounded-3xl shadow-xl max-w-sm w-full space-y-4 text-center">
             <h3 id="modal-titulo" class="text-lg font-bold text-slate-900">¿Guardar y salir del examen?</h3>
@@ -724,6 +724,7 @@
             localStorage.setItem(`enfopos_examen_activo_${modalidadActual}`, JSON.stringify({ preguntasActivas, indiceActual, aciertos, fallos, tiempoRestanteSegundos, segundosAcumuladosTest }));
         }
 
+        // MODALES DE GUARDAR Y DE CANCELAR CON RETORNO
         function mostrarModalGuardar() {
             document.getElementById('modal-titulo').textContent = "¿Guardar y salir del examen?";
             document.getElementById('modal-desc').textContent = "Tu progreso se guardará automáticamente para que puedas continuar más tarde.";
@@ -736,7 +737,7 @@
 
         function mostrarModalCancelarTest() {
             document.getElementById('modal-titulo').textContent = "¿Cancelar y descartar este test?";
-            document.getElementById('modal-desc').textContent = "Se cerrará el test actual sin guardar la partida en curso.";
+            document.getElementById('modal-desc').textContent = "Se cerrará el test actual sin guardar la partida en curso (las estadísticas ya respondidas sí quedan registradas).";
             const btnConf = document.getElementById('modal-btn-confirmar');
             btnConf.textContent = "Sí, Cancelar Test";
             btnConf.className = "flex-1 bg-rose-600 hover:bg-rose-700 text-white font-bold py-2.5 rounded-xl text-xs sm:text-sm transition";
@@ -880,6 +881,7 @@
                 aciertos++; q.esAcertada = true;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
                 if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
+                verificarFraseMotivadoraAciertos();
             } else {
                 fallos++; q.esAcertada = false;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-rose-500 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
@@ -902,6 +904,18 @@
             guardarProgresoExamen();
         }
 
+        function verificarFraseMotivadoraAciertos() {
+            const banner = document.getElementById('live-motivacion-banner');
+            if (aciertos === 50) {
+                banner.textContent = "🔥 ¡IMPARABLE! Llevas 50 aciertos. ¡Dedicación titánica y excelente ritmo!";
+                banner.classList.remove('hidden');
+            } else if (aciertos > 0 && aciertos % 10 === 0) {
+                banner.textContent = `⚡ ¡Genial! ¡Ya acumulas ${aciertos} aciertos! Sigue así hacia la plaza.`;
+                banner.classList.remove('hidden');
+                setTimeout(() => { banner.classList.add('hidden'); }, 4000);
+            }
+        }
+
         function siguientePregunta() {
             indiceActual++;
             if (indiceActual < preguntasActivas.length) mostrarPregunta();
@@ -920,8 +934,16 @@
             let notaSobre10 = Math.min(10, (puntuacionFinal / (preguntasActivas.length || 90)) * 10);
 
             document.getElementById('score-circle').textContent = `${puntuacionFinal.toFixed(2)} pts`;
+            generarMensajeResultadosFinales(notaSobre10);
+
             document.getElementById('score-details').innerHTML = `Aciertos: <strong class="text-emerald-800">${aciertos}</strong><br>Fallos: <strong class="text-rose-800">${fallos}</strong><br>Nota sobre 10: <strong class="text-indigo-800">${notaSobre10.toFixed(2)} / 10</strong>`;
             renderizarAcordeonesTemas();
+        }
+
+        function generarMensajeResultadosFinales(nota) {
+            const box = document.getElementById('resultado-motivacion-box');
+            let msg = nota >= 10 ? "👑 ¡Impresionante! ¡Un resultado de número uno en esta oposición!" : nota >= 8 ? "🚀 ¡Brutal! ¡Esa plaza ya tiene tu nombre escrito!" : nota >= 7 ? "💪 ¡Excelente trabajo! Gran dominio del temario oficial." : nota >= 5 ? "🎯 ¡Aprobado conseguido! Repasa los fallos y lo bordarás en el examen real." : "📚 ¡Cada fallo es un aprendizaje directo para el examen oficial!";
+            box.innerHTML = `<div class="bg-indigo-50 border border-indigo-200 text-indigo-950 p-4 rounded-2xl font-bold">${msg}</div>`;
         }
 
         function mostrarPantallaEstadisticas() {
@@ -954,13 +976,22 @@
             if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
             if (pool.length === 0) return alert("No hay preguntas disponibles.");
             let printArea = document.getElementById('pdf-print-area');
-            let htmlHTML = `<div style="font-family: sans-serif; padding: 20px; color: black;"><h2 style="text-align:center;">ENFOPOS - EXAMEN SACYL (${modalidadActual.toUpperCase()})</h2>`;
+            
+            let htmlHTML = `<div style="font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; padding: 30px; color: black;">
+                <h2 style="text-align:center; font-family: Arial, sans-serif; font-size: 14pt; margin-bottom: 25px;">ENFOPOS - EXAMEN OFICIAL SACYL (${modalidadActual.toUpperCase()})</h2>`;
+            
             pool.forEach((q, idx) => {
-                htmlHTML += `<div style="margin-bottom: 15px; page-break-inside: avoid;"><p><b>${idx + 1}.</b> ${q.enunciado}</p><div>`;
-                q.opciones.forEach((op, opIdx) => { htmlHTML += `<div><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`; });
+                htmlHTML += `<div style="margin-bottom: 2.5em; page-break-inside: avoid;">
+                    <p style="margin-bottom: 10px; font-weight: bold;"><b>${idx + 1}.</b> ${q.enunciado}</p>
+                    <div style="padding-left: 25px; display: flex; flex-direction: column; gap: 6px;">`;
+                q.opciones.forEach((op, opIdx) => { 
+                    htmlHTML += `<div><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`; 
+                });
                 htmlHTML += `</div></div>`;
             });
-            printArea.innerHTML = htmlHTML; window.print();
+            htmlHTML += `</div>`;
+            printArea.innerHTML = htmlHTML; 
+            window.print();
         }
 
         function mostrarPantallaTemarioPDF() { 
