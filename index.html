@@ -1251,8 +1251,11 @@
         }
 
         function limpiarTextoReferencia(valor) {
-            return String(valor || '').trim();
-        }
+    return String(valor || '')
+        .replace(/\/gi, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+}
 
         function generarYImprimirPDF() {
             const tipoPrint = document.querySelector('input[name="tipo-print"]:checked').value;
