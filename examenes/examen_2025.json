@@ -1,0 +1,1147 @@
+JSON
+[
+  {
+    "examenId": "examen_2025",
+    "numero": 1,
+    "temaId": "com_04",
+    "enunciado": "Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Según el artículo 27.3 de la Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León, la oposición consiste siempre en más de una prueba.",
+      "b": "Sólo se acordará el cese del personal estatutario interino por dos razones: amortización de la plaza o no superación del periodo de prueba.",
+      "c": "La convocatoria del concurso de traslados podrá mantener su vigencia en el tiempo a través de resoluciones de adjudicación sucesiva y periódica."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La convocatoria del concurso de traslados podrá mantener su vigencia en el tiempo mediante resoluciones de adjudicación sucesiva y periódica (concurso abierto y permanente). No es a) porque el art. 27.3 de la Ley 2/2007 establece que la oposición podrá consistir en una o más pruebas (no siempre más de una). No es b) porque el cese del personal estatutario interino procede por más causas (como la cobertura de la plaza por personal fijo o reincorporación del titular). Fuente: Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 2,
+    "temaId": "com_04",
+    "enunciado": "El periodo máximo de duración de una comisión de servicios en plaza vacante:",
+    "opciones": {
+      "a": "Será de dos años prorrogable por uno más.",
+      "b": "Será de un año prorrogable año a año hasta que se cubra la vacante.",
+      "c": "No podrá superar los dos años."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) En la comisión de servicios en plaza vacante, su duración máxima no podrá superar los dos años. No es a) ni b) porque no cabe prórroga más allá del límite máximo legal de dos años en plaza vacante. Fuente: Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 3,
+    "temaId": "com_06",
+    "enunciado": "Señale la respuesta correcta en relación con la historia clínica:",
+    "opciones": {
+      "a": "Es el soporte de cualquier clase o tipo que contiene un conjunto de datos e informaciones de carácter asistencial.",
+      "b": "Es lo mismo que la documentación clínica.",
+      "c": "En Castilla y León se regula en el Decreto 101/2005, de 22 de diciembre."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) En la Comunidad de Castilla y León la historia clínica está regulada por el Decreto 101/2005, de 22 de diciembre. No es a) porque esa definición corresponde a 'documento clínico', no a historia clínica. No es b) porque la historia clínica es el conjunto de documentos relativos a los procesos asistenciales de cada paciente, concepto distinto de la documentación clínica en general. Fuente: Decreto 101/2005, de 22 de diciembre (BOCyL) y Ley 41/2002, de 14 de noviembre."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 4,
+    "temaId": "com_06",
+    "enunciado": "Sobre el derecho a la información asistencial, señale la alternativa falsa según la Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica:",
+    "opciones": {
+      "a": "Los titulares del derecho a la información asistencial son el paciente y sus familiares de primer grado.",
+      "b": "Como regla general la información asistencial se proporcionará verbalmente, dejando constancia en la historia clínica.",
+      "c": "El medico responsable del paciente le garantiza el cumplimiento de su derecho a la información."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (afirmación falsa): a) Según el art. 5.1 de la Ley 41/2002, el titular del derecho a la información es el paciente; las personas vinculadas a él solo serán informadas en la medida en que el paciente lo permita expresa o tácitamente. Las opciones b) y c) son verdaderas conforme a los arts. 4.1 y 4.3 de la misma Ley. Fuente: Ley 41/2002, de 14 de noviembre, arts. 4 y 5."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 5,
+    "temaId": "com_06",
+    "enunciado": "Según el Decreto 30/2007, de 22 de marzo, por el que se regula el documento de instrucciones previas en el ámbito sanitario y se crea el Registro de Instrucciones Previas de Castilla y León, el documento de instrucciones previas:",
+    "opciones": {
+      "a": "Debe registrarse obligatoriamente en el Registro de Instrucciones Previas de Castilla y León.",
+      "b": "Debe ser refrendado por al menos cinco representantes designados por el otorgante.",
+      "c": "Puede incorporar los objetivos vitales y valores del otorgante que ayuden a interpretarlo."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El documento de instrucciones previas puede recoger los objetivos vitales y valores personales que sirvan de guía para interpretarlo. No es a) porque su inscripción en el Registro es voluntaria y no requisito de validez. No es b) porque la designación de representante es opcional y la formalización ante testigos requiere tres testigos, no cinco representantes. Fuente: Decreto 30/2007, de 22 de marzo (Junta de Castilla y León)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 6,
+    "temaId": "com_07",
+    "enunciado": "En relación con la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales. Señale la opción correcta:",
+    "opciones": {
+      "a": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de dieciséis años.",
+      "b": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de dieciocho años.",
+      "c": "El tratamiento de los datos de los menores de catorce años, fundado en el consentimiento, solo será lícito si consta el del titular de la patria potestad o tutela, con el alcance que determinen los titulares de la patria potestad o tutela."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El art. 7.2 de la LOPDGDD establece que el tratamiento de datos de menores de 14 años basado en el consentimiento solo es lícito si consta el del titular de la patria potestad o tutela. No son correctas a) ni b) porque la edad mínima fijada en España para consentir por sí mismo el tratamiento de datos personales es de 14 años (no 16 ni 18). Fuente: Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD), art. 7."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 7,
+    "temaId": "com_03",
+    "enunciado": "El Presidente de la Gerencia Regional de Salud es:",
+    "opciones": {
+      "a": "El Director Gerente.",
+      "b": "El Consejero de Sanidad.",
+      "c": "El Secretario Gerente."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La Presidencia de la Gerencia Regional de Salud de Castilla y León corresponde al titular de la Consejería de Sanidad. No es a) porque el Director Gerente ejerce la dirección y gestión ordinaria. No es c) porque el Secretario Gerente asume funciones de secretaría y gestión administrativa. Fuente: Ley 8/2010, de 30 de agosto, de Ordenación del Sistema de Salud de Castilla y León / Reglamento de la Gerencia Regional de Salud."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 8,
+    "temaId": "esp_43",
+    "enunciado": "En un siniestro o catástrofe, el sector con límites imprecisos y accesos limitados por el propio impacto, donde la agresión es máxima, hay gran destrucción y pueden existir riesgos evolutivos, se denomina:",
+    "opciones": {
+      "a": "Área de Base.",
+      "b": "Área de Salvamento.",
+      "c": "Área de Estabilización."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El Área de Salvamento (zona caliente o roja) es el epicentro del siniestro, caracterizado por acceso restringido, máxima destrucción y riesgos activos o evolutivos. No es a) porque el Área de Base (zona verde) es segura y externa para logística y estacionamiento. No es c) porque el Área de Estabilización o Socorro (zona amarilla) es limítrofe y segura para triaje y asistencia inicial. Fuente: Protocolos de atención sanitaria en catástrofes y múltiples víctimas (sectorización asistencial)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 9,
+    "temaId": "esp_27",
+    "enunciado": "En los procedimientos de cirugía menor, las suturas de catgut:",
+    "opciones": {
+      "a": "Son las que más se utilizan para aproximar bordes.",
+      "b": "No se utilizan, ya que su utilización está indicada exclusivamente en cirugía plástica.",
+      "c": "No se utilizan en la actualidad, ya que su utilización está prohibida."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El catgut (sutura natural absorbible de origen bovino u ovino) está prohibido en Europa y España desde 2001 por el riesgo de transmisión de encefalopatías espongiformes (EEB), por lo que no se utiliza en la actualidad. No son correctas a) ni b) al tratarse de un material retirado y prohibido. Fuente: Guías de cirugía menor y normativa sanitaria europea/española sobre materiales de sutura."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 10,
+    "temaId": "esp_18",
+    "enunciado": "¿Qué valora el test de Silverman en el recién nacido?. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "El nivel de consciencia.",
+      "b": "La intensidad de la dificultad respiratoria.",
+      "c": "La gravedad de la tetralogía de Fallot."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El test de Silverman-Anderson evalúa la dificultad respiratoria del recién nacido mediante 5 parámetros clínicos (aleteo nasal, quejido espiratorio, tiraje intercostal, retracción esternal y disociación toracoabdominal), puntuando de 0 a 10. No es a) ni c) porque no mide estado neurológico ni cardiopatías congénitas específicas. Fuente: Pediatría y enfermería neonatal (Test de Silverman-Anderson)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 11,
+    "temaId": "esp_19",
+    "enunciado": "Con respecto al protocolo de actuación ante la sospecha de maltrato intrafamiliar en la infancia y la adolescencia. Señale la alternativa falsa:",
+    "opciones": {
+      "a": "Tiene como objetivo general mejorar la atención de una forma integrada y multidisciplinar.",
+      "b": "Tiene como objetivo específico la población diana, que es la población de Castilla y León menor de 14 años.",
+      "c": "Tiene como objetivo específico recoger las actuaciones por parte del personal sanitario, tanto de atención primaria como de atención especializada."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta (alternativa falsa): b) La población diana del protocolo es toda la población infantil y adolescente menor de 18 años en Castilla y León (no solo menores de 14 años). Las opciones a) y c) son objetivos ciertos recogidos en el documento oficial. Fuente: Protocolo de actuación sanitaria ante la sospecha de maltrato intrafamiliar en la infancia y la adolescencia (Sacyl, Junta de Castilla y León)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 12,
+    "temaId": "esp_40",
+    "enunciado": "En la valoración de un enfermo terminal, si pretendemos conocer el deterioro de su estado general, ¿qué escala de las siguientes utilizaríamos?:",
+    "opciones": {
+      "a": "La escala visual analógica del dolor.",
+      "b": "La escala de funcionamiento de Karnofsky.",
+      "c": "La escala de Norton."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El Índice o Escala de Karnofsky (0 a 100) mide la capacidad funcional y el grado de deterioro general del paciente oncológico o terminal. No es a) porque la EVA valora exclusivamente la intensidad del dolor. No es c) porque la escala de Norton mide el riesgo de úlceras por presión. Fuente: Guías de Cuidados Paliativos (Escala de Karnofsky)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 13,
+    "temaId": "esp_39",
+    "enunciado": "Usted está realizando la valoración de un anciano mediante la escala de Barthel, y obtiene una puntuación de 30. ¿Qué otra escala debería de realizar para completar esta valoración funcional?:",
+    "opciones": {
+      "a": "Realizaría la escala de Yesavage.",
+      "b": "Realizaría la escala de Lawton y Brody.",
+      "c": "Realizaría la escala de Goldberg."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El Índice de Barthel evalúa las Actividades Básicas de la Vida Diaria (ABVD); para completar la esfera funcional se aplica la escala de Lawton y Brody, que mide las Actividades Instrumentales de la Vida Diaria (AIVD). No es a) porque Yesavage evalúa depresión geriátrica. No es c) porque Goldberg evalúa ansiedad y depresión. Fuente: Valoración Geriátrica Integral (Escalas de Barthel y Lawton-Brody)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 14,
+    "temaId": "esp_34",
+    "enunciado": "En relación con la audiometría, es falso que:",
+    "opciones": {
+      "a": "Se anota en color azul para el oído derecho y rojo para el oído izquierdo.",
+      "b": "Es la valoración de la capacidad de un paciente para percibir tonos puros de intensidad variable.",
+      "c": "Se representan en el eje de abscisas los Hz (Hercios) y en el eje de ordenadas los decibelios."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (afirmación falsa): a) Por convención internacional en audiometría, el oído derecho se registra en color rojo (círculo) y el oído izquierdo en color azul (cruz), justo al revés de lo indicado. Las opciones b) y c) describen correctamente la técnica y representación gráfica del audiograma. Fuente: Otorrinolaringología y audiología clínica."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 15,
+    "temaId": "esp_11",
+    "enunciado": "Señale el tipo de sonda nasogástrica empleada para nutrición enteral:",
+    "opciones": {
+      "a": "Sonda tipo Levine.",
+      "b": "Sonda de Jackson-Pratt.",
+      "c": "Sonda Foley."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La sonda de Levin (Levine) es una sonda nasogástrica de una sola luz utilizada para alimentación enteral, lavado o aspiración gástrica. No es b) porque el Jackson-Pratt es un drenaje quirúrgico aspirativo cerrado. No es c) porque la sonda Foley es una sonda vesical. Fuente: Procedimientos y técnicas de enfermería clínica (sondaje nasogástrico)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 16,
+    "temaId": "esp_32",
+    "enunciado": "En relación con los linfomas, es cierto que:",
+    "opciones": {
+      "a": "El linfoma Hodgkin normalmente afecta a un solo grupo ganglionar axial (cervical, mediastínico, paraaórtico).",
+      "b": "El linfoma no Hodgkin tiene mejor pronóstico en la mayoría de los casos.",
+      "c": "El linfoma Hodgkin afecta frecuentemente al anillo de Waldeyer y ganglios mesentéricos."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) El linfoma de Hodgkin suele localizarse inicialmente en un único grupo ganglionar axial (cervical, mediastínico o paraaórtico) y diseminarse ordenadamente por contigüidad. No es b) porque el linfoma de Hodgkin presenta en conjunto mejor tasa de curación que la mayoría de los linfomas no Hodgkin agresivos. No es c) porque la afectación del anillo de Waldeyer y ganglios mesentéricos es típica del linfoma no Hodgkin. Fuente: Robbins y Cotran, Patología estructural y funcional (Hematopatología)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 17,
+    "temaId": "esp_11",
+    "enunciado": "Una dieta blanda en pacientes con úlcera péptica, debe ser:",
+    "opciones": {
+      "a": "Mecánica, química, fisiológica y térmicamente no irritable.",
+      "b": "Rica en frutas crudas, helados, extractos de carnes y frutos secos.",
+      "c": "Sin aporte de leche hasta la remisión total del cuadro."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La dieta de protección gástrica en la úlcera péptica debe evitar estímulos mecánicos (fibra dura), químicos (condimentos, cafeína, alcohol), fisiológicos y térmicos (temperaturas extremas) que irriten la mucosa o estimulen la secreción ácida. No es b) porque los extractos de carne, frutas crudas fibrosas y temperaturas extremas son irritantes/secretagogos. No es c) porque los lácteos suaves se toleran según respuesta individual sin prohibición absoluta. Fuente: Dietoterapia y nutrición clínica en patología digestiva."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 18,
+    "temaId": "esp_31",
+    "enunciado": "¿Cuál de las siguientes afirmaciones es cierta respecto a los efectos cardiovasculares de la insuficiencia renal aguda?:",
+    "opciones": {
+      "a": "Produce insuficiencia cardiaca congestiva.",
+      "b": "Produce hipotensión.",
+      "c": "Produce aterosclerosis."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La retención de agua y sodio secundaria al deterioro agudo del filtrado glomerular provoca sobrecarga de volumen, hipertensión y riesgo de insuficiencia cardíaca congestiva y edema agudo de pulmón. No es b) porque la sobrecarga hídrica tiende a elevar la volemia y la tensión arterial, no a causar hipotensión. No es c) porque la aterosclerosis es un proceso vascular crónico asociado a la enfermedad renal crónica a largo plazo. Fuente: Nefrología clínica y fisiopatología de la insuficiencia renal aguda."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 19,
+    "temaId": "esp_11",
+    "enunciado": "¿Cuál de estos aminoácidos es un aminoácido no esencial?:",
+    "opciones": {
+      "a": "Histidina.",
+      "b": "Cisteína.",
+      "c": "Leucina."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La cisteína es un aminoácido no esencial (o condicionalmente esencial), ya que el organismo humano puede sintetizarlo a partir de metionina y serina. No son correctas a) ni c) porque tanto la histidina como la leucina son aminoácidos esenciales que deben aportarse obligatoriamente con la dieta. Fuente: Bioquímica y nutrición humana."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 20,
+    "temaId": "esp_37",
+    "enunciado": "¿Cuál de los siguientes factores de riesgo no está contemplado en la escala EMINA?:",
+    "opciones": {
+      "a": "Estado físico.",
+      "b": "Incontinencia.",
+      "c": "Nutrición."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La escala EMINA valora 5 dimensiones: Estado mental, Movilidad, Humedad/Incontinencia según versión —en el acrónimo clásico: Estado mental, Movilidad, Ingesta/Nutrición, Actividad y estado físico/humedad; en la formulación del examen, 'Incontinencia' como tal es propio de Braden/Norton y no figura como ítem independiente en este enunciado frente a Estado físico y Nutrición—. Fuente: Escala EMINA de valoración del riesgo de úlceras por presión (Institut Català de la Salut / GNEAUPP)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 21,
+    "temaId": "esp_15",
+    "enunciado": "¿Cuál de los siguientes agentes etiológicos causales de enfermedades de transmisión sexual es un protozoo?:",
+    "opciones": {
+      "a": "Neisseria gonorrhoeae.",
+      "b": "Trichomonas vaginalis.",
+      "c": "Shigella."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) Trichomonas vaginalis es un protozoo flagelado responsable de la tricomoniasis urogenital, una infección de transmisión sexual. No es a) porque Neisseria gonorrhoeae es una bacteria (diplococo gramnegativo). No es c) porque Shigella es un bacilo bacteriano gramnegativo. Fuente: Microbiología médica e infecciones de transmisión sexual."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 22,
+    "temaId": "esp_06",
+    "enunciado": "Según M.J Aguilar Idáñez, la participación comunitaria se define como:",
+    "opciones": {
+      "a": "La capacidad de grupos y comunidades de actuar colectivamente con el fin de ejercer el control de los determinantes de la salud.",
+      "b": "Proceso social en virtud del cual grupos específicos de población, que comparten alguna necesidad, problema o centro de interés y viven en una misma comunidad, tratan activamente de identificar esas necesidades, problemas o centros de interés, toman decisiones y establecen mecanismos para atenderlas.",
+      "c": "Capacidad para expresar decisiones que sean reconocidas por el entorno social y que afectan a la vida propia y/o a la vida de la comunidad en la que uno vive."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) Corresponde a la definición literal de participación comunitaria formulada por María José Aguilar Idáñez en sus trabajos sobre participación comunitaria en salud. No es a) porque esa definición alude al concepto de empoderamiento comunitario de la OMS. No es c) porque describe una acepción general de autodeterminación o agencia social. Fuente: Aguilar Idáñez, M.J., 'La participación comunitaria en salud: ¿mito o realidad?'."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 23,
+    "temaId": "esp_05",
+    "enunciado": "Señale cuál de las siguientes es una competencia científico-técnica de la Enfermera Gestora de Casos:",
+    "opciones": {
+      "a": "Conocimiento y manejo de las herramientas de valoración integral.",
+      "b": "Actitud ejemplar y motivadora.",
+      "c": "Conocimiento de los recursos sanitarios y sociales disponibles."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) El dominio y aplicación de instrumentos de valoración integral (clínica, funcional, cognitiva y social) constituye una competencia científico-técnica directa de la Enfermera Gestora de Casos. No es b) porque pertenece a las competencias actitudinales o de liderazgo. No es c) porque se encuadra en las competencias de gestión y coordinación de recursos sociosanitarios. Fuente: Documentos marco de Gestión de Casos en Enfermería (SNS / Sacyl)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 24,
+    "temaId": "esp_02",
+    "enunciado": "La herencia patológica dominante se manifiesta:",
+    "opciones": {
+      "a": "Sólo en los hijos heterocigóticos.",
+      "b": "Sólo en los hijos homocigóticos.",
+      "c": "Por igual, tanto en los hijos heterocigóticos como homocigóticos."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) En la herencia autosómica dominante basta una sola copia del alelo mutado para que se exprese el fenotipo, por lo que se manifiesta tanto en individuos heterocigóticos (Aa) como en homocigóticos dominantes (AA). No son correctas a) ni b) porque no se restringe exclusivamente a uno de los dos genotipos. Fuente: Genética humana básica y patrones de herencia mendeliana."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 25,
+    "temaId": "esp_10",
+    "enunciado": "La biodisponibilidad de un fármaco indica:",
+    "opciones": {
+      "a": "La cantidad inalterada de un fármaco que accede a la sangre, así como la velocidad a la que lo hace.",
+      "b": "El paso de un fármaco a través de la membrana celular, que tiene lugar por los pequeños poros o canales acuosos que la atraviesan.",
+      "c": "El paso a través de la membrana que se lleva a cabo por las bombas en contra del gradiente electroquímico."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La biodisponibilidad mide la fracción de fármaco administrado que llega inalterada a la circulación sistémica y la velocidad con la que se produce dicho acceso. No es b) porque define la filtración o difusión a través de poros acuosos. No es c) porque describe el transporte activo a través de membranas. Fuente: Flórez, J., Farmacología Humana (Farmacocinética)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 26,
+    "temaId": "esp_39",
+    "enunciado": "Entre los cambios que se pueden observar en el proceso del envejecimiento, es cierto que:",
+    "opciones": {
+      "a": "La sangre y sus elementos sufren grandes cambios con la edad disminuyendo su volumen.",
+      "b": "El arco senil es un fenómeno conocido que se relaciona con la edad y consiste en un círculo blanquecino que rodea al iris.",
+      "c": "Las células postmitóticas se reemplazan y su número va aumentando con la vejez."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El arco senil (gerontoxon) es un depósito lipídico periférico en la córnea muy frecuente en personas mayores que forma un anillo blanquecino o grisáceo alrededor del iris sin afectar la visión. No es a) porque el volumen sanguíneo y los recuentos celulares basales apenas cambian con el envejecimiento fisiológico. No es c) porque las células postmitóticas (como neuronas o miocardiocitos) no se dividen ni aumentan en número con la edad. Fuente: Enfermería geriátrica y gerontológica."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 27,
+    "temaId": "esp_18",
+    "enunciado": "Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Para la administración de gotas óticas a un niño de diez años alinearemos el conducto auditivo tirando del pabellón auricular hacia abajo y atrás.",
+      "b": "La mejor zona de elección para administrar fármacos por vía intramuscular a un lactante de tres meses es la cara anterior y lateral del vasto externo.",
+      "c": "En niños debilitados y con poca masa muscular la administración de fármacos por vía intramuscular se suele realizar en la zona glútea, en el cuadrante superior externo."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) En lactantes y niños menores de 3 años, el músculo vasto externo (cara anterolateral del muslo) es la zona de elección para inyecciones intramusculares por su adecuado desarrollo y ausencia de vasos o nervios mayores. No es a) porque en mayores de 3 años (como un niño de 10 años) se tira del pabellón auricular hacia arriba y atrás (hacia abajo y atrás solo en menores de 3 años). No es c) porque la región dorsoglútea está contraindicada en lactantes y niños con escasa masa muscular por riesgo de lesión del nervio ciático. Fuente: Manuales de enfermería pediátrica y protocolos de vacunación/administración de fármacos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 28,
+    "temaId": "esp_27",
+    "enunciado": "Para evitar posibles infecciones es necesario cumplir unas reglas básicas de asepsia quirúrgica. Señale la opción falsa:",
+    "opciones": {
+      "a": "Las batas del personal lavado para la intervención se consideran estériles por la zona delantera y trasera.",
+      "b": "Las superficies estériles deben contactar únicamente con superficies estériles.",
+      "c": "El personal lavado debe mantenerse cerca del campo estéril y si se mueve, debe hacerlo girando cara a cara o espalda contra espalda."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (afirmación falsa): a) Las batas quirúrgicas estériles solo se consideran estériles en la parte delantera desde el nivel del campo quirúrgico/pecho hasta la cintura y en las mangas desde unos 5 cm por encima del codo hasta el puño; la espalda nunca se considera estéril. Las opciones b) y c) son normas fundamentales ciertas de técnica aséptica en quirófano. Fuente: Enfermería médico-quirúrgica y protocolos de asepsia en bloque quirúrgico."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 29,
+    "temaId": "esp_38",
+    "enunciado": "La alucinosis alcohólica es:",
+    "opciones": {
+      "a": "Un trastorno psicótico en el que predominan las alucinaciones, normalmente visuales o auditivas, que se produce con la mente lúcida.",
+      "b": "Un estado psicótico agudo que produce alteración del nivel de conciencia y que aparece durante la fase de abstinencia en las personas dependientes del alcohol.",
+      "c": "Un trastorno psicótico que se manifiesta con alteración del estado de conciencia y suele aparecer 48 horas o más después de la interrupción o la reducción significativa del consumo de alcohol, aunque a veces tarda en aparecer una semana."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La alucinosis alcohólica se caracteriza por la presencia de alucinaciones vívidas (típicamente auditivas o visuales) sin obnubilación ni alteración del nivel de conciencia (con mente lúcida). No son correctas b) ni c) porque describen el delirium tremens, que cursa con alteración del nivel de conciencia, desorientación e hiperactividad autonómica tras 48-72 horas de abstinencia. Fuente: Psiquiatría clínica (CIE-10 / DSM-5, trastornos inducidos por alcohol)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 30,
+    "temaId": "esp_30",
+    "enunciado": "En relación con la tiroiditis subaguda de De Quervain. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Suele afectar a hombres.",
+      "b": "Es de etiología autoinmune.",
+      "c": "Tiene una distribución estacional (verano y otoño)."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La tiroiditis subaguda granulomatosa de De Quervain suele aparecer tras infecciones virales de vías respiratorias altas y presenta una marcada incidencia estacional en verano y otoño. No es a) porque es mucho más frecuente en mujeres (proporción 3-5:1). No es b) porque su etiología es posviral/inflamatoria, no autoinmune (a diferencia de Hashimoto o Graves). Fuente: Harrison, Principios de Medicina Interna (Endocrinología)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 31,
+    "temaId": "esp_11",
+    "enunciado": "El metabolismo basal hace referencia a la cantidad de energía necesaria para el mantenimiento de nuestras funciones fisiológicas, pero ¿en qué condiciones se mide el metabolismo basal?:",
+    "opciones": {
+      "a": "Dormido y en reposo.",
+      "b": "En reposo y despierto.",
+      "c": "Durante la actividad diaria habitual."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La tasa metabólica basal se determina con el sujeto completamente en reposo físico y mental pero despierto, en ayunas de al menos 12 horas y a temperatura ambiental neutra. No es a) porque durante el sueño el gasto energético desciende alrededor de un 10% respecto al basal. No es c) porque la actividad diaria incluye el gasto por actividad física y termogénesis inducida por alimentos. Fuente: Guyton y Hall, Tratado de Fisiología Médica."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 32,
+    "temaId": "esp_03",
+    "enunciado": "Según Lipowsky (1981) a la enfermedad se le pueden otorgar distintos significados en función de las distintas formas de percibirla. Señale la opción falsa :",
+    "opciones": {
+      "a": "La enfermedad como un desafío, en el que la persona utiliza habilidades de afrontamiento directo (activas y adaptativas).",
+      "b": "La enfermedad como un enemigo: la persona considera la enfermedad como una invasión de fuerzas enemigas externas o internas.",
+      "c": "La enfermedad como una pérdida: algunas personas utilizan su enfermedad para conseguir más atención y tiempo de los otros."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (afirmación falsa): c) En la clasificación de Z. J. Lipowski, utilizar la enfermedad para obtener atención, afecto o exención de responsabilidades corresponde al significado de 'ganancia o beneficio secundario', mientras que 'la enfermedad como pérdida' se refiere a la privación de salud, capacidades, rol o autonomía. Las opciones a) y b) describen correctamente los significados de desafío y enemigo. Fuente: Lipowski, Z.J. (1970/1981), Psicología de la salud y afrontamiento de la enfermedad."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 33,
+    "temaId": "esp_37",
+    "enunciado": "La mayoría de las lesiones en la piel se producen por la acción combinada de factores extrínsecos entre los que destacan:",
+    "opciones": {
+      "a": "Las fuerzas de presión, tracción y fricción.",
+      "b": "El estado nutricional del paciente y la delgadez.",
+      "c": "Pacientes desorientados."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) Los factores extrínsecos (externos al organismo) responsables de las úlceras por presión y lesiones cutáneas mecánicas son la presión, la fricción y el cizallamiento o tracción. No son correctas b) ni c) porque la desnutrición, la delgadez y la desorientación son factores intrínsecos propios del paciente. Fuente: Documentos técnicos GNEAUPP sobre etiopatogenia de las lesiones relacionadas con la dependencia."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 34,
+    "temaId": "esp_11",
+    "enunciado": "Con respecto a la nutrición enteral, es cierto que:",
+    "opciones": {
+      "a": "Se refiere a la administración de soluciones a través de una vena central.",
+      "b": "Supone un mayor coste económico que la nutrición parenteral.",
+      "c": "Todas las alternativas son falsas."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) Tanto a) como b) son falsas: la nutrición enteral administra nutrientes directamente al aparato digestivo (por vía oral o mediante sonda) y tiene un menor coste económico y menos complicaciones infecciosas y metabólicas que la nutrición parenteral (que sí se administra por vía intravenosa central o periférica). Fuente: Guías SENPE de soporte nutricional enteral y parenteral."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 35,
+    "temaId": "esp_29",
+    "enunciado": "La colecistitis aguda se caracteriza por la inflamación aguda de la vesícula biliar producida generalmente por:",
+    "opciones": {
+      "a": "Cálculos biliares.",
+      "b": "Traumatismos internos.",
+      "c": "Hemorragia interna."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) En más del 90% de los casos (colecistitis aguda litiásica), la inflamación aguda de la vesícula biliar se desencadena por la obstrucción del conducto cístico o del cuello vesicular por cálculos biliares. No son correctas b) ni c) porque los traumatismos y las hemorragias son causas excepcionales. Fuente: Sabiston, Tratado de Cirugía / Patología médico-quirúrgica digestiva."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 36,
+    "temaId": "esp_15",
+    "enunciado": "¿Qué tipo de aislamiento se debe aplicar en la meningitis bacteriana?:",
+    "opciones": {
+      "a": "Aislamiento protector.",
+      "b": "Aislamiento aéreo.",
+      "c": "Aislamiento de gotas."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) En la meningitis bacteriana (especialmente meningocócica o por Haemophilus influenzae) se aplican precauciones de transmisión por gotas durante las primeras 24 horas de tratamiento antibiótico eficaz (mascarilla quirúrgica a menos de 1 metro). No es a) porque el aislamiento protector se emplea en pacientes inmunodeprimidos. No es b) porque el aislamiento aéreo se reserva para partículas < 5 micras (tuberculosis, sarampión, varicela). Fuente: Guías CDC / Medicina Preventiva sobre precauciones de aislamiento hospitalario."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 37,
+    "temaId": "esp_24",
+    "enunciado": "Un paciente con isquemia arterial aguda periférica causada por un traumatismo arterial, presenta un síntoma tardío que indica una lesión irreversible. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Flictena.",
+      "b": "Palidez.",
+      "c": "Frialdad."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La aparición de flictenas cutáneas, rigidez muscular o gangrena en una extremidad con isquemia arterial aguda constituye un signo tardío de necrosis tisular e irreversibilidad. No son correctas b) ni c) porque la palidez y la frialdad (junto con dolor, parestesias y ausencia de pulso) son signos precoces de la oclusión arterial aguda. Fuente: Cirugía vascular y urgencias vasculares periféricas."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 38,
+    "temaId": "esp_42",
+    "enunciado": "¿Cuántos grados contempla la Escala OIS (Organ Injury Scaling) de la AAST (American Association for the Surgery of Trauma) para el traumatismo renal?:",
+    "opciones": {
+      "a": "5, siendo el grado V trombosis de la arteria renal, entre otros.",
+      "b": "4, correspondiendo el grado III a rotura por estallido renal.",
+      "c": "3, que corresponde a hematoma perirrenal."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La clasificación AAST Organ Injury Scaling para el traumatismo renal consta de 5 grados (I a V), correspondiendo el grado V a las lesiones más graves: estallido/fragmentación renal completa o avulsión/trombosis del pedículo vascular (arteria o vena renal) con desvascularización. No son correctas b) ni c) porque la escala tiene 5 grados, no 4 ni 3. Fuente: American Association for the Surgery of Trauma (AAST) Renal Injury Scale."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 39,
+    "temaId": "esp_29",
+    "enunciado": "Cuando hablamos de un proceso patológico intraabdominal, de reciente inicio, que cursa con dolor, repercusión sistémica y requiere un rápido diagnóstico y tratamiento, estamos hablando de:",
+    "opciones": {
+      "a": "Diarrea.",
+      "b": "Gastritis.",
+      "c": "Abdomen agudo."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El abdomen agudo es un síndrome clínico caracterizado por dolor abdominal de aparición reciente, acompañado habitualmente de signos de irritación peritoneal o repercusión sistémica, que exige valoración y tratamiento urgentes. No es a) porque la diarrea es un síntoma digestivo de aumento en la frecuencia o fluidez de las deposiciones. No es b) porque la gastritis es la inflamación de la mucosa gástrica. Fuente: Urgencias médico-quirúrgicas y patología digestiva."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 40,
+    "temaId": "esp_40",
+    "enunciado": "Según Kübler-Ross, en el enfermo terminal se identifican las siguientes fases:",
+    "opciones": {
+      "a": "Negación, ira, pacto, depresión y aceptación.",
+      "b": "Conmoción, regateo, ira, depresión y aceptación.",
+      "c": "Enfado, regateo, aceptación, acomodación y conmoción."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) Elisabeth Kübler-Ross describió cinco etapas en el proceso de afrontamiento de la muerte y el duelo: negación, ira, pacto (o negociación), depresión y aceptación. No son correctas b) ni c) porque introducen términos ajenos al modelo clásico (conmoción, acomodación) y alteran la secuencia original. Fuente: Kübler-Ross, E., 'Sobre la muerte y los moribundos' (1969)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 41,
+    "temaId": "esp_18",
+    "enunciado": "La etapa preoperacional de desarrollo cognitivo de Piaget corresponde a la edad de:",
+    "opciones": {
+      "a": "Desde los dos a los siete años.",
+      "b": "Desde cero a los dos años.",
+      "c": "Desde los siete a los once años."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) En la teoría del desarrollo cognitivo de Jean Piaget, el estadio preoperacional abarca desde los 2 hasta los 7 años (caracterizado por el juego simbólico, el egocentrismo y la intuición). No es b) porque de 0 a 2 años corresponde al periodo sensoriomotor. No es c) porque de 7 a 11 años corresponde al estadio de operaciones concretas. Fuente: Piaget, J., Psicología del desarrollo cognitivo."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 42,
+    "temaId": "esp_24",
+    "enunciado": "En el programa de rehabilitación cardiaca de un paciente que ha sufrido un infarto agudo de miocardio, la fase II incluye:",
+    "opciones": {
+      "a": "Inicio de la movilización.",
+      "b": "Enseñanza de signos y síntomas que requieren ayuda de urgencia.",
+      "c": "Ejercicio vigilado y sesiones educativas para modificar el estilo de vida."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La Fase II (convalecencia o fase ambulatoria temprana) comprende entrenamiento físico supervisado/monitorizado y programas educativos estructurados para el control de factores de riesgo cardiovascular y cambio de hábitos. No es a) ni b) porque la movilización precoz y la educación inicial de alarma corresponden a la Fase I (hospitalaria). Fuente: Sociedad Española de Cardiología (Guías de Rehabilitación Cardíaca)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 43,
+    "temaId": "esp_32",
+    "enunciado": "Según la clasificación de la Agencia Internacional para la Investigación del Cáncer (IARC), el metotrexato es una sustancia del:",
+    "opciones": {
+      "a": "Grupo 1: Carcinógeno para el ser humano.",
+      "b": "Grupo 2: Probablemente carcinógeno para el ser humano.",
+      "c": "Grupo 3: No puede ser clasificado respecto a su carcinogenicidad para el ser humano."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) En las monografías de la IARC (OMS), el metotrexato está incluido en el Grupo 3 ('no clasificable en cuanto a su carcinogenicidad para los seres humanos' por evidencia inadecuada en humanos y animales). No es a) porque el Grupo 1 engloba carcinógenos confirmados (como ciclofosfamida o busulfán). No es b) porque el Grupo 2A/2B engloba agentes probable o posiblemente carcinógenos. Fuente: Monografías IARC (OMS) sobre evaluación de riesgos carcinogénicos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 44,
+    "temaId": "esp_08",
+    "enunciado": "En función del control de la exposición, el objetivo y la unidad de análisis, señale entre las siguientes opciones un tipo de estudio epidemiológico descriptivo:",
+    "opciones": {
+      "a": "Estudio de casos y controles.",
+      "b": "Estudio de una serie de casos.",
+      "c": "Ensayo clínico."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El estudio de una serie de casos es un diseño observacional descriptivo (carece de grupo control y describe características clínicas o epidemiológicas de un conjunto de pacientes). No es a) porque el estudio de casos y controles es observacional analítico. No es c) porque el ensayo clínico es un estudio experimental analítico. Fuente: Argimón Pallás, J.M., Métodos de investigación clínica y epidemiológica."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 45,
+    "temaId": "esp_25",
+    "enunciado": "¿En cuál de las siguientes opciones está indicada la administración de una solución de Bicarbonato Sódico 1 Molar?:",
+    "opciones": {
+      "a": "Acidosis metabólica, tanto de origen cetósico (pH < 7,00) como láctico (pH < 7,20).",
+      "b": "Alcalosis metabólica hipoclorémica grave por vómitos (pH < 7,37), que no se controla con la administración de suero salino y potasio.",
+      "c": "Alcalosis metabólica hipoclorémica en pacientes con insuficiencia hepática y renal, para la acidificación de la orina en la diuresis forzada ácida."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) El bicarbonato sódico 1M (solución alcalinizante hipertónica) está indicado en acidosis metabólicas graves (como cetoacidosis con pH < 7,00 o acidosis láctica severa con pH < 7,20 según ficha técnica) y en alcalinización urinaria. No es b) porque el bicarbonato es un alcalinizante y empeoraría una alcalosis metabólica (además un pH < 7,37 es acidemia, no alcalosis). No es c) porque alcaliniza la orina (diuresis forzada alcalina), no la acidifica. Fuente: Ficha técnica AEMPS de Bicarbonato Sódico 1M / Farmacología de urgencias."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 46,
+    "temaId": "esp_42",
+    "enunciado": "La sobredosis de opioides se puede detectar cuando se da una combinación de tres signos y síntomas. Señale la opción correcta:",
+    "opciones": {
+      "a": "Midriasis patológica, dificultad para respirar y leve perdida de consciencia.",
+      "b": "Pérdida de consciencia, dificultad para respirar y midriasis.",
+      "c": "Pupilas puntiformes, pérdida de la consciencia y dificultad para respirar."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La tríada clásica de la intoxicación aguda o sobredosis por opioides consiste en miosis intensa ('pupilas puntiformes' o en punta de alfiler), depresión del nivel de conciencia/coma y depresión respiratoria. No son correctas a) ni b) porque la midriasis (dilatación pupilar) es propia de simpaticomiméticos o anticolinérgicos, no de los opioides (salvo hipoxia cerebral terminal o meperidina). Fuente: OMS / Guías de toxicología clínica y urgencias."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 47,
+    "temaId": "esp_24",
+    "enunciado": "Señale entre las siguientes opciones el ritmo que presenta las siguientes características electrocardiográficas: ondas P y complejos QRS no identificables, actividad eléctrica limitada a un patrón irregular y ondulante a una frecuencia mayor de 150 oscilaciones/minuto:",
+    "opciones": {
+      "a": "Fibrilación ventricular.",
+      "b": "Taquicardia sinusal.",
+      "c": "Extrasístole auricular."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La fibrilación ventricular (FV) se caracteriza por una actividad eléctrica ventricular totalmente desorganizada, caótica y ondulante, sin ondas P, complejos QRS ni ondas T identificables, con oscilaciones rápidas (> 150-300/min) y ausencia de gasto cardíaco. No es b) porque la taquicardia sinusal conserva ondas P sinusales seguidas de complejos QRS estrechos regulares a 100-150 lpm. No es c) porque la extrasístole auricular es un latido prematuro aislado con onda P ectópica y QRS identificable. Fuente: Guías ERC (European Resuscitation Council) de Soporte Vital Avanzado."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 48,
+    "temaId": "esp_04",
+    "enunciado": "Según la Joint Commission on Accreditation of Healthcare Organizations (JCAHO), un suceso imprevisto que causa la muerte, es:",
+    "opciones": {
+      "a": "Un accidente.",
+      "b": "Un evento adverso.",
+      "c": "Un evento centinela."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La Joint Commission define evento centinela como todo suceso imprevisto que produce la muerte o lesiones físicas o psicológicas graves (o el riesgo de que ocurran), no relacionado con el curso natural de la enfermedad del paciente. No es a) porque accidente es un término genérico no específico de taxonomía de seguridad clínica JCAHO. No es b) porque el evento adverso es un término más amplio para cualquier daño no intencionado derivado de la atención sanitaria, sea leve, moderado o grave. Fuente: The Joint Commission (JCAHO) / Estrategia de Seguridad del Paciente del SNS."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 49,
+    "temaId": "esp_07",
+    "enunciado": "Respecto a la prevención secundaria, no es cierto que:",
+    "opciones": {
+      "a": "Las actividades de cribado o screening son medidas de prevención secundaria.",
+      "b": "Pretende disminuir la incidencia de la enfermedad.",
+      "c": "Son medidas que se aplican con el objeto de disminuir las consecuencias y mejorar el pronóstico de la enfermedad mediante el diagnóstico y tratamiento precoz."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta (afirmación falsa): b) Disminuir la incidencia de la enfermedad (evitando la aparición de casos nuevos mediante el control de factores de riesgo) es el objetivo de la prevención primaria, no de la secundaria (que reduce la prevalencia/gravedad acortando la duración y mejorando el pronóstico). Las opciones a) y c) definen correctamente la prevención secundaria. Fuente: Piédrola Gil, Medicina Preventiva y Salud Pública."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 50,
+    "temaId": "esp_18",
+    "enunciado": "En los conceptos relacionados con la prematuridad se utiliza el término edad corregida. ¿A qué se denomina edad corregida?:",
+    "opciones": {
+      "a": "Semanas de vida sumadas a las semanas de gestación al nacer.",
+      "b": "Es la edad contada a partir del momento teórico del nacimiento, que son 40 semanas.",
+      "c": "Es la edad desde la fecha de nacimiento."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La edad corregida es la edad que tendría el niño prematuro si hubiera nacido en la fecha probable de parto a término (40 semanas de gestación); se calcula restando a la edad cronológica las semanas que le faltaron para llegar a las 40 semanas. No es a) porque la suma de edad gestacional más semanas posnatales se denomina edad posmenstrual o posconcepcional. No es c) porque la edad desde el nacimiento real es la edad cronológica. Fuente: Asociación Española de Pediatría (AEP), Seguimiento del recién nacido prematuro."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 51,
+    "temaId": "esp_02",
+    "enunciado": "La meiosis es un proceso:",
+    "opciones": {
+      "a": "Mediante el cual el material genético de las células eucarióticas se duplican y se distribuye en la división celular.",
+      "b": "Que mediante división celular da lugar a células con, exactamente, la mitad de material genético.",
+      "c": "Que termina con la reconstrucción de las envolturas nucleares y con la condensación de los cromosomas en la telofase."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (según plantilla oficial: a): La meiosis es el proceso de división celular en células eucariotas germinales en el que, tras una duplicación previa del material genético en interfase, este se distribuye mediante dos divisiones sucesivas para formar gametos haploides. (Nota: en biología estándar, la opción b describe también el resultado reduccional de la meiosis, mientras que c es falsa porque en la telofase los cromosomas se descondensan, no se condensan; en este examen la plantilla oficial da por válida la opción a). Fuente: Plantilla oficial examen Sacyl 15/03/2025 y Biología Celular."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 52,
+    "temaId": "esp_10",
+    "enunciado": "La respuesta anormal a un fármaco de origen genético, se denomina:",
+    "opciones": {
+      "a": "Tolerancia.",
+      "b": "Idiosincrasia.",
+      "c": "Taquifilaxia."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La reacción de idiosincrasia es una respuesta cualitativamente anormal, inesperada y peculiar a un fármaco, condicionada genéticamente (por polimorfismos enzimáticos o de receptores), independiente de la dosis. No es a) porque la tolerancia es la disminución gradual del efecto tras administración repetida. No es c) porque la taquifilaxia es una pérdida rápida de respuesta tras dosis sucesivas en corto espacio de tiempo. Fuente: Flórez, J., Farmacología Humana (Reacciones adversas a medicamentos)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 53,
+    "temaId": "esp_32",
+    "enunciado": "Según la Escala Funcional ECOG (Eastern Cooperative Oncology Group) o escala de Zubrod, el nivel 2 hace referencia a:",
+    "opciones": {
+      "a": "Limitación de actividades que requieren un gran esfuerzo físico. Capaz de realizar trabajos ligeros.",
+      "b": "Completamente imposibilitado. Puede precisar hospitalización. Encamado la mayor parte del día.",
+      "c": "El paciente no es capaz de desempeñar ningún trabajo, se encuentra con síntomas que le obligan a permanecer en la cama durante varias horas al día, además de las de la noche, pero que no superan el 50% del día. El individuo satisface la mayoría de sus necesidades personales solo."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El grado ECOG 2 describe al paciente ambulatorio capaz de realizar todo su autocuidado pero incapaz de trabajar, que permanece levantado más del 50% de las horas de vigilia (encamado menos del 50% del día). No es a) porque corresponde al grado ECOG 1. No es b) porque corresponde al grado ECOG 4 (incapacidad total, encamado 100%). Fuente: Eastern Cooperative Oncology Group (ECOG) Performance Status Scale."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 54,
+    "temaId": "esp_26",
+    "enunciado": "Según la Sociedad Española de Transfusión Sanguínea y Terapia Celular, una de las siguientes no representa una complicación aguda de las transfusiones sanguíneas:",
+    "opciones": {
+      "a": "Sobrecarga circulatoria.",
+      "b": "Transmisión de agentes infecciosos.",
+      "c": "Reacciones hipotensivas."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) En la clasificación de la SETS, la transmisión de agentes infecciosos (virus como VHB, VHC, VIH, parásitos o priones) se clasifica dentro de las complicaciones tardías o diferidas de la transfusión (salvo la contaminación bacteriana aguda). No son correctas a) ni c) porque tanto la sobrecarga circulatoria asociada a la transfusión (TACO) como las reacciones hipotensivas agudas son reacciones transfusionales inmediatas/agudas (< 24 h). Fuente: Sociedad Española de Transfusión Sanguínea y Terapia Celular (SETS), Guía sobre la transfusión de componentes sanguíneos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 55,
+    "temaId": "esp_06",
+    "enunciado": "¿Qué criterio de priorización en un problema de salud viene definido por la intensidad y afectación del problema?:",
+    "opciones": {
+      "a": "Magnitud.",
+      "b": "Severidad.",
+      "c": "Trascendencia."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (según plantilla oficial: a): En planificación sanitaria y métodos de priorización (como Hanlon/OPS), la magnitud expresa el volumen, extensión e impacto cuantitativo/afectación poblacional del problema de salud. (Nota: en algunos manuales la gravedad clínica o letalidad se denomina severidad o trascendencia, pero la plantilla oficial fija como válida la opción a). Fuente: Plantilla oficial examen Sacyl 15/03/2025 y Planificación Sanitaria."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 56,
+    "temaId": "esp_37",
+    "enunciado": "Cuando una úlcera por presión (UPP) presenta lesiones cavernosas que dejan ver las estructuras óseas y el paciente no siente dolor, estamos hablando de una úlcera por presión de grado:",
+    "opciones": {
+      "a": "Grado II.",
+      "b": "Grado III.",
+      "c": "Grado IV."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La úlcera por presión de categoría/grado IV implica pérdida total del espesor de los tejidos con exposición directa o palpable de hueso, tendón o músculo, pudiendo presentar cavitaciones/tunelizaciones y destrucción de terminaciones nerviosas que explica la ausencia de dolor. No es a) porque el grado II afecta solo epidermis/dermis. No es b) porque el grado III afecta tejido subcutáneo sin exponer hueso ni músculo. Fuente: GNEAUPP / NPUAP-EPUAP, Clasificación de las úlceras por presión."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 57,
+    "temaId": "esp_10",
+    "enunciado": "Según las recomendaciones de la OMS para la aplicación de gotas oculares, una de las siguientes afirmaciones es falsa:",
+    "opciones": {
+      "a": "No tocar el cuentagotas abierto.",
+      "b": "Las gotas oculares pueden producir una sensación de quemazón, que debería durar pocos minutos.",
+      "c": "Si se utiliza más de un tipo de gota ocular, se pueden aplicar simultáneamente."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (afirmación falsa): c) Cuando se administran varios colirios distintos, nunca deben instilarse simultáneamente; debe esperarse al menos 5 minutos entre uno y otro para evitar que el segundo lavado arrastre al primero y reduzca su absorción. Las opciones a) y b) son recomendaciones verdaderas de la OMS para evitar contaminación y tranquilizar al paciente. Fuente: Organización Mundial de la Salud (OMS), Guía de la buena prescripción / Administración de medicamentos oftálmicos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 58,
+    "temaId": "esp_33",
+    "enunciado": "Según la guía oficial \"SEN Epilepsia\", dentro de las crisis epilépticas focales existen varios tipos de crisis. Señale de las siguientes la respuesta falsa:",
+    "opciones": {
+      "a": "Epilepsias de causa genética, antes llamadas idiopáticas.",
+      "b": "Epilepsias de causa estructural/metabólica.",
+      "c": "Epilepsias no refractarias."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (respuesta falsa): c) En la clasificación etiológica recogida en la Guía Oficial de la Sociedad Española de Neurología (SEN) sobre Epilepsia (basada en ILAE), las epilepsias se clasifican según su etiología en genéticas (antes idiopáticas), estructurales/metabólicas y de causa desconocida (antes criptogénicas); 'epilepsias no refractarias' no constituye una categoría etiológica ni tipo de crisis focal en dicha clasificación. Fuente: Sociedad Española de Neurología (SEN), Guía oficial de práctica clínica en epilepsia."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 59,
+    "temaId": "esp_43",
+    "enunciado": "En el proceso de Clasificación en un AMV (Accidente de Múltiples Víctimas), ¿qué prioridad y código de color utilizaría usted con los afectados que presentan una o varias de las siguientes patologías: coma, TCE (Traumatismo Craneoencefálico) con focalidad, heridas en el abdomen, dificultad respiratoria o necesidad de torniquete?:",
+    "opciones": {
+      "a": "Prioridad 1. Tarjeta roja.",
+      "b": "Prioridad 2. Tarjeta amarilla.",
+      "c": "Prioridad 3. Tarjeta verde."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta (según plantilla oficial: b): En determinados protocolos operativos de clasificación en AMV empleados en temarios de emergencias, lesiones graves que requieren asistencia hospitalaria temprana pero permiten cierta demora controlada tras estabilización inicial (como TCE con focalidad, traumatismo abdominal sin shock descompensado o hemorragia controlada con torniquete) se encuadran en Prioridad 2 (tarjeta amarilla), reservando la tarjeta roja para compromiso vital inmediato recuperable. (Nota: en triaje START estándar la dificultad respiratoria grave o coma reciben tarjeta roja; en este examen la plantilla oficial da por válida la opción b). Fuente: Plantilla oficial examen Sacyl 15/03/2025 y Manuales de Triaje en Accidentes de Múltiples Víctimas."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 60,
+    "temaId": "esp_35",
+    "enunciado": "La localización típica donde se manifiesta la osteoporosis post menopáusica es:",
+    "opciones": {
+      "a": "Fractura de pie.",
+      "b": "Fractura vertebral y fractura de Colles.",
+      "c": "Fractura de cuello de fémur."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) La osteoporosis posmenopáusica (tipo I) afecta predominantemente al hueso trabecular, manifestándose típicamente con aplastamientos/fracturas vertebrales y fractura distal del radio (fractura de Colles). No es c) porque la fractura de cadera (cuello de fémur) es más característica de la osteoporosis senil (tipo II), donde hay pérdida equilibrada de hueso cortical y trabecular. No es a) porque las fracturas del pie no son la localización típica definitoria. Fuente: Reumatología y Medicina Interna (Osteoporosis tipo I y tipo II)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 61,
+    "temaId": "esp_27",
+    "enunciado": "¿De cuántos ítems consta la escala de recuperación postanestésica de Aldrete modificada para pacientes de cirugía ambulatoria?:",
+    "opciones": {
+      "a": "10",
+      "b": "7",
+      "c": "8"
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (según plantilla oficial: a): La escala de Aldrete modificada para cirugía mayor ambulatoria (CMA) amplía los 5 parámetros clásicos (actividad, respiración, circulación, consciencia y saturación de O2) añadiendo criterios específicos de alta ambulatoria (apósito quirúrgico, dolor, deambulación, tolerancia oral/náuseas y diuresis), alcanzando un total de 10 ítems (20 puntos máximos). No son correctas b) ni c) porque no corresponden al número de ítems de la versión ambulatoria completa. Fuente: Manual de Cirugía Mayor Ambulatoria (Ministerio de Sanidad) / Escala de Aldrete modificada."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 62,
+    "temaId": "esp_42",
+    "enunciado": "El Nivel III de priorización del SET (Sistema Español de Triaje) en un Servicio de Urgencias Hospitalario, lo constituyen aquellas situaciones:",
+    "opciones": {
+      "a": "De emergencia, riesgo vital inmediato y cuya intervención depende radicalmente del tiempo. Son situaciones de alto riesgo, con inestabilidad fisiológica y/o dolor severo.",
+      "b": "Urgentes, de riesgo vital potencial, que generalmente requieren múltiples exploraciones diagnósticas y/o terapéuticas en pacientes con estabilidad fisiológica.",
+      "c": "Menos urgentes, potencialmente serias y de complejidad significativa, constituyéndose en estándares de la atención en los servicios de urgencias hospitalarios y de alta frecuentación en los centros de Atención Primaria."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) En el Sistema Español de Triaje (SET / MAT), el Nivel III (amarillo, tiempo máximo de atención 60 minutos) corresponde a situaciones urgentes con riesgo vital potencial en pacientes hemodinámicamente estables que suelen precisar múltiples exploraciones diagnósticas y terapéuticas. No es a) porque define el Nivel II (emergencia, naranja). No es c) porque define el Nivel IV (menos urgente, verde). Fuente: Sociedad Española de Medicina de Urgencias y Emergencias (SEMES), Sistema Español de Triaje (SET)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 63,
+    "temaId": "esp_07",
+    "enunciado": "Según la Estrategia de Promoción de la Salud y de Prevención en el SNS (Sistema Nacional de Salud) en su primera fase, ¿qué dos colectivos se han priorizado por su vulnerabilidad?:",
+    "opciones": {
+      "a": "Población infantil y población adulta mayor de 50 años.",
+      "b": "Población adolescente y población adulta.",
+      "c": "Población anciana de más de 70 años y población infantil."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) La Estrategia de Promoción de la Salud y Prevención en el SNS estableció en su primera fase de implantación dos poblaciones diana prioritarias: la población infantil (menores de 15 años, con especial énfasis en 0-3 años) y la población mayor de 50 años (con intervenciones específicas en mayores de 70 años para prevención de fragilidad). No son correctas b) ni c) porque los cortes poblacionales oficiales de la primera fase son población infantil y > 50 años. Fuente: Ministerio de Sanidad, Estrategia de Promoción de la Salud y Prevención en el SNS."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 64,
+    "temaId": "esp_10",
+    "enunciado": "En el proceso de metabolismo de los fármacos, el conjunto de reacciones, mediadas por enzimas, que son responsables de la inactivación de los metabolitos activos o inactivos formados en la fase I, produciendo sustancias que puedan ser eliminadas fácilmente del organismo, se denominan reacciones de:",
+    "opciones": {
+      "a": "Oxidación.",
+      "b": "Conjugación.",
+      "c": "Hidrólisis."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) Las reacciones de Fase II o de conjugación (glucuronidación, sulfatación, acetilación, etc.) acoplan un sustrato endógeno polar al fármaco o a su metabolito de Fase I, inactivándolo habitualmente y aumentando su hidrosolubilidad para facilitar su excreción renal o biliar. No son correctas a) ni c) porque la oxidación y la hidrólisis (junto con la reducción) son reacciones de Fase I o de funcionalización. Fuente: Flórez, J., Farmacología Humana (Metabolismo de fármacos)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 65,
+    "temaId": "esp_39",
+    "enunciado": "Señale la opción falsa en relación con los hábitos dietéticos en los ancianos:",
+    "opciones": {
+      "a": "La dieta de los ancianos debe ser a base de productos naturales, variada, equilibrada y sencilla.",
+      "b": "Las comidas deben de hacerse con mayor frecuencia y menos copiosas que en el caso de los adultos jóvenes, con poca cantidad de líquidos para evitar la incontinencia urinaria.",
+      "c": "Es muy importante la higiene de la boca después de cada comida y muy especialmente la limpieza de la dentadura postiza, en su caso."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta (afirmación falsa): b) Aunque las comidas deben ser más frecuentes y menos copiosas, nunca debe restringirse la ingesta de líquidos en el anciano para evitar la incontinencia urinaria, ya que tienen disminuida la sensación de sed y presentan alto riesgo de deshidratación, estreñimiento e infecciones urinarias (se recomienda mantener 1,5-2 L/día, limitando solo líquidos justo antes de acostarse si hay nicturia). Las opciones a) y c) son recomendaciones nutricionales correctas. Fuente: Sociedad Española de Geriatría y Gerontología (SEGG), Nutrición en el anciano."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 66,
+    "temaId": "esp_18",
+    "enunciado": "En la etapa de desarrollo cognitivo modelo Piaget, el periodo sensorio- motora corresponde a la edad:",
+    "opciones": {
+      "a": "De cero a dos años.",
+      "b": "De dos a seis años.",
+      "c": "De seis a doce años."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) En la teoría de Jean Piaget, el estadio sensoriomotor comprende desde el nacimiento hasta los 2 años aproximadamente, periodo en el que el lactante construye el conocimiento mediante la coordinación de experiencias sensoriales y acciones motoras y adquiere la permanencia del objeto. No es b) porque de 2 a 6-7 años corresponde a la etapa preoperacional. No es c) porque de 6-7 a 11-12 años corresponde a las operaciones concretas. Fuente: Piaget, J., Psicología del niño."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 67,
+    "temaId": "esp_10",
+    "enunciado": "Entre los mecanismos de interacciones farmacológicas de dos fármacos, las aditivas o sinérgicas se consideran interacciones:",
+    "opciones": {
+      "a": "Farmacocinéticas relacionadas con la distribución.",
+      "b": "Farmacocinéticas relacionadas con el metabolismo.",
+      "c": "Farmacodinámicas."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) Las interacciones farmacodinámicas se producen cuando dos fármacos actúan sobre el mismo receptor, sistema fisiológico o mecanismo de acción, modificando la respuesta farmacológica en sentido de sumación/adición, potenciación/sinergia o antagonismo sin alterar sus concentraciones plasmáticas. No son correctas a) ni b) porque las interacciones farmacocinéticas afectan a los procesos LADME (absorción, distribución, metabolismo o excreción). Fuente: Flórez, J., Farmacología Humana (Interacciones farmacológicas)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 68,
+    "temaId": "esp_10",
+    "enunciado": "El término \"inestabilidad\" en la administración y seguridad de los medicamentos, se aplica a:",
+    "opciones": {
+      "a": "Aquellas reacciones químicas irreversibles e incontroladas (como la oxidación y la hidrólisis) que generan un nuevo producto que, en el mejor de los casos, es terapéuticamente inactivo.",
+      "b": "El tiempo en el que el 90% del fármaco deja de permanecer intacto.",
+      "c": "Fenómenos físico-químicos que pueden ser dependientes del equilibrio ácido-base y producen un cambio en el estado físico-químico de la sustancia o fármaco."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) En farmacotecnia y administración segura de medicamentos, la inestabilidad se refiere a reacciones químicas irreversibles (hidrólisis, oxidación, fotólisis, racemización) que degradan el principio activo formando productos inactivos o tóxicos. No es b) porque el periodo de validez o caducidad se define como el tiempo en que permanece intacto al menos el 90% del fármaco (se degrada el 10%, no el 90%). No es c) porque esa definición corresponde a la 'incompatibilidad' físico-química entre fármacos o vehículos en solución. Fuente: Farmacia Hospitalaria / Manuales de administración intravenosa de medicamentos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 69,
+    "temaId": "esp_26",
+    "enunciado": "Según la Sociedad Española de Transfusión Sanguínea y Terapia Celular, la administración de componentes sanguíneos se realizará siguiendo las siguientes recomendaciones. Señale la opción falsa:",
+    "opciones": {
+      "a": "Es recomendable infundir un concentrado de hematíes en un periodo no superior a las 4 horas.",
+      "b": "Antes de iniciar la transfusión debe registrarse: la temperatura, el pulso, la tensión arterial, y opcionalmente, la frecuencia respiratoria.",
+      "c": "Los primeros 15 minutos de la transfusión deben realizarse a velocidad moderada (30 gotas/minuto)."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (afirmación falsa): c) Los primeros 15 minutos de la transfusión deben iniciarse a velocidad LENTA (unos 2 ml/min o 10-20 gotas/minuto en concentrado de hematíes) bajo estrecha vigilancia clínica, para detectar precozmente reacciones hemolíticas agudas o anafilácticas con el menor volumen infundido posible; no a velocidad moderada de 30 gotas/minuto. Las opciones a) y b) son recomendaciones ciertas de la guía SETS. Fuente: Sociedad Española de Transfusión Sanguínea y Terapia Celular (SETS), Guía sobre la transfusión de componentes sanguíneos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 70,
+    "temaId": "esp_03",
+    "enunciado": "En relación con el Proceso Comunicativo en el apoyo emocional al paciente, al cuidador principal y a la familia. Señale la opción falsa:",
+    "opciones": {
+      "a": "Ayuda a reducir el sufrimiento de las familias.",
+      "b": "Juega un papel fundamental en la calidad de vida de los enfermos y familiares en particular.",
+      "c": "Aumenta el sufrimiento de las familias permitiéndonos acercarnos a ellas y contribuir a su bienestar."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (afirmación falsa): c) Una comunicación terapéutica empática y eficaz disminuye —nunca aumenta— la incertidumbre, la ansiedad y el sufrimiento emocional del paciente y su familia. Las opciones a) y b) reflejan los beneficios reales de la comunicación asistencial. Fuente: Guías de comunicación terapéutica y apoyo emocional en enfermería."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 71,
+    "temaId": "esp_07",
+    "enunciado": "¿Cuál de éstas no es una característica de los programas de Educación para la Salud?:",
+    "opciones": {
+      "a": "Que incorporen métodos de aprendizaje activos.",
+      "b": "Que vayan dirigidos hacia las influencias sociales y la de los medios de comunicación de masas.",
+      "c": "Que sean realizados de forma periódica, como mínimo anualmente."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) No existe ningún criterio metodológico ni normativo que exija que los programas de Educación para la Salud (EpS) deban realizarse 'como mínimo anualmente'; su temporalización depende de los objetivos, la población diana y la planificación del programa. Las opciones a) y b) sí son características clave de eficacia en los programas modernos de EpS (participación activa y abordaje de determinantes sociales y mediáticos). Fuente: Salleras Sanmartí, L., Educación Sanitaria: principios, métodos y aplicaciones."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 72,
+    "temaId": "esp_08",
+    "enunciado": "La definición: \"conjunto ordenado y estructurado de todos los descriptores o palabras clave que se utilizan para describir, indexar y clasificar temáticamente las referencias de una base de datos bibliográfica (BDB)\", corresponde a:",
+    "opciones": {
+      "a": "Tesauro.",
+      "b": "Palabra clave o descriptor.",
+      "c": "Todas las alternativas son falsas."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) Un tesauro (como MeSH en PubMed/MEDLINE o DeCS en LILACS/BIREME) es un vocabulario controlado, ordenado y estructurado jerárquicamente que reúne los descriptores normalizados utilizados para indizar y recuperar documentos en una base de datos bibliográfica. No es b) porque palabra clave o descriptor es cada término individual dentro del tesauro, no el conjunto ordenado completo. Fuente: Metodología de la investigación y documentación científica en ciencias de la salud."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 73,
+    "temaId": "esp_14",
+    "enunciado": "¿Qué significa que un paciente presente una valoración de 25 en el cuestionario de Glover Nilsson?:",
+    "opciones": {
+      "a": "Tiene una alta motivación para dejar de fumar.",
+      "b": "Tiene una dependencia física extrema hacia la nicotina.",
+      "c": "El grado de dependencia física y conductual del fumador es severa."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El test de Glover-Nilsson (11 ítems, 0-44 puntos) evalúa la dependencia psicológica, social y gestual/conductual al tabaquismo (complementando la dependencia física); una puntuación entre 23 y 33 puntos indica dependencia moderada-severa / severa (en esta escala del examen, >= 23-25 puntos se interpreta como dependencia severa). No es a) porque la motivación se mide con el test de Richmond. No es b) porque la dependencia física pura a la nicotina se mide con el test de Fagerström. Fuente: SEPAR, Manual de prevención y tratamiento del tabaquismo (Test de Glover-Nilsson)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 74,
+    "temaId": "esp_04",
+    "enunciado": "¿Qué Intervención de enfermería (NIC) aplicaremos en el proceso de adaptación enfermedad-hospitalización para promover el autocuidado y la independencia?:",
+    "opciones": {
+      "a": "Enseñanza: proceso de enfermedad.",
+      "b": "Manejo inefectivo del régimen terapéutico.",
+      "c": "Protección ineficaz."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) 'Enseñanza: proceso de enfermedad' (código NIC 5602) es una intervención de enfermería (NIC) destinada a ayudar al paciente a comprender la información relacionada con un proceso patológico específico y fomentar su autocuidado. No son correctas b) ni c) porque 'Manejo inefectivo del régimen terapéutico' y 'Protección ineficaz' son diagnósticos enfermeros (NANDA-I), no intervenciones NIC. Fuente: Clasificación de Intervenciones de Enfermería (NIC) y Diagnósticos NANDA-I."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 75,
+    "temaId": "esp_42",
+    "enunciado": "Según la SEMICYUC (Sociedad Española de Medicina Intensiva, Críticos y Unidades Coronarias), una de las siguientes opciones no se corresponde con la ejecución correcta de la secuencia de actuación inicial para la evaluación de las funciones vitales en un traumatismo vertebro medular. Señale la respuesta correcta:",
+    "opciones": {
+      "a": "Control de la vía aérea con fijación cervical.",
+      "b": "Control de la ventilación y oxigenoterapia.",
+      "c": "Signos externos en cabeza, cuello o columna y dolor a la palpación del cuello o columna."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (la que no corresponde a la evaluación inicial de funciones vitales ABCDE): c) La inspección y palpación detallada de signos externos y dolor en cabeza, cuello o columna forma parte de la evaluación secundaria (revisión sistemática de cabeza a pies), no de la valoración primaria inmediata de las funciones vitales. Las opciones a) y b) corresponden a los pasos A (vía aérea con control cervical) y B (ventilación y oxigenación) de la valoración primaria ABCDE. Fuente: SEMICYUC / ATLS, Atención inicial al paciente politraumatizado y traumatismo vertebromedular."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 76,
+    "temaId": "esp_16",
+    "enunciado": "¿Normalmente, cuál es el peso del útero en el embarazo a término? :",
+    "opciones": {
+      "a": "300g-350g",
+      "b": "500g-650g",
+      "c": "1000g-1100g"
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) Fuera del embarazo, el útero humano pesa aproximadamente 50-70 gramos; durante la gestación experimenta una intensa hipertrofia e hiperplasia muscular hasta alcanzar al término un peso aproximado de 1.000 a 1.100 gramos (alrededor de 1 kg). No son correctas a) ni b) porque subestiman el peso fisiológico del útero gestante a término. Fuente: Williams, Obstetricia (Adaptaciones fisiológicas del embarazo)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 77,
+    "temaId": "esp_40",
+    "enunciado": "En la evaluación de síntomas del paciente terminal, uno de los más temidos y el que mayor impacto produce tanto en pacientes como en los familiares es:",
+    "opciones": {
+      "a": "El estreñimiento.",
+      "b": "Los vómitos.",
+      "c": "El dolor."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El dolor es el síntoma más temido por los pacientes en situación terminal y sus familias, y uno de los que mayor impacto físico, emocional y sociofamiliar genera si no se controla adecuadamente. No son correctas a) ni b) porque, aunque el estreñimiento y las náuseas/vómitos son síntomas frecuentes en paliativos, no representan el síntoma de mayor temor e impacto global frente al dolor. Fuente: Sociedad Española de Cuidados Paliativos (SECPAL), Guía de Cuidados Paliativos."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 78,
+    "temaId": "esp_04",
+    "enunciado": "Según el Modelo de Adaptación de Callista Roy (RAM), existen 3 niveles de adaptación. Señale la opción falsa:",
+    "opciones": {
+      "a": "Nivel de adaptación integrado.",
+      "b": "Nivel de adaptación compensatorio.",
+      "c": "Nivel de adaptación contextual."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta (opción falsa): c) En el Modelo de Adaptación de Sor Callista Roy, los tres niveles de adaptación del sistema humano son: integrado, compensatorio y comprometido (no 'contextual'; 'contextual' es un tipo de estímulo —focal, contextual y residual—, no un nivel de adaptación). Las opciones a) y b) son dos de los tres niveles reales del modelo. Fuente: Roy, C., The Roy Adaptation Model / Modelos y teorías en enfermería (Marriner-Tomey)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 79,
+    "temaId": "esp_18",
+    "enunciado": "Las convulsiones en la infancia se clasifican en: crisis epilépticas, convulsiones febriles y trastornos paroxísticos no epilépticos. El síndrome de West o espasmo infantil es:",
+    "opciones": {
+      "a": "Una convulsión febril típica o simple.",
+      "b": "Un síndrome epiléptico propio de la infancia.",
+      "c": "Un trastorno paroxístico no epiléptico."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El síndrome de West (encefalopatía epiléptica dependiente de la edad caracterizada por la tríada de espasmos infantiles, hipsarritmia en el EEG y retraso o regresión psicomotora) es un síndrome epiléptico grave propio del lactante. No es a) porque no es una convulsión febril benigna. No es c) porque tiene naturaleza epiléptica confirmada electroencefalográficamente. Fuente: Asociación Española de Pediatría (AEP), Protocolos de Neurología Pediátrica."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 80,
+    "temaId": "esp_27",
+    "enunciado": "¿Cuál de los siguientes tipos de drenajes pasivos consiste en una tira cilíndrica de látex acanalada en su interior que se suele adherir a la piel con una grapa dentada o punto de sutura, indicado para colecciones de líquidos superficiales y profundos?:",
+    "opciones": {
+      "a": "Drenaje de Kher.",
+      "b": "Penrose.",
+      "c": "Drenaje redón."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El drenaje de Penrose es un drenaje pasivo que actúa por capilaridad y gravedad, formado por un tubo plano o cilíndrico blando de látex (frecuentemente acanalado o con gasa interior) que se fija a la piel mediante punto o imperdible/grapa. No es a) porque el drenaje de Kher es un tubo en T de silicona o látex empleado específicamente en cirugía de vías biliares (colédoco). No es c) porque el drenaje Redón es un sistema activo de aspiración cerrada por vacío. Fuente: Enfermería médico-quirúrgica (Drenajes quirúrgicos)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 81,
+    "temaId": "com_06",
+    "enunciado": "La definición “Todo dato, cualquiera que sea su forma, clase o tipo, que permite adquirir o ampliar conocimientos sobre el estado físico y la salud de una persona, o la forma de preservarla, cuidarla, mejorarla o recuperarla”, corresponde a:",
+    "opciones": {
+      "a": "Historia Clínica.",
+      "b": "Documentación Clínica.",
+      "c": "Información Clínica."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El artículo 3 de la Ley 41/2002 define textualmente 'Información clínica' como todo dato, cualquiera que sea su forma, clase o tipo, que permite adquirir o ampliar conocimientos sobre el estado físico y la salud de una persona, o la forma de preservarla, cuidarla, mejorarla o recuperarla. No es a) porque Historia Clínica es el conjunto de documentos con los datos e informaciones sobre la situación y evolución clínica del paciente. No es b) porque Documentación Clínica es el soporte de cualquier tipo que contiene un conjunto de datos e informaciones de carácter asistencial. Fuente: Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente, art. 3."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 82,
+    "temaId": "esp_17",
+    "enunciado": "¿Qué test utilizaría como herramienta de ayuda, ante la sospecha en la consulta de un caso de violencia de género?:",
+    "opciones": {
+      "a": "Test de Tinetti.",
+      "b": "Test de WAST.",
+      "c": "Test de EASI."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta: b) El cuestionario WAST (Woman Abuse Screening Tool) es una herramienta validada de cribado y detección precoz de violencia de género en consultas sanitarias (especialmente en Atención Primaria). No es a) porque el test de Tinetti evalúa equilibrio y marcha en ancianos para riesgo de caídas. No es c) porque el índice EASI (Elder Abuse Suspicion Index) se emplea para cribado de maltrato en personas mayores. Fuente: Ministerio de Sanidad, Protocolo común para la actuación sanitaria ante la Violencia de Género."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 83,
+    "temaId": "esp_25",
+    "enunciado": "El “peak flow meter” mide:",
+    "opciones": {
+      "a": "Flujo espiratorio máximo en el primer segundo (FEV 1).",
+      "b": "Capacidad vital forzada (FVC).",
+      "c": "Flujo espiratorio máximo (FEM)."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) El medidor de flujo espiratorio máximo ('peak flow meter') mide el Flujo Espiratorio Máximo (FEM o PEF, en litros/minuto) alcanzado durante una espiración forzada tras una inspiración máxima, útil en el autocontrol del asma. No son correctas a) ni b) porque el FEV1 (volumen espiratorio forzado en el primer segundo) y la FVC (capacidad vital forzada) son parámetros espirométricos de volumen que requieren un espirómetro. Fuente: Guía Española para el Manejo del Asma (GEMA)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 84,
+    "temaId": "esp_34",
+    "enunciado": "Respecto al manejo inicial de las quemaduras químicas oculares, señale la opción correcta:",
+    "opciones": {
+      "a": "Está indicado el tratamiento de vasoconstrictores como la epinefrina y fenilefrina.",
+      "b": "Está indicado aplicar parche compresivo con gasas estériles.",
+      "c": "Se recomienda el lavado inmediato y prolongado del ojo, con Ringer lactato o solución salina."
+    },
+    "correctaOriginal": "c",
+    "explicacion": "Correcta: c) La medida terapéutica prioritaria y urgente ante cualquier causticación o quemadura química ocular es la irrigación/lavado inmediato, abundante y prolongado (al menos 15-30 minutos) con solución salina fisiológica o Ringer lactato (o agua corriente si no se dispone de suero) para diluir y eliminar el agente químico. No es a) porque los vasoconstrictores empeoran la isquemia limbar. No es b) porque el vendaje compresivo está contraindicado inicialmente al retener el cáustico en contacto con la superficie ocular. Fuente: Oftalmología de urgencias y protocolos de atención a quemaduras químicas."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 85,
+    "temaId": "esp_29",
+    "enunciado": "Entre los cuidados de enfermería a un paciente que presenta un abdomen agudo, no está indicado:",
+    "opciones": {
+      "a": "Dieta líquida.",
+      "b": "Colocar sonda nasogástrica.",
+      "c": "Control de constantes."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta (procedimiento no indicado): a) Ante la sospecha de abdomen agudo se debe mantener dieta absoluta (nada por boca / ayuno), ya que el paciente puede requerir cirugía urgente o presentar íleo/obstrucción intestinal con riesgo de vómitos y broncoaspiración. Las opciones b) y c) sí son cuidados indicados (sondaje nasogástrico para descompresión si hay vómitos o distensión, y monitorización estrecha de constantes vitales). Fuente: Enfermería médico-quirúrgica y protocolos de urgencias abdominales."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 86,
+    "temaId": "esp_31",
+    "enunciado": "Los síntomas del síndrome nefrótico incluyen todos los siguientes, excepto:",
+    "opciones": {
+      "a": "Demasiada proteína en orina.",
+      "b": "Niveles bajos de triglicéridos en sangre.",
+      "c": "Hinchazón en piernas, pies y tobillos."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta (afirmación falsa / excepción): b) El síndrome nefrótico cursa con hiperlipidemia (elevación de colesterol y niveles ALTOS —no bajos— de triglicéridos en sangre), debido al aumento compensatorio de la síntesis hepática de lipoproteínas ante la hipoalbuminemia. Las opciones a) y c) sí forman parte del cuadro clínico clásico (proteinuria masiva > 3,5 g/24 h, hipoalbuminemia y edemas periféricos/anasarca). Fuente: Nefrología clínica (Síndrome nefrótico)."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 87,
+    "temaId": "esp_25",
+    "enunciado": "El obturador o fiador en una cánula de traqueotomía sirve para:",
+    "opciones": {
+      "a": "Introducir la cánula externa en el estoma traqueal de forma poco traumática.",
+      "b": "Aspirar secreciones si se conecta directamente una fuente de vacío.",
+      "c": "Fijar la cánula evitando su desplazamiento accidental."
+    },
+    "correctaOriginal": "a",
+    "explicacion": "Correcta: a) El obturador o fiador posee una punta roma y redondeada que sobresale ligeramente por el extremo distal de la cánula madre (externa), facilitando su inserción suave y atraumática a través del traqueostoma; debe retirarse inmediatamente tras colocar la cánula para permitir el paso de aire. No es b) porque no es una sonda de aspiración (obstruye la luz mientras está puesto). No es c) porque la fijación externa se realiza mediante cinta de sujeción alrededor del cuello. Fuente: Cuidados de enfermería al paciente traqueostomizado."
+  },
+  {
+    "examenId": "examen_2025",
+    "numero": 88,
+    "temaId": "esp_39",
+    "enunciado": "Entre las causas de incontinencia urinaria establecida en el anciano, no se encuentra la:",
+    "opciones": {
+      "a": "Incontinencia de estrés.",
+      "b": "Vaginitis o uretritis atrófica.",
+      "c": "Incontinencia por rebosamiento."
+    },
+    "correctaOriginal": "b",
+    "explicacion": "Correcta (no es causa de incontinencia establecida): b) La vaginitis o uretritis atrófica forma parte de las causas de incontinencia urinaria transitoria o reversible (regla nemotécnica DRIP / DIAPPERS: Delirio, Infección, Atrófica, Fármacos, Psicológica, Exceso de diuresis, Restricción de movilidad, Impactación fecal). Las opciones a) y c) (incontinencia de esfuerzo/estrés y por rebosamiento, junto con la de urgencia y la funcional) son tipos de incontinencia urinaria establecida o crónica. Fuente: Sociedad Española de Geriatría y Gerontología (SEGG), Tratado de Geriatría para Residentes."
+  }
+]
