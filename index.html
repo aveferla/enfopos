@@ -424,6 +424,99 @@
     <script>
         let modalidadActual = localStorage.getItem('enfopos_modalidad') || 'libre';
 
+        const COLORES_PASTEL = [
+            "bg-indigo-50/70 border-indigo-200 hover:bg-indigo-50",
+            "bg-emerald-50/70 border-emerald-200 hover:bg-emerald-50",
+            "bg-amber-50/70 border-amber-200 hover:bg-amber-50",
+            "bg-violet-50/70 border-violet-200 hover:bg-violet-50",
+            "bg-sky-50/70 border-sky-200 hover:bg-sky-50",
+            "bg-rose-50/70 border-rose-200 hover:bg-rose-50"
+        ];
+
+        const CATALOGO_TEMAS = {
+            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y Gerencia Regional de Salud de Castilla y León.", apuntesHTML: "", enlaces: [] },
+            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León (Ley 2/2007).", apuntesHTML: "", enlaces: [] },
+            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Autonomía del paciente, derechos y obligaciones en materia de información y documentación clínica.", apuntesHTML: "", enlaces: [] },
+            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Protección de datos personales y garantía de los derechos digitales (LO 3/2018).", apuntesHTML: "", enlaces: [] },
+            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Prevención de riesgos laborales y seguridad en el ámbito sanitario.", apuntesHTML: "", enlaces: [] },
+            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Bioética, consentimiento informado e instrucciones previas en Castilla y León.", apuntesHTML: "", enlaces: [] },
+            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Calidad asistencial, seguridad del paciente y gestión clínica.", apuntesHTML: "", enlaces: [] },
+            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Igualdad efectiva de mujeres y hombres y prevención de la violencia de género.", apuntesHTML: "", enlaces: [] },
+            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Transparencia, buen gobierno y participación ciudadana en el sistema sanitario.", apuntesHTML: "", enlaces: [] },
+
+            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Bases conceptuales y metodológicas de la enfermería.", apuntesHTML: "", enlaces: [] },
+            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Proceso de atención de enfermería (PAE) y taxonomías diagnósticas.", apuntesHTML: "", enlaces: [] },
+            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Atención Primaria de Salud: organización, cartera de servicios y salud comunitaria.", apuntesHTML: "", enlaces: [] },
+            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Educación para la salud y promoción de hábitos saludables.", apuntesHTML: "", enlaces: [] },
+            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Salud pública, epidemiología y vigilancia epidemiológica.", apuntesHTML: "", enlaces: [] },
+            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Inmunizaciones y calendario vacunal.", apuntesHTML: "", enlaces: [] },
+            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Prevención y control de infecciones relacionadas con la asistencia sanitaria.", apuntesHTML: "", enlaces: [] },
+            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Administración segura de fármacos y farmacología clínica.", apuntesHTML: "", enlaces: [] },
+            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Balance hídrico, fluidoterapia y trastornos hidroelectrolíticos.", apuntesHTML: "", enlaces: [] },
+            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Cuidados perioperatorios y atención en el bloque quirúrgico.", apuntesHTML: "", enlaces: [] },
+            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Atención al paciente con patología cardiovascular.", apuntesHTML: "", enlaces: [] },
+            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Atención al paciente con patología respiratoria.", apuntesHTML: "", enlaces: [] },
+            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Atención al paciente con patología digestiva y nutricional.", apuntesHTML: "", enlaces: [] },
+            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Atención al paciente con patología endocrino-metabólica.", apuntesHTML: "", enlaces: [] },
+            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Atención al paciente con patología nefrourológica.", apuntesHTML: "", enlaces: [] },
+
+            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Atención al paciente con patología neurológica.", apuntesHTML: "", enlaces: [] },
+            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Atención al paciente con patología osteomuscular y traumatológica.", apuntesHTML: "", enlaces: [] },
+            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Salud materno-infantil y cuidados neonatales.", apuntesHTML: "", enlaces: [] },
+            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Atención a la infancia y adolescencia y protección frente al maltrato.", apuntesHTML: "", enlaces: [] },
+            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Salud sexual y reproductiva.", apuntesHTML: "", enlaces: [] },
+            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Atención enfermera al adulto mayor y geriatría.", apuntesHTML: "", enlaces: [] },
+            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Atención a la cronicidad y paciente pluripatológico.", apuntesHTML: "", enlaces: [] },
+            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Cuidados paliativos y atención al final de la vida.", apuntesHTML: "", enlaces: [] },
+            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental y cuidados psiquiátricos.", apuntesHTML: "", enlaces: [] },
+            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Atención a conductas adictivas y drogodependencias.", apuntesHTML: "", enlaces: [] },
+            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Cuidados en urgencias y emergencias extrahospitalarias.", apuntesHTML: "", enlaces: [] },
+            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Soporte vital básico y avanzado y reanimación cardiopulmonar.", apuntesHTML: "", enlaces: [] },
+            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Atención sanitaria ante catástrofes, incidentes con múltiples víctimas y triaje.", apuntesHTML: "", enlaces: [] },
+            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Cuidados en unidades de cuidados críticos.", apuntesHTML: "", enlaces: [] },
+
+            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Atención al paciente oncológico y tratamientos antineoplásicos.", apuntesHTML: "", enlaces: [] },
+            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Cuidados en hematología y hemoterapia.", apuntesHTML: "", enlaces: [] },
+            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Cuidados en dermatología y prevención/tratamiento de heridas y UPP.", apuntesHTML: "", enlaces: [] },
+            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Sondajes, drenajes y nutrición enteral y parenteral.", apuntesHTML: "", enlaces: [] },
+            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Ostomías y cuidados de eliminación.", apuntesHTML: "", enlaces: [] },
+            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Oxigenoterapia, ventilación y cuidados respiratorios.", apuntesHTML: "", enlaces: [] },
+            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Cuidados al paciente con alteraciones sensoriales (visión y audición).", apuntesHTML: "", enlaces: [] },
+            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Atención al paciente con enfermedades infecciosas y transmisibles.", apuntesHTML: "", enlaces: [] },
+            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Dolor: valoración, escalas y manejo farmacológico y no farmacológico.", apuntesHTML: "", enlaces: [] },
+            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Pruebas diagnósticas, toma de muestras y preparación del paciente.", apuntesHTML: "", enlaces: [] },
+            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Atención en consulta de enfermería y continuidad asistencial.", apuntesHTML: "", enlaces: [] },
+            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Metodología de investigación en enfermería y práctica basada en la evidencia.", apuntesHTML: "", enlaces: [] },
+            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Exploración funcional, pruebas complementarias y registros clínicos.", apuntesHTML: "", enlaces: [] },
+            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Inmovilizaciones, vendajes y técnicas de soporte musculoesquelético.", apuntesHTML: "", enlaces: [] },
+            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Cirugía menor, suturas y curas en atención sanitaria.", apuntesHTML: "", enlaces: [] },
+            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Teleenfermería, sistemas de información sanitaria y salud digital.", apuntesHTML: "", enlaces: [] }
+        };
+
+        let examenesRealesCargados = [];
+        let preguntasTemasCargadas = [];
+        let bancoPreguntasGlobal = [];
+
+        let estadisticasTemas = {};
+        let estadisticasExamenes = {};
+        let historialPreguntas = {};
+        let preguntasFalladasHistorial = [];
+        let registroDiario = { fecha: new Date().toISOString().slice(0, 10), total: 0 };
+
+        let preguntasActivas = [];
+        let indiceActual = 0;
+        let aciertos = 0;
+        let fallos = 0;
+        let tiempoRestanteSegundos = 130 * 60;
+        let segundosAcumuladosTest = 0;
+        let segundosPreguntaActual = 0;
+        let cronometrosQuizInterval = null;
+        let examenEnCursoId = null;
+        let cargaInicialPromesa = null;
+        let respuestaSeleccionada = false;
+        let temaApunteSeleccionadoId = "gen_1";
+
+
         const EXAMENES_REALES_RESPALDO = [
             { id: "examen_2026", nombre: "Examen Oficial SACYL (2026)", archivo: "examenes/examen_2026.json" },
             { id: "examen_2025", nombre: "Examen Oficial SACYL (15/03/2025)", archivo: "examenes/examen_2025_03_15.json" },
@@ -866,6 +959,7 @@
 
         window.addEventListener('DOMContentLoaded', () => {
             document.getElementById('select-modalidad').value = modalidadActual;
+            cargarDatosModalidad();
             actualizarUIModalidad();
             verificarMetaDiariaUI();
             cargaInicialPromesa = ejecutarCargaInicial();
