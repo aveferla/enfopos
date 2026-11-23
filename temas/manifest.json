@@ -1,0 +1,20 @@
+[
+  {
+    "id": "tema_gen_1",
+    "nombre": "Tema 1 - Parte General",
+    "archivo": "tema_gen_1.json",
+    "tipo": "tema",
+    "temas": [
+      "gen_1"
+    ]
+  },
+  {
+    "id": "tema_gen_2",
+    "nombre": "Tema 2 - Parte General",
+    "archivo": "tema_gen_2.json",
+    "tipo": "tema",
+    "temas": [
+      "gen_2"
+    ]
+  }
+]
