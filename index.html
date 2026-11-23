@@ -63,6 +63,39 @@
                 break-before: page;
             }
         }
+        .badge-anulada {
+            display: inline-block;
+            background-color: #dc2626;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 0.95rem;
+            letter-spacing: 0.06em;
+            padding: 3px 10px;
+            border-radius: 6px;
+            margin-left: 8px;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+        .pregunta-anulada-box {
+            border: 2px solid #dc2626 !important;
+            background-color: #fef2f2 !important;
+            color: #991b1b !important;
+        }
+        @media print {
+            .badge-anulada {
+                background-color: #dc2626 !important;
+                color: #ffffff !important;
+                font-size: 11pt !important;
+                padding: 2px 8px !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .pregunta-anulada-texto {
+                color: #b91c1c !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-100 text-slate-900 font-sans antialiased min-h-screen flex flex-col pb-24">
@@ -494,6 +527,10 @@
 
         function clavePregunta(q) {
             return (q && q.enunciado ? q.enunciado.trim() : "").toLowerCase();
+        }
+
+        function esPreguntaValidaParaAleatoriaOImpresion(q) {
+            return Boolean(q && !q.anulada);
         }
 
         async function cargarExamenesReales() {
@@ -1024,7 +1061,7 @@
         function detenerCronometrosQuiz() { if (cronometrosQuizInterval) clearInterval(cronometrosQuizInterval); }
 
         function construirExamenPracticaInteligente(tamanoDeseado = 90) {
-            const fuente = barajarArray([...bancoPreguntasGlobal]);
+            const fuente = barajarArray([...bancoPreguntasGlobal].filter(esPreguntaValidaParaAleatoriaOImpresion));
             const elegidas = [];
             const usadas = new Set();
 
@@ -1078,7 +1115,7 @@
 
         async function iniciarEstudioTema(temaId) {
             if (cargaInicialPromesa) await cargaInicialPromesa;
-            const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId);
+            const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId && esPreguntaValidaParaAleatoriaOImpresion(q));
             if (filtradas.length === 0) return alert("No hay preguntas registradas todavía para este tema específico.");
             examenEnCursoId = null;
             preguntasActivas = JSON.parse(JSON.stringify(filtradas));
@@ -1130,9 +1167,23 @@
             document.getElementById('current-q-num').textContent = indiceActual + 1;
 
             const q = preguntasActivas[indiceActual];
-            document.getElementById('quiz-enunciado').textContent = q.enunciado;
+            const esAnulada = Boolean(q.anulada);
+            const enunciadoEl = document.getElementById('quiz-enunciado');
+            if (esAnulada) {
+                enunciadoEl.className = "text-base sm:text-xl font-extrabold text-red-700 leading-relaxed pt-2 bg-red-50 border-2 border-red-500 p-4 rounded-2xl";
+                enunciadoEl.innerHTML = `${q.enunciado} <span class="badge-anulada">ANULADA</span>`;
+            } else {
+                enunciadoEl.className = "text-base sm:text-xl font-bold text-slate-900 leading-relaxed pt-2";
+                enunciadoEl.textContent = q.enunciado;
+            }
             const tipoBadge = document.getElementById('quiz-tipo-pregunta');
-            tipoBadge.textContent = q.esReserva ? "Pregunta de Reserva" : `Pregunta ${indiceActual + 1} de ${preguntasActivas.length}`;
+            if (esAnulada) {
+                tipoBadge.className = "text-xs sm:text-sm font-extrabold text-white bg-red-600 px-4 py-1.5 rounded-full shadow-2xs uppercase tracking-wide";
+                tipoBadge.textContent = "ANULADA";
+            } else {
+                tipoBadge.className = "text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50 px-4 py-1.5 rounded-full shadow-2xs";
+                tipoBadge.textContent = q.esReserva ? "Pregunta de Reserva" : `Pregunta ${indiceActual + 1} de ${preguntasActivas.length}`;
+            }
 
             const contenedorOpciones = document.getElementById('quiz-opciones');
             contenedorOpciones.innerHTML = '';
@@ -1167,7 +1218,12 @@
 
             registrarPreguntaRespondidaDiaria();
 
-            if (indexElegido === q.correctaOriginal) {
+            if (q.anulada) {
+                botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-red-600 bg-red-50 text-red-900 transition text-sm sm:text-base font-extrabold flex items-start gap-3.5 shadow-sm";
+                const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
+                document.getElementById('quiz-explicacion-texto').innerHTML = `<span class="text-red-700 font-extrabold">PREGUNTA ANULADA</span> en la plantilla oficial. No computa como acierto ni como fallo. (Fuente oficial: ${fuenteLimpia})`;
+                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
+            } else if (indexElegido === q.correctaOriginal) {
                 aciertos++; q.esAcertada = true;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
                 if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
@@ -1176,7 +1232,9 @@
             } else {
                 fallos++; q.esAcertada = false;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-rose-500 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
-                botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
+                if (typeof q.correctaOriginal === 'number' && botones[q.correctaOriginal]) {
+                    botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
+                }
                 if (q.temaId) estadisticasTemas[q.temaId].fallos++;
                 if (kPreg) historialPreguntas[kPreg].fallos++;
                 if (exId) estadisticasExamenes[exId].fallosTotales++;
@@ -1191,7 +1249,7 @@
             localStorage.setItem(`enfopos_historial_preguntas_${modalidadActual}`, JSON.stringify(historialPreguntas));
             actualizarContadorEnVivo();
 
-            if (q.explicacion || q.fuente) {
+            if (!q.anulada && (q.explicacion || q.fuente)) {
                 const expLimpia = limpiarTextoReferencia(q.explicacion);
                 const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
                 document.getElementById('quiz-explicacion-texto').textContent = `${expLimpia} (Fuente oficial: ${fuenteLimpia})`;
@@ -1330,10 +1388,10 @@
                 if (!exObj || !exObj.preguntas || exObj.preguntas.length === 0) {
                     return alert("No hay preguntas en el examen seleccionado.");
                 }
-                pool = [...exObj.preguntas];
+                pool = exObj.preguntas.filter(esPreguntaValidaParaAleatoriaOImpresion);
                 tituloDocumento = exObj.nombre;
             } else if (tipoPrint === 'todos_temas') {
-                const fuenteMezcla = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || []), ...PREGUNTAS_INVENTADAS];
+                const fuenteMezcla = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || []), ...PREGUNTAS_INVENTADAS].filter(esPreguntaValidaParaAleatoriaOImpresion);
                 const porTema = {};
                 fuenteMezcla.forEach(q => {
                     if (!q.temaId) return;
@@ -1357,14 +1415,14 @@
                 pool = barajarArray(seleccion).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Todos los Temas (${pool.length} preguntas)`;
             } else if (tipoPrint === 'tema') {
-                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])];
+                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])].filter(esPreguntaValidaParaAleatoriaOImpresion);
                 if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
                 pool = barajarArray(pool).slice(0, limitePreguntas);
                 tituloDocumento = temaSeleccionado === 'todos'
                     ? `Examen por Temas (${pool.length} preguntas)`
                     : `Examen — ${CATALOGO_TEMAS[temaSeleccionado]?.label || temaSeleccionado}`;
             } else if (tipoPrint === 'falladas') {
-                pool = [...preguntasFalladasHistorial];
+                pool = [...preguntasFalladasHistorial].filter(esPreguntaValidaParaAleatoriaOImpresion);
                 if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
                 pool = barajarArray(pool).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Preguntas Falladas (${pool.length})`;
@@ -1385,19 +1443,28 @@
             let filasPlantilla = '';
 
             pool.forEach((q, idx) => {
-                const letraCorrecta = String.fromCharCode(65 + (q.correctaOriginal || 0));
+                const esAnulada = Boolean(q.anulada);
+                const letraCorrecta = esAnulada
+                    ? '<span style="color: #dc2626; font-weight: 800;">ANULADA</span>'
+                    : String.fromCharCode(65 + (q.correctaOriginal || 0));
                 const refLimpia = limpiarTextoReferencia(q.fuente || q.examenNombre || q.temaId || 'ENFOPOS');
+                const estiloEnunciado = esAnulada
+                    ? 'margin-bottom: 6px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #dc2626;'
+                    : 'margin-bottom: 6px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: black;';
+                const badgeAnuladaPrint = esAnulada
+                    ? ' <span class="badge-anulada">ANULADA</span>'
+                    : '';
                 htmlPreguntas += `
-                    <div style="margin-bottom: 1.6em; page-break-inside: avoid; break-inside: avoid;">
-                        <p style="margin-bottom: 6px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4;"><b>${idx + 1}.</b> ${q.enunciado}</p>
+                    <div class="${esAnulada ? 'pregunta-anulada-texto' : ''}" style="margin-bottom: 1.6em; page-break-inside: avoid; break-inside: avoid;${esAnulada ? ' border-left: 3px solid #dc2626; padding-left: 8px;' : ''}">
+                        <p style="${estiloEnunciado}"><b>${idx + 1}.</b> ${q.enunciado}${badgeAnuladaPrint}</p>
                         <div style="padding-left: 0.8cm; display: flex; flex-direction: column; gap: 3px;">`;
                 q.opciones.forEach((op, opIdx) => {
-                    htmlPreguntas += `<div style="font-family: Arial, sans-serif; font-size: 10.5pt; line-height: 1.25; text-indent: -0.6cm; padding-left: 0.6cm; margin-bottom: 2px;"><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`;
+                    htmlPreguntas += `<div style="font-family: Arial, sans-serif; font-size: 10.5pt; line-height: 1.25; text-indent: -0.6cm; padding-left: 0.6cm; margin-bottom: 2px;${esAnulada ? ' color: #dc2626;' : ''}"><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`;
                 });
                 htmlPreguntas += `</div></div>`;
 
                 filasPlantilla += `
-                    <tr>
+                    <tr${esAnulada ? ' style="background-color: #fef2f2; color: #dc2626;"' : ''}>
                         <td style="border: 1px solid #64748b; padding: 3px 8px; font-weight: bold; text-align: center; line-height: 1.2;">${idx + 1}</td>
                         <td style="border: 1px solid #64748b; padding: 3px 8px; font-weight: bold; text-align: center; line-height: 1.2;">${letraCorrecta}</td>
                         <td style="border: 1px solid #64748b; padding: 3px 8px; font-size: 9pt; line-height: 1.2;">${refLimpia}</td>
