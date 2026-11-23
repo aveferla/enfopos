@@ -548,18 +548,35 @@
             return null;
         }
 
+        function construirExplicacionAutomatica(q, textoCorrecta, referenciaNormativa) {
+            const temaInfo = q.temaId && CATALOGO_TEMAS[q.temaId] ? CATALOGO_TEMAS[q.temaId].desc : "";
+            const esFalsa = /alternativa falsa|opci[oó]n falsa|es falso que|no es cierto|no se encuentra|no est[aá] indicado|no representa|no se corresponde/i.test(String(q.enunciado || ""));
+            const baseTema = temaInfo ? ` (${temaInfo})` : "";
+
+            if (textoCorrecta) {
+                if (esFalsa) {
+                    return `La pregunta solicita identificar la opción falsa o incorrecta respecto al planteamiento${baseTema}. La respuesta marcada como correcta en la plantilla es ${textoCorrecta}, conforme a la referencia (${referenciaNormativa}).`;
+                }
+                return `Según el planteamiento de la pregunta${baseTema} y la plantilla oficial (${referenciaNormativa}), la alternativa correcta es ${textoCorrecta}.`;
+            }
+            return `Respuesta registrada según la plantilla oficial (${referenciaNormativa})${baseTema}.`;
+        }
+
         function construirDetalleExplicacion(q) {
             const expPropia = limpiarTextoReferencia(q.explicacion);
             const fuentePropia = limpiarTextoReferencia(q.fuente);
             const enriquecida = buscarExplicacionEnriquecida(q);
 
-            const cuerpoExplicacion = expPropia || (enriquecida ? enriquecida.explicacion : "");
             const referenciaNormativa = fuentePropia || (enriquecida ? enriquecida.norma : "") || limpiarTextoReferencia(q.examenNombre) || "SACYL";
 
             const idxCorrecta = typeof q.correctaOriginal === "number" ? q.correctaOriginal : -1;
             const textoCorrecta = (Array.isArray(q.opciones) && idxCorrecta >= 0 && q.opciones[idxCorrecta])
                 ? `${String.fromCharCode(65 + idxCorrecta)}) ${q.opciones[idxCorrecta]}`
                 : "";
+
+            const cuerpoExplicacion = expPropia
+                || (enriquecida ? enriquecida.explicacion : "")
+                || construirExplicacionAutomatica(q, textoCorrecta, referenciaNormativa);
 
             return {
                 cuerpoExplicacion,
@@ -579,7 +596,7 @@
         }
 
         function esPreguntaValidaParaAleatoriaOImpresion(q) {
-            return Boolean(q && !q.anulada);
+            return Boolean(q && !q.anulada && String(q.enunciado || '').trim().length > 0 && Array.isArray(q.opciones) && q.opciones.length > 0);
         }
 
         function resolverIdYNombreExamen(item, fallbackIdx = 0) {
@@ -620,11 +637,12 @@
             copia.origen = copia.origen || extraMeta.origen || "Examen real";
 
             if (!copia.enunciado || typeof copia.enunciado !== "string") {
-                const textoAlternativo = copia.pregunta ?? copia.texto ?? copia.titulo;
+                const textoAlternativo = copia.pregunta ?? copia.texto ?? copia.titulo ?? copia.enunciadoPregunta;
                 if (typeof textoAlternativo === "string") {
                     copia.enunciado = textoAlternativo;
                 }
             }
+            copia.enunciado = String(copia.enunciado || "").trim();
 
             if (!Array.isArray(copia.opciones)) {
                 const altOps = copia.respuestas ?? copia.alternativas;
@@ -636,6 +654,7 @@
                     copia.opciones = [];
                 }
             }
+            copia.opciones = copia.opciones.map(op => String(op ?? "").trim()).filter(op => op.length > 0);
 
             if (copia.numero !== undefined && copia.numero !== null && String(copia.numero).trim() !== "") {
                 const numParsed = parseInt(copia.numero, 10);
@@ -672,6 +691,14 @@
                 }
             }
 
+            if (totalOps > 0) {
+                if (copia.correctaOriginal < 0 || copia.correctaOriginal >= totalOps) {
+                    copia.correctaOriginal = 0;
+                }
+            } else {
+                copia.correctaOriginal = -1;
+            }
+
             return copia;
         }
 
@@ -693,7 +720,7 @@
         function formatearEnunciadoNumerado(q, fallbackIndex = 0) {
             const num = obtenerNumeroVisiblePregunta(q, fallbackIndex);
             const texto = String(q?.enunciado || "").trim();
-            if (!texto) return `${num}.`;
+            if (!texto) return `${num}. Pregunta sin enunciado disponible en el origen.`;
             if (/^\d+\s*[.)-]/.test(texto)) {
                 return texto;
             }
@@ -736,7 +763,7 @@
                         const rawPreguntas = extraerArrayPreguntas(data);
                         const preguntas = rawPreguntas
                             .map((q, idx) => normalizarPreguntaExamen({ numero: q?.numero ?? (idx + 1), ...q }, ex))
-                            .filter(q => String(q.enunciado || "").trim().length > 0);
+                            .filter(q => String(q.enunciado || "").trim().length > 0 && Array.isArray(q.opciones) && q.opciones.length > 0);
                         examenesRealesCargados.push({ ...ex, preguntas });
                     }
                 } catch (err) {
@@ -782,9 +809,10 @@
                     const data = await res.json();
                     const listaItems = extraerArrayPreguntas(data);
                     listaItems.forEach((q, idx) => {
-                        preguntasTemasCargadas.push(
-                            normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }, { origen: (q && q.origen) || "Banco por temas" })
-                        );
+                        const norm = normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }, { origen: (q && q.origen) || "Banco por temas" });
+                        if (norm.enunciado && norm.opciones.length > 0) {
+                            preguntasTemasCargadas.push(norm);
+                        }
                     });
                 } catch (_) {}
             }
@@ -850,7 +878,7 @@
             raw.forEach((item, idx) => {
                 const q = normalizarPregunta({ numero: item?.numero ?? (idx + 1), ...item });
                 const limpio = q.enunciado ? q.enunciado.trim() : "";
-                if (!limpio) return;
+                if (!limpio || !Array.isArray(q.opciones) || q.opciones.length === 0) return;
                 const temaParte = q.temaId ? `${normalizarTextoClave(q.temaId)}::` : "";
                 const uniqKey = q.examenId
                     ? `${q.examenId}::${temaParte}${normalizarTextoClave(limpio)}`
@@ -972,10 +1000,16 @@
             estadisticasExamenes[examenEnCursoId].veces++;
             localStorage.setItem(`enfopos_stats_examenes_${modalidadActual}`, JSON.stringify(estadisticasExamenes));
 
-            preguntasActivas = examenElegido.preguntas.map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...JSON.parse(JSON.stringify(q)) }, {
-                examenId: examenElegido.id,
-                examenNombre: examenElegido.nombre
-            }));
+            preguntasActivas = examenElegido.preguntas
+                .map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...JSON.parse(JSON.stringify(q)) }, {
+                    examenId: examenElegido.id,
+                    examenNombre: examenElegido.nombre
+                }))
+                .filter(q => q.enunciado && Array.isArray(q.opciones) && q.opciones.length > 0);
+
+            if (preguntasActivas.length === 0) {
+                return alert("Este examen no contiene preguntas válidas con enunciado y opciones.");
+            }
 
             prepararPreguntasYRespuestas();
             indiceActual = 0; aciertos = 0; fallos = 0;
@@ -1315,8 +1349,12 @@
                 const q = normalizarPregunta({ numero: item?.numero ?? (idx + 1), ...item });
                 item.numero = q.numero;
                 item.enunciado = q.enunciado;
-                item.correctaOriginal = q.correctaOriginal;
                 const opcionesBase = Array.isArray(q.opciones) ? q.opciones : [];
+                if (opcionesBase.length === 0 || q.correctaOriginal < 0) {
+                    item.opciones = opcionesBase;
+                    item.correctaOriginal = -1;
+                    return;
+                }
                 let opcionesMapeadas = opcionesBase.map((textoOp, idxOriginal) => ({ texto: textoOp, esCorrecta: (idxOriginal === q.correctaOriginal) }));
                 barajarArray(opcionesMapeadas);
                 item.opciones = opcionesMapeadas.map(o => o.texto);
@@ -1344,7 +1382,7 @@
         function actualizarContadorEnVivo() {
             document.getElementById('live-aciertos').textContent = aciertos;
             document.getElementById('live-fallos').textContent = fallos;
-            document.getElementById('live-restantes').textContent = preguntasActivas.length - indiceActual;
+            document.getElementById('live-restantes').textContent = Math.max(0, preguntasActivas.length - indiceActual);
         }
 
         function mostrarPregunta() {
@@ -1379,7 +1417,14 @@
 
             const contenedorOpciones = document.getElementById('quiz-opciones');
             contenedorOpciones.innerHTML = '';
-            (q.opciones || []).forEach((opcionTexto, index) => {
+
+            if (!Array.isArray(q.opciones) || q.opciones.length === 0) {
+                contenedorOpciones.innerHTML = `<div class="p-4 rounded-2xl border border-amber-300 bg-amber-50 text-amber-950 text-sm font-semibold">Esta pregunta no tiene opciones cargadas en el JSON. Puedes pasar a la siguiente.</div>`;
+                document.getElementById('btn-siguiente').classList.remove('hidden');
+                return;
+            }
+
+            q.opciones.forEach((opcionTexto, index) => {
                 const btn = document.createElement('button');
                 btn.type = "button";
                 btn.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-slate-200 hover:border-indigo-400 hover:bg-indigo-50/30 transition text-sm sm:text-base font-semibold text-slate-900 flex items-start gap-3.5 shadow-2xs";
