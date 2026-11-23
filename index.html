@@ -1134,10 +1134,12 @@
             localStorage.setItem(`enfopos_stats_examenes_${modalidadActual}`, JSON.stringify(estadisticasExamenes));
             actualizarContadorEnVivo();
 
-            if (q.explicacion || q.fuente) {
-                document.getElementById('quiz-explicacion-texto').textContent = `${q.explicacion || ''} (Fuente oficial: ${q.fuente || 'SACYL'})`;
-                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
-            }
+          if (q.explicacion || q.fuente) {
+    const expLimpia = limpiarTextoReferencia(q.explicacion);
+    const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
+    document.getElementById('quiz-explicacion-texto').textContent = `${expLimpia} (Fuente oficial: ${fuenteLimpia})`;
+    document.getElementById('quiz-explicacion-box').classList.remove('hidden');
+}
             document.getElementById('btn-siguiente').classList.remove('hidden');
             guardarProgresoExamen();
         }
@@ -1250,9 +1252,9 @@
             }
         }
 
-        function limpiarTextoReferencia(valor) {
+      function limpiarTextoReferencia(valor) {
     return String(valor || '')
-        .replace(/\/gi, '')
+        .replace(/\[cite:[^\]]*\]/gi, '')
         .replace(/\s{2,}/g, ' ')
         .trim();
 }
