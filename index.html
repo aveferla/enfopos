@@ -14,17 +14,19 @@
         }
         .anim-motivacion { animation: popUp 0.5s ease-out forwards; }
 
-        .print-running-header { display: none; }
         .print-watermark { display: none; }
 
         @media print {
             @page {
-                margin: 20mm 15mm 16mm 15mm;
+                margin: 16mm 15mm 16mm 15mm;
             }
-            body {
+            html, body {
+                height: auto !important;
+                min-height: 0 !important;
                 background: white !important;
                 color: black !important;
-                padding-bottom: 0 !important;
+                padding: 0 !important;
+                margin: 0 !important;
             }
             header, #banner-meta-diaria, #view-menu, #view-estadisticas, #view-imprimir,
             #view-temario-pdf, #view-quiz, #view-resultados, #quiz-footer-bar,
@@ -33,20 +35,12 @@
             }
             #pdf-print-area {
                 display: block !important;
-                position: relative;
+                position: static !important;
+                height: auto !important;
+                min-height: 0 !important;
+                margin: 0 !important;
+                padding: 0 !important;
                 z-index: 2;
-            }
-            .print-running-header {
-                display: block !important;
-                position: fixed;
-                top: -12mm;
-                left: 0;
-                right: 0;
-                text-align: center;
-                font-family: Arial, sans-serif;
-                font-size: 9.5pt;
-                font-weight: bold;
-                color: #1e293b;
             }
             .print-watermark {
                 display: flex !important;
@@ -61,7 +55,7 @@
                 font-size: 46pt;
                 font-weight: 800;
                 letter-spacing: 0.14em;
-                color: rgba(15, 23, 42, 0.06);
+                color: rgba(15, 23, 42, 0.13);
                 user-select: none;
             }
             .page-break {
@@ -77,9 +71,9 @@
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
         <div class="max-w-5xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row justify-between items-center gap-3">
             <div class="flex items-center justify-between w-full sm:w-auto gap-4">
-                <!-- Logotipo ENFOPOS como botón de inicio (sin texto adicional) -->
+                <!-- Logotipo ENFOPOS rectangular y al doble de tamaño, funcionando como botón de inicio -->
                 <button type="button" onclick="volverMenu()" title="Inicio" class="flex items-center focus:outline-none group">
-                    <img src="assets/logos/ENFOPOS.png" alt="ENFOPOS" class="h-12 w-12 object-contain rounded-xl border border-slate-200 shadow-2xs group-hover:scale-105 transition">
+                    <img src="assets/logos/ENFOPOS.png" alt="ENFOPOS" class="h-24 w-auto max-w-[240px] object-contain group-hover:scale-[1.02] transition">
                 </button>
             </div>
 
@@ -94,7 +88,7 @@
                     <span class="bg-white border border-slate-200 px-2.5 py-1 rounded-xl">Pregunta <span id="current-q-num">1</span> de <span id="total-q-num">0</span></span>
                 </div>
 
-                <!-- Logotipo LAAF DEF a una cuarta parte del tamaño anterior -->
+                <!-- Logotipo LAAF DEF a una cuarta parte de su tamaño original -->
                 <img src="assets/logos/LAAF DEF.jpg" alt="LAAF" class="h-3 w-auto object-contain shrink-0">
             </div>
         </div>
@@ -122,9 +116,8 @@
                 </div>
             </div>
 
-            <!-- TARJETAS PRINCIPALES: EXÁMENES REALES / OPOSICIÓN Y PRÁCTICA GLOBAL -->
+            <!-- TARJETAS PRINCIPALES -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- EXAMEN DE OPOSICIÓN (EXÁMENES REALES / OFICIALES) -->
                 <div class="bg-gradient-to-br from-indigo-900 to-indigo-950 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between border border-indigo-800 space-y-4">
                     <div>
                         <span class="text-xs bg-indigo-700 text-indigo-100 font-bold px-3 py-1 rounded-full uppercase">Exámenes Oficiales / Oposición</span>
@@ -147,7 +140,6 @@
                     <button type="button" onclick="iniciarSimulacroOposicion()" class="w-full bg-white hover:bg-indigo-50 text-indigo-950 font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">Iniciar Simulacro</button>
                 </div>
 
-                <!-- PRÁCTICA GLOBAL -->
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:border-emerald-400 transition">
                     <div>
                         <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full uppercase">Repaso Libre</span>
@@ -253,7 +245,7 @@
                 <div class="flex justify-between items-center border-b pb-4">
                     <div>
                         <h2 class="text-lg sm:text-xl font-bold text-slate-900">Generador de Exámenes en Papel / PDF</h2>
-                        <p class="text-xs text-slate-600">Incluye cabecera en todas las páginas, marca de agua ENFOPOS-LAAF y plantilla de respuestas al final.</p>
+                        <p class="text-xs text-slate-600">Incluye cabecera en la primera página, marca de agua ENFOPOS-LAAF y plantilla de respuestas al final.</p>
                     </div>
                     <button type="button" onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
                 </div>
@@ -416,17 +408,15 @@
     <script>
         let modalidadActual = localStorage.getItem('enfopos_modalidad') || 'libre';
 
-        // Respaldo para exámenes reales en "examenes/" si no existe examenes/manifest.json
         const EXAMENES_REALES_RESPALDO = [
             { id: "examen_2026", nombre: "Examen Oficial SACYL (2026)", archivo: "examenes/examen_2026.json" }
         ];
 
-        // Preguntas creadas/inventadas o propias que se pueden mezclar con las de temas/exámenes al generar exámenes
         const PREGUNTAS_INVENTADAS = [];
 
         let bancoPreguntasGlobal = [];
-        let examenesRealesCargados = []; // Solo exámenes reales de la carpeta "examenes/"
-        let preguntasTemasCargadas = [];  // Preguntas de los temas desde la carpeta "temas/"
+        let examenesRealesCargados = [];
+        let preguntasTemasCargadas = [];
         let examenEnCursoId = null;
 
         let preguntasActivas = [];
@@ -517,7 +507,6 @@
             "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Úlceras por presión (UPP).", apuntesHTML: "", enlaces: [] }
         };
 
-        // 1. CARGA EXÁMENES REALES DESDE "examenes/"
         async function cargarExamenesReales() {
             let listaExamenes = [];
             try {
@@ -572,7 +561,6 @@
             document.getElementById('contador-examenes-cargados').textContent = examenesRealesCargados.length;
         }
 
-        // 2. CARGA PREGUNTAS DE TEMAS DESDE "temas/"
         async function cargarPreguntasTemas() {
             let archivosTemas = [];
             try {
@@ -614,7 +602,6 @@
             }
         }
 
-        // 3. CARGA APUNTES Y BIBLIOGRAFÍA DESDE "apuntes/" SIN TOCAR index.html
         async function cargarCatalogoApuntesAutomatico() {
             let archivosApuntes = [];
             try {
@@ -902,13 +889,12 @@
             let linksHTML = (info.enlaces || []).map(l => `<li><strong>${l.titulo}:</strong> ${l.url}</li>`).join('');
             document.getElementById('pdf-print-area').innerHTML = `
                 <div class="print-watermark">ENFOPOS-LAAF</div>
-                <div class="print-running-header">ENFOPOS</div>
-                <div style="font-family: Arial, sans-serif; color: black; line-height: 1.5; margin: 0; padding: 0;">
+                <div style="display: block; position: static; font-family: Arial, sans-serif; color: black; line-height: 1.5; margin: 0; padding: 0;">
                     <div style="border-bottom: 1.5px solid #0f172a; padding-bottom: 8px; margin-bottom: 14px;">
                         <p style="margin: 0; font-size: 10.5pt; font-weight: bold;">ENFOPOS por LAAF. Aplicación no oficial. Solicita la aplicación en lavendanoenf@gmail.com</p>
                         <h1 style="margin: 6px 0 0; font-size: 14pt;">${info.label} — ${info.desc}</h1>
                     </div>
-                    <div style="font-size: 11pt;">${info.apuntesHTML || '<p>Sin contenido desarrollado todavía.</p>'}</div>
+                    <div style="font-size: 11pt; margin: 0; padding: 0;">${info.apuntesHTML || '<p style="margin: 0;">Sin contenido desarrollado todavía.</p>'}</div>
                     ${linksHTML ? `<hr style="margin: 18px 0 10px;"><h3 style="font-size: 11.5pt; margin: 0 0 6px;">Bibliografía y Referencias Oficiales</h3><ul style="font-size: 10pt; margin: 0; padding-left: 18px;">${linksHTML}</ul>` : ''}
                 </div>`;
             window.print();
@@ -1261,6 +1247,10 @@
             }
         }
 
+        function limpiarTextoReferencia(valor) {
+            return String(valor || '').replace(/\/gi, '').trim();
+        }
+
         function generarYImprimirPDF() {
             const tipoPrint = document.querySelector('input[name="tipo-print"]:checked').value;
             const temaSeleccionado = document.getElementById('select-print-tema').value;
@@ -1321,8 +1311,7 @@
 
             let htmlPreguntas = `
                 <div class="print-watermark">ENFOPOS-LAAF</div>
-                <div class="print-running-header">ENFOPOS</div>
-                <div style="font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: black; margin: 0; padding: 0;">
+                <div style="display: block; position: static; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.5; color: black; margin: 0; padding: 0;">
                     <div style="border-bottom: 1.5px solid #0f172a; padding-bottom: 8px; margin-bottom: 16px;">
                         <p style="margin: 0; font-size: 10.5pt; font-weight: bold;">ENFOPOS por LAAF. Aplicación no oficial. Solicita la aplicación en lavendanoenf@gmail.com</p>
                         <p style="margin: 4px 0 0; font-size: 11.5pt; font-weight: bold;">${tituloDocumento}</p>
@@ -1332,6 +1321,7 @@
 
             pool.forEach((q, idx) => {
                 const letraCorrecta = String.fromCharCode(65 + (q.correctaOriginal || 0));
+                const refLimpia = limpiarTextoReferencia(q.fuente || q.examenNombre || q.temaId || 'ENFOPOS');
                 htmlPreguntas += `
                     <div style="margin-bottom: 1.6em; page-break-inside: avoid; break-inside: avoid;">
                         <p style="margin-bottom: 6px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4;"><b>${idx + 1}.</b> ${q.enunciado}</p>
@@ -1345,15 +1335,14 @@
                     <tr>
                         <td style="border: 1px solid #64748b; padding: 3px 8px; font-weight: bold; text-align: center; line-height: 1.2;">${idx + 1}</td>
                         <td style="border: 1px solid #64748b; padding: 3px 8px; font-weight: bold; text-align: center; line-height: 1.2;">${letraCorrecta}</td>
-                        <td style="border: 1px solid #64748b; padding: 3px 8px; font-size: 9pt; line-height: 1.2;">${q.fuente || q.examenNombre || q.temaId || 'ENFOPOS'}</td>
+                        <td style="border: 1px solid #64748b; padding: 3px 8px; font-size: 9pt; line-height: 1.2;">${refLimpia}</td>
                     </tr>`;
             });
 
             htmlPreguntas += `</div>`;
 
-            // Última página: Plantilla de respuestas compacta (sin cabecera superior extra ni línea arriba)
             const htmlPlantillaFinal = `
-                <div class="page-break" style="font-family: Arial, sans-serif; color: black; margin: 0; padding: 0;">
+                <div class="page-break" style="display: block; position: static; font-family: Arial, sans-serif; color: black; margin: 0; padding: 0;">
                     <h2 style="margin: 0 0 10px; font-size: 13pt;">Plantilla de Respuestas — ${tituloDocumento}</h2>
                     <table style="width: 100%; border-collapse: collapse; font-size: 9.5pt;">
                         <thead>
