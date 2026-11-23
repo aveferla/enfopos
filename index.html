@@ -147,6 +147,18 @@
                 </div>
             </div>
 
+            <!-- AVISO EXAMEN GUARDADO -->
+            <div id="banner-examen-guardado" class="hidden bg-amber-50 border border-amber-300 text-amber-950 p-4 rounded-2xl shadow-2xs flex flex-col sm:flex-row justify-between items-center gap-3">
+                <div class="text-xs sm:text-sm">
+                    <p class="font-extrabold">💾 Tienes un test guardado en curso</p>
+                    <p id="detalle-examen-guardado" class="text-amber-900/85 mt-0.5"></p>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                    <button type="button" onclick="reanudarExamenGuardado()" class="bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs px-4 py-2 rounded-xl transition">Continuar Test</button>
+                    <button type="button" onclick="descartarExamenGuardadoMenu()" class="bg-white hover:bg-amber-100 text-amber-900 border border-amber-300 font-bold text-xs px-3 py-2 rounded-xl transition">Descartar</button>
+                </div>
+            </div>
+
             <!-- TARJETAS PRINCIPALES -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="bg-gradient-to-br from-indigo-900 to-indigo-950 text-white p-6 rounded-2xl shadow-md flex flex-col justify-between border border-indigo-800 space-y-4">
@@ -914,6 +926,7 @@
             cargarDatosModalidad();
             actualizarUIModalidad();
             verificarMetaDiariaUI();
+            actualizarBannerExamenGuardado();
             cargaInicialPromesa = ejecutarCargaInicial();
         });
 
@@ -1058,6 +1071,8 @@
         }
 
         function cambiarModalidadOposicion() {
+            detenerCronometrosQuiz();
+            examenEnCursoId = null;
             modalidadActual = document.getElementById('select-modalidad').value;
             localStorage.setItem('enfopos_modalidad', modalidadActual);
             cargarDatosModalidad();
@@ -1065,6 +1080,8 @@
             poblarSelectorExamenesOficiales();
             renderizarAcordeonesTemas();
             verificarMetaDiariaUI();
+            if (!document.getElementById('view-menu').classList.contains('hidden')) return;
+            volverMenu();
         }
 
         function borrarTodasEstadisticas() {
@@ -1248,7 +1265,78 @@
         }
 
         function guardarProgresoExamen() {
-            localStorage.setItem(`enfopos_examen_activo_${modalidadActual}`, JSON.stringify({ preguntasActivas, indiceActual, aciertos, fallos, tiempoRestanteSegundos, segundosAcumuladosTest }));
+            const badgeActual = document.getElementById('quiz-badge')?.textContent || 'Examen guardado';
+            localStorage.setItem(`enfopos_examen_activo_${modalidadActual}`, JSON.stringify({
+                preguntasActivas,
+                indiceActual,
+                aciertos,
+                fallos,
+                tiempoRestanteSegundos,
+                segundosAcumuladosTest,
+                examenEnCursoId,
+                badgeTexto: badgeActual
+            }));
+            actualizarBannerExamenGuardado();
+        }
+
+        function obtenerExamenGuardado() {
+            try {
+                const raw = localStorage.getItem(`enfopos_examen_activo_${modalidadActual}`);
+                if (!raw) return null;
+                const parsed = JSON.parse(raw);
+                if (!parsed || !Array.isArray(parsed.preguntasActivas) || parsed.preguntasActivas.length === 0) return null;
+                return parsed;
+            } catch (_) {
+                return null;
+            }
+        }
+
+        function actualizarBannerExamenGuardado() {
+            const banner = document.getElementById('banner-examen-guardado');
+            const detalle = document.getElementById('detalle-examen-guardado');
+            if (!banner || !detalle) return;
+            const guardado = obtenerExamenGuardado();
+            if (!guardado) {
+                banner.classList.add('hidden');
+                return;
+            }
+            const idx = Math.min(guardado.indiceActual || 0, guardado.preguntasActivas.length - 1);
+            const titulo = guardado.badgeTexto || 'Test en curso';
+            detalle.textContent = `${titulo} · Pregunta ${idx + 1} de ${guardado.preguntasActivas.length} (${guardado.aciertos || 0} aciertos, ${guardado.fallos || 0} fallos)`;
+            banner.classList.remove('hidden');
+        }
+
+        function descartarExamenGuardadoMenu() {
+            localStorage.removeItem(`enfopos_examen_activo_${modalidadActual}`);
+            actualizarBannerExamenGuardado();
+        }
+
+        async function reanudarExamenGuardado() {
+            if (cargaInicialPromesa) await cargaInicialPromesa;
+            const guardado = obtenerExamenGuardado();
+            if (!guardado) {
+                actualizarBannerExamenGuardado();
+                return;
+            }
+            preguntasActivas = guardado.preguntasActivas;
+            aciertos = guardado.aciertos || 0;
+            fallos = guardado.fallos || 0;
+            tiempoRestanteSegundos = typeof guardado.tiempoRestanteSegundos === 'number' ? guardado.tiempoRestanteSegundos : (130 * 60);
+            segundosAcumuladosTest = typeof guardado.segundosAcumuladosTest === 'number' ? guardado.segundosAcumuladosTest : 0;
+            examenEnCursoId = guardado.examenEnCursoId || null;
+
+            const targetIdx = Math.max(0, Math.min(guardado.indiceActual || 0, preguntasActivas.length - 1));
+            arrancarQuizUI(guardado.badgeTexto || 'Test reanudado');
+            indiceActual = targetIdx;
+            actualizarContadorEnVivo();
+            mostrarPregunta();
+
+            if (examenEnCursoId) {
+                document.getElementById('quiz-timer').parentElement.classList.remove('hidden');
+            } else {
+                document.getElementById('quiz-timer').parentElement.classList.add('hidden');
+            }
+            iniciarCronometrosQuiz();
         }
 
         function iniciarCronometrosQuiz() {
@@ -1672,9 +1760,21 @@
                 pool = barajarArray(seleccion).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Todos los Temas (${pool.length} preguntas)`;
             } else if (tipoPrint === 'tema') {
-                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])].filter(esPreguntaValidaParaAleatoriaOImpresion).map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
-                if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
-                pool = barajarArray(pool).slice(0, limitePreguntas);
+                const candidatosTema = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])]
+                    .filter(esPreguntaValidaParaAleatoriaOImpresion)
+                    .map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
+                const filtradosTema = temaSeleccionado !== 'todos'
+                    ? candidatosTema.filter(q => q.temaId === temaSeleccionado)
+                    : candidatosTema;
+                const vistosTema = new Set();
+                const unicosTema = [];
+                for (const item of filtradosTema) {
+                    const k = clavePregunta(item);
+                    if (k && vistosTema.has(k)) continue;
+                    if (k) vistosTema.add(k);
+                    unicosTema.push(item);
+                }
+                pool = barajarArray(unicosTema).slice(0, limitePreguntas);
                 tituloDocumento = temaSeleccionado === 'todos'
                     ? `Examen por Temas (${pool.length} preguntas)`
                     : `Examen — ${CATALOGO_TEMAS[temaSeleccionado]?.label || temaSeleccionado}`;
@@ -1761,6 +1861,8 @@
 
         function volverMenu() {
             detenerCronometrosQuiz();
+            examenEnCursoId = null;
+            actualizarBannerExamenGuardado();
             document.getElementById('view-quiz').classList.add('hidden');
             document.getElementById('quiz-footer-bar').classList.add('hidden');
             document.getElementById('modal-abandonar').classList.add('hidden');
