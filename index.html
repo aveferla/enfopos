@@ -516,7 +516,6 @@
         let respuestaSeleccionada = false;
         let temaApunteSeleccionadoId = "gen_1";
 
-
         const EXAMENES_REALES_RESPALDO = [
             { id: "examen_2026", nombre: "Examen Oficial SACYL (2026)", archivo: "examenes/examen_2026.json" },
             { id: "examen_2025", nombre: "Examen Oficial SACYL (15/03/2025)", archivo: "examenes/examen_2025_03_15.json" },
@@ -525,88 +524,11 @@
 
         const PREGUNTAS_INVENTADAS = [];
 
-        // Base de conocimiento clínico, técnico y normativo para enriquecer explicaciones
-        // cuando el JSON no incluye una explicación detallada propia.
         const BASE_EXPLICACIONES_CLINICAS_Y_NORMATIVAS = [
             {
                 match: /eutanasia activa/i,
                 norma: "Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia (art. 3.b / 3.c)",
-                explicacion: "La eutanasia consiste en la actuación deliberada de un profesional sanitario que produce la muerte directa de un paciente con padecimiento grave, crónico e imposibilitante o enfermedad grave incurable y sufrimiento intolerable, a petición expresa y reiterada del paciente. Se diferencia de la distanasia (encarnizamiento terapéutico o prolongación innecesaria de la agonía) y de la limitación/adecuación del esfuerzo terapéutico."
-            },
-            {
-                match: /comisión de servicios.*vacante|plaza vacante.*comisión de servicios/i,
-                norma: "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León",
-                explicacion: "La comisión de servicios es una forma de provisión temporal de puestos cuando existan necesidades urgentes o inaplazables. En las plazas vacantes, la norma autonómica fija un límite temporal máximo (en la red de SACYL, no superior a dos años) y exige su cobertura definitiva mediante los procedimientos ordinarios correspondientes."
-            },
-            {
-                match: /concurso de traslados.*vigencia|estatuto jurídico del personal estatutario.*oposición/i,
-                norma: "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León",
-                explicacion: "Regula los sistemas de selección y provisión de plazas del personal estatutario en SACYL (oposición, concurso, concurso-oposición y concursos de traslados), estableciendo sus requisitos, pruebas y reglas de convocatoria y resolución."
-            },
-            {
-                match: /historia clínica.*decreto 101\/2005|documentación clínica.*soporte/i,
-                norma: "Ley 41/2002, de 14 de noviembre (autonomía del paciente) y Decreto 101/2005, de 22 de diciembre, en Castilla y León",
-                explicacion: "La historia clínica es el conjunto de documentos, datos e informaciones de carácter asistencial que se generan en cada proceso asistencial de un paciente, mientras que la documentación clínica es el soporte de cualquier clase que contiene datos e informaciones asistenciales. En Castilla y León la historia clínica está regulada por el Decreto 101/2005."
-            },
-            {
-                match: /derecho a la información asistencial.*ley 41\/2002|información asistencial.*familiares de primer grado/i,
-                norma: "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente (art. 4 y art. 5)",
-                explicacion: "El titular del derecho a la información asistencial es el paciente; las personas vinculadas a él (por razones familiares o de hecho) solo serán informadas en la medida en que el paciente lo permita de manera expresa o tácita (o en supuestos de incapacidad/imposibilidad legal). Como regla general, la información se presta de forma verbal y queda constancia en la historia clínica."
-            },
-            {
-                match: /instrucciones previas.*decreto 30\/2007|registro de instrucciones previas de castilla y león/i,
-                norma: "Ley 41/2002 (art. 11) y Decreto 30/2007, de 22 de marzo, en Castilla y León",
-                explicacion: "El documento de instrucciones previas permite manifestar anticipadamente la voluntad sobre cuidados y tratamientos de salud o el destino del cuerpo/órganos tras el fallecimiento. Puede incluir objetivos vitales y valores personales para orientar su interpretación, y su inscripción en el registro autonómico facilita su consulta asistencial, aunque su validez formal no depende de un número mínimo de cinco representantes."
-            },
-            {
-                match: /protección de datos personales.*ley orgánica 3\/2018|menores de catorce años.*consentimiento/i,
-                norma: "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (art. 7)",
-                explicacion: "El tratamiento de datos personales de un menor de edad fundado en su consentimiento solo es lícito cuando sea mayor de 14 años (salvo que la ley exija asistencia de los titulares de la patria potestad o tutela en actos que deban realizar sin su intervención); para los menores de 14 años se requiere el consentimiento del titular de la patria potestad o tutela."
-            },
-            {
-                match: /presidente de la gerencia regional de salud|consejero de sanidad/i,
-                norma: "Ley 8/2010, de 30 de agosto, de ordenación del sistema de salud de Castilla y León",
-                explicacion: "La Presidencia de la Gerencia Regional de Salud corresponde al titular de la Consejería competente en materia de sanidad (el Consejero de Sanidad), mientras que la dirección ordinaria y gestión ejecutiva recae en la Dirección Gerencia."
-            },
-            {
-                match: /siniestro o catástrofe.*área de salvamento|área de base.*área de estabilización/i,
-                norma: "Urgencias y emergencias / Medicina y enfermería de catástrofes (organización sectorial del escenario)",
-                explicacion: "En la sectorización de una catástrofe, el Área de Salvamento (zona caliente o de impacto) corresponde al entorno inmediato del suceso, con acceso restringido, mayor riesgo y destrucción, donde actúan equipos especializados de rescate y triaje inicial; el Área de Socorros/Estabilización (zona templada) alberga el Puesto Médico Avanzado (PMA) para asistencia y clasificación avanzada; y el Área de Base (zona fría) reúne logística, recursos de reserva y evacuación."
-            },
-            {
-                match: /suturas de catgut|cirugía menor.*catgut/i,
-                norma: "Cirugía menor y suturas quirúrgicas",
-                explicacion: "El catgut es una sutura absorbible de origen colágeno animal (submucosa intestinal ovina o serosa bovina) cuya absorción ocurre por digestión enzimática proteolítica, provocando mayor reacción tisular que las suturas sintéticas absorbibles modernas (como ácido poliglicólico o poliglactina 910), por lo que en la práctica clínica actual ha quedado prácticamente desplazado o prohibido/restringido en diversos ámbitos y países."
-            },
-            {
-                match: /test de silverman/i,
-                norma: "Cuidados del recién nacido / Valoración respiratoria neonatal",
-                explicacion: "El test de Silverman-Andersen evalúa la gravedad de la dificultad respiratoria en el recién nacido mediante 5 parámetros (aleteo nasal, quejido espiratorio, tiraje intercostal, retracción esternal y sincronía toracoabdominal), puntuados de 0 a 2 (máximo 10: a mayor puntuación, mayor dificultad respiratoria). No valora el nivel de consciencia (escala de Glasgow/modificada) ni la vitalidad al nacimiento (test de Apgar)."
-            },
-            {
-                match: /maltrato intrafamiliar en la infancia y la adolescencia|población diana.*menor de 14 años/i,
-                norma: "Protocolo sanitario ante la sospecha de maltrato en la infancia y la adolescencia (SACYL / Castilla y León)",
-                explicacion: "La infancia y la adolescencia abarcan hasta los 18 años (minoría de edad según la Convención de los Derechos del Niño y la legislación vigente), por lo que limitar la población diana de un protocolo de infancia y adolescencia a menores de 14 años es incorrecto."
-            },
-            {
-                match: /escala de funcionamiento de karnofsky|deterioro de su estado general.*enfermo terminal/i,
-                norma: "Cuidados paliativos y enfermo terminal",
-                explicacion: "El índice/escala de Karnofsky mide el estado funcional general y la capacidad para realizar actividades cotidianas (de 100%, salud normal sin evidencia de enfermedad, a 0%, fallecimiento), siendo muy habitual en oncología y cuidados paliativos. Barthel mide actividades básicas de la vida diaria (ABVD), Lawton y Brody actividades instrumentales (AIVD), Norton el riesgo de UPP, Yesavage el cribado de depresión geriátrica y Goldberg ansiedad/depresión."
-            },
-            {
-                match: /escala de barthel.*lawton y brody|valoración funcional.*barthel/i,
-                norma: "Valoración geriátrica integral (valoración funcional: ABVD y AIVD)",
-                explicacion: "La escala de Barthel valora las Actividades Básicas de la Vida Diaria (ABVD), mientras que la escala de Lawton y Brody evalúa las Actividades Instrumentales de la Vida Diaria (AIVD) —como manejar dinero, teléfono, medicación, transporte o compras—, complementando la valoración funcional del adulto mayor."
-            },
-            {
-                match: /audiometría.*abscisas.*ordenadas|oído derecho.*oído izquierdo/i,
-                norma: "Exploración funcional auditiva / Audiometría tonal liminar",
-                explicacion: "En la audiometría tonal liminar se representa la frecuencia en hercios (Hz) en el eje horizontal (abscisas) y la intensidad en decibelios (dB HL) en el eje vertical (ordenadas). Por convención internacional, el oído derecho se representa en rojo (círculo O / <) y el oído izquierdo en azul (cruz X / >), por lo que indicar rojo para el izquierdo y azul para el derecho es falso."
-            },
-            {
-                match: /sonda nasogástrica.*nutrición enteral|sonda tipo levine/i,
-                norma: "Nutrición enteral y sondaje nasogástrico",
-                explicacion: "La sonda de Levine es una sonda nasogástrica de una luz (habitualmente de poliuretano, silicona o PVC) empleada para alimentación/nutrición enteral, administración de medicación o descompresión/aspiración gástrica. La sonda de Jackson-Pratt es un drenaje quirúrgico aspirativo cerrado (pera/reservorio) y la sonda Foley es un catéter vesical con balón de retención."
+                explicacion: "La eutanasia consiste en la actuación deliberada de un profesional sanitario que produce la muerte directa de un paciente con padecimiento grave, crónico e imposibilitante o enfermedad grave incurable y sufrimiento intolerable, a petición expresa y reiterada del paciente."
             }
         ];
 
@@ -697,7 +619,6 @@
             const copia = { ...(q || {}), ...extraMeta };
             copia.origen = copia.origen || extraMeta.origen || "Examen real";
 
-            // Mapear "pregunta" (o variantes de texto) -> "enunciado"
             if (!copia.enunciado || typeof copia.enunciado !== "string") {
                 const textoAlternativo = copia.pregunta ?? copia.texto ?? copia.titulo;
                 if (typeof textoAlternativo === "string") {
@@ -705,7 +626,6 @@
                 }
             }
 
-            // Asegurar que "opciones" sea un array de strings
             if (!Array.isArray(copia.opciones)) {
                 const altOps = copia.respuestas ?? copia.alternativas;
                 if (Array.isArray(altOps)) {
@@ -717,13 +637,11 @@
                 }
             }
 
-            // Normalizar número de pregunta si viene como string o ausente
             if (copia.numero !== undefined && copia.numero !== null && String(copia.numero).trim() !== "") {
                 const numParsed = parseInt(copia.numero, 10);
                 copia.numero = Number.isNaN(numParsed) ? copia.numero : numParsed;
             }
 
-            // Mapear "letraCorrecta" o "correcta" -> "correctaOriginal" (índice base 0)
             const mapaLetras = { a: 0, b: 1, c: 2, d: 3, e: 4 };
             const totalOps = Array.isArray(copia.opciones) ? copia.opciones.length : 0;
 
@@ -847,10 +765,13 @@
 
             if (archivosTemas.length === 0) {
                 archivosTemas = [
+                    "temas/temas_generales_unificados.json",
                     "temas/tema_gen_1.json",
                     "temas/tema_gen_2.json",
                     ...Object.keys(CATALOGO_TEMAS).map(tId => `temas/${tId}.json`)
                 ];
+            } else if (!archivosTemas.some(r => r.includes("temas_generales_unificados.json"))) {
+                archivosTemas.unshift("temas/temas_generales_unificados.json");
             }
 
             preguntasTemasCargadas = [];
@@ -930,7 +851,10 @@
                 const q = normalizarPregunta({ numero: item?.numero ?? (idx + 1), ...item });
                 const limpio = q.enunciado ? q.enunciado.trim() : "";
                 if (!limpio) return;
-                const uniqKey = q.examenId ? `${q.examenId}::${normalizarTextoClave(limpio)}` : normalizarTextoClave(limpio);
+                const temaParte = q.temaId ? `${normalizarTextoClave(q.temaId)}::` : "";
+                const uniqKey = q.examenId
+                    ? `${q.examenId}::${temaParte}${normalizarTextoClave(limpio)}`
+                    : `${temaParte}${normalizarTextoClave(limpio)}`;
                 if (!vistos.has(uniqKey)) {
                     vistos.add(uniqKey);
                     bancoPreguntasGlobal.push(q);
