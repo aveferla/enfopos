@@ -1,6 +1,7 @@
 [
   { "id": "examen_2026", "nombre": "SACYL (Oct 2026)", "archivo": "examen_2026.json", "tipo": "real" },
   { "id": "examen_2026", "nombre": "SACYL (Mar 2025)", "archivo": "examen_2025_03_15.json", "tipo": "real" },
+  { "id": "examen_2026", "nombre": "SACYL (Dic 2024)", "archivo": "examen_2024_12_01.json", "tipo": "real" },
   { "id": "tema_gen_1", "nombre": "Tema 1: Estructura Consejería y GRS (Act. 2026)", "archivo": "tema_gen_1.json", "tipo": "tema" },
   { "id": "tema_gen_2", "nombre": "Tema 2: Estatuto Jurídico y Ley de Salud", "archivo": "tema_gen_2.json", "tipo": "tema" }
 ]
