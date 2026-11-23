@@ -545,28 +545,78 @@
             if (typeof item === 'string') {
                 const limpioArchivo = item.trim();
                 const idAuto = limpioArchivo.replace(/^.*\//, '').replace(/\.json$/i, '').trim() || `examen_${fallbackIdx + 1}`;
-                const nombreAuto = idAuto.replace(/[_-]+/g, ' ').replace(/\w/g, c => c.toUpperCase());
+                const nombreAuto = idAuto.replace(/[_-]+/g, ' ').replace(/ \w/g, c => c.toUpperCase());
                 const archivo = limpioArchivo.startsWith('examenes/') ? limpioArchivo : `examenes/${limpioArchivo}`;
                 return { id: idAuto, nombre: nombreAuto, archivo };
             }
             const rawArchivo = String(item?.archivo || item?.file || item?.ruta || '').trim();
             const idAuto = rawArchivo.replace(/^.*\//, '').replace(/\.json$/i, '').trim();
             const id = String(item?.id || idAuto || `examen_${fallbackIdx + 1}`).trim();
-            const nombre = String(item?.nombre || item?.titulo || item?.label || id.replace(/[_-]+/g, ' ').replace(/\w/g, c => c.toUpperCase())).trim();
+            const nombre = String(item?.nombre || item?.titulo || item?.label || id.replace(/[_-]+/g, ' ').replace(/ \w/g, c => c.toUpperCase())).trim();
             const archivoFinal = rawArchivo
                 ? (rawArchivo.startsWith('examenes/') ? rawArchivo : `examenes/${rawArchivo}`)
                 : `examenes/${id}.json`;
             return { id, nombre, archivo: archivoFinal };
         }
 
-        function normalizarPreguntaExamen(q, ex) {
-            const copia = { ...(q || {}) };
-            // Force each loaded exam's questions to belong strictly to that exam instance
-            // so shared/duplicate enunciados across 2024/2025/2026 never collide or overwrite.
-            copia.examenId = ex.id;
-            copia.examenNombre = ex.nombre;
-            copia.origen = copia.origen || "Examen real";
+        function normalizarPregunta(q, extraMeta = {}) {
+            const copia = { ...(q || {}), ...extraMeta };
+            copia.origen = copia.origen || extraMeta.origen || "Examen real";
+
+            // Mapear "pregunta" (o variantes de texto) -> "enunciado"
+            if (!copia.enunciado || typeof copia.enunciado !== "string") {
+                const textoAlternativo = copia.pregunta ?? copia.texto ?? copia.titulo;
+                if (typeof textoAlternativo === "string") {
+                    copia.enunciado = textoAlternativo;
+                }
+            }
+
+            // Asegurar que "opciones" sea un array de strings
+            if (!Array.isArray(copia.opciones) && Array.isArray(copia.respuestas)) {
+                copia.opciones = copia.respuestas;
+            }
+
+            // Mapear "letraCorrecta" o "correcta" -> "correctaOriginal" (índice base 0)
+            const mapaLetras = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+            const totalOps = Array.isArray(copia.opciones) ? copia.opciones.length : 0;
+
+            if (typeof copia.letraCorrecta === "string" && copia.letraCorrecta.trim() !== "") {
+                const lNorm = copia.letraCorrecta.trim().toLowerCase();
+                if (lNorm in mapaLetras) {
+                    copia.correctaOriginal = mapaLetras[lNorm];
+                }
+            }
+
+            if (typeof copia.correctaOriginal !== "number" || Number.isNaN(copia.correctaOriginal)) {
+                if (typeof copia.correcta === "number" && !Number.isNaN(copia.correcta)) {
+                    // Si viene en base 1 (p. ej. 1..4) y coincide con totalOps, ajustar a base 0
+                    if (copia.correcta >= 1 && copia.correcta === totalOps && totalOps > 0) {
+                        copia.correctaOriginal = copia.correcta - 1;
+                    } else {
+                        copia.correctaOriginal = copia.correcta;
+                    }
+                } else if (typeof copia.correcta === "string" && copia.correcta.trim() !== "") {
+                    const cNorm = copia.correcta.trim().toLowerCase();
+                    if (cNorm in mapaLetras) {
+                        copia.correctaOriginal = mapaLetras[cNorm];
+                    } else {
+                        const num = Number(cNorm);
+                        copia.correctaOriginal = Number.isNaN(num) ? 0 : num;
+                    }
+                } else {
+                    copia.correctaOriginal = 0;
+                }
+            }
+
             return copia;
+        }
+
+        function normalizarPreguntaExamen(q, ex) {
+            return normalizarPregunta(q, {
+                examenId: ex.id,
+                examenNombre: ex.nombre,
+                origen: (q && q.origen) || "Examen real"
+            });
         }
 
         async function cargarExamenesReales() {
@@ -576,7 +626,8 @@
                 if (resManifest.ok) {
                     const mData = await resManifest.json();
                     if (Array.isArray(mData) && mData.length > 0) {
-                        listaExamenes = mData.map((item, idx) => resolverIdYNombreExamen(item, idx));
+                        const soloReales = mData.filter(item => !item || item.tipo !== 'tema');
+                        listaExamenes = soloReales.map((item, idx) => resolverIdYNombreExamen(item, idx));
                     }
                 }
             } catch (_) {}
@@ -585,7 +636,6 @@
                 listaExamenes = [...EXAMENES_REALES_RESPALDO];
             }
 
-            // Ensure unique exam IDs even if two manifest entries share an id
             const idsVistos = new Set();
             listaExamenes = listaExamenes.map((ex, i) => {
                 let uniqueId = ex.id;
@@ -646,14 +696,14 @@
                     const res = await fetch(`${ruta}?v=${Date.now()}`, { cache: 'no-store' });
                     if (!res.ok) continue;
                     const data = await res.json();
-                    if (Array.isArray(data)) {
-                        data.forEach(q => {
-                            preguntasTemasCargadas.push({
-                                ...q,
-                                origen: q.origen || "Banco por temas"
-                            });
-                        });
-                    }
+                    const listaItems = Array.isArray(data)
+                        ? data
+                        : (Array.isArray(data?.preguntas) ? data.preguntas : []);
+                    listaItems.forEach(q => {
+                        preguntasTemasCargadas.push(
+                            normalizarPregunta(q, { origen: (q && q.origen) || "Banco por temas" })
+                        );
+                    });
                 } catch (_) {}
             }
         }
@@ -715,10 +765,10 @@
             ];
             const vistos = new Set();
             bancoPreguntasGlobal = [];
-            raw.forEach(q => {
+            raw.forEach(item => {
+                const q = normalizarPregunta(item);
                 const limpio = q.enunciado ? q.enunciado.trim() : "";
                 if (!limpio) return;
-                // Deduplicate within the same exam/origin, not across different exams (2024, 2025, 2026)
                 const uniqKey = q.examenId ? `${q.examenId}::${normalizarTextoClave(limpio)}` : normalizarTextoClave(limpio);
                 if (!vistos.has(uniqKey)) {
                     vistos.add(uniqKey);
@@ -836,9 +886,7 @@
             estadisticasExamenes[examenEnCursoId].veces++;
             localStorage.setItem(`enfopos_stats_examenes_${modalidadActual}`, JSON.stringify(estadisticasExamenes));
 
-            // Deep copy strictly the chosen exam's questions
-            preguntasActivas = examenElegido.preguntas.map(q => ({
-                ...JSON.parse(JSON.stringify(q)),
+            preguntasActivas = examenElegido.preguntas.map(q => normalizarPregunta(JSON.parse(JSON.stringify(q)), {
                 examenId: examenElegido.id,
                 examenNombre: examenElegido.nombre
             }));
@@ -1177,11 +1225,15 @@
         }
 
         function prepararPreguntasYRespuestas() {
-            preguntasActivas.forEach(q => {
-                let opcionesMapeadas = q.opciones.map((textoOp, idxOriginal) => ({ texto: textoOp, esCorrecta: (idxOriginal === q.correctaOriginal) }));
+            preguntasActivas.forEach(item => {
+                const q = normalizarPregunta(item);
+                item.enunciado = q.enunciado;
+                item.correctaOriginal = q.correctaOriginal;
+                const opcionesBase = Array.isArray(q.opciones) ? q.opciones : [];
+                let opcionesMapeadas = opcionesBase.map((textoOp, idxOriginal) => ({ texto: textoOp, esCorrecta: (idxOriginal === q.correctaOriginal) }));
                 barajarArray(opcionesMapeadas);
-                q.opciones = opcionesMapeadas.map(o => o.texto);
-                q.correctaOriginal = opcionesMapeadas.findIndex(o => o.esCorrecta);
+                item.opciones = opcionesMapeadas.map(o => o.texto);
+                item.correctaOriginal = opcionesMapeadas.findIndex(o => o.esCorrecta);
             });
         }
 
@@ -1215,7 +1267,8 @@
             document.getElementById('quiz-explicacion-box').classList.add('hidden');
             document.getElementById('current-q-num').textContent = indiceActual + 1;
 
-            const q = preguntasActivas[indiceActual];
+            const q = normalizarPregunta(preguntasActivas[indiceActual]);
+            preguntasActivas[indiceActual] = q;
             const esAnulada = Boolean(q.anulada);
             const enunciadoEl = document.getElementById('quiz-enunciado');
             if (esAnulada) {
@@ -1236,7 +1289,7 @@
 
             const contenedorOpciones = document.getElementById('quiz-opciones');
             contenedorOpciones.innerHTML = '';
-            q.opciones.forEach((opcionTexto, index) => {
+            (q.opciones || []).forEach((opcionTexto, index) => {
                 const btn = document.createElement('button');
                 btn.type = "button";
                 btn.className = "w-full text-left p-4 sm:p-5 rounded-2xl border border-slate-200 hover:border-indigo-400 hover:bg-indigo-50/30 transition text-sm sm:text-base font-semibold text-slate-900 flex items-start gap-3.5 shadow-2xs";
@@ -1250,7 +1303,8 @@
             if (respuestaSeleccionada) return;
             respuestaSeleccionada = true;
 
-            const q = preguntasActivas[indiceActual];
+            const q = normalizarPregunta(preguntasActivas[indiceActual]);
+            preguntasActivas[indiceActual] = q;
             const botones = document.getElementById('quiz-opciones').children;
             if (q.temaId && !estadisticasTemas[q.temaId]) estadisticasTemas[q.temaId] = { aciertos: 0, fallos: 0 };
 
@@ -1437,10 +1491,10 @@
                 if (!exObj || !exObj.preguntas || exObj.preguntas.length === 0) {
                     return alert("No hay preguntas en el examen seleccionado.");
                 }
-                pool = exObj.preguntas.filter(esPreguntaValidaParaAleatoriaOImpresion);
+                pool = exObj.preguntas.filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
                 tituloDocumento = exObj.nombre;
             } else if (tipoPrint === 'todos_temas') {
-                const fuenteMezcla = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || []), ...PREGUNTAS_INVENTADAS].filter(esPreguntaValidaParaAleatoriaOImpresion);
+                const fuenteMezcla = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || []), ...PREGUNTAS_INVENTADAS].filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
                 const porTema = {};
                 fuenteMezcla.forEach(q => {
                     if (!q.temaId) return;
@@ -1464,14 +1518,14 @@
                 pool = barajarArray(seleccion).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Todos los Temas (${pool.length} preguntas)`;
             } else if (tipoPrint === 'tema') {
-                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])].filter(esPreguntaValidaParaAleatoriaOImpresion);
+                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])].filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
                 if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
                 pool = barajarArray(pool).slice(0, limitePreguntas);
                 tituloDocumento = temaSeleccionado === 'todos'
                     ? `Examen por Temas (${pool.length} preguntas)`
                     : `Examen — ${CATALOGO_TEMAS[temaSeleccionado]?.label || temaSeleccionado}`;
             } else if (tipoPrint === 'falladas') {
-                pool = [...preguntasFalladasHistorial].filter(esPreguntaValidaParaAleatoriaOImpresion);
+                pool = [...preguntasFalladasHistorial].filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
                 if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
                 pool = barajarArray(pool).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Preguntas Falladas (${pool.length})`;
@@ -1491,7 +1545,8 @@
 
             let filasPlantilla = '';
 
-            pool.forEach((q, idx) => {
+            pool.forEach((rawQ, idx) => {
+                const q = normalizarPregunta(rawQ);
                 const esAnulada = Boolean(q.anulada);
                 const letraCorrecta = esAnulada
                     ? '<span style="color: #dc2626; font-weight: 800;">ANULADA</span>'
@@ -1507,7 +1562,7 @@
                     <div class="${esAnulada ? 'pregunta-anulada-texto' : ''}" style="margin-bottom: 1.6em; page-break-inside: avoid; break-inside: avoid;${esAnulada ? ' border-left: 3px solid #dc2626; padding-left: 8px;' : ''}">
                         <p style="${estiloEnunciado}"><b>${idx + 1}.</b> ${q.enunciado}${badgeAnuladaPrint}</p>
                         <div style="padding-left: 0.8cm; display: flex; flex-direction: column; gap: 3px;">`;
-                q.opciones.forEach((op, opIdx) => {
+                (q.opciones || []).forEach((op, opIdx) => {
                     htmlPreguntas += `<div style="font-family: Arial, sans-serif; font-size: 10.5pt; line-height: 1.25; text-indent: -0.6cm; padding-left: 0.6cm; margin-bottom: 2px;${esAnulada ? ' color: #dc2626;' : ''}"><b>${String.fromCharCode(65 + opIdx)})</b> ${op}</div>`;
                 });
                 htmlPreguntas += `</div></div>`;
