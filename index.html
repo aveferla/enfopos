@@ -425,7 +425,9 @@
         let modalidadActual = localStorage.getItem('enfopos_modalidad') || 'libre';
 
         const EXAMENES_REALES_RESPALDO = [
-            { id: "examen_2026", nombre: "Examen Oficial SACYL (2026)", archivo: "examenes/examen_2026.json" }
+            { id: "examen_2026", nombre: "Examen Oficial SACYL (2026)", archivo: "examenes/examen_2026.json" },
+            { id: "examen_2025", nombre: "Examen Oficial SACYL (2025)", archivo: "examenes/examen_2025.json" },
+            { id: "examen_2024", nombre: "Examen Oficial SACYL (2024)", archivo: "examenes/examen_2024.json" }
         ];
 
         const PREGUNTAS_INVENTADAS = [];
@@ -525,36 +527,56 @@
             "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Úlceras por presión (UPP).", apuntesHTML: "", enlaces: [] }
         };
 
+        function normalizarTextoClave(str) {
+            return String(str || '').trim().toLowerCase();
+        }
+
         function clavePregunta(q) {
-            return (q && q.enunciado ? q.enunciado.trim() : "").toLowerCase();
+            const base = normalizarTextoClave(q && q.enunciado);
+            const ex = normalizarTextoClave(q && q.examenId);
+            return ex ? `${ex}::${base}` : base;
         }
 
         function esPreguntaValidaParaAleatoriaOImpresion(q) {
             return Boolean(q && !q.anulada);
         }
 
+        function resolverIdYNombreExamen(item, fallbackIdx = 0) {
+            if (typeof item === 'string') {
+                const limpioArchivo = item.trim();
+                const idAuto = limpioArchivo.replace(/^.*\//, '').replace(/\.json$/i, '').trim() || `examen_${fallbackIdx + 1}`;
+                const nombreAuto = idAuto.replace(/[_-]+/g, ' ').replace(/\w/g, c => c.toUpperCase());
+                const archivo = limpioArchivo.startsWith('examenes/') ? limpioArchivo : `examenes/${limpioArchivo}`;
+                return { id: idAuto, nombre: nombreAuto, archivo };
+            }
+            const rawArchivo = String(item?.archivo || item?.file || item?.ruta || '').trim();
+            const idAuto = rawArchivo.replace(/^.*\//, '').replace(/\.json$/i, '').trim();
+            const id = String(item?.id || idAuto || `examen_${fallbackIdx + 1}`).trim();
+            const nombre = String(item?.nombre || item?.titulo || item?.label || id.replace(/[_-]+/g, ' ').replace(/\w/g, c => c.toUpperCase())).trim();
+            const archivoFinal = rawArchivo
+                ? (rawArchivo.startsWith('examenes/') ? rawArchivo : `examenes/${rawArchivo}`)
+                : `examenes/${id}.json`;
+            return { id, nombre, archivo: archivoFinal };
+        }
+
+        function normalizarPreguntaExamen(q, ex) {
+            const copia = { ...(q || {}) };
+            // Force each loaded exam's questions to belong strictly to that exam instance
+            // so shared/duplicate enunciados across 2024/2025/2026 never collide or overwrite.
+            copia.examenId = ex.id;
+            copia.examenNombre = ex.nombre;
+            copia.origen = copia.origen || "Examen real";
+            return copia;
+        }
+
         async function cargarExamenesReales() {
             let listaExamenes = [];
             try {
-                const resManifest = await fetch(`examenes/manifest.json?v=${Date.now()}`);
+                const resManifest = await fetch(`examenes/manifest.json?v=${Date.now()}`, { cache: 'no-store' });
                 if (resManifest.ok) {
                     const mData = await resManifest.json();
-                    if (Array.isArray(mData)) {
-                        listaExamenes = mData.map(item => {
-                            if (typeof item === 'string') {
-                                const idAuto = item.replace(/^.*\//, '').replace(/\.json$/i, '');
-                                return {
-                                    id: idAuto,
-                                    nombre: idAuto.replace(/_/g, ' ').toUpperCase(),
-                                    archivo: item.startsWith('examenes/') ? item : `examenes/${item}`
-                                };
-                            }
-                            return {
-                                id: item.id || item.archivo.replace(/^.*\//, '').replace(/\.json$/i, ''),
-                                nombre: item.nombre || item.id,
-                                archivo: item.archivo.startsWith('examenes/') ? item.archivo : `examenes/${item.archivo}`
-                            };
-                        });
+                    if (Array.isArray(mData) && mData.length > 0) {
+                        listaExamenes = mData.map((item, idx) => resolverIdYNombreExamen(item, idx));
                     }
                 }
             } catch (_) {}
@@ -563,20 +585,27 @@
                 listaExamenes = [...EXAMENES_REALES_RESPALDO];
             }
 
+            // Ensure unique exam IDs even if two manifest entries share an id
+            const idsVistos = new Set();
+            listaExamenes = listaExamenes.map((ex, i) => {
+                let uniqueId = ex.id;
+                if (idsVistos.has(uniqueId)) {
+                    uniqueId = `${ex.id}__${i + 1}`;
+                }
+                idsVistos.add(uniqueId);
+                return { ...ex, id: uniqueId };
+            });
+
             examenesRealesCargados = [];
             for (const ex of listaExamenes) {
                 try {
-                    const res = await fetch(`${ex.archivo}?v=${Date.now()}`);
+                    const res = await fetch(`${ex.archivo}?v=${Date.now()}`, { cache: 'no-store' });
                     if (res.ok) {
                         const data = await res.json();
-                        const preguntas = Array.isArray(data)
-                            ? data.map(q => ({
-                                ...q,
-                                examenId: q.examenId || ex.id,
-                                examenNombre: q.examenNombre || ex.nombre,
-                                origen: q.origen || "Examen real"
-                            }))
-                            : [];
+                        const rawPreguntas = Array.isArray(data)
+                            ? data
+                            : (Array.isArray(data?.preguntas) ? data.preguntas : []);
+                        const preguntas = rawPreguntas.map(q => normalizarPreguntaExamen(q, ex));
                         examenesRealesCargados.push({ ...ex, preguntas });
                     }
                 } catch (err) {
@@ -591,7 +620,7 @@
         async function cargarPreguntasTemas() {
             let archivosTemas = [];
             try {
-                const resManifest = await fetch(`temas/manifest.json?v=${Date.now()}`);
+                const resManifest = await fetch(`temas/manifest.json?v=${Date.now()}`, { cache: 'no-store' });
                 if (resManifest.ok) {
                     const mData = await resManifest.json();
                     if (Array.isArray(mData)) {
@@ -614,7 +643,7 @@
             preguntasTemasCargadas = [];
             for (const ruta of archivosTemas) {
                 try {
-                    const res = await fetch(`${ruta}?v=${Date.now()}`);
+                    const res = await fetch(`${ruta}?v=${Date.now()}`, { cache: 'no-store' });
                     if (!res.ok) continue;
                     const data = await res.json();
                     if (Array.isArray(data)) {
@@ -632,7 +661,7 @@
         async function cargarCatalogoApuntesAutomatico() {
             let archivosApuntes = [];
             try {
-                const resManifest = await fetch(`apuntes/manifest.json?v=${Date.now()}`);
+                const resManifest = await fetch(`apuntes/manifest.json?v=${Date.now()}`, { cache: 'no-store' });
                 if (resManifest.ok) {
                     const mData = await resManifest.json();
                     if (Array.isArray(mData)) {
@@ -650,7 +679,7 @@
 
             await Promise.all(archivosApuntes.map(async (ruta) => {
                 try {
-                    const res = await fetch(`${ruta}?v=${Date.now()}`);
+                    const res = await fetch(`${ruta}?v=${Date.now()}`, { cache: 'no-store' });
                     if (!res.ok) return;
                     const data = await res.json();
 
@@ -688,8 +717,11 @@
             bancoPreguntasGlobal = [];
             raw.forEach(q => {
                 const limpio = q.enunciado ? q.enunciado.trim() : "";
-                if (limpio && !vistos.has(limpio)) {
-                    vistos.add(limpio);
+                if (!limpio) return;
+                // Deduplicate within the same exam/origin, not across different exams (2024, 2025, 2026)
+                const uniqKey = q.examenId ? `${q.examenId}::${normalizarTextoClave(limpio)}` : normalizarTextoClave(limpio);
+                if (!vistos.has(uniqKey)) {
+                    vistos.add(uniqKey);
                     bancoPreguntasGlobal.push(q);
                 }
             });
@@ -725,6 +757,9 @@
             const selMenu = document.getElementById('select-examen-oficial');
             const selPrint = document.getElementById('select-print-examen-real');
 
+            const valorPrevioMenu = selMenu ? selMenu.value : '';
+            const valorPrevioPrint = selPrint ? selPrint.value : '';
+
             selMenu.innerHTML = '<option value="">-- Selección automática --</option>';
             selPrint.innerHTML = '';
 
@@ -746,6 +781,13 @@
                 optEmpty.value = "";
                 optEmpty.textContent = "Sin exámenes disponibles";
                 selPrint.appendChild(optEmpty);
+            }
+
+            if (valorPrevioMenu && Array.from(selMenu.options).some(o => o.value === valorPrevioMenu)) {
+                selMenu.value = valorPrevioMenu;
+            }
+            if (valorPrevioPrint && Array.from(selPrint.options).some(o => o.value === valorPrevioPrint)) {
+                selPrint.value = valorPrevioPrint;
             }
         }
 
@@ -769,11 +811,12 @@
         async function iniciarSimulacroOposicion() {
             if (cargaInicialPromesa) await cargaInicialPromesa;
 
-            const seleccionadoId = document.getElementById('select-examen-oficial').value;
+            const selectEl = document.getElementById('select-examen-oficial');
+            const seleccionadoId = selectEl ? selectEl.value : '';
             let examenElegido = null;
 
             if (seleccionadoId) {
-                examenElegido = examenesRealesCargados.find(e => e.id === seleccionadoId);
+                examenElegido = examenesRealesCargados.find(e => String(e.id) === String(seleccionadoId));
             } else {
                 const candidatos = examenesRealesCargados.filter(e => e.preguntas && e.preguntas.length > 0);
                 if (candidatos.length === 0) {
@@ -793,7 +836,13 @@
             estadisticasExamenes[examenEnCursoId].veces++;
             localStorage.setItem(`enfopos_stats_examenes_${modalidadActual}`, JSON.stringify(estadisticasExamenes));
 
-            preguntasActivas = JSON.parse(JSON.stringify(examenElegido.preguntas));
+            // Deep copy strictly the chosen exam's questions
+            preguntasActivas = examenElegido.preguntas.map(q => ({
+                ...JSON.parse(JSON.stringify(q)),
+                examenId: examenElegido.id,
+                examenNombre: examenElegido.nombre
+            }));
+
             prepararPreguntasYRespuestas();
             indiceActual = 0; aciertos = 0; fallos = 0;
             tiempoRestanteSegundos = 130 * 60;
