@@ -372,7 +372,7 @@
 
             <div id="quiz-explicacion-box" class="hidden bg-amber-50 border border-amber-200 p-5 rounded-2xl text-sm text-amber-950 space-y-1.5 shadow-sm">
                 <p class="font-bold flex items-center gap-2">💡 Explicación / Fuente:</p>
-                <p id="quiz-explicacion-texto" class="leading-relaxed"></p>
+                <div id="quiz-explicacion-texto" class="leading-relaxed space-y-1.5"></div>
             </div>
         </div>
 
@@ -426,106 +426,132 @@
 
         const EXAMENES_REALES_RESPALDO = [
             { id: "examen_2026", nombre: "Examen Oficial SACYL (2026)", archivo: "examenes/examen_2026.json" },
-            { id: "examen_2025", nombre: "Examen Oficial SACYL (2025)", archivo: "examenes/examen_2025.json" },
-            { id: "examen_2024", nombre: "Examen Oficial SACYL (2024)", archivo: "examenes/examen_2024.json" }
+            { id: "examen_2025", nombre: "Examen Oficial SACYL (15/03/2025)", archivo: "examenes/examen_2025_03_15.json" },
+            { id: "examen_2024", nombre: "Examen Oficial SACYL (01/12/2024)", archivo: "examenes/examen_2024_12_01.json" }
         ];
 
         const PREGUNTAS_INVENTADAS = [];
 
-        let bancoPreguntasGlobal = [];
-        let examenesRealesCargados = [];
-        let preguntasTemasCargadas = [];
-        let examenEnCursoId = null;
-        let cargaInicialPromesa = null;
-
-        let preguntasActivas = [];
-        let indiceActual = 0;
-        let aciertos = 0;
-        let fallos = 0;
-        let respuestaSeleccionada = false;
-        let tiempoRestanteSegundos = 130 * 60;
-        let segundosAcumuladosTest = 0;
-        let segundosPreguntaActual = 0;
-        let cronometrosQuizInterval = null;
-        let temaApunteSeleccionadoId = "gen_1";
-
-        let estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
-        let estadisticasExamenes = JSON.parse(localStorage.getItem(`enfopos_stats_examenes_${modalidadActual}`) || '{}');
-        let historialPreguntas = JSON.parse(localStorage.getItem(`enfopos_historial_preguntas_${modalidadActual}`) || '{}');
-        let preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
-
-        let hoyFechaStr = new Date().toISOString().slice(0, 10);
-        let registroDiario = JSON.parse(localStorage.getItem(`enfopos_diario_${modalidadActual}`) || `{"fecha": "${hoyFechaStr}", "total": 0}`);
-        if (registroDiario.fecha !== hoyFechaStr) {
-            registroDiario = { fecha: hoyFechaStr, total: 0 };
-            localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
-        }
-
-        const COLORES_PASTEL = [
-            "bg-sky-50/70 border-sky-200 hover:border-sky-400",
-            "bg-emerald-50/70 border-emerald-200 hover:border-emerald-400",
-            "bg-amber-50/70 border-amber-200 hover:border-amber-400",
-            "bg-violet-50/70 border-violet-200 hover:border-violet-400",
-            "bg-rose-50/70 border-rose-200 hover:border-rose-400",
-            "bg-teal-50/70 border-teal-200 hover:border-teal-400"
+        // Base de conocimiento clínico, técnico y normativo para enriquecer explicaciones
+        // cuando el JSON no incluye una explicación detallada propia.
+        const BASE_EXPLICACIONES_CLINICAS_Y_NORMATIVAS = [
+            {
+                match: /eutanasia activa/i,
+                norma: "Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia (art. 3.b / 3.c)",
+                explicacion: "La eutanasia consiste en la actuación deliberada de un profesional sanitario que produce la muerte directa de un paciente con padecimiento grave, crónico e imposibilitante o enfermedad grave incurable y sufrimiento intolerable, a petición expresa y reiterada del paciente. Se diferencia de la distanasia (encarnizamiento terapéutico o prolongación innecesaria de la agonía) y de la limitación/adecuación del esfuerzo terapéutico."
+            },
+            {
+                match: /comisión de servicios.*vacante|plaza vacante.*comisión de servicios/i,
+                norma: "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León",
+                explicacion: "La comisión de servicios es una forma de provisión temporal de puestos cuando existan necesidades urgentes o inaplazables. En las plazas vacantes, la norma autonómica fija un límite temporal máximo (en la red de SACYL, no superior a dos años) y exige su cobertura definitiva mediante los procedimientos ordinarios correspondientes."
+            },
+            {
+                match: /concurso de traslados.*vigencia|estatuto jurídico del personal estatutario.*oposición/i,
+                norma: "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León",
+                explicacion: "Regula los sistemas de selección y provisión de plazas del personal estatutario en SACYL (oposición, concurso, concurso-oposición y concursos de traslados), estableciendo sus requisitos, pruebas y reglas de convocatoria y resolución."
+            },
+            {
+                match: /historia clínica.*decreto 101\/2005|documentación clínica.*soporte/i,
+                norma: "Ley 41/2002, de 14 de noviembre (autonomía del paciente) y Decreto 101/2005, de 22 de diciembre, en Castilla y León",
+                explicacion: "La historia clínica es el conjunto de documentos, datos e informaciones de carácter asistencial que se generan en cada proceso asistencial de un paciente, mientras que la documentación clínica es el soporte de cualquier clase que contiene datos e informaciones asistenciales. En Castilla y León la historia clínica está regulada por el Decreto 101/2005."
+            },
+            {
+                match: /derecho a la información asistencial.*ley 41\/2002|información asistencial.*familiares de primer grado/i,
+                norma: "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente (art. 4 y art. 5)",
+                explicacion: "El titular del derecho a la información asistencial es el paciente; las personas vinculadas a él (por razones familiares o de hecho) solo serán informadas en la medida en que el paciente lo permita de manera expresa o tácita (o en supuestos de incapacidad/imposibilidad legal). Como regla general, la información se presta de forma verbal y queda constancia en la historia clínica."
+            },
+            {
+                match: /instrucciones previas.*decreto 30\/2007|registro de instrucciones previas de castilla y león/i,
+                norma: "Ley 41/2002 (art. 11) y Decreto 30/2007, de 22 de marzo, en Castilla y León",
+                explicacion: "El documento de instrucciones previas permite manifestar anticipadamente la voluntad sobre cuidados y tratamientos de salud o el destino del cuerpo/órganos tras el fallecimiento. Puede incluir objetivos vitales y valores personales para orientar su interpretación, y su inscripción en el registro autonómico facilita su consulta asistencial, aunque su validez formal no depende de un número mínimo de cinco representantes."
+            },
+            {
+                match: /protección de datos personales.*ley orgánica 3\/2018|menores de catorce años.*consentimiento/i,
+                norma: "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (art. 7)",
+                explicacion: "El tratamiento de datos personales de un menor de edad fundado en su consentimiento solo es lícito cuando sea mayor de 14 años (salvo que la ley exija asistencia de los titulares de la patria potestad o tutela en actos que deban realizar sin su intervención); para los menores de 14 años se requiere el consentimiento del titular de la patria potestad o tutela."
+            },
+            {
+                match: /presidente de la gerencia regional de salud|consejero de sanidad/i,
+                norma: "Ley 8/2010, de 30 de agosto, de ordenación del sistema de salud de Castilla y León",
+                explicacion: "La Presidencia de la Gerencia Regional de Salud corresponde al titular de la Consejería competente en materia de sanidad (el Consejero de Sanidad), mientras que la dirección ordinaria y gestión ejecutiva recae en la Dirección Gerencia."
+            },
+            {
+                match: /siniestro o catástrofe.*área de salvamento|área de base.*área de estabilización/i,
+                norma: "Urgencias y emergencias / Medicina y enfermería de catástrofes (organización sectorial del escenario)",
+                explicacion: "En la sectorización de una catástrofe, el Área de Salvamento (zona caliente o de impacto) corresponde al entorno inmediato del suceso, con acceso restringido, mayor riesgo y destrucción, donde actúan equipos especializados de rescate y triaje inicial; el Área de Socorros/Estabilización (zona templada) alberga el Puesto Médico Avanzado (PMA) para asistencia y clasificación avanzada; y el Área de Base (zona fría) reúne logística, recursos de reserva y evacuación."
+            },
+            {
+                match: /suturas de catgut|cirugía menor.*catgut/i,
+                norma: "Cirugía menor y suturas quirúrgicas",
+                explicacion: "El catgut es una sutura absorbible de origen colágeno animal (submucosa intestinal ovina o serosa bovina) cuya absorción ocurre por digestión enzimática proteolítica, provocando mayor reacción tisular que las suturas sintéticas absorbibles modernas (como ácido poliglicólico o poliglactina 910), por lo que en la práctica clínica actual ha quedado prácticamente desplazado o prohibido/restringido en diversos ámbitos y países."
+            },
+            {
+                match: /test de silverman/i,
+                norma: "Cuidados del recién nacido / Valoración respiratoria neonatal",
+                explicacion: "El test de Silverman-Andersen evalúa la gravedad de la dificultad respiratoria en el recién nacido mediante 5 parámetros (aleteo nasal, quejido espiratorio, tiraje intercostal, retracción esternal y sincronía toracoabdominal), puntuados de 0 a 2 (máximo 10: a mayor puntuación, mayor dificultad respiratoria). No valora el nivel de consciencia (escala de Glasgow/modificada) ni la vitalidad al nacimiento (test de Apgar)."
+            },
+            {
+                match: /maltrato intrafamiliar en la infancia y la adolescencia|población diana.*menor de 14 años/i,
+                norma: "Protocolo sanitario ante la sospecha de maltrato en la infancia y la adolescencia (SACYL / Castilla y León)",
+                explicacion: "La infancia y la adolescencia abarcan hasta los 18 años (minoría de edad según la Convención de los Derechos del Niño y la legislación vigente), por lo que limitar la población diana de un protocolo de infancia y adolescencia a menores de 14 años es incorrecto."
+            },
+            {
+                match: /escala de funcionamiento de karnofsky|deterioro de su estado general.*enfermo terminal/i,
+                norma: "Cuidados paliativos y enfermo terminal",
+                explicacion: "El índice/escala de Karnofsky mide el estado funcional general y la capacidad para realizar actividades cotidianas (de 100%, salud normal sin evidencia de enfermedad, a 0%, fallecimiento), siendo muy habitual en oncología y cuidados paliativos. Barthel mide actividades básicas de la vida diaria (ABVD), Lawton y Brody actividades instrumentales (AIVD), Norton el riesgo de UPP, Yesavage el cribado de depresión geriátrica y Goldberg ansiedad/depresión."
+            },
+            {
+                match: /escala de barthel.*lawton y brody|valoración funcional.*barthel/i,
+                norma: "Valoración geriátrica integral (valoración funcional: ABVD y AIVD)",
+                explicacion: "La escala de Barthel valora las Actividades Básicas de la Vida Diaria (ABVD), mientras que la escala de Lawton y Brody evalúa las Actividades Instrumentales de la Vida Diaria (AIVD) —como manejar dinero, teléfono, medicación, transporte o compras—, complementando la valoración funcional del adulto mayor."
+            },
+            {
+                match: /audiometría.*abscisas.*ordenadas|oído derecho.*oído izquierdo/i,
+                norma: "Exploración funcional auditiva / Audiometría tonal liminar",
+                explicacion: "En la audiometría tonal liminar se representa la frecuencia en hercios (Hz) en el eje horizontal (abscisas) y la intensidad en decibelios (dB HL) en el eje vertical (ordenadas). Por convención internacional, el oído derecho se representa en rojo (círculo O / <) y el oído izquierdo en azul (cruz X / >), por lo que indicar rojo para el izquierdo y azul para el derecho es falso."
+            },
+            {
+                match: /sonda nasogástrica.*nutrición enteral|sonda tipo levine/i,
+                norma: "Nutrición enteral y sondaje nasogástrico",
+                explicacion: "La sonda de Levine es una sonda nasogástrica de una luz (habitualmente de poliuretano, silicona o PVC) empleada para alimentación/nutrición enteral, administración de medicación o descompresión/aspiración gástrica. La sonda de Jackson-Pratt es un drenaje quirúrgico aspirativo cerrado (pera/reservorio) y la sonda Foley es un catéter vesical con balón de retención."
+            }
         ];
 
-        const CATALOGO_TEMAS = {
-            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura Consejería de Sanidad y Bienestar Social y GRS.", apuntesHTML: "", enlaces: [] },
-            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto del personal estatutario de SACYL y Ley de Salud.", apuntesHTML: "", enlaces: [] },
-            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Ley 41/2002: Autonomía del paciente, intimidad y documentación clínica.", apuntesHTML: "", enlaces: [] },
-            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Ley 8/2003 de salud y protección de datos en Castilla y León.", apuntesHTML: "", enlaces: [] },
-            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Plan de calidad y seguridad del paciente en GRS.", apuntesHTML: "", enlaces: [] },
-            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Responsabilidad profesional, bioética e instrucciones previas.", apuntesHTML: "", enlaces: [] },
-            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Programas de Salud, Guías Clínicas y PRL.", apuntesHTML: "", enlaces: [] },
-            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Sistemas de información en AE y AP.", apuntesHTML: "", enlaces: [] },
-            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Igualdad de género, no discriminación y dependencia.", apuntesHTML: "", enlaces: [] },
-            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Metodología de Enfermería: PAE y Taxonomías.", apuntesHTML: "", enlaces: [] },
-            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Metodología de Investigación.", apuntesHTML: "", enlaces: [] },
-            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Investigación básica y aplicada.", apuntesHTML: "", enlaces: [] },
-            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Estadística descriptiva e inferencial.", apuntesHTML: "", enlaces: [] },
-            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Epidemiología y vigilancia.", apuntesHTML: "", enlaces: [] },
-            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Demografía sanitaria.", apuntesHTML: "", enlaces: [] },
-            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Salud pública.", apuntesHTML: "", enlaces: [] },
-            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Prevención y detección precoz.", apuntesHTML: "", enlaces: [] },
-            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Inmunizaciones y vacunas.", apuntesHTML: "", enlaces: [] },
-            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Educación para la Salud.", apuntesHTML: "", enlaces: [] },
-            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Paciente Activo.", apuntesHTML: "", enlaces: [] },
-            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Comunicación y entrevista clínica.", apuntesHTML: "", enlaces: [] },
-            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Higiene y esterilización.", apuntesHTML: "", enlaces: [] },
-            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Conducta humana y estrés.", apuntesHTML: "", enlaces: [] },
-            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Problemas psicosociales.", apuntesHTML: "", enlaces: [] },
-            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Sexualidad y reproducción.", apuntesHTML: "", enlaces: [] },
-            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Gestación, parto y lactancia.", apuntesHTML: "", enlaces: [] },
-            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Cuidados del niño sano.", apuntesHTML: "", enlaces: [] },
-            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Cuidados del niño enfermo.", apuntesHTML: "", enlaces: [] },
-            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Procesos infectocontagiosos.", apuntesHTML: "", enlaces: [] },
-            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Valoración geriátrica integral.", apuntesHTML: "", enlaces: [] },
-            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Síndromes geriátricos.", apuntesHTML: "", enlaces: [] },
-            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Enfermo terminal y paliativos.", apuntesHTML: "", enlaces: [] },
-            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental.", apuntesHTML: "", enlaces: [] },
-            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Adicciones y drogas.", apuntesHTML: "", enlaces: [] },
-            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Violencia de género.", apuntesHTML: "", enlaces: [] },
-            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Urgencias y RCP.", apuntesHTML: "", enlaces: [] },
-            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Catástrofes y triaje.", apuntesHTML: "", enlaces: [] },
-            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Paciente pluripatológico.", apuntesHTML: "", enlaces: [] },
-            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Farmacología general.", apuntesHTML: "", enlaces: [] },
-            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Administración de medicamentos.", apuntesHTML: "", enlaces: [] },
-            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Nutrición y dietas.", apuntesHTML: "", enlaces: [] },
-            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Nutrición enteral y parenteral.", apuntesHTML: "", enlaces: [] },
-            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Problemas neurológicos y ACV.", apuntesHTML: "", enlaces: [] },
-            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Problemas respiratorios.", apuntesHTML: "", enlaces: [] },
-            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Problemas cardiovasculares.", apuntesHTML: "", enlaces: [] },
-            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Sistema renal y urológico.", apuntesHTML: "", enlaces: [] },
-            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Problemas endocrinológicos.", apuntesHTML: "", enlaces: [] },
-            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Sistema músculo-esquelético.", apuntesHTML: "", enlaces: [] },
-            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Problemas gastrointestinales.", apuntesHTML: "", enlaces: [] },
-            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Hematología y transfusiones.", apuntesHTML: "", enlaces: [] },
-            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Oftalmología y ORL.", apuntesHTML: "", enlaces: [] },
-            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Oncología y citostáticos.", apuntesHTML: "", enlaces: [] },
-            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Paciente quirúrgico.", apuntesHTML: "", enlaces: [] },
-            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Úlceras por presión (UPP).", apuntesHTML: "", enlaces: [] }
-        };
+        function buscarExplicacionEnriquecida(q) {
+            const textoBase = [
+                q.enunciado || "",
+                Array.isArray(q.opciones) ? q.opciones.join(" ") : "",
+                q.temaId || "",
+                q.fuente || ""
+            ].join(" ");
+
+            for (const entrada of BASE_EXPLICACIONES_CLINICAS_Y_NORMATIVAS) {
+                if (entrada.match.test(textoBase)) {
+                    return entrada;
+                }
+            }
+            return null;
+        }
+
+        function construirDetalleExplicacion(q) {
+            const expPropia = limpiarTextoReferencia(q.explicacion);
+            const fuentePropia = limpiarTextoReferencia(q.fuente);
+            const enriquecida = buscarExplicacionEnriquecida(q);
+
+            const cuerpoExplicacion = expPropia || (enriquecida ? enriquecida.explicacion : "");
+            const referenciaNormativa = fuentePropia || (enriquecida ? enriquecida.norma : "") || limpiarTextoReferencia(q.examenNombre) || "SACYL";
+
+            const idxCorrecta = typeof q.correctaOriginal === "number" ? q.correctaOriginal : -1;
+            const textoCorrecta = (Array.isArray(q.opciones) && idxCorrecta >= 0 && q.opciones[idxCorrecta])
+                ? `${String.fromCharCode(65 + idxCorrecta)}) ${q.opciones[idxCorrecta]}`
+                : "";
+
+            return {
+                cuerpoExplicacion,
+                referenciaNormativa,
+                textoCorrecta
+            };
+        }
 
         function normalizarTextoClave(str) {
             return String(str || '').trim().toLowerCase();
@@ -559,6 +585,21 @@
             return { id, nombre, archivo: archivoFinal };
         }
 
+        function extraerArrayPreguntas(data) {
+            if (Array.isArray(data)) return data;
+            if (!data || typeof data !== "object") return [];
+            const clavesComunes = ["preguntas", "items", "cuestionario", "questions", "examen", "data"];
+            for (const k of clavesComunes) {
+                if (Array.isArray(data[k])) return data[k];
+            }
+            for (const val of Object.values(data)) {
+                if (Array.isArray(val) && val.length > 0 && typeof val[0] === "object") {
+                    return val;
+                }
+            }
+            return [];
+        }
+
         function normalizarPregunta(q, extraMeta = {}) {
             const copia = { ...(q || {}), ...extraMeta };
             copia.origen = copia.origen || extraMeta.origen || "Examen real";
@@ -572,8 +613,21 @@
             }
 
             // Asegurar que "opciones" sea un array de strings
-            if (!Array.isArray(copia.opciones) && Array.isArray(copia.respuestas)) {
-                copia.opciones = copia.respuestas;
+            if (!Array.isArray(copia.opciones)) {
+                const altOps = copia.respuestas ?? copia.alternativas;
+                if (Array.isArray(altOps)) {
+                    copia.opciones = altOps;
+                } else if (altOps && typeof altOps === "object") {
+                    copia.opciones = Object.values(altOps);
+                } else {
+                    copia.opciones = [];
+                }
+            }
+
+            // Normalizar número de pregunta si viene como string o ausente
+            if (copia.numero !== undefined && copia.numero !== null && String(copia.numero).trim() !== "") {
+                const numParsed = parseInt(copia.numero, 10);
+                copia.numero = Number.isNaN(numParsed) ? copia.numero : numParsed;
             }
 
             // Mapear "letraCorrecta" o "correcta" -> "correctaOriginal" (índice base 0)
@@ -589,7 +643,6 @@
 
             if (typeof copia.correctaOriginal !== "number" || Number.isNaN(copia.correctaOriginal)) {
                 if (typeof copia.correcta === "number" && !Number.isNaN(copia.correcta)) {
-                    // Si viene en base 1 (p. ej. 1..4) y coincide con totalOps, ajustar a base 0
                     if (copia.correcta >= 1 && copia.correcta === totalOps && totalOps > 0) {
                         copia.correctaOriginal = copia.correcta - 1;
                     } else {
@@ -613,10 +666,27 @@
 
         function normalizarPreguntaExamen(q, ex) {
             return normalizarPregunta(q, {
-                examenId: ex.id,
-                examenNombre: ex.nombre,
+                examenId: (q && q.examenId) || ex.id,
+                examenNombre: (q && q.examenNombre) || ex.nombre,
                 origen: (q && q.origen) || "Examen real"
             });
+        }
+
+        function obtenerNumeroVisiblePregunta(q, fallbackIndex = 0) {
+            if (q && q.numero !== undefined && q.numero !== null && String(q.numero).trim() !== "") {
+                return q.numero;
+            }
+            return fallbackIndex + 1;
+        }
+
+        function formatearEnunciadoNumerado(q, fallbackIndex = 0) {
+            const num = obtenerNumeroVisiblePregunta(q, fallbackIndex);
+            const texto = String(q?.enunciado || "").trim();
+            if (!texto) return `${num}.`;
+            if (/^\d+\s*[.)-]/.test(texto)) {
+                return texto;
+            }
+            return `${num}. ${texto}`;
         }
 
         async function cargarExamenesReales() {
@@ -652,10 +722,10 @@
                     const res = await fetch(`${ex.archivo}?v=${Date.now()}`, { cache: 'no-store' });
                     if (res.ok) {
                         const data = await res.json();
-                        const rawPreguntas = Array.isArray(data)
-                            ? data
-                            : (Array.isArray(data?.preguntas) ? data.preguntas : []);
-                        const preguntas = rawPreguntas.map(q => normalizarPreguntaExamen(q, ex));
+                        const rawPreguntas = extraerArrayPreguntas(data);
+                        const preguntas = rawPreguntas
+                            .map((q, idx) => normalizarPreguntaExamen({ numero: q?.numero ?? (idx + 1), ...q }, ex))
+                            .filter(q => String(q.enunciado || "").trim().length > 0);
                         examenesRealesCargados.push({ ...ex, preguntas });
                     }
                 } catch (err) {
@@ -696,12 +766,10 @@
                     const res = await fetch(`${ruta}?v=${Date.now()}`, { cache: 'no-store' });
                     if (!res.ok) continue;
                     const data = await res.json();
-                    const listaItems = Array.isArray(data)
-                        ? data
-                        : (Array.isArray(data?.preguntas) ? data.preguntas : []);
-                    listaItems.forEach(q => {
+                    const listaItems = extraerArrayPreguntas(data);
+                    listaItems.forEach((q, idx) => {
                         preguntasTemasCargadas.push(
-                            normalizarPregunta(q, { origen: (q && q.origen) || "Banco por temas" })
+                            normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }, { origen: (q && q.origen) || "Banco por temas" })
                         );
                     });
                 } catch (_) {}
@@ -765,8 +833,8 @@
             ];
             const vistos = new Set();
             bancoPreguntasGlobal = [];
-            raw.forEach(item => {
-                const q = normalizarPregunta(item);
+            raw.forEach((item, idx) => {
+                const q = normalizarPregunta({ numero: item?.numero ?? (idx + 1), ...item });
                 const limpio = q.enunciado ? q.enunciado.trim() : "";
                 if (!limpio) return;
                 const uniqKey = q.examenId ? `${q.examenId}::${normalizarTextoClave(limpio)}` : normalizarTextoClave(limpio);
@@ -886,7 +954,7 @@
             estadisticasExamenes[examenEnCursoId].veces++;
             localStorage.setItem(`enfopos_stats_examenes_${modalidadActual}`, JSON.stringify(estadisticasExamenes));
 
-            preguntasActivas = examenElegido.preguntas.map(q => normalizarPregunta(JSON.parse(JSON.stringify(q)), {
+            preguntasActivas = examenElegido.preguntas.map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...JSON.parse(JSON.stringify(q)) }, {
                 examenId: examenElegido.id,
                 examenNombre: examenElegido.nombre
             }));
@@ -1225,8 +1293,9 @@
         }
 
         function prepararPreguntasYRespuestas() {
-            preguntasActivas.forEach(item => {
-                const q = normalizarPregunta(item);
+            preguntasActivas.forEach((item, idx) => {
+                const q = normalizarPregunta({ numero: item?.numero ?? (idx + 1), ...item });
+                item.numero = q.numero;
                 item.enunciado = q.enunciado;
                 item.correctaOriginal = q.correctaOriginal;
                 const opcionesBase = Array.isArray(q.opciones) ? q.opciones : [];
@@ -1267,16 +1336,19 @@
             document.getElementById('quiz-explicacion-box').classList.add('hidden');
             document.getElementById('current-q-num').textContent = indiceActual + 1;
 
-            const q = normalizarPregunta(preguntasActivas[indiceActual]);
+            const q = normalizarPregunta({ numero: preguntasActivas[indiceActual]?.numero ?? (indiceActual + 1), ...preguntasActivas[indiceActual] });
             preguntasActivas[indiceActual] = q;
             const esAnulada = Boolean(q.anulada);
+            const enunciadoNumerado = formatearEnunciadoNumerado(q, indiceActual);
+            const numVisible = obtenerNumeroVisiblePregunta(q, indiceActual);
+
             const enunciadoEl = document.getElementById('quiz-enunciado');
             if (esAnulada) {
                 enunciadoEl.className = "text-base sm:text-xl font-extrabold text-red-700 leading-relaxed pt-2 bg-red-50 border-2 border-red-500 p-4 rounded-2xl";
-                enunciadoEl.innerHTML = `${q.enunciado} <span class="badge-anulada">ANULADA</span>`;
+                enunciadoEl.innerHTML = `${enunciadoNumerado} <span class="badge-anulada">ANULADA</span>`;
             } else {
                 enunciadoEl.className = "text-base sm:text-xl font-bold text-slate-900 leading-relaxed pt-2";
-                enunciadoEl.textContent = q.enunciado;
+                enunciadoEl.textContent = enunciadoNumerado;
             }
             const tipoBadge = document.getElementById('quiz-tipo-pregunta');
             if (esAnulada) {
@@ -1284,7 +1356,7 @@
                 tipoBadge.textContent = "ANULADA";
             } else {
                 tipoBadge.className = "text-xs sm:text-sm font-bold text-indigo-700 bg-indigo-50 px-4 py-1.5 rounded-full shadow-2xs";
-                tipoBadge.textContent = q.esReserva ? "Pregunta de Reserva" : `Pregunta ${indiceActual + 1} de ${preguntasActivas.length}`;
+                tipoBadge.textContent = q.esReserva ? `Reserva · Pregunta ${numVisible}` : `Pregunta ${numVisible} (${indiceActual + 1}/${preguntasActivas.length})`;
             }
 
             const contenedorOpciones = document.getElementById('quiz-opciones');
@@ -1299,11 +1371,36 @@
             });
         }
 
+        function renderizarExplicacionEnPantalla(q, esAnulada) {
+            const boxEl = document.getElementById('quiz-explicacion-box');
+            const textoEl = document.getElementById('quiz-explicacion-texto');
+            const detalle = construirDetalleExplicacion(q);
+
+            if (esAnulada) {
+                const extra = detalle.cuerpoExplicacion ? `<p>${detalle.cuerpoExplicacion}</p>` : '';
+                textoEl.innerHTML = `<p><span class="text-red-700 font-extrabold">PREGUNTA ANULADA</span> en la plantilla oficial. No computa como acierto ni como fallo.</p>${extra}<p class="text-xs text-amber-900/80 pt-1"><strong>Normativa / Fuente:</strong> ${detalle.referenciaNormativa}</p>`;
+                boxEl.classList.remove('hidden');
+                return;
+            }
+
+            const partes = [];
+            if (detalle.cuerpoExplicacion) {
+                partes.push(`<p>${detalle.cuerpoExplicacion}</p>`);
+            }
+            if (detalle.textoCorrecta) {
+                partes.push(`<p class="text-xs sm:text-sm text-emerald-900 font-semibold">Opción correcta: <strong>${detalle.textoCorrecta}</strong></p>`);
+            }
+            partes.push(`<p class="text-xs text-amber-900/85 pt-0.5"><strong>Normativa / Fuente:</strong> ${detalle.referenciaNormativa}</p>`);
+
+            textoEl.innerHTML = partes.join('');
+            boxEl.classList.remove('hidden');
+        }
+
         function seleccionarRespuesta(indexElegido, botonElemento) {
             if (respuestaSeleccionada) return;
             respuestaSeleccionada = true;
 
-            const q = normalizarPregunta(preguntasActivas[indiceActual]);
+            const q = normalizarPregunta({ numero: preguntasActivas[indiceActual]?.numero ?? (indiceActual + 1), ...preguntasActivas[indiceActual] });
             preguntasActivas[indiceActual] = q;
             const botones = document.getElementById('quiz-opciones').children;
             if (q.temaId && !estadisticasTemas[q.temaId]) estadisticasTemas[q.temaId] = { aciertos: 0, fallos: 0 };
@@ -1323,15 +1420,14 @@
 
             if (q.anulada) {
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-red-600 bg-red-50 text-red-900 transition text-sm sm:text-base font-extrabold flex items-start gap-3.5 shadow-sm";
-                const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
-                document.getElementById('quiz-explicacion-texto').innerHTML = `<span class="text-red-700 font-extrabold">PREGUNTA ANULADA</span> en la plantilla oficial. No computa como acierto ni como fallo. (Fuente oficial: ${fuenteLimpia})`;
-                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
+                renderizarExplicacionEnPantalla(q, true);
             } else if (indexElegido === q.correctaOriginal) {
                 aciertos++; q.esAcertada = true;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
                 if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
                 if (kPreg) historialPreguntas[kPreg].aciertos++;
                 verificarFraseMotivadoraAciertos();
+                renderizarExplicacionEnPantalla(q, false);
             } else {
                 fallos++; q.esAcertada = false;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-rose-500 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
@@ -1345,6 +1441,7 @@
                     preguntasFalladasHistorial.push(q);
                     localStorage.setItem(`enfopos_falladas_${modalidadActual}`, JSON.stringify(preguntasFalladasHistorial));
                 }
+                renderizarExplicacionEnPantalla(q, false);
             }
 
             localStorage.setItem(`enfopos_stats_${modalidadActual}`, JSON.stringify(estadisticasTemas));
@@ -1352,12 +1449,6 @@
             localStorage.setItem(`enfopos_historial_preguntas_${modalidadActual}`, JSON.stringify(historialPreguntas));
             actualizarContadorEnVivo();
 
-            if (!q.anulada && (q.explicacion || q.fuente)) {
-                const expLimpia = limpiarTextoReferencia(q.explicacion);
-                const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
-                document.getElementById('quiz-explicacion-texto').textContent = `${expLimpia} (Fuente oficial: ${fuenteLimpia})`;
-                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
-            }
             document.getElementById('btn-siguiente').classList.remove('hidden');
             guardarProgresoExamen();
         }
@@ -1491,10 +1582,10 @@
                 if (!exObj || !exObj.preguntas || exObj.preguntas.length === 0) {
                     return alert("No hay preguntas en el examen seleccionado.");
                 }
-                pool = exObj.preguntas.filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
+                pool = exObj.preguntas.filter(esPreguntaValidaParaAleatoriaOImpresion).map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
                 tituloDocumento = exObj.nombre;
             } else if (tipoPrint === 'todos_temas') {
-                const fuenteMezcla = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || []), ...PREGUNTAS_INVENTADAS].filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
+                const fuenteMezcla = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || []), ...PREGUNTAS_INVENTADAS].filter(esPreguntaValidaParaAleatoriaOImpresion).map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
                 const porTema = {};
                 fuenteMezcla.forEach(q => {
                     if (!q.temaId) return;
@@ -1518,14 +1609,14 @@
                 pool = barajarArray(seleccion).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Todos los Temas (${pool.length} preguntas)`;
             } else if (tipoPrint === 'tema') {
-                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])].filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
+                pool = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])].filter(esPreguntaValidaParaAleatoriaOImpresion).map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
                 if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
                 pool = barajarArray(pool).slice(0, limitePreguntas);
                 tituloDocumento = temaSeleccionado === 'todos'
                     ? `Examen por Temas (${pool.length} preguntas)`
                     : `Examen — ${CATALOGO_TEMAS[temaSeleccionado]?.label || temaSeleccionado}`;
             } else if (tipoPrint === 'falladas') {
-                pool = [...preguntasFalladasHistorial].filter(esPreguntaValidaParaAleatoriaOImpresion).map(q => normalizarPregunta(q));
+                pool = [...preguntasFalladasHistorial].filter(esPreguntaValidaParaAleatoriaOImpresion).map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
                 if (temaSeleccionado !== 'todos') pool = pool.filter(q => q.temaId === temaSeleccionado);
                 pool = barajarArray(pool).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Preguntas Falladas (${pool.length})`;
@@ -1546,12 +1637,13 @@
             let filasPlantilla = '';
 
             pool.forEach((rawQ, idx) => {
-                const q = normalizarPregunta(rawQ);
+                const q = normalizarPregunta({ numero: rawQ?.numero ?? (idx + 1), ...rawQ });
                 const esAnulada = Boolean(q.anulada);
                 const letraCorrecta = esAnulada
                     ? '<span style="color: #dc2626; font-weight: 800;">ANULADA</span>'
                     : String.fromCharCode(65 + (q.correctaOriginal || 0));
-                const refLimpia = limpiarTextoReferencia(q.fuente || q.examenNombre || q.temaId || 'ENFOPOS');
+                const detalle = construirDetalleExplicacion(q);
+                const refLimpia = detalle.referenciaNormativa;
                 const estiloEnunciado = esAnulada
                     ? 'margin-bottom: 6px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: #dc2626;'
                     : 'margin-bottom: 6px; font-weight: bold; font-family: Arial, sans-serif; font-size: 11pt; line-height: 1.4; color: black;';
