@@ -1,0 +1,702 @@
+[
+  {
+    "id": "gen_2_1",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, de Estatuto Marco del personal estatutario de los servicios de salud, ¿cómo se clasifica el personal estatutario sanitario según el nivel de titulación requerida?",
+    "opciones": [
+      "Personal de formación universitaria y personal de formación profesional",
+      "Personal facultativo, personal sanitario no facultativo y personal no sanitario",
+      "Personal fijo, personal temporal y personal residente",
+      "Personal de atención primaria y personal de atención especializada"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El Estatuto Marco clasifica al personal estatutario sanitario en personal facultativo y personal sanitario no facultativo (dentro del cual se integra el personal de enfermería).",
+    "fuente": "Ley 55/2003, Artículo 9"
+  },
+  {
+    "id": "gen_2_2",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Marco, ¿cuál de los siguientes NO se considera personal estatutario fijo?",
+    "opciones": [
+      "Quienes obtengan nombramiento para el desempeño con carácter fijo de una plaza",
+      "El personal temporal designado por necesidades del servicio",
+      "Quienes superen las correspondientes pruebas selectivas",
+      "El personal que ocupa plazas de plantilla con fijeza en el nombramiento"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El personal temporal se nombra por razones de necesidad, urgencia o desarrollo de programas temporales, diferenciándose del personal estatutario fijo.",
+    "fuente": "Ley 55/2003, Artículo 8"
+  },
+  {
+    "id": "gen_2_3",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué norma regula con carácter básico el Estatuto Marco del personal estatutario de los servicios de salud en España?",
+    "opciones": [
+      "La Ley 14/1986, General de Sanidad",
+      "La Ley 55/2003, de 16 de diciembre",
+      "La Ley 16/2003, de cohesión y calidad del SNS",
+      "El Real Decreto-Ley 1/1999"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La Ley 55/2003 es la norma básica estatal que regula el Estatuto Marco del personal estatutario de los servicios de salud.",
+    "fuente": "Ley 55/2003, Artículo 1"
+  },
+  {
+    "id": "gen_2_4",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, el derecho a la movilidad voluntaria en el seno del Sistema Nacional de Salud se garantiza a través de:",
+    "opciones": [
+      "Concursos de traslados periódicos",
+      "Adscripciones provisionales indefinidas",
+      "Comisiones de servicio obligatorias",
+      "Planes de movilidad forzosa anuales"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La movilidad voluntaria del personal estatutario se efectúa fundamentalmente mediante concursos de traslados convocados periódicamente por los servicios de salud.",
+    "fuente": "Ley 55/2003, Artículo 37"
+  },
+  {
+    "id": "gen_2_5",
+    "temaId": "gen_2",
+    "enunciado": "Dentro de las situaciones administrativas del personal estatutario previstas en el Estatuto Marco, se encuentra:",
+    "opciones": [
+      "Servicio activo, servicios especiales y excedencia",
+      "Situación de disponibilidad permanente",
+      "Servicio temporal en el extranjero obligatorio",
+      "Inactividad transitoria remunerada"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Estatuto Marco contempla las situaciones de servicio activo, servicios especiales, servicio en otras Administraciones públicas, expectativa de destino y excedencia.",
+    "fuente": "Ley 55/2003, Artículo 65"
+  },
+  {
+    "id": "gen_2_6",
+    "temaId": "gen_2",
+    "enunciado": "¿Cómo se denominan las faltas disciplinarias cometidas por el personal estatutario según la gravedad tipificada en la Ley 55/2003?",
+    "opciones": [
+      "Leves, graves y muy graves",
+      "Simples, complejas y extraordinarias",
+      "Administrativas, penales y civiles",
+      "Menores y mayores"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las faltas disciplinarias del personal estatutario se clasifican en muy graves, graves y leves.",
+    "fuente": "Ley 55/2003, Artículo 72"
+  },
+  {
+    "id": "gen_2_7",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, ¿cuál de las siguientes sanciones puede imponerse por la comisión de una falta muy grave?",
+    "opciones": [
+      "Apercibimiento",
+      "Suspensión firme de funciones de 3 a 6 años",
+      "Separación del servicio",
+      "Suspensión de empleo y sueldo de hasta 15 días"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La separación del servicio es una de las sanciones previstas para las faltas muy graves, implicando la pérdida de la condición de personal estatutario.",
+    "fuente": "Ley 55/2003, Artículo 74"
+  },
+  {
+    "id": "gen_2_8",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con la Ley 1/1993, de Ordenación del Sistema Sanitario de Castilla y León, el órgano superior de dirección y gestión de la Gerencia Regional de Salud es:",
+    "opciones": [
+      "El Director Gerente",
+      "El Consejo de Salud de Área",
+      "La Comisión Central de Garantías",
+      "El Consejo de Gobierno de la Junta"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Director Gerente de la Gerencia Regional de Salud (Sacyl) ejerce la dirección y gestión directa de la organización conforme a la normativa autonómica.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_9",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué principio rector consagra la Ley General de Sanidad (Ley 14/1986) respecto a la atención sanitaria pública?",
+    "opciones": [
+      "La universalidad de la atención y la financiación pública",
+      "El copago obligatorio en todas las prestaciones farmacéuticas",
+      "La privatización progresiva de los hospitales comarcales",
+      "La exclusividad de la medicina privada concertada"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Ley 14/1986 establece como principios fundamentales la universalidad de la asistencia sanitaria pública y la desconcentración de los servicios.",
+    "fuente": "Ley 14/1986, Artículo 3"
+  },
+  {
+    "id": "gen_2_10",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, el nombramiento de personal estatutario temporal por acumulación de tareas tendrá una duración máxima de:",
+    "opciones": [
+      "Tres meses, prorrogables por otros tres",
+      "Nueve meses dentro de un periodo de veinticuatro meses",
+      "Doce meses improrrogables",
+      "Dos años"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los nombramientos de carácter temporal para la atención de tareas de acumulación o exceso de trabajo tienen límites temporales precisados en el Estatuto Marco y su desarrollo normativo.",
+    "fuente": "Ley 55/2003, Artículo 9"
+  },
+  {
+    "id": "gen_2_11",
+    "temaId": "gen_2",
+    "enunciado": "¿Cuál es el órgano de participación comunitaria en los servicios de salud de Castilla y León a nivel de Área de Salud?",
+    "opciones": [
+      "El Consejo de Salud de Área",
+      "La Junta Técnico-Asistencial",
+      "El Consejo Regional de Salud",
+      "La Comisión de Dirección de Atención Primaria"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejo de Salud de Área es el órgano colegiado de participación comunitaria para la consulta y seguimiento de la gestión en el ámbito del Área de Salud.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_12",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, el derecho a la jubilación forzosa del personal estatutario se produce con carácter general al cumplir la edad de:",
+    "opciones": [
+      "65 años",
+      "67 años",
+      "70 años, salvo prórroga autorizada",
+      "60 años"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La edad de jubilación forzosa se establece en los términos generales de la legislación de la Seguridad Social y la normativa específica del personal estatutario, fijándose habitualmente en los 70 años con posibilidad de prolongación.",
+    "fuente": "Ley 55/2003, Artículo 26"
+  },
+  {
+    "id": "gen_2_13",
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 55/2003, ¿cómo se retribuyen los servicios extraordinarios prestados fuera de la jornada normal de trabajo?",
+    "opciones": [
+      "Mediante el complemento de destino",
+      "Mediante gratificaciones extraordinarias por servicios prestados",
+      "No son retribuidos en ningún caso",
+      "A través del complemento específico"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Las gratificaciones extraordinarias se destinan a retribuir los servicios extraordinarios prestados fuera de la jornada normal de trabajo.",
+    "fuente": "Ley 55/2003, Artículo 43"
+  },
+  {
+    "id": "gen_2_14",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué órgano es el encargado de la representación y negociación colectiva del personal estatutario en el ámbito estatal?",
+    "opciones": [
+      "La Mesa Sectorial de Sanidad",
+      "El Consejo Interterritorial del SNS",
+      "La Comisión de Recursos Humanos del SNS",
+      "El Pleno del Parlamento"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Mesa Sectorial de Sanidad es el foro específico de negociación colectiva para las condiciones de trabajo del personal estatutario.",
+    "fuente": "Ley 55/2003, Artículo 80"
+  },
+  {
+    "id": "gen_2_15",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 14/1986 General de Sanidad, las actuaciones sanitarias del sistema irán orientadas principalmente a:",
+    "opciones": [
+      "La curación exclusiva de las enfermedades agudas",
+      "La salud mental y la asistencia hospitalaria privada",
+      "La promoción de la salud y la prevención de enfermedades",
+      "La investigación farmacológica comercial"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "La Ley General de Sanidad prioriza las acciones de promoción de la salud y prevención de la enfermedad por encima de la mera asistencia curativa.",
+    "fuente": "Ley 14/1986, Artículo 18"
+  },
+  {
+    "id": "gen_2_16",
+    "temaId": "gen_2",
+    "enunciado": "En el ámbito de Sacyl, ¿qué tipo de personal estatutario ocupa una plaza de plantilla orgánica de forma definitiva tras superar un concurso-oposición?",
+    "opciones": [
+      "Personal estatutario fijo",
+      "Personal estatutario temporal interino",
+      "Personal sustituto",
+      "Personal eventual"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario fijo es aquel que, tras superar las pruebas selectivas correspondientes, obtiene un nombramiento para el desempeño con carácter fijo de una plaza.",
+    "fuente": "Ley 55/2003, Artículo 8"
+  },
+  {
+    "id": "gen_2_17",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, la pérdida de la condición de personal estatutario se produce por:",
+    "opciones": [
+      "Renuncia, sanción disciplinaria de separación del servicio, jubilación o pérdida de la nacionalidad (cuando proceda)",
+      "Únicamente por jubilación forzosa a los 65 años",
+      "Por el traslado voluntario a otra Comunidad Autónoma",
+      "Por cambio de categoría profesional interna"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las causas de pérdida de la condición de personal estatutario están tasadas legalmente e incluyen la renuncia, la sanción firme de separación del servicio, la jubilación y la pérdida de requisitos determinantes.",
+    "fuente": "Ley 55/2003, Artículo 24"
+  },
+  {
+    "id": "gen_2_18",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con la Ley 55/2003, el expediente disciplinario al personal estatutario se iniciará siempre mediante:",
+    "opciones": [
+      "Acuerdo del órgano competente",
+      "Denuncia anónima de los usuarios",
+      "Resolución judicial penal exclusivamente",
+      "Aviso verbal del superior jerárquico"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El procedimiento disciplinario se incoa por acuerdo del órgano competente, garantizando los derechos de audiencia y defensa del interesado.",
+    "fuente": "Ley 55/2003, Artículo 78"
+  },
+  {
+    "id": "gen_2_19",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué complemento retributivo del personal estatutario retribuye las condiciones particulares de los puestos de trabajo en atención a su especial dificultad técnica, dedicación, responsabilidad o peligrosidad?",
+    "opciones": [
+      "Complemento de destino",
+      "Complemento específico",
+      "Complemento de productividad",
+      "Complemento de itinerancia"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "El complemento específico está destinado a remunerar las condiciones particulares de algunos puestos en atención a su especial dificultad técnica, responsabilidad, dedicación o incompatibilidad.",
+    "fuente": "Ley 55/2003, Artículo 43"
+  },
+  {
+    "id": "gen_2_20",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 1/1993 de Ordenación Sanitaria de Castilla y León, las Áreas de Salud son:",
+    "opciones": [
+      "Las demarcaciones geográficas y poblacionales que integran la atención primaria y especializada",
+      "Órganos unipersonales de asesoramiento político",
+      "Unidades exclusivamente administrativas sin competencias asistenciales",
+      "Hospitales de alta resolución comarcal"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Áreas de Salud constituyen las estructuras fundamentales del sistema sanitario en Castilla y León, articulando la atención primaria y la especializada bajo una gestión descentralizada.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_21",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Marco, el derecho a la formación continuada del personal estatutario implica:",
+    "opciones": [
+      "Un deber de la Administración sanitaria y un derecho del profesional para su perfeccionamiento",
+      "Una obligación exclusiva del trabajador fuera de su jornada",
+      "Un curso obligatorio cada diez años",
+      "Un derecho potestativo sin repercusión en la carrera profesional"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La formación continuada es tanto un derecho de los profesionales a su actualización y desarrollo como una obligación de las instituciones sanitarias para garantizar la calidad asistencial.",
+    "fuente": "Ley 55/2003, Artículo 18"
+  },
+  {
+    "id": "gen_2_22",
+    "temaId": "gen_2",
+    "enunciado": "El personal estatutario que es nombrado para ocupar un cargo directivo en la Administración sanitaria pasa habitualmente a la situación administrativa de:",
+    "opciones": [
+      "Servicios especiales",
+      "Excedencia voluntaria por interés particular",
+      "Expectativa de destino",
+      "Servicios bajo otro régimen"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El desempeño de cargos públicos o directivos determinados en la legislación comporta el pase a la situación de servicios especiales.",
+    "fuente": "Ley 55/2003, Artículo 66"
+  },
+  {
+    "id": "gen_2_23",
+    "temaId": "gen_2",
+    "enunciado": "¿Cuál de las siguientes faltas disciplinarias se califica como MUY GRAVE según el Estatuto Marco?",
+    "opciones": [
+      "El incumplimiento injustificado de la jornada de trabajo que suponga un porcentaje inferior al 5%",
+      "Toda actuación que suponga discriminación por razón de raza, sexo, religión o ideología",
+      "La incorrección con los usuarios del servicio",
+      "El retraso injustificado en la tramitación de expedientes"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Las conductas discriminatorias graves por razón de raza, sexo, religión u orientación sexual constituyen una falta muy grave en el régimen disciplinario.",
+    "fuente": "Ley 55/2003, Artículo 72"
+  },
+  {
+    "id": "gen_2_24",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, la rehabilitación del personal estatutario que hubiera perdido su condición por sanción disciplinaria firme requiere:",
+    "opciones": [
+      "La solicitud expresa del interesado una vez transcurridos los plazos legales y cumplida la sanción",
+      "La aprobación automática al año de la sanción",
+      "Un indulto del Consejo de Ministros",
+      "La superación de una nueva oposición"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La rehabilitación de los sancionados puede solicitarse una vez transcurridos los plazos reglamentarios (según la gravedad de la falta) tras haber cumplido la sanción.",
+    "fuente": "Ley 55/2003, Artículo 25"
+  },
+  {
+    "id": "gen_2_25",
+    "temaId": "gen_2",
+    "enunciado": "En la organización territorial de Sacyl, ¿cómo se denominan las estructuras asistenciales básicas que agrupan los equipos de atención primaria?",
+    "opciones": [
+      "Zonas Básicas de Salud",
+      "Áreas de Salud Comarcales",
+      "Distritos Sanitarios Locales",
+      "Consultorios Locales Integrados"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Zona Básica de Salud es la demarcación geográfica y poblacional elemental para la prestación de la atención primaria de salud.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_26",
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con el Estatuto Marco, ¿qué retribuciones básicas componen la estructura salarial del personal estatutario?",
+    "opciones": [
+      "Sueldo base, pagas extraordinarias y complemento de destino",
+      "Sueldo asignado a cada subgrupo o grupo de clasificación y los trienios",
+      "Sueldo base, complemento específico y productividad",
+      "Retribuciones fijas y retribuciones variables por objetivos"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Las retribuciones básicas del personal estatutario son el sueldo correspondiente al grupo o subgrupo de clasificación profesional y los trienios.",
+    "fuente": "Ley 55/2003, Artículo 42"
+  },
+  {
+    "id": "gen_2_27",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué órgano de asesoramiento clínico y asistencial existe en los hospitales de Sacyl según la estructura organizativa general?",
+    "opciones": [
+      "La Junta Técnico-Asistencial",
+      "El Consejo de Salud de Área",
+      "El Comité de Ética Asistencial Regional",
+      "La Comisión Paritaria Central"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Junta Técnico-Asistencial es el órgano consultivo y de participación del personal sanitario en la gestión del hospital.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_28",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, el régimen de incompatibilidades del personal estatutario se rige por:",
+    "opciones": [
+      "La normativa general sobre incompatibilidades del personal al servicio de las Administraciones Públicas",
+      "Los estatutos internos de cada centro sanitario de forma exclusiva",
+      "La libre voluntad de los profesionales en el sector privado",
+      "Los convenios colectivos provinciales"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Al personal estatutario le es de aplicación la legislación general sobre incompatibilidades del personal al servicio de las Administraciones Públicas.",
+    "fuente": "Ley 55/2003, Artículo 7"
+  },
+  {
+    "id": "gen_2_29",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Marco, ¿cuál es el plazo de prescripción de las faltas muy graves cometidas por el personal estatutario?",
+    "opciones": [
+      "6 meses",
+      "1 año",
+      "3 años",
+      "5 años"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Las faltas muy graves prescriben a los 3 años, las graves a los 2 años y las leves a los 6 meses.",
+    "fuente": "Ley 55/2003, Artículo 75"
+  },
+  {
+    "id": "gen_2_30",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué normativa autonómica regula de forma específica la creación y estructura de la Gerencia Regional de Salud de Castilla y León?",
+    "opciones": [
+      "La Ley 8/2003, sobre derechos y deberes de los pacientes, y la Ley 1/1993",
+      "El Decreto de estructura de la Consejería de Sanidad vigente",
+      "La Ley 55/2003 en su disposición autonómica única",
+      "El Estatuto de Autonomía de Castilla y León exclusivamente"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Ley 1/1993 de Ordenación Sanitaria de CyL, junto con normativas posteriores de integración y organización, configura el marco de Sacyl.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_31",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, el derecho a la carrera profesional consiste en:",
+    "opciones": [
+      "La progresión continuada de grado profesional sin necesidad de cambiar de puesto de trabajo",
+      "El ascenso obligatorio de categoría cada diez años",
+      "El derecho a ocupar puestos de libre designación directiva",
+      "La movilidad automática entre diferentes servicios de salud autonómicos"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La carrera profesional se define como el derecho a la progresión de grado profesional como reconocimiento al desarrollo profesional en cuanto a conocimientos, experiencia y cumplimiento de objetivos.",
+    "fuente": "Ley 55/2003, Artículo 40"
+  },
+  {
+    "id": "gen_2_32",
+    "temaId": "gen_2",
+    "enunciado": "Si un profesional estatutario solicita la excedencia voluntaria por interés particular, ¿cuánto tiempo mínimo debe permanecer en dicha situación antes de solicitar el reingreso?",
+    "opciones": [
+      "Un año",
+      "Dos años",
+      "Cinco años",
+      "Seis meses"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "La legislación general de funcionarios y el Estatuto Marco exigen un plazo mínimo de permanencia en la situación de excedencia por interés particular antes de poder solicitar el reingreso al servicio activo.",
+    "fuente": "Ley 55/2003 y normativa supletoria"
+  },
+  {
+    "id": "gen_2_33",
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 14/1986 General de Sanidad, la estructura sanitaria pública se organiza en:",
+    "opciones": [
+      "Áreas de Salud y Zonas Básicas de Salud",
+      "Regiones sanitarias y distritos provinciales autónomos",
+      "Hospitales comarcales independientes y mutuas",
+      "Centros de especialidades de gestión municipal"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El modelo asistencial de la Ley General de Sanidad articula el sistema en torno a las Áreas de Salud como demarcaciones geográficas básicas.",
+    "fuente": "Ley 14/1986, Artículo 41"
+  },
+  {
+    "id": "gen_2_34",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué tipo de nombramiento temporal se otorga para la cobertura de plazas vacantes mientras se provén por los procedimientos reglamentarios?",
+    "opciones": [
+      "Nombramiento de interinidad",
+      "Nombramiento de sustitución",
+      "Nombramiento eventual",
+      "Nombramiento de refuerzo estacional"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario temporal interino es el nombrado para el desempeño de una plaza vacante de plantilla cuando las necesidades del servicio lo exijan.",
+    "fuente": "Ley 55/2003, Artículo 9"
+  },
+  {
+    "id": "gen_2_35",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, el ejercicio de la potestad disciplinaria corresponde a:",
+    "opciones": [
+      "Los servicios de salud de las comunidades autónomas o al Ministerio de Sanidad en su ámbito",
+      "Los sindicatos médicos y de enfermería mayoritarios",
+      "Los colegios profesionales sanitarios exclusivamente",
+      "Los tribunales de justicia de lo contencioso-administrativo"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las administraciones sanitarias públicas competentes son las encargadas de ejercer la potestad disciplinaria sobre su personal estatutario.",
+    "fuente": "Ley 55/2003, Artículo 71"
+  },
+  {
+    "id": "gen_2_36",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Marco, ¿cómo se denominan los trienios reconocidos al personal estatutario?",
+    "opciones": [
+      "Cantidad equivalente a tres años de servicios efectivos en la misma categoría",
+      "Retribuciones básicas calculadas por cada tres años de servicios prestados en cualquier régimen de las Administraciones Públicas",
+      "Complemento consolidable por antigüedad acumulada exclusivamente en hospitales",
+      "Pagas extraordinarias trienales"
+    ],
+    "correctaOriginal": 1,
+    "explicacion": "Los trienios consisten en una cantidad igual para cada grupo o subgrupo de clasificación, por cada tres años de servicios prestados en las administraciones públicas.",
+    "fuente": "Ley 55/2003, Artículo 42"
+  },
+  {
+    "id": "gen_2_37",
+    "temaId": "gen_2",
+    "enunciado": "En la Gerencia Regional de Salud de Castilla y León, la atención especializada se presta fundamentalmente a través de:",
+    "opciones": [
+      "Hospitales y centros de especialidades dependientes",
+      "Consultorios locales rurales",
+      "Unidades de salud mental comunitarias de gestión municipal",
+      "Farmacias colaboradoras del sistema"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La asistencia especializada en Sacyl se estructura en torno a los hospitales y los centros de especialidades integrados en las Áreas de Salud.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_38",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, ¿cuál de los siguientes derechos individuales tiene el personal estatutario?",
+    "opciones": [
+      "A la inamovilidad en la plaza de destino definitiva, salvo causas legalmente previstas",
+      "A elegir libremente el turno de trabajo sin sujeción a cuadrantes",
+      "A la percepción de un salario idéntico al de cualquier otra comunidad sin complementos",
+      "A la exención total de guardias a partir de los 50 años"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El personal estatutario fijo tiene derecho a la inamovilidad en la plaza que ocupa con carácter definitivo, salvo en los supuestos de remoción o traslado previstos legalmente.",
+    "fuente": "Ley 55/2003, Artículo 17"
+  },
+  {
+    "id": "gen_2_39",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué órgano colegiado coordina la política sanitaria general entre el Estado y las comunidades autónomas?",
+    "opciones": [
+      "El Consejo Interterritorial del Sistema Nacional de Salud",
+      "La Conferencia Sectorial de Empleo Público",
+      "El Consejo General de Colegios de Enfermería",
+      "La Comisión Nacional de Especialidades"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Consejo Interterritorial del SNS es el órgano permanente de coordinación y cooperación entre el Estado y las comunidades autónomas en materia de salud.",
+    "fuente": "Ley 16/2003 y Ley 14/1986"
+  },
+  {
+    "id": "gen_2_40",
+    "temaId": "gen_2",
+    "enunciado": "Según el Estatuto Marco, el personal estatutario temporal nombrado para la ejecución de programas de carácter temporal, coyuntural o extraordinario se denomina:",
+    "opciones": [
+      "Personal eventual",
+      "Personal interino",
+      "Personal sustituto",
+      "Personal residente en formación"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El nombramiento de carácter eventual se utiliza para la prestación de servicios determinados de corta duración, programas temporales o exceso de actividad coyuntural.",
+    "fuente": "Ley 55/2003, Artículo 9"
+  },
+  {
+    "id": "gen_2_41",
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con la Ley 55/2003, ¿cuál es el plazo de prescripción de las sanciones impuestas por faltas muy graves?",
+    "opciones": [
+      "1 año",
+      "2 años",
+      "3 años",
+      "5 años"
+    ],
+    "correctaOriginal": 2,
+    "explicacion": "Las sanciones impuestas por faltas muy graves prescriben a los 3 años; las impuestas por faltas graves a los 2 años, y las de faltas leves a los 6 meses.",
+    "fuente": "Ley 55/2003, Artículo 75"
+  },
+  {
+    "id": "gen_2_42",
+    "temaId": "gen_2",
+    "enunciado": "En el régimen del personal estatutario, ¿cómo se retribuye la atención continuada (por ejemplo, la realización de guardias)?",
+    "opciones": [
+      "Mediante el complemento de atención continuada",
+      "Mediante el sueldo base",
+      "Mediante el complemento de destino",
+      "No está retribuida económicamente"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El complemento de atención continuada está destinado a remunerar al personal para prestar servicios de manera continuada o en régimen de guardia.",
+    "fuente": "Ley 55/2003, Artículo 43"
+  },
+  {
+    "id": "gen_2_43",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 1/1993 de Ordenación Sanitaria de Castilla y León, el Plan de Salud de Castilla y León es formulado por:",
+    "opciones": [
+      "La Consejería competente en materia de sanidad y aprobado por la Junta de Castilla y León",
+      "Los Colegios Profesionales sanitarios",
+      "Los Ayuntamientos de las capitales de provincia",
+      "El Consejo de Salud de Área"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El Plan de Salud de la Comunidad es el instrumento estratégico de planificación sanitaria elaborado por la Consejería de Sanidad y aprobado por el órgano de gobierno autonómico.",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_44",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Marco, el personal estatutario que pierda temporalmente aptitudes psicofísicas para el desempeño de su función puede ser adscrito a:",
+    "opciones": [
+      "Otra situación o puesto de trabajo acorde a sus capacidades, regulado reglamentariamente",
+      "La separación forzosa automática",
+      "La baja permanente sin derecho a retribución",
+      "La excedencia forzosa sin posibilidad de reingreso"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La normativa contempla la adaptación de puestos o la adscripción a otras funciones compatibles cuando se produce una pérdida temporal o parcial de aptitudes psicofísicas.",
+    "fuente": "Ley 55/2003 y normativa de función pública"
+  },
+  {
+    "id": "gen_2_45",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, el personal estatutario tiene derecho a la negociación colectiva, representación y participación a través de:",
+    "opciones": [
+      "Mesas de negociación, juntas de personal y comisiones de personal",
+      "Asambleas laborales obligatorias mensuales",
+      "Partidos políticos con representación parlamentaria",
+      "Sindicatos autorizados exclusivamente por la gerencia"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Los derechos de representación colectiva se ejercen mediante órganos como las Juntas de Personal y las Mesas de Negociación sectoriales.",
+    "fuente": "Ley 55/2003, Capítulo X"
+  },
+  {
+    "id": "gen_2_46",
+    "temaId": "gen_2",
+    "enunciado": "¿Qué se entiende por Área de Salud en la legislación sanitaria básica española (Ley 14/1986)?",
+    "opciones": [
+      "La demarcación geográfica fundamental del sistema sanitario, que gestiona de forma integral la atención primaria y especializada",
+      "Un hospital de referencia provincial con múltiples especialidades",
+      "El conjunto de centros de salud de una zona rural",
+      "Un organismo autónomo estatal dependiente del Ministerio"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "La Ley 14/1986 define las Áreas de Salud como las estructuras fundamentales del sistema sanitario, responsabilizadas de la gestión unitaria de los centros de su demarcación.",
+    "fuente": "Ley 14/1986, Artículo 41"
+  },
+  {
+    "id": "gen_2_47",
+    "temaId": "gen_2",
+    "enunciado": "De conformidad con el Estatuto Marco, son deberes del personal estatutario, entre otros:",
+    "opciones": [
+      "Cumplir el régimen de incompatibilidades y guardar secreto profesional",
+      "Desempeñar cargos directivos de forma obligatoria y gratuita",
+      "Aceptar cualquier traslado forzoso sin indemnización",
+      "Financiar parcialmente el material sanitario del centro"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El respeto al secreto profesional, el cumplimiento de los deberes de confidencialidad y la sujeción a incompatibilidades figuran entre los deberes básicos.",
+    "fuente": "Ley 55/2003, Artículo 19"
+  },
+  {
+    "id": "gen_2_48",
+    "temaId": "gen_2",
+    "enunciado": "En Sacyl, los órganos de dirección de las Áreas de Salud se estructuran jerárquicamente bajo la dependencia de:",
+    "opciones": [
+      "La Gerencia Regional de Salud",
+      "El Ministerio de Sanidad",
+      "Los Gobiernos Civiles provinciales",
+      "La Tesorería General de la Seguridad Social"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Las Gerencias de Área de Salud en Castilla y León dependen orgánicamente y funcionalmente de la Gerencia Regional de Salud (Sacyl).",
+    "fuente": "Ley 1/1993 de Ordenación Sanitaria de CyL"
+  },
+  {
+    "id": "gen_2_49",
+    "temaId": "gen_2",
+    "enunciado": "Según la Ley 55/2003, ¿qué procedimiento se emplea con carácter general para la selección del personal estatutario fijo?",
+    "opciones": [
+      "Concurso-oposición o concurso libre, garantizando los principios de igualdad, mérito, capacidad y publicidad",
+      "Designación directa del gerente del área",
+      "Sorteo público entre los titulados inscritos en el servicio público de empleo",
+      "Contratación temporal previa transformable en fija por antigüedad"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "El acceso a la condición de personal estatutario fijo se rige por los principios constitucionales de igualdad, mérito, capacidad y publicidad, empleando habitualmente el concurso-oposición.",
+    "fuente": "Ley 55/2003, Artículo 30"
+  },
+  {
+    "id": "gen_2_50",
+    "temaId": "gen_2",
+    "enunciado": "De acuerdo con el Estatuto Marco, la situación de servicios en otras Administraciones públicas se declara cuando:",
+    "opciones": [
+      "El personal estatutario pasa a prestar servicios en la Administración General del Estado u otras CCAA en los supuestos previstos",
+      "El profesional ejerce en la sanidad privada mediante concierto",
+      "Se realiza una estancia formativa en el extranjero",
+      "El trabajador se encuentra de baja por incapacidad temporal prolongada"
+    ],
+    "correctaOriginal": 0,
+    "explicacion": "Esta situación administrativa se contempla para aquellos profesionales que pasan a prestar servicios en otras administraciones públicas manteniendo su vinculación de origen según proceda.",
+    "fuente": "Ley 55/2003, Artículo 67"
+  }
+]
