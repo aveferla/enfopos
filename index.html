@@ -72,7 +72,7 @@
         <div class="max-w-5xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row justify-between items-center gap-3">
             <div class="flex items-center justify-between w-full sm:w-auto gap-4">
                 <button type="button" onclick="volverMenu()" title="Inicio" class="flex items-center focus:outline-none group">
-                  <img src="assets/logos/ENFOPOS.png" alt="ENFOPOS" class="h-16 w-auto max-w-[180px] object-contain rounded-2xl group-hover:scale-[1.02] transition">
+                    <img src="assets/logos/ENFOPOS.png" alt="ENFOPOS" class="h-16 w-auto max-w-[180px] object-contain rounded-2xl group-hover:scale-[1.02] transition">
                 </button>
             </div>
 
@@ -120,19 +120,11 @@
                     <div>
                         <span class="text-xs bg-indigo-700 text-indigo-100 font-bold px-3 py-1 rounded-full uppercase">Exámenes Oficiales / Oposición</span>
                         <h3 class="text-xl font-bold mt-2.5 mb-1.5 text-white">Examen de Oposición</h3>
-                        <p class="text-xs sm:text-sm text-indigo-200 mb-3 leading-relaxed">Elige un examen real cargado o deja que Iniciar Simulacro elija automáticamente según tu prioridad.</p>
+                        <p class="text-xs sm:text-sm text-indigo-200 mb-3 leading-relaxed">Selecciona un examen concreto o inicia el simulacro para que se elija automáticamente.</p>
 
-                        <label for="select-examen-oficial" class="block text-[11px] font-bold uppercase text-indigo-200 mb-1">Selector de exámenes reales</label>
-                        <select id="select-examen-oficial" class="w-full bg-white text-slate-900 border border-indigo-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-bold mb-3">
-                            <option value="">-- Sin seleccionar (elección automática al iniciar) --</option>
-                        </select>
-
-                        <label for="select-criterio-auto-examen" class="block text-[11px] font-bold uppercase text-indigo-200 mb-1">Criterio si no seleccionas un examen:</label>
-                        <select id="select-criterio-auto-examen" class="w-full bg-indigo-800/90 text-white border border-indigo-600 rounded-xl px-3 py-2 text-xs font-bold">
-                            <option value="nunca">🆕 El que no se haya hecho nunca</option>
-                            <option value="mas_fallos">❌ El que más fallos tenga</option>
-                            <option value="menos_veces">📉 El que menos veces se haya realizado</option>
-                            <option value="aleatorio">🎲 Uno aleatorio</option>
+                        <label for="select-examen-oficial" class="block text-[11px] font-bold uppercase text-indigo-200 mb-1">Selector de exámenes</label>
+                        <select id="select-examen-oficial" class="w-full bg-white text-slate-900 border border-indigo-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-bold">
+                            <option value="">-- Selección automática --</option>
                         </select>
                     </div>
                     <button type="button" onclick="iniciarSimulacroOposicion()" class="w-full bg-white hover:bg-indigo-50 text-indigo-950 font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">Iniciar Simulacro</button>
@@ -142,24 +134,24 @@
                     <div>
                         <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-3 py-1 rounded-full uppercase">Repaso Libre</span>
                         <h3 class="text-xl font-bold text-slate-900 mt-2.5 mb-2">Práctica Global</h3>
-                        <p class="text-xs sm:text-sm text-slate-700 mb-5 leading-relaxed">Simulacro aleatorio con preguntas de temas y exámenes, barajado automático y registro de falladas.</p>
+                        <p class="text-xs sm:text-sm text-slate-700 mb-5 leading-relaxed">Simulacro automático mezclando temas y exámenes, priorizando preguntas nuevas, falladas, menos realizadas y aleatorias.</p>
                     </div>
-                    <button type="button" onclick="iniciarModoPráctica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">Iniciar Práctica Total</button>
+                    <button type="button" onclick="iniciarModoPractica()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl transition text-sm shadow-sm">Iniciar Práctica Total</button>
                 </div>
             </div>
 
             <!-- BOTONES SECUNDARIOS -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div><h3 class="text-sm font-bold text-slate-900">Estadísticas</h3><p class="text-[11px] text-slate-600">Exámenes reales, temas y reinicio.</p></div>
+                    <div><h3 class="text-sm font-bold text-slate-900">Estadísticas</h3><p class="text-[11px] text-slate-600">Exámenes, temas y reinicio.</p></div>
                     <button type="button" onclick="mostrarPantallaEstadisticas()" class="mt-3 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">Ver Estadísticas 📊</button>
                 </div>
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div><h3 class="text-sm font-bold text-slate-900">Exámenes PDF</h3><p class="text-[11px] text-slate-600">Reales, mezcla de temas o por tema + plantilla.</p></div>
+                    <div><h3 class="text-sm font-bold text-slate-900">Exámenes PDF</h3><p class="text-[11px] text-slate-600">Exámenes, mezcla de temas o por tema + plantilla.</p></div>
                     <button type="button" onclick="mostrarPantallaImprimir()" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">Imprimir Examen 🖨️</button>
                 </div>
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div><h3 class="text-sm font-bold text-slate-900">Apuntes y Bibliografía</h3><p class="text-[11px] text-slate-600">Temas desarrollados + fuentes oficiales.</p></div>
+                    <div><h3 class="text-sm font-bold text-slate-900">Apuntes y Bibliografía</h3><p class="text-[11px] text-slate-600">Temas desarrollados y fuentes oficiales.</p></div>
                     <button type="button" onclick="mostrarPantallaTemarioPDF()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">Estudiar / Imprimir 📖</button>
                 </div>
             </div>
@@ -241,10 +233,7 @@
         <div id="view-imprimir" class="hidden space-y-4">
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                 <div class="flex justify-between items-center border-b pb-4">
-                    <div>
-                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Generador de Exámenes en Papel / PDF</h2>
-                        <p class="text-xs text-slate-600">Incluye cabecera en la primera página, marca de agua ENFOPOS-LAAF y plantilla de respuestas al final.</p>
-                    </div>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Generador de Exámenes en Papel / PDF</h2>
                     <button type="button" onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver al Menú</button>
                 </div>
 
@@ -252,13 +241,13 @@
                     <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
                         <h3 class="font-bold text-slate-900 text-sm">1. Tipo de Examen a Imprimir</h3>
                         <label class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-800 cursor-pointer">
-                            <input type="radio" name="tipo-print" value="real" checked onchange="actualizarControlesImpresion()"> Examen Real (carpeta <code>examenes/</code>)
+                            <input type="radio" name="tipo-print" value="real" checked onchange="actualizarControlesImpresion()"> Examen Real
                         </label>
                         <label class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-800 cursor-pointer">
-                            <input type="radio" name="tipo-print" value="todos_temas" onchange="actualizarControlesImpresion()"> Todos los Temas (mezcla temas + exámenes)
+                            <input type="radio" name="tipo-print" value="todos_temas" onchange="actualizarControlesImpresion()"> Todos los Temas (mezcla temas y exámenes)
                         </label>
                         <label class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-800 cursor-pointer">
-                            <input type="radio" name="tipo-print" value="tema" onchange="actualizarControlesImpresion()"> Por Tema Específico (carpeta <code>temas/</code>)
+                            <input type="radio" name="tipo-print" value="tema" onchange="actualizarControlesImpresion()"> Por Tema Específico
                         </label>
                         <label class="flex items-center gap-2 text-xs sm:text-sm font-medium text-slate-800 cursor-pointer">
                             <input type="radio" name="tipo-print" value="falladas" onchange="actualizarControlesImpresion()"> Solo Preguntas Falladas
@@ -266,9 +255,8 @@
                     </div>
 
                     <div id="box-print-examen-real" class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
-                        <h3 class="font-bold text-slate-900 text-sm">2. Elegir Examen Real</h3>
+                        <h3 class="font-bold text-slate-900 text-sm">2. Elegir Examen</h3>
                         <select id="select-print-examen-real" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-semibold"></select>
-                        <p class="text-[11px] text-slate-600">Detecta automáticamente los exámenes reales en <code>examenes/</code>.</p>
                     </div>
 
                     <div id="box-print-tema-config" class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-3">
@@ -294,10 +282,7 @@
         <div id="view-temario-pdf" class="hidden space-y-4">
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                 <div class="flex justify-between items-center border-b pb-4">
-                    <div>
-                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Apuntes Desarrollados y Bibliografía Oficial</h2>
-                        <p class="text-xs text-slate-600">Carga automáticamente desde <code>apuntes/</code> sin tocar este archivo.</p>
-                    </div>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Apuntes Desarrollados y Bibliografía Oficial</h2>
                     <button type="button" onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver</button>
                 </div>
 
@@ -416,6 +401,7 @@
         let examenesRealesCargados = [];
         let preguntasTemasCargadas = [];
         let examenEnCursoId = null;
+        let cargaInicialPromesa = null;
 
         let preguntasActivas = [];
         let indiceActual = 0;
@@ -430,6 +416,7 @@
 
         let estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
         let estadisticasExamenes = JSON.parse(localStorage.getItem(`enfopos_stats_examenes_${modalidadActual}`) || '{}');
+        let historialPreguntas = JSON.parse(localStorage.getItem(`enfopos_historial_preguntas_${modalidadActual}`) || '{}');
         let preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
 
         let hoyFechaStr = new Date().toISOString().slice(0, 10);
@@ -504,6 +491,10 @@
             "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Paciente quirúrgico.", apuntesHTML: "", enlaces: [] },
             "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Úlceras por presión (UPP).", apuntesHTML: "", enlaces: [] }
         };
+
+        function clavePregunta(q) {
+            return (q && q.enunciado ? q.enunciado.trim() : "").toLowerCase();
+        }
 
         async function cargarExamenesReales() {
             let listaExamenes = [];
@@ -667,12 +658,8 @@
             });
         }
 
-        window.addEventListener('DOMContentLoaded', async () => {
+        async function ejecutarCargaInicial() {
             try {
-                document.getElementById('select-modalidad').value = modalidadActual;
-                actualizarUIModalidad();
-                verificarMetaDiariaUI();
-
                 await Promise.allSettled([
                     cargarExamenesReales(),
                     cargarPreguntasTemas(),
@@ -688,13 +675,20 @@
                 actualizarControlesImpresion();
                 cargarApuntesEnPantalla("gen_1");
             }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('select-modalidad').value = modalidadActual;
+            actualizarUIModalidad();
+            verificarMetaDiariaUI();
+            cargaInicialPromesa = ejecutarCargaInicial();
         });
 
         function poblarSelectorExamenesOficiales() {
             const selMenu = document.getElementById('select-examen-oficial');
             const selPrint = document.getElementById('select-print-examen-real');
 
-            selMenu.innerHTML = '<option value="">-- Sin seleccionar (elección automática al iniciar) --</option>';
+            selMenu.innerHTML = '<option value="">-- Selección automática --</option>';
             selPrint.innerHTML = '';
 
             examenesRealesCargados.forEach(ex => {
@@ -713,36 +707,42 @@
             if (examenesRealesCargados.length === 0) {
                 const optEmpty = document.createElement('option');
                 optEmpty.value = "";
-                optEmpty.textContent = "No hay exámenes reales cargados en examenes/";
+                optEmpty.textContent = "Sin exámenes disponibles";
                 selPrint.appendChild(optEmpty);
             }
         }
 
-        function iniciarSimulacroOposicion() {
+        function elegirExamenAutomatico(candidatos) {
+            const sinHacer = candidatos.filter(e => (estadisticasExamenes[e.id]?.veces || 0) === 0);
+            if (sinHacer.length > 0) {
+                return sinHacer[Math.floor(Math.random() * sinHacer.length)];
+            }
+
+            const maxFallos = Math.max(...candidatos.map(e => estadisticasExamenes[e.id]?.fallosTotales || 0));
+            let empatados = candidatos.filter(e => (estadisticasExamenes[e.id]?.fallosTotales || 0) === maxFallos);
+
+            if (empatados.length > 1) {
+                const minVeces = Math.min(...empatados.map(e => estadisticasExamenes[e.id]?.veces || 0));
+                empatados = empatados.filter(e => (estadisticasExamenes[e.id]?.veces || 0) === minVeces);
+            }
+
+            return empatados[Math.floor(Math.random() * empatados.length)];
+        }
+
+        async function iniciarSimulacroOposicion() {
+            if (cargaInicialPromesa) await cargaInicialPromesa;
+
             const seleccionadoId = document.getElementById('select-examen-oficial').value;
             let examenElegido = null;
 
             if (seleccionadoId) {
                 examenElegido = examenesRealesCargados.find(e => e.id === seleccionadoId);
             } else {
-                const criterio = document.getElementById('select-criterio-auto-examen').value;
                 const candidatos = examenesRealesCargados.filter(e => e.preguntas && e.preguntas.length > 0);
                 if (candidatos.length === 0) {
-                    return alert("No hay exámenes reales cargados con preguntas en la carpeta examenes/.");
+                    return alert("No hay exámenes disponibles con preguntas.");
                 }
-
-                if (criterio === "nunca") {
-                    const sinHacer = candidatos.filter(e => (estadisticasExamenes[e.id]?.veces || 0) === 0);
-                    examenElegido = sinHacer.length > 0
-                        ? sinHacer[Math.floor(Math.random() * sinHacer.length)]
-                        : candidatos.reduce((min, cur) => ((estadisticasExamenes[cur.id]?.veces || 0) < (estadisticasExamenes[min.id]?.veces || 0) ? cur : min), candidatos[0]);
-                } else if (criterio === "mas_fallos") {
-                    examenElegido = candidatos.reduce((max, cur) => ((estadisticasExamenes[cur.id]?.fallosTotales || 0) > (estadisticasExamenes[max.id]?.fallosTotales || 0) ? cur : max), candidatos[0]);
-                } else if (criterio === "menos_veces") {
-                    examenElegido = candidatos.reduce((min, cur) => ((estadisticasExamenes[cur.id]?.veces || 0) < (estadisticasExamenes[min.id]?.veces || 0) ? cur : min), candidatos[0]);
-                } else {
-                    examenElegido = candidatos[Math.floor(Math.random() * candidatos.length)];
-                }
+                examenElegido = elegirExamenAutomatico(candidatos);
             }
 
             if (!examenElegido || !examenElegido.preguntas || examenElegido.preguntas.length === 0) {
@@ -789,11 +789,10 @@
             verificarMetaDiariaUI();
         }
 
-        function cambiarModalidadOposicion() {
-            modalidadActual = document.getElementById('select-modalidad').value;
-            localStorage.setItem('enfopos_modalidad', modalidadActual);
+        function cargarDatosModalidad() {
             estadisticasTemas = JSON.parse(localStorage.getItem(`enfopos_stats_${modalidadActual}`) || '{}');
             estadisticasExamenes = JSON.parse(localStorage.getItem(`enfopos_stats_examenes_${modalidadActual}`) || '{}');
+            historialPreguntas = JSON.parse(localStorage.getItem(`enfopos_historial_preguntas_${modalidadActual}`) || '{}');
             preguntasFalladasHistorial = JSON.parse(localStorage.getItem(`enfopos_falladas_${modalidadActual}`) || '[]');
 
             let hoyStr = new Date().toISOString().slice(0, 10);
@@ -802,7 +801,12 @@
                 registroDiario = { fecha: hoyStr, total: 0 };
                 localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
             }
+        }
 
+        function cambiarModalidadOposicion() {
+            modalidadActual = document.getElementById('select-modalidad').value;
+            localStorage.setItem('enfopos_modalidad', modalidadActual);
+            cargarDatosModalidad();
             actualizarUIModalidad();
             poblarSelectorExamenesOficiales();
             renderizarAcordeonesTemas();
@@ -816,12 +820,14 @@
             }
             estadisticasTemas = {};
             estadisticasExamenes = {};
+            historialPreguntas = {};
             preguntasFalladasHistorial = [];
             const hoyStr = new Date().toISOString().slice(0, 10);
             registroDiario = { fecha: hoyStr, total: 0 };
 
             localStorage.removeItem(`enfopos_stats_${modalidadActual}`);
             localStorage.removeItem(`enfopos_stats_examenes_${modalidadActual}`);
+            localStorage.removeItem(`enfopos_historial_preguntas_${modalidadActual}`);
             localStorage.removeItem(`enfopos_falladas_${modalidadActual}`);
             localStorage.removeItem(`enfopos_examen_activo_${modalidadActual}`);
             localStorage.setItem(`enfopos_diario_${modalidadActual}`, JSON.stringify(registroDiario));
@@ -867,7 +873,7 @@
 
             document.getElementById('apunte-badge').textContent = info.label;
             document.getElementById('apunte-titulo').textContent = info.desc;
-            document.getElementById('apunte-contenido-html').innerHTML = info.apuntesHTML || "<p class='text-sm text-slate-600'>Apuntes pendientes de cargar en la carpeta <code>apuntes/</code>.</p>";
+            document.getElementById('apunte-contenido-html').innerHTML = info.apuntesHTML || "";
 
             const linksContainer = document.getElementById('apunte-bibliografia-links');
             linksContainer.innerHTML = '';
@@ -882,7 +888,7 @@
                     linksContainer.appendChild(a);
                 });
             } else {
-                linksContainer.innerHTML = "<span class='text-xs text-slate-500'>Sin enlaces bibliográficos añadidos aún para este tema.</span>";
+                linksContainer.innerHTML = "";
             }
         }
 
@@ -897,7 +903,7 @@
                         <p style="margin: 0; font-size: 10.5pt; font-weight: bold;">ENFOPOS por LAAF. Aplicación no oficial. Solicita la aplicación en lavendanoenf@gmail.com</p>
                         <h1 style="margin: 6px 0 0; font-size: 14pt;">${info.label} — ${info.desc}</h1>
                     </div>
-                    <div style="font-size: 11pt; margin: 0; padding: 0;">${info.apuntesHTML || '<p style="margin: 0;">Sin contenido desarrollado todavía.</p>'}</div>
+                    <div style="font-size: 11pt; margin: 0; padding: 0;">${info.apuntesHTML || ''}</div>
                     ${linksHTML ? `<hr style="margin: 18px 0 10px;"><h3 style="font-size: 11.5pt; margin: 0 0 6px;">Bibliografía y Referencias Oficiales</h3><ul style="font-size: 10pt; margin: 0; padding-left: 18px;">${linksHTML}</ul>` : ''}
                 </div>`;
             window.print();
@@ -1017,19 +1023,61 @@
 
         function detenerCronometrosQuiz() { if (cronometrosQuizInterval) clearInterval(cronometrosQuizInterval); }
 
-        function iniciarModoPráctica() {
-            if (bancoPreguntasGlobal.length === 0) return alert("No hay preguntas.");
+        function construirExamenPracticaInteligente(tamanoDeseado = 90) {
+            const fuente = barajarArray([...bancoPreguntasGlobal]);
+            const elegidas = [];
+            const usadas = new Set();
+
+            const agregarDesde = (lista, maxCantidad) => {
+                for (const q of lista) {
+                    if (elegidas.length >= tamanoDeseado || elegidas.length >= maxCantidad) break;
+                    const k = clavePregunta(q);
+                    if (!k || usadas.has(k)) continue;
+                    usadas.add(k);
+                    elegidas.push(q);
+                }
+            };
+
+            const nuncaHechas = fuente.filter(q => (historialPreguntas[clavePregunta(q)]?.veces || 0) === 0);
+            agregarDesde(nuncaHechas, tamanoDeseado);
+
+            if (elegidas.length < tamanoDeseado) {
+                const falladas = fuente
+                    .filter(q => (historialPreguntas[clavePregunta(q)]?.fallos || 0) > 0)
+                    .sort((a, b) => (historialPreguntas[clavePregunta(b)]?.fallos || 0) - (historialPreguntas[clavePregunta(a)]?.fallos || 0));
+                agregarDesde(falladas, tamanoDeseado);
+            }
+
+            if (elegidas.length < tamanoDeseado) {
+                const menosRealizadas = fuente
+                    .filter(q => (historialPreguntas[clavePregunta(q)]?.veces || 0) > 0)
+                    .sort((a, b) => (historialPreguntas[clavePregunta(a)]?.veces || 0) - (historialPreguntas[clavePregunta(b)]?.veces || 0));
+                agregarDesde(menosRealizadas, tamanoDeseado);
+            }
+
+            if (elegidas.length < tamanoDeseado) {
+                agregarDesde(fuente, tamanoDeseado);
+            }
+
+            return barajarArray(elegidas).slice(0, Math.min(tamanoDeseado, elegidas.length));
+        }
+
+        async function iniciarModoPractica() {
+            if (cargaInicialPromesa) await cargaInicialPromesa;
+            if (bancoPreguntasGlobal.length === 0) return alert("No hay preguntas cargadas.");
+
             examenEnCursoId = null;
-            preguntasActivas = JSON.parse(JSON.stringify(bancoPreguntasGlobal));
-            barajarArray(preguntasActivas);
+            const seleccion = construirExamenPracticaInteligente(90);
+            preguntasActivas = JSON.parse(JSON.stringify(seleccion));
             prepararPreguntasYRespuestas();
-            arrancarQuizUI("Práctica Global Aleatoria");
+            arrancarQuizUI(`Práctica Global (${preguntasActivas.length} preguntas)`);
             document.getElementById('quiz-timer').parentElement.classList.add('hidden');
             segundosAcumuladosTest = 0; segundosPreguntaActual = 0;
             iniciarCronometrosQuiz();
         }
 
-        function iniciarEstudioTema(temaId) {
+        async function iniciarEstudioTema(temaId) {
+            if (cargaInicialPromesa) await cargaInicialPromesa;
             const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId);
             if (filtradas.length === 0) return alert("No hay preguntas registradas todavía para este tema específico.");
             examenEnCursoId = null;
@@ -1111,18 +1159,26 @@
                 estadisticasExamenes[exId] = { veces: 0, fallosTotales: 0, ultimoAcierto: 0 };
             }
 
+            const kPreg = clavePregunta(q);
+            if (kPreg) {
+                if (!historialPreguntas[kPreg]) historialPreguntas[kPreg] = { veces: 0, aciertos: 0, fallos: 0 };
+                historialPreguntas[kPreg].veces++;
+            }
+
             registrarPreguntaRespondidaDiaria();
 
             if (indexElegido === q.correctaOriginal) {
                 aciertos++; q.esAcertada = true;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
                 if (q.temaId) estadisticasTemas[q.temaId].aciertos++;
+                if (kPreg) historialPreguntas[kPreg].aciertos++;
                 verificarFraseMotivadoraAciertos();
             } else {
                 fallos++; q.esAcertada = false;
                 botonElemento.className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-rose-500 bg-rose-50 text-rose-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
                 botones[q.correctaOriginal].className = "w-full text-left p-4 sm:p-5 rounded-2xl border-2 border-emerald-500 bg-emerald-50 text-emerald-950 transition text-sm sm:text-base font-bold flex items-start gap-3.5 shadow-sm";
                 if (q.temaId) estadisticasTemas[q.temaId].fallos++;
+                if (kPreg) historialPreguntas[kPreg].fallos++;
                 if (exId) estadisticasExamenes[exId].fallosTotales++;
                 if (q.enunciado && !preguntasFalladasHistorial.some(f => f.enunciado === q.enunciado)) {
                     preguntasFalladasHistorial.push(q);
@@ -1132,14 +1188,15 @@
 
             localStorage.setItem(`enfopos_stats_${modalidadActual}`, JSON.stringify(estadisticasTemas));
             localStorage.setItem(`enfopos_stats_examenes_${modalidadActual}`, JSON.stringify(estadisticasExamenes));
+            localStorage.setItem(`enfopos_historial_preguntas_${modalidadActual}`, JSON.stringify(historialPreguntas));
             actualizarContadorEnVivo();
 
-          if (q.explicacion || q.fuente) {
-    const expLimpia = limpiarTextoReferencia(q.explicacion);
-    const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
-    document.getElementById('quiz-explicacion-texto').textContent = `${expLimpia} (Fuente oficial: ${fuenteLimpia})`;
-    document.getElementById('quiz-explicacion-box').classList.remove('hidden');
-}
+            if (q.explicacion || q.fuente) {
+                const expLimpia = limpiarTextoReferencia(q.explicacion);
+                const fuenteLimpia = limpiarTextoReferencia(q.fuente) || 'SACYL';
+                document.getElementById('quiz-explicacion-texto').textContent = `${expLimpia} (Fuente oficial: ${fuenteLimpia})`;
+                document.getElementById('quiz-explicacion-box').classList.remove('hidden');
+            }
             document.getElementById('btn-siguiente').classList.remove('hidden');
             guardarProgresoExamen();
         }
@@ -1252,12 +1309,12 @@
             }
         }
 
-      function limpiarTextoReferencia(valor) {
-    return String(valor || '')
-        .replace(/\[cite:[^\]]*\]/gi, '')
-        .replace(/\s{2,}/g, ' ')
-        .trim();
-}
+        function limpiarTextoReferencia(valor) {
+            return String(valor || '')
+                .replace(/\[cite:[^\]]*\]/gi, '')
+                .replace(/\s{2,}/g, ' ')
+                .trim();
+        }
 
         function generarYImprimirPDF() {
             const tipoPrint = document.querySelector('input[name="tipo-print"]:checked').value;
@@ -1271,7 +1328,7 @@
             if (tipoPrint === 'real') {
                 const exObj = examenesRealesCargados.find(e => e.id === examenRealId);
                 if (!exObj || !exObj.preguntas || exObj.preguntas.length === 0) {
-                    return alert("No hay preguntas en el examen real seleccionado.");
+                    return alert("No hay preguntas en el examen seleccionado.");
                 }
                 pool = [...exObj.preguntas];
                 tituloDocumento = exObj.nombre;
