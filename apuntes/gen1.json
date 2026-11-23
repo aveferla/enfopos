@@ -1,1 +1,7 @@
-
+{
+  "temaId": "gen_3",
+  "apuntesHTML": "<p>Aquí va todo el texto desarrollado del tema en HTML...</p>",
+  "enlaces": [
+    { "titulo": "Ley 41/2002 Autonomía del Paciente (BOE)", "url": "https://www.boe.es/eli/es/l/2002/11/14/41" }
+  ]
+}
