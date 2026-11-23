@@ -1,9 +1,12 @@
 [
   {
-    "id": "ex2024_12_01_01",
-    "parte": "general",
+    "numero": 1,
     "temaId": "gen_6",
-    "temaNombre": "Tema 6. Instrucciones Previas y Derechos del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según el Decreto 30/2007, de 22 de marzo, por el que se regula el documento de instrucciones previas en el ámbito sanitario y se crea el Registro de Instrucciones Previas de Castilla y León, el documento de instrucciones previas:",
     "opciones": [
       "Debe registrarse obligatoriamente en el Registro de Instrucciones Previas de Castilla y León.",
@@ -11,14 +14,16 @@
       "Puede incorporar los objetivos vitales y valores del otorgante que ayuden a interpretarlo."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Puede incorporar los objetivos vitales y valores del otorgante que ayuden a interpretarlo. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_02",
-    "parte": "general",
+    "numero": 2,
     "temaId": "gen_2",
-    "temaNombre": "Tema 2. Estatuto Jurídico del Personal Estatutario",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según el artículo 51 de la Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del personal estatutario del Servicio de Salud de Castilla y León, no es causa de extinción de la condición de personal estatutario fijo:",
     "opciones": [
       "La renuncia, en los términos previstos en el artículo 22 de la Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud.",
@@ -26,14 +31,16 @@
       "La sanción disciplinaria de suspensión de funciones no inferior a dos años cuando esta sanción se imponga por faltas muy graves."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: La sanción disciplinaria de suspensión de funciones no inferior a dos años cuando esta sanción se imponga por faltas muy graves. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_03",
-    "parte": "general",
+    "numero": 3,
     "temaId": "gen_7",
-    "temaNombre": "Tema 7. Estrategias de Salud y Prevención de Riesgos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la opción falsa según el artículo 87 de la Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del personal estatutario del Servicio de Salud de Castilla y León:",
     "opciones": [
       "Todos los centros e instituciones sanitarias del Servicio de Salud de Castilla y León elaborarán e implantarán un Plan de Prevención de Riesgos Laborales.",
@@ -41,14 +48,16 @@
       "Para la gestión y aplicación de los Planes de Prevención de Riesgos Laborales son instrumentos esenciales el Plan estratégico de actuación en seguridad y salud laboral y la evaluación de los riesgos laborales."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Para la gestión y aplicación de los Planes de Prevención de Riesgos Laborales son instrumentos esenciales el Plan estratégico de actuación en seguridad y salud laboral y la evaluación de los riesgos laborales. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_04",
-    "parte": "general",
+    "numero": 4,
     "temaId": "gen_3",
-    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la opción falsa según el artículo 17 de la Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y derechos y obligaciones en materia de información y documentación clínica:",
     "opciones": [
       "Los datos de la historia clínica relacionados con el nacimiento del paciente no se destruirán, trasladándose, una vez conocido el fallecimiento del paciente, a los archivos definitivos de la Administración correspondiente.",
@@ -56,14 +65,16 @@
       "La documentación clínica se conservará cuando existan razones epidemiológicas, de investigación o de organización y funcionamiento del Sistema Nacional de Salud."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Los centros sanitarios tienen la obligación de conservar la documentación clínica en el soporte original y en condiciones que garanticen su correcto mantenimiento y seguridad, como mínimo cinco años contados desde la fecha de alta de cada proceso asistencial. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_05",
-    "parte": "general",
+    "numero": 5,
     "temaId": "gen_2",
-    "temaNombre": "Tema 2. Estatuto Jurídico del Personal Estatutario",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La atribución temporal de funciones tendrá una duración máxima de:",
     "opciones": [
       "Un año.",
@@ -71,14 +82,16 @@
       "Dos años prorrogables por un año más."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Un año prorrogable por otro, siempre y cuando persistan las razones que la motivaron. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_06",
-    "parte": "general",
+    "numero": 6,
     "temaId": "gen_3",
-    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La historia clínica es:",
     "opciones": [
       "El conjunto de documentos que contienen los datos, valoraciones e informaciones de cualquier índole sobre la situación y la evolución clínica de un paciente a lo largo del proceso asistencial.",
@@ -86,14 +99,16 @@
       "El documento emitido por el médico responsable al finalizar el proceso asistencial."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: El conjunto de documentos que contienen los datos, valoraciones e informaciones de cualquier índole sobre la situación y la evolución clínica de un paciente a lo largo del proceso asistencial. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_07",
-    "parte": "general",
+    "numero": 7,
     "temaId": "gen_4",
-    "temaNombre": "Tema 4. Normativa Sanitaria, Protección de Datos y Salud Pública",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": true,
     "enunciado": "Según la Ley 8/2010, de 30 de agosto, de ordenación del Sistema de Salud de Castilla y León, dentro del Sistema Público de Salud, las actuaciones de salud pública no se llevarán a cabo, con carácter de integralidad:",
     "opciones": [
       "Desde las diferentes estructuras administrativas de salud pública centrales y periféricas.",
@@ -101,14 +116,16 @@
       "Desde las Corporaciones Locales."
     ],
     "correctaOriginal": null,
-    "explicacion": "Pregunta anulada o sin respuesta válida en la fuente oficial (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_08",
-    "parte": "especifica",
+    "numero": 8,
     "temaId": "esp_36",
-    "temaNombre": "Cuidados Cardiovasculares y Hemodinámica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La Sociedad Española de Hipertensión Arterial considera crisis hipertensiva cuando las cifras límites de PA (presión arterial) sistólica y PA diastólica son:",
     "opciones": [
       "Mayor o igual a 180/120 mmHg.",
@@ -116,14 +133,16 @@
       "Mayor o igual a 210/120 mmHg."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Mayor o igual a 180/120 mmHg. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_09",
-    "parte": "especifica",
+    "numero": 9,
     "temaId": "esp_41",
-    "temaNombre": "Hematología, Oncología y Hemoterapia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuál de las siguientes opciones no constituye una reacción inmunológica a la transfusión sanguínea?",
     "opciones": [
       "Reacción hemolítica aguda.",
@@ -131,14 +150,16 @@
       "Septicemia."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Septicemia. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_10",
-    "parte": "especifica",
+    "numero": 10,
     "temaId": "esp_21",
-    "temaNombre": "Geriatría y Valoración del Anciano",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Entre los instrumentos de apoyo en la valoración del anciano, para qué patrón funcional utilizaría la escala de MUST:",
     "opciones": [
       "Nutricional-Metabólico.",
@@ -146,14 +167,16 @@
       "Cognitivo-Perceptual."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Nutricional-Metabólico. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_11",
-    "parte": "especifica",
+    "numero": 11,
     "temaId": "esp_35",
-    "temaNombre": "Cuidados Respiratorios y Ventilación Mecánica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuál de las siguientes opciones no se corresponde con un cuidado correcto de enfermería en pacientes con drenaje torácico?",
     "opciones": [
       "Evitar posibles acodamientos u obstrucciones en los tubos.",
@@ -161,14 +184,16 @@
       "Asegurarnos de que la unidad permanece situada por encima del nivel del tórax del paciente."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Asegurarnos de que la unidad permanece situada por encima del nivel del tórax del paciente. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_12",
-    "parte": "especifica",
+    "numero": 12,
     "temaId": "esp_13",
-    "temaNombre": "Asepsia, Cirugía Menor y Procedimientos Básicos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale en cuál de las siguientes técnicas no es necesaria la utilización de guantes estériles.",
     "opciones": [
       "Intervenciones de cirugía menor.",
@@ -176,14 +201,16 @@
       "Extracciones de muestras sanguíneas."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Extracciones de muestras sanguíneas. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_13",
-    "parte": "especifica",
+    "numero": 13,
     "temaId": "esp_18",
-    "temaNombre": "Cuidados del Recién Nacido y Desarrollo Infantil",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la respuesta falsa con respecto al niño prematuro:",
     "opciones": [
       "Se considera niño prematuro cuando su nacimiento es anterior a la 37 semana de gestación.",
@@ -191,14 +218,16 @@
       "La cabeza es proporcionalmente grande en relación con el cuerpo."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Ante su inmadurez pulmonar, la administración de oxigenoterapia debe mantenerse para lograr valores de saturación de oxígeno entre 99% y 100%. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_14",
-    "parte": "especifica",
+    "numero": 14,
     "temaId": "esp_38",
-    "temaNombre": "Cuidados Metabólicos, Endocrinos y Pie Diabético",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En una úlcera de pie diabético de predominio neuropático, ¿qué signo o síntoma no encontraría?",
     "opciones": [
       "Dolor frecuente (peor en decúbito).",
@@ -206,14 +235,16 @@
       "Temperatura caliente."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Dolor frecuente (peor en decúbito). (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_15",
-    "parte": "especifica",
+    "numero": 15,
     "temaId": "esp_30",
-    "temaNombre": "Farmacología y Seguridad de Medicamentos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Entre los siguientes opioides, ¿cuál es el derivado semisintético de los alcaloides del opio?",
     "opciones": [
       "Fentanilo.",
@@ -221,14 +252,16 @@
       "Heroína."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Heroína. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_16",
-    "parte": "especifica",
+    "numero": 16,
     "temaId": "esp_2",
-    "temaNombre": "Metodología de Investigación y Enfermería Basada en la Evidencia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La EBE (Enfermería basada en la evidencia):",
     "opciones": [
       "Trata de realizar búsquedas de información fiables en bases de datos homogéneos y ordenados.",
@@ -236,14 +269,16 @@
       "Es una investigación fundamental, básica o pura, llevada a cabo en laboratorios."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Adapta la práctica profesional a los conocimientos generados por la investigación científica. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_17",
-    "parte": "especifica",
+    "numero": 17,
     "temaId": "esp_12",
-    "temaNombre": "Relación Terapéutica y Comunicación Clínica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En una comunicación terapéutica la enfermera/o debe evitar:",
     "opciones": [
       "Escucha activa.",
@@ -251,14 +286,16 @@
       "Manifestar sus propios sentimientos."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Manifestar sus propios sentimientos. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_18",
-    "parte": "especifica",
+    "numero": 18,
     "temaId": "esp_5",
-    "temaNombre": "Diseños y Métodos Epidemiológicos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": true,
     "enunciado": "Un estudio concurrente o prospectivo es un tipo de estudio epidemiológico clasificado según un criterio de:",
     "opciones": [
       "Direccionalidad.",
@@ -266,14 +303,16 @@
       "Selección de la muestra."
     ],
     "correctaOriginal": null,
-    "explicacion": "Pregunta anulada o sin respuesta válida en la fuente oficial (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_19",
-    "parte": "especifica",
+    "numero": 19,
     "temaId": "esp_9",
-    "temaNombre": "Inmunizaciones y Vacunación",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿En qué vacunación el embarazo no sería una contraindicación?",
     "opciones": [
       "Difteria.",
@@ -281,14 +320,16 @@
       "Parotiditis."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Difteria. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_20",
-    "parte": "especifica",
+    "numero": 20,
     "temaId": "esp_8",
-    "temaNombre": "Prevención de la Enfermedad y Cribados Poblacionales",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Atendiendo a los 3 niveles de prevención, señale la respuesta correcta:",
     "opciones": [
       "La prevención primaria se aplica cuando ya ha actuado el estímulo productor de la enfermedad, pretende disminuir la prevalencia.",
@@ -296,14 +337,16 @@
       "Las medidas de prevención primaria actúan en el período prepatogénico de la enfermedad."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Las medidas de prevención primaria actúan en el período prepatogénico de la enfermedad. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_21",
-    "parte": "especifica",
+    "numero": 21,
     "temaId": "esp_10",
-    "temaNombre": "Educación para la Salud y Participación Comunitaria",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según Salleras Sanmartí L, la Educación para la Salud se define como:",
     "opciones": [
       "La actividad para promover y proteger la salud del individuo y de la comunidad.",
@@ -311,14 +354,16 @@
       "Proceso que permite a las personas incrementar su control sobre los determinantes de la salud y en consecuencia, mejorarla."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Un proceso que informa, motiva y ayuda a la población a adoptar y mantener prácticas y estilos de vida saludables, propugna los cambios ambientales necesarios para facilitar esos objetivos y dirige la formación profesional y la investigación a los mismos objetivos. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_22",
-    "parte": "especifica",
+    "numero": 22,
     "temaId": "esp_10",
-    "temaNombre": "Educación para la Salud y Participación Comunitaria",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale cuál no es un criterio utilizado en la elaboración de programas de educación para la salud:",
     "opciones": [
       "Medidas preventivas.",
@@ -326,14 +371,16 @@
       "Evaluación."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Medidas preventivas. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_23",
-    "parte": "especifica",
+    "numero": 23,
     "temaId": "esp_4",
-    "temaNombre": "Bioestadística y Epidemiología",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La escala de coma de Glasgow, es una variable:",
     "opciones": [
       "Cualitativa ordinal.",
@@ -341,14 +388,16 @@
       "Cualitativa nominal."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Cuantitativa discreta. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_24",
-    "parte": "especifica",
+    "numero": 24,
     "temaId": "esp_45",
-    "temaNombre": "Heridas Crónicas y Úlceras por Presión (UPP)",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": true,
     "enunciado": "¿Cuál de las siguientes escalas es propuesta por la NIC (Nursing Interventions Classification) para valorar el riesgo de UPP (Ulceras por presión)?",
     "opciones": [
       "Bradem.",
@@ -356,14 +405,16 @@
       "Nova-4."
     ],
     "correctaOriginal": null,
-    "explicacion": "Pregunta anulada o sin respuesta válida en la fuente oficial (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_25",
-    "parte": "especifica",
+    "numero": 25,
     "temaId": "esp_2",
-    "temaNombre": "Metodología de Investigación y Enfermería Basada en la Evidencia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En el orden de las fases de un trabajo científico, la hipótesis se formula en la fase:",
     "opciones": [
       "Conceptual.",
@@ -371,14 +422,16 @@
       "Analítica."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Conceptual. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_26",
-    "parte": "especifica",
+    "numero": 26,
     "temaId": "esp_10",
-    "temaNombre": "Educación para la Salud y Participación Comunitaria",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale cuál de las siguientes opciones no es una técnica de investigación en el aula utilizada en Educación para la Salud:",
     "opciones": [
       "Tormenta de ideas.",
@@ -386,14 +439,16 @@
       "Simulación operativa."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Simulación operativa. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_27",
-    "parte": "general",
+    "numero": 27,
     "temaId": "gen_5",
-    "temaNombre": "Tema 5. Calidad Asistencial y Seguridad del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según Donabedian, la calidad asistencial se define de acuerdo con las siguientes dimensiones. Señale la opción falsa.",
     "opciones": [
       "Efectividad.",
@@ -401,14 +456,16 @@
       "Prevención."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Prevención. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_28",
-    "parte": "especifica",
+    "numero": 28,
     "temaId": "esp_4",
-    "temaNombre": "Bioestadística y Epidemiología",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En relación al error aleatorio, señale la opción falsa:",
     "opciones": [
       "Es un tipo de error debido al azar.",
@@ -416,14 +473,16 @@
       "Es el producido por estimación incorrecta de asociación entre la exposición y la enfermedad."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Es el producido por estimación incorrecta de asociación entre la exposición y la enfermedad. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_29",
-    "parte": "especifica",
+    "numero": 29,
     "temaId": "esp_32",
-    "temaNombre": "Nutrición y Dietoterapia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Siguiendo la guía terapéutica de la obesidad de SACYL (así como los criterios de la OMS), un IMC (índice de masa corporal) de 28 en una mujer adulta, indica:",
     "opciones": [
       "Normopeso.",
@@ -431,14 +490,16 @@
       "Obesidad tipo l."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Obesidad tipo l. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_30",
-    "parte": "especifica",
+    "numero": 30,
     "temaId": "esp_25",
-    "temaNombre": "Conductas Adictivas y Tabaquismo",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Qué test utilizaría para valorar el grado de motivación del fumador para dejar de fumar?",
     "opciones": [
       "Test de Lobo.",
@@ -446,14 +507,16 @@
       "Test de Fagerstróm."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Test de Richmond. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_31",
-    "parte": "especifica",
+    "numero": 31,
     "temaId": "esp_6",
-    "temaNombre": "Demografía Sanitaria e Indicadores de Salud",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": true,
     "enunciado": "La Tasa de mortalidad infantil neonatal temprana, se define como:",
     "opciones": [
       "La relación entre las defunciones de menores de siete días y los nacidos vivos en un año determinado.",
@@ -461,14 +524,16 @@
       "La relación entre las defunciones de menores de 28 días y los nacidos vivos en un año determinado."
     ],
     "correctaOriginal": null,
-    "explicacion": "Pregunta anulada o sin respuesta válida en la fuente oficial (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_32",
-    "parte": "especifica",
+    "numero": 32,
     "temaId": "esp_3",
-    "temaNombre": "Comunicación Científica, Genética y Bases del Cuidado",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La estructura básica de un artículo científico original, tiene las siguientes partes ordenadas:",
     "opciones": [
       "Introducción, material y métodos, bibliografía, apéndices, resultados, resumen y agradecimientos.",
@@ -476,14 +541,16 @@
       "Objetivos, material y métodos, resultados, bibliografía y apéndices, resumen y discusión final."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Título, resumen, introducción y objetivos, material y métodos, resultados, discusión y bibliografía. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_33",
-    "parte": "especifica",
+    "numero": 33,
     "temaId": "esp_17",
-    "temaNombre": "Atención a la Mujer, Embarazo y Lactancia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Entre los cambios fisiológicos en la gestante, se produce la red venosa de Haller, que consiste en la:",
     "opciones": [
       "Vascularización de la placenta.",
@@ -491,14 +558,16 @@
       "Aparición de venas bajo la piel de las mamas."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Aparición de venas bajo la piel de las mamas. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_34",
-    "parte": "especifica",
+    "numero": 34,
     "temaId": "esp_22",
-    "temaNombre": "Deterioro Cognitivo, Demencias y Cuidados Geriátricos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": true,
     "enunciado": "En el estudio tres, fase tres de la Enfermedad de Alzheimer, no está incluido:",
     "opciones": [
       "Fallos en memoria a corto plazo, rememoración conservada.",
@@ -506,14 +575,16 @@
       "Signos neurológicos motores, rigidez."
     ],
     "correctaOriginal": null,
-    "explicacion": "Pregunta anulada o sin respuesta válida en la fuente oficial (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_35",
-    "parte": "especifica",
+    "numero": 35,
     "temaId": "esp_40",
-    "temaNombre": "Cuidados Digestivos y Abdomen Agudo",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuál de las siguientes complicaciones de la hepatitis no se considera habitual?",
     "opciones": [
       "Hepatitis eosinofílica.",
@@ -521,14 +592,16 @@
       "Hepatitis crónica."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Hepatitis eosinofílica. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_36",
-    "parte": "especifica",
+    "numero": 36,
     "temaId": "esp_20",
-    "temaNombre": "Enfermedades Infecciosas y Aislamientos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuál de las siguientes infecciones no va asociada al SIDA (Síndrome de Inmunodeficiencia Adquirida)?",
     "opciones": [
       "Micobacterium Tuberculosis.",
@@ -536,14 +609,16 @@
       "Plasmodium Falciparum."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Plasmodium Falciparum. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_37",
-    "parte": "especifica",
+    "numero": 37,
     "temaId": "esp_21",
-    "temaNombre": "Geriatría y Valoración del Anciano",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "El test o escala de Tinetti:",
     "opciones": [
       "Es un test que explora la visión.",
@@ -551,14 +626,16 @@
       "Valora el riesgo de un anciano inmovilizado de desarrollar úlceras por presión."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Nos da información sobre el equilibrio estático y dinámico. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_38",
-    "parte": "especifica",
+    "numero": 38,
     "temaId": "esp_39",
-    "temaNombre": "Traumatología, Ortopedia e Inmovilizaciones",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "El vendaje funcional no estará indicado en:",
     "opciones": [
       "Fracturas óseas.",
@@ -566,14 +643,16 @@
       "Roturas de fibras musculares."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Fracturas óseas. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_39",
-    "parte": "especifica",
+    "numero": 39,
     "temaId": "esp_31",
-    "temaNombre": "Administración de Fármacos y Vías Clínicas",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Cuando un fármaco se inyecta por punción lumbar y se incorpora directamente al líquido cefalorraquídeo, la vía de administración es:",
     "opciones": [
       "Intraperitoneal.",
@@ -581,14 +660,16 @@
       "Intratecal."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Intratecal. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_40",
-    "parte": "especifica",
+    "numero": 40,
     "temaId": "esp_30",
-    "temaNombre": "Farmacología y Seguridad de Medicamentos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la interacción farmacocinética, relacionada con la absorción de los fármacos, en la que una sustancia puede alterar o dificultar la absorción de otros fármacos:",
     "opciones": [
       "Quelación.",
@@ -596,14 +677,16 @@
       "Interacción aditiva o sinérgica."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Quelación. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_41",
-    "parte": "especifica",
+    "numero": 41,
     "temaId": "esp_33",
-    "temaNombre": "Nutrición Enteral, Parenteral y Sondajes",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Una complicación metabólica relacionada con la nutrición parenteral es:",
     "opciones": [
       "Neumo o hemotórax.",
@@ -611,14 +694,16 @@
       "Atrofia intestinal."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Hiperglucemia y acidosis láctica. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_42",
-    "parte": "especifica",
+    "numero": 42,
     "temaId": "esp_36",
-    "temaNombre": "Cuidados Cardiovasculares y Hemodinámica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "El EAP (edema agudo de pulmón) es una urgencia ligada a la:",
     "opciones": [
       "Hipertensión arterial.",
@@ -626,14 +711,16 @@
       "Hipertensión Portal."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Insuficiencia cardiaca. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_43",
-    "parte": "especifica",
+    "numero": 43,
     "temaId": "esp_34",
-    "temaNombre": "Cuidados Neurológicos y Neurocríticos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuál es el principal factor de riesgo en la aparición del ictus isquémico o hemorrágico?",
     "opciones": [
       "Diabetes Mellitus.",
@@ -641,14 +728,16 @@
       "Hipertensión arterial."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Hipertensión arterial. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_44",
-    "parte": "especifica",
+    "numero": 44,
     "temaId": "esp_30",
-    "temaNombre": "Farmacología y Seguridad de Medicamentos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": true,
     "enunciado": "Respecto a la metformina, es cieno que:",
     "opciones": [
       "No se puede asociar a insulina.",
@@ -656,14 +745,16 @@
       "Puede provocar con frecuencia hipoglucemias graves."
     ],
     "correctaOriginal": null,
-    "explicacion": "Pregunta anulada o sin respuesta válida en la fuente oficial (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_45",
-    "parte": "especifica",
+    "numero": 45,
     "temaId": "esp_45",
-    "temaNombre": "Heridas Crónicas y Úlceras por Presión (UPP)",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Un valor de 10 en la Escala Braden indica un riesgo de padecer úlceras por presión (UPP):",
     "opciones": [
       "Alto",
@@ -671,14 +762,16 @@
       "Leve"
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Alto (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_46",
-    "parte": "especifica",
+    "numero": 46,
     "temaId": "esp_23",
-    "temaNombre": "Cuidados Paliativos y Paciente Terminal",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuál de las siguientes características no se corresponde con una situación de enfermedad terminal?",
     "opciones": [
       "Presencia de una enfermedad avanzada, progresiva, incurable.",
@@ -686,14 +779,16 @@
       "Gran impacto emocional en paciente, familia y equipo terapéutico, relacionado con la presencia, explícita o no, de la muerte."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Pronóstico de vida inferior a doce meses. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_47",
-    "parte": "especifica",
+    "numero": 47,
     "temaId": "esp_20",
-    "temaNombre": "Enfermedades Infecciosas y Aislamientos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la respuesta correcta con respecto al aislamiento inverso según SACYL (Sanidad Castilla y León):",
     "opciones": [
       "El transporte del paciente puede ser ilimitado, siempre que lleve mascarilla.",
@@ -701,14 +796,16 @@
       "Se trata de proteger a pacientes inmunodeprimidos de infecciones y a pacientes febriles de posibles sobreinfecciones."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Se trata de proteger a pacientes inmunodeprimidos de infecciones y a pacientes febriles de posibles sobreinfecciones. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_48",
-    "parte": "general",
+    "numero": 48,
     "temaId": "gen_5",
-    "temaNombre": "Tema 5. Calidad Asistencial y Seguridad del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según el Proyecto de Seguridad Neumonía Zero (NZ), señale la respuesta correcta:",
     "opciones": [
       "El cabecero del paciente deberá estar entre 0-15º salvo si hay contraindicación.",
@@ -716,14 +813,16 @@
       "Se realizará la higiene de boca del paciente con clorhexidina (0.12-0.20%) cada 6-8 horas."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Se realizará la higiene de boca del paciente con clorhexidina (0.12-0.20%) cada 6-8 horas. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_49",
-    "parte": "especifica",
+    "numero": 49,
     "temaId": "esp_30",
-    "temaNombre": "Farmacología y Seguridad de Medicamentos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Respecto a la administración de una dosis de adrenalina, ¿qué debo saber?, señale la respuesta falsa:",
     "opciones": [
       "Se usa en parada cardio-respiratoria.",
@@ -731,14 +830,16 @@
       "Se elevará la frecuencia cardíaca y la tensión arterial."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Se diluye en un suero fisiológico de 100cc para su administración. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_50",
-    "parte": "general",
+    "numero": 50,
     "temaId": "gen_5",
-    "temaNombre": "Tema 5. Calidad Asistencial y Seguridad del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según el Proyecto de Seguridad de Bacteriemia Zero (BZ), la preferencia como lugar de inserción de una vía central será:",
     "opciones": [
       "Subclavia.",
@@ -746,14 +847,16 @@
       "Safena interna."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Subclavia. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_51",
-    "parte": "especifica",
+    "numero": 51,
     "temaId": "esp_31",
-    "temaNombre": "Administración de Fármacos y Vías Clínicas",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la opción falsa en relación a la vía intratecal:",
     "opciones": [
       "Se usa para administrar opioides, analgésicos, antibióticos o quimioterápicos.",
@@ -761,14 +864,16 @@
       "Está indicada en pacientes con compresión medular aguda."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Está indicada en pacientes con compresión medular aguda. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_52",
-    "parte": "especifica",
+    "numero": 52,
     "temaId": "esp_33",
-    "temaNombre": "Nutrición Enteral, Parenteral y Sondajes",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿cuál de las siguientes no es una vía de administración de la alimentación enteral?",
     "opciones": [
       "Por sonda Levin.",
@@ -776,14 +881,16 @@
       "Por sonda Faucher."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Por sonda Faucher. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_53",
-    "parte": "especifica",
+    "numero": 53,
     "temaId": "esp_33",
-    "temaNombre": "Nutrición Enteral, Parenteral y Sondajes",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿En cuál de las siguientes situaciones está indicado colocar una sonda nasogástrica?",
     "opciones": [
       "Traumatismo facial grave.",
@@ -791,14 +898,16 @@
       "Nutrición en pacientes con ventilación mecánica."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Nutrición en pacientes con ventilación mecánica. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_54",
-    "parte": "especifica",
+    "numero": 54,
     "temaId": "esp_27",
-    "temaNombre": "Urgencias, Emergencias y Triaje",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Un paciente acude al servicio de urgencias con agitación psicomotriz tras un traumatismo craneoencefálico, se le administra midazolam y haloperidol. ¿Qué escala utilizaremos para su valoración posterior?",
     "opciones": [
       "Norton.",
@@ -806,14 +915,16 @@
       "Richmond Agitation Sedation Scale (RASS)."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Richmond Agitation Sedation Scale (RASS). (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_55",
-    "parte": "especifica",
+    "numero": 55,
     "temaId": "esp_34",
-    "temaNombre": "Cuidados Neurológicos y Neurocríticos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿cuál de las siguientes pruebas no es específica para diagnosticar muerte cerebral a un paciente?",
     "opciones": [
       "Electrocardiograma.",
@@ -821,14 +932,16 @@
       "Eco doppler transcraneal."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Electrocardiograma. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_56",
-    "parte": "especifica",
+    "numero": 56,
     "temaId": "esp_35",
-    "temaNombre": "Cuidados Respiratorios y Ventilación Mecánica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿cuál de los siguientes no es un factor de riesgo de neumotórax a tensión?",
     "opciones": [
       "Varón de 30 a 40 años de constitución pícnica.",
@@ -836,14 +949,16 @@
       "Ventilación mecánica."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Varón de 30 a 40 años de constitución pícnica. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_57",
-    "parte": "especifica",
+    "numero": 57,
     "temaId": "esp_35",
-    "temaNombre": "Cuidados Respiratorios y Ventilación Mecánica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Tenemos un paciente conectado a ventilación mecánica con presión positiva al final de la espiración, PEEP+14, ¿cuál de los siguientes es un efecto cardiovascular?",
     "opciones": [
       "Aumento de la resistencia vascular pulmonar.",
@@ -851,14 +966,16 @@
       "Aumento del retorno venoso."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Aumento de la resistencia vascular pulmonar. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_58",
-    "parte": "especifica",
+    "numero": 58,
     "temaId": "esp_36",
-    "temaNombre": "Cuidados Cardiovasculares y Hemodinámica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "A Juan le han realizado una angioplastia primaria con acceso por la arteria radial, le han puesto una banda o muñequera de presión, señale la respuesta correcta:",
     "opciones": [
       "Si hay sangrado de la zona de punción, continuar deshinchando la muñequera.",
@@ -866,14 +983,16 @@
       "Se debe comprobar periódicamente el estado de perfusión de la mano (color, movilidad y temperatura)."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Se debe comprobar periódicamente el estado de perfusión de la mano (color, movilidad y temperatura). (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_59",
-    "parte": "especifica",
+    "numero": 59,
     "temaId": "esp_36",
-    "temaNombre": "Cuidados Cardiovasculares y Hemodinámica",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la respuesta falsa con respecto al gasto cardíaco:",
     "opciones": [
       "Es el volumen de sangre bombeado por el corazón durante un minuto.",
@@ -881,14 +1000,16 @@
       "Su fórmula es: frecuencia cardíaca por volumen de sangre expulsada en diástole."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Su fórmula es: frecuencia cardíaca por volumen de sangre expulsada en diástole. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_60",
-    "parte": "especifica",
+    "numero": 60,
     "temaId": "esp_8",
-    "temaNombre": "Prevención de la Enfermedad y Cribados Poblacionales",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Respecto a las pruebas de screening poblacionales, señale la opción falsa:",
     "opciones": [
       "La detección precoz se debe realizar si la enfermedad es frecuente y grave.",
@@ -896,14 +1017,16 @@
       "El resultado diagnóstico obtenido se considera de presunción."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Su efectividad diagnóstica es la misma tanto en individuos sintomáticos como asintomáticos. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_61",
-    "parte": "especifica",
+    "numero": 61,
     "temaId": "esp_20",
-    "temaNombre": "Enfermedades Infecciosas y Aislamientos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En pacientes con tratamiento por tuberculosis pulmonar, ¿cuál de las siguientes no es una complicación?",
     "opciones": [
       "Ictus post-tratamiento.",
@@ -911,14 +1034,16 @@
       "Toxicidad derivada del tratamiento."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Ictus post-tratamiento. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_62",
-    "parte": "especifica",
+    "numero": 62,
     "temaId": "esp_22",
-    "temaNombre": "Deterioro Cognitivo, Demencias y Cuidados Geriátricos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la respuesta correcta en relación al Deterioro Cognitivo Leve:",
     "opciones": [
       "Un criterio diagnóstico del Deterioro Cognitivo Leve es la queja subjetiva de pérdida de memoria por parte del paciente o de un informante válido (familiar o conviviente).",
@@ -926,14 +1051,16 @@
       "El diagnóstico de Deterioro Cognitivo Leve es un intento de identificar la Demencia Vascular en su fase prodrómica."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Un criterio diagnóstico del Deterioro Cognitivo Leve es la queja subjetiva de pérdida de memoria por parte del paciente o de un informante válido (familiar o conviviente). (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_63",
-    "parte": "especifica",
+    "numero": 63,
     "temaId": "esp_22",
-    "temaNombre": "Deterioro Cognitivo, Demencias y Cuidados Geriátricos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿Cuáles son las manifestaciones clínicas de tipo cognitivo más precoces en la Enfermedad de Alzheimer?",
     "opciones": [
       "Amnesia, agnosia y apraxia del vestido.",
@@ -941,14 +1068,16 @@
       "Amnesia, anhedonia y afasia."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Amnesia, anomia y desorientación temporoespacial. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_64",
-    "parte": "especifica",
+    "numero": 64,
     "temaId": "esp_39",
-    "temaNombre": "Traumatología, Ortopedia e Inmovilizaciones",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Ante una fractura de húmero proximal, usaríamos un vendaje de tipo:",
     "opciones": [
       "Sindactilia.",
@@ -956,14 +1085,16 @@
       "Vendaje Velpeau."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Vendaje Velpeau. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_65",
-    "parte": "especifica",
+    "numero": 65,
     "temaId": "esp_38",
-    "temaNombre": "Cuidados Metabólicos, Endocrinos y Pie Diabético",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Ei signo de Trousseau, indicador de hipocalcemias, se describe en la anatomía de:",
     "opciones": [
       "Miembros superiores.",
@@ -971,14 +1102,16 @@
       "Cara."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Miembros superiores. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_66",
-    "parte": "especifica",
+    "numero": 66,
     "temaId": "esp_33",
-    "temaNombre": "Nutrición Enteral, Parenteral y Sondajes",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "No es un tipo de sonda nasogástrica:",
     "opciones": [
       "Salem.",
@@ -986,14 +1119,16 @@
       "Robinson."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Robinson. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_67",
-    "parte": "especifica",
+    "numero": 67,
     "temaId": "esp_29",
-    "temaNombre": "Paciente Crónico Pluripatológico y Gestión de Casos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la opción falsa respecto a padecer una enfermedad crónica:",
     "opciones": [
       "Implica sufrir discapacidad.",
@@ -1001,14 +1136,16 @@
       "La discapacidad o la dependencia añaden complejidad."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Implica sufrir discapacidad. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_68",
-    "parte": "especifica",
+    "numero": 68,
     "temaId": "esp_8",
-    "temaNombre": "Prevención de la Enfermedad y Cribados Poblacionales",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Según Holland y colaboradores, ¿cuál de los siguientes no es un beneficio de los cribados poblacionales?",
     "opciones": [
       "Mejora del pronóstico de los casos detectados.",
@@ -1016,14 +1153,16 @@
       "Mayor seguridad en los casos de falsos negativos."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Ahorro de recursos. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_69",
-    "parte": "especifica",
+    "numero": 69,
     "temaId": "esp_7",
-    "temaNombre": "Salud Comunitaria y Priorización de Problemas",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "La Organización Mundial de la Salud habla de cinco factores de riesgo principales para el desarrollo y control de las enfermedades no transmisibles, no siendo uno de ellos:",
     "opciones": [
       "Consumo nocivo de alcohol.",
@@ -1031,14 +1170,16 @@
       "Contaminación del agua."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Contaminación del agua. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_70",
-    "parte": "especifica",
+    "numero": 70,
     "temaId": "esp_10",
-    "temaNombre": "Educación para la Salud y Participación Comunitaria",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En un centro de salud se ha llevado a cabo una intervención en Educación para la Salud con 25 pacientes, dirigida a mejorar el hábito del sueño. Se analizó el tiempo de duración de cada sesión y el grado de participación. Se ha realizado una evaluación de:",
     "opciones": [
       "Impacto.",
@@ -1046,14 +1187,16 @@
       "Proceso."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Proceso. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_71",
-    "parte": "especifica",
+    "numero": 71,
     "temaId": "esp_37",
-    "temaNombre": "Cuidados Nefrológicos y Urológicos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la opción falsa en relación al seguimiento del paciente después del trasplante renal:",
     "opciones": [
       "Se tomarán medidas de control del riesgo cardiovascular.",
@@ -1061,14 +1204,16 @@
       "No es necesario retirar el catéter peritoneal tras el implante exitoso del riñón."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: No es necesario retirar el catéter peritoneal tras el implante exitoso del riñón. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_72",
-    "parte": "especifica",
+    "numero": 72,
     "temaId": "esp_37",
-    "temaNombre": "Cuidados Nefrológicos y Urológicos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "María es una paciente de 78 años diagnosticada de enfermedad renal crónica desde hace 5 años. Actualmente está en tratamiento de diálisis peritoneal. ¿Qué recomendación dietética no debemos realizar?",
     "opciones": [
       "Reducir o eliminar el consumo de sodio.",
@@ -1076,14 +1221,16 @@
       "Reducir y controlar la ingesta de alimentos muy ricos en fósforo y potasio."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Consumir preferentemente grasas y proteínas de origen animal. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_73",
-    "parte": "especifica",
+    "numero": 73,
     "temaId": "esp_1",
-    "temaNombre": "Proceso de Atención de Enfermería (PAE) y Modelos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "¿cuál es la definición de Proceso de Atención de Enfermería (PAE), según Alfaro?",
     "opciones": [
       "El PAE es un instrumento para evaluar la eficacia de la intervención y demostrar el interés del enfermero.",
@@ -1091,14 +1238,16 @@
       "El PAE es un método sistemático y organizado para administrar cuidados de Enfermería individualizados."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: El PAE es un método sistemático y organizado para administrar cuidados de Enfermería individualizados. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_74",
-    "parte": "especifica",
+    "numero": 74,
     "temaId": "esp_26",
-    "temaNombre": "Violencia de Género e Intrafamiliar",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Lenore Walker describe varias fases relacionadas con la violencia a la mujer en la pareja. ¿cuál de las siguientes no es verdadera?",
     "opciones": [
       "Fase de luna de miel.",
@@ -1106,14 +1255,16 @@
       "Fase de emoción contenida."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Fase de emoción contenida. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_75",
-    "parte": "especifica",
+    "numero": 75,
     "temaId": "esp_29",
-    "temaNombre": "Paciente Crónico Pluripatológico y Gestión de Casos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale cuál de las siguientes respuestas corresponde a un cuestionario sociofamilar que realizaríamos a un paciente crónico pluripatológico:",
     "opciones": [
       "Cuestionario MOS.",
@@ -1121,14 +1272,16 @@
       "Cuestionario FRAIL."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Cuestionario COOP-WONCA. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_76",
-    "parte": "especifica",
+    "numero": 76,
     "temaId": "esp_38",
-    "temaNombre": "Cuidados Metabólicos, Endocrinos y Pie Diabético",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "De las siguientes insulinas, ¿cuál no se puede administrar por vía intravenosa?",
     "opciones": [
       "Aspart.",
@@ -1136,14 +1289,16 @@
       "Detemir."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Detemir. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_77",
-    "parte": "especifica",
+    "numero": 77,
     "temaId": "esp_38",
-    "temaNombre": "Cuidados Metabólicos, Endocrinos y Pie Diabético",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Señale la clínica que caracteriza a la Enfermedad de Addison:",
     "opciones": [
       "Astenia, fragilidad, hiperpigmentación cutánea, hipopotasemia, hipertensión arterial, hipertermia, irritabilidad.",
@@ -1151,14 +1306,16 @@
       "Astenia, fragilidad, hiperpigmentación cutánea, hipopotasemia, hipotensión arterial, hipertermia, irritabilidad."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Náuseas, debilidad, astenia, fatigabilidad, hiperpotasemia, pérdida de apetito, pérdida de peso, hipercalcemia. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_78",
-    "parte": "especifica",
+    "numero": 78,
     "temaId": "esp_7",
-    "temaNombre": "Salud Comunitaria y Priorización de Problemas",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "El método de priorización de problemas de Hanlon, no contempla uno de los siguientes criterios:",
     "opciones": [
       "Magnitud del problema.",
@@ -1166,14 +1323,16 @@
       "Factibilidad de la intervención."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Pertinencia del problema. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_79",
-    "parte": "especifica",
+    "numero": 79,
     "temaId": "esp_42",
-    "temaNombre": "Urgencias Oftalmológicas, ORL y Sentidos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "En la atención a un paciente con epistaxis, señale cuál de los siguientes procedimientos es prioritario:",
     "opciones": [
       "Canalización de vía endovenosa para administración de medicación coagulante.",
@@ -1181,14 +1340,16 @@
       "Solicitar analítica de sangre incluyendo estudio de coagulación."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Toma de tensión arterial. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_80",
-    "parte": "especifica",
+    "numero": 80,
     "temaId": "esp_25",
-    "temaNombre": "Conductas Adictivas y Tabaquismo",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": false,
+    "anulada": false,
     "enunciado": "Una puntuación de 6 en el test de Fagerstrõm indica:",
     "opciones": [
       "Dependencia baja de la nicotina.",
@@ -1196,14 +1357,16 @@
       "Dependencia moderada de la nicotina."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Dependencia moderada de la nicotina. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_81",
-    "parte": "general",
+    "numero": 81,
     "temaId": "gen_3",
-    "temaNombre": "Tema 3. Ley 41/2002 Autonomía del Paciente",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "Según el artículo 3 de la Ley 41/2002, a toda actuación realizada con fines preventivos, diagnósticos, terapéuticos, rehabilitadores o de investigación se le denomina:",
     "opciones": [
       "Actividad técnica sanitaria.",
@@ -1211,14 +1374,16 @@
       "Certificado sanitario."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: Intervención en el ámbito de la sanidad. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_82",
-    "parte": "especifica",
+    "numero": 82,
     "temaId": "esp_23",
-    "temaNombre": "Cuidados Paliativos y Paciente Terminal",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "La exacerbación transitoria del dolor, que puede manifestarse de forma espontánea o asociada a un desencadenante, en pacientes con dolor crónico estabilizado, se denomina:",
     "opciones": [
       "Dolor irruptivo.",
@@ -1226,14 +1391,16 @@
       "Dolor somático."
     ],
     "correctaOriginal": 0,
-    "explicacion": "Respuesta correcta: Dolor irruptivo. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_83",
-    "parte": "especifica",
+    "numero": 83,
     "temaId": "esp_41",
-    "temaNombre": "Hematología, Oncología y Hemoterapia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "Un paciente con grupo sanguíneo B presenta:",
     "opciones": [
       "Antígenos A en los glóbulos rojos y anticuerpos anti-B en el plasma.",
@@ -1241,14 +1408,16 @@
       "Antígenos B en los glóbulos rojos y anticuerpos anti-A en el plasma."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Antígenos B en los glóbulos rojos y anticuerpos anti-A en el plasma. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_84",
-    "parte": "especifica",
+    "numero": 84,
     "temaId": "esp_9",
-    "temaNombre": "Inmunizaciones y Vacunación",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "Actualmente la medida más eficaz para prevenir la infección por el virus del papiloma humano (VPH) es:",
     "opciones": [
       "Evitar prácticas sexuales de alto riesgo.",
@@ -1256,14 +1425,16 @@
       "Descartar cualquier tipo de infección de transmisión sexual."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: La vacunación frente a virus del papiloma humano antes del inicio de relaciones sexuales. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_85",
-    "parte": "especifica",
+    "numero": 85,
     "temaId": "esp_17",
-    "temaNombre": "Atención a la Mujer, Embarazo y Lactancia",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "La OMS (Organización Mundial de la Salud) recomienda la lactancia materna exclusiva y a demanda durante los primeros 6 meses de vida del bebé. Teniendo en cuenta las características de la leche materna, señale la opción falsa:",
     "opciones": [
       "El calostro es un alimento rico en proteínas, minerales y vitaminas, especialmente vitamina A.",
@@ -1271,14 +1442,16 @@
       "La proporción de minerales contenidos en la leche de mujer, concretamente hierro y zinc, es elevada, pero con muy baja biodisponibilidad."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: La proporción de minerales contenidos en la leche de mujer, concretamente hierro y zinc, es elevada, pero con muy baja biodisponibilidad. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_86",
-    "parte": "especifica",
+    "numero": 86,
     "temaId": "esp_19",
-    "temaNombre": "Pediatría y Patología Infantil",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "Respecto a la escarlatina en los niños, una de las siguientes características no es correcta:",
     "opciones": [
       "Su transmisión es directa, principalmente vía aérea.",
@@ -1286,14 +1459,16 @@
       "Afecta por igual a ambos sexos."
     ],
     "correctaOriginal": 1,
-    "explicacion": "Respuesta correcta: El periodo de incubación es de 10 a 20 días. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_87",
-    "parte": "especifica",
+    "numero": 87,
     "temaId": "esp_15",
-    "temaNombre": "Salud Mental y Trastornos de la Conducta Alimentaria",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "La etiopatogenia de los Trastornos de la Conducta Alimentaria (TCA) es multifactorial. Alteraciones de la personalidad como el perfeccionismo y la impulsividad, se incluyen como:",
     "opciones": [
       "Factores biológicos.",
@@ -1301,14 +1476,16 @@
       "Factores psicológicos."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Factores psicológicos. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   },
   {
-    "id": "ex2024_12_01_88",
-    "parte": "especifica",
+    "numero": 88,
     "temaId": "esp_42",
-    "temaNombre": "Urgencias Oftalmológicas, ORL y Sentidos",
+    "examenId": "examen_2024_12_01",
+    "examenNombre": "Examen Oficial SACYL (01/12/2024 - ORDEN SAN/1918/2022)",
+    "origen": "Examen real",
+    "esReserva": true,
+    "anulada": false,
     "enunciado": "Según la Guía clínica de manejo de las urgencias oftalmológicas en Atención Primaria del SACYL (Sanidad de Castilla y León), ante una quemadura o causticación ocular de origen térmico o químico, debemos realizar tratamiento de urgencia que no incluye:",
     "opciones": [
       "Irrigación abundante con solución salina o agua en su defecto, durante 30 minutos para restablecer el pH fisiológico del ojo.",
@@ -1316,7 +1493,6 @@
       "Derivación programada a consulta de oftalmólogo."
     ],
     "correctaOriginal": 2,
-    "explicacion": "Respuesta correcta: Derivación programada a consulta de oftalmólogo. (Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)).",
     "fuente": "Examen Oficial SACYL (ORDEN SAN/1918/2022 - 01/12/2024)"
   }
-];
+]
