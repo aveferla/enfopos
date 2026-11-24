@@ -354,7 +354,7 @@
                     <div id="apunte-contenido-html" class="prose prose-sm max-w-none text-slate-800 leading-relaxed space-y-4"></div>
 
                     <div class="bg-white border border-indigo-100 rounded-xl p-4 space-y-2">
-                        <h4 class="text-xs font-extrabold uppercase text-indigo-900">📜 Normativa Aplicable y Referencias de este Tema</h4>
+                        <h4 class="text-xs font-extrabold uppercase text-indigo-900">📜 Normativa, Leyes y Técnicas Aplicables del Tema</h4>
                         <div id="apunte-bibliografia-links" class="space-y-1.5 pt-1"></div>
                     </div>
                 </div>
@@ -446,63 +446,249 @@
         ];
 
         const CATALOGO_TEMAS = {
-            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y Gerencia Regional de Salud de Castilla y León.", apuntesHTML: "", normativa: ["Ley 8/2010, de 30 de agosto, de ordenación del sistema de salud de Castilla y León.", "Decreto 42/2016, de 10 de noviembre, por el que se establece la organización y funcionamiento de la Gerencia Regional de Salud."] },
-            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León (Ley 2/2007).", apuntesHTML: "", normativa: ["Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León.", "Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud."] },
-            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Autonomía del paciente, derechos y obligaciones en materia de información y documentación clínica.", apuntesHTML: "", normativa: ["Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica.", "Ley 2/2007, de 7 de marzo, en materia de derechos y deberes de los usuarios."] },
-            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Protección de datos personales y garantía de los derechos digitales (LO 3/2018).", apuntesHTML: "", normativa: ["Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."] },
-            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Prevención de riesgos laborales y seguridad en el ámbito sanitario.", apuntesHTML: "", normativa: ["Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales y normativa específica sobre agentes biológicos y riesgos en centros sanitarios."] },
-            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Bioética, consentimiento informado e instrucciones previas en Castilla y León.", apuntesHTML: "", normativa: ["Ley 41/2002, de 14 de noviembre, y normativa autonómica de Castilla y León sobre declaración de voluntades vitales anticipadas / instrucciones previas."] },
-            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Calidad asistencial, seguridad del paciente y gestión clínica.", apuntesHTML: "", normativa: ["Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, y estrategias de seguridad del paciente y calidad asistencial de Sacyl."] },
-            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Igualdad efectiva de mujeres y hombres y prevención de la violencia de género.", apuntesHTML: "", normativa: ["Ley Orgánica 3/2007, Ley Orgánica 1/2004 y normativa de Castilla y León en materia de igualdad de oportunidades y prevención de la violencia de género."] },
-            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Transparencia, buen gobierno y participación ciudadana en el sistema sanitario.", apuntesHTML: "", normativa: ["Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, y normativa de participación ciudadana de Castilla y León."] },
+            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y Gerencia Regional de Salud de Castilla y León.", apuntesHTML: "", normativa: [
+                "Constitución Española de 1978 (arts. 43 y 148.1.21ª: derecho a la protección de la salud y asunción de competencias sanitarias por las CC.AA.)",
+                "Ley 14/1986, de 25 de abril, General de Sanidad (estructura del Sistema Nacional de Salud y coordinación con los servicios de salud autonómicos)",
+                "Ley 8/2010, de 30 de agosto, de ordenación del sistema de salud de Castilla y León (organización territorial, Áreas y Zonas Básicas de Salud)",
+                "Decreto 42/2016, de 10 de noviembre, por el que se establece la organización y funcionamiento de la Gerencia Regional de Salud de Castilla y León",
+                "Decreto 14/2022, de 5 de mayo, por el que se establece la estructura orgánica de la Consejería de Sanidad"
+            ] },
+            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León (Ley 2/2007).", apuntesHTML: "", normativa: [
+                "Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud (clasificación, derechos, deberes y régimen disciplinario)",
+                "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León",
+                "Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público (TREBEP)",
+                "Ley 53/1984, de 26 de diciembre, de incompatibilidades del personal al servicio de las Administraciones Públicas"
+            ] },
+            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Autonomía del paciente, derechos y obligaciones en materia de información y documentación clínica.", apuntesHTML: "", normativa: [
+                "Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica",
+                "Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León (derechos y deberes de los usuarios)",
+                "Ley 3/2024, de 3 de mayo, de atención a la clientela y a las personas usuarias de los servicios públicos de Castilla y León",
+                "Convenio relativo a los derechos humanos y la biomedicina (Convenio de Oviedo, de 4 de abril de 1997)"
+            ] },
+            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Protección de datos personales y garantía de los derechos digitales (LO 3/2018).", apuntesHTML: "", normativa: [
+                "Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016 (RGPD), especialmente arts. 9 (categorías especiales de datos de salud) y 32 (seguridad)",
+                "Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales",
+                "Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad (ENS)",
+                "Ley 41/2002, de 14 de noviembre (custodia, confidencialidad y acceso a la historia clínica)"
+            ] },
+            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Prevención de riesgos laborales y seguridad en el ámbito sanitario.", apuntesHTML: "", normativa: [
+                "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+                "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+                "Real Decreto 664/1997, de 12 de mayo, sobre la protección de los trabajadores contra los riesgos relacionados con la exposición a agentes biológicos durante el trabajo",
+                "Orden ESS/1451/2013, de 29 de julio, por la que se establecen disposiciones para la prevención de lesiones causadas por instrumentos cortantes y punzantes en el sector sanitario y hospitalario",
+                "Real Decreto 487/1997, de 14 de abril, sobre manipulación manual de cargas y Real Decreto 665/1997 sobre agentes cancerígenos o mutágenos"
+            ] },
+            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Bioética, consentimiento informado e instrucciones previas en Castilla y León.", apuntesHTML: "", normativa: [
+                "Ley 41/2002, de 14 de noviembre (arts. 8 a 10: consentimiento informado; art. 11: instrucciones previas)",
+                "Ley 14/2007, de 3 de julio, de Investigación biomédica",
+                "Ley Orgánica 3/2021, de 24 de marzo, de regulación de la eutanasia",
+                "Normativa autonómica de Castilla y León reguladora del Registro de Instrucciones Previas y de los Comités de Ética Asistencial"
+            ] },
+            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Calidad asistencial, seguridad del paciente y gestión clínica.", apuntesHTML: "", normativa: [
+                "Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud",
+                "Estrategia de Seguridad del Paciente del Sistema Nacional de Salud y Estrategia de Seguridad del Paciente de Castilla y León",
+                "Normas ISO 9001 (sistemas de gestión de calidad) e ISO 31000 / gestión de riesgos clínicos, análisis causa-raíz (ACR) y notificadores de incidentes sin daño"
+            ] },
+            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Igualdad efectiva de mujeres y hombres y prevención de la violencia de género.", apuntesHTML: "", normativa: [
+                "Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres",
+                "Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género",
+                "Ley 1/2011, de 1 de marzo, de mujeres de Castilla y León",
+                "Ley 2/2024, de 10 de mayo, de prevención y asistencia integral de la violencia de género en Castilla y León"
+            ] },
+            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Transparencia, buen gobierno y participación ciudadana en el sistema sanitario.", apuntesHTML: "", normativa: [
+                "Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno",
+                "Ley 3/2015, de 4 de marzo, de Transparencia y Participación Ciudadana de Castilla y León",
+                "Ley 8/2010, de 30 de agosto, de ordenación del sistema de salud de Castilla y León (órganos de participación comunitaria: Consejos de Salud)"
+            ] },
 
-            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Bases conceptuales y metodológicas de la enfermería.", apuntesHTML: "", normativa: ["Modelos y teorías enfermeras, marco competencial enfermero y fundamentos metodológicos de la práctica profesional."] },
-            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Proceso de atención de enfermería (PAE) y taxonomías diagnósticas.", apuntesHTML: "", normativa: ["Metodología enfermera aplicada (valoración, diagnóstico, planificación, ejecución y evaluación) y taxonomías NANDA-I, NOC y NIC."] },
-            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Atención Primaria de Salud: organización, cartera de servicios y salud comunitaria.", apuntesHTML: "", normativa: ["Real Decreto 137/1984 sobre estructuras básicas de salud, cartera de servicios de Atención Primaria del SNS y de Castilla y León, y programas de salud comunitaria."] },
-            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Educación para la salud y promoción de hábitos saludables.", apuntesHTML: "", normativa: ["Estrategias de promoción de la salud, prevención primaria y educación sanitaria individual y grupal en el ámbito de Sacyl."] },
-            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Salud pública, epidemiología y vigilancia epidemiológica.", apuntesHTML: "", normativa: ["Ley 33/2011, de 4 de octubre, General de Salud Pública, Red de Vigilancia Epidemiológica de Castilla y León y declaración obligatoria de enfermedades."] },
-            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Inmunizaciones y calendario vacunal.", apuntesHTML: "", normativa: ["Calendario oficial de vacunación e inmunización a lo largo de toda la vida vigente en Castilla y León y recomendaciones del Consejo Interterritorial del SNS."] },
-            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Prevención y control de infecciones relacionadas con la asistencia sanitaria.", apuntesHTML: "", normativa: ["Programas de control de infecciones asociadas a la asistencia sanitaria (IRAS), higiene de manos, precauciones estándar y de transmisión, y bioseguridad."] },
-            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Administración segura de fármacos y farmacología clínica.", apuntesHTML: "", normativa: ["Real Decreto 1345/2007, prescripción/indicación enfermera (RD 954/2015 y RD 1302/2018) y protocolos de seguridad en la administración de medicación."] },
-            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Balance hídrico, fluidoterapia y trastornos hidroelectrolíticos.", apuntesHTML: "", normativa: ["Guías clínicas de valoración hidroelectrolítica, cálculo de reposición hídrica y manejo seguro de fluidoterapia intravenosa."] },
-            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Cuidados perioperatorios y atención en el bloque quirúrgico.", apuntesHTML: "", normativa: ["Protocolos de seguridad quirúrgica (listado de verificación / cirugía segura), preparación preoperatoria, intraoperatoria y cuidados postanestésicos."] },
-            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Atención al paciente con patología cardiovascular.", apuntesHTML: "", normativa: ["Guías clínicas vigentes de prevención y manejo de enfermedad cardiovascular, insuficiencia cardiaca, cardiopatía isquémica y control de factores de riesgo."] },
-            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Atención al paciente con patología respiratoria.", apuntesHTML: "", normativa: ["Guías clínicas de manejo de patología respiratoria aguda y crónica (EPOC, asma, infecciones respiratorias) y cuidados respiratorios."] },
-            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Atención al paciente con patología digestiva y nutricional.", apuntesHTML: "", normativa: ["Guías de valoración nutricional, cribado de desnutrición y cuidados enfermeros en patología digestiva."] },
-            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Atención al paciente con patología endocrino-metabólica.", apuntesHTML: "", normativa: ["Guías clínicas y programas asistenciales de diabetes mellitus, dislipemias, obesidad y patología tiroidea y endocrina."] },
-            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Atención al paciente con patología nefrourológica.", apuntesHTML: "", normativa: ["Guías de abordaje de enfermedad renal crónica, litiasis, infecciones urinarias y cuidados en terapia renal sustitutiva."] },
+            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Bases conceptuales y metodológicas de la enfermería.", apuntesHTML: "", normativa: [
+                "Modelos y teorías de enfermería (Virginia Henderson, Dorothea Orem, Callista Roy, Hildegard Peplau, Marjory Gordon)",
+                "Real Decreto 1837/2008 y Directiva 2005/36/CE (reconocimiento de cualificaciones profesionales y bases de la formación enfermera)",
+                "Código Deontológico de la Enfermería Española (Resolución 32/1989 del Consejo General de Enfermería)"
+            ] },
+            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Proceso de atención de enfermería (PAE) y taxonomías diagnósticas.", apuntesHTML: "", normativa: [
+                "Metodología enfermera de cinco fases (valoración, diagnóstico enfermero, planificación, ejecución y evaluación)",
+                "Taxonomía diagnóstica NANDA-I (dominios y clases)",
+                "Clasificación de Resultados de Enfermería (NOC) y Clasificación de Intervenciones de Enfermería (NIC)"
+            ] },
+            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Atención Primaria de Salud: organización, cartera de servicios y salud comunitaria.", apuntesHTML: "", normativa: [
+                "Real Decreto 137/1984, de 11 de enero, sobre estructuras básicas de salud",
+                "Real Decreto 1030/2006, de 15 de septiembre, por el que se establece la cartera de servicios comunes del Sistema Nacional de Salud",
+                "Decreto 73/2004 y normativa autonómica reguladora de la Cartera de Servicios de Atención Primaria de Castilla y León y programas de salud comunitaria"
+            ] },
+            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Educación para la salud y promoción de hábitos saludables.", apuntesHTML: "", normativa: [
+                "Carta de Ottawa para el Fomento de la Salud (OMS, 1986) y Declaración de Adelaida / Yakarta sobre promoción de la salud",
+                "Estrategia de Promoción de la Salud y Prevención en el SNS y técnicas de educación sanitaria individual, grupal y entrevista motivacional"
+            ] },
+            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Salud pública, epidemiología y vigilancia epidemiológica.", apuntesHTML: "", normativa: [
+                "Ley 33/2011, de 4 de octubre, General de Salud Pública",
+                "Real Decreto 2210/1995, de 28 de diciembre, por el que se crea la Red Nacional de Vigilancia Epidemiológica",
+                "Normativa de Castilla y León reguladora de la Red de Vigilancia Epidemiológica y sistemas de Enfermedades de Declaración Obligatoria (EDO)"
+            ] },
+            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Inmunizaciones y calendario vacunal.", apuntesHTML: "", normativa: [
+                "Calendario oficial común de vacunación e inmunización a lo largo de toda la vida del Consejo Interterritorial del SNS y calendario oficial vigente en Castilla y León",
+                "Técnicas de conservación y cadena del frío vacunal (2 °C - 8 °C), vías y sitios de administración (IM, SC, VO), contraindicaciones y registro vacunal"
+            ] },
+            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Prevención y control de infecciones relacionadas con la asistencia sanitaria.", apuntesHTML: "", normativa: [
+                "Recomendaciones de higiene de manos (OMS — los 5 momentos para la higiene de manos) y precauciones estándar y basadas en la transmisión (contacto, gotas, aérea)",
+                "Técnicas de limpieza, desinfección (bajo, intermedio y alto nivel según clasificación de Spaulding) y esterilización de productos sanitarios",
+                "Normativa de gestión de residuos sanitarios de Castilla y León (Decreto 204/1994 y normativa ambiental aplicable)"
+            ] },
+            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Administración segura de fármacos y farmacología clínica.", apuntesHTML: "", normativa: [
+                "Real Decreto Legislativo 1/2015, de 24 de julio, por el que se aprueba el texto refundido de la Ley de garantías y uso racional de los medicamentos y productos sanitarios",
+                "Real Decreto 954/2015, de 23 de octubre, por el que se regula la indicación, uso y autorización de dispensación de medicamentos y productos sanitarios de uso humano por parte de los enfermeros (modificado por RD 1302/2018)",
+                "Guías y protocolos de indicación enfermera de Castilla y León y prácticas seguras de conciliación y administración de medicación (reglas de seguridad y medicamentos de alto riesgo)"
+            ] },
+            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Balance hídrico, fluidoterapia y trastornos hidroelectrolíticos.", apuntesHTML: "", normativa: [
+                "Protocolos clínicos de valoración del balance hídrico (ingresos y pérdidas insensibles y sensibles), osmolaridad plasmática y corrección de alteraciones hidroelectrolíticas (sodio, potasio, calcio, magnesio, equilibrio ácido-base)",
+                "Técnicas de canalización venosa periférica/central, cálculo de goteo y prevención de flebitis y sobrecarga hídrica"
+            ] },
+            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Cuidados perioperatorios y atención en el bloque quirúrgico.", apuntesHTML: "", normativa: [
+                "Listado de Verificación de Seguridad Quirúrgica (Surgical Safety Checklist — OMS) y Estrategia de Seguridad del Paciente Quirúrgico del SNS",
+                "Técnicas de preparación preoperatoria del campo quirúrgico, antisepsia, vestimenta estéril, instrumentación, control de constantes y cuidados en la Unidad de Recuperación Postanestésica (URPA)"
+            ] },
+            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Atención al paciente con patología cardiovascular.", apuntesHTML: "", normativa: [
+                "Guías de práctica clínica vigentes (ESC/AHA) sobre hipertensión arterial, cardiopatía isquémica, insuficiencia cardiaca, arritmias y prevención cardiovascular",
+                "Técnicas de registro e interpretación básica de electrocardiograma de 12 derivaciones, control de factores de riesgo y rehabilitación cardiaca"
+            ] },
+            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Atención al paciente con patología respiratoria.", apuntesHTML: "", normativa: [
+                "Guías clínicas de manejo de EPOC (GOLD), asma (GINA), neumonía e insuficiencia respiratoria aguda/crónica",
+                "Técnicas de pulsioximetría, gasometría arterial, espirometría, fisioterapia respiratoria, terapia inhalatoria y drenaje torácico"
+            ] },
+            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Atención al paciente con patología digestiva y nutricional.", apuntesHTML: "", normativa: [
+                "Guías clínicas de patología esofagogástrica, enfermedad inflamatoria intestinal, hepatopatías, pancreatitis y cribado nutricional (MUST, NRS-2002, VGS)",
+                "Cálculo de requerimientos energéticos y proteicos, control de balances y cuidados de enfermería en patología digestiva"
+            ] },
+            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Atención al paciente con patología endocrino-metabólica.", apuntesHTML: "", normativa: [
+                "Guías clínicas de diabetes mellitus (ADA/SED), obesidad, dislipemias y patología tiroidea y suprarrenal",
+                "Técnicas de autocontrol glucémico, insulinoterapia, prevención de hipoglucemia, cetoacidosis, estado hiperosmolar y pie diabético"
+            ] },
+            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Atención al paciente con patología nefrourológica.", apuntesHTML: "", normativa: [
+                "Guías clínicas de enfermedad renal crónica (KDIGO), lesión renal aguda, litiasis urinaria e infecciones del tracto urinario",
+                "Cuidados en hemodiálisis, diálisis peritoneal, accesos vasculares (FAV, catéteres) y sondaje vesical"
+            ] },
 
-            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Atención al paciente con patología neurológica.", apuntesHTML: "", normativa: ["Códigos asistenciales y guías clínicas de atención al ictus, epilepsia, deterioro cognitivo y enfermedades neurodegenerativas."] },
-            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Atención al paciente con patología osteomuscular y traumatológica.", apuntesHTML: "", normativa: ["Cuidados enfermeros en fracturas, artroplastias, osteoporosis, lumbalgias y rehabilitación musculoesquelética."] },
-            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Salud materno-infantil y cuidados neonatales.", apuntesHTML: "", normativa: ["Programas de atención al embarazo, parto, puerperio y cuidados neonatales en el Sistema Nacional de Salud y Castilla y León."] },
-            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Atención a la infancia y adolescencia y protección frente al maltrato.", apuntesHTML: "", normativa: ["Programa de salud infantil y del adolescente y protocolos de detección y actuación frente al maltrato infantil."] },
-            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Salud sexual y reproductiva.", apuntesHTML: "", normativa: ["Programas de salud sexual y reproductiva, anticoncepción, prevención de ITS y atención integral en salud afectivo-sexual."] },
-            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Atención enfermera al adulto mayor y geriatría.", apuntesHTML: "", normativa: ["Valoración geriátrica integral, prevención de fragilidad, caídas y deterioro funcional en personas mayores."] },
-            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Atención a la cronicidad y paciente pluripatológico.", apuntesHTML: "", normativa: ["Estrategia de atención a pacientes crónicos y pluripatológicos, planes individualizados de cuidados y gestión de casos."] },
-            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Cuidados paliativos y atención al final de la vida.", apuntesHTML: "", normativa: ["Estrategia de cuidados paliativos, control sintomático, sedación paliativa y acompañamiento en el final de la vida."] },
-            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental y cuidados psiquiátricos.", apuntesHTML: "", normativa: ["Estrategia de salud mental, continuidad asistencial comunitaria, prevención del suicidio y cuidados de enfermería en salud mental."] },
-            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Atención a conductas adictivas y drogodependencias.", apuntesHTML: "", normativa: ["Planes y protocolos de prevención, desintoxicación, deshabituación y reducción de daños en conductas adictivas."] },
-            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Cuidados en urgencias y emergencias extrahospitalarias.", apuntesHTML: "", normativa: ["Coordinación de emergencias sanitarias (112/061), transporte sanitario y atención inicial extrahospitalaria a urgencias tiempo-dependientes."] },
-            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Soporte vital básico y avanzado y reanimación cardiopulmonar.", apuntesHTML: "", normativa: ["Recomendaciones vigentes de reanimación cardiopulmonar (RCP) y soporte vital básico/avanzado y uso de desfibriladores externos automatizados (DESA)."] },
-            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Atención sanitaria ante catástrofes, incidentes con múltiples víctimas y triaje.", apuntesHTML: "", normativa: ["Planes de emergencia sanitaria, clasificación/triaje en incidentes con múltiples víctimas y organización asistencial ante catástrofes."] },
-            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Cuidados en unidades de cuidados críticos.", apuntesHTML: "", normativa: ["Monitorización hemodinámica y respiratoria, prevención de infecciones en UCI y cuidados avanzados al paciente crítico."] },
+            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Atención al paciente con patología neurológica.", apuntesHTML: "", normativa: [
+                "Guías clínicas y protocolos de Código Ictus en Castilla y León, crisis epilépticas, traumatismo craneoencefálico, demencias y enfermedades neurodegenerativas",
+                "Escala de Coma de Glasgow (GCS), escala NIHSS, valoración pupilar y prevención de complicaciones neurológicas"
+            ] },
+            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Atención al paciente con patología osteomuscular y traumatológica.", apuntesHTML: "", normativa: [
+                "Guías clínicas de fracturas, luxaciones, artroplastias de cadera y rodilla, osteoporosis y lumbalgias",
+                "Técnicas de inmovilización, tracciones, valoración neurovascular distal, prevención de tromboembolismo venoso y rehabilitación musculoesquelética"
+            ] },
+            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Salud materno-infantil y cuidados neonatales.", apuntesHTML: "", normativa: [
+                "Estrategia de Atención al Parto y Salud Reproductiva del SNS y programas de seguimiento del embarazo, parto, puerperio y atención neonatal",
+                "Test de Apgar, test de Silverman-Anderson, termorregulación neonatal, lactancia materna (iniciativa IHAN) y cribado neonatal (prueba del talón y otoemisiones)"
+            ] },
+            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Atención a la infancia y adolescencia y protección frente al maltrato.", apuntesHTML: "", normativa: [
+                "Ley Orgánica 8/2021, de 4 de junio, de protección integral a la infancia y la adolescencia frente a la violencia",
+                "Programa de salud infantil y del adolescente de Castilla y León, curvas de crecimiento (OMS) y protocolos de detección y notificación de sospecha de maltrato infantil"
+            ] },
+            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Salud sexual y reproductiva.", apuntesHTML: "", normativa: [
+                "Ley Orgánica 2/2010, de 3 de marzo, de salud sexual y reproductiva y de la interrupción voluntaria del embarazo (modificada por Ley Orgánica 1/2023)",
+                "Programas de anticoncepción, consejo reproductivo, prevención y diagnóstico precoz de infecciones de transmisión sexual (ITS) y atención integral en salud sexual"
+            ] },
+            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Atención enfermera al adulto mayor y geriatría.", apuntesHTML: "", normativa: [
+                "Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia",
+                "Valoración geriátrica integral (índices de Katz, Barthel, Lawton y Brody; escalas de fragilidad, caídas como Morse o Downton y estado cognitivo como Lobo/MEC)"
+            ] },
+            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Atención a la cronicidad y paciente pluripatológico.", apuntesHTML: "", normativa: [
+                "Estrategia para el Abordaje de la Cronicidad en el Sistema Nacional de Salud y programas de atención a pacientes crónicos complejos y pluripatológicos de Sacyl",
+                "Gestión de casos, estratificación del riesgo poblacional, planes individualizados de cuidados y conciliación terapéutica"
+            ] },
+            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Cuidados paliativos y atención al final de la vida.", apuntesHTML: "", normativa: [
+                "Estrategia en Cuidados Paliativos del Sistema Nacional de Salud y plan/estrategia de cuidados paliativos de Castilla y León",
+                "Control de síntomas refractarios, sedación paliativa, escalas de estado funcional (Karnofsky, PPS) y apoyo emocional y duelo a la familia"
+            ] },
+            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental y cuidados psiquiátricos.", apuntesHTML: "", normativa: [
+                "Estrategia de Salud Mental del Sistema Nacional de Salud y planes de salud mental de Castilla y León",
+                "Real Decreto 766/1992 y normativa sobre internamiento no voluntario por trastorno psíquico (art. 763 de la Ley 1/2000 de Enjuiciamiento Civil), prevención del suicidio y cuidados psiquiátricos"
+            ] },
+            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Atención a conductas adictivas y drogodependencias.", apuntesHTML: "", normativa: [
+                "Estrategia Nacional sobre Adicciones y normativa y planes autonómicos de Castilla y León sobre prevención y asistencia en drogodependencias y conductas adictivas",
+                "Abordaje de intoxicaciones, síndromes de abstinencia (alcohol, opiáceos, benzodiacepinas, estimulantes), desintoxicación, deshabituación y reducción de daños"
+            ] },
+            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Cuidados en urgencias y emergencias extrahospitalarias.", apuntesHTML: "", normativa: [
+                "Real Decreto 836/2012, de 25 de mayo, por el que se establecen las características técnicas, el equipamiento sanitario y la dotación de personal de los vehículos de transporte sanitario por carretera",
+                "Normativa de transporte sanitario y coordinación de emergencias sanitarias (112/061) de Castilla y León y valoración primaria/secundaria (ABCDE) en emergencias extrahospitalarias"
+            ] },
+            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Soporte vital básico y avanzado y reanimación cardiopulmonar.", apuntesHTML: "", normativa: [
+                "Guías y recomendaciones vigentes del European Resuscitation Council (ERC) / Consejo Español de Resucitación Cardiopulmonar (CERCP) sobre Soporte Vital Básico (SVB) y Avanzado (SVA)",
+                "Real Decreto 365/2009 y normativa autonómica de Castilla y León sobre instalación y uso de desfibriladores externos automatizados (DESA/DEA) fuera del ámbito sanitario"
+            ] },
+            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Atención sanitaria ante catástrofes, incidentes con múltiples víctimas y triaje.", apuntesHTML: "", normativa: [
+                "Ley 17/2015, de 9 de julio, del Sistema Nacional de Protección Civil, y planes de emergencia sanitaria / protección civil de Castilla y León",
+                "Sistemas de triaje extrahospitalario e intrahospitalario (START, Short, Manchester, SET) y organización sectorial (noria de evacuación, Puesto Médico Avanzado) en incidentes con múltiples víctimas"
+            ] },
+            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Cuidados en unidades de cuidados críticos.", apuntesHTML: "", normativa: [
+                "Estándares y recomendaciones de unidades de cuidados intensivos (UCI) y protocolos de prevención de infecciones asociadas a dispositivos invasivos (proyectos Bacteriemia Zero, Neumonía Zero, Resistencia Zero y ITU Zero)",
+                "Monitorización hemodinámica invasiva y no invasiva (PVC, presión arterial invasiva), soporte vasoactivo, ventilación mecánica y cuidados del paciente crítico"
+            ] },
 
-            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Atención al paciente oncológico y tratamientos antineoplásicos.", apuntesHTML: "", normativa: ["Seguridad en el manejo de citostáticos, prevención de extravasaciones, manejo de toxicidades y cuidados oncológicos."] },
-            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Cuidados en hematología y hemoterapia.", apuntesHTML: "", normativa: ["Normativa de hemovigilancia y seguridad transfusional, administración de hemoderivados y cuidados en trastornos hematológicos."] },
-            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Cuidados en dermatología y prevención/tratamiento de heridas y UPP.", apuntesHTML: "", normativa: ["Guías de práctica clínica de prevención y tratamiento de lesiones por presión (UPP) y heridas crónicas o complejas."] },
-            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Sondajes, drenajes y nutrición enteral y parenteral.", apuntesHTML: "", normativa: ["Protocolos de colocación, mantenimiento y retirada segura de sondas, drenajes y soporte nutricional enteral y parenteral."] },
-            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Ostomías y cuidados de eliminación.", apuntesHTML: "", normativa: ["Cuidados enfermeros en ostomías digestivas y urológicas, educación al paciente ostomizado y manejo de trastornos de eliminación."] },
-            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Oxigenoterapia, ventilación y cuidados respiratorios.", apuntesHTML: "", normativa: ["Administración segura de oxigenoterapia, aerosolterapia, aspiración de secreciones y cuidados en ventilación no invasiva e invasiva."] },
-            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Cuidados al paciente con alteraciones sensoriales (visión y audición).", apuntesHTML: "", normativa: ["Adaptación de cuidados, comunicación segura y prevención de riesgos en pacientes con déficits visuales o auditivos."] },
-            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Atención al paciente con enfermedades infecciosas y transmisibles.", apuntesHTML: "", normativa: ["Medidas de aislamiento, profilaxis posexposición y manejo clínico-epidemiológico de enfermedades transmisibles."] },
-            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Dolor: valoración, escalas y manejo farmacológico y no farmacológico.", apuntesHTML: "", normativa: ["Evaluación del dolor mediante escalas validadas, escalera analgésica y abordaje multimodal del dolor agudo y crónico."] },
-            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Pruebas diagnósticas, toma de muestras y preparación del paciente.", apuntesHTML: "", normativa: ["Procedimientos normalizados de obtención, conservación y transporte de muestras biológicas y preparación para pruebas diagnósticas."] },
-            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Atención en consulta de enfermería y continuidad asistencial.", apuntesHTML: "", normativa: ["Gestión de la consulta enfermera, coordinación entre niveles asistenciales (Atención Primaria y Hospitalaria) y continuidad de cuidados."] },
-            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Metodología de investigación en enfermería y práctica basada en la evidencia.", apuntesHTML: "", normativa: ["Diseño de estudios, bioética de la investigación, lectura crítica y transferencia de la evidencia científica a la práctica clínica."] },
-            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Exploración funcional, pruebas complementarias y registros clínicos.", apuntesHTML: "", normativa: ["Valoración funcional, interpretación básica de pruebas complementarias y requisitos legales y técnicos de los registros enfermeros en historia clínica."] },
-            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Inmovilizaciones, vendajes y técnicas de soporte musculoesquelético.", apuntesHTML: "", normativa: ["Técnicas de vendaje funcional y compresivo, inmovilizaciones y vigilancia neurovascular en soporte musculoesquelético."] },
-            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Cirugía menor, suturas y curas en atención sanitaria.", apuntesHTML: "", normativa: ["Asepsia, anestesia local, técnicas de sutura y cierre de heridas, y curas en cirugía menor ambulatoria."] },
-            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Teleenfermería, sistemas de información sanitaria y salud digital.", apuntesHTML: "", normativa: ["Sistemas de información clínica de Sacyl, historia clínica electrónica, teleconsulta/teleenfermería y seguridad de la información sanitaria."] }
+            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Atención al paciente oncológico y tratamientos antineoplásicos.", apuntesHTML: "", normativa: [
+                "Guías de seguridad en la preparación, administración y eliminación de fármacos citostáticos y citotóxicos y prevención y manejo de extravasaciones",
+                "Manejo de toxicidades oncológicas (mucositis, neutropenia febril, náuseas y vómitos inducidos por quimioterapia, radiodermitis) y escalas de toxicidad (CTCAE)"
+            ] },
+            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Cuidados en hematología y hemoterapia.", apuntesHTML: "", normativa: [
+                "Real Decreto 1088/2005, de 16 de septiembre, por el que se establecen los requisitos técnicos y condiciones mínimas de la hemodonación y de los centros y servicios de transfusión",
+                "Normativa de hemovigilancia y trazabilidad transfusional, pruebas pretransfusionales, administración segura de hemoderivados y detección y manejo de reacciones transfusionales"
+            ] },
+            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Cuidados en dermatología y prevención/tratamiento de heridas y UPP.", apuntesHTML: "", normativa: [
+                "Guías y documentos técnicos del Grupo Nacional para el Estudio y Asesoramiento en Úlceras por Presión y Heridas Crónicas (GNEAUPP) y clasificación de lesiones cutáneas relacionadas con la dependencia",
+                "Escalas de valoración del riesgo (Braden, Norton, EMINA), cura en ambiente húmedo, desbridamiento, control de la biopelícula y prevención de lesiones por presión y humedad"
+            ] },
+            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Sondajes, drenajes y nutrición enteral y parenteral.", apuntesHTML: "", normativa: [
+                "Guías de práctica clínica de nutrición enteral y parenteral (SENPE / ESPEN)",
+                "Protocolos de inserción, fijación, permeabilidad, mantenimiento y retirada de sondas nasogástricas/nasoyeyunales, gastrostomías, sondas vesicales y drenajes quirúrgicos"
+            ] },
+            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Ostomías y cuidados de eliminación.", apuntesHTML: "", normativa: [
+                "Protocolos clínicos de marcaje preoperatorio del estoma, valoración del estoma y piel periestomal, selección de dispositivos y educación terapéutica en ostomías digestivas (colostomía, ileostomía) y urológicas (urostomía)",
+                "Abordaje de estreñimiento, incontinencia urinaria y fecal y técnicas de vaciado/irrigación"
+            ] },
+            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Oxigenoterapia, ventilación y cuidados respiratorios.", apuntesHTML: "", normativa: [
+                "Guías clínicas de oxigenoterapia continua y domiciliaria, terapia de alto flujo, ventilación mecánica no invasiva (VMNI) e invasiva (VMI), traqueostomía y aspiración de secreciones",
+                "Sistemas de administración de oxígeno (gafas nasales, mascarilla Venturi, reservorio), humidificación, FiO2 y prevención de neumonía asociada a ventilación mecánica"
+            ] },
+            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Cuidados al paciente con alteraciones sensoriales (visión y audición).", apuntesHTML: "", normativa: [
+                "Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social (accesibilidad universal y ajustes razonables)",
+                "Protocolos de comunicación adaptada, prevención de caídas y seguridad ambiental en pacientes con hipoacusia/sordera o baja visión/ceguera, glaucoma, cataratas, retinopatía y vértigo"
+            ] },
+            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Atención al paciente con enfermedades infecciosas y transmisibles.", apuntesHTML: "", normativa: [
+                "Real Decreto 2210/1995 y protocolos de vigilancia y alerta epidemiológica y control de enfermedades transmisibles del SNS y de Castilla y León",
+                "Medidas de aislamiento según mecanismo de transmisión, quimioprofilaxis y profilaxis posexposición, vacunación dirigida y manejo clínico-epidemiológico de infecciones"
+            ] },
+            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Dolor: valoración, escalas y manejo farmacológico y no farmacológico.", apuntesHTML: "", normativa: [
+                "Escalera analgésica de la OMS y guías de práctica clínica de valoración y manejo del dolor agudo, crónico, nociceptivo y neuropático",
+                "Escalas validadas de intensidad del dolor (EVA, Escala Numérica, Escala Verbal, escala de faces, PAINAD/ Abbey para deterioro cognitivo) y medidas farmacológicas y no farmacológicas"
+            ] },
+            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Pruebas diagnósticas, toma de muestras y preparación del paciente.", apuntesHTML: "", normativa: [
+                "Procedimientos normalizados de trabajo (PNT) de obtención, identificación inequívoca, conservación, transporte y cadena de custodia de muestras biológicas (sangre, orina, esputo, heces, exudados, cultivos)",
+                "Preparación física, farmacológica y de ayuno del paciente para pruebas de imagen, endoscopia, punción lumbar, biopsia o pruebas funcionales"
+            ] },
+            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Atención en consulta de enfermería y continuidad asistencial.", apuntesHTML: "", normativa: [
+                "Ley 16/2003, de 28 de mayo, de cohesión y calidad del SNS (continuidad asistencial y coordinación sociosanitaria) y normativa de organización de la consulta de enfermería en Sacyl",
+                "Informes de continuidad de cuidados al alta hospitalaria o derivación entre Atención Primaria y Atención Hospitalaria, agenda de consulta y seguimiento enfermero"
+            ] },
+            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Metodología de investigación en enfermería y práctica basada en la evidencia.", apuntesHTML: "", normativa: [
+                "Ley 14/2007, de 3 de julio, de Investigación biomédica y normativa sobre comités de ética de la investigación con medicamentos (CEIm) y consentimiento en investigación",
+                "Diseños epidemiológicos y de investigación (observacionales, ensayos clínicos, revisiones sistemáticas y metaanálisis), metodología PICO, niveles de evidencia y grados de recomendación (GRADE/SIGN) y lectura crítica"
+            ] },
+            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Exploración funcional, pruebas complementarias y registros clínicos.", apuntesHTML: "", normativa: [
+                "Ley 41/2002, de 14 de noviembre (arts. 14 a 19: requisitos, contenido, conservación y acceso a la historia clínica y registros sanitarios)",
+                "Técnicas de exploración física (inspección, palpación, percusión, auscultación), valoración de constantes vitales y parámetros funcionales e interpretación básica de pruebas complementarias (analítica, ECG, radiología)"
+            ] },
+            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Inmovilizaciones, vendajes y técnicas de soporte musculoesquelético.", apuntesHTML: "", normativa: [
+                "Protocolos de enfermería traumatológica y de urgencias sobre vendajes (circular, espiral, en espiga, en ocho, compresivo, funcional), férulas de yeso/fibra y cabestrillos",
+                "Vigilancia de perfusión, sensibilidad, movilidad y síndrome compartimental en miembros inmovilizados y prevención de lesiones cutáneas por presión bajo vendaje/yeso"
+            ] },
+            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Cirugía menor, suturas y curas en atención sanitaria.", apuntesHTML: "", normativa: [
+                "Protocolos de cirugía menor ambulatoria en Atención Primaria y urgencias, asepsia quirúrgica, anestesia local (lidocaína/mepivacaína, cálculo de dosis máxima y sin vasoconstrictor en zonas acras)",
+                "Técnicas de hemostasia, sutura cutánea (puntos simples, colchonero, sutura intradérmica, adhesivos tisulares), retirada de puntos según localización anatómica y profilaxis antitetánica"
+            ] },
+            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Teleenfermería, sistemas de información sanitaria y salud digital.", apuntesHTML: "", normativa: [
+                "Reglamento (UE) 2016/679 (RGPD), Ley Orgánica 3/2018 (LOPDGDD) y Real Decreto 311/2022 (Esquema Nacional de Seguridad) aplicados a la salud digital y sistemas de información sanitaria",
+                "Historia clínica electrónica, receta electrónica, sistemas de información de Sacyl (Medora, Jimena), teleconsulta, telemonitorización/teleenfermería y ciberseguridad en entornos sanitarios"
+            ] }
         };
 
         let examenesRealesCargados = [];
@@ -1276,7 +1462,7 @@
         function construirContenidoApunteImprimible(info) {
             const normas = obtenerNormativaTema(info);
             const normasHTML = normas.length > 0
-                ? `<div style="margin-top: 16px; border-top: 1px solid #cbd5e1; padding-top: 10px;"><h3 style="font-size: 11.5pt; margin: 0 0 6px;">Normativa Aplicable y Referencias Oficiales</h3><ul style="font-size: 10pt; margin: 0; padding-left: 18px;">${normas.map(n => `<li style="margin-bottom: 4px;">${n}</li>`).join('')}</ul></div>`
+                ? `<div style="margin-top: 16px; border-top: 1px solid #cbd5e1; padding-top: 10px;"><h3 style="font-size: 11.5pt; margin: 0 0 6px;">Normativa, Leyes y Técnicas Aplicables</h3><ul style="font-size: 10pt; margin: 0; padding-left: 18px;">${normas.map(n => `<li style="margin-bottom: 4px;">${n}</li>`).join('')}</ul></div>`
                 : '';
             const cuerpo = (info.apuntesHTML && String(info.apuntesHTML).trim().length > 0)
                 ? info.apuntesHTML
@@ -1295,11 +1481,30 @@
         }
 
         function imprimirApunteActual() {
-            const info = CATALOGO_TEMAS[temaApunteSeleccionadoId];
-            if (!info) return;
+            const pdfUrl = "apuntes/enfermeria-familiar-comunitaria-resumen.pdf";
             const printArea = document.getElementById('pdf-print-area');
-            printArea.innerHTML = construirContenidoApunteImprimible(info);
-            window.print();
+
+            printArea.innerHTML = `
+                <iframe id="pdf-resumen-efc-frame" src="${pdfUrl}" style="position: fixed; inset: 0; width: 100vw; height: 100vh; border: none; z-index: 99999; background: #fff;" title="Enfermería Familiar y Comunitaria - Resumen"></iframe>`;
+
+            const frame = document.getElementById('pdf-resumen-efc-frame');
+            const lanzarImpresion = () => {
+                try {
+                    frame.contentWindow.focus();
+                    frame.contentWindow.print();
+                } catch (_) {
+                    window.print();
+                }
+            };
+
+            if (frame) {
+                frame.addEventListener('load', () => {
+                    setTimeout(lanzarImpresion, 200);
+                }, { once: true });
+                setTimeout(lanzarImpresion, 600);
+            } else {
+                window.print();
+            }
         }
 
         async function imprimirResumenEnfermeriaFamiliarComunitaria() {
