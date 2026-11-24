@@ -1,6 +1,10 @@
 [
   {
+    "id": "gen_1",
+    "archivo": "apuntes/gen1.json"
+  },
+  {
     "id": "esp_3",
-    "archivo": "apuntes/esp_3.json"
+    "archivo": "apuntes/apuntes_esp_3.json"
   }
 ]
