@@ -7,8 +7,8 @@
   },
   {
     "id": "examen_2025",
-    "nombre": "SACYL (15-mar-2025)",
-    "archivo": "examen_2025_03_15.json",
+    "nombre": "SACYL (2025)",
+    "archivo": "examen_2025.json",
     "tipo": "real"
   },
   {
