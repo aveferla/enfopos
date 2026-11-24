@@ -1,0 +1,673 @@
+{
+  "version": 1,
+  "actualizado": "2026-11-24",
+  "temaId": "efyc_01",
+  "codigo": "EFYC-01",
+  "titulo": "Enfermería Familiar y Comunitaria",
+  "resumenGeneral": "Temario integral de Enfermería Familiar y Comunitaria estructurado en 4 bloques (26 puntos) con lectura interactiva, tarjetas de memorización y mapas mentales.",
+  "bloques": [
+    {
+      "id": "bloque_1",
+      "temaId": "efyc_01",
+      "numero": 1,
+      "titulo": "Atención Primaria y Familia",
+      "totalPuntos": 5,
+      "mapaMental": {
+        "titulo": "Mapa Mental — Bloque 1: Atención Primaria y Familia",
+        "imagen": "mapa_mental_bloque_1.png",
+        "nodosPrincipales": [
+          {
+            "rama": "1. APS",
+            "claves": [
+              "Alma-Ata (1978)",
+              "Astana (2018)",
+              "Ley 14/1986 General de Sanidad",
+              "RD 137/1984 Estructuras Básicas de Salud",
+              "Centro de Salud y ZBS"
+            ]
+          },
+          {
+            "rama": "2. Cartera de Servicios",
+            "claves": [
+              "Cribados poblacionales (cáncer mama, colorrectal, cérvix)",
+              "Detección precoz VIH/ITS",
+              "Atención al adulto y mayor",
+              "Continuidad asistencial"
+            ]
+          },
+          {
+            "rama": "3. Enfermería Familiar y Comunitaria",
+            "claves": [
+              "Orden SAS/1729/2010 programa formativo",
+              "Especialidad vía EIR (2 años)",
+              "Sociedades científicas (AEC, FAECAP)",
+              "Competencias asistenciales, docentes, gestoras e investigadoras"
+            ]
+          },
+          {
+            "rama": "4. Atención a la Familia",
+            "claves": [
+              "Ciclo vital familiar (Duvall)",
+              "Genograma y ecomapa",
+              "APGAR familiar (Smilkstein)",
+              "Escala de Gijón y Zarit"
+            ]
+          },
+          {
+            "rama": "5. Atención Domiciliaria",
+            "claves": [
+              "Visita domiciliaria (4 etapas: preparación, presentación/desarrollo, registro, planificación)",
+              "Atención domiciliaria programada vs. urgente",
+              "Coordinación con UHD y cuidados paliativos"
+            ]
+          }
+        ]
+      },
+      "puntos": [
+        {
+          "numero": 1,
+          "titulo": "Atención Primaria de Salud: fundamentos, normativas y organización",
+          "resumen": "La Atención Primaria de Salud (APS) constituye el eje vertebrador y puerta de entrada habitual al Sistema Nacional de Salud, articulada en Zonas Básicas de Salud (ZBS) y Equipos de Atención Primaria (EAP). Se asienta en los principios de accesibilidad, integralidad, longitudinalidad, coordinación y participación comunitaria, consolidados desde Alma-Ata (1978) y actualizados en Astaná (2018), con marco normativo clave en la Ley 14/1986 General de Sanidad y el RD 137/1984.",
+          "subdivisiones": [
+            "Declaraciones internacionales: Alma-Ata (1978) y Astaná (2018)",
+            "Marco legal español: Ley 14/1986 General de Sanidad y RD 137/1984",
+            "Estructura territorial: Zona Básica de Salud (ZBS), Centro de Salud y Equipo de Atención Primaria (EAP)",
+            "Atributos nucleares de la APS: accesibilidad, longitudinalidad, integralidad y coordinación"
+          ],
+          "tarjeta": {
+            "frente": "Punto 1 — APS: hitos internacionales, normas básicas y atributos clave",
+            "reverso": "Alma-Ata (1978) y Astaná (2018) consolidan la APS como base de la cobertura universal. En España, Ley 14/1986 y RD 137/1984 regulan ZBS y EAP. Atributos clave: accesibilidad, longitudinalidad (seguimiento a lo largo del tiempo), integralidad y coordinación."
+          }
+        },
+        {
+          "numero": 2,
+          "titulo": "Cartera de servicios en Atención Primaria y programas de cribado",
+          "resumen": "La cartera de servicios estandariza las prestaciones preventivas, diagnósticas, terapéuticas, rehabilitadoras y de promoción de la salud en el primer nivel asistencial. Incluye programas de cribado poblacional basados en la evidencia (cáncer de mama, colorrectal y cérvix), prevención de enfermedades transmisibles como el VIH y otras ITS, y seguimiento de grupos vulnerables.",
+          "subdivisiones": [
+            "Cartera común y autonómica en Atención Primaria",
+            "Cribados poblacionales: mama (mamografía), colorrectal (SOH) y cérvix (citología/VPH)",
+            "Prevención, diagnóstico precoz y consejo frente al VIH y otras ITS",
+            "Seguimiento preventivo de poblaciones específicas"
+          ],
+          "tarjeta": {
+            "frente": "Punto 2 — Cartera de servicios: cribados poblacionales y VIH/ITS",
+            "reverso": "Los cribados poblacionales exigen alta validez, eficacia probada y beneficio neto superior a los daños. En AP son nucleares los cribados de mama, colorrectal y cérvix, junto al consejo, prueba diagnóstica y prevención combinada de VIH e ITS."
+          }
+        },
+        {
+          "numero": 3,
+          "titulo": "La especialidad de Enfermería Familiar y Comunitaria: marco formativo y profesional",
+          "resumen": "La Enfermería Familiar y Comunitaria aporta cuidados especializados a la persona, la familia y la comunidad a lo largo de todo el ciclo vital. Su formación especializada se regula mediante la vía EIR (dos años) y el programa formativo aprobado por la Orden SAS/1729/2010, abarcando dimensiones asistencial, docente, gestora e investigadora, con respaldo de sociedades científicas como AEC y FAECAP.",
+          "subdivisiones": [
+            "Programa formativo oficial (Orden SAS/1729/2010) y formación EIR",
+            "Ámbitos competenciales: clínica/asistencial, gestión, docencia e investigación",
+            "Sociedades científicas de referencia: AEC y FAECAP",
+            "Liderazgo enfermero en cuidados comunitarios y continuidad asistencial"
+          ],
+          "tarjeta": {
+            "frente": "Punto 3 — EFyC: programa formativo, competencias y sociedades científicas",
+            "reverso": "La Orden SAS/1729/2010 regula el programa formativo de Enfermería Familiar y Comunitaria. Las competencias integran lo asistencial, gestor, docente e investigador, con AEC y FAECAP como referentes científicos y profesionales."
+          }
+        },
+        {
+          "numero": 4,
+          "titulo": "Atención a la familia: estructura, ciclo vital e instrumentos de valoración",
+          "resumen": "La familia es un sistema dinámico y unidad básica de intervención en salud comunitaria. La valoración familiar analiza su estructura, etapas del ciclo vital (Duvall), dinámica relacional y sobrecarga del cuidador mediante herramientas validadas como el genograma, el ecomapa, el test de APGAR familiar, la escala sociofamiliar de Gijón y el cuestionario de Zarit.",
+          "subdivisiones": [
+            "Tipologías y etapas del ciclo vital familiar (modelo de Duvall)",
+            "Instrumentos estructurales y relacionales: genograma y ecomapa",
+            "Valoración de la función familiar: APGAR familiar",
+            "Valoración sociofamiliar y del cuidador: escala de Gijón y escala de Zarit"
+          ],
+          "tarjeta": {
+            "frente": "Punto 4 — Familia: para qué sirve cada instrumento de valoración",
+            "reverso": "Genograma: estructura y relaciones intergeneracionales. Ecomapa: vínculos y apoyos externos. APGAR familiar: percepción de función familiar. Escala de Gijón: riesgo sociofamiliar en mayores. Escala de Zarit: sobrecarga del cuidador principal."
+          }
+        },
+        {
+          "numero": 5,
+          "titulo": "Atención domiciliaria: visita domiciliaria, pacientes inmovilizados y coordinación",
+          "resumen": "La atención domiciliaria lleva los cuidados enfermeros al entorno habitual del paciente cuando existen dificultades de desplazamiento, dependencia o complejidad clínica. La visita domiciliaria sigue cuatro fases estructuradas (preparación, presentación/desarrollo, registro y planificación) y exige coordinación fluida entre el EAP, las Unidades de Hospitalización a Domicilio (UHD) y los recursos sociosanitarios y paliativos.",
+          "subdivisiones": [
+            "Criterios de inclusión y tipología de atención domiciliaria",
+            "Fases de la visita domiciliaria: preparación, presentación y desarrollo, registro y planificación",
+            "Manejo de dependencia, inmovilidad y cuidados paliativos en el hogar",
+            "Coordinación con UHD y redes de apoyo sociosanitario"
+          ],
+          "tarjeta": {
+            "frente": "Punto 5 — Domicilio: etapas de la visita y coordinación con UHD",
+            "reverso": "La visita domiciliaria consta de 4 etapas: preparación, presentación y desarrollo, registro y planificación. La UHD aporta soporte hospitalario en domicilio para procesos complejos o agudos seleccionados, en coordinación con el EAP."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bloque_2",
+      "temaId": "efyc_01",
+      "numero": 2,
+      "titulo": "Promoción, Prevención y Educación para la Salud",
+      "totalPuntos": 6,
+      "mapaMental": {
+        "titulo": "Mapa Mental — Bloque 2: Promoción, Prevención y Educación para la Salud",
+        "imagen": "mapa_mental_bloque_2.png",
+        "nodosPrincipales": [
+          {
+            "rama": "6. Salud y Carta de Ottawa (1986)",
+            "claves": [
+              "Salud como recurso para la vida cotidiana",
+              "5 líneas de acción de Ottawa",
+              "Prerrequisitos de paz, vivienda, educación, renta y ecosistema"
+            ]
+          },
+          {
+            "rama": "7. Conferencias Mundiales de Promoción",
+            "claves": [
+              "Ottawa (1986), Adelaida (1988), Sundsvall (1991), Yakarta (1997)",
+              "México (2000), Bangkok (2005), Nairobi (2009), Helsinki (2013), Shanghái (2016)"
+            ]
+          },
+          {
+            "rama": "8. Estilos de Vida y EPSP",
+            "claves": [
+              "Actividad física y METs",
+              "Alcohol y Unidad de Bebida Estándar (UBE)",
+              "Tabaquismo y deshabituación",
+              "Alimentación saludable"
+            ]
+          },
+          {
+            "rama": "9. Agenda 2030 y ODS",
+            "claves": [
+              "ODS 3: Salud y bienestar",
+              "Determinantes sociales y equidad",
+              "Enfoque intersectorial y sostenibilidad"
+            ]
+          },
+          {
+            "rama": "10. Ciudades Saludables (RECS)",
+            "claves": [
+              "Entornos urbanos promotores de salud",
+              "Red Española de Ciudades Saludables (RECS)",
+              "Políticas locales y participación ciudadana"
+            ]
+          },
+          {
+            "rama": "11. Prevención y EpS",
+            "claves": [
+              "Niveles de prevención (primaria, secundaria, terciaria, cuaternaria)",
+              "Modelo transteórico de Prochaska y DiClemente",
+              "Modelo PRECEDE-PROCEED de planificación"
+            ]
+          }
+        ]
+      },
+      "puntos": [
+        {
+          "numero": 6,
+          "titulo": "Concepto de salud y Carta de Ottawa para la Promoción de la Salud (1986)",
+          "resumen": "La promoción de la salud capacita a las personas para aumentar el control sobre su salud y mejorarla, entendiendo la salud como un recurso de la vida cotidiana y no solo como ausencia de enfermedad. La Carta de Ottawa (1986) establece cinco líneas de acción fundamentales y subraya prerrequisitos básicos como la paz, la educación, la vivienda, la alimentación, la renta y un ecosistema estable.",
+          "subdivisiones": [
+            "Evolución conceptual de la salud y promoción de la salud",
+            "Prerrequisitos para la salud según la Carta de Ottawa",
+            "Las cinco líneas de acción de Ottawa (1986)",
+            "Capacitación (empowerment) individual y colectiva"
+          ],
+          "tarjeta": {
+            "frente": "Punto 6 — Carta de Ottawa (1986): las 5 líneas de acción",
+            "reverso": "1) Elaborar política pública saludable; 2) Crear entornos favorables; 3) Reforzar la acción comunitaria; 4) Desarrollar aptitudes personales; 5) Reorientar los servicios sanitarios."
+          }
+        },
+        {
+          "numero": 7,
+          "titulo": "Conferencias internacionales de Promoción de la Salud",
+          "resumen": "Desde la Carta de Ottawa (1986), las conferencias mundiales de promoción de la salud han ampliado el enfoque hacia los entornos favorables (Sundsvall, 1991), la participación del sector privado y la responsabilidad social en salud (Yakarta, 1997; Bangkok, 2005), la brecha de implementación y sistemas de salud (Nairobi, 2009), Salud en Todas las Políticas (Helsinki, 2013) y la alfabetización sanitaria y gobernanza local (Shanghái, 2016).",
+          "subdivisiones": [
+            "Ottawa (1986) y Adelaida (1988: políticas públicas saludables)",
+            "Sundsvall (1991: entornos favorables) y Yakarta (1997: sector privado y determinantes)",
+            "México (2000), Bangkok (2005: determinantes en mundo globalizado) y Nairobi (2009)",
+            "Helsinki (2013: Salud en Todas las Políticas) y Shanghái (2016: alfabetización sanitaria)"
+          ],
+          "tarjeta": {
+            "frente": "Punto 7 — Hitos clave de las conferencias de Promoción de la Salud",
+            "reverso": "Sundsvall (1991): entornos favorables. Yakarta (1997): primera celebrada en país en desarrollo y apertura a alianzas/sector privado. Helsinki (2013): Salud en Todas las Políticas. Shanghái (2016): alfabetización sanitaria, ciudades saludables y gobernanza."
+          }
+        },
+        {
+          "numero": 8,
+          "titulo": "Estilos de vida y prevención en Atención Primaria (EPSP): actividad física, alcohol y tabaco",
+          "resumen": "Las actividades de prevención y promoción en Atención Primaria abordan los principales factores conductuales modificables. Incluye la cuantificación de la actividad física mediante METs (equivalentes metabólicos), la estimación del consumo de alcohol a través de la Unidad de Bebida Estándar (UBE) y la prevención/abordaje del tabaquismo y la alimentación equilibrada.",
+          "subdivisiones": [
+            "Actividad física: clasificación por intensidad y equivalentes metabólicos (METs)",
+            "Consumo de alcohol: Unidad de Bebida Estándar (UBE) y patrones de riesgo",
+            "Tabaquismo: impacto en salud y estrategias preventivas en consulta",
+            "Alimentación saludable y consejo breve multicomponente"
+          ],
+          "tarjeta": {
+            "frente": "Punto 8 — EPSP: METs, UBE y abordaje de estilos de vida",
+            "reverso": "Los METs miden el gasto energético relativo de la actividad física respecto al reposo. La UBE estandariza la cantidad de alcohol puro ingerido para identificar consumo de riesgo o perjudicial en consulta."
+          }
+        },
+        {
+          "numero": 9,
+          "titulo": "Agenda 2030 y Objetivos de Desarrollo Sostenible (ODS) en salud",
+          "resumen": "La Agenda 2030 vincula el desarrollo humano y ambiental con la salud poblacional. El ODS 3 ('Garantizar una vida sana y promover el bienestar para todos en todas las edades') interactúa estrechamente con otros ODS relacionados con la pobreza, la educación, la igualdad de género, el agua limpia y las ciudades sostenibles, exigiendo acción intersectorial y equidad.",
+          "subdivisiones": [
+            "ODS 3 (Salud y bienestar) y metas principales en salud pública",
+            "Interdependencia del ODS 3 con los determinantes sociales y ambientales",
+            "Equidad en salud y principio de 'no dejar a nadie atrás'",
+            "Rol de la salud comunitaria en el cumplimiento local de la Agenda 2030"
+          ],
+          "tarjeta": {
+            "frente": "Punto 9 — Agenda 2030 y ODS 3 en salud pública",
+            "reverso": "El ODS 3 busca garantizar vida sana y bienestar en todas las edades, pero depende de factores externos al sistema sanitario (educación, agua, reducción de desigualdades, entorno urbano), por lo que requiere enfoque intersectorial."
+          }
+        },
+        {
+          "numero": 10,
+          "titulo": "Ciudades saludables y políticas locales de salud (RECS)",
+          "resumen": "El entorno urbano condiciona de forma decisiva la salud mediante la movilidad, los espacios verdes, la vivienda, el ruido y la cohesión social. La Red Española de Ciudades Saludables (RECS) impulsa políticas municipales orientadas a la salud, la equidad y la participación ciudadana en el ámbito local.",
+          "subdivisiones": [
+            "Entorno urbano como determinante de salud y equidad",
+            "Red Española de Ciudades Saludables (RECS) y gobernanza local",
+            "Planes locales de salud y participación comunitaria",
+            "Movilidad activa, espacios verdes y entornos seguros"
+          ],
+          "tarjeta": {
+            "frente": "Punto 10 — Ciudades saludables y RECS",
+            "reverso": "Las políticas municipales influyen directamente en los determinantes cotidianos de la salud. Redes como la RECS promueven entornos urbanos saludables, equitativos y participativos a través de estrategias locales."
+          }
+        },
+        {
+          "numero": 11,
+          "titulo": "Niveles de prevención, Educación para la Salud y modelos de cambio y planificación",
+          "resumen": "La prevención se organiza en niveles (primaria, secundaria, terciaria y cuaternaria según el momento de intervención y el riesgo de medicalización). La Educación para la Salud (EpS) facilita aprendizajes y cambios conductuales, apoyándose en el modelo transteórico de Prochaska y DiClemente (etapas del cambio) y en modelos de planificación como PRECEDE-PROCEED.",
+          "subdivisiones": [
+            "Prevención primaria, secundaria, terciaria y cuaternaria",
+            "Educación para la Salud (EpS) individual y grupal",
+            "Modelo transteórico de Prochaska y DiClemente (precontemplación, contemplación, preparación, acción, mantenimiento, recaída)",
+            "Modelo PRECEDE-PROCEED de diagnóstico y planificación educativa/comunitaria"
+          ],
+          "tarjeta": {
+            "frente": "Punto 11 — Prevención cuaternaria, Prochaska y PRECEDE-PROCEED",
+            "reverso": "La prevención cuaternaria protege al paciente frente al sobretratamiento o medicalización excesiva. Prochaska describe las etapas del cambio conductual para adaptar la intervención; PRECEDE-PROCEED estructura el diagnóstico y la evaluación."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bloque_3",
+      "temaId": "efyc_01",
+      "numero": 3,
+      "titulo": "Atención Comunitaria",
+      "totalPuntos": 6,
+      "mapaMental": {
+        "titulo": "Mapa Mental — Bloque 3: Atención Comunitaria",
+        "imagen": "mapa_mental_bloque_3.png",
+        "nodosPrincipales": [
+          {
+            "rama": "12. Comunidad y Vínculos",
+            "claves": [
+              "Territorio, intereses compartidos y vínculos",
+              "Redes sociales y apoyo comunitario",
+              "Participación ciudadana"
+            ]
+          },
+          {
+            "rama": "13. Determinantes y Equidad",
+            "claves": [
+              "Determinantes sociales de la salud",
+              "Desigualdades evitables vs. diferencias",
+              "Gradiente social y equidad en salud"
+            ]
+          },
+          {
+            "rama": "14. Empoderamiento Comunitario",
+            "claves": [
+              "Control y capacidad de decisión de la comunidad",
+              "Procesos participativos y coproducción",
+              "Reducción de barreras sociales"
+            ]
+          },
+          {
+            "rama": "15. Mapa de Activos",
+            "claves": [
+              "Activos para la salud (recursos que generan bienestar)",
+              "Mapeo participativo comunitario",
+              "Estrategia Localiza Salud"
+            ]
+          },
+          {
+            "rama": "16. Medio Ambiente y Residuos",
+            "claves": [
+              "Factores ambientales y salud pública",
+              "Gestión y clasificación de residuos sanitarios",
+              "Sostenibilidad ambiental"
+            ]
+          },
+          {
+            "rama": "17. Orientación Comunitaria en AP",
+            "claves": [
+              "Integración clínica + salud pública + participación",
+              "Niveles de intervención comunitaria (1 al 3)",
+              "Diagnóstico de salud y acción comunitaria"
+            ]
+          }
+        ]
+      },
+      "puntos": [
+        {
+          "numero": 12,
+          "titulo": "Concepto de comunidad, redes sociales y participación comunitaria",
+          "resumen": "Una comunidad agrupa a personas que comparten un espacio, vínculos sociales, valores o intereses comunes e interactúan en su vida cotidiana. La atención comunitaria se apoya en las redes de apoyo formales e informales y en la participación ciudadana activa para identificar necesidades y construir respuestas compartidas.",
+          "subdivisiones": [
+            "Definición y elementos constitutivos de la comunidad",
+            "Redes sociales, capital social y apoyo comunitario",
+            "Niveles y mecanismos de participación comunitaria",
+            "Relación entre equipo de salud y tejido asociativo local"
+          ],
+          "tarjeta": {
+            "frente": "Punto 12 — Comunidad, redes de apoyo y participación",
+            "reverso": "La participación comunitaria implica pasar de ser receptor pasivo a agente activo en la toma de decisiones sobre la salud colectiva, apoyándose en redes sociales formales e informales del entorno."
+          }
+        },
+        {
+          "numero": 13,
+          "titulo": "Determinantes sociales de la salud y equidad",
+          "resumen": "Los determinantes sociales de la salud son las circunstancias en que las personas nacen, crecen, viven, trabajan y envejecen, configuradas por factores estructurales y condiciones de vida cotidianas. Mientras las diferencias en salud pueden ser biológicas o fortuitas, las desigualdades en salud son evitables, injustas y sistemáticas, lo que hace de la equidad un objetivo central.",
+          "subdivisiones": [
+            "Determinantes estructurales e intermedios de la salud",
+            "Diferencia entre desigualdad e inequidad en salud",
+            "Gradiente social en salud y vulnerabilidad",
+            "Intervenciones sobre determinantes desde la salud pública y AP"
+          ],
+          "tarjeta": {
+            "frente": "Punto 13 — Determinantes sociales y desigualdad vs. inequidad",
+            "reverso": "Las desigualdades en salud se convierten en inequidades cuando son sistemáticas, evitables e injustas por causas sociales o económicas. Actuar sobre los determinantes sociales es clave para reducir el gradiente de salud."
+          }
+        },
+        {
+          "numero": 14,
+          "titulo": "Empoderamiento comunitario y capacitación en salud",
+          "resumen": "El empoderamiento comunitario es el proceso mediante el cual los grupos y comunidades adquieren mayor control sobre las decisiones y acciones que afectan a su salud. Requiere fortalecer capacidades individuales y colectivas, fomentar el liderazgo local y generar espacios de diálogo horizontales entre profesionales y ciudadanía.",
+          "subdivisiones": [
+            "Dimensiones individual, organizativa y comunitaria del empoderamiento",
+            "Alfabetización y capacitación para la toma de decisiones",
+            "Barreras y facilitadores de la participación efectiva",
+            "Rol facilitador de la enfermera comunitaria"
+          ],
+          "tarjeta": {
+            "frente": "Punto 14 — Empoderamiento comunitario: esencia y rol enfermero",
+            "reverso": "El empoderamiento busca aumentar el control real de la comunidad sobre su salud y sus determinantes. La enfermera actúa como facilitadora, acompañando procesos participativos sin sustituir el protagonismo comunitario."
+          }
+        },
+        {
+          "numero": 15,
+          "titulo": "Mapeo de activos para la salud y estrategia Localiza Salud",
+          "resumen": "Un activo para la salud es cualquier factor o recurso capaz de potenciar la capacidad de las personas, familias y comunidades para mantener y promover la salud y el bienestar (asociaciones, parques, bibliotecas, centros cívicos, redes vecinales). El mapeo participativo permite identificarlos y conectarlos con la consulta clínica, en línea con estrategias estatales como Localiza Salud.",
+          "subdivisiones": [
+            "Concepto de activo para la salud frente al enfoque centrado solo en déficits",
+            "Metodología participativa para elaborar un mapa de activos",
+            "Prescripción social y conexión de activos con la consulta de AP",
+            "Estrategia Localiza Salud y promoción de la salud local"
+          ],
+          "tarjeta": {
+            "frente": "Punto 15 — Activos para la salud y mapeo comunitario",
+            "reverso": "Un activo en salud es un recurso o fortaleza comunitaria (espacio, grupo, servicio o red) que favorece el bienestar. Mapearlos de forma participativa permite vincular la consulta clínica con los recursos reales del barrio."
+          }
+        },
+        {
+          "numero": 16,
+          "titulo": "Medio ambiente, salud ambiental y gestión de residuos",
+          "resumen": "El medio ambiente físico, químico y biológico influye directamente sobre la salud humana mediante la calidad del aire y el agua, el cambio climático, la contaminación y el manejo de residuos. En el ámbito sanitario y comunitario, la correcta segregación, almacenamiento y eliminación de residuos protege a profesionales, pacientes y población general.",
+          "subdivisiones": [
+            "Riesgos ambientales y salud pública (aire, agua, entorno urbano y clima)",
+            "Clasificación y segregación de residuos sanitarios",
+            "Medidas de bioseguridad y prevención de exposiciones",
+            "Sostenibilidad ambiental en los servicios de salud"
+          ],
+          "tarjeta": {
+            "frente": "Punto 16 — Salud ambiental y gestión de residuos",
+            "reverso": "La gestión adecuada de residuos (segregación en origen, envases homologados y circuitos diferenciados según tipología) es esencial para prevenir riesgos biológicos, químicos y ambientales."
+          }
+        },
+        {
+          "numero": 17,
+          "titulo": "Orientación comunitaria en Atención Primaria y niveles de intervención",
+          "resumen": "La orientación comunitaria integra la práctica clínica individual y familiar con la salud pública y la acción comunitaria en la Zona Básica de Salud. Se estructura en niveles progresivos de intervención comunitaria (desde el enfoque comunitario de la consulta y el trabajo grupal hasta la acción comunitaria participativa y el diagnóstico de salud compartido).",
+          "subdivisiones": [
+            "Integración de clínica individual, salud pública y acción comunitaria",
+            "Niveles de intervención comunitaria en Atención Primaria",
+            "Fases del diagnóstico y la programación comunitaria",
+            "Evaluación de procesos y resultados comunitarios"
+          ],
+          "tarjeta": {
+            "frente": "Punto 17 — Orientación comunitaria en AP y niveles de intervención",
+            "reverso": "La orientación comunitaria incorpora la mirada poblacional y los determinantes sociales al trabajo del EAP, desplegándose de forma progresiva desde la consulta y los grupos hasta la acción comunitaria y el diagnóstico compartido."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bloque_4",
+      "temaId": "efyc_01",
+      "numero": 4,
+      "titulo": "Atención a Personas con Enfermedades Crónicas",
+      "totalPuntos": 9,
+      "mapaMental": {
+        "titulo": "Mapa Mental — Bloque 4: Atención a Personas con Enfermedades Crónicas",
+        "imagen": "mapa_mental_bloque_4.png",
+        "nodosPrincipales": [
+          {
+            "rama": "18. Modelos de Cronicidad",
+            "claves": [
+              "Chronic Care Model (CCM)",
+              "Pirámide de Kaiser Permanente",
+              "Estratificación del riesgo y autocuidado"
+            ]
+          },
+          {
+            "rama": "19. Consulta Enfermera de Cronicidad",
+            "claves": [
+              "Seguimiento estructurado y plan de cuidados",
+              "Adherencia terapéutica y automanejo",
+              "Coordinación interniveles"
+            ]
+          },
+          {
+            "rama": "20. Riesgo Cardiovascular y HTA",
+            "claves": [
+              "Estratificación del RCV (SCORE2 / SCORE2-OP)",
+              "Cribado, medida y control de HTA",
+              "Prevención primaria y secundaria"
+            ]
+          },
+          {
+            "rama": "21. Diabetes Mellitus",
+            "claves": [
+              "Criterios diagnósticos y objetivos glucémicos individualizados",
+              "Educación terapéutica y autocontrol",
+              "Prevención de complicaciones agudas y crónicas"
+            ]
+          },
+          {
+            "rama": "22. Dislipemias",
+            "claves": [
+              "Perfil lipídico y objetivos de c-LDL según riesgo",
+              "Abordaje higiénico-dietético y farmacológico",
+              "Adherencia a largo plazo"
+            ]
+          },
+          {
+            "rama": "23. Fragilidad y Envejecimiento Activo",
+            "claves": [
+              "Detección precoz en mayores (≥70 años / criterios de fragilidad)",
+              "Valoración funcional y física (SPPB, marcha)",
+              "Programas multicomponente (VIVIFRAIL) y prevención de caídas"
+            ]
+          },
+          {
+            "rama": "24. EPOC",
+            "claves": [
+              "Diagnóstico espirométrico (FEV1/FVC < 0,70 posbroncodilatador)",
+              "Evaluación de síntomas y disnea (mMRC) y exacerbaciones",
+              "Técnica inhalatoria y rehabilitación respiratoria"
+            ]
+          },
+          {
+            "rama": "25. Tabaquismo y Deshabituación",
+            "claves": [
+              "Evaluación de dependencia (Fagerström) y motivación",
+              "Intervención breve y estrategias motivacionales",
+              "Apoyo conductual y tratamiento farmacológico"
+            ]
+          },
+          {
+            "rama": "26. Pluripatología y Paciente Crónico Complejo",
+            "claves": [
+              "Identificación de cronicidad compleja / pluripatología",
+              "Plan de acción personalizado y conciliación terapéutica",
+              "Continuidad asistencial y prevención de descompensaciones"
+            ]
+          }
+        ]
+      },
+      "puntos": [
+        {
+          "numero": 18,
+          "titulo": "Modelos de atención a la cronicidad: Chronic Care Model y Pirámide de Kaiser",
+          "resumen": "El aumento de la cronicidad y el envejecimiento exige reorientar los sistemas sanitarios hacia modelos proactivos y estratificados. El Chronic Care Model (CCM) integra comunidad, sistema de salud y elementos clínicos (autocuidado, diseño asistencial, soporte a decisiones y sistemas de información), mientras que la Pirámide de Kaiser estratifica a la población según complejidad y necesidades para asignar recursos proporcionales.",
+          "subdivisiones": [
+            "Chronic Care Model (CCM) y sus componentes nucleares",
+            "Pirámide de Kaiser Permanente: gestión de casos, gestión de enfermedad y autocuidado",
+            "Estratificación poblacional y continuidad asistencial",
+            "Rol clave de la enfermería en el seguimiento crónico"
+          ],
+          "tarjeta": {
+            "frente": "Punto 18 — CCM y Pirámide de Kaiser: diferencia clave",
+            "reverso": "El Chronic Care Model (CCM) define los elementos organizativos y clínicos para una atención proactiva al paciente crónico; la Pirámide de Kaiser estratifica niveles de complejidad (base de autocuidado, tramo intermedio de manejo de enfermedad y vértice de gestión de casos)."
+          }
+        },
+        {
+          "numero": 19,
+          "titulo": "La consulta enfermera en el seguimiento de personas con enfermedades crónicas",
+          "resumen": "La consulta enfermera de cronicidad ofrece un seguimiento programado, longitudinal y centrado en la persona. Incluye valoración integral, educación terapéutica para el automanejo, revisión de adherencia, detección precoz de descompensaciones y elaboración de planes de cuidados compartidos.",
+          "subdivisiones": [
+            "Estructura de la consulta programada y seguimiento longitudinal",
+            "Educación terapéutica y capacitación para el autocuidado",
+            "Evaluación y mejora de la adherencia terapéutica",
+            "Coordinación con medicina de familia, enfermería gestora de casos y hospital"
+          ],
+          "tarjeta": {
+            "frente": "Punto 19 — Consulta enfermera de cronicidad: ejes de actuación",
+            "reverso": "Combina valoración clínica y funcional periódica, educación terapéutica orientada al automanejo, apoyo a la adherencia y detección temprana de signos de alarma para evitar ingresos evitables."
+          }
+        },
+        {
+          "numero": 20,
+          "titulo": "Riesgo cardiovascular e Hipertensión Arterial (HTA)",
+          "resumen": "La estimación del riesgo cardiovascular (RCV) permite adecuar la intensidad preventiva según el riesgo global del paciente. La Hipertensión Arterial (HTA) requiere técnica de medida estandarizada, confirmación diagnóstica, estratificación de riesgo y lesión de órgano diana, modificación de estilos de vida, terapia farmacológica y seguimiento de adherencia y control tensional.",
+          "subdivisiones": [
+            "Estimación del riesgo cardiovascular global y categorías de riesgo",
+            "Técnica correcta de medida de la presión arterial y confirmación diagnóstica",
+            "Modificaciones del estilo de vida (DASH/mediterránea, sodio, ejercicio, peso)",
+            "Seguimiento, adherencia y control de cifras tensionales"
+          ],
+          "tarjeta": {
+            "frente": "Punto 20 — RCV e HTA: pilares de manejo en AP",
+            "reverso": "El manejo de la HTA se basa en la medición fiable, la valoración del RCV global y lesión de órgano diana, los cambios de estilo de vida y el tratamiento antihipertensivo ajustado con revisión periódica de adherencia y control."
+          }
+        },
+        {
+          "numero": 21,
+          "titulo": "Diabetes Mellitus: diagnóstico, control metabólico, educación y complicaciones",
+          "resumen": "El abordaje integral de la Diabetes Mellitus requiere diagnóstico correcto, individualización de objetivos glucémicos y de factores de RCV asociados, educación terapéutica estructurada (alimentación, actividad física, autocontrol glucémico y manejo de hipoglucemias) y cribado/prevención de complicaciones agudas y crónicas (retinopatía, nefropatía, pie diabético).",
+          "subdivisiones": [
+            "Criterios diagnósticos y seguimiento metabólico (HbA1c, glucemia basal/postprandial)",
+            "Individualización de objetivos terapéuticos según edad, fragilidad y comorbilidad",
+            "Educación diabetológica, autocontrol y prevención/manejo de hipoglucemias",
+            "Prevención y detección precoz de complicaciones micro y macrovasculares y pie diabético"
+          ],
+          "tarjeta": {
+            "frente": "Punto 21 — Diabetes Mellitus: claves de control y prevención",
+            "reverso": "Los objetivos glucémicos se individualizan según perfil clínico y riesgo de hipoglucemia. La educación terapéutica estructurada, el control de RCV asociado y la revisión periódica de pies, retina y función renal son esenciales."
+          }
+        },
+        {
+          "numero": 22,
+          "titulo": "Dislipemias: valoración lipídica, objetivos terapéuticos y adherencia",
+          "resumen": "El manejo de las dislipemias se supedita al riesgo cardiovascular global del paciente más que a un valor aislado del perfil lipídico. Combina intervención nutricional y de actividad física con tratamiento hipolipemiante cuando está indicado, vigilando tolerancia, efectos adversos y adherencia a largo plazo.",
+          "subdivisiones": [
+            "Interpretación del perfil lipídico y vinculación con el RCV global",
+            "Intervención dietética y estilo de vida",
+            "Tratamiento farmacológico y seguimiento analítico/clínico",
+            "Adherencia terapéutica y prevención cardiovascular"
+          ],
+          "tarjeta": {
+            "frente": "Punto 22 — Dislipemias: criterio principal para decidir el manejo",
+            "reverso": "La intensidad del abordaje de las dislipemias se determina principalmente por el riesgo cardiovascular global del paciente y su historial clínico, integrando estilos de vida y farmacoterapia según indicación."
+          }
+        },
+        {
+          "numero": 23,
+          "titulo": "Fragilidad en el adulto mayor, envejecimiento activo y prevención de caídas",
+          "resumen": "La fragilidad es un estado de mayor vulnerabilidad frente a estresores internos o externos que aumenta el riesgo de caídas, discapacidad, hospitalización y mortalidad. Su detección precoz en personas mayores y el abordaje mediante ejercicio físico multicomponente (fuerza, equilibrio, marcha y resistencia, como en programas tipo VIVIFRAIL), revisión de fármacos y adecuación del entorno son claves para mantener la funcionalidad.",
+          "subdivisiones": [
+            "Concepto de fragilidad, sarcopenia y envejecimiento activo/saludable",
+            "Detección precoz y valoración funcional/física (velocidad de marcha, SPPB, equilibrio)",
+            "Ejercicio físico multicomponente y programas estructurados (p. ej., VIVIFRAIL)",
+            "Prevención de caídas, polifarmacia y seguridad en el domicilio"
+          ],
+          "tarjeta": {
+            "frente": "Punto 23 — Fragilidad y caídas: intervención más eficaz",
+            "reverso": "El ejercicio físico multicomponente (que combina fuerza, equilibrio, marcha y resistencia) adaptado a la capacidad funcional es la intervención con mayor evidencia para revertir o frenar la fragilidad y prevenir caídas."
+          }
+        },
+        {
+          "numero": 24,
+          "titulo": "Enfermedad Pulmonar Obstructiva Crónica (EPOC): diagnóstico, seguimiento y manejo",
+          "resumen": "El diagnóstico de EPOC requiere demostración de obstrucción al flujo aéreo persistente mediante espirometría forzada (cociente FEV1/FVC < 0,70 posbroncodilatador) en un contexto clínico compatible con exposición a tóxicos/humos. El seguimiento valora síntomas y disnea (p. ej., mMRC), historial de exacerbaciones, técnica inhalatoria, deshabituación tabáquica, vacunación y rehabilitación respiratoria.",
+          "subdivisiones": [
+            "Diagnóstico espirométrico (FEV1/FVC posbroncodilatador < 0,70) y gravedad funcional",
+            "Evaluación de síntomas, disnea (mMRC) y frecuencia de exacerbaciones",
+            "Adiestramiento y comprobación periódica de la técnica inhalatoria",
+            "Abordaje no farmacológico: cese tabáquico, rehabilitación respiratoria y vacunas"
+          ],
+          "tarjeta": {
+            "frente": "Punto 24 — EPOC: criterio espirométrico y seguimiento integral",
+            "reverso": "La obstrucción se confirma con FEV1/FVC < 0,70 tras broncodilatador. En el seguimiento es indispensable evaluar disnea y exacerbaciones, revisar la técnica inhalatoria y priorizar el abandono del tabaco y la rehabilitación."
+          }
+        },
+        {
+          "numero": 25,
+          "titulo": "Tabaquismo: dependencia, motivación, intervención breve y deshabituación",
+          "resumen": "El tabaquismo es una enfermedad crónica adictiva y la principal causa prevenible de morbilidad y mortalidad. Su abordaje en Atención Primaria incluye el registro sistemático del consumo, la valoración de la dependencia física (test de Fagerström) y la motivación/etapa del cambio, aplicando intervención breve, consejo sanitario, apoyo conductual y, si procede, tratamiento farmacológico.",
+          "subdivisiones": [
+            "Identificación sistemática del fumador y cuantificación del consumo (paquetes-año)",
+            "Valoración de la dependencia (Fagerström) y fase motivacional",
+            "Intervención breve y abordaje conductual estructurado",
+            "Apoyo farmacológico y seguimiento de recaídas"
+          ],
+          "tarjeta": {
+            "frente": "Punto 25 — Tabaquismo: dependencia, motivación y abordaje",
+            "reverso": "Se evalúa el patrón de consumo, la dependencia nicotínica (p. ej., test de Fagerström) y la disposición al cambio. Combinar intervención sanitaria, apoyo conductual y fármacos indicados incrementa las tasas de abstinencia."
+          }
+        },
+        {
+          "numero": 26,
+          "titulo": "Paciente crónico complejo y pluripatológico: continuidad asistencial y plan de acción",
+          "resumen": "Los pacientes con pluripatología o cronicidad compleja presentan múltiples enfermedades crónicas, alta demanda asistencial, polifarmacia y riesgo de descompensaciones o fragilidad. Su atención requiere identificación proactiva, conciliación terapéutica, plan de acción individualizado, enfermería de enlace/gestión de casos y coordinación estrecha entre Atención Primaria, hospital y servicios sociales.",
+          "subdivisiones": [
+            "Criterios de complejidad crónica y pluripatología",
+            "Conciliación de la medicación y prevención de yatrogenia/polifarmacia",
+            "Plan de acción compartido y signos de alarma ante descompensaciones",
+            "Continuidad asistencial y coordinación sociosanitaria"
+          ],
+          "tarjeta": {
+            "frente": "Punto 26 — Paciente crónico complejo / pluripatológico: claves",
+            "reverso": "Requiere detección proactiva, revisión y conciliación periódica de fármacos, un plan de acción claro con signos de descompensación y coordinación estrecha entre AP, hospital, urgencias y ámbito social."
+          }
+        }
+      ]
+    }
+  ]
+}
