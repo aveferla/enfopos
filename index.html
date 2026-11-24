@@ -656,24 +656,60 @@
             }
             copia.enunciado = String(copia.enunciado || "").trim();
 
+            const mapaLetras = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+            let clavesOrdenadas = null;
+
             if (!Array.isArray(copia.opciones)) {
-                const altOps = copia.respuestas ?? copia.alternativas;
-                if (Array.isArray(altOps)) {
-                    copia.opciones = altOps;
-                } else if (altOps && typeof altOps === "object") {
-                    copia.opciones = Object.values(altOps);
+                if (copia.opciones && typeof copia.opciones === "object") {
+                    clavesOrdenadas = Object.keys(copia.opciones);
+                    copia.opciones = clavesOrdenadas.map(k => copia.opciones[k]);
                 } else {
-                    copia.opciones = [];
+                    const altOps = copia.respuestas ?? copia.alternativas;
+                    if (Array.isArray(altOps)) {
+                        copia.opciones = altOps;
+                    } else if (altOps && typeof altOps === "object") {
+                        clavesOrdenadas = Object.keys(altOps);
+                        copia.opciones = clavesOrdenadas.map(k => altOps[k]);
+                    } else {
+                        copia.opciones = [];
+                    }
                 }
             }
-            copia.opciones = copia.opciones.map(op => String(op ?? "").trim()).filter(op => op.length > 0);
+
+            if (Array.isArray(clavesOrdenadas) && clavesOrdenadas.length === copia.opciones.length) {
+                const filtradas = [];
+                clavesOrdenadas.forEach((claveOp, iOp) => {
+                    const textoLimpio = String(copia.opciones[iOp] ?? "").trim();
+                    if (textoLimpio.length > 0) {
+                        filtradas.push({ clave: String(claveOp).trim().toLowerCase(), texto: textoLimpio });
+                    }
+                });
+                copia.opciones = filtradas.map(item => item.texto);
+                if (typeof copia.correctaOriginal === "string" && copia.correctaOriginal.trim() !== "") {
+                    const cOrigNorm = copia.correctaOriginal.trim().toLowerCase();
+                    const idxPorClave = filtradas.findIndex(item => item.clave === cOrigNorm);
+                    if (idxPorClave >= 0) {
+                        copia.correctaOriginal = idxPorClave;
+                    }
+                }
+                if (typeof copia.correcta === "string" && copia.correcta.trim() !== "" && typeof copia.letraCorrecta !== "string") {
+                    const cNormLet = copia.correcta.trim().toLowerCase();
+                    if (cNormLet in mapaLetras) {
+                        const idxPorClaveLet = filtradas.findIndex(item => item.clave === cNormLet);
+                        if (idxPorClaveLet >= 0) {
+                            copia.correctaOriginal = idxPorClaveLet;
+                        }
+                    }
+                }
+            } else {
+                copia.opciones = copia.opciones.map(op => String(op ?? "").trim()).filter(op => op.length > 0);
+            }
 
             if (copia.numero !== undefined && copia.numero !== null && String(copia.numero).trim() !== "") {
                 const numParsed = parseInt(copia.numero, 10);
                 copia.numero = Number.isNaN(numParsed) ? copia.numero : numParsed;
             }
 
-            const mapaLetras = { a: 0, b: 1, c: 2, d: 3, e: 4 };
             const totalOps = Array.isArray(copia.opciones) ? copia.opciones.length : 0;
 
             if (typeof copia.letraCorrecta === "string" && copia.letraCorrecta.trim() !== "") {
@@ -819,9 +855,16 @@
                     const res = await fetch(`${ruta}?v=${Date.now()}`, { cache: 'no-store' });
                     if (!res.ok) continue;
                     const data = await res.json();
+                    const temaRaiz = (data && typeof data === "object" && !Array.isArray(data))
+                        ? (data.temaId || data.tema || data.id || null)
+                        : null;
                     const listaItems = extraerArrayPreguntas(data);
                     listaItems.forEach((q, idx) => {
-                        const norm = normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }, { origen: (q && q.origen) || "Banco por temas" });
+                        const temaAsignado = (q && (q.temaId || q.tema)) || temaRaiz || undefined;
+                        const norm = normalizarPregunta(
+                            { numero: q?.numero ?? (idx + 1), ...q, ...(temaAsignado ? { temaId: temaAsignado } : {}) },
+                            { origen: (q && q.origen) || "Banco por temas" }
+                        );
                         if (norm.enunciado && norm.opciones.length > 0) {
                             preguntasTemasCargadas.push(norm);
                         }
@@ -1750,10 +1793,13 @@
                     seleccion.push(arrT[0]);
                 });
 
+                const vistasTodos = new Set(seleccion.map(existing => normalizarTextoClave(existing.enunciado)));
                 const restantes = barajarArray([...fuenteMezcla]);
                 for (const item of restantes) {
                     if (seleccion.length >= limitePreguntas) break;
-                    if (!seleccion.some(existing => existing.enunciado === item.enunciado)) {
+                    const kEnun = normalizarTextoClave(item.enunciado);
+                    if (kEnun && !vistasTodos.has(kEnun)) {
+                        vistasTodos.add(kEnun);
                         seleccion.push(item);
                     }
                 }
@@ -1861,6 +1907,7 @@
 
         function volverMenu() {
             detenerCronometrosQuiz();
+            examenEnCursoId = null;
             examenEnCursoId = null;
             actualizarBannerExamenGuardado();
             document.getElementById('view-quiz').classList.add('hidden');
