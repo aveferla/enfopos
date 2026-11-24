@@ -1,20 +1,14 @@
 [
   {
-    "id": "tema_gen_1",
-    "nombre": "Tema 1 - Parte General",
-    "archivo": "tema_gen_1.json",
-    "tipo": "tema",
-    "temas": [
-      "gen_1"
-    ]
+    "id": "gen_1",
+    "archivo": "apuntes/gen_1.json"
   },
   {
-    "id": "tema_gen_2",
-    "nombre": "Tema 2 - Parte General",
-    "archivo": "tema_gen_2.json",
-    "tipo": "tema",
-    "temas": [
-      "gen_2"
-    ]
+    "id": "gen_2",
+    "archivo": "apuntes/gen_2.json"
+  },
+  {
+    "id": "esp_3",
+    "archivo": "apuntes/esp_3.json"
   }
 ]
