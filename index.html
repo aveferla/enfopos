@@ -830,10 +830,12 @@
                 if (resManifest.ok) {
                     const mData = await resManifest.json();
                     if (Array.isArray(mData)) {
-                        archivosTemas = mData.map(item => {
-                            const ruta = typeof item === 'string' ? item : item.archivo;
-                            return ruta.startsWith('temas/') ? ruta : `temas/${ruta}`;
-                        });
+                       archivosTemas = mData.map(item => {
+                            const ruta = String(typeof item === 'string' ? item : (item.archivo || '')).trim();
+                            if (!ruta) return null;
+                            if (ruta.startsWith('temas/') || ruta.startsWith('apuntes/')) return ruta;
+                            return `temas/${ruta}`;
+                        }).filter(Boolean);
                     }
                 }
             } catch (_) {}
