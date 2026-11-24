@@ -196,7 +196,7 @@
                     <button type="button" onclick="mostrarPantallaImprimir()" class="mt-3 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">Imprimir Examen 🖨️</button>
                 </div>
                 <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
-                    <div><h3 class="text-sm font-bold text-slate-900">Apuntes y Bibliografía</h3><p class="text-[11px] text-slate-600">Temas desarrollados y fuentes oficiales.</p></div>
+                    <div><h3 class="text-sm font-bold text-slate-900">Apuntes y Bibliografía</h3><p class="text-[11px] text-slate-600">Temas desarrollados y normativa oficial.</p></div>
                     <button type="button" onclick="mostrarPantallaTemarioPDF()" class="mt-3 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold py-2.5 px-3 rounded-xl transition">Estudiar / Imprimir 📖</button>
                 </div>
             </div>
@@ -312,7 +312,7 @@
                         </div>
                         <div>
                             <label for="input-print-num-preguntas" class="block text-xs font-bold text-slate-700 mb-1">Nº de preguntas</label>
-                            <input id="input-print-num-preguntas" type="number" min="5" max="150" value="90" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-mono">
+                            <input id="input-print-num-preguntas" type="number" min="5" max="300" value="200" class="w-full bg-white border border-slate-300 rounded-xl px-3 py-2 text-xs sm:text-sm font-mono">
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
         <div id="view-temario-pdf" class="hidden space-y-4">
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
                 <div class="flex justify-between items-center border-b pb-4">
-                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Apuntes Desarrollados y Bibliografía Oficial</h2>
+                    <h2 class="text-lg sm:text-xl font-bold text-slate-900">Apuntes Desarrollados y Normativa Oficial</h2>
                     <button type="button" onclick="volverMenu()" class="text-sm text-indigo-600 hover:text-indigo-800 font-bold">← Volver</button>
                 </div>
 
@@ -354,8 +354,8 @@
                     <div id="apunte-contenido-html" class="prose prose-sm max-w-none text-slate-800 leading-relaxed space-y-4"></div>
 
                     <div class="bg-white border border-indigo-100 rounded-xl p-4 space-y-2">
-                        <h4 class="text-xs font-extrabold uppercase text-indigo-900">📚 Bibliografía Oficial y Fuentes Normativas de este Tema</h4>
-                        <div id="apunte-bibliografia-links" class="flex flex-wrap gap-2 pt-1"></div>
+                        <h4 class="text-xs font-extrabold uppercase text-indigo-900">📜 Normativa Aplicable y Referencias de este Tema</h4>
+                        <div id="apunte-bibliografia-links" class="space-y-1.5 pt-1"></div>
                     </div>
                 </div>
             </div>
@@ -446,63 +446,63 @@
         ];
 
         const CATALOGO_TEMAS = {
-            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y Gerencia Regional de Salud de Castilla y León.", apuntesHTML: "", enlaces: [] },
-            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León (Ley 2/2007).", apuntesHTML: "", enlaces: [] },
-            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Autonomía del paciente, derechos y obligaciones en materia de información y documentación clínica.", apuntesHTML: "", enlaces: [] },
-            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Protección de datos personales y garantía de los derechos digitales (LO 3/2018).", apuntesHTML: "", enlaces: [] },
-            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Prevención de riesgos laborales y seguridad en el ámbito sanitario.", apuntesHTML: "", enlaces: [] },
-            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Bioética, consentimiento informado e instrucciones previas en Castilla y León.", apuntesHTML: "", enlaces: [] },
-            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Calidad asistencial, seguridad del paciente y gestión clínica.", apuntesHTML: "", enlaces: [] },
-            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Igualdad efectiva de mujeres y hombres y prevención de la violencia de género.", apuntesHTML: "", enlaces: [] },
-            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Transparencia, buen gobierno y participación ciudadana en el sistema sanitario.", apuntesHTML: "", enlaces: [] },
+            "gen_1": { bloque: "bloque-gen", label: "Tema 1", desc: "Estructura de la Consejería de Sanidad y Gerencia Regional de Salud de Castilla y León.", apuntesHTML: "", normativa: ["Ley 8/2010, de 30 de agosto, de ordenación del sistema de salud de Castilla y León.", "Decreto 42/2016, de 10 de noviembre, por el que se establece la organización y funcionamiento de la Gerencia Regional de Salud."] },
+            "gen_2": { bloque: "bloque-gen", label: "Tema 2", desc: "Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León (Ley 2/2007).", apuntesHTML: "", normativa: ["Ley 2/2007, de 7 de marzo, del Estatuto Jurídico del Personal Estatutario del Servicio de Salud de Castilla y León.", "Ley 55/2003, de 16 de diciembre, del Estatuto Marco del personal estatutario de los servicios de salud."] },
+            "gen_3": { bloque: "bloque-gen", label: "Tema 3", desc: "Autonomía del paciente, derechos y obligaciones en materia de información y documentación clínica.", apuntesHTML: "", normativa: ["Ley 41/2002, de 14 de noviembre, básica reguladora de la autonomía del paciente y de derechos y obligaciones en materia de información y documentación clínica.", "Ley 2/2007, de 7 de marzo, en materia de derechos y deberes de los usuarios."] },
+            "gen_4": { bloque: "bloque-gen", label: "Tema 4", desc: "Protección de datos personales y garantía de los derechos digitales (LO 3/2018).", apuntesHTML: "", normativa: ["Reglamento (UE) 2016/679 (RGPD) y Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales."] },
+            "gen_5": { bloque: "bloque-gen", label: "Tema 5", desc: "Prevención de riesgos laborales y seguridad en el ámbito sanitario.", apuntesHTML: "", normativa: ["Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales y normativa específica sobre agentes biológicos y riesgos en centros sanitarios."] },
+            "gen_6": { bloque: "bloque-gen", label: "Tema 6", desc: "Bioética, consentimiento informado e instrucciones previas en Castilla y León.", apuntesHTML: "", normativa: ["Ley 41/2002, de 14 de noviembre, y normativa autonómica de Castilla y León sobre declaración de voluntades vitales anticipadas / instrucciones previas."] },
+            "gen_7": { bloque: "bloque-gen", label: "Tema 7", desc: "Calidad asistencial, seguridad del paciente y gestión clínica.", apuntesHTML: "", normativa: ["Ley 16/2003, de 28 de mayo, de cohesión y calidad del Sistema Nacional de Salud, y estrategias de seguridad del paciente y calidad asistencial de Sacyl."] },
+            "gen_8": { bloque: "bloque-gen", label: "Tema 8", desc: "Igualdad efectiva de mujeres y hombres y prevención de la violencia de género.", apuntesHTML: "", normativa: ["Ley Orgánica 3/2007, Ley Orgánica 1/2004 y normativa de Castilla y León en materia de igualdad de oportunidades y prevención de la violencia de género."] },
+            "gen_9": { bloque: "bloque-gen", label: "Tema 9", desc: "Transparencia, buen gobierno y participación ciudadana en el sistema sanitario.", apuntesHTML: "", normativa: ["Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, y normativa de participación ciudadana de Castilla y León."] },
 
-            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Bases conceptuales y metodológicas de la enfermería.", apuntesHTML: "", enlaces: [] },
-            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Proceso de atención de enfermería (PAE) y taxonomías diagnósticas.", apuntesHTML: "", enlaces: [] },
-            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Atención Primaria de Salud: organización, cartera de servicios y salud comunitaria.", apuntesHTML: "", enlaces: [] },
-            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Educación para la salud y promoción de hábitos saludables.", apuntesHTML: "", enlaces: [] },
-            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Salud pública, epidemiología y vigilancia epidemiológica.", apuntesHTML: "", enlaces: [] },
-            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Inmunizaciones y calendario vacunal.", apuntesHTML: "", enlaces: [] },
-            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Prevención y control de infecciones relacionadas con la asistencia sanitaria.", apuntesHTML: "", enlaces: [] },
-            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Administración segura de fármacos y farmacología clínica.", apuntesHTML: "", enlaces: [] },
-            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Balance hídrico, fluidoterapia y trastornos hidroelectrolíticos.", apuntesHTML: "", enlaces: [] },
-            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Cuidados perioperatorios y atención en el bloque quirúrgico.", apuntesHTML: "", enlaces: [] },
-            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Atención al paciente con patología cardiovascular.", apuntesHTML: "", enlaces: [] },
-            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Atención al paciente con patología respiratoria.", apuntesHTML: "", enlaces: [] },
-            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Atención al paciente con patología digestiva y nutricional.", apuntesHTML: "", enlaces: [] },
-            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Atención al paciente con patología endocrino-metabólica.", apuntesHTML: "", enlaces: [] },
-            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Atención al paciente con patología nefrourológica.", apuntesHTML: "", enlaces: [] },
+            "esp_1": { bloque: "bloque-esp-1", label: "Tema 1", desc: "Bases conceptuales y metodológicas de la enfermería.", apuntesHTML: "", normativa: ["Modelos y teorías enfermeras, marco competencial enfermero y fundamentos metodológicos de la práctica profesional."] },
+            "esp_2": { bloque: "bloque-esp-1", label: "Tema 2", desc: "Proceso de atención de enfermería (PAE) y taxonomías diagnósticas.", apuntesHTML: "", normativa: ["Metodología enfermera aplicada (valoración, diagnóstico, planificación, ejecución y evaluación) y taxonomías NANDA-I, NOC y NIC."] },
+            "esp_3": { bloque: "bloque-esp-1", label: "Tema 3", desc: "Atención Primaria de Salud: organización, cartera de servicios y salud comunitaria.", apuntesHTML: "", normativa: ["Real Decreto 137/1984 sobre estructuras básicas de salud, cartera de servicios de Atención Primaria del SNS y de Castilla y León, y programas de salud comunitaria."] },
+            "esp_4": { bloque: "bloque-esp-1", label: "Tema 4", desc: "Educación para la salud y promoción de hábitos saludables.", apuntesHTML: "", normativa: ["Estrategias de promoción de la salud, prevención primaria y educación sanitaria individual y grupal en el ámbito de Sacyl."] },
+            "esp_5": { bloque: "bloque-esp-1", label: "Tema 5", desc: "Salud pública, epidemiología y vigilancia epidemiológica.", apuntesHTML: "", normativa: ["Ley 33/2011, de 4 de octubre, General de Salud Pública, Red de Vigilancia Epidemiológica de Castilla y León y declaración obligatoria de enfermedades."] },
+            "esp_6": { bloque: "bloque-esp-1", label: "Tema 6", desc: "Inmunizaciones y calendario vacunal.", apuntesHTML: "", normativa: ["Calendario oficial de vacunación e inmunización a lo largo de toda la vida vigente en Castilla y León y recomendaciones del Consejo Interterritorial del SNS."] },
+            "esp_7": { bloque: "bloque-esp-1", label: "Tema 7", desc: "Prevención y control de infecciones relacionadas con la asistencia sanitaria.", apuntesHTML: "", normativa: ["Programas de control de infecciones asociadas a la asistencia sanitaria (IRAS), higiene de manos, precauciones estándar y de transmisión, y bioseguridad."] },
+            "esp_8": { bloque: "bloque-esp-1", label: "Tema 8", desc: "Administración segura de fármacos y farmacología clínica.", apuntesHTML: "", normativa: ["Real Decreto 1345/2007, prescripción/indicación enfermera (RD 954/2015 y RD 1302/2018) y protocolos de seguridad en la administración de medicación."] },
+            "esp_9": { bloque: "bloque-esp-1", label: "Tema 9", desc: "Balance hídrico, fluidoterapia y trastornos hidroelectrolíticos.", apuntesHTML: "", normativa: ["Guías clínicas de valoración hidroelectrolítica, cálculo de reposición hídrica y manejo seguro de fluidoterapia intravenosa."] },
+            "esp_10": { bloque: "bloque-esp-1", label: "Tema 10", desc: "Cuidados perioperatorios y atención en el bloque quirúrgico.", apuntesHTML: "", normativa: ["Protocolos de seguridad quirúrgica (listado de verificación / cirugía segura), preparación preoperatoria, intraoperatoria y cuidados postanestésicos."] },
+            "esp_11": { bloque: "bloque-esp-1", label: "Tema 11", desc: "Atención al paciente con patología cardiovascular.", apuntesHTML: "", normativa: ["Guías clínicas vigentes de prevención y manejo de enfermedad cardiovascular, insuficiencia cardiaca, cardiopatía isquémica y control de factores de riesgo."] },
+            "esp_12": { bloque: "bloque-esp-1", label: "Tema 12", desc: "Atención al paciente con patología respiratoria.", apuntesHTML: "", normativa: ["Guías clínicas de manejo de patología respiratoria aguda y crónica (EPOC, asma, infecciones respiratorias) y cuidados respiratorios."] },
+            "esp_13": { bloque: "bloque-esp-1", label: "Tema 13", desc: "Atención al paciente con patología digestiva y nutricional.", apuntesHTML: "", normativa: ["Guías de valoración nutricional, cribado de desnutrición y cuidados enfermeros en patología digestiva."] },
+            "esp_14": { bloque: "bloque-esp-1", label: "Tema 14", desc: "Atención al paciente con patología endocrino-metabólica.", apuntesHTML: "", normativa: ["Guías clínicas y programas asistenciales de diabetes mellitus, dislipemias, obesidad y patología tiroidea y endocrina."] },
+            "esp_15": { bloque: "bloque-esp-1", label: "Tema 15", desc: "Atención al paciente con patología nefrourológica.", apuntesHTML: "", normativa: ["Guías de abordaje de enfermedad renal crónica, litiasis, infecciones urinarias y cuidados en terapia renal sustitutiva."] },
 
-            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Atención al paciente con patología neurológica.", apuntesHTML: "", enlaces: [] },
-            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Atención al paciente con patología osteomuscular y traumatológica.", apuntesHTML: "", enlaces: [] },
-            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Salud materno-infantil y cuidados neonatales.", apuntesHTML: "", enlaces: [] },
-            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Atención a la infancia y adolescencia y protección frente al maltrato.", apuntesHTML: "", enlaces: [] },
-            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Salud sexual y reproductiva.", apuntesHTML: "", enlaces: [] },
-            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Atención enfermera al adulto mayor y geriatría.", apuntesHTML: "", enlaces: [] },
-            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Atención a la cronicidad y paciente pluripatológico.", apuntesHTML: "", enlaces: [] },
-            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Cuidados paliativos y atención al final de la vida.", apuntesHTML: "", enlaces: [] },
-            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental y cuidados psiquiátricos.", apuntesHTML: "", enlaces: [] },
-            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Atención a conductas adictivas y drogodependencias.", apuntesHTML: "", enlaces: [] },
-            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Cuidados en urgencias y emergencias extrahospitalarias.", apuntesHTML: "", enlaces: [] },
-            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Soporte vital básico y avanzado y reanimación cardiopulmonar.", apuntesHTML: "", enlaces: [] },
-            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Atención sanitaria ante catástrofes, incidentes con múltiples víctimas y triaje.", apuntesHTML: "", enlaces: [] },
-            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Cuidados en unidades de cuidados críticos.", apuntesHTML: "", enlaces: [] },
+            "esp_16": { bloque: "bloque-esp-2", label: "Tema 16", desc: "Atención al paciente con patología neurológica.", apuntesHTML: "", normativa: ["Códigos asistenciales y guías clínicas de atención al ictus, epilepsia, deterioro cognitivo y enfermedades neurodegenerativas."] },
+            "esp_17": { bloque: "bloque-esp-2", label: "Tema 17", desc: "Atención al paciente con patología osteomuscular y traumatológica.", apuntesHTML: "", normativa: ["Cuidados enfermeros en fracturas, artroplastias, osteoporosis, lumbalgias y rehabilitación musculoesquelética."] },
+            "esp_18": { bloque: "bloque-esp-2", label: "Tema 18", desc: "Salud materno-infantil y cuidados neonatales.", apuntesHTML: "", normativa: ["Programas de atención al embarazo, parto, puerperio y cuidados neonatales en el Sistema Nacional de Salud y Castilla y León."] },
+            "esp_19": { bloque: "bloque-esp-2", label: "Tema 19", desc: "Atención a la infancia y adolescencia y protección frente al maltrato.", apuntesHTML: "", normativa: ["Programa de salud infantil y del adolescente y protocolos de detección y actuación frente al maltrato infantil."] },
+            "esp_20": { bloque: "bloque-esp-2", label: "Tema 20", desc: "Salud sexual y reproductiva.", apuntesHTML: "", normativa: ["Programas de salud sexual y reproductiva, anticoncepción, prevención de ITS y atención integral en salud afectivo-sexual."] },
+            "esp_21": { bloque: "bloque-esp-2", label: "Tema 21", desc: "Atención enfermera al adulto mayor y geriatría.", apuntesHTML: "", normativa: ["Valoración geriátrica integral, prevención de fragilidad, caídas y deterioro funcional en personas mayores."] },
+            "esp_22": { bloque: "bloque-esp-2", label: "Tema 22", desc: "Atención a la cronicidad y paciente pluripatológico.", apuntesHTML: "", normativa: ["Estrategia de atención a pacientes crónicos y pluripatológicos, planes individualizados de cuidados y gestión de casos."] },
+            "esp_23": { bloque: "bloque-esp-2", label: "Tema 23", desc: "Cuidados paliativos y atención al final de la vida.", apuntesHTML: "", normativa: ["Estrategia de cuidados paliativos, control sintomático, sedación paliativa y acompañamiento en el final de la vida."] },
+            "esp_24": { bloque: "bloque-esp-2", label: "Tema 24", desc: "Salud mental y cuidados psiquiátricos.", apuntesHTML: "", normativa: ["Estrategia de salud mental, continuidad asistencial comunitaria, prevención del suicidio y cuidados de enfermería en salud mental."] },
+            "esp_25": { bloque: "bloque-esp-2", label: "Tema 25", desc: "Atención a conductas adictivas y drogodependencias.", apuntesHTML: "", normativa: ["Planes y protocolos de prevención, desintoxicación, deshabituación y reducción de daños en conductas adictivas."] },
+            "esp_26": { bloque: "bloque-esp-2", label: "Tema 26", desc: "Cuidados en urgencias y emergencias extrahospitalarias.", apuntesHTML: "", normativa: ["Coordinación de emergencias sanitarias (112/061), transporte sanitario y atención inicial extrahospitalaria a urgencias tiempo-dependientes."] },
+            "esp_27": { bloque: "bloque-esp-2", label: "Tema 27", desc: "Soporte vital básico y avanzado y reanimación cardiopulmonar.", apuntesHTML: "", normativa: ["Recomendaciones vigentes de reanimación cardiopulmonar (RCP) y soporte vital básico/avanzado y uso de desfibriladores externos automatizados (DESA)."] },
+            "esp_28": { bloque: "bloque-esp-2", label: "Tema 28", desc: "Atención sanitaria ante catástrofes, incidentes con múltiples víctimas y triaje.", apuntesHTML: "", normativa: ["Planes de emergencia sanitaria, clasificación/triaje en incidentes con múltiples víctimas y organización asistencial ante catástrofes."] },
+            "esp_29": { bloque: "bloque-esp-2", label: "Tema 29", desc: "Cuidados en unidades de cuidados críticos.", apuntesHTML: "", normativa: ["Monitorización hemodinámica y respiratoria, prevención de infecciones en UCI y cuidados avanzados al paciente crítico."] },
 
-            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Atención al paciente oncológico y tratamientos antineoplásicos.", apuntesHTML: "", enlaces: [] },
-            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Cuidados en hematología y hemoterapia.", apuntesHTML: "", enlaces: [] },
-            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Cuidados en dermatología y prevención/tratamiento de heridas y UPP.", apuntesHTML: "", enlaces: [] },
-            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Sondajes, drenajes y nutrición enteral y parenteral.", apuntesHTML: "", enlaces: [] },
-            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Ostomías y cuidados de eliminación.", apuntesHTML: "", enlaces: [] },
-            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Oxigenoterapia, ventilación y cuidados respiratorios.", apuntesHTML: "", enlaces: [] },
-            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Cuidados al paciente con alteraciones sensoriales (visión y audición).", apuntesHTML: "", enlaces: [] },
-            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Atención al paciente con enfermedades infecciosas y transmisibles.", apuntesHTML: "", enlaces: [] },
-            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Dolor: valoración, escalas y manejo farmacológico y no farmacológico.", apuntesHTML: "", enlaces: [] },
-            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Pruebas diagnósticas, toma de muestras y preparación del paciente.", apuntesHTML: "", enlaces: [] },
-            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Atención en consulta de enfermería y continuidad asistencial.", apuntesHTML: "", enlaces: [] },
-            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Metodología de investigación en enfermería y práctica basada en la evidencia.", apuntesHTML: "", enlaces: [] },
-            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Exploración funcional, pruebas complementarias y registros clínicos.", apuntesHTML: "", enlaces: [] },
-            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Inmovilizaciones, vendajes y técnicas de soporte musculoesquelético.", apuntesHTML: "", enlaces: [] },
-            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Cirugía menor, suturas y curas en atención sanitaria.", apuntesHTML: "", enlaces: [] },
-            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Teleenfermería, sistemas de información sanitaria y salud digital.", apuntesHTML: "", enlaces: [] }
+            "esp_30": { bloque: "bloque-esp-3", label: "Tema 30", desc: "Atención al paciente oncológico y tratamientos antineoplásicos.", apuntesHTML: "", normativa: ["Seguridad en el manejo de citostáticos, prevención de extravasaciones, manejo de toxicidades y cuidados oncológicos."] },
+            "esp_31": { bloque: "bloque-esp-3", label: "Tema 31", desc: "Cuidados en hematología y hemoterapia.", apuntesHTML: "", normativa: ["Normativa de hemovigilancia y seguridad transfusional, administración de hemoderivados y cuidados en trastornos hematológicos."] },
+            "esp_32": { bloque: "bloque-esp-3", label: "Tema 32", desc: "Cuidados en dermatología y prevención/tratamiento de heridas y UPP.", apuntesHTML: "", normativa: ["Guías de práctica clínica de prevención y tratamiento de lesiones por presión (UPP) y heridas crónicas o complejas."] },
+            "esp_33": { bloque: "bloque-esp-3", label: "Tema 33", desc: "Sondajes, drenajes y nutrición enteral y parenteral.", apuntesHTML: "", normativa: ["Protocolos de colocación, mantenimiento y retirada segura de sondas, drenajes y soporte nutricional enteral y parenteral."] },
+            "esp_34": { bloque: "bloque-esp-3", label: "Tema 34", desc: "Ostomías y cuidados de eliminación.", apuntesHTML: "", normativa: ["Cuidados enfermeros en ostomías digestivas y urológicas, educación al paciente ostomizado y manejo de trastornos de eliminación."] },
+            "esp_35": { bloque: "bloque-esp-3", label: "Tema 35", desc: "Oxigenoterapia, ventilación y cuidados respiratorios.", apuntesHTML: "", normativa: ["Administración segura de oxigenoterapia, aerosolterapia, aspiración de secreciones y cuidados en ventilación no invasiva e invasiva."] },
+            "esp_36": { bloque: "bloque-esp-3", label: "Tema 36", desc: "Cuidados al paciente con alteraciones sensoriales (visión y audición).", apuntesHTML: "", normativa: ["Adaptación de cuidados, comunicación segura y prevención de riesgos en pacientes con déficits visuales o auditivos."] },
+            "esp_37": { bloque: "bloque-esp-3", label: "Tema 37", desc: "Atención al paciente con enfermedades infecciosas y transmisibles.", apuntesHTML: "", normativa: ["Medidas de aislamiento, profilaxis posexposición y manejo clínico-epidemiológico de enfermedades transmisibles."] },
+            "esp_38": { bloque: "bloque-esp-3", label: "Tema 38", desc: "Dolor: valoración, escalas y manejo farmacológico y no farmacológico.", apuntesHTML: "", normativa: ["Evaluación del dolor mediante escalas validadas, escalera analgésica y abordaje multimodal del dolor agudo y crónico."] },
+            "esp_39": { bloque: "bloque-esp-3", label: "Tema 39", desc: "Pruebas diagnósticas, toma de muestras y preparación del paciente.", apuntesHTML: "", normativa: ["Procedimientos normalizados de obtención, conservación y transporte de muestras biológicas y preparación para pruebas diagnósticas."] },
+            "esp_40": { bloque: "bloque-esp-3", label: "Tema 40", desc: "Atención en consulta de enfermería y continuidad asistencial.", apuntesHTML: "", normativa: ["Gestión de la consulta enfermera, coordinación entre niveles asistenciales (Atención Primaria y Hospitalaria) y continuidad de cuidados."] },
+            "esp_41": { bloque: "bloque-esp-3", label: "Tema 41", desc: "Metodología de investigación en enfermería y práctica basada en la evidencia.", apuntesHTML: "", normativa: ["Diseño de estudios, bioética de la investigación, lectura crítica y transferencia de la evidencia científica a la práctica clínica."] },
+            "esp_42": { bloque: "bloque-esp-3", label: "Tema 42", desc: "Exploración funcional, pruebas complementarias y registros clínicos.", apuntesHTML: "", normativa: ["Valoración funcional, interpretación básica de pruebas complementarias y requisitos legales y técnicos de los registros enfermeros en historia clínica."] },
+            "esp_43": { bloque: "bloque-esp-3", label: "Tema 43", desc: "Inmovilizaciones, vendajes y técnicas de soporte musculoesquelético.", apuntesHTML: "", normativa: ["Técnicas de vendaje funcional y compresivo, inmovilizaciones y vigilancia neurovascular en soporte musculoesquelético."] },
+            "esp_44": { bloque: "bloque-esp-3", label: "Tema 44", desc: "Cirugía menor, suturas y curas en atención sanitaria.", apuntesHTML: "", normativa: ["Asepsia, anestesia local, técnicas de sutura y cierre de heridas, y curas en cirugía menor ambulatoria."] },
+            "esp_45": { bloque: "bloque-esp-3", label: "Tema 45", desc: "Teleenfermería, sistemas de información sanitaria y salud digital.", apuntesHTML: "", normativa: ["Sistemas de información clínica de Sacyl, historia clínica electrónica, teleconsulta/teleenfermería y seguridad de la información sanitaria."] }
         };
 
         let examenesRealesCargados = [];
@@ -908,6 +908,7 @@
                                 label: infoNueva.label || temaId,
                                 desc: infoNueva.desc || '',
                                 apuntesHTML: '',
+                                normativa: [],
                                 enlaces: []
                             };
                         }
@@ -915,13 +916,67 @@
                         if (infoNueva.label) CATALOGO_TEMAS[temaId].label = infoNueva.label;
                         if (infoNueva.desc) CATALOGO_TEMAS[temaId].desc = infoNueva.desc;
                         if (infoNueva.apuntesHTML) CATALOGO_TEMAS[temaId].apuntesHTML = infoNueva.apuntesHTML;
-                        if (Array.isArray(infoNueva.enlaces)) CATALOGO_TEMAS[temaId].enlaces = infoNueva.enlaces;
+                        if (Array.isArray(infoNueva.normativa) && infoNueva.normativa.length > 0) {
+                            CATALOGO_TEMAS[temaId].normativa = infoNueva.normativa;
+                        } else if (Array.isArray(infoNueva.enlaces) && infoNueva.enlaces.length > 0) {
+                            CATALOGO_TEMAS[temaId].normativa = infoNueva.enlaces.map(l =>
+                                typeof l === 'string' ? l : (l.titulo || l.nombre || l.url || '')
+                            ).filter(Boolean);
+                        }
                     };
 
                     if (data.temaId) aplicarTema(data.temaId, data);
                     else Object.keys(data).forEach(k => aplicarTema(k, data[k]));
                 } catch (_) {}
             }));
+        }
+
+        function obtenerPreguntasDeTemaCombinadas(temaId) {
+            if (!temaId) return [];
+            const fuente = [
+                ...preguntasTemasCargadas,
+                ...examenesRealesCargados.flatMap(e => e.preguntas || []),
+                ...PREGUNTAS_INVENTADAS
+            ];
+            const vistos = new Set();
+            const resultado = [];
+            fuente.forEach((rawQ, idx) => {
+                const q = normalizarPregunta({ numero: rawQ?.numero ?? (idx + 1), ...rawQ });
+                if (q.temaId !== temaId) return;
+                const limpio = q.enunciado ? q.enunciado.trim() : "";
+                if (!limpio || !Array.isArray(q.opciones) || q.opciones.length === 0) return;
+                const k = clavePregunta(q);
+                if (k && vistos.has(k)) return;
+                if (k) vistos.add(k);
+                resultado.push(q);
+            });
+            return resultado;
+        }
+
+        function obtenerTotalPreguntasExamenesYTemas() {
+            const baseUnico = Array.isArray(bancoPreguntasGlobal) && bancoPreguntasGlobal.length > 0
+                ? bancoPreguntasGlobal
+                : [
+                    ...examenesRealesCargados.flatMap(e => e.preguntas || []),
+                    ...preguntasTemasCargadas,
+                    ...PREGUNTAS_INVENTADAS
+                ];
+            const vistos = new Set();
+            let total = 0;
+            baseUnico.forEach((rawQ, idx) => {
+                const q = normalizarPregunta({ numero: rawQ?.numero ?? (idx + 1), ...rawQ });
+                const limpio = q.enunciado ? q.enunciado.trim() : "";
+                if (!limpio || !Array.isArray(q.opciones) || q.opciones.length === 0) return;
+                const temaParte = q.temaId ? `${normalizarTextoClave(q.temaId)}::` : "";
+                const uniqKey = q.examenId
+                    ? `${q.examenId}::${temaParte}${normalizarTextoClave(limpio)}`
+                    : `${temaParte}${normalizarTextoClave(limpio)}`;
+                if (!vistos.has(uniqKey)) {
+                    vistos.add(uniqKey);
+                    total++;
+                }
+            });
+            return total;
         }
 
         function consolidarBancoUnico() {
@@ -1182,6 +1237,17 @@
             });
         }
 
+        function obtenerNormativaTema(info) {
+            if (!info) return [];
+            if (Array.isArray(info.normativa) && info.normativa.length > 0) {
+                return info.normativa.map(n => limpiarTextoReferencia(n)).filter(Boolean);
+            }
+            if (Array.isArray(info.enlaces) && info.enlaces.length > 0) {
+                return info.enlaces.map(l => limpiarTextoReferencia(typeof l === 'string' ? l : (l.titulo || l.nombre || ''))).filter(Boolean);
+            }
+            return [limpiarTextoReferencia(info.desc)].filter(Boolean);
+        }
+
         function cargarApuntesEnPantalla(temaId) {
             temaApunteSeleccionadoId = temaId;
             const info = CATALOGO_TEMAS[temaId];
@@ -1189,38 +1255,102 @@
 
             document.getElementById('apunte-badge').textContent = info.label;
             document.getElementById('apunte-titulo').textContent = info.desc;
-            document.getElementById('apunte-contenido-html').innerHTML = info.apuntesHTML || "";
+            document.getElementById('apunte-contenido-html').innerHTML = info.apuntesHTML || `<p class="text-sm text-slate-700">${info.desc}</p>`;
 
             const linksContainer = document.getElementById('apunte-bibliografia-links');
             linksContainer.innerHTML = '';
-            if (info.enlaces && info.enlaces.length > 0) {
-                info.enlaces.forEach(link => {
-                    const a = document.createElement('a');
-                    a.href = link.url;
-                    a.target = "_blank";
-                    a.rel = "noopener noreferrer";
-                    a.className = "inline-flex items-center gap-1.5 bg-indigo-50 hover:bg-indigo-100 text-indigo-800 border border-indigo-200 text-xs font-bold px-3 py-1.5 rounded-lg transition";
-                    a.innerHTML = `🔗 ${link.titulo}`;
-                    linksContainer.appendChild(a);
+            const normas = obtenerNormativaTema(info);
+            if (normas.length > 0) {
+                const ul = document.createElement('ul');
+                ul.className = "list-disc pl-5 space-y-1 text-xs sm:text-sm text-slate-800";
+                normas.forEach(normaTexto => {
+                    const li = document.createElement('li');
+                    li.className = "font-medium text-indigo-950";
+                    li.textContent = normaTexto;
+                    ul.appendChild(li);
                 });
-            } else {
-                linksContainer.innerHTML = "";
+                linksContainer.appendChild(ul);
             }
         }
 
-        function imprimirApunteActual() {
-            const info = CATALOGO_TEMAS[temaApunteSeleccionadoId];
-            if (!info) return;
-            let linksHTML = (info.enlaces || []).map(l => `<li><strong>${l.titulo}:</strong> ${l.url}</li>`).join('');
-            document.getElementById('pdf-print-area').innerHTML = `
+        function construirContenidoApunteImprimible(info) {
+            const normas = obtenerNormativaTema(info);
+            const normasHTML = normas.length > 0
+                ? `<div style="margin-top: 16px; border-top: 1px solid #cbd5e1; padding-top: 10px;"><h3 style="font-size: 11.5pt; margin: 0 0 6px;">Normativa Aplicable y Referencias Oficiales</h3><ul style="font-size: 10pt; margin: 0; padding-left: 18px;">${normas.map(n => `<li style="margin-bottom: 4px;">${n}</li>`).join('')}</ul></div>`
+                : '';
+            const cuerpo = (info.apuntesHTML && String(info.apuntesHTML).trim().length > 0)
+                ? info.apuntesHTML
+                : `<p style="margin: 0 0 8px;"><strong>${info.label} — ${info.desc}</strong></p><p style="margin: 0;">Resumen de referencia y normativa aplicable al tema.</p>`;
+
+            return `
                 <div class="print-watermark">ENFOPOS-LAAF</div>
                 <div style="display: block; position: static; font-family: Arial, sans-serif; color: black; line-height: 1.5; margin: 0; padding: 0;">
                     <div style="border-bottom: 1.5px solid #0f172a; padding-bottom: 8px; margin-bottom: 14px;">
                         <p style="margin: 0; font-size: 10.5pt; font-weight: bold;">ENFOPOS por LAAF. Aplicación no oficial. Solicita la aplicación en lavendanoenf@gmail.com</p>
                         <h1 style="margin: 6px 0 0; font-size: 14pt;">${info.label} — ${info.desc}</h1>
                     </div>
-                    <div style="font-size: 11pt; margin: 0; padding: 0;">${info.apuntesHTML || ''}</div>
-                    ${linksHTML ? `<hr style="margin: 18px 0 10px;"><h3 style="font-size: 11.5pt; margin: 0 0 6px;">Bibliografía y Referencias Oficiales</h3><ul style="font-size: 10pt; margin: 0; padding-left: 18px;">${linksHTML}</ul>` : ''}
+                    <div style="font-size: 11pt; margin: 0; padding: 0;">${cuerpo}</div>
+                    ${normasHTML}
+                </div>`;
+        }
+
+        function imprimirApunteActual() {
+            const info = CATALOGO_TEMAS[temaApunteSeleccionadoId];
+            if (!info) return;
+            const printArea = document.getElementById('pdf-print-area');
+            printArea.innerHTML = construirContenidoApunteImprimible(info);
+            window.print();
+        }
+
+        async function imprimirResumenEnfermeriaFamiliarComunitaria() {
+            let contenidoResumen = "";
+            const rutasCandidatas = [
+                "apuntes/enfermeria-familiar-comunitaria-resumen.html",
+                "apuntes/enfermeria-familiar-comunitaria-resumen.json",
+                "apuntes/enfermeria-familiar-comunitaria-resumen.md",
+                "apuntes/enfermeria-familiar-comunitaria-resumen.txt",
+                "enfermeria-familiar-comunitaria-resumen.html",
+                "enfermeria-familiar-comunitaria-resumen.json",
+                "enfermeria-familiar-comunitaria-resumen.md",
+                "enfermeria-familiar-comunitaria-resumen.txt"
+            ];
+
+            for (const ruta of rutasCandidatas) {
+                try {
+                    const res = await fetch(`${ruta}?v=${Date.now()}`, { cache: 'no-store' });
+                    if (!res.ok) continue;
+                    const rawText = await res.text();
+                    if (!rawText || !rawText.trim()) continue;
+
+                    if (ruta.endsWith('.json')) {
+                        try {
+                            const parsed = JSON.parse(rawText);
+                            const titulo = parsed.titulo || parsed.label || "Enfermería Familiar y Comunitaria — Resumen";
+                            const cuerpo = parsed.apuntesHTML || parsed.contenidoHTML || parsed.contenido || parsed.resumen || JSON.stringify(parsed, null, 2);
+                            contenidoResumen = `<h1 style="margin: 0 0 10px; font-size: 14pt;">${titulo}</h1><div>${cuerpo}</div>`;
+                            break;
+                        } catch (_) {}
+                    } else {
+                        contenidoResumen = rawText;
+                        break;
+                    }
+                } catch (_) {}
+            }
+
+            const printArea = document.getElementById('pdf-print-area');
+            const cuerpoFinal = contenidoResumen || `
+                <h1 style="margin: 0 0 10px; font-size: 14pt;">Enfermería Familiar y Comunitaria — Resumen</h1>
+                <p style="margin: 0 0 8px;">Atención Primaria de Salud, promoción de la salud, prevención comunitaria, abordaje familiar y seguimiento de pacientes crónicos y vulnerables en el marco del Sistema Nacional de Salud y Sacyl.</p>
+                <p style="margin: 0;"><strong>Normativa de referencia:</strong> Real Decreto 137/1984 sobre estructuras básicas de salud, Ley 14/1986 General de Sanidad, Ley 8/2010 de ordenación del sistema de salud de Castilla y León y cartera de servicios de Atención Primaria.</p>
+            `;
+
+            printArea.innerHTML = `
+                <div class="print-watermark">ENFOPOS-LAAF</div>
+                <div style="display: block; position: static; font-family: Arial, sans-serif; color: black; line-height: 1.5; margin: 0; padding: 0;">
+                    <div style="border-bottom: 1.5px solid #0f172a; padding-bottom: 8px; margin-bottom: 14px;">
+                        <p style="margin: 0; font-size: 10.5pt; font-weight: bold;">ENFOPOS por LAAF. Aplicación no oficial. Solicita la aplicación en lavendanoenf@gmail.com</p>
+                    </div>
+                    <div style="font-size: 11pt; margin: 0; padding: 0;">${cuerpoFinal}</div>
                 </div>`;
             window.print();
         }
@@ -1238,7 +1368,7 @@
             Object.keys(CATALOGO_TEMAS).forEach(temaId => {
                 const info = CATALOGO_TEMAS[temaId];
                 const stats = estadisticasTemas[temaId] || { aciertos: 0, fallos: 0 };
-                const totalTema = bancoPreguntasGlobal.filter(q => q.temaId === temaId).length;
+                const totalTema = obtenerPreguntasDeTemaCombinadas(temaId).length;
 
                 const card = document.createElement('div');
                 card.className = `p-4 rounded-2xl border transition shadow-2xs flex flex-col justify-between cursor-pointer ${COLORES_PASTEL[indexColor++ % COLORES_PASTEL.length]}`;
@@ -1258,7 +1388,7 @@
                 `;
                 if (contenedores[info.bloque]) contenedores[info.bloque].appendChild(card);
             });
-            document.getElementById('contador-total-global').textContent = bancoPreguntasGlobal.length;
+            document.getElementById('contador-total-global').textContent = obtenerTotalPreguntasExamenesYTemas();
         }
 
         function barajarArray(array) {
@@ -1465,7 +1595,7 @@
 
         async function iniciarEstudioTema(temaId) {
             if (cargaInicialPromesa) await cargaInicialPromesa;
-            const filtradas = bancoPreguntasGlobal.filter(q => q.temaId === temaId && esPreguntaValidaParaAleatoriaOImpresion(q));
+            const filtradas = obtenerPreguntasDeTemaCombinadas(temaId).filter(esPreguntaValidaParaAleatoriaOImpresion);
             if (filtradas.length === 0) return alert("No hay preguntas registradas todavía para este tema específico.");
             examenEnCursoId = null;
             preguntasActivas = JSON.parse(JSON.stringify(filtradas));
@@ -1768,7 +1898,7 @@
             const tipoPrint = document.querySelector('input[name="tipo-print"]:checked').value;
             const temaSeleccionado = document.getElementById('select-print-tema').value;
             const examenRealId = document.getElementById('select-print-examen-real').value;
-            const limitePreguntas = Math.max(1, parseInt(document.getElementById('input-print-num-preguntas').value || '90', 10));
+            const limitePreguntas = Math.max(1, parseInt(document.getElementById('input-print-num-preguntas').value || '200', 10));
 
             let pool = [];
             let tituloDocumento = "EXAMEN DE PRÁCTICA";
@@ -1808,15 +1938,14 @@
                 pool = barajarArray(seleccion).slice(0, limitePreguntas);
                 tituloDocumento = `Examen de Todos los Temas (${pool.length} preguntas)`;
             } else if (tipoPrint === 'tema') {
-                const candidatosTema = [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])]
-                    .filter(esPreguntaValidaParaAleatoriaOImpresion)
-                    .map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
-                const filtradosTema = temaSeleccionado !== 'todos'
-                    ? candidatosTema.filter(q => q.temaId === temaSeleccionado)
-                    : candidatosTema;
+                const candidatosTema = temaSeleccionado !== 'todos'
+                    ? obtenerPreguntasDeTemaCombinadas(temaSeleccionado).filter(esPreguntaValidaParaAleatoriaOImpresion)
+                    : [...preguntasTemasCargadas, ...examenesRealesCargados.flatMap(e => e.preguntas || [])]
+                        .filter(esPreguntaValidaParaAleatoriaOImpresion)
+                        .map((q, idx) => normalizarPregunta({ numero: q?.numero ?? (idx + 1), ...q }));
                 const vistosTema = new Set();
                 const unicosTema = [];
-                for (const item of filtradosTema) {
+                for (const item of candidatosTema) {
                     const k = clavePregunta(item);
                     if (k && vistosTema.has(k)) continue;
                     if (k) vistosTema.add(k);
@@ -1909,7 +2038,6 @@
 
         function volverMenu() {
             detenerCronometrosQuiz();
-            examenEnCursoId = null;
             examenEnCursoId = null;
             actualizarBannerExamenGuardado();
             document.getElementById('view-quiz').classList.add('hidden');
